@@ -41,9 +41,6 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **V76 ⚪ Basic access Google Ads API.** Het ontwikkelaarstoken heeft Explorer access en dat blokkeert de Keyword Planner. Wil je Basic access aanvragen, zodat het team volumes zelf kan ophalen? Ja/nee (plan-2026-11, actie 9)
 **Antwoord:** Aangevraagd (23-10), nog niet toegewezen; Mark gaat er 24-10 mee verder.
 
-**V77 🟡 NAP-correcties, restpunt (d).** Antwoorden 23-10: (a) Mark heeft het juiste nummer bij Visit Borne doorgegeven, wacht op aanpassing; (b) @tante.rie.borne is de juiste TikTok; (c) webshop@tanterie.nl voor de webshop, info@tanterie.nl is ook officieel; (e) het team bereidt de correctieverzoeken voor. Open is alleen (d). Toelichting: het telefoonnummer staat nu alleen in de footer en in de markup, niet in de tekst van de contactpagina zelf. Bezoekers die de contactpagina openen zien alleen het e-mailadres en het formulier, en Google ziet het nummer op die pagina niet als contactgegeven. Wie wil bellen of de winkel zoekt, moet dan naar onderen scrollen. Mag 06 38 29 11 89 in de tekst van de contactpagina? Ja/nee (marketing/autoriteit/brief-2026-10-21.md, paragraaf 4)
-**Antwoord:**
-
 **V80 🟡 Koopavonden en extra openingen in december (vervolg op V35).** Is de winkel in december op extra avonden of dagen open, bijvoorbeeld op zondag of maandag? Zo ja, welke data en tijden? Graag uiterlijk 10 november, zodat het feestdagenbericht van 17 november klopt. (plan-2026-11, actie 4)
 **Antwoord:**
 
@@ -56,6 +53,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 23-10 | V77d Telefoon op de contactpagina | Akkoord | voorstel met voor en na volgt |
 | 23-10 | V74 Verdeling maand 2 | Ja, 60/40 winkel/webshop | plan-2026-11 |
 | 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11 | plan-2026-11, actie 9 |
 | 23-10 | V77 NAP (a, b, c, e) | (a) door Mark doorgegeven aan Visit Borne; (b) @tante.rie.borne; (c) webshop@ voor de webshop, info@ ook officieel; (e) team bereidt correctieverzoeken voor | plan-2026-11, actie 3; (d) nog open |
