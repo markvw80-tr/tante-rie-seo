@@ -15,15 +15,7 @@ Status: GEDAAN door het team (23-10), na V70: claim van tweede account 581958502
 **A3. Bedrijfsadres controleren (nieuw, geen actie zonder jou).** In Merchant Center staat als bedrijfsadres Bleekweg 34, 7512 BZ Enschede en als klantenservice webshop@tanterie.nl. Is dat bewust (administratief adres), of moet het Bakkerssteeg 6, Borne zijn? Zet je antwoord hier.
 Antwoord:
 
-**A4. Alleen-afhalen producten uit Shopping en gratis webvermeldingen, lokale vermelding behouden.** Akkoord Mark 23-10. Het team heeft in Shopify op alle 143 producten van het verzendprofiel "Breekbare producten" (Bunzlau-aardewerk, Blond Amsterdam, ook de Blond-producten die onder merk Tante Rie staan, en de Pineut-karaffen) het verborgen Google-label custom_label_0 = alleen-afhalen gezet (GEDAAN 23-10, staat al in Merchant Center). Klanten zien dit niet. Daarna maak jij één regel in Merchant Center, omdat regels niet via de API kunnen:
-1. Merchant Center (account Tante Rie, 5716348221) > Producten en winkel > Gegevensbronnen.
-2. Open de bron "Shopify App API" met land Nederland > tabblad Kenmerkregels > Kenmerk toevoegen of bewerken > kies "Uitgesloten bestemming" (excluded destination).
-3. Kies "Voorwaarde toevoegen": Aangepast label 0 is gelijk aan alleen-afhalen.
-4. Bij "Instellen op" kies je Shopping-advertenties en Gratis vermeldingen. Kies niet Lokale voorraadadvertenties en niet Gratis lokale vermeldingen.
-5. Opslaan en toepassen.
-6. Herhaal stap 2 tot en met 5 voor de bron "Shopify App API" met land België.
-De bron Local Feed Partnership blijf je van af; daardoor blijven de producten zichtbaar als "ophalen in de winkel". Het team controleert na een dag of de 411 meldingen over beschikbaarheid verdwijnen en of de lokale vermelding blijft.
-Status:
+**A4. Alleen-afhalen producten uit Shopping en gratis webvermeldingen, lokale vermelding behouden.** Akkoord Mark 23-10. Het team heeft in Shopify op alle 143 producten van het verzendprofiel "Breekbare producten" (Bunzlau-aardewerk, Blond Amsterdam, ook de Blond-producten die onder merk Tante Rie staan, en de Pineut-karaffen) het verborgen Google-label custom_label_0 = alleen-afhalen gezet (GEDAAN 23-10, staat al in Merchant Center). Klanten zien dit niet. Status: GEDAAN door het team (23-10). Regels en bestandsupload bleken niet beschikbaar voor de Shopify-bron, daarom via de API een aanvullende bron "Alleen afhalen (team)" gemaakt die 2.036 varianten uitsluit van Shopping en gratis vermeldingen; lokaal blijft. Nieuwe afhaalproducten later: het team maakt een nieuwe lijst en draait scripts/merchant_schrijf.py afhalen opnieuw.
 
 **A5. België blijft aan.** Het advies was niet uitgesproken; omdat het Pakket-profiel een tarief voor België heeft (11,95 euro), blijft de BE-bron aan. Geen actie.
 

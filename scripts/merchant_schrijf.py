@@ -10,6 +10,7 @@ Gebruik:
     python3 scripts/merchant_schrijf.py homepage [--uitvoeren]       # V69 stap 3
     python3 scripts/merchant_schrijf.py homepage-terug [--uitvoeren] # alleen als de claim mislukt
     python3 scripts/merchant_schrijf.py tweede-account [--uitvoeren] # V70: feed uit, claim intrekken op 5819585029
+    python3 scripts/merchant_schrijf.py afhalen [--alleen shopify_ZZ_<id>] [--uitvoeren]  # A4
 
 Token: ~/.config/claude-seo/merchant-token.json (OAuth, scope content).
 Regels voor gegevensbronnen (stap 5) kunnen niet via de API; die doet Mark in het scherm.
@@ -112,9 +113,57 @@ def tweede_account(s, uitvoeren):
         print("claim ingetrokken:", uit)
 
 
+DS = "https://merchantapi.googleapis.com/datasources/v1/"
+PI = "https://merchantapi.googleapis.com/products/v1/"
+PRIMAIR = ["10606676973", "10706837209"]  # Shopify App API NL en BE
+AFHALEN_NAAM = "Alleen afhalen (team)"
+AFHALEN_TSV = ROOT + "marketing/technisch/aanvullende-bron-alleen-afhalen-2026-10-23.tsv"
+
+
+def afhalen(s, uitvoeren, alleen):
+    """A4: aanvullende bron die alleen-afhalen varianten uitsluit van Shopping en gratis webvermeldingen."""
+    bronnen = check(s.get(DS + ACC + "/dataSources"), "bronnen lezen").get("dataSources", [])
+    supp = next((b for b in bronnen if b.get("displayName") == AFHALEN_NAAM), None)
+    ids = [r.split("\t")[0] for r in open(AFHALEN_TSV).read().splitlines()[1:]]
+    if alleen:
+        ids = [i for i in ids if i.startswith(alleen)]
+    print(f"aanvullende bron: {supp['name'] if supp else 'nog niet aanwezig'}; varianten: {len(ids)}")
+    if not uitvoeren:
+        return
+    if not supp:
+        supp = check(s.post(DS + ACC + "/dataSources", json={
+            "displayName": AFHALEN_NAAM, "supplementalProductDataSource": {}}), "bron aanmaken")
+        print("aangemaakt:", supp["name"])
+    for pid in PRIMAIR:
+        prim = next(b for b in bronnen if b["dataSourceId"] == pid)
+        backup(f"primaire-bron-{pid}", prim)
+        regel = prim["primaryProductDataSource"].get("defaultRule", {"takeFromDataSources": [{"self": True}]})
+        bron = regel.get("takeFromDataSources", [])
+        if not any(b.get("supplementalDataSourceName") == supp["name"] for b in bron):
+            bron = bron + [{"supplementalDataSourceName": supp["name"]}]
+            check(s.patch(DS + prim["name"], params={"updateMask": "primaryProductDataSource.defaultRule"},
+                          json={"primaryProductDataSource": {"defaultRule": {"takeFromDataSources": bron}}}),
+                  f"koppelen aan {pid}")
+            print("gekoppeld aan", pid)
+    fout = 0
+    for n, offer in enumerate(ids, 1):
+        for label in ["EUR_107259592968", "EUR_114053906696"]:
+            r = s.post(PI + ACC + "/productInputs:insert", params={"dataSource": supp["name"]}, json={
+                "offerId": offer, "contentLanguage": "nl", "feedLabel": label,
+                "productAttributes": {"excludedDestinations": ["SHOPPING_ADS", "FREE_LISTINGS"]}})
+            if r.status_code >= 300:
+                fout += 1
+                if fout <= 3:
+                    print("fout:", offer, label, r.status_code, r.text[:300])
+        if n % 200 == 0:
+            print(n, "varianten verwerkt", flush=True)
+    print(f"klaar: {len(ids)} varianten, {fout} fouten")
+
+
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("actie", choices=["retourbeleid", "homepage", "homepage-terug", "tweede-account"])
+    p.add_argument("actie", choices=["retourbeleid", "homepage", "homepage-terug", "tweede-account", "afhalen"])
+    p.add_argument("--alleen", help="alleen offerIds die hiermee beginnen (test)")
     p.add_argument("--uitvoeren", action="store_true")
     a = p.parse_args()
     s = sessie()
@@ -122,6 +171,8 @@ def main():
         retourbeleid(s, a.uitvoeren)
     elif a.actie == "tweede-account":
         tweede_account(s, a.uitvoeren)
+    elif a.actie == "afhalen":
+        afhalen(s, a.uitvoeren, a.alleen)
     else:
         homepage(s, a.uitvoeren, HOMEPAGE_NIEUW if a.actie == "homepage" else HOMEPAGE_OUD)
     if not a.uitvoeren:
