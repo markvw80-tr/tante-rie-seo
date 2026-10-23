@@ -17,3 +17,4 @@ scripts/theme-ref-*/
 *oauth-client*.json
 service_account*.json
 .env
+.claude/settings.local.json
