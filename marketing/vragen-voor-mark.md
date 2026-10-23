@@ -19,8 +19,8 @@ Bijgewerkt: 22 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt,
 **V67 ⚪ Cafeïne in thee-collecties.** De collecties vruchtenthee, rooibos en kruidenthee noemen zichzelf "cafeïnevrij" (in de paginatekst en in de titel van vruchtenthee en kruidenthee), maar bevatten ook theesoorten met cafeïne: Boswandeling, Sterrennacht, Twentse Land, Gember Chai, Elfjesthee en Pu-erh. Mag het team voorstellen deze producten in de juiste collectie te zetten, de alt-tekst van Sterrennacht te verbeteren en de oude levertijd in de kruidenthee-tekst aan te passen? Ja/nee
 **Antwoord:**
 
-**V68 🟡 Merchant Center opschonen (webshopgroei).** De koppeling werkt. In Merchant Center staan 7.871 productregels (per variant en bron, dus veel dubbel). Ongeveer 412 producten zijn afgekeurd voor de gratis productvermeldingen en Shopping. De grootste oorzaken: geen productfoto (2.244 regels), productpagina niet bereikbaar (2.016, waarschijnlijk kassaproducten of oude webshop-URL's), ongeldige prijs (96). Mag het team een analyse en voorstel maken: welke bron stuurt wat, welke producten horen er niet in, en wat er per product moet gebeuren? Ja/nee
-**Antwoord:** Ja (23-10); analyse loopt
+**V69 🟡 Merchant Center opschonen.** De analyse staat in technisch/merchant-center-analyse-2026-10-23.md, met tien stappen en onderaan 8 ja/nee-vragen. Kern: 169 kassaproducten staan op het kanaal Google & YouTube en geven daardoor 404's en afkeuringen; het retourbeleid in Merchant Center wijst naar een kapotte webshop.tanterie.nl-link; 27 online producten hebben geen foto; Bunzlau en Blond (alleen afhalen) staan in Shopping. Vul de vragen in het rapport in of zet hier "alles volgens advies".
+**Antwoord:**
 
 ## 1. Fouten die nu live staan
 
@@ -143,3 +143,4 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 | 23-10 | V66 Tien zoekresultaatteksten |  | live 10/10 |
 | 23-10 | V64 Levertijd | (a) verstuurd binnen 1 tot 2 werkdagen (23-10). "Bezorgd in  | verstuurd binnen 1-2 werkdagen |
 | 23-10 | V30 Chrome UX Report API | Ingeschakeld door Mark | Sleutel nog geblokkeerd voor CrUX, maar niet nodig: Google heeft voor tanterie.nl te weinig Chrome-bezoekers voor veldgegevens. PageSpeed (labmeting) werkt: mobiel 64, desktop 98 |
+| 23-10 | V68 Merchant Center analyse | Ja | technisch/merchant-center-analyse-2026-10-23.md, zie V69 |
