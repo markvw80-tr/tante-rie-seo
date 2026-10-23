@@ -47,6 +47,26 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **V81 🔴 Metingen.** In de cloudsessies zijn er geen credentials voor Search Console, GA4, Merchant Center en het Bedrijfsprofiel. Kies A: je draait de metingen zelf lokaal volgens de tabel "Metingen die Mark lokaal moet draaien" in plan-2026-11, inclusief de export van het Indexeringsrapport Serverfout (5xx). Of B: je start voor de weekmonitors en het maandrapport een lokale sessie waarin de Analist de scripts draait. Zonder een van beide kan niemand de resultaten van oktober beoordelen. (plan-2026-11, actie 1 en 2)
 **Antwoord:**
 
+## 10. Voorstellen 23 oktober (V67, V13, V77)
+
+**V82 🟡 Akkoord voorstel cafeïne-collecties.** Voorstel: onpage/voorstel-cafeine-thee-collecties-2026-10-23.md. Zeven producten (ook Marocco Mint) uit de cafeïnevrije collecties, Twentse Land en Pu-erh erbij in zwarte thee, nieuwe levertijd in tekst en meta's, alt-tekst Sterrennacht, en correctie van Pu-erh (heeft nu de gegevens van Kruizemunt Nana Mint en staat op Decaf). Ja/nee, en de extra's T3, V2, M4, M5 en de zes andere alt-teksten wel of niet meenemen?
+**Antwoord:**
+
+**V83 🟡 Festival, Sinaasappel Chai en Inspiratie.** Rooibos of zwarte/groene thee? De gegevens spreken elkaar tegen; een blik op de verpakking is genoeg. (onpage/voorstel-cafeine-thee-collecties-2026-10-23.md)
+**Antwoord:**
+
+**V84 ⚪ Lavendel en Pu-erh.** Wat is het product Lavendel (lege pagina met tekst en foto van Mama & Baby Thee)? Welk zetadvies geldt voor Pu-erh (95 graden 5 tot 7 minuten of 100 graden 3 tot 5 minuten), en is er een foto? (zelfde voorstel)
+**Antwoord:**
+
+**V85 🟡 Akkoord voorstel openingsjaar en telefoon.** Voorstel: technisch/voorstel-jaartal-en-telefoon-2026-10-23.md. (a) llms.txt 2024 wordt 2014, akkoord? (b) de homepage zegt 2012; ook 2014 maken? (c) foundingDate 2014 in de markup? (d) telefoonnummer en kop op de contactpagina, akkoord? (e) link "onze winkel" op de contactpagina naar de theewinkelpagina?
+**Antwoord:**
+
+**V86 🟡 Eigenaar.** llms.txt en homepage noemen "Eigenaar Nikkie", de privacypagina "mevr. A. Kamp, eigenaar" en Over ons een "nieuwe eigenaar". Wat moet waar staan? (technisch/voorstel-jaartal-en-telefoon-2026-10-23.md)
+**Antwoord:**
+
+**V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e) Werkt tiktok.com/@tante.rie.borne en staat tanterie.nl in de bio?
+**Antwoord:**
+
 ---
 
 ## Beantwoord

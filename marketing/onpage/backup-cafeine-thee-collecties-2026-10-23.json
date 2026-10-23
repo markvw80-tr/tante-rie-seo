@@ -1,0 +1,446 @@
+{
+  "gemaakt": "2026-10-23",
+  "doel": "Backup V67: huidige stand vóór wijziging van cafeïnehoudende thee in de collecties vruchtenthee, rooibos en kruidenthee. Alleen gelezen via Shopify, niets gewijzigd.",
+  "bron": "Shopify Admin API (alleen lezen), 23-10-2026. Online gepubliceerd is afgeleid uit onlineStoreUrl (niet leeg) omdat publishedOnCurrentPublication de scope read_product_listings mist.",
+  "collecties": [
+    {
+      "id": "gid://shopify/Collection/560110076168",
+      "handle": "kruidenthee",
+      "type": "manual",
+      "descriptionHtml": "<p>Kruidenthee, ook tisane of kruideninfusie genaamd, is een cafeïnevrije drank van gedroogde kruiden, bloemen, bessen, wortels of zaden. Kruidenthee bevat geen Camellia sinensis-bladeren en is volledig cafeïnevrij. Populaire soorten zijn kamille (kalmerend), pepermunt (verfrissend), gember (verwarmend) en rozenbottel (rijk aan vitamine C).</p><h2>Kruidenthee voor elk moment van de dag</h2><p>Bij Tante Rie in Borne vind je kruidenthee voor elk moment. 's Ochtends een opwekkende Gemberwortel of verfrissende Zomermunt. 's Middags een licht verteerbare Kamille of kruidige Sterrenmunt. 's Avonds een rustgevende Slaap Lekker of kalmerende Goede Nacht voor een goede nachtrust.</p><h2>Meer dan 20 losse kruidentheesoorten</h2><p>Van pure kruiden zoals Gemberwortel (100% gember) en Kamille (100% kamillebloesem) tot complexe blends voor ontspanning (Relax), energie (Sterke Vrouw) of spijsvertering (Zoethout). Biologisch gecertificeerde varianten zijn ook verkrijgbaar. Alle kruidentheeën zijn cafeïnevrij en geschikt voor het hele gezin.</p><p>Bekijk ook de rooibos en vruchtenthee collecties voor meer cafeïnevrije alternatieven.</p><h2>Hoe zet je losse kruidenthee?</h2><p>Gebruik water van 95 graden Celsius en laat 5 tot 7 minuten trekken. Kruidenthee wordt niet bitter bij langere trektijd. Gebruik 1 theelepel per 250 ml. Voeg eventueel honing toe voor extra zoetheid. Tante Rie verstuurt vanuit Borne, Twente, binnen 1 tot 2 werkdagen in huis.</p><h2>Welke avondthee past bij jou?</h2><p>Twijfel je tussen Slaap Lekker en Innerlijke Rust BIO? In <a href=\"/pages/kruidenthee-avondritueel\">kruidenthee voor je avondritueel</a> zet ik ze naast elkaar: welke kruiden erin zitten, hoe ze smaken en welke bij welke avond past. Met het zetadvies erbij en waar je op moet letten als je zoethout liever vermijdt.</p>",
+      "seo": {
+        "title": null,
+        "description": "Losse kruidenthee: pure kamille en gember, pepermunt of een blend voor de avond. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen."
+      },
+      "metafields": {
+        "global.description_tag": "Losse kruidenthee: pure kamille en gember, pepermunt of een blend voor de avond. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen.",
+        "custom.seo_h1": "Kruidenthee Kopen — Kamille, Munt & Meer"
+      },
+      "productHandles": [
+        "sterke-vrouw",
+        "gemberwortel",
+        "herfstkruiden",
+        "kamille",
+        "slaap-lekker",
+        "innerlijke-rust-bio",
+        "zomer-munt",
+        "sterrenmunt",
+        "powervrouw",
+        "kurkuma-chai",
+        "zonnetje-in-huis",
+        "sportieve-thee",
+        "relax",
+        "rust",
+        "kruiden-chai",
+        "mama-baby-thee",
+        "mooie-dromen-bio",
+        "twentse-land",
+        "kruizemunt-nana-mint",
+        "elfjesthee",
+        "booster",
+        "gember-chai",
+        "brandnetel",
+        "zoethout",
+        "marocco-mint",
+        "lavendel",
+        "pepermunt",
+        "goede-nacht",
+        "knuffelbeer",
+        "pu-erh-thee"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/561696440584",
+      "handle": "rooibos",
+      "type": "manual",
+      "descriptionHtml": "<p>Rooibos is een cafeïnevrije infusie van de Aspalathus linearis struik, uitsluitend geteeld in de Cederberg-regio in Zuid-Afrika. De naaldvormige bladeren worden gefermenteerd, waardoor rooibos zijn karakteristieke roodbruine kleur en zachte, aardse smaak krijgt. Rooibos bevat geen cafeïne en weinig tannines. Minder bitter dan thee, geschikt voor alle leeftijden, ook voor kinderen en tijdens de zwangerschap.</p><h2>Gefermenteerde en groene rooibos</h2><p>Gefermenteerde rooibos heeft een warme, aardse smaak met een lichte zoetheid. Groene rooibos (ongefermenteerd) is lichter en frisser, met een hogere concentratie antioxidanten. Beide zijn volledig cafeïnevrij en van nature zoet, geen suiker nodig.</p><h2>Meer dan 20 rooibos varianten bij Tante Rie</h2><p>Van pure Rooibos Naturel BIO tot verwennende blends: Crème Brûlée, Rooibos Vanille, Pina Colada en Rooibos voor de Open Haard. Voor de chai-liefhebber is er Rooibos met Pit. Fruitige varianten zoals Rooibos Sinaasappel en Red Nose Rudolph (met goji en rode bessen) zijn ook verkrijgbaar. Alle rooibos wordt vers afgewogen in de winkel in Borne, Twente.</p><p>Bekijk ook de kruidentheeën en vruchtenthee voor meer cafeïnevrije opties.</p><h2>Hoe zet je rooibos?</h2><p>Gebruik water van 95 tot 100 graden Celsius en laat 5 tot 8 minuten trekken. Rooibos wordt niet bitter bij langere trektijd. Gebruik 1 theelepel per 250 ml. Lekker puur, maar ook heerlijk met een scheutje melk of honing.</p><h2>Veelgestelde vragen over rooibos</h2><h3>Zit er cafeïne in rooibosthee?</h3><p>Nee, rooibos is van nature volledig cafeïnevrij, ook na lange trektijd. Dit geldt voor zowel gefermenteerde als groene rooibos.</p><h3>Is rooibos geschikt voor kinderen of tijdens de zwangerschap?</h3><p>Ja, omdat rooibos cafeïnevrij is en weinig tannines bevat, is het een milde keuze die geschikt is voor alle leeftijden, ook voor kinderen en tijdens de zwangerschap.</p><h3>Wat is het verschil tussen gefermenteerde en groene rooibos?</h3><p>Gefermenteerde rooibos heeft de bekende roodbruine kleur en een warme, aardse smaak. Groene rooibos is ongefermenteerd, lichter van kleur en frisser van smaak, met meer antioxidanten.</p>",
+      "seo": {
+        "title": null,
+        "description": "Losse rooibos uit Zuid-Afrika in meer dan 20 blends, van naturel tot Crème Brûlée. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen."
+      },
+      "metafields": {
+        "global.description_tag": "Losse rooibos uit Zuid-Afrika in meer dan 20 blends, van naturel tot Crème Brûlée. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen.",
+        "custom.seo_h1": "Losse Rooibos Thee — Cafeïnevrij & Vol van Smaak"
+      },
+      "productHandles": [
+        "rooibos-sinaasappel",
+        "thee-van-oma",
+        "rooibos-voor-de-open-haard",
+        "rooibos-lemon-cheesecake",
+        "sinaasappel-chai",
+        "creme-brulee",
+        "rooibos-naturel-bio",
+        "rooibos-gember-citroen",
+        "indian-summer",
+        "appeltaart",
+        "festival",
+        "mooie-dag",
+        "rooibos-met-pit",
+        "rooibos-amaretto",
+        "rooibos-caramel-room",
+        "rooibos-vanille",
+        "rooibos-honing",
+        "romance",
+        "thee-van-opa",
+        "rozemarijn",
+        "sinterklaasthee",
+        "inspiratie",
+        "sterrennacht",
+        "red-nose-rudolph"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/561696506120",
+      "handle": "vruchtenthee",
+      "type": "manual",
+      "descriptionHtml": "<p><strong>Vruchtenthee</strong> is een cafeïnevrije infusie op basis van gedroogd fruit, schillen, hibiscus en bessen. Vruchtenthee bevat geen <em>Camellia sinensis</em>-bladeren en is daardoor volledig cafeïnevrij. Door de fruitige smaken en de levendige kleuren is vruchtenthee ook populair als ijsthee.</p>\n\n<h2>Warm én koud lekker</h2>\n<p>Vruchtenthee zet je warm, maar smaakt ook heerlijk koud als ijsthee. Laat een dubbel geconcentreerde kop trekken, giet over ijs en voeg een schijfje citroen of fruit toe. Een verfrissend alternatief voor frisdrank, zonder cafeïne of suiker.</p>\n\n<h2>Vruchtenthee bij Tante Rie</h2>\n<p>Van zomers friszure <strong>Wilde Kers</strong> en <strong>Fruitmand</strong> tot tropische <strong>Harverwarmer</strong> (appel, ananas, kaneel) en herfstachtige <strong>Herfstkruiden</strong>. En <strong>Geluksthee</strong> met hibiscus, framboos en papaya — een kopje vol kleur. Bekijk ook onze <a href=\"/collections/rooibos\">rooibos</a> en <a href=\"/collections/kruidenthee\">kruidentheeën</a> voor meer cafeïnevrije opties.</p>\n\n<h2>Hoe zet je vruchtenthee?</h2>\n<p>Gebruik water van <strong>95–100°C</strong> en laat de thee <strong>5 tot 8 minuten</strong> trekken. Vruchtenthee wordt niet bitter. Gebruik 1 theelepel per 250 ml. Geen suiker nodig — het fruit geeft van nature zoetheid.</p><h2>Veelgestelde vragen over vruchtenthee</h2><h3>Wat is vruchtenthee precies?</h3><p>Vruchtenthee is een infusie van gedroogd fruit, schillen, hibiscus en bessen, zonder bladeren van de theeplant. Daardoor telt het niet als \"echte\" thee, maar wel als een smaakvolle, cafeïnevrije drank.</p><h3>Zit er cafeïne in vruchtenthee?</h3><p>Nee, vruchtenthee is volledig cafeïnevrij omdat er geen Camellia sinensis-blad in verwerkt is. Geschikt voor de avond, kinderen en tijdens de zwangerschap.</p><h3>Kun je vruchtenthee ook koud drinken?</h3><p>Ja, vruchtenthee leent zich uitstekend voor ijsthee. Laat een dubbel geconcentreerde kop trekken, laat afkoelen en giet over ijs met een schijfje citroen of vers fruit.</p>",
+      "seo": {
+        "title": null,
+        "description": "Losse vruchtenthee van Wilde Kers tot Pina Colada, ook lekker als ijsthee. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen."
+      },
+      "metafields": {
+        "global.description_tag": "Losse vruchtenthee van Wilde Kers tot Pina Colada, ook lekker als ijsthee. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen.",
+        "custom.seo_h1": "Vruchtenthee Kopen — Natuurlijke Vruchtenmengsels"
+      },
+      "productHandles": [
+        "bornse-oase",
+        "geluksthee",
+        "exotic-punch",
+        "taartje-in-een-theeglas",
+        "boswandeling",
+        "wintersfeer",
+        "fruitmand",
+        "wilde-kers",
+        "citrus-betovering",
+        "pina-colada"
+      ]
+    },
+    {
+      "id": "gid://shopify/Collection/561696342280",
+      "handle": "zwarte-thee",
+      "note": "Doelcollectie voor Twentse Land en Pu-erh thee; alleen seo.description is optioneel in het voorstel (levertijd). Productlijst: zie voorstel; Boswandeling, Gember Chai en Sterrennacht staan er al in.",
+      "seo": {
+        "title": null,
+        "description": "Losse zwarte thee: Assam, Darjeeling, English Breakfast en Earl Grey, ruim 40 soorten. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen."
+      },
+      "productsCount": 42
+    },
+    {
+      "id": "gid://shopify/Collection/560110010632",
+      "handle": "groene-thee",
+      "note": "Elfjesthee en Marocco Mint staan hier al in; alleen seo.description is optioneel in het voorstel (levertijd).",
+      "seo": {
+        "title": null,
+        "description": "Meer dan 30 soorten losse groene thee: Japanse Sencha, Chinese Jasmijn en Marocco Mint. Vers afgewogen in Borne, bezorgd in 2 tot 3 werkdagen."
+      },
+      "productsCount": 42
+    }
+  ],
+  "producten_met_cafeine": [
+    {
+      "id": "gid://shopify/Product/10613708783880",
+      "handle": "boswandeling",
+      "title": "Boswandeling",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/boswandeling",
+      "tags": [
+        "bessen",
+        "fruitig",
+        "zomers",
+        "zwarte-thee"
+      ],
+      "collections": [
+        "thee",
+        "zwarte-thee",
+        "vruchtenthee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Normaal (gid://shopify/Metaobject/318924882184)",
+      "media": [
+        {
+          "id": "gid://shopify/MediaImage/62224038166792",
+          "alt": "Boswandeling losse kruidenthee van Tante Rie"
+        },
+        {
+          "id": "gid://shopify/MediaImage/63917515112712",
+          "alt": "Boswandeling losse kruidenthee in het zakje van Tante Rie"
+        }
+      ],
+      "ingredienten": "Zwarte thee, aardbeibladeren, aroma, stukjes aardbei, saffloerbloesem.",
+      "collectie_te_verwijderen": "vruchtenthee"
+    },
+    {
+      "id": "gid://shopify/Product/10772830945544",
+      "handle": "sterrennacht",
+      "title": "Sterrennacht",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/sterrennacht",
+      "tags": [
+        "feestelijk",
+        "kaneel",
+        "sinaasappel",
+        "warm",
+        "winter",
+        "zwarte-thee"
+      ],
+      "collections": [
+        "thee",
+        "zwarte-thee",
+        "rooibos",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Normaal (gid://shopify/Metaobject/318924882184)",
+      "media": [
+        {
+          "id": "gid://shopify/MediaImage/65100373524744",
+          "alt": "Sterrennacht losse kruidenthee van Tante Rie",
+          "url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/sterrennacht.jpg?v=1772050769"
+        }
+      ],
+      "ingredienten": "Zwarte thee, rooibos, dadel, kaneel, sinaasappelschil, sinaasappelbloesem, natuurlijk aroma, saffloerbloesem, natuurlijk sinaasappelaroma."
+    },
+    {
+      "id": "gid://shopify/Product/10775584112904",
+      "handle": "twentse-land",
+      "title": "Twentse Land",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/twentse-land",
+      "tags": [
+        "bergamot",
+        "earl-grey",
+        "streekthee",
+        "twenthe",
+        "zwarte-thee"
+      ],
+      "collections": [
+        "kruidenthee",
+        "thee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Normaal (gid://shopify/Metaobject/318924882184)",
+      "media": [
+        {
+          "id": "gid://shopify/MediaImage/65131122721032",
+          "alt": "Twentse Land losse zwarte thee van Tante Rie"
+        }
+      ],
+      "ingredienten": "Zwarte thee, peterselie, wortelvlokken, aroma."
+    },
+    {
+      "id": "gid://shopify/Product/10775584702728",
+      "handle": "gember-chai",
+      "title": "Gember Chai",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/gember-chai",
+      "tags": [
+        "chai",
+        "gember",
+        "pittig",
+        "verwarmend",
+        "zwarte-thee"
+      ],
+      "collections": [
+        "kruidenthee",
+        "thee",
+        "zwarte-thee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Normaal (gid://shopify/Metaobject/318924882184)",
+      "media": [
+        {
+          "id": "gid://shopify/MediaImage/65131145822472",
+          "alt": "Gember Chai losse kruidenthee van Tante Rie"
+        }
+      ],
+      "ingredienten": "Zwarte Thee, gember."
+    },
+    {
+      "id": "gid://shopify/Product/10769269621000",
+      "handle": "elfjesthee",
+      "title": "Elfjesthee",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/elfjesthee",
+      "tags": [
+        "anijs",
+        "cafeïnearm",
+        "groene-thee",
+        "peer",
+        "winter"
+      ],
+      "collections": [
+        "groene-thee",
+        "kruidenthee",
+        "thee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Cafeïnearm (gid://shopify/Metaobject/337536483592)",
+      "media": [
+        {
+          "id": "gid://shopify/MediaImage/65045995356424",
+          "alt": "Elfjesthee losse kruidenthee van Tante Rie"
+        }
+      ],
+      "ingredienten": "Stukjes appel, groene thee, amandel, cassiabast, citrusschil, aroma, natuurlijk aroma."
+    },
+    {
+      "id": "gid://shopify/Product/12339207962888",
+      "handle": "pu-erh-thee",
+      "title": "Pu-erh thee",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/pu-erh-thee",
+      "tags": [
+        "cafeïnevrij",
+        "fris",
+        "kruidenthee",
+        "munt",
+        "spearmint"
+      ],
+      "collections": [
+        "kruidenthee",
+        "thee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Decaf (gid://shopify/Metaobject/346059997448)",
+      "media": [],
+      "seo": {
+        "title": "Kruizemunt Nana Mint – Zachte Spearmint Kruidenthee | Tante Rie",
+        "description": "Kruizemunt Nana Mint (spearmint) is een zachte, caffeïnevrije kruidenthee met een milde, frisse muntsmaak. Ideaal voor Marokkaanse muntthee. Bestel bij Tante Rie."
+      },
+      "metafields": {
+        "global.title_tag": "Kruizemunt Nana Mint – Zachte Spearmint Kruidenthee | Tante Rie",
+        "global.description_tag": "Kruizemunt Nana Mint (spearmint) is een zachte, caffeïnevrije kruidenthee met een milde, frisse muntsmaak. Ideaal voor Marokkaanse muntthee. Bestel bij Tante Rie.",
+        "custom.smaakprofiel": "Pure spearmint, helder en koel verfrissend.",
+        "beschrijving.ingredienten": "Spearmint (kruizemunt, 100%).",
+        "shopify.caffeine-content": [
+          "gid://shopify/Metaobject/346059997448"
+        ],
+        "zetadvies.temperatuur": "95 °C",
+        "zetadvies.trektijd": "5–7 min",
+        "zetadvies.gram": "2 gram"
+      },
+      "ingredienten_in_productbeschrijving": "Pu-erh zwarte thee (100%).",
+      "zetadvies_in_productbeschrijving": "100°C · 3-5 minuten · 1 theelepel per 250 ml",
+      "google_product_category": "1529"
+    },
+    {
+      "id": "gid://shopify/Product/10613711405320",
+      "handle": "marocco-mint",
+      "title": "Marocco Mint",
+      "status": "ACTIVE",
+      "onlineStoreUrl": "https://tanterie.nl/products/marocco-mint",
+      "tags": [
+        "cafeïnearm",
+        "fris",
+        "groene-thee",
+        "munt"
+      ],
+      "collections": [
+        "groene-thee",
+        "kruidenthee",
+        "thee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "caffeine_content": "Cafeïnearm (gid://shopify/Metaobject/337536483592)",
+      "media": [
+        {
+          "id": "gid://shopify/MediaImage/62224110027016",
+          "alt": "Marocco Mint losse kruidenthee van Tante Rie"
+        },
+        {
+          "id": "gid://shopify/MediaImage/63917364871432",
+          "alt": "Marocco Mint losse kruidenthee in het zakje van Tante Rie"
+        }
+      ],
+      "ingredienten": "Groene thee, kruizemunt, aroma."
+    }
+  ],
+  "twijfelgevallen_niet_gewijzigd": [
+    {
+      "handle": "festival",
+      "id": "gid://shopify/Product/10775591878920",
+      "collecties": [
+        "thee",
+        "rooibos",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "tags": [
+        "feestelijk",
+        "fruitig",
+        "mango",
+        "sinaasappel",
+        "tropisch",
+        "zwarte-thee"
+      ],
+      "caffeine_content": "Normaal",
+      "ingredienten": "Rooibos, stukjes mango (mango, suiker, zuurteregelaar: citroenzuur), kardemom, aroma, goudsbloembloesem, rozenblaadjes, natuurlijk sinaasappelaroma.",
+      "beschrijving_zegt": "zwarte thee"
+    },
+    {
+      "handle": "sinaasappel-chai",
+      "id": "gid://shopify/Product/10614797205768",
+      "collecties": [
+        "thee",
+        "rooibos",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "tags": [
+        "chai",
+        "gember",
+        "kruidig",
+        "pittig",
+        "sinaasappel",
+        "zwarte-thee"
+      ],
+      "caffeine_content": "Normaal",
+      "ingredienten": "Rooibos, gesuikerde gember sticks, gember, sinaasappelschil, kardemom, aroma, natuurlijk gemberaroma, natuurlijk kardemomaroma.",
+      "beschrijving_zegt": "bouwt op rooibos, cafeïnevrij na het avondeten; SEO-title en alt-teksten zeggen zwarte chai"
+    },
+    {
+      "handle": "inspiratie",
+      "id": "gid://shopify/Product/10619433287944",
+      "collecties": [
+        "thee",
+        "rooibos",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "tags": [
+        "bloemig",
+        "cafeïnearm",
+        "citroen",
+        "groene-thee",
+        "mango",
+        "roos"
+      ],
+      "caffeine_content": "Cafeïnearm",
+      "ingredienten": "Rooibos, mango (mango, suiker, citroenzuur), kardemom, natuurlijk aroma, rozenblaadjes, goudsbloembloesem, natuurlijk limoenaroma.",
+      "beschrijving_zegt": "rooibos, cafeïnevrij"
+    },
+    {
+      "handle": "lavendel",
+      "id": "gid://shopify/Product/12122804683016",
+      "collecties": [
+        "kruidenthee",
+        "thee",
+        "losse-thee-btw-9",
+        "all-products-chatgpt-ai-product-description"
+      ],
+      "tags": [
+        "borstvoeding",
+        "kruidenthee"
+      ],
+      "caffeine_content": null,
+      "ingredienten": null,
+      "beschrijving_zegt": "leeg; SEO-title, SEO-description en afbeelding zijn die van Mama & Baby Thee"
+    }
+  ]
+}
