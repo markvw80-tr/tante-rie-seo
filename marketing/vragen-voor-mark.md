@@ -58,6 +58,7 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 23-10 | A4 Afhaalproducten uit Shopping | Akkoord: Bunzlau-aardewerk, Blond en Pineut-karaffen uit Shopping en gratis webvermeldingen, lokaal blijft | handwerk-mark A4, label custom_label_0 |
 | 23-10 | V71 Profiel Dutch Tea Maestro | Tweede webshop van Mark en Nikkie; later apart oppakken, nu niets mee doen | notitie, geen actie |
 | 23-10 | V72 Adres Bleekweg 34 Enschede | Woonadres | vervolgvraag V73 |
 | 23-10 | B1 Kassaproducten uit Google | Akkoord; geblokkeerd voor het team, handwerk voor Mark met lijst | handwerk-mark B1 |
