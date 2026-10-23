@@ -1,0 +1,31 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup V69 retourbeleid vóór wijziging",
+ "inhoud": [
+  {
+   "name": "accounts/5716348221/onlineReturnPolicies/8426603433",
+   "returnPolicyId": "8426603433",
+   "countries": [
+    "NL"
+   ],
+   "policy": {},
+   "returnMethods": [
+    "BY_MAIL"
+   ],
+   "itemConditions": [
+    "NEW"
+   ],
+   "returnShippingFee": {
+    "type": "FIXED",
+    "fixedFee": {
+     "amountMicros": "0",
+     "currencyCode": "EUR"
+    }
+   },
+   "returnPolicyUri": "https://webshop.tanterie.nl/retourbeleid",
+   "processRefundDays": 2,
+   "acceptExchange": true,
+   "returnLabelSource": "CUSTOMER_RESPONSIBILITY"
+  }
+ ]
+}

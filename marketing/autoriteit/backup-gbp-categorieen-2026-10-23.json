@@ -1,0 +1,221 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup V65 categorieen vóór wijziging",
+ "inhoud": {
+  "primaryCategory": {
+   "name": "categories/gcid:tea_store",
+   "displayName": "Theewinkel",
+   "moreHoursTypes": [
+    {
+     "hoursTypeId": "ACCESS",
+     "displayName": "Access",
+     "localizedDisplayName": "Toegang"
+    },
+    {
+     "hoursTypeId": "BREAKFAST",
+     "displayName": "Breakfast",
+     "localizedDisplayName": "Ontbijt"
+    },
+    {
+     "hoursTypeId": "BRUNCH",
+     "displayName": "Brunch",
+     "localizedDisplayName": "Brunch"
+    },
+    {
+     "hoursTypeId": "DELIVERY",
+     "displayName": "Delivery",
+     "localizedDisplayName": "Levering"
+    },
+    {
+     "hoursTypeId": "DINNER",
+     "displayName": "Dinner",
+     "localizedDisplayName": "Diner"
+    },
+    {
+     "hoursTypeId": "DRIVE_THROUGH",
+     "displayName": "Drive through",
+     "localizedDisplayName": "Drive-in"
+    },
+    {
+     "hoursTypeId": "HAPPY_HOUR",
+     "displayName": "Happy hours",
+     "localizedDisplayName": "Happy hour"
+    },
+    {
+     "hoursTypeId": "KITCHEN",
+     "displayName": "Kitchen",
+     "localizedDisplayName": "Keuken"
+    },
+    {
+     "hoursTypeId": "LUNCH",
+     "displayName": "Lunch",
+     "localizedDisplayName": "Lunch"
+    },
+    {
+     "hoursTypeId": "ONLINE_SERVICE_HOURS",
+     "displayName": "Online service hours",
+     "localizedDisplayName": "Openingstijden voor online service"
+    },
+    {
+     "hoursTypeId": "PICKUP",
+     "displayName": "Pickup",
+     "localizedDisplayName": "Ophalen"
+    },
+    {
+     "hoursTypeId": "TAKEOUT",
+     "displayName": "Takeout",
+     "localizedDisplayName": "Afhalen"
+    },
+    {
+     "hoursTypeId": "SENIOR_HOURS",
+     "displayName": "Senior hours",
+     "localizedDisplayName": "Openingstijden voor ouderen"
+    }
+   ]
+  },
+  "additionalCategories": [
+   {
+    "name": "categories/gcid:gift_shop",
+    "displayName": "Cadeauwinkel",
+    "moreHoursTypes": [
+     {
+      "hoursTypeId": "ACCESS",
+      "displayName": "Access",
+      "localizedDisplayName": "Toegang"
+     },
+     {
+      "hoursTypeId": "BREAKFAST",
+      "displayName": "Breakfast",
+      "localizedDisplayName": "Ontbijt"
+     },
+     {
+      "hoursTypeId": "BRUNCH",
+      "displayName": "Brunch",
+      "localizedDisplayName": "Brunch"
+     },
+     {
+      "hoursTypeId": "DELIVERY",
+      "displayName": "Delivery",
+      "localizedDisplayName": "Levering"
+     },
+     {
+      "hoursTypeId": "DINNER",
+      "displayName": "Dinner",
+      "localizedDisplayName": "Diner"
+     },
+     {
+      "hoursTypeId": "DRIVE_THROUGH",
+      "displayName": "Drive through",
+      "localizedDisplayName": "Drive-in"
+     },
+     {
+      "hoursTypeId": "HAPPY_HOUR",
+      "displayName": "Happy hours",
+      "localizedDisplayName": "Happy hour"
+     },
+     {
+      "hoursTypeId": "KITCHEN",
+      "displayName": "Kitchen",
+      "localizedDisplayName": "Keuken"
+     },
+     {
+      "hoursTypeId": "LUNCH",
+      "displayName": "Lunch",
+      "localizedDisplayName": "Lunch"
+     },
+     {
+      "hoursTypeId": "ONLINE_SERVICE_HOURS",
+      "displayName": "Online service hours",
+      "localizedDisplayName": "Openingstijden voor online service"
+     },
+     {
+      "hoursTypeId": "PICKUP",
+      "displayName": "Pickup",
+      "localizedDisplayName": "Ophalen"
+     },
+     {
+      "hoursTypeId": "TAKEOUT",
+      "displayName": "Takeout",
+      "localizedDisplayName": "Afhalen"
+     },
+     {
+      "hoursTypeId": "SENIOR_HOURS",
+      "displayName": "Senior hours",
+      "localizedDisplayName": "Openingstijden voor ouderen"
+     }
+    ]
+   },
+   {
+    "name": "categories/gcid:coffee_store",
+    "displayName": "Koffiewinkel",
+    "moreHoursTypes": [
+     {
+      "hoursTypeId": "ACCESS",
+      "displayName": "Access",
+      "localizedDisplayName": "Toegang"
+     },
+     {
+      "hoursTypeId": "BREAKFAST",
+      "displayName": "Breakfast",
+      "localizedDisplayName": "Ontbijt"
+     },
+     {
+      "hoursTypeId": "BRUNCH",
+      "displayName": "Brunch",
+      "localizedDisplayName": "Brunch"
+     },
+     {
+      "hoursTypeId": "DELIVERY",
+      "displayName": "Delivery",
+      "localizedDisplayName": "Levering"
+     },
+     {
+      "hoursTypeId": "DINNER",
+      "displayName": "Dinner",
+      "localizedDisplayName": "Diner"
+     },
+     {
+      "hoursTypeId": "DRIVE_THROUGH",
+      "displayName": "Drive through",
+      "localizedDisplayName": "Drive-in"
+     },
+     {
+      "hoursTypeId": "HAPPY_HOUR",
+      "displayName": "Happy hours",
+      "localizedDisplayName": "Happy hour"
+     },
+     {
+      "hoursTypeId": "KITCHEN",
+      "displayName": "Kitchen",
+      "localizedDisplayName": "Keuken"
+     },
+     {
+      "hoursTypeId": "LUNCH",
+      "displayName": "Lunch",
+      "localizedDisplayName": "Lunch"
+     },
+     {
+      "hoursTypeId": "ONLINE_SERVICE_HOURS",
+      "displayName": "Online service hours",
+      "localizedDisplayName": "Openingstijden voor online service"
+     },
+     {
+      "hoursTypeId": "PICKUP",
+      "displayName": "Pickup",
+      "localizedDisplayName": "Ophalen"
+     },
+     {
+      "hoursTypeId": "TAKEOUT",
+      "displayName": "Takeout",
+      "localizedDisplayName": "Afhalen"
+     },
+     {
+      "hoursTypeId": "SENIOR_HOURS",
+      "displayName": "Senior hours",
+      "localizedDisplayName": "Openingstijden voor ouderen"
+     }
+    ]
+   }
+  ]
+ }
+}

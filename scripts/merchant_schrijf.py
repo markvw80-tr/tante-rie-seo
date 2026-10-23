@@ -68,6 +68,7 @@ def retourbeleid(s, uitvoeren):
     for b in oud:
         nieuw = {k: v for k, v in b.items() if k not in ("name", "returnPolicyId")}
         nieuw["returnPolicyUri"] = RETOUR_NIEUW
+        nieuw["label"] = "Retourbeleid tanterie.nl"
         # De API kent geen update: eerst het nieuwe beleid aanmaken, pas daarna het oude weghalen.
         gemaakt = check(s.post(API + ACC + "/onlineReturnPolicies", json=nieuw), "aanmaken")
         print("aangemaakt:", gemaakt.get("name"), gemaakt.get("returnPolicyUri"))
