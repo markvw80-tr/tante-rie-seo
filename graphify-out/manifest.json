@@ -105,9 +105,9 @@
     "semantic_hash": "9380174516645aaa9cf77c3be35ae3c9"
   },
   "/Users/markvanwijk/Tante Rie SEO/CLAUDE.md": {
-    "mtime": 1792616449.0829027,
-    "ast_hash": "08013f0c085426025520a900d0444207",
-    "semantic_hash": "08013f0c085426025520a900d0444207"
+    "mtime": 1792758956.2687266,
+    "ast_hash": "5e3c348363e54c90f10da3bf92dea45e",
+    "semantic_hash": "5e3c348363e54c90f10da3bf92dea45e"
   },
   "/Users/markvanwijk/Tante Rie SEO/README.md": {
     "mtime": 1792608305.371288,
@@ -115,9 +115,9 @@
     "semantic_hash": "e895aac1a61318fae0a8564ed505f21a"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/changelog.md": {
-    "mtime": 1792616818.862242,
-    "ast_hash": "5d17f376813dc46e079940d1bb34bae8",
-    "semantic_hash": "5d17f376813dc46e079940d1bb34bae8"
+    "mtime": 1792758080.152519,
+    "ast_hash": "7708951896d0b0eb57e2663c52dde687",
+    "semantic_hash": "7708951896d0b0eb57e2663c52dde687"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/zoekwoorden/clusters-2026-10-21.md": {
     "mtime": 1792608863.7838535,
@@ -175,9 +175,9 @@
     "semantic_hash": "48fcbbe27260169b84995fe6ecfe1ecd"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/brief-2026-10-21.md": {
-    "mtime": 1792616818.8511188,
-    "ast_hash": "dbe03c39d7aef59c2d53dfdd12a40c4e",
-    "semantic_hash": "dbe03c39d7aef59c2d53dfdd12a40c4e"
+    "mtime": 1792685273.786033,
+    "ast_hash": "c2d4c79c3aac78515d4e8f50abc233d9",
+    "semantic_hash": "c2d4c79c3aac78515d4e8f50abc233d9"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/rapporten/migratiemonitor-2026-10-21.md": {
     "mtime": 1792615787.3313766,
@@ -213,5 +213,285 @@
     "mtime": 1792616781.8292525,
     "ast_hash": "0154e44cca3e103bec7f947f3983fd35",
     "semantic_hash": "0154e44cca3e103bec7f947f3983fd35"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/backup-gbp-media-2026-10-23.json": {
+    "mtime": 1792735455.2923553,
+    "ast_hash": "e69ec9b164b8a8316941b6d4fe09dcdb",
+    "semantic_hash": "e69ec9b164b8a8316941b6d4fe09dcdb"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/backup-gbp-specialhours-2026-10-22.json": {
+    "mtime": 1792706353.9288583,
+    "ast_hash": "6473a67423bb7008964347e9616bc649",
+    "semantic_hash": "6473a67423bb7008964347e9616bc649"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/content/backup-paginas-2026-10-23.json": {
+    "mtime": 1792732518.1454647,
+    "ast_hash": "483872ed4f41fcd574a789ce790cfb51",
+    "semantic_hash": "483872ed4f41fcd574a789ce790cfb51"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-2026-10-22.json": {
+    "mtime": 1792694021.1804779,
+    "ast_hash": "a6cff511bc57de0a1589f103be5819ba",
+    "semantic_hash": "a6cff511bc57de0a1589f103be5819ba"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-atelier-2026-10-22.json": {
+    "mtime": 1792703265.690756,
+    "ast_hash": "502a1bc71c6bf87de237a7230a5fb079",
+    "semantic_hash": "502a1bc71c6bf87de237a7230a5fb079"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-bunzlau-textiel-2026-10-23.json": {
+    "mtime": 1792755562.7659767,
+    "ast_hash": "6d8f10d1818222f7f7cfb0a8f3695449",
+    "semantic_hash": "6d8f10d1818222f7f7cfb0a8f3695449"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-metas-thee-blond-2026-10-23.json": {
+    "mtime": 1792758045.3023825,
+    "ast_hash": "6b4c1215d357ec0aaea1e3be00218797",
+    "semantic_hash": "6b4c1215d357ec0aaea1e3be00218797"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-seo-meta-2026-10-22.json": {
+    "mtime": 1792706369.0051553,
+    "ast_hash": "6ec6ef4eea580d10742e442ffd4ec496",
+    "semantic_hash": "6ec6ef4eea580d10742e442ffd4ec496"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-tags-pakket-2026-10-23.json": {
+    "mtime": 1792754810.3991377,
+    "ast_hash": "80df4e38774ef04518974c450c1fc9f2",
+    "semantic_hash": "80df4e38774ef04518974c450c1fc9f2"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-tags-vaatwasser-2026-10-23.json": {
+    "mtime": 1792732398.0895848,
+    "ast_hash": "98555073bd1e5c42baaaf4e81ac51561",
+    "semantic_hash": "98555073bd1e5c42baaaf4e81ac51561"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-vaatwasser-2026-10-22.json": {
+    "mtime": 1792706387.6773798,
+    "ast_hash": "257f12f33408b531bf84ff9cc54d3e5a",
+    "semantic_hash": "257f12f33408b531bf84ff9cc54d3e5a"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-verzendprofielen-2026-10-23.json": {
+    "mtime": 1792746324.6266787,
+    "ast_hash": "1593b706ab7df063e3c02df913843e7d",
+    "semantic_hash": "1593b706ab7df063e3c02df913843e7d"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-melamine-rice-sjabloon-2026-10-22.json": {
+    "mtime": 1792704218.6779826,
+    "ast_hash": "09803d7b815401d02b73547b654fb3d9",
+    "semantic_hash": "09803d7b815401d02b73547b654fb3d9"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/winkelfotos-shopify-2026-10-23.json": {
+    "mtime": 1792735113.4319983,
+    "ast_hash": "c02185c17912feaefed84d64971101dd",
+    "semantic_hash": "c02185c17912feaefed84d64971101dd"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/archief-themas/header-group-backup-2026-10-23-live-203153015048/sections/header-group.json": {
+    "mtime": 1792756616.2769003,
+    "ast_hash": "f4048882d7e7aaa284108b8946a13c3d",
+    "semantic_hash": "f4048882d7e7aaa284108b8946a13c3d"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/archief-themas/servies-hub-backup-2026-10-23-live-203153015048/templates/collection.servies.json": {
+    "mtime": 1792720431.8189905,
+    "ast_hash": "e0ec181d768758dadb807c39ec98218b",
+    "semantic_hash": "e0ec181d768758dadb807c39ec98218b"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/archief-themas/winkelfotos-backup-2026-10-23-live-203153015048/templates/collection.bunzlau.json": {
+    "mtime": 1792735584.2911148,
+    "ast_hash": "2c81b209889aeeac445a6aa63989768c",
+    "semantic_hash": "2c81b209889aeeac445a6aa63989768c"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/archief-themas/winkelfotos-backup-2026-10-23-live-203153015048/templates/collection.rice.json": {
+    "mtime": 1792735584.290809,
+    "ast_hash": "6a8fb55f6d6d744f7016a0dad9be306c",
+    "semantic_hash": "6a8fb55f6d6d744f7016a0dad9be306c"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/archief-themas/winkelfotos-backup-2026-10-23-live-203153015048/templates/page.lokaal.json": {
+    "mtime": 1792735584.291407,
+    "ast_hash": "9c93ccc38fb5e292eaa34ae1a186d0bf",
+    "semantic_hash": "9c93ccc38fb5e292eaa34ae1a186d0bf"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/graphify-out/memory/query_20261022_054726_waarom_verbindt_het_maandplan_vijf_communities.md": {
+    "mtime": 1792648046.783908,
+    "ast_hash": "77fa9e1150cd1fe1e9609b57f4edef50",
+    "semantic_hash": "77fa9e1150cd1fe1e9609b57f4edef50"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md": {
+    "mtime": 1792756788.3122437,
+    "ast_hash": "5b977c835dab22b79297df1e3ea45628",
+    "semantic_hash": "5b977c835dab22b79297df1e3ea45628"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/content/blond-body-2026-10-23.html": {
+    "mtime": 1792720756.687754,
+    "ast_hash": "203159c94e4edcc968d73b511e0d5408",
+    "semantic_hash": "203159c94e4edcc968d73b511e0d5408"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/content/blond-body-met-foto-2026-10-23.html": {
+    "mtime": 1792735294.2089713,
+    "ast_hash": "26112cabd11a2abf07c3d26c3035d445",
+    "semantic_hash": "26112cabd11a2abf07c3d26c3035d445"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/content/concept-blond-2026-10-22.md": {
+    "mtime": 1792720471.7972524,
+    "ast_hash": "c4e296b75e454aa1f1197c3a4a22578e",
+    "semantic_hash": "c4e296b75e454aa1f1197c3a4a22578e"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/content/concept-theewinkel-borne-2026-10-22.md": {
+    "mtime": 1792720441.8358488,
+    "ast_hash": "3a025ae4aac527087288363da6360d52",
+    "semantic_hash": "3a025ae4aac527087288363da6360d52"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/verzendprofielen-voorstel-2026-10-23.md": {
+    "mtime": 1792745375.6127675,
+    "ast_hash": "6fa50acf633cc754481c7899e6bbb586",
+    "semantic_hash": "6fa50acf633cc754481c7899e6bbb586"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/voorstel-metas-thee-blond-2026-10-23.md": {
+    "mtime": 1792757837.8243957,
+    "ast_hash": "d69b3bcf54b9f2fe80b5b114350ac2fb",
+    "semantic_hash": "d69b3bcf54b9f2fe80b5b114350ac2fb"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/voorstel-servies-en-atelier-2026-10-22.md": {
+    "mtime": 1792698981.2711992,
+    "ast_hash": "a02fdc97a9c0e0f89bd87bdc81224052",
+    "semantic_hash": "a02fdc97a9c0e0f89bd87bdc81224052"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/voorstel-titles-joeff-blikken-2026-10-22.md": {
+    "mtime": 1792694070.8937597,
+    "ast_hash": "ae61d9a427a0cd46c8b62181fa5ab5e5",
+    "semantic_hash": "ae61d9a427a0cd46c8b62181fa5ab5e5"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/voorstel-vaatwasser-en-meta-2026-10-22.md": {
+    "mtime": 1792703791.2950103,
+    "ast_hash": "596270dd3e5d484e93ad6172432a6442",
+    "semantic_hash": "596270dd3e5d484e93ad6172432a6442"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/review/review-actie-4-en-5-2026-10-22.md": {
+    "mtime": 1792653248.8859146,
+    "ast_hash": "ef3cc111f66bc184c8dcdb0fad8565b2",
+    "semantic_hash": "ef3cc111f66bc184c8dcdb0fad8565b2"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/review/review-blond-2026-10-23.md": {
+    "mtime": 1792720509.3713725,
+    "ast_hash": "515b3a4042961cd7af19dea728ba5ca0",
+    "semantic_hash": "515b3a4042961cd7af19dea728ba5ca0"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/review/review-metas-thee-blond-2026-10-23.md": {
+    "mtime": 1792757871.687642,
+    "ast_hash": "a67fdcdae7b4b1e7cb25ee5f68054744",
+    "semantic_hash": "a67fdcdae7b4b1e7cb25ee5f68054744"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/review/review-theewinkel-tweede-2026-10-23.md": {
+    "mtime": 1792720498.2499006,
+    "ast_hash": "3ee2fa87aed40fbc1e302f6f99024c9e",
+    "semantic_hash": "3ee2fa87aed40fbc1e302f6f99024c9e"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/merchant-center-analyse-2026-10-23.md": {
+    "mtime": 1792760237.9265008,
+    "ast_hash": "4e6410440cdde7a6ec28920ef78c78d1",
+    "semantic_hash": "4e6410440cdde7a6ec28920ef78c78d1"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-afhaalregels-blond-bunzlau-2026-10-22.md": {
+    "mtime": 1792702533.9553273,
+    "ast_hash": "09a4acb576b45b9627c71f154cd1516f",
+    "semantic_hash": "09a4acb576b45b9627c71f154cd1516f"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-bunzlau-verzend-generiek-2026-10-23.md": {
+    "mtime": 1792755232.944822,
+    "ast_hash": "582b135c2a73d7de78eed6db1376eb80",
+    "semantic_hash": "582b135c2a73d7de78eed6db1376eb80"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-itemprop-description-2026-10-22.md": {
+    "mtime": 1792697283.6512187,
+    "ast_hash": "e11911a440229974c3a96354419a79ed",
+    "semantic_hash": "e11911a440229974c3a96354419a79ed"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-judgeme-schema-2026-10-23.md": {
+    "mtime": 1792745361.8916316,
+    "ast_hash": "10a10fe44d597634e1e90f4d85b2969c",
+    "semantic_hash": "10a10fe44d597634e1e90f4d85b2969c"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-melamine-rice-2026-10-22.md": {
+    "mtime": 1792703894.1701725,
+    "ast_hash": "ed7a758f9d5200630410b3cbcecfdf4c",
+    "semantic_hash": "ed7a758f9d5200630410b3cbcecfdf4c"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-schema-pakket-reviews-2026-10-23.md": {
+    "mtime": 1792750148.3440309,
+    "ast_hash": "93c7571f4d588dc78373f95a650cbfc9",
+    "semantic_hash": "93c7571f4d588dc78373f95a650cbfc9"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-theewinkel-blond-2026-10-23.md": {
+    "mtime": 1792720885.0864909,
+    "ast_hash": "bd6086bb4e6448ad6f3a6f63c0c72327",
+    "semantic_hash": "bd6086bb4e6448ad6f3a6f63c0c72327"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-winkelfotos-2026-10-23.md": {
+    "mtime": 1792735392.9913194,
+    "ast_hash": "a099605f400f6880b8b2f79d0e37eb2d",
+    "semantic_hash": "a099605f400f6880b8b2f79d0e37eb2d"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/vragen-voor-mark.md": {
+    "mtime": 1792760263.1319785,
+    "ast_hash": "1170203b6c3c46bfa4e136abafda9548",
+    "semantic_hash": "1170203b6c3c46bfa4e136abafda9548"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/blond-amsterdam-wand.jpg": {
+    "mtime": 1792734884.266247,
+    "ast_hash": "4dc51e467e895c748d599af7725e45e7",
+    "semantic_hash": "4dc51e467e895c748d599af7725e45e7"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/bunzlau-kast.jpg": {
+    "mtime": 1792734884.260981,
+    "ast_hash": "038421d11c50c872c118d5ac6ce1df7c",
+    "semantic_hash": "038421d11c50c872c118d5ac6ce1df7c"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/bunzlau-wand.jpg": {
+    "mtime": 1792734884.2578514,
+    "ast_hash": "58ba7937c7902e9fcef0836e94dec716",
+    "semantic_hash": "58ba7937c7902e9fcef0836e94dec716"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/cadeautafel-winkel.jpg": {
+    "mtime": 1792734884.271248,
+    "ast_hash": "80a3b7dfcda33304c2f53fe8e5be20d9",
+    "semantic_hash": "80a3b7dfcda33304c2f53fe8e5be20d9"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/gevel-bakkerssteeg-6.jpg": {
+    "mtime": 1792734884.2520263,
+    "ast_hash": "dfbe21e141e1c01ea8fc0ec53d88b745",
+    "semantic_hash": "dfbe21e141e1c01ea8fc0ec53d88b745"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/rice-melamine-wand.jpg": {
+    "mtime": 1792734884.268712,
+    "ast_hash": "c40b5cdafc0324f776d1d7abe49216bb",
+    "semantic_hash": "c40b5cdafc0324f776d1d7abe49216bb"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/theewand-losse-thee.jpg": {
+    "mtime": 1792734884.255098,
+    "ast_hash": "5a1b62d142b67a0c708955050dea8894",
+    "semantic_hash": "5a1b62d142b67a0c708955050dea8894"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/toonbank-bunzlau-theedoeken.jpg": {
+    "mtime": 1792734884.2635837,
+    "ast_hash": "7a3f9d213ce6db0263817ff1dcaa2531",
+    "semantic_hash": "7a3f9d213ce6db0263817ff1dcaa2531"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/screenshots/home-linkblok-live-2026-10-22-mobiel.jpg": {
+    "mtime": 1792697551.1722882,
+    "ast_hash": "7ce30f6603b4acf3fd34e26458f603ea",
+    "semantic_hash": "7ce30f6603b4acf3fd34e26458f603ea"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/screenshots/theewinkel-preview-2026-10-23-mobiel.jpg": {
+    "mtime": 1792720930.9650798,
+    "ast_hash": "c12b484c950dac77098b689cd1f4575b",
+    "semantic_hash": "c12b484c950dac77098b689cd1f4575b"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/screenshots/theewinkel-preview-winkelfotos-mobiel-boven-2026-10-23.png": {
+    "mtime": 1792735374.5916035,
+    "ast_hash": "a1baaabe994d575feba8659a618d2250",
+    "semantic_hash": "a1baaabe994d575feba8659a618d2250"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/assets/screenshots/theewinkel-preview-winkelfotos-mobiel-volledig-2026-10-23.png": {
+    "mtime": 1792735377.9844742,
+    "ast_hash": "d21352dcb49ab871cb581fcab8a457ad",
+    "semantic_hash": "d21352dcb49ab871cb581fcab8a457ad"
   }
 }
