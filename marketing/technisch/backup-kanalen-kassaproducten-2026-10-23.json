@@ -1,0 +1,1533 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup B1/V69 stap 1 en V63: verkoopkanalen vóór het weghalen van Google & YouTube (en voor bunzlau-textiel ook Webshop en Shop). rice-z staat online en blijft ongewijzigd.",
+ "publicaties": {
+  "Webshop": "gid://shopify/Publication/312969855240",
+  "Point of Sale": "gid://shopify/Publication/312969888008",
+  "Shop": "gid://shopify/Publication/312969953544",
+  "Google & YouTube": "gid://shopify/Publication/322024079624"
+ },
+ "kassaproducten": [
+  {
+   "id": "gid://shopify/Product/12227624206600",
+   "handle": "mug-tulip-400-ml",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032712048904",
+   "handle": "positivitea",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088386846984",
+   "handle": "kaart-nfc",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12346776518920",
+   "handle": "colombia-decaf-koffie-1-kilo",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991897407752",
+   "handle": "kaars-hoera",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130847359240",
+   "handle": "blik-goud-limited-edtion",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624141064",
+   "handle": "sauce-bowl-50-ml",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12129704837384",
+   "handle": "witte-mok",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175482159368",
+   "handle": "beste-van-borne-koffie",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12053101314312",
+   "handle": "honing",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088385929480",
+   "handle": "kaart-joeff",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12139738235144",
+   "handle": "botervloot-rechthoekig-winter-garden",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990562078984",
+   "handle": "goed-gedaan-joh",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624009992",
+   "handle": "hanger-teapot",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12099010068744",
+   "handle": "rice-lepel-groot-print",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992572264712",
+   "handle": "coldbrew-theefles-roze",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12106221093128",
+   "handle": "pouchbag-cava-sangria",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992350753032",
+   "handle": "mix-voor-stol-500-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992362123528",
+   "handle": "dream-it-wish-it-do-it",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12129706705160",
+   "handle": "glas-laag-1",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088375542024",
+   "handle": "kaart-flash-studio-gekleurde-envelop",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130841559304",
+   "handle": "blik-rood",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12106217783560",
+   "handle": "the-berry-best-strawberry",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12051931365640",
+   "handle": "luminlique-3-opzetters",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992367497480",
+   "handle": "ik-ben-helemaal-ondersteboven-van-jou",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990558441736",
+   "handle": "sterkte-thee",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992565776648",
+   "handle": "fuck-it",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034441281800",
+   "handle": "jij-bent-top",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034458648840",
+   "handle": "dubai-cake",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12155664072968",
+   "handle": "maatlepel-dtm",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130855387400",
+   "handle": "plank-5-vakken-bladvorm",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992567316744",
+   "handle": "one-step-at-a-time",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088379605256",
+   "handle": "kaart-maps-gekleurde-kaarten",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992566333704",
+   "handle": "paris-london-berlin-borne",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991886463240",
+   "handle": "kaars-momentje-het-is-tijd-voor-een-complimentje",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992566530312",
+   "handle": "i-you",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12030350524680",
+   "handle": "kaartje-1-95",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990529933576",
+   "handle": "bakflesje-gefeliciteerd",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12099010298120",
+   "handle": "rice-lepe-klein-print",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992346591496",
+   "handle": "jij-bent-goud-waard-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991884366088",
+   "handle": "kaars-pluk-de-dag",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12059539079432",
+   "handle": "tegelhouder-joeff",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990552969480",
+   "handle": "very-nice-tea",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032713064712",
+   "handle": "super-meester",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12250778796296",
+   "handle": "colombia-decaf-koffie-250-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12099022225672",
+   "handle": "rice-vorkje-klein",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992361435400",
+   "handle": "mrs-mrs",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032712278280",
+   "handle": "super-juf",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032711819528",
+   "handle": "hakuna-matat",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990530523400",
+   "handle": "bakflesje-taartje-voor-een-topper",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12106222010632",
+   "handle": "pouchbag-watertwist-cranberry-kersen",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12250777452808",
+   "handle": "kenia-koffie-1-kilo",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992366907656",
+   "handle": "mr-mrs",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12106222371080",
+   "handle": "choco-cupcakes-junior",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991878500616",
+   "handle": "mini-kaars",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034439938312",
+   "handle": "chai-latte",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992565285128",
+   "handle": "love-rood-roze",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992349704456",
+   "handle": "mix-voor-cupcakes-500-gram-1",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130839593224",
+   "handle": "blik-zwart",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991888789768",
+   "handle": "kaars-jij-bent-goud-waard",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12136002322696",
+   "handle": "spiegelschakel",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624075528",
+   "handle": "hanger-cup-and-saucer",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991908221192",
+   "handle": "kaars-van-harte-gefeliciteerd",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130851782920",
+   "handle": "tea-maker",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034454978824",
+   "handle": "matcha-cake",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032713916680",
+   "handle": "tea-is-always-a-good-idea",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992566989064",
+   "handle": "you-me",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175512043784",
+   "handle": "ethiopie-koffie-1-kilo",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088378327304",
+   "handle": "kaartje-annelies-vonk",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032713687304",
+   "handle": "doe-maar-gek",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992345641224",
+   "handle": "hoera-gefeliciteerd-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088378720520",
+   "handle": "kaart-christa-mulder",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992363696392",
+   "handle": "bitch",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034451112200",
+   "handle": "cranberry-cookie",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992566104328",
+   "handle": "blah-blah",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990546874632",
+   "handle": "soeper-dikke-knuffel",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175519088904",
+   "handle": "india-koffie-250-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130846146824",
+   "handle": "blik-groen",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12346774978824",
+   "handle": "kenia-koffie-250-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12030350754056",
+   "handle": "kaartjes-2-95",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991894360328",
+   "handle": "kaars-leef-lach-lief",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12030379196680",
+   "handle": "kaartje-1",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992369627400",
+   "handle": "dad",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032713556232",
+   "handle": "girlboss",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130853585160",
+   "handle": "plank-2-vakken",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991885316360",
+   "handle": "kaars-big-huis",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034423849224",
+   "handle": "harmony",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992368185608",
+   "handle": "ik-vind-je-lief-leuk-en-fucking-lekker",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034447802632",
+   "handle": "pina-colada-pineut",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991880794376",
+   "handle": "kaars-jij-bent-hartstikke-leuk",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12095390712072",
+   "handle": "cherry-cassis",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12059685880072",
+   "handle": "kaars-thank-you-so-much",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130842968328",
+   "handle": "blik-geel",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992345870600",
+   "handle": "topper-goed-gedaan-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992367857928",
+   "handle": "zoooo-blij-dat-ik-jou-ken",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991881908488",
+   "handle": "kaars-leukerd",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992369430792",
+   "handle": "hey-jij-leukerd",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175509160200",
+   "handle": "indonesie-koffie-500-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088374264072",
+   "handle": "kaart-blond",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032712016136",
+   "handle": "you-did-it",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990017605896",
+   "handle": "jij-bent-goud-waard",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130845229320",
+   "handle": "blik-blauw",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992346689800",
+   "handle": "dank-voor-je-zorg-150g-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992347705608",
+   "handle": "hartelijk-dank-neutraal-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130844115208",
+   "handle": "blik-roze",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992343445768",
+   "handle": "allerliefste-mama-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990543302920",
+   "handle": "soeper-gefeliciteerd",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991903928584",
+   "handle": "kaars-jij-bent-echt-een-topper",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12034438005000",
+   "handle": "cherry-likeur",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130851225864",
+   "handle": "rond-blikje-zilver",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12051931791624",
+   "handle": "luminlique-medium-5-opzetters",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991904780552",
+   "handle": "kaars-liefs",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11999052890376",
+   "handle": "rice-q-kopie",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12030359109896",
+   "handle": "buisje-thee",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992368840968",
+   "handle": "coole-meester",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991902257416",
+   "handle": "kaars-thanks-a-million",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991890067720",
+   "handle": "kaars-een-lichtje-liefde",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990540845320",
+   "handle": "jij-bent-soepel",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12158235083016",
+   "handle": "plateau",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990518137096",
+   "handle": "theetje-voor-een-topper",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992567677192",
+   "handle": "display-hout",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992571937032",
+   "handle": "coldbrew-theefles-mint",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12066918629640",
+   "handle": "veel-beterschap",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032713392392",
+   "handle": "spice-up-your-life",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991909925128",
+   "handle": "kaars-lots-of-love",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175515353352",
+   "handle": "india-koffie-1-kilo",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992344985864",
+   "handle": "allerliefste-opa-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992346001672",
+   "handle": "om-je-op-te-fleuren-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175507751176",
+   "handle": "indonesie-koffie-1-kilo",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12051932152072",
+   "handle": "luminlique-groot-7-opzetters",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12032711459080",
+   "handle": "hartje",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175510536456",
+   "handle": "ethiopie-koffie-500-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12129704608008",
+   "handle": "glas-hoog",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12175486124296",
+   "handle": "beste-van-borne-koffie-250-gram",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12129704116488",
+   "handle": "glas-en-schotel",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991882498312",
+   "handle": "kaars-geluk-in-de-kleine-dingen",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992370118920",
+   "handle": "dream-plan-do",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990534258952",
+   "handle": "bierbrood-in-fles",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992567218440",
+   "handle": "you-me-1",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990708814088",
+   "handle": "thank-you-cho-much",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227623911688",
+   "handle": "bowl-square-70-ml",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992367235336",
+   "handle": "spijt-is-voor-later",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11991906418952",
+   "handle": "kaars-sending-you-good-luck-wishes",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990509748488",
+   "handle": "theetje-voor-mijn-lieve-juf",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12000987808008",
+   "handle": "teeli-flip-l-theefilter",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12051932283144",
+   "handle": "luminlique-los",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12088376918280",
+   "handle": "kaart-jolly-wringen",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12099006693640",
+   "handle": "rice-lepel-groot-effen",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12129703657736",
+   "handle": "glas-laag",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130855616776",
+   "handle": "plank-7-vakken",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992346165512",
+   "handle": "i-love-you-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992346362120",
+   "handle": "veel-liefs-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992362057992",
+   "handle": "mijn-favoriete-plekje-is-naast-jou",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992565448968",
+   "handle": "shit",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992367268104",
+   "handle": "megatrots-op-een-zoon-zoals-jij",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992361795848",
+   "handle": "older-wiser-hotter-than-ever",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992362451208",
+   "handle": "30-fabulous",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12130854076680",
+   "handle": "plank-5-vakken",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624108296",
+   "handle": "cake-dish-flat-o-15-5-cm",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992361566472",
+   "handle": "mooie-momenten-worden-kostbare-herinneringen",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992344396040",
+   "handle": "allerliefste-oma-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992364974344",
+   "handle": "daddycool",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990556180744",
+   "handle": "feliciteer-thee",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624173832",
+   "handle": "mug-cappuccino-400-ml",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992346427656",
+   "handle": "veel-geluk-chocolade",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11990519939336",
+   "handle": "theetje-voor-m-n-lieve-vriendin",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12136001339656",
+   "handle": "spiegel",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11992370807048",
+   "handle": "borne-skyline",
+   "kanalen_voor": [
+    "Point of Sale",
+    "Shop",
+    "Google & YouTube"
+   ]
+  }
+ ],
+ "bunzlau_textiel": {
+  "id": "gid://shopify/Product/12269014417672",
+  "kanalen_voor": [
+   "Webshop",
+   "Point of Sale",
+   "Shop",
+   "Google & YouTube"
+  ]
+ }
+}

@@ -16,10 +16,7 @@ Bijgewerkt: 23 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt,
 **V67 ⚪ Cafeïne in thee-collecties.** De collecties vruchtenthee, rooibos en kruidenthee noemen zichzelf "cafeïnevrij" (in de paginatekst en in de titel van vruchtenthee en kruidenthee), maar bevatten ook theesoorten met cafeïne: Boswandeling, Sterrennacht, Twentse Land, Gember Chai, Elfjesthee en Pu-erh. Mag het team voorstellen deze producten in de juiste collectie te zetten, de alt-tekst van Sterrennacht te verbeteren en de oude levertijd in de kruidenthee-tekst aan te passen? Ja/nee
 **Antwoord:**
 
-**V71 🟡 Tweede Bedrijfsprofiel "Dutch Tea Maestro".** In Business Manager staat een tweede profiel op Bakkerssteeg 6, Borne. Is dat een eigen bedrijf of winkel-in-winkel, of een oud of dubbel profiel van Tante Rie? Mag het team de gegevens alleen lezend ophalen?
-**Antwoord:**
-
-**V72 ⚪ Bedrijfsadres in Merchant Center.** Account 5716348221 heeft als adres Bleekweg 34, Enschede. Klopt dat of moet het Bakkerssteeg 6, Borne zijn?
+**V73 ⚪ Woonadres in Merchant Center.** Het bedrijfsadres in account 5716348221 is jullie woonadres (Bleekweg 34, Enschede). Google kan dat adres tonen bij de verkopergegevens. Advies: vervang het door het winkeladres Bakkerssteeg 6, 7622 GX Borne, voor privacy en omdat het dan overal hetzelfde adres is als in het Bedrijfsprofiel. Mag het team dit wijzigen? Ja/nee
 **Antwoord:**
 
 ## 1. Fouten die nu live staan
@@ -61,6 +58,9 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 23-10 | V71 Profiel Dutch Tea Maestro | Tweede webshop van Mark en Nikkie; later apart oppakken, nu niets mee doen | notitie, geen actie |
+| 23-10 | V72 Adres Bleekweg 34 Enschede | Woonadres | vervolgvraag V73 |
+| 23-10 | B1 Kassaproducten uit Google | Akkoord; geblokkeerd voor het team, handwerk voor Mark met lijst | handwerk-mark B1 |
 | 23-10 | V70 Twee Merchant-accounts | Ja: feed uit en claim intrekken op 5819585029, tanterie.nl claimen op 5716348221 (uitgevoerd 23-10); sluiten na twee weken | changelog, merchant-twee-accounts-voorstel |
 | 23-10 | V26 Bedrijfsprofiel 21-24 sept | Niets veranderd; Anke is oud-eigenaar en heeft niets meer met de winkel te maken. Akkoord om de Search Console-mails te lezen: 16-09 nieuwe indexeringsreden Serverfout (5xx), 25-09 en 29-09 meerdere samengestelde beoordelingen (dubbel Judge.me-blok, opgelost 23-10) | onderzoek zichtbaarheidsval (5xx als spoor) |
 | 23-10 | V65 Bedrijfsprofiel actie 3 | Alles ja (10 vragen) | autoriteit/voorstel-bedrijfsprofiel, changelog |

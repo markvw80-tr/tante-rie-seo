@@ -26,7 +26,9 @@ Status:
 
 ## B. Shopify (V69)
 
-**B1. Kassaproducten uit Google & YouTube (grootste opschoning).** De lijst van 169 producten staat in data/merchant/2026-10-23-kassaproducten-in-google.json. In Shopify: Producten > filter "Verkoopkanaal: Webshop" op niet beschikbaar en "Google & YouTube" op beschikbaar > alles selecteren > Meer acties > Uitsluiten van verkoopkanalen > Google & YouTube. Point of Sale blijft aan. Neem Bunzlau textiel (V63) direct mee: daar ook Webshop en Shop uitvinken.
+**B1. Kassaproducten uit Google & YouTube (grootste opschoning).** Akkoord Mark 23-10. Het team kan dit niet zelf: de Shopify-koppeling weigert het weghalen van producten van een kanaal. Het team heeft gecontroleerd dat 168 producten niet in de webshop staan en dus weg mogen uit Google; rice-z staat wel online en blijft staan. De lijst met handles staat in marketing/technisch/b1-kassaproducten-google-2026-10-23.txt, de stand vooraf in marketing/technisch/backup-kanalen-kassaproducten-2026-10-23.json.
+Snelste manier in Shopify: Producten > filter Verkoopkanaal, kies "Webshop" en zet het filter op "niet opgenomen". Je ziet dan precies de kassaproducten. Selecteer alles (ook "alle producten selecteren" bovenaan) > Meer acties > Uitsluiten van verkoopkanalen > vink alleen Google & YouTube aan > Uitsluiten. Point of Sale en Shop blijven staan. Controleer daarna dat rice-z niet in de selectie zat (die staat in de webshop, dus valt buiten dit filter).
+Bunzlau textiel (V63): open het product > Verkoopkanalen beheren > vink Webshop, Shop en Google & YouTube uit, laat Point of Sale aan.
 Status:
 
 **B2. Eenheidsprijs testen op twee theesoorten.** Producten > Kamille > variant > Prijs per eenheid aanzetten: totale hoeveelheid 40 g, eenheid 100 g. Producten > Gemberwortel: totale hoeveelheid 100 g, eenheid 100 g. Het team controleert na de volgende synchronisatie (1 tot 2 dagen) of Merchant Center de melding "Missing unit pricing measure" voor deze twee kwijt is; daarna volgen de overige 123 losse theesoorten.
