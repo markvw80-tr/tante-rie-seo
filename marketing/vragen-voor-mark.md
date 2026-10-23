@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 22 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 23 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -13,13 +13,7 @@ Bijgewerkt: 22 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt,
 **V63 ⚪ Product "Bunzlau textiel" zonder foto.** Staat online zonder foto en geeft daardoor een fout op de pagina. Offline halen, of komt er een foto?
 **Antwoord:** Offline, wel in POS; later verrijken (23-10). Uitvoering bij Mark: de Shopify-koppeling blokkeert unpublish. In Shopify: Producten > Bunzlau textiel > Verkoopkanalen beheren, vink Webshop, Shop en Google & YouTube uit, laat Point of Sale aan. Schrijf "gedaan" als het klaar is.
 
-**V65 🟡 Bedrijfsprofiel bijwerken (actie 3).** Het voorstel staat klaar: autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md, met categorieën, een nieuwe beschrijving, 4 berichten met je winkelfoto's (27 oktober t/m 17 november) en een reviewbeleid. Onderaan staan 10 ja/nee-vragen. Je kunt ze daar invullen of hier "alles ja" zetten.
-**Antwoord:**
-
 **V67 ⚪ Cafeïne in thee-collecties.** De collecties vruchtenthee, rooibos en kruidenthee noemen zichzelf "cafeïnevrij" (in de paginatekst en in de titel van vruchtenthee en kruidenthee), maar bevatten ook theesoorten met cafeïne: Boswandeling, Sterrennacht, Twentse Land, Gember Chai, Elfjesthee en Pu-erh. Mag het team voorstellen deze producten in de juiste collectie te zetten, de alt-tekst van Sterrennacht te verbeteren en de oude levertijd in de kruidenthee-tekst aan te passen? Ja/nee
-**Antwoord:**
-
-**V69 🟡 Merchant Center opschonen.** De analyse staat in technisch/merchant-center-analyse-2026-10-23.md, met tien stappen en onderaan 8 ja/nee-vragen. Kern: 169 kassaproducten staan op het kanaal Google & YouTube en geven daardoor 404's en afkeuringen; het retourbeleid in Merchant Center wijst naar een kapotte webshop.tanterie.nl-link; 27 online producten hebben geen foto; Bunzlau en Blond (alleen afhalen) staan in Shopping. Vul de vragen in het rapport in of zet hier "alles volgens advies".
 **Antwoord:**
 
 ## 1. Fouten die nu live staan
@@ -48,9 +42,6 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 ## 6. Maandplan oktober (plan-2026-10.md)
 
-**V26 🔴 Bedrijfsprofiel rond 21 tot 24 september (beslissing 2).** Is er toen iets veranderd in het profiel (naam, categorie, adres, openingstijden, verificatie, een melding of opschorting)? Nodig voor het onderzoek naar de zichtbaarheidsval.
-**Antwoord:** Mark vraagt of het team zijn mailbox mag doorzoeken (23-10). Profiel zelf toont niets dat de val verklaart (zie voorstel-bedrijfsprofiel). Gmail doorzocht 23-10 (10 sep tot 5 okt, alleen afzenders van Google): geen mails over wijzigingen, verificatie of opschorting van het Bedrijfsprofiel, alleen het prestatierapport augustus. Wel Search Console-meldingen op 16-09 (nieuwe reden niet-geïndexeerd), 25-09 (reviewfragmenten) en 29-09 (productfragmenten en verkopersvermeldingen). Nog te vragen: Nikkie en Anke.
-
 **V28 🟡 Startsein homepagebesluit (beslissing 4).** Akkoord: twee weken geen vertoningen meer op http://www.tanterie.nl/ voor niet-merkzoekwoorden, en https://tanterie.nl/ binnen drie posities van de oude positie? Ja/nee
 **Antwoord:**
 
@@ -64,6 +55,9 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 23-10 | V26 Bedrijfsprofiel 21-24 sept | Niets veranderd; Anke is oud-eigenaar en heeft niets meer met de winkel te maken. Akkoord om de Search Console-mails te lezen: 16-09 nieuwe indexeringsreden Serverfout (5xx), 25-09 en 29-09 meerdere samengestelde beoordelingen (dubbel Judge.me-blok, opgelost 23-10) | onderzoek zichtbaarheidsval (5xx als spoor) |
+| 23-10 | V65 Bedrijfsprofiel actie 3 | Alles ja (10 vragen) | autoriteit/voorstel-bedrijfsprofiel, changelog |
+| 23-10 | V69 Merchant Center opschonen | Alles volgens advies | technisch/merchant-center-analyse, changelog |
 | 22-10 | Beste van Borne, wat is het | Thee | concept theewinkel |
 | 22-10 | Blond: kleurrijk of licht en eenvoudig | Kleurrijk | concept theewinkel, brief autoriteit |
 | 22-10 | "De" of "een" theewinkel in Borne | De theewinkel | concept theewinkel |

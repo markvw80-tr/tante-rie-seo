@@ -1,0 +1,8 @@
+{
+  "gemaakt": "2026-10-23",
+  "doel": "Backup V69 stap 6: eenheidsprijs leeg vóór test op twee losse theesoorten",
+  "varianten": [
+    {"product": "kamille", "id": "gid://shopify/ProductVariant/52894486757640", "prijs": "4.25", "gewicht_g": 40, "unitPriceMeasurement": {"quantityValue": 0, "quantityUnit": null, "referenceValue": 0, "referenceUnit": null}},
+    {"product": "gemberwortel", "id": "gid://shopify/ProductVariant/52894531518728", "prijs": "4.75", "gewicht_g": 100, "unitPriceMeasurement": {"quantityValue": 0, "quantityUnit": null, "referenceValue": 0, "referenceUnit": null}}
+  ]
+}
