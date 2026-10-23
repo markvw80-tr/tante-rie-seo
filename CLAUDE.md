@@ -59,7 +59,7 @@ python3 gsc_inspect.py https://tanterie.nl/<pad> --json                 # indexa
 python3 pagespeed_check.py https://tanterie.nl/ --json                  # Lighthouse + CrUX
 ```
 
-GA4: property `properties/521523059` (Tante Rie), toegang via hetzelfde service-account; `python3 ga4_report.py --property properties/521523059 --json` in dezelfde scriptmap. Merchant Center: account 5716348221; lezen via de Merchant API (https://merchantapi.googleapis.com/products/v1/accounts/5716348221/products) met het service-account; project is op 23-10 als ontwikkelaar aangemeld. Chrome UX Report API is ingeschakeld op de bestaande API-sleutel.
+GA4: property `properties/521523059` (Tante Rie), toegang via hetzelfde service-account; `python3 ga4_report.py --property properties/521523059 --json` in dezelfde scriptmap. Merchant Center: account 5716348221; lezen via de Merchant API (https://merchantapi.googleapis.com/products/v1/accounts/5716348221/products) met het service-account; project is op 23-10 als ontwikkelaar aangemeld. Chrome UX Report API is ingeschakeld op de bestaande API-sleutel. Google Ads API (Keyword Planner, voor zoekvolumes) is op 23-10 aangezet en Basic access voor het ontwikkelaarstoken is aangevraagd; het Google Ads-account bestaat al. Tot de goedkeuring werkt de zoekwoordonderzoeker met handmatige Keyword Planner-exports in `data/keyword-planner/`; de invoerlijst staat in `marketing/zoekwoorden/keyword-planner-invoer-2026-10-23.txt`.
 
 Sla ruwe exports op in `data/gsc/` als `JJJJ-MM-DD-<onderwerp>.json`. Shopify gaat via de Shopify-koppeling. Ahrefs (plan te laag) en Semrush (geen API-units) werken niet via de API; gebruik alleen handmatige exports in `data/ahrefs/` en `data/semrush/` als die er zijn.
 
