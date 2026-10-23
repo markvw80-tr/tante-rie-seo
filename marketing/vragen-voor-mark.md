@@ -16,6 +16,15 @@ Bijgewerkt: 23 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt,
 **V67 ⚪ Cafeïne in thee-collecties.** De collecties vruchtenthee, rooibos en kruidenthee noemen zichzelf "cafeïnevrij" (in de paginatekst en in de titel van vruchtenthee en kruidenthee), maar bevatten ook theesoorten met cafeïne: Boswandeling, Sterrennacht, Twentse Land, Gember Chai, Elfjesthee en Pu-erh. Mag het team voorstellen deze producten in de juiste collectie te zetten, de alt-tekst van Sterrennacht te verbeteren en de oude levertijd in de kruidenthee-tekst aan te passen? Ja/nee
 **Antwoord:**
 
+**V70 🔴 Twee Merchant Center-accounts.** Account 5819585029 (Nikkie, automatische feed, 392 producten die sinds juli wachten op beoordeling) houdt de claim op www.tanterie.nl vast, waardoor het echte account 5716348221 tanterie.nl niet kan claimen. Voorstel in technisch/merchant-twee-accounts-voorstel-2026-10-23.md: in 5819585029 de automatische feed uit en de claim intrekken, daarna claimt het team tanterie.nl op 5716348221, en na twee weken 5819585029 sluiten. Mag het team stap 1 tot en met 3 uitvoeren? Ja/nee
+**Antwoord:**
+
+**V71 🟡 Tweede Bedrijfsprofiel "Dutch Tea Maestro".** In Business Manager staat een tweede profiel op Bakkerssteeg 6, Borne. Is dat een eigen bedrijf of winkel-in-winkel, of een oud of dubbel profiel van Tante Rie? Mag het team de gegevens alleen lezend ophalen?
+**Antwoord:**
+
+**V72 ⚪ Bedrijfsadres in Merchant Center.** Account 5716348221 heeft als adres Bleekweg 34, Enschede. Klopt dat of moet het Bakkerssteeg 6, Borne zijn?
+**Antwoord:**
+
 ## 1. Fouten die nu live staan
 
 **V2 🟡 Personalisatie, concepten en foto's.** Mogen de 4 conceptproducten (Fit Girl, EB Pink Mini Mug, Happy Mug Rollerskate, Blond Hug Mug Tea) meteen mee, en moeten voorbeeldfoto's met handgeschreven tekst uit de productgalerijen?
