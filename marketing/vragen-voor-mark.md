@@ -10,13 +10,7 @@ Bijgewerkt: 23 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt,
 
 ## 0. Spoed
 
-**V63 ⚪ Product "Bunzlau textiel" zonder foto.** Staat online zonder foto en geeft daardoor een fout op de pagina. Offline halen, of komt er een foto?
-**Antwoord:** Offline, wel in POS; later verrijken (23-10). Uitvoering bij Mark: de Shopify-koppeling blokkeert unpublish. In Shopify: Producten > Bunzlau textiel > Verkoopkanalen beheren, vink Webshop, Shop en Google & YouTube uit, laat Point of Sale aan. Schrijf "gedaan" als het klaar is.
-
 **V67 ⚪ Cafeïne in thee-collecties.** De collecties vruchtenthee, rooibos en kruidenthee noemen zichzelf "cafeïnevrij" (in de paginatekst en in de titel van vruchtenthee en kruidenthee), maar bevatten ook theesoorten met cafeïne: Boswandeling, Sterrennacht, Twentse Land, Gember Chai, Elfjesthee en Pu-erh. Mag het team voorstellen deze producten in de juiste collectie te zetten, de alt-tekst van Sterrennacht te verbeteren en de oude levertijd in de kruidenthee-tekst aan te passen? Ja/nee
-**Antwoord:**
-
-**V73 ⚪ Woonadres in Merchant Center.** Het bedrijfsadres in account 5716348221 is jullie woonadres (Bleekweg 34, Enschede). Google kan dat adres tonen bij de verkopergegevens. Advies: vervang het door het winkeladres Bakkerssteeg 6, 7622 GX Borne, voor privacy en omdat het dan overal hetzelfde adres is als in het Bedrijfsprofiel. Mag het team dit wijzigen? Ja/nee
 **Antwoord:**
 
 ## 1. Fouten die nu live staan
@@ -58,6 +52,8 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 23-10 | V73 Woonadres Merchant Center | Aangepast door Mark naar Bakkerssteeg 6, Borne | changelog |
+| 23-10 | V63 Bunzlau textiel offline | Gedaan door Mark, pagina 404, POS blijft | changelog |
 | 23-10 | A4 Afhaalproducten uit Shopping | Akkoord: Bunzlau-aardewerk, Blond en Pineut-karaffen uit Shopping en gratis webvermeldingen, lokaal blijft | handwerk-mark A4, label custom_label_0 |
 | 23-10 | V71 Profiel Dutch Tea Maestro | Tweede webshop van Mark en Nikkie; later apart oppakken, nu niets mee doen | notitie, geen actie |
 | 23-10 | V72 Adres Bleekweg 34 Enschede | Woonadres | vervolgvraag V73 |
