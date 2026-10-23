@@ -1,0 +1,78 @@
+{%- doc -%}
+  Verzend- en retourgegevens voor een schema.org Offer (shippingDetails + hasMerchantReturnPolicy).
+  Gedeeld door tr-product-schema, het fallbackblok in schema-structured-data en product-cro,
+  zodat er een enkele bron is voor deze waarden. Output eindigt zonder komma.
+  Plaats het fragment als laatste eigenschappen binnen een Offer-object.
+
+  Verzendtarief volgt het Shopify-verzendprofiel "Algemeen profiel" (Nederland), dat op totaal gewicht
+  werkt: 0 tot 300 gram = 4,50 euro (brievenbuspakje), 301 tot 5000 gram = 6,95 euro (pakket).
+  Voor een product geldt het laagste variantgewicht. Gewicht 0 (niet ingevuld) valt in de eerste klasse,
+  net als in de checkout. Pas de drempel en de bedragen hier aan als de verzendinstellingen veranderen.
+
+  @param {object} [product] - Het product; bepaalt het tarief via het laagste variantgewicht (gram).
+  @param {boolean} [is_thee] - Voedingsproduct (losse thee): retour niet toegestaan.
+  @param {boolean} [pickup_only] - Alleen afhalen in de winkel: doesNotShip.
+
+  @example
+    "availability": "...",
+    {%- render 'tr-offer-policies', is_thee: is_thee -%}
+{%- enddoc -%}
+{%- assign shipping_rate_value = '4.50' -%}
+{%- if product -%}
+  {%- assign min_weight = 1000000 -%}
+  {%- for v in product.variants -%}
+    {%- if v.weight < min_weight -%}{%- assign min_weight = v.weight -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if min_weight > 300 and min_weight < 1000000 -%}{%- assign shipping_rate_value = '6.95' -%}{%- endif -%}
+{%- endif -%}
+    {%- if pickup_only -%}
+    "availableDeliveryMethod": "https://schema.org/OnSitePickup",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "doesNotShip": true,
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+      }
+    },
+    {%- else -%}
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "{{ shipping_rate_value }}",
+        "currency": "EUR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 2,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    {%- endif -%}
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "NL",
+      {%- if is_thee -%}
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      {%- else -%}
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 14,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnShippingFees"
+      {%- endif -%}
+    }

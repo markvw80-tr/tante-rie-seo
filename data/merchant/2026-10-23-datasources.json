@@ -1,0 +1,115 @@
+{
+  "dataSources": [
+    {
+      "name": "accounts/5716348221/dataSources/10606676973",
+      "dataSourceId": "10606676973",
+      "displayName": "Shopify App API",
+      "primaryProductDataSource": {
+        "feedLabel": "EUR_107259592968",
+        "contentLanguage": "nl",
+        "countries": [
+          "NL"
+        ],
+        "defaultRule": {
+          "takeFromDataSources": [
+            {
+              "self": true
+            }
+          ]
+        },
+        "destinations": [
+          {
+            "destination": "LOCAL_INVENTORY_ADS",
+            "state": "DISABLED"
+          },
+          {
+            "destination": "FREE_LOCAL_LISTINGS",
+            "state": "DISABLED"
+          },
+          {
+            "destination": "DISPLAY_ADS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "FREE_LISTINGS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "SHOPPING_ADS",
+            "state": "ENABLED"
+          }
+        ]
+      },
+      "input": "API"
+    },
+    {
+      "name": "accounts/5716348221/dataSources/10681078097",
+      "dataSourceId": "10681078097",
+      "displayName": "Local Feed Partnership",
+      "primaryProductDataSource": {
+        "feedLabel": "EUR_107259592968",
+        "contentLanguage": "nl",
+        "defaultRule": {
+          "takeFromDataSources": [
+            {
+              "self": true
+            }
+          ]
+        },
+        "destinations": [
+          {
+            "destination": "LOCAL_INVENTORY_ADS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "FREE_LOCAL_LISTINGS",
+            "state": "ENABLED"
+          }
+        ],
+        "legacyLocal": true
+      }
+    },
+    {
+      "name": "accounts/5716348221/dataSources/10706837209",
+      "dataSourceId": "10706837209",
+      "displayName": "Shopify App API",
+      "primaryProductDataSource": {
+        "feedLabel": "EUR_114053906696",
+        "contentLanguage": "nl",
+        "countries": [
+          "BE"
+        ],
+        "defaultRule": {
+          "takeFromDataSources": [
+            {
+              "self": true
+            }
+          ]
+        },
+        "destinations": [
+          {
+            "destination": "LOCAL_INVENTORY_ADS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "FREE_LOCAL_LISTINGS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "DISPLAY_ADS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "FREE_LISTINGS",
+            "state": "ENABLED"
+          },
+          {
+            "destination": "SHOPPING_ADS",
+            "state": "ENABLED"
+          }
+        ]
+      },
+      "input": "API"
+    }
+  ]
+}

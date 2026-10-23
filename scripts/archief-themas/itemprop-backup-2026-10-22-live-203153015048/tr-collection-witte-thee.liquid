@@ -1,0 +1,570 @@
+{% comment %} Tante Rie – Witte Thee Collectie Landingspagina {% endcomment %}
+
+<style>
+/* ─── Witte thee design tokens ────────────────────────── */
+:root {
+  --wt-main:  #3D4A5C;
+  --wt-mid:   #606A7B;
+  --wt-light: #ECEFF3;
+  --wt-dark:  #212936;
+  --wt-accent:#8EA5BF;
+}
+
+/* ─── Wrapper ────────────────────────────────────────────────────────────── */
+.trwt-wrap *, .trwt-wrap *::before, .trwt-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.trwt-wrap { background: var(--cream); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.trwt-hero { position: relative; background: var(--wt-dark); overflow: hidden; }
+.trwt-hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--wt-dark) 0%, var(--wt-main) 60%, var(--wt-mid) 100%); }
+.trwt-hero-pattern { position: absolute; inset: 0; opacity: .06; background-image: radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #fff 1px, transparent 1px), radial-gradient(circle at 60% 80%, #fff 1px, transparent 1px); background-size: 48px 48px, 72px 72px, 60px 60px; }
+.trwt-hero-img { position: absolute; inset: 0; }
+.trwt-hero-img img { width: 100%; height: 100%; object-fit: cover; opacity: .2; }
+.trwt-hero-inner { position: relative; z-index: 1; padding: 52px var(--page-margin) 48px; max-width: 760px; }
+.trwt-breadcrumb { font-size: 12px; color: rgba(255,255,255,.6); letter-spacing: .04em; margin-bottom: 18px; }
+.trwt-breadcrumb a { color: rgba(255,255,255,.6); text-decoration: none; }
+.trwt-breadcrumb a:hover { color: #fff; }
+.trwt-breadcrumb span { margin: 0 6px; }
+.trwt-hero-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); border-radius: 50px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 18px; }
+.trwt-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1.15; margin-bottom: 14px; }
+.trwt-hero-sub { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: rgba(255,255,255,.75); margin-bottom: 28px; line-height: 1.6; max-width: 560px; }
+.trwt-hero-meta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.trwt-hero-count { font-size: 13px; color: rgba(255,255,255,.65); }
+.trwt-hero-loc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.1); border-radius: 50px; padding: 5px 14px; font-size: 12px; color: rgba(255,255,255,.8); }
+
+/* ─── Sticky bar ─────────────────────────────────────────────────────────── */
+.trwt-sticky-bar { position: sticky; top: var(--header-group-height, 64px); transition: top var(--animation-speed-slow, .3s) var(--ease-out-cubic, ease); z-index: 7; background: var(--wt-light); box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+
+/* ─── USP bar ────────────────────────────────────────────────────────────── */
+.trwt-usp-bar { background: var(--wt-light); border-bottom: 1px solid rgba(107,125,153,.15); position: sticky; top: var(--header-group-height, 64px); transition: top var(--animation-speed-slow, .3s) var(--ease-out-cubic, ease); z-index: 7; box-shadow: 0 -4px 0 4px var(--wt-light); }
+.trwt-usp-inner { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; gap: 0; }
+.trwt-usp-item { display: flex; align-items: center; gap: 12px; padding: 18px 32px; border-right: 1px solid rgba(107,125,153,.15); flex: 1; min-width: 200px; }
+.trwt-usp-item:last-child { border-right: none; }
+.trwt-usp-icon { font-size: 1.4rem; flex-shrink: 0; }
+.trwt-usp-text strong { display: block; font-size: 13px; font-weight: 600; color: var(--wt-main); }
+.trwt-usp-text span { font-size: 12px; color: var(--wt-mid); }
+@media (max-width: 700px) { .trwt-usp-item { border-right: none; border-bottom: 1px solid rgba(107,125,153,.15); padding: 14px 20px; } .trwt-usp-item:last-child { border-bottom: none; } }
+
+/* ─── Filter toolbar ─────────────────────────────────────────────────────── */
+.trwt-filter-toolbar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 12px var(--page-margin); border-bottom: 1px solid rgba(107,125,153,.15); margin-bottom: 0; flex-wrap: wrap; gap: 10px; background: transparent; }
+.trwt-filter-groups { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.trwt-filter-pill-wrap { position: relative; }
+.trwt-filter-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 16px; font-size: 13px; background: var(--white); cursor: pointer; display: flex; gap: 6px; align-items: center; font-family: 'DM Sans', sans-serif; color: var(--brown-dark); }
+.trwt-filter-pill.active { border-color: var(--brown-dark); background: var(--brown-dark); color: var(--white); }
+.trwt-filter-pill svg { transition: transform .2s; }
+.trwt-filter-pill[aria-expanded="true"] svg { transform: rotate(180deg); }
+.trwt-filter-dropdown { display: none; position: absolute; background: var(--white); border: 1px solid var(--cream-dark); border-radius: 14px; padding: 16px; min-width: 200px; z-index: 20; box-shadow: 0 8px 24px rgba(0,0,0,.1); top: calc(100% + 8px); left: 0; max-height: 280px; overflow-y: auto; }
+.trwt-filter-dropdown.open { display: block; }
+.trwt-filter-option { display: flex; gap: 8px; align-items: center; font-size: 13px; padding: 6px 0; cursor: pointer; font-family: 'DM Sans', sans-serif; color: var(--brown-dark); }
+.trwt-filter-option input { cursor: pointer; accent-color: var(--wt-mid); }
+.trwt-active-strip { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px var(--page-margin) 10px; background: transparent; }
+.trwt-filter-chip { background: var(--wt-light); border-radius: 50px; padding: 4px 12px; font-size: 12px; display: flex; gap: 6px; align-items: center; text-decoration: none; color: var(--wt-main); font-family: 'DM Sans', sans-serif; }
+.trwt-filter-sort { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 16px; font-size: 13px; background: var(--white); cursor: pointer; color: var(--brown-dark); font-family: 'DM Sans', sans-serif; appearance: none; -webkit-appearance: none; }
+.trwt-filter-overlay { display: none; position: fixed; inset: 0; z-index: 10; }
+.trwt-filter-overlay.open { display: block; }
+
+/* ─── Product grid ───────────────────────────────────────────────────────── */
+.trwt-grid-wrap { padding: 28px var(--page-margin) 64px; position: relative; z-index: 0; }
+.trwt-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.trwt-card { background: var(--white); border-radius: 18px; overflow: hidden; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .22s ease, box-shadow .22s ease; animation: trwtFadeUp .45s ease both; }
+.trwt-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(61,74,92,.12); }
+@keyframes trwtFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.trwt-card:nth-child(1) { animation-delay: .04s; }
+.trwt-card:nth-child(2) { animation-delay: .08s; }
+.trwt-card:nth-child(3) { animation-delay: .12s; }
+.trwt-card:nth-child(4) { animation-delay: .16s; }
+.trwt-card:nth-child(n+5) { animation-delay: .20s; }
+.trwt-card-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); position: relative; display: block; }
+.trwt-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; transition: transform .4s ease; display: block; }
+.trwt-card:hover .trwt-card-img img { transform: scale(1.05); }
+.trwt-badge { position: absolute; top: 12px; left: 12px; font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 50px; }
+.trwt-badge--stock { background: #d5edd5; color: #2e6b2e; }
+.trwt-badge--soldout { background: rgba(74,50,34,.12); color: var(--brown-dark); }
+.trwt-card-body { padding: 16px 16px 18px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.trwt-card-type { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--wt-mid); }
+.trwt-card-name { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--brown-dark); line-height: 1.3; }
+.trwt-card-desc { font-size: 12px; color: var(--text-muted); line-height: 1.55; margin-top: 4px; flex: 1; }
+.trwt-card-flavors { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 12.5px; color: var(--text-muted); line-height: 1.55; margin-top: 4px; flex: 1; }
+.trwt-card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.trwt-tag { display: inline-block; font-size: 9.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; padding: 2px 7px; border-radius: 50px; background: var(--tag-bg, #f0ece6); color: var(--green); border: 1px solid rgba(59,82,64,.15); }
+.trwt-card-footer { display: flex; align-items: flex-end; justify-content: space-between; margin-top: auto; padding-top: 14px; gap: 8px; }
+.trwt-card-price { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown-dark); font-weight: 400; }
+.trwt-card-compare { font-size: .8rem; color: var(--text-muted); text-decoration: line-through; margin-left: 4px; }
+.trwt-btn-atc { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 8px 16px; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .15s; white-space: nowrap; }
+.trwt-btn-atc:hover { background: var(--brown); transform: translateY(-1px); }
+.trwt-btn-atc.tr-atc-added { background: var(--green); }
+.trwt-btn-atc:disabled { background: var(--cream-dark); color: var(--text-muted); cursor: not-allowed; transform: none; }
+.trwt-empty { text-align: center; padding: 80px var(--page-margin); color: var(--text-muted); }
+
+/* ─── Thee verhaal ───────────────────────────────────────────────────────── */
+.trwt-story { background: var(--wt-main); color: #fff; padding: 64px var(--page-margin); }
+.trwt-story-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; max-width: 1080px; margin: 0 auto; }
+.trwt-story-label { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--wt-accent); margin-bottom: 14px; }
+.trwt-story h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: #fff; line-height: 1.25; margin-bottom: 20px; }
+.trwt-story-text { font-size: .925rem; color: rgba(255,255,255,.75); line-height: 1.8; }
+.trwt-story-text p { margin-bottom: 14px; }
+.trwt-story-text p:last-child { margin-bottom: 0; }
+.trwt-story-img { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; background: var(--wt-mid); }
+.trwt-story-img img { width: 100%; height: 100%; object-fit: cover; }
+.trwt-story-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 4rem; opacity: .3; }
+@media (max-width: 768px) { .trwt-story-inner { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ─── Pickup info ────────────────────────────────────────────────────────── */
+.trwt-pickup { background: var(--cream); padding: 56px var(--page-margin); border-top: 1px solid var(--cream-dark); }
+.trwt-pickup-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.trwt-pickup-card { background: var(--white); border-radius: 20px; padding: 28px 32px; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; }
+.trwt-pickup-icon { font-size: 2rem; margin-bottom: 14px; }
+.trwt-pickup-card h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--brown-dark); margin-bottom: 14px; }
+.trwt-hours-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-radius: 8px; font-size: 13px; }
+.trwt-hours-row:nth-child(odd) { background: var(--cream); }
+.trwt-hours-row .day { font-weight: 600; color: var(--brown-dark); }
+.trwt-hours-row .time { color: var(--text-muted); }
+.trwt-hours-row .time.closed { color: #c0392b; font-style: italic; }
+.trwt-pickup-address { font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.trwt-pickup-address strong { color: var(--brown-dark); display: block; margin-bottom: 4px; font-size: 14px; }
+.trwt-pickup-map-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 12px; color: var(--wt-mid); text-decoration: none; border-bottom: 1px solid rgba(107,125,153,.3); padding-bottom: 1px; }
+.trwt-pickup-map-link:hover { color: var(--wt-main); }
+.trwt-pickup-contact { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; flex: 1; }
+.trwt-pickup-contact-row { display: flex; align-items: flex-start; gap: 12px; font-size: 13.5px; color: var(--text); }
+.trwt-pickup-contact-row svg { flex-shrink: 0; margin-top: 2px; color: var(--wt-mid); }
+.trwt-pickup-contact-row a { color: var(--wt-mid); text-decoration: none; }
+.trwt-pickup-contact-row a:hover { text-decoration: underline; }
+.trwt-pickup-cta { margin-top: auto; padding-top: 20px; }
+.trwt-pickup-cta a { display: block; text-align: center; background: var(--wt-mid); color: var(--white); border-radius: 50px; padding: 12px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; text-decoration: none; transition: background .2s; }
+.trwt-pickup-cta a:hover { background: var(--wt-main); }
+@media (max-width: 900px) { .trwt-pickup-inner { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .trwt-pickup-inner { grid-template-columns: 1fr; } }
+
+/* ─── SEO tekst ──────────────────────────────────────────────────────────── */
+.trwt-seo { padding: 48px var(--page-margin) 64px; background: var(--page-bg); border-top: 1px solid var(--cream-dark); }
+.trwt-seo-inner h2, .trwt-seo-inner h3 { font-family: 'Playfair Display', serif; font-weight: 400; color: var(--brown-dark); margin: 28px 0 10px; font-size: 1.3rem; line-height: 1.25; }
+.trwt-seo-inner h2:first-child, .trwt-seo-inner h3:first-child { margin-top: 0; }
+.trwt-seo-inner p { font-size: .9rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 14px; }
+.trwt-seo-inner a { color: var(--wt-mid); text-decoration: underline; text-underline-offset: 2px; }
+.trwt-seo-inner strong, .trwt-seo-inner b { color: var(--brown-dark); font-weight: 600; }
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1100px) { .trwt-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 700px) { .trwt-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .trwt-grid-wrap { padding: 24px 4vw 48px; } .trwt-hero-inner { padding: 36px 4vw 32px; } .trwt-usp-bar .trwt-usp-inner { flex-direction: column; } .trwt-usp-item { justify-content: center; text-align: center; } .trwt-pickup { padding: 36px 4vw; } .trwt-seo { padding: 36px 4vw 48px; } }
+@media (max-width: 400px) { .trwt-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .trwt-wrap *, .trwt-wrap *::before, .trwt-wrap *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+</style>
+
+{%- comment -%} Collectiebeschrijving splitsen: eerste alinea in header, rest in SEO-blok {%- endcomment -%}
+{%- if collection.description != blank -%}
+  {%- assign _desc_parts = collection.description | split: '</p>' -%}
+  {%- assign _desc_first = _desc_parts[0] | append: '</p>' -%}
+  {%- assign _desc_rest = '' -%}
+  {%- for _p in _desc_parts offset: 1 -%}
+    {%- if _p != '' -%}{%- assign _desc_rest = _desc_rest | append: _p | append: '</p>' -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<div class="trwt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+  <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+  <meta itemprop="description" content="Witte thee kopen bij Tante Rie in Borne, Twente. Silver Needle, White Peony en meer. De meest delicate thee, zacht van smaak.">
+
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="trwt-hero" aria-label="{{ collection.title }} collectie">
+    <div class="trwt-hero-bg"></div>
+    <div class="trwt-hero-pattern"></div>
+    {%- if collection.image -%}
+      <div class="trwt-hero-img">
+        <img src="{{ collection.image | image_url: width: 1600 }}" alt="{{ collection.image.alt | default: collection.title | escape }}" loading="eager" width="1600" height="600">
+      </div>
+    {%- endif -%}
+    <div class="trwt-hero-inner">
+      <nav class="trwt-breadcrumb" aria-label="Kruimelpad">
+        <a href="/">Home</a><span aria-hidden="true">›</span>
+        <a href="/collections/thee">Thee</a><span aria-hidden="true">›</span>
+        <span>{{ collection.title }}</span>
+      </nav>
+      <div class="trwt-hero-label" aria-hidden="true">
+        {%- render 'tr-icon', name: 'sparkle' -%} De meest verfijnde thee ter wereld
+      </div>
+      <h1 itemprop="headline">{{ collection.title }}</h1>
+      <p class="trwt-hero-sub">
+        {%- if section.settings.subtitle != blank -%}
+          {{ section.settings.subtitle }}
+        {%- else -%}
+          De minst bewerkte thee. Te koop bij Tante Rie in <strong style="color:#fff">Borne</strong>.
+        {%- endif -%}
+      </p>
+      <div class="trwt-hero-meta">
+        <span class="trwt-hero-count">{{ collection.products_count }} witte theesoorten</span>
+        <span class="trwt-hero-loc"><span aria-hidden="true">{%- render 'tr-icon', name: 'package' -%}</span> Verzending &amp; afhalen in Borne</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Sticky bar (USP + filter) ───────────────────────────────────── -->
+  <div class="trwt-sticky-bar">
+
+  <!-- ── USP bar ───────────────────────────────────────────────────────── -->
+  <div class="trwt-usp-bar" role="complementary" aria-label="Belangrijke informatie">
+    <div class="trwt-usp-inner">
+      <div class="trwt-usp-item">
+        <span class="trwt-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'leaf' -%}</span>
+        <div class="trwt-usp-text">
+          <strong>Losse thee, geen zakjes</strong>
+          <span>Meer smaak, beter voor het milieu</span>
+        </div>
+      </div>
+      <div class="trwt-usp-item">
+        <span class="trwt-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'flower' -%}</span>
+        <div class="trwt-usp-text">
+          <strong>Minst bewerkt</strong>
+          <span>Alleen toppen en jonge blaadjes</span>
+        </div>
+      </div>
+      <div class="trwt-usp-item">
+        <span class="trwt-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'teapot' -%}</span>
+        <div class="trwt-usp-text">
+          <strong>Zetadvies witte thee</strong>
+          <span>70–85 &#xb0;C &nbsp;·&nbsp; 2–4 minuten</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Filter & sort ─────────────────────────────────────────────────── -->
+  <div id="trwt-filter-overlay" class="trwt-filter-overlay"></div>
+  <form id="trwt-filter-form" action="{{ collection.url }}" method="get">
+    <input type="hidden" name="sort_by" value="{{ collection.sort_by | default: collection.default_sort_by }}">
+    <div class="trwt-filter-toolbar">
+      <div class="trwt-filter-groups">
+        {%- for filter in collection.filters -%}
+          {%- assign _has_active = false -%}
+          {%- for fv in filter.values -%}{%- if fv.active -%}{%- assign _has_active = true -%}{%- endif -%}{%- endfor -%}
+          <div class="trwt-filter-pill-wrap">
+            <button type="button" class="trwt-filter-pill{% if _has_active %} active{% endif %}" aria-expanded="false" data-trwt-pill>
+              {{ filter.label }}
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="trwt-filter-dropdown" data-trwt-dropdown>
+              {%- for fv in filter.values -%}
+                <label class="trwt-filter-option">
+                  <input type="checkbox" name="{{ filter.param_name }}" value="{{ fv.value }}"{% if fv.active %} checked{% endif %}>
+                  {{ fv.label }}
+                  {%- if fv.count != blank -%}<span style="color:var(--text-muted);font-size:11px">({{ fv.count }})</span>{%- endif -%}
+                </label>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <select class="trwt-filter-sort" name="sort_by" aria-label="Sorteren" data-trwt-sort>
+        {%- assign _cur_sort = collection.sort_by | default: collection.default_sort_by -%}
+        <option value="created-descending"{% if _cur_sort == 'created-descending' %} selected{% endif %}>Nieuwste eerst</option>
+        <option value="price-ascending"{% if _cur_sort == 'price-ascending' %} selected{% endif %}>Prijs: laag → hoog</option>
+        <option value="price-descending"{% if _cur_sort == 'price-descending' %} selected{% endif %}>Prijs: hoog → laag</option>
+        <option value="title-ascending"{% if _cur_sort == 'title-ascending' %} selected{% endif %}>Naam: A → Z</option>
+        <option value="title-descending"{% if _cur_sort == 'title-descending' %} selected{% endif %}>Naam: Z → A</option>
+      </select>
+    </div>
+    {%- assign _any_active = false -%}
+    {%- for f in collection.filters -%}{%- for fv in f.values -%}{%- if fv.active -%}{%- assign _any_active = true -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+    {%- if _any_active -%}
+      <div class="trwt-active-strip">
+        {%- for f in collection.filters -%}
+          {%- for fv in f.values -%}
+            {%- if fv.active -%}
+              <a href="{{ fv.url_to_remove }}" class="trwt-filter-chip">{{ fv.label }} <span aria-hidden="true">×</span></a>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </form>
+
+  </div><!-- /trwt-sticky-bar -->
+
+  <!-- ── Product grid ──────────────────────────────────────────────────── -->
+  <div class="trwt-grid-wrap">
+    {%- if collection.products.size > 0 -%}
+      <div class="trwt-grid" role="list" aria-label="Witte thee producten">
+        {%- for product in collection.products -%}
+          {%- assign _available = product.available -%}
+          {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+
+          <article class="trwt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <a href="{{ product.url }}" class="trwt-card-img" aria-label="{{ product.title }}">
+              {%- if product.featured_image -%}
+                <img
+                  src="{{ product.featured_image | image_url: width: 500 }}"
+                  alt="{{ product.featured_image.alt | default: product.title | escape }} – witte thee bij Tante Rie Borne"
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                  itemprop="image">
+              {%- else -%}
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+              {%- endif -%}
+              {%- unless _available -%}
+                <span class="trwt-badge trwt-badge--soldout" aria-label="Uitverkocht">Uitverkocht</span>
+              {%- endunless -%}
+            </a>
+            <div class="trwt-card-body">
+              {%- if product.type != blank -%}
+                <span class="trwt-card-type" itemprop="category">{{ product.type }}</span>
+              {%- endif -%}
+              <a href="{{ product.url }}" style="text-decoration:none">
+                <p class="trwt-card-name" itemprop="name">{{ product.title }}</p>
+              </a>
+              {%- if product.metafields.custom.smaakprofiel != blank -%}
+                <p class="trwt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+              {%- elsif _kaart_tekst != blank -%}
+                <p class="trwt-card-desc">{{ _kaart_tekst }}</p>
+              {%- endif -%}
+              {%- assign _trust_tags = '' -%}
+              {%- for tag in product.tags -%}
+                {%- assign _tag_lower = tag | downcase -%}
+                {%- if _tag_lower == 'biologisch' or _tag_lower == 'organic' -%}{%- assign _trust_tags = _trust_tags | append: 'Biologisch|' -%}
+                {%- elsif _tag_lower == 'fairtrade' or _tag_lower == 'fair trade' -%}{%- assign _trust_tags = _trust_tags | append: 'Fairtrade|' -%}
+                {%- elsif _tag_lower == 'demeter' -%}{%- assign _trust_tags = _trust_tags | append: 'Demeter|' -%}
+                {%- elsif _tag_lower == 'rainforest alliance' or _tag_lower == 'rainforest-alliance' -%}{%- assign _trust_tags = _trust_tags | append: 'Rainforest|' -%}
+                {%- elsif _tag_lower == 'eko' -%}{%- assign _trust_tags = _trust_tags | append: 'EKO|' -%}
+                {%- elsif _tag_lower == 'vegan' -%}{%- assign _trust_tags = _trust_tags | append: 'Vegan|' -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- assign _trust_tags = _trust_tags | split: '|' | uniq -%}
+              {%- if _trust_tags.size > 0 -%}
+                <div class="trwt-card-tags">
+                  {%- for t in _trust_tags -%}
+                    {%- if t != '' -%}<span class="trwt-tag">{{ t }}</span>{%- endif -%}
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+              <div class="trwt-card-footer">
+                <span class="trwt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR">
+                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
+                  {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                  {{ product.price | money }}
+                  {%- if product.compare_at_price > product.price -%}
+                    <span class="trwt-card-compare">{{ product.compare_at_price | money }}</span>
+                  {%- endif -%}
+                </span>
+                {%- if _available -%}
+                  <button class="trwt-btn-atc" data-tr-atc data-success-text="✓ Toegevoegd" data-variant-id="{{ product.selected_or_first_available_variant.id }}" aria-label="Voeg {{ product.title }} toe aan winkelwagen">
+                    In winkelwagen
+                  </button>
+                {%- else -%}
+                  <button class="trwt-btn-atc" disabled>Uitverkocht</button>
+                {%- endif -%}
+              </div>
+            </div>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="trwt-empty" role="status">
+        <p>Geen producten gevonden met deze filters. <a href="{{ collection.url }}" style="color:var(--wt-mid)">Wis filters</a></p>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <!-- ── Thee verhaal ──────────────────────────────────────────────────── -->
+  <section class="trwt-story" aria-labelledby="trwt-story-heading">
+    <div class="trwt-story-inner">
+      <div>
+        <p class="trwt-story-label">Over witte thee</p>
+        <h2 id="trwt-story-heading">
+          {%- if section.settings.story_heading != blank -%}
+            {{ section.settings.story_heading }}
+          {%- else -%}
+            Geplukt, gedroogd, klaar
+          {%- endif -%}
+        </h2>
+        <div class="trwt-story-text">
+          {%- if section.settings.story_text != blank -%}
+            {{ section.settings.story_text }}
+          {%- else -%}
+            <p>Witte thee bestaat uit de jongste toppen en knoppen van de theeplant, nog bedekt met fijne witte haartjes. Geen oxidatie, nauwelijks bewerking. De smaak is licht en subtiel.</p>
+            <p>Bij Tante Rie vind je Silver Needle, White Peony en Shou Mei. Puur te drinken, of in combinatie met rozen of jasmijn.</p>
+            <p>Borne ligt midden in Twente, op een halfuur van <strong>Enschede, Hengelo en Almelo</strong>. Kom langs.</p>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="trwt-story-img">
+        {%- if section.settings.story_image != blank -%}
+          <img src="{{ section.settings.story_image | image_url: width: 800 }}" alt="Witte thee bij Tante Rie Borne Twente" loading="lazy" width="800" height="600">
+        {%- else -%}
+          <div class="trwt-story-img-placeholder" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup' -%}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
+  <section class="trwt-pickup" aria-labelledby="trwt-pickup-heading">
+    <h2 id="trwt-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Bestellen, verzenden &amp; afhalen</h2>
+    <div class="trwt-pickup-inner">
+      <div class="trwt-pickup-card">
+        <div class="trwt-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</div>
+        <h3>Winkeladres</h3>
+        <div class="trwt-pickup-address">
+          <strong>Tante Rie</strong>
+          <span>Bakkerssteeg 6</span><br>
+          <span>7622 GX</span> <span>Borne</span><br>
+          <span>Twente</span>
+        </div>
+        <a href="https://maps.google.com/?q=Bakkerssteeg+6+Borne" class="trwt-pickup-map-link" target="_blank" rel="noopener" aria-label="Open in Google Maps">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Routebeschrijving in Google Maps
+        </a>
+      </div>
+      <div class="trwt-pickup-card">
+        <div class="trwt-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'clock' -%}</div>
+        <h3>Openingstijden</h3>
+        {%- assign days  = 'Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag' | split: ',' -%}
+        {%- assign hours = 'Gesloten,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,Gesloten' | split: ',' -%}
+        {%- for day in days -%}
+          {%- assign _h = hours[forloop.index0] -%}
+          <div class="trwt-hours-row">
+            <span class="day">{{ day }}</span>
+            <span class="time{% if _h == 'Gesloten' %} closed{% endif %}">{{ _h }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <div class="trwt-pickup-card">
+        <div class="trwt-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'chat' -%}</div>
+        <h3>Contact &amp; advies</h3>
+        <div class="trwt-pickup-contact">
+          <div class="trwt-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.1a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+            <div><a href="tel:+31638291189">+31 6 38291189</a></div>
+          </div>
+          <div class="trwt-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div><a href="mailto:webshop@tanterie.nl">webshop@tanterie.nl</a></div>
+          </div>
+          <div class="trwt-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div style="font-size:12.5px;color:var(--text-muted)">Niet zeker welke thee? Bel, mail of kom gewoon langs.</div>
+          </div>
+        </div>
+        <div class="trwt-pickup-cta">
+          <a href="/pages/contact">Stuur een bericht</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEO tekstblok ─────────────────────────────────────────────────── -->
+  {%- if _desc_rest != '' -%}
+    <div class="trwt-seo">
+      <div class="trwt-seo-inner">
+        {{ _desc_rest }}
+      </div>
+    </div>
+  {%- elsif section.settings.seo_text != blank -%}
+    <div class="trwt-seo">
+      <div class="trwt-seo-inner">
+        {{ section.settings.seo_text }}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <!-- ── JSON-LD CollectionPage ──────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": {{ shop.url | append: collection.url | json }},
+    "name": {{ collection.title | json }},
+    "description": {{ collection.description | strip_html | truncate: 200 | json }},
+    "url": {{ shop.url | append: collection.url | json }},
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Tante Rie",
+      "url": "https://tanterie.nl"
+    },
+    "numberOfItems": {{ collection.products_count }}
+  }
+  </script>
+
+</div>
+
+<script>
+(function () {
+  var form    = document.getElementById('trwt-filter-form');
+  var overlay = document.getElementById('trwt-filter-overlay');
+  if (!form) return;
+
+  var pills     = form.querySelectorAll('[data-trwt-pill]');
+  var dropdowns = form.querySelectorAll('[data-trwt-dropdown]');
+
+  function closeAll() {
+    pills.forEach(function (p) { p.setAttribute('aria-expanded', 'false'); });
+    dropdowns.forEach(function (d) { d.classList.remove('open'); });
+    if (overlay) overlay.classList.remove('open');
+  }
+
+  pills.forEach(function (pill, i) {
+    pill.addEventListener('click', function () {
+      var isOpen = pill.getAttribute('aria-expanded') === 'true';
+      closeAll();
+      if (!isOpen) {
+        pill.setAttribute('aria-expanded', 'true');
+        dropdowns[i].classList.add('open');
+        if (overlay) overlay.classList.add('open');
+      }
+    });
+  });
+
+  if (overlay) overlay.addEventListener('click', closeAll);
+
+  form.querySelectorAll('input[type="checkbox"]').forEach(function (cb) {
+    cb.addEventListener('change', function () { form.submit(); });
+  });
+
+  var sortSel = form.querySelector('[data-trwt-sort]');
+  if (sortSel) {
+    sortSel.addEventListener('change', function () {
+      var hidden = form.querySelector('input[name="sort_by"]');
+      if (hidden) hidden.remove();
+      form.submit();
+    });
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Witte Thee Collectie",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Hero ondertitel",
+      "placeholder": "Laat leeg voor standaard tekst"
+    },
+    {
+      "type": "text",
+      "id": "story_heading",
+      "label": "Thee verhaal koptekst",
+      "placeholder": "Van theeplantage tot jouw kopje"
+    },
+    {
+      "type": "image_picker",
+      "id": "story_image",
+      "label": "Thee verhaal afbeelding"
+    },
+    {
+      "type": "richtext",
+      "id": "story_text",
+      "label": "Thee verhaal tekst",
+      "info": "Laat leeg voor standaard tekst over witte thee"
+    },
+    {
+      "type": "richtext",
+      "id": "seo_text",
+      "label": "SEO tekst (alternatief voor collectiebeschrijving)",
+      "info": "Wordt getoond als de collectiebeschrijving geen tweede alinea heeft"
+    }
+  ]
+}
+{% endschema %}

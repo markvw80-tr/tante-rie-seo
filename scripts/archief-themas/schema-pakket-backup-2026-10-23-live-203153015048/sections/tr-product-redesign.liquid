@@ -1,0 +1,666 @@
+{% comment %} Tante Rie – Product Page Redesign {% endcomment %}
+{% comment %} Fonts + design tokens (--green, --brown, etc.) worden geladen via theme.liquid / tr-design.css {% endcomment %}
+
+<style>
+.tr-product-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
+.tr-gallery {
+  position: sticky;
+  top: var(--header-group-height, 64px);
+  height: calc(100vh - var(--header-group-height, 64px));
+  display: flex; flex-direction: column;
+  background: var(--page-bg);
+}
+.tr-gallery-main { flex: 1; overflow: hidden; position: relative; background: var(--page-bg); }
+.tr-gallery-main img { width: 100%; height: 100%; object-fit: contain; background: var(--page-bg); transition: transform .5s cubic-bezier(.25,.46,.45,.94); padding: 20px; }
+.tr-gallery-main:hover img { transform: scale(1.03); }
+.tr-gallery-badge { position: absolute; top: 16px; left: 16px; background: var(--white); border-radius: 50px; padding: 6px 14px; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--brown-dark); box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+.tr-gallery-badge-type { position: absolute; top: 16px; right: 16px; background: var(--green); border-radius: 50px; padding: 6px 14px; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--white); }
+.tr-gallery-thumbs { flex-shrink: 0; display: flex; gap: 10px; padding: 12px 16px 14px; background: var(--page-bg); border-top: 1px solid rgba(0,0,0,.06); }
+.tr-thumb { flex: 1; height: 72px; border-radius: 8px; cursor: pointer; background: var(--page-bg); overflow: hidden; box-shadow: 0 0 0 2px transparent; transition: box-shadow .2s; }
+.tr-thumb.active { box-shadow: 0 0 0 2px var(--green); }
+.tr-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 4px; background: var(--page-bg); display: block; }
+.tr-product-info { padding: 48px var(--page-margin) 64px; max-width: 640px; overflow-y: auto; display: flex; flex-direction: column; }
+.tr-tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.tr-tag { background: var(--tag-bg); color: var(--brown-dark); font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; padding: 5px 12px; border-radius: 50px; }
+.tr-tag.green { background: var(--green-pale); color: var(--green); }
+.tr-product-info h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; line-height: 1.15; color: var(--brown-dark); margin-bottom: 10px; }
+.tr-tagline { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: var(--text-muted); margin-bottom: 24px; }
+.tr-rating-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+.tr-rating-bar a { font-size: 13px; color: var(--brown); text-decoration: none; border-bottom: 1px solid var(--brown-light); }
+.tr-section-label { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+.tr-brew-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 28px; }
+.tr-brew-card { background: var(--white); border-radius: 14px; padding: 16px 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; border: 1px solid var(--cream-dark); transition: transform .2s, box-shadow .2s; }
+.tr-brew-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+.tr-brew-icon { width: 26px; height: 26px; stroke: var(--brown); fill: none; stroke-width: 1.6; }
+.tr-brew-value { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--brown-dark); font-weight: 500; }
+.tr-brew-label { font-size: 11px; color: var(--text-muted); letter-spacing: .04em; }
+.tr-flavor-block { background: var(--white); border-radius: 16px; padding: 18px 20px; margin-bottom: 28px; border: 1px solid var(--cream-dark); }
+.tr-flavor-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.tr-flavor-row:last-child { margin-bottom: 0; }
+.tr-flavor-label { font-size: 12px; color: var(--text-muted); width: 56px; flex-shrink: 0; }
+.tr-flavor-track { flex: 1; height: 6px; background: var(--cream-dark); border-radius: 3px; overflow: hidden; }
+.tr-flavor-fill { height: 100%; border-radius: 3px; transition: width .6s ease; }
+.tr-flavor-zoet .tr-flavor-fill { background: #c8a882; }
+.tr-flavor-bloemig .tr-flavor-fill { background: #a89cc8; }
+.tr-flavor-kruidig .tr-flavor-fill { background: #7a9e7b; }
+.tr-flavor-bitter .tr-flavor-fill { background: #4a3222; }
+.tr-flavor-fris .tr-flavor-fill { background: #7ab8c8; }
+.tr-origin-block { background: var(--white); border-radius: 16px; padding: 20px 22px; margin-bottom: 28px; border-left: 3px solid var(--brown-light); }
+.tr-origin-block p { font-family: 'DM Sans', sans-serif; font-size: .95rem; line-height: 1.7; color: var(--text); }
+.tr-purchase-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.tr-price { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--brown-dark); }
+.tr-price-sub { font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-top: 2px; }
+.tr-qty-control { display: flex; align-items: center; border: 1px solid var(--cream-dark); border-radius: 50px; overflow: hidden; background: var(--white); }
+.tr-qty-btn { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 1.2rem; color: var(--brown-dark); display: flex; align-items: center; justify-content: center; transition: background .15s; }
+.tr-qty-btn:hover { background: var(--cream-dark); }
+.tr-qty-num { width: 32px; text-align: center; font-weight: 500; font-size: .95rem; color: var(--brown-dark); }
+.tr-btn-primary { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 17px 32px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .15s; width: 100%; display: block; margin-bottom: 10px; }
+.tr-btn-primary:hover { background: var(--brown); transform: translateY(-1px); }
+.tr-btn-secondary { background: transparent; color: var(--brown-dark); border: 1.5px solid var(--brown-light); border-radius: 50px; padding: 15px 32px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; transition: background .2s; width: 100%; display: block; margin-bottom: 22px; }
+.tr-btn-secondary:hover { background: var(--cream-dark); }
+.tr-stock-indicator { font-size: 12px; color: var(--green); font-weight: 500; margin: -4px 0 12px; }
+.tr-stock-indicator.tr-stock-low { color: var(--brown); }
+.tr-stock-indicator.tr-stock-out { color: var(--text-muted); }
+.tr-trust-strip { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 32px; }
+.tr-trust-item { font-size: 12px; color: var(--text-muted); }
+.tr-accordion { border-top: 1px solid var(--cream-dark); }
+.tr-accordion-item { border-bottom: 1px solid var(--cream-dark); }
+.tr-accordion-trigger { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 16px 0; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; color: var(--brown-dark); text-align: left; }
+.tr-accordion-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.tr-accordion-body.open { max-height: 800px; }
+.tr-accordion-body p { padding: 0 0 16px; font-size: 13.5px; color: var(--text-muted); line-height: 1.7; }
+.tr-chevron { font-size: 12px; color: var(--brown-light); transition: transform .25s; display: inline-block; }
+.tr-accordion-trigger.open .tr-chevron { transform: rotate(180deg); }
+.tr-specs-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.tr-specs-table tr:nth-child(odd) { background: var(--cream); }
+.tr-specs-table tr:nth-child(even) { background: var(--white); }
+.tr-specs-table td { padding: 10px 14px; color: var(--text); vertical-align: middle; }
+.tr-specs-table td:first-child { color: var(--text-muted); width: 55%; }
+.tr-specs-icon { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; font-size: 13px; }
+.tr-specs-icon--yes { background: #d5edd5; color: #2e7d32; }
+.tr-specs-icon--no  { background: #fde8e8; color: #c62828; }
+.tr-variants { margin-bottom: 22px; }
+.tr-variant-label { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+.tr-variant-label strong { color: var(--brown-dark); font-weight: 600; text-transform: none; letter-spacing: 0; font-size: 13px; }
+.tr-variant-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.tr-variant-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 18px; min-height: 44px; display: inline-flex; align-items: center; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--brown-dark); background: var(--white); cursor: pointer; transition: border-color .2s, background .2s; white-space: nowrap; }
+.tr-variant-pill:hover { border-color: var(--green-mid); }
+.tr-variant-pill:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.tr-variant-pill.active { border-color: var(--green); background: var(--green); color: var(--white); }
+.tr-variant-pill.unavailable { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+.tr-variant-swatch { width: 44px; height: 44px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: border-color .2s, transform .15s; outline: 2px solid transparent; outline-offset: 2px; position: relative; }
+.tr-variant-swatch:hover { transform: scale(1.08); }
+.tr-variant-swatch:focus-visible { outline-color: var(--brown-dark); }
+.tr-variant-swatch.active { outline-color: var(--brown-dark); }
+.tr-variant-swatch.unavailable { opacity: .35; cursor: not-allowed; }
+.tr-variant-swatch.unavailable::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: linear-gradient(135deg, transparent 45%, var(--text-muted) 45%, var(--text-muted) 55%, transparent 55%); }
+.tr-bundle-section { background: var(--page-bg); border-top: 1px solid var(--cream-dark); padding: 28px max(var(--page-margin), calc((100% - var(--content-max)) / 2)); }
+.tr-bundle-card { background: var(--white); border-radius: 20px; padding: 24px 28px; display: flex; gap: 24px; align-items: center; border: 1px solid var(--cream-dark); box-shadow: 0 2px 12px rgba(0,0,0,.04); }
+.tr-bundle-thumb { width: 80px; height: 80px; flex-shrink: 0; border-radius: 12px; overflow: hidden; background: var(--page-bg); }
+.tr-bundle-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
+.tr-bundle-text { flex: 1; }
+.tr-bundle-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 4px; }
+.tr-bundle-name { font-family: 'DM Sans', sans-serif; font-size: 1rem; color: var(--brown-dark); margin-bottom: 4px; }
+.tr-bundle-contents { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+.tr-bundle-price-row { display: flex; align-items: baseline; gap: 8px; }
+.tr-bundle-price { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown-dark); }
+.tr-bundle-save { font-size: 12px; color: var(--green); font-weight: 500; background: #d5e5d5; padding: 2px 8px; border-radius: 50px; }
+.tr-btn-bundle { flex-shrink: 0; background: var(--green); color: var(--white); border: none; border-radius: 50px; padding: 14px 24px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s; text-decoration: none; display: inline-block; white-space: nowrap; }
+.tr-btn-bundle:hover { background: var(--green-light); color: var(--white); }
+.tr-combine-section { background: var(--white); padding: 48px max(var(--page-margin), calc((100% - var(--content-max)) / 2)); border-top: 1px solid var(--cream-dark); }
+.tr-section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 32px; }
+.tr-section-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; color: var(--brown-dark); }
+.tr-see-all { font-size: 13px; color: var(--brown); text-decoration: none; border-bottom: 1px solid var(--brown-light); }
+.tr-product-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.tr-product-card { background: var(--cream); border-radius: 16px; overflow: hidden; border: 1px solid var(--cream-dark); transition: transform .2s, box-shadow .2s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+.tr-product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+.tr-card-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); }
+.tr-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 8px; transition: transform .4s; }
+.tr-product-card:hover .tr-card-img img { transform: scale(1.04); }
+.tr-card-body { padding: 14px 14px 16px; flex: 1; display: flex; flex-direction: column; }
+.tr-card-name { font-family: 'DM Sans', sans-serif; font-size: .95rem; color: var(--brown-dark); margin-bottom: 4px; font-weight: 400; }
+.tr-card-type { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; letter-spacing: .04em; }
+.tr-card-price { font-size: .9rem; color: var(--brown); font-weight: 500; margin-top: auto; }
+.tr-card-btn { margin-top: 10px; background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 9px 0; width: 100%; font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s; }
+.tr-card-btn:hover { background: var(--brown); }
+@media (max-width: 900px) {
+  .tr-product-grid { grid-template-columns: 1fr; }
+  .tr-gallery { position: relative; height: auto; top: 0; }
+  .tr-gallery-main { height: 75vw; }
+  .tr-product-cards { grid-template-columns: repeat(2,1fr); }
+  .tr-bundle-card { flex-direction: column; align-items: flex-start; }
+  .tr-btn-bundle { width: 100%; text-align: center; }
+}
+/* Sticky ATC mobile */
+@media (max-width: 700px) {
+  .tr-sticky-atc { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; background: var(--white); border-top: 1px solid var(--cream-dark); padding: 12px 16px; gap: 10px; align-items: center; box-shadow: 0 -4px 20px rgba(0,0,0,.08); }
+  .tr-sticky-atc-price { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--brown-dark); white-space: nowrap; }
+  .tr-sticky-atc-btn { flex: 1; background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 14px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; }
+  .tr-product-info { padding-bottom: 80px; }
+}
+@media (min-width: 701px) { .tr-sticky-atc { display: none; } }
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .tr-wrap *, .tr-wrap *::before, .tr-wrap *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+</style>
+
+<div class="tr-wrap">
+  {%- assign cur = product -%}
+  {%- assign bundle_handle = section.settings.bundle_handle -%}
+  {%- if bundle_handle != blank -%}{%- assign bundle = all_products[bundle_handle] -%}{%- endif -%}
+
+  {%- comment -%}Template-suffix overrides: Rice heeft eigen vaste instellingen{%- endcomment -%}
+  {%- if template.suffix == 'rice' or template.suffix == 'waterfles' -%}
+    {%- assign hide_zetadvies    = true -%}
+    {%- assign show_details      = true -%}
+    {%- assign specs_afmeting    = 'H: 9.0 cm x D: 9.0 cm' -%}
+    {%- assign specs_hwxd        = '9.0 x 9.0' -%}
+    {%- assign specs_volume      = '250' -%}
+    {%- assign specs_materiaal   = 'Melamine' -%}
+    {%- assign specs_max_graden  = '70' -%}
+    {%- assign specs_voedselveilig = 'ja' -%}
+    {%- assign specs_vaatwasser  = 'ja' -%}
+    {%- assign specs_magnetron   = 'nee' -%}
+    {%- assign specs_vriezer     = 'ja' -%}
+  {%- else -%}
+    {%- assign hide_zetadvies    = section.settings.hide_zetadvies -%}
+    {%- assign show_details      = section.settings.show_details -%}
+    {%- assign specs_afmeting    = section.settings.specs_afmeting -%}
+    {%- assign specs_hwxd        = section.settings.specs_hwxd -%}
+    {%- assign specs_volume      = section.settings.specs_volume -%}
+    {%- assign specs_materiaal   = section.settings.specs_materiaal -%}
+    {%- assign specs_max_graden  = section.settings.specs_max_graden -%}
+    {%- assign specs_voedselveilig = section.settings.specs_voedselveilig -%}
+    {%- assign specs_vaatwasser  = section.settings.specs_vaatwasser -%}
+    {%- assign specs_magnetron   = section.settings.specs_magnetron -%}
+    {%- assign specs_vriezer     = section.settings.specs_vriezer -%}
+  {%- endif -%}
+
+  {%- comment -%}Zetadvies: metafield heeft prioriteit boven section setting{%- endcomment -%}
+  {%- assign mf_gram = cur.metafields.zetadvies.gram.value -%}
+  {%- assign mf_temp = cur.metafields.zetadvies.temperatuur.value -%}
+  {%- assign mf_tijd = cur.metafields.zetadvies.trektijd.value -%}
+  {%- assign brew_gram = mf_gram | default: section.settings.brew_gram -%}
+  {%- assign brew_temp = mf_temp | default: section.settings.brew_temp -%}
+  {%- assign brew_tijd = mf_tijd | default: section.settings.brew_time -%}
+
+  {%- comment -%}Smaakprofiel: metafield (per product) heeft prioriteit boven section setting (per template).
+    Metafield aanwezig met value 0 = bewust 0 (rij verbergen), zelfde als section setting 0. {%- endcomment -%}
+  {%- if cur.metafields.smaakprofiel.zoet != blank -%}{%- assign flavor_zoet = cur.metafields.smaakprofiel.zoet.value -%}
+  {%- else -%}{%- assign flavor_zoet = section.settings.flavor_zoet | default: 0 -%}{%- endif -%}
+  {%- if cur.metafields.smaakprofiel.bloemig != blank -%}{%- assign flavor_bloemig = cur.metafields.smaakprofiel.bloemig.value -%}
+  {%- else -%}{%- assign flavor_bloemig = section.settings.flavor_bloemig | default: 0 -%}{%- endif -%}
+  {%- if cur.metafields.smaakprofiel.kruidig != blank -%}{%- assign flavor_kruidig = cur.metafields.smaakprofiel.kruidig.value -%}
+  {%- else -%}{%- assign flavor_kruidig = section.settings.flavor_kruidig | default: 0 -%}{%- endif -%}
+  {%- if cur.metafields.smaakprofiel.bitter != blank -%}{%- assign flavor_bitter = cur.metafields.smaakprofiel.bitter.value -%}
+  {%- else -%}{%- assign flavor_bitter = section.settings.flavor_bitter | default: 0 -%}{%- endif -%}
+  {%- if cur.metafields.smaakprofiel.fris != blank -%}{%- assign flavor_fris = cur.metafields.smaakprofiel.fris.value -%}
+  {%- else -%}{%- assign flavor_fris = section.settings.flavor_fris | default: 0 -%}{%- endif -%}
+
+  {%- comment -%}Verhaal: strip zetadvies- en ingrediënten-alinea uit beschrijving{%- endcomment -%}
+  {%- assign verhaal_tekst = section.settings.verhaal_tekst -%}
+  {%- if verhaal_tekst == blank -%}
+    {%- assign raw_desc = cur.description | strip_html -%}
+    {%- assign verhaal_tekst = raw_desc | split: 'Zetadvies:' | first | split: 'Ingrediënten:' | first | strip | truncatewords: 55, '...' -%}
+  {%- endif -%}
+
+  <div class="tr-breadcrumb">
+    <a href="/">Home</a><span>›</span>
+    {%- for c in cur.collections limit:1 -%}
+      {%- assign crumb_parts = c.url | split: '/' -%}
+      {%- if c.handle contains '-' -%}
+        {%- assign parent_handle = c.handle | split: '-' | first -%}
+        {%- assign parent_col = collections[parent_handle] -%}
+        {%- if parent_col -%}<a href="{{ parent_col.url }}">{{ parent_col.title }}</a><span>›</span>{%- endif -%}
+      {%- endif -%}
+      <a href="{{ c.url }}">{{ c.title }}</a><span>›</span>
+    {%- endfor -%}
+    {{ cur.title }}
+  </div>
+
+  <div class="tr-product-grid">
+    <div class="tr-gallery">
+      <div class="tr-gallery-main">
+        {%- if cur.selected_or_first_available_variant.featured_image -%}
+          {%- assign init_image_obj = cur.selected_or_first_available_variant.featured_image -%}
+          {%- assign init_alt = init_image_obj.alt | default: cur.title | escape -%}
+        {%- else -%}
+          {%- assign init_image_obj = cur.featured_image -%}
+          {%- assign init_alt = init_image_obj.alt | default: cur.title | escape -%}
+        {%- endif -%}
+        {%- assign init_img = init_image_obj | image_url: width: 900 -%}
+        <img id="tr-main-img"
+             src="{{ init_img }}"
+             srcset="{{ init_image_obj | image_url: width: 450 }} 450w, {{ init_image_obj | image_url: width: 700 }} 700w, {{ init_image_obj | image_url: width: 900 }} 900w, {{ init_image_obj | image_url: width: 1400 }} 1400w"
+             sizes="(min-width: 990px) 45vw, calc(100vw - 40px)"
+             alt="{{ init_alt }}"
+             fetchpriority="high"
+             width="{{ init_image_obj.width }}"
+             height="{{ init_image_obj.height }}"
+             style="width:100%;height:100%;object-fit:contain;padding:20px;">
+        {%- unless hide_zetadvies -%}
+          <div class="tr-gallery-badge">{{ cur.variants.first.weight | weight_with_unit }}</div>
+          <div class="tr-gallery-badge-type">{{ cur.type }}</div>
+        {%- endunless -%}
+      </div>
+      <div class="tr-gallery-thumbs">
+        {%- for img in cur.images limit: 4 -%}
+          <div class="tr-thumb {% if forloop.first %}active{% endif %}" onclick="trSwitchImg(this,'{{ img | image_url: width: 900 }}')">
+            <img src="{{ img | image_url: width: 200 }}" alt="{{ img.alt | default: cur.title | escape }}" loading="lazy">
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="tr-product-info">
+      <div class="tr-tag-row">
+        {%- for tag in cur.tags limit: 4 -%}<span class="tr-tag">{{ tag }}</span>{%- endfor -%}
+        {%- unless hide_zetadvies -%}<span class="tr-tag">{{ cur.variants.first.weight | weight_with_unit }}</span>{%- endunless -%}
+      </div>
+      <h1>{{ cur.title }}</h1>
+      <p class="tr-tagline">{{ section.settings.tagline | default: cur.type | append: ' van Tante Rie' }}</p>
+
+      {%- assign review_count = cur.metafields.judgeme.review_widget_data.value | default: '{}' | parse_json %}
+      {%- if review_count == blank -%}{%- assign review_count = cur.metafields.reviews.rating_count -%}{%- endif -%}
+      {%- if cur.metafields.reviews.rating_count > 0 or cur.metafields.judgeme.badge != blank -%}
+      <div class="tr-rating-bar">
+        {%- render 'judgeme_widgets', widget_type: 'judgeme_product_stars', concierge_install: true, product: cur -%}
+        <a href="#tr-reviews">Bekijk beoordelingen</a>
+      </div>
+      {%- endif -%}
+      <div class="tr-divider"></div>
+
+      {%- if cur.variants.size > 1 -%}
+        <script type="application/json" id="tr-variant-data-{{ cur.id }}">
+          {
+            "variants": [
+              {%- for v in cur.variants -%}
+                {%- if v.featured_image -%}{%- assign v_img = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign v_img = '' -%}{%- endif -%}
+                {
+                  "id": {{ v.id }},
+                  "price": {{ v.price }},
+                  "available": {{ v.available }},
+                  "title": {{ v.title | json }},
+                  "options": {{ v.options | json }},
+                  "img": {{ v_img | json }}
+                }{%- unless forloop.last -%},{%- endunless -%}
+              {%- endfor -%}
+            ],
+            "fallbackImg": {{ cur.featured_image | image_url: width: 900 | json }},
+            "initialOptions": {{ cur.selected_or_first_available_variant.options | json }}
+          }
+        </script>
+        <div class="tr-variants" data-tr-variants data-product-id="{{ cur.id }}">
+          {%- for opt in cur.options_with_values -%}
+            {%- assign opt_idx = forloop.index0 -%}
+            {%- assign opt_name_lower = opt.name | downcase -%}
+            {%- assign opt_selected = cur.selected_or_first_available_variant.options[opt_idx] -%}
+            <div class="tr-variants-group" data-option-index="{{ opt_idx }}">
+              <p class="tr-variant-label">{{ opt.name }}: <strong data-tr-option-val="{{ opt_idx }}">{{ opt_selected }}</strong></p>
+              <div class="tr-variant-pills">
+                {%- for val in opt.values -%}
+                  {%- assign is_active = false -%}
+                  {%- if val == opt_selected -%}{%- assign is_active = true -%}{%- endif -%}
+                  {%- if opt_name_lower == 'kleur' or opt_name_lower == 'color' or opt_name_lower == 'colour' -%}
+                    <div class="tr-variant-swatch{% if is_active %} active{% endif %}"
+                         style="background:{{ val | downcase | replace: ' ', '' }};"
+                         data-tr-swatch
+                         data-option-index="{{ opt_idx }}"
+                         data-value="{{ val | escape }}"
+                         title="{{ val | escape }}"></div>
+                  {%- else -%}
+                    <button type="button"
+                            class="tr-variant-pill{% if is_active %} active{% endif %}"
+                            data-tr-pill
+                            data-option-index="{{ opt_idx }}"
+                            data-value="{{ val | escape }}">{{ val }}</button>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- unless hide_zetadvies or brew_gram == blank and brew_temp == blank and brew_tijd == blank -%}
+      <p class="tr-section-label" style="margin-bottom:10px;">Zetadvies</p>
+      <div class="tr-brew-grid">
+        <div class="tr-brew-card"><svg class="tr-brew-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 7h14M5 7L2 14a3 3 0 0 0 6 0L5 7ZM19 7l-3 7a3 3 0 0 0 6 0l-3-7Z"/></svg><span class="tr-brew-value">{{ brew_gram }}</span><span class="tr-brew-label">per 200 ml</span></div>
+        <div class="tr-brew-card"><svg class="tr-brew-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5V4a2 2 0 1 1 4 0v9.5a4 4 0 1 1-4 0Z"/><path d="M12 8v6"/></svg><span class="tr-brew-value">{{ brew_temp }}</span><span class="tr-brew-label">watertemperatuur</span></div>
+        <div class="tr-brew-card"><svg class="tr-brew-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6M12 2v3"/></svg><span class="tr-brew-value">{{ brew_tijd }}</span><span class="tr-brew-label">trektijd</span></div>
+      </div>
+      {%- endunless -%}
+
+      {%- assign show_flavor = false -%}
+      {%- if flavor_zoet > 0 or flavor_bloemig > 0 or flavor_kruidig > 0 or flavor_bitter > 0 or flavor_fris > 0 -%}{%- assign show_flavor = true -%}{%- endif -%}
+      {%- if show_flavor and hide_zetadvies != true -%}
+      <p class="tr-section-label" style="margin-bottom:10px;">Smaakprofiel</p>
+      <div class="tr-flavor-block">
+        {%- if flavor_zoet > 0 -%}<div class="tr-flavor-row tr-flavor-zoet"><span class="tr-flavor-label">Zoet</span><div class="tr-flavor-track"><div class="tr-flavor-fill" style="width:{{ flavor_zoet | times: 20 }}%"></div></div></div>{%- endif -%}
+        {%- if flavor_bloemig > 0 -%}<div class="tr-flavor-row tr-flavor-bloemig"><span class="tr-flavor-label">Bloemig</span><div class="tr-flavor-track"><div class="tr-flavor-fill" style="width:{{ flavor_bloemig | times: 20 }}%"></div></div></div>{%- endif -%}
+        {%- if flavor_kruidig > 0 -%}<div class="tr-flavor-row tr-flavor-kruidig"><span class="tr-flavor-label">Kruidig</span><div class="tr-flavor-track"><div class="tr-flavor-fill" style="width:{{ flavor_kruidig | times: 20 }}%"></div></div></div>{%- endif -%}
+        {%- if flavor_bitter > 0 -%}<div class="tr-flavor-row tr-flavor-bitter"><span class="tr-flavor-label">Bitter</span><div class="tr-flavor-track"><div class="tr-flavor-fill" style="width:{{ flavor_bitter | times: 20 }}%"></div></div></div>{%- endif -%}
+        {%- if flavor_fris > 0 -%}<div class="tr-flavor-row tr-flavor-fris"><span class="tr-flavor-label">Fris</span><div class="tr-flavor-track"><div class="tr-flavor-fill" style="width:{{ flavor_fris | times: 20 }}%"></div></div></div>{%- endif -%}
+      </div>
+      {%- endif -%}
+
+      <div class="tr-origin-block">
+        <p class="tr-section-label" style="margin-bottom:8px;">Het verhaal</p>
+        <p>{{ verhaal_tekst }}</p>
+      </div>
+
+      <div class="tr-purchase-row">
+        <div>
+          <div class="tr-price">{{ cur.price | money }}</div>
+          <div class="tr-price-sub">Belasting inbegrepen</div>
+        </div>
+        <div class="tr-qty-control" role="group" aria-label="Aantal">
+          <button class="tr-qty-btn" onclick="trChangeQty(-1)" aria-label="Verminder aantal">&#8722;</button>
+          <span class="tr-qty-num" id="tr-qty" aria-live="polite" aria-label="Aantal">1</span>
+          <button class="tr-qty-btn" onclick="trChangeQty(1)" aria-label="Verhoog aantal">+</button>
+        </div>
+      </div>
+
+      <button type="button" class="tr-btn-primary" data-tr-atc data-qty-from="#tr-qty" data-variant-id="{{ cur.selected_or_first_available_variant.id }}">Aan winkelwagen toevoegen</button>
+      <button class="tr-btn-secondary">&#9825; Op verlanglijst</button>
+
+      {%- assign atc_variant = cur.selected_or_first_available_variant -%}
+      {%- if atc_variant.available and atc_variant.inventory_management == 'shopify' and atc_variant.inventory_quantity > 0 -%}
+        {%- if atc_variant.inventory_quantity <= 10 -%}
+          <p class="tr-stock-indicator tr-stock-low">Nog maar {{ atc_variant.inventory_quantity }} op voorraad</p>
+        {%- else -%}
+          <p class="tr-stock-indicator">Op voorraad</p>
+        {%- endif -%}
+      {%- elsif atc_variant.available == false -%}
+        <p class="tr-stock-indicator tr-stock-out">Tijdelijk uitverkocht</p>
+      {%- endif -%}
+
+      <div class="tr-trust-strip">
+        <span class="tr-trust-item">&#10003; Snel verzonden</span>
+        {%- unless hide_zetadvies -%}<span class="tr-trust-item">&#10003; Vers verpakt</span>{%- endunless -%}
+        <span class="tr-trust-item">&#10003; Uit eigen winkel Borne</span>
+      </div>
+      <div class="tr-accordion" data-tr-accordion>
+        {%- comment -%} Details tabel {%- endcomment -%}
+        {%- assign mf_materiaal       = cur.metafields.specificaties.materiaal.value -%}
+        {%- assign mf_afmeting        = cur.metafields.specificaties.afmeting.value -%}
+        {%- assign mf_hwxd            = cur.metafields.specificaties.hoogte_diameter.value -%}
+        {%- assign mf_volume          = cur.metafields.specificaties.volume.value -%}
+        {%- assign mf_max_graden      = cur.metafields.specificaties.max_graden.value -%}
+        {%- assign mf_voedselveilig   = cur.metafields.specificaties.voedselveilig.value -%}
+        {%- assign mf_vaatwasser      = cur.metafields.specificaties.vaatwasserbestendig.value -%}
+        {%- assign mf_magnetron       = cur.metafields.specificaties.magnetron.value -%}
+        {%- assign mf_vriezer         = cur.metafields.specificaties.vriezer.value -%}
+        {%- assign has_specs = false -%}
+        {%- if mf_materiaal != blank or mf_afmeting != blank or mf_volume != blank or specs_materiaal != blank -%}
+          {%- assign has_specs = true -%}
+        {%- endif -%}
+        {%- unless template.suffix == 'waterfles' -%}{%- if has_specs or show_details -%}
+        <div class="tr-accordion-item">
+          <button class="tr-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Details <span class="tr-chevron">&#9662;</span></button>
+          <div class="tr-accordion-body" data-tr-accordion-body>
+            <table class="tr-specs-table">
+              {%- assign v_afmeting = mf_afmeting | default: specs_afmeting -%}
+              {%- assign v_hwxd     = mf_hwxd     | default: specs_hwxd -%}
+              {%- assign v_volume   = mf_volume   | default: specs_volume -%}
+              {%- assign v_mat      = mf_materiaal | default: specs_materiaal -%}
+              {%- assign v_graden   = mf_max_graden | default: specs_max_graden -%}
+              {%- if v_afmeting != blank -%}<tr><td>Productafmeting</td><td>{{ v_afmeting }}</td></tr>{%- endif -%}
+              {%- if v_hwxd != blank -%}<tr><td>Hoogte x Diameter (cm)</td><td>{{ v_hwxd }}</td></tr>{%- endif -%}
+              {%- if v_volume != blank -%}<tr><td>Volume (ml)</td><td>{{ v_volume }}</td></tr>{%- endif -%}
+              {%- if v_mat != blank -%}<tr><td>Materiaal</td><td>{{ v_mat }}</td></tr>{%- endif -%}
+              {%- if v_graden != blank -%}<tr><td>Max. graden</td><td>{{ v_graden }}</td></tr>{%- endif -%}
+              {%- if mf_voedselveilig != blank or specs_voedselveilig != 'none' -%}
+                {%- assign v_vv = mf_voedselveilig | default: specs_voedselveilig -%}
+                <tr><td>Voedselveilig</td><td>{%- if v_vv == 'true' or v_vv == 'ja' -%}<span class="tr-specs-icon tr-specs-icon--yes">&#10003;</span>{%- elsif v_vv == 'false' or v_vv == 'nee' -%}<span class="tr-specs-icon tr-specs-icon--no">&#10007;</span>{%- else -%}{{ v_vv }}{%- endif -%}</td></tr>
+              {%- endif -%}
+              {%- if mf_vaatwasser != blank or specs_vaatwasser != 'none' -%}
+                {%- assign v_vw = mf_vaatwasser | default: specs_vaatwasser -%}
+                <tr><td>Vaatwasserbestendig</td><td>{%- if v_vw == 'true' or v_vw == 'ja' -%}<span class="tr-specs-icon tr-specs-icon--yes">&#10003;</span>{%- elsif v_vw == 'false' or v_vw == 'nee' -%}<span class="tr-specs-icon tr-specs-icon--no">&#10007;</span>{%- else -%}{{ v_vw }}{%- endif -%}</td></tr>
+              {%- endif -%}
+              {%- if mf_magnetron != blank or specs_magnetron != 'none' -%}
+                {%- assign v_mg = mf_magnetron | default: specs_magnetron -%}
+                <tr><td>Magnetron</td><td>{%- if v_mg == 'true' or v_mg == 'ja' -%}<span class="tr-specs-icon tr-specs-icon--yes">&#10003;</span>{%- elsif v_mg == 'false' or v_mg == 'nee' -%}<span class="tr-specs-icon tr-specs-icon--no">&#10007;</span>{%- else -%}{{ v_mg }}{%- endif -%}</td></tr>
+              {%- endif -%}
+              {%- if mf_vriezer != blank or specs_vriezer != 'none' -%}
+                {%- assign v_vz = mf_vriezer | default: specs_vriezer -%}
+                <tr><td>Veilig in de vriezer</td><td>{%- if v_vz == 'true' or v_vz == 'ja' -%}<span class="tr-specs-icon tr-specs-icon--yes">&#10003;</span>{%- elsif v_vz == 'false' or v_vz == 'nee' -%}<span class="tr-specs-icon tr-specs-icon--no">&#10007;</span>{%- else -%}{{ v_vz }}{%- endif -%}</td></tr>
+              {%- endif -%}
+            </table>
+          </div>
+        </div>
+        {%- endif -%}{%- endunless -%}
+        {%- unless template.suffix == 'rice' or template.suffix == 'waterfles' -%}
+        <div class="tr-accordion-item">
+          <button class="tr-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Ingrediënten <span class="tr-chevron">&#9662;</span></button>
+          <div class="tr-accordion-body" data-tr-accordion-body>
+            {%- assign mf_ingredienten = cur.metafields.beschrijving.ingredienten.value -%}
+            {%- if mf_ingredienten != blank -%}
+              <p>{{ mf_ingredienten }}</p>
+            {%- else -%}
+              <p>Zie verpakking voor volledige ingrediëntenlijst.</p>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="tr-accordion-item">
+          <button class="tr-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Bewaren &amp; houdbaarheid <span class="tr-chevron">&#9662;</span></button>
+          <div class="tr-accordion-body" data-tr-accordion-body><p>Bewaar op een koele, droge en donkere plek in een luchtdicht blik. Houdbaar tot 2 jaar.</p></div>
+        </div>
+        {%- endunless -%}
+        <div class="tr-accordion-item">
+          <button class="tr-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Verzending &amp; retour <span class="tr-chevron">&#9662;</span></button>
+          <div class="tr-accordion-body" data-tr-accordion-body>
+            {%- if template.suffix == 'rice' or template.suffix == 'waterfles' -%}
+              <p>Bestellingen worden dezelfde werkdag verwerkt. Retourneren is mogelijk binnen 14 dagen, mits ongebruikt en in originele verpakking. Neem contact op via webshop@tanterie.nl.</p>
+            {%- else -%}
+              <p>Bestellingen worden dezelfde werkdag verwerkt. Let op: thee is een voedingsproduct en kan niet worden geretourneerd.</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- if bundle_handle != blank and bundle != blank -%}
+  <div class="tr-bundle-section">
+    <p class="tr-section-label" style="margin-bottom:14px;">Maak je theemoment compleet</p>
+    <div class="tr-bundle-card">
+      <div class="tr-bundle-thumb"><img src="{{ cur.featured_image | image_url: width: 160 }}" alt="{{ bundle.title | escape }}"></div>
+      <div class="tr-bundle-text">
+        <p class="tr-bundle-eyebrow">&#10086; Populaire combinatie</p>
+        <p class="tr-bundle-name">{{ bundle.title }}</p>
+        <p class="tr-bundle-contents">{{ section.settings.bundle_contents }}</p>
+        <div class="tr-bundle-price-row">
+          <span class="tr-bundle-price">{{ bundle.price | money }}</span>
+          <span class="tr-bundle-save">Samen voordeliger</span>
+        </div>
+      </div>
+      <a href="{{ bundle.url }}" class="tr-btn-bundle">Bundel bekijken</a>
+    </div>
+  </div>
+  {%- endif -%}
+
+  {%- unless template.suffix == 'rice' -%}
+  <section class="tr-combine-section">
+    <div class="tr-section-header">
+      <h2 class="tr-section-title">Andere theesoorten die je zult waarderen</h2>
+      <a href="/collections/thee" class="tr-see-all">Alles bekijken</a>
+    </div>
+    <div class="tr-product-cards">
+      {%- assign shown = 0 -%}
+      {%- for p in collections['thee'].products -%}
+        {%- if p.id != cur.id and shown < 4 -%}{%- assign shown = shown | plus: 1 -%}
+          <a class="tr-product-card" href="{{ p.url }}">
+            <div class="tr-card-img"><img src="{{ p.featured_image | image_url: width: 400 }}" srcset="{{ p.featured_image | image_url: width: 200 }} 200w, {{ p.featured_image | image_url: width: 400 }} 400w" sizes="(max-width: 900px) 45vw, 280px" alt="{{ p.title | escape }}" loading="lazy"></div>
+            <div class="tr-card-body">
+              <p class="tr-card-type">{{ p.type }}</p>
+              <p class="tr-card-name">{{ p.title }}</p>
+              <p class="tr-card-price">{{ p.price | money }}</p>
+              <button class="tr-card-btn">Toevoegen</button>
+            </div>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endunless -%}
+
+</div>
+
+{%- unless hide_zetadvies or brew_temp == blank or brew_tijd == blank -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": {{ cur.title | append: ' zetten' | json }},
+  "description": {{ 'Zo zet je ' | append: cur.title | append: ' losse thee.' | json }},
+  "step": [
+    {%- assign _step_pos = 0 -%}
+    {%- if brew_gram != blank -%}
+      {%- assign _step_pos = _step_pos | plus: 1 -%}
+    { "@type": "HowToStep", "position": {{ _step_pos }}, "name": "Doseren", "text": {{ brew_gram | append: ' per 200 ml water.' | json }} },
+    {%- endif -%}
+    {%- assign _step_pos = _step_pos | plus: 1 -%}
+    { "@type": "HowToStep", "position": {{ _step_pos }}, "name": "Water verwarmen", "text": {{ 'Verwarm het water tot ' | append: brew_temp | append: '.' | json }} },
+    {%- assign _step_pos = _step_pos | plus: 1 -%}
+    { "@type": "HowToStep", "position": {{ _step_pos }}, "name": "Laten trekken", "text": {{ 'Laat de thee ' | append: brew_tijd | append: ' trekken.' | json }} }
+  ]
+}
+</script>
+{%- endunless -%}
+
+<div class="tr-sticky-atc" id="tr-sticky-atc">
+  <div>
+    <div class="tr-sticky-atc-price" id="tr-sticky-price">{{ cur.price | money }}</div>
+  </div>
+  <button type="button" class="tr-sticky-atc-btn" data-tr-atc data-qty-from="#tr-qty" data-variant-id="{{ cur.selected_or_first_available_variant.id }}">In winkelwagen</button>
+</div>
+
+<script>
+function trSwitchImg(el,src){var img=document.getElementById('tr-main-img');img.removeAttribute('srcset');img.src=src;document.querySelectorAll('.tr-thumb').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+function trChangeQty(d){const e=document.getElementById('tr-qty');e.textContent=Math.max(1,parseInt(e.textContent)+d);}
+
+(function(){
+  const wrap = document.querySelector('[data-tr-variants]');
+  if(!wrap) return;
+
+  const productId = wrap.dataset.productId;
+  const dataEl = document.getElementById('tr-variant-data-' + productId);
+  if(!dataEl) return;
+
+  let parsed;
+  try { parsed = JSON.parse(dataEl.textContent); } catch(e) { return; }
+
+  const variants = parsed.variants || [];
+  const fallbackImg = parsed.fallbackImg || '';
+  if(!variants.length) return;
+
+  const currentOptions = parsed.initialOptions.slice();
+
+  function findVariant(opts) {
+    return variants.find(v => opts.every((o, i) => v.options[i] === o)) || null;
+  }
+
+  function updateUI(variant) {
+    if(!variant) return;
+    // price
+    const priceEl = document.querySelector('.tr-price');
+    if(priceEl) priceEl.textContent = (variant.price / 100).toLocaleString('nl-NL', {style:'currency', currency:'EUR'});
+    // atc buttons (main + sticky)
+    document.querySelectorAll('[data-tr-atc][data-variant-id]').forEach(btn => {
+      btn.dataset.variantId = variant.id;
+      btn.disabled = !variant.available;
+      if(btn.classList.contains('tr-sticky-atc-btn')) {
+        btn.textContent = variant.available ? 'In winkelwagen' : 'Uitverkocht';
+      } else {
+        btn.textContent = variant.available ? 'Aan winkelwagen toevoegen' : 'Uitverkocht';
+      }
+    });
+    // sticky price
+    const stickyPrice = document.getElementById('tr-sticky-price');
+    if(stickyPrice) stickyPrice.textContent = (variant.price / 100).toLocaleString('nl-NL', {style:'currency', currency:'EUR'});
+    // image — gebruik variant image, anders fallback naar product featured image
+    const imgSrc = (variant.img && variant.img.length > 10)
+      ? variant.img
+      : fallbackImg;
+    if(imgSrc) {
+      const mainImg = document.getElementById('tr-main-img');
+      if(mainImg) { mainImg.removeAttribute('srcset'); mainImg.src = imgSrc; }
+      document.querySelectorAll('.tr-thumb').forEach(t => t.classList.remove('active'));
+    }
+  }
+
+  function selectOption(optionIndex, value) {
+    currentOptions[optionIndex] = value;
+
+    // update label
+    const labelEl = document.querySelector('[data-tr-option-val="'+optionIndex+'"]');
+    if(labelEl) labelEl.textContent = value;
+
+    // update active states
+    wrap.querySelectorAll('[data-option-index="'+optionIndex+'"]').forEach(el => {
+      const isActive = el.dataset.value === value;
+      el.classList.toggle('active', isActive);
+    });
+
+    const variant = findVariant(currentOptions);
+    updateUI(variant);
+  }
+
+  // pills
+  wrap.addEventListener('click', e => {
+    const pill = e.target.closest('[data-tr-pill]');
+    if(!pill) return;
+    selectOption(parseInt(pill.dataset.optionIndex), pill.dataset.value);
+  });
+
+  // swatches
+  wrap.addEventListener('click', e => {
+    const swatch = e.target.closest('[data-tr-swatch]');
+    if(!swatch) return;
+    selectOption(parseInt(swatch.dataset.optionIndex), swatch.dataset.value);
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "TR Product Redesign",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Weergave" },
+    { "type": "checkbox", "id": "hide_zetadvies", "label": "Verberg zetadvies + smaakprofiel", "default": false, "info": "Zet aan voor non-thee producten zoals Rice" },
+    { "type": "header", "content": "Zetadvies (fallback)" },
+    { "type": "paragraph", "content": "Wordt automatisch uit metafields geladen. Vul hier in als fallback." },
+    { "type": "text", "id": "brew_gram", "label": "Hoeveelheid", "placeholder": "bijv. 2 gram" },
+    { "type": "text", "id": "brew_temp", "label": "Watertemperatuur", "placeholder": "bijv. 95 °C" },
+    { "type": "text", "id": "brew_time", "label": "Trektijd", "placeholder": "bijv. 3–5 min" },
+    { "type": "header", "content": "Smaakprofiel (fallback)" },
+    { "type": "paragraph", "content": "Wordt opgehaald uit product-metafield smaakprofiel.{zoet|bloemig|kruidig|bitter|fris}. Vul hier in als fallback voor producten zonder metafield-waarde." },
+    { "type": "range", "id": "flavor_zoet", "label": "Zoet", "min": 0, "max": 5, "step": 1, "default": 0 },
+    { "type": "range", "id": "flavor_bloemig", "label": "Bloemig", "min": 0, "max": 5, "step": 1, "default": 0 },
+    { "type": "range", "id": "flavor_kruidig", "label": "Kruidig", "min": 0, "max": 5, "step": 1, "default": 0 },
+    { "type": "range", "id": "flavor_bitter", "label": "Bitter", "min": 0, "max": 5, "step": 1, "default": 0 },
+    { "type": "range", "id": "flavor_fris", "label": "Fris", "min": 0, "max": 5, "step": 1, "default": 0 },
+    { "type": "header", "content": "Teksten" },
+    { "type": "text", "id": "tagline", "label": "Tagline", "placeholder": "bijv. Een feestelijke melange" },
+    { "type": "textarea", "id": "verhaal_tekst", "label": "Verhaaltekst", "info": "Laat leeg voor automatische beschrijving" },
+    { "type": "header", "content": "Details tabel" },
+    { "type": "paragraph", "content": "Wordt automatisch gevuld via metafields (namespace: specificaties). Vul hieronder in als fallback voor producten zonder metafields." },
+    { "type": "checkbox", "id": "show_details", "label": "Toon Details accordion", "default": false },
+    { "type": "text", "id": "specs_afmeting", "label": "Productafmeting", "placeholder": "bijv. H: 9.0 cm x D: 9.0 cm" },
+    { "type": "text", "id": "specs_hwxd", "label": "Hoogte x Diameter (cm)", "placeholder": "bijv. 9.0 x 9.0" },
+    { "type": "text", "id": "specs_volume", "label": "Volume (ml)", "placeholder": "bijv. 250" },
+    { "type": "text", "id": "specs_materiaal", "label": "Materiaal", "placeholder": "bijv. Melamine" },
+    { "type": "text", "id": "specs_max_graden", "label": "Max. graden", "placeholder": "bijv. 70" },
+    { "type": "select", "id": "specs_voedselveilig", "label": "Voedselveilig", "options": [{"value":"none","label":"—"},{"value":"ja","label":"Ja ✓"},{"value":"nee","label":"Nee ✗"}], "default": "none" },
+    { "type": "select", "id": "specs_vaatwasser", "label": "Vaatwasserbestendig", "options": [{"value":"none","label":"—"},{"value":"ja","label":"Ja ✓"},{"value":"nee","label":"Nee ✗"}], "default": "none" },
+    { "type": "select", "id": "specs_magnetron", "label": "Magnetron", "options": [{"value":"none","label":"—"},{"value":"ja","label":"Ja ✓"},{"value":"nee","label":"Nee ✗"}], "default": "none" },
+    { "type": "select", "id": "specs_vriezer", "label": "Veilig in de vriezer", "options": [{"value":"none","label":"—"},{"value":"ja","label":"Ja ✓"},{"value":"nee","label":"Nee ✗"}], "default": "none" },
+    { "type": "header", "content": "Bundel" },
+    { "type": "text", "id": "bundle_handle", "label": "Bundel product handle" },
+    { "type": "text", "id": "bundle_contents", "label": "Bundelinhoud" }
+  ]
+}
+{% endschema %}

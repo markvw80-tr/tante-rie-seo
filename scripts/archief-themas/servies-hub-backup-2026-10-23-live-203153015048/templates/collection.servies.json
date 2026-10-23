@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "servies-hub": {
+      "type": "tr-servies-hub",
+      "blocks": {
+        "bunzlau": {
+          "type": "brand_card",
+          "settings": {
+            "collection": "bunzlau",
+            "label": "Bunzlau Castle",
+            "subtitle": "Handgemaakt Pools aardewerk, 40+ decors",
+            "url": "/collections/bunzlau",
+            "image_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/06_Tante-Rie_Bunzlau_ontbijt-uitgebreid_LQ_JochemBoxemPhotography-11995_2b8b959b-9fd4-4ff5-adaf-d1e9b1fbe070.jpg?v=1781780354",
+            "coming_soon": false
+          }
+        },
+        "rice": {
+          "type": "brand_card",
+          "settings": {
+            "collection": "rice",
+            "label": "Rice",
+            "subtitle": "Kleurrijke melamine, bijna onbreekbaar",
+            "url": "/collections/rice",
+            "image_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/29_Tante-Rie_Ric_picknick_LQ_JochemBoxemPhotography-12338_4459a85f-78e0-4171-910c-a20f6299d37b.jpg?v=1781780354",
+            "coming_soon": false
+          }
+        },
+        "blond": {
+          "type": "brand_card",
+          "settings": {
+            "collection": "",
+            "label": "Blond Amsterdam",
+            "subtitle": "Kleurrijk en vrolijk servies",
+            "url": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/14_Tante-Rie_Blond_high-tea_LQ_JochemBoxemPhotography-12161_c6d5e30d-f220-4c83-b13f-8efc8df6c0e2.jpg?v=1781780354",
+            "coming_soon": false
+          }
+        }
+      },
+      "block_order": [
+        "bunzlau",
+        "rice",
+        "blond"
+      ],
+      "settings": {
+        "eyebrow": "Onze serviescollectie",
+        "title": "Servies met karakter",
+        "subtitle": "Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past."
+      }
+    }
+  },
+  "order": [
+    "servies-hub"
+  ]
+}

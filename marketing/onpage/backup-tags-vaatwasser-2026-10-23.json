@@ -1,0 +1,191 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup V48: tags van Blond-producten voor toevoegen van tag 'vaatwasser' (alleen toevoeging; terugdraaien = tagsRemove vaatwasser)",
+ "producten": [
+  {
+   "handle": "eb-pink-mug-0-35l-hearts",
+   "id": "gid://shopify/Product/12039138771208",
+   "tags_voor": []
+  },
+  {
+   "handle": "forever-young",
+   "id": "gid://shopify/Product/12038838518024",
+   "tags_voor": []
+  },
+  {
+   "handle": "mazagran-liefste-juf",
+   "id": "gid://shopify/Product/12039138345224",
+   "tags_voor": []
+  },
+  {
+   "handle": "thank-you",
+   "id": "gid://shopify/Product/12039798063368",
+   "tags_voor": []
+  },
+  {
+   "handle": "mama",
+   "id": "gid://shopify/Product/12039798096136",
+   "tags_voor": []
+  },
+  {
+   "handle": "mazagran-graduated-0-5l",
+   "id": "gid://shopify/Product/12039138541832",
+   "tags_voor": []
+  },
+  {
+   "handle": "eb-cappuccino-mug-0-5l-tea",
+   "id": "gid://shopify/Product/12039138902280",
+   "tags_voor": []
+  },
+  {
+   "handle": "dier-mug-cat-lover",
+   "id": "gid://shopify/Product/12039138935048",
+   "tags_voor": []
+  },
+  {
+   "handle": "hart-voor-de-zorg",
+   "id": "gid://shopify/Product/12039798128904",
+   "tags_voor": []
+  },
+  {
+   "handle": "dier-mug-horse-lover",
+   "id": "gid://shopify/Product/12039138312456",
+   "tags_voor": []
+  },
+  {
+   "handle": "eb-cappuccino-mug-0-5l-hearts",
+   "id": "gid://shopify/Product/12039138377992",
+   "tags_voor": []
+  },
+  {
+   "handle": "mazagran-a-hug-in-a-mug",
+   "id": "gid://shopify/Product/12039138607368",
+   "tags_voor": []
+  },
+  {
+   "handle": "best-friend",
+   "id": "gid://shopify/Product/12038838321416",
+   "tags_voor": []
+  },
+  {
+   "handle": "50-jaar",
+   "id": "gid://shopify/Product/12039799111944",
+   "tags_voor": []
+  },
+  {
+   "handle": "ed-bord-18-cm-tompouce",
+   "id": "gid://shopify/Product/12039138509064",
+   "tags_voor": []
+  },
+  {
+   "handle": "cup-of-sunshine",
+   "id": "gid://shopify/Product/12038840516872",
+   "tags_voor": []
+  },
+  {
+   "handle": "i-do",
+   "id": "gid://shopify/Product/12039801569544",
+   "tags_voor": []
+  },
+  {
+   "handle": "congratulations-party",
+   "id": "gid://shopify/Product/12038837764360",
+   "tags_voor": []
+  },
+  {
+   "handle": "papa",
+   "id": "gid://shopify/Product/12039798784264",
+   "tags_voor": []
+  },
+  {
+   "handle": "dad-1",
+   "id": "gid://shopify/Product/12039798751496",
+   "tags_voor": []
+  },
+  {
+   "handle": "meester",
+   "id": "gid://shopify/Product/12039798554888",
+   "tags_voor": []
+  },
+  {
+   "handle": "kitchen-queen",
+   "id": "gid://shopify/Product/12039798325512",
+   "tags_voor": []
+  },
+  {
+   "handle": "cozy-days-mug-0-35l-tea",
+   "id": "gid://shopify/Product/12039138443528",
+   "tags_voor": []
+  },
+  {
+   "handle": "mazagran-sister",
+   "id": "gid://shopify/Product/12039138640136",
+   "tags_voor": []
+  },
+  {
+   "handle": "miss-creativity",
+   "id": "gid://shopify/Product/12038838026504",
+   "tags_voor": []
+  },
+  {
+   "handle": "love-green-girl",
+   "id": "gid://shopify/Product/12038837403912",
+   "tags_voor": []
+  },
+  {
+   "handle": "miss-brains",
+   "id": "gid://shopify/Product/12039806091528",
+   "tags_voor": []
+  },
+  {
+   "handle": "ed-plate-18-cm-croissant",
+   "id": "gid://shopify/Product/12039138476296",
+   "tags_voor": []
+  },
+  {
+   "handle": "mazagran-cheers-to-18-years",
+   "id": "gid://shopify/Product/12039138672904",
+   "tags_voor": []
+  },
+  {
+   "handle": "mazagran-orange-0-5l",
+   "id": "gid://shopify/Product/12039138705672",
+   "tags_voor": []
+  },
+  {
+   "handle": "game-on",
+   "id": "gid://shopify/Product/12038839271688",
+   "tags_voor": []
+  },
+  {
+   "handle": "love-to-travel",
+   "id": "gid://shopify/Product/12038839042312",
+   "tags_voor": []
+  },
+  {
+   "handle": "fashion-girl",
+   "id": "gid://shopify/Product/12038838812936",
+   "tags_voor": []
+  },
+  {
+   "handle": "matcha-princess",
+   "id": "gid://shopify/Product/12038837960968",
+   "tags_voor": []
+  },
+  {
+   "handle": "groom",
+   "id": "gid://shopify/Product/12039799210248",
+   "tags_voor": []
+  },
+  {
+   "handle": "the-man",
+   "id": "gid://shopify/Product/12039798882568",
+   "tags_voor": []
+  },
+  {
+   "handle": "hearts-plate-22-cm",
+   "id": "gid://shopify/Product/12039138869512",
+   "tags_voor": []
+  }
+ ]
+}

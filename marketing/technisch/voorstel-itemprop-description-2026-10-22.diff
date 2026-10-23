@@ -1,0 +1,21 @@
+--- a/sections/tr-collection-joeff.liquid
++++ b/sections/tr-collection-joeff.liquid
+@@ -180,7 +180,8 @@
+ 
+ <div class="trjf-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Muuss wandsysteem bij Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Joeff Muuss: modulair wandsysteem met basishouders en schakels, boorvrij op te hangen. Te koop bij Tante Rie in Borne, Twente. Verzending door heel Nederland, of gratis ophalen in de winkel.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | truncate: 200 -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trjf-hero" aria-label="{{ collection.title }} collectie">
+@@ -508,7 +509,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",

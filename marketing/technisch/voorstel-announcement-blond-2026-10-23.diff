@@ -1,0 +1,13 @@
+--- a/blocks/_announcement.liquid	2026-10-23 03:58:51
++++ b/blocks/_announcement.liquid	2026-10-23 03:58:51
+@@ -5,8 +5,8 @@
+ {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
+ 
+ {%- assign _link = block_settings.link -%}
+-{%- comment -%} Afhaal-merken (template blond of bunzlau): geen verzendregels tonen. {%- endcomment -%}
+-{%- if template.suffix == 'blond' or template.suffix == 'bunzlau' -%}
++{%- comment -%} Afhaal-merken (template blond of bunzlau en de Blond-gidspagina): geen verzendregels tonen. {%- endcomment -%}
++{%- if template.suffix == 'blond' or template.suffix == 'bunzlau' or page.handle == 'blond-amsterdam-servies' -%}
+   {%- if _link != blank -%}{%- assign _link = '/pages/theewinkel-borne-twente' -%}{%- endif -%}
+   {%- assign _lower = plain_text | downcase -%}
+   {%- if _lower contains 'verzendkosten' -%}

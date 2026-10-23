@@ -1,0 +1,624 @@
+{% comment %} Tante Rie – Joeff (Muuss) Collectie Landingspagina {% endcomment %}
+
+<style>
+/* ─── Joeff design tokens ────────────────────────────────────────────────── */
+:root {
+  --jf-clay:       #B5502E;
+  --jf-clay-mid:   #D97B54;
+  --jf-clay-light: #FBEEE6;
+  --jf-clay-dark:  #7A331C;
+}
+
+/* ─── Wrapper ────────────────────────────────────────────────────────────── */
+.trjf-wrap *, .trjf-wrap *::before, .trjf-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.trjf-wrap { background: var(--cream); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.trjf-hero { position: relative; background: var(--jf-clay-dark); overflow: hidden; }
+.trjf-hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--jf-clay-dark) 0%, var(--jf-clay) 60%, var(--jf-clay-mid) 100%); }
+.trjf-hero-pattern { position: absolute; inset: 0; opacity: .07; background-image: radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #fff 1px, transparent 1px), radial-gradient(circle at 60% 80%, #fff 1px, transparent 1px); background-size: 48px 48px, 72px 72px, 60px 60px; }
+.trjf-hero-img { position: absolute; inset: 0; }
+.trjf-hero-img img { width: 100%; height: 100%; object-fit: cover; opacity: .25; }
+.trjf-hero-inner { position: relative; z-index: 1; padding: 52px var(--page-margin) 48px; max-width: 760px; }
+.trjf-breadcrumb { font-size: 12px; color: rgba(255,255,255,.6); letter-spacing: .04em; margin-bottom: 18px; }
+.trjf-breadcrumb a { color: rgba(255,255,255,.6); text-decoration: none; }
+.trjf-breadcrumb a:hover { color: #fff; }
+.trjf-breadcrumb span { margin: 0 6px; }
+.trjf-hero-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 50px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 18px; }
+.trjf-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1.15; margin-bottom: 14px; }
+.trjf-hero-sub { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: rgba(255,255,255,.75); margin-bottom: 28px; line-height: 1.6; max-width: 560px; }
+.trjf-hero-meta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.trjf-hero-count { font-size: 13px; color: rgba(255,255,255,.65); }
+.trjf-hero-loc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.1); border-radius: 50px; padding: 5px 14px; font-size: 12px; color: rgba(255,255,255,.8); }
+
+/* ─── Sticky bar ─────────────────────────────────────────────────────────── */
+.trjf-sticky-bar { position: sticky; top: var(--header-group-height, 64px); transition: top var(--animation-speed-slow, .3s) var(--ease-out-cubic, ease); z-index: 7; background: var(--jf-clay-light); box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+
+/* ─── USP bar ────────────────────────────────────────────────────────────── */
+.trjf-usp-bar { background: var(--jf-clay-light); border-bottom: 1px solid rgba(181,80,46,.15); position: sticky; top: var(--header-group-height, 64px); transition: top var(--animation-speed-slow, .3s) var(--ease-out-cubic, ease); z-index: 7; box-shadow: 0 -4px 0 4px var(--jf-clay-light); }
+.trjf-usp-inner { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; gap: 0; }
+.trjf-usp-item { display: flex; align-items: center; gap: 12px; padding: 18px 32px; border-right: 1px solid rgba(181,80,46,.15); flex: 1; min-width: 200px; }
+.trjf-usp-item:last-child { border-right: none; }
+.trjf-usp-icon { font-size: 1.4rem; flex-shrink: 0; }
+.trjf-usp-label { font-size: 13px; font-weight: 600; color: var(--jf-clay-dark); }
+.trjf-usp-sub { font-size: 12px; color: var(--jf-clay); }
+@media (max-width: 700px) { .trjf-usp-item { border-right: none; border-bottom: 1px solid rgba(181,80,46,.15); padding: 14px 20px; } .trjf-usp-item:last-child { border-bottom: none; } }
+
+/* ─── Category quick-nav ─────────────────────────────────────────────────── */
+.trjf-cat-nav { padding: 20px var(--page-margin) 0; overflow-x: auto; display: flex; gap: 8px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.trjf-cat-nav::-webkit-scrollbar { display: none; }
+.trjf-cat-pill { display: inline-flex; align-items: center; white-space: nowrap; border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 7px 18px; font-size: 12.5px; font-weight: 500; color: var(--brown-dark); background: var(--white); text-decoration: none; transition: border-color .2s, background .2s, color .2s; flex-shrink: 0; }
+.trjf-cat-pill:hover, .trjf-cat-pill.active { border-color: var(--jf-clay); background: var(--jf-clay); color: #fff; }
+
+/* ─── Filter toolbar ─────────────────────────────────────────────────────── */
+.trjf-filter-toolbar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 12px var(--page-margin); border-bottom: 1px solid rgba(181,80,46,.15); margin-bottom: 0; flex-wrap: wrap; gap: 10px; background: transparent; }
+.trjf-filter-groups { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.trjf-filter-pill-wrap { position: relative; }
+.trjf-filter-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 16px; font-size: 13px; background: var(--white); cursor: pointer; display: flex; gap: 6px; align-items: center; font-family: 'DM Sans', sans-serif; color: var(--brown-dark); }
+.trjf-filter-pill.active { border-color: var(--brown-dark); background: var(--brown-dark); color: var(--white); }
+.trjf-filter-pill svg { transition: transform .2s; }
+.trjf-filter-pill[aria-expanded="true"] svg { transform: rotate(180deg); }
+.trjf-filter-dropdown { display: none; position: absolute; background: var(--white); border: 1px solid var(--cream-dark); border-radius: 14px; padding: 16px; min-width: 200px; z-index: 20; box-shadow: 0 8px 24px rgba(0,0,0,.1); top: calc(100% + 8px); left: 0; max-height: 280px; overflow-y: auto; }
+.trjf-filter-dropdown.open { display: block; }
+.trjf-filter-option { display: flex; gap: 8px; align-items: center; font-size: 13px; padding: 6px 0; cursor: pointer; font-family: 'DM Sans', sans-serif; color: var(--brown-dark); }
+.trjf-filter-option input { cursor: pointer; accent-color: var(--jf-clay); }
+.trjf-active-strip { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px var(--page-margin) 10px; background: transparent; }
+.trjf-filter-chip { background: var(--jf-clay-light); border-radius: 50px; padding: 4px 12px; font-size: 12px; display: flex; gap: 6px; align-items: center; text-decoration: none; color: var(--jf-clay-dark); font-family: 'DM Sans', sans-serif; }
+.trjf-filter-sort { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 16px; font-size: 13px; background: var(--white); cursor: pointer; color: var(--brown-dark); font-family: 'DM Sans', sans-serif; appearance: none; -webkit-appearance: none; }
+.trjf-filter-overlay { display: none; position: fixed; inset: 0; z-index: 10; }
+.trjf-filter-overlay.open { display: block; }
+
+/* ─── Product grid ───────────────────────────────────────────────────────── */
+.trjf-grid-wrap { padding: 28px var(--page-margin) 64px; position: relative; z-index: 0; }
+.trjf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.trjf-card { background: var(--white); border-radius: 18px; overflow: hidden; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .22s ease, box-shadow .22s ease; animation: trjfFadeUp .45s ease both; }
+.trjf-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(122,51,28,.1); }
+@keyframes trjfFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.trjf-card:nth-child(1) { animation-delay: .04s; }
+.trjf-card:nth-child(2) { animation-delay: .08s; }
+.trjf-card:nth-child(3) { animation-delay: .12s; }
+.trjf-card:nth-child(4) { animation-delay: .16s; }
+.trjf-card:nth-child(n+5) { animation-delay: .20s; }
+.trjf-card-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); position: relative; display: block; }
+.trjf-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; transition: transform .4s ease; display: block; }
+.trjf-card:hover .trjf-card-img img { transform: scale(1.05); }
+
+/* Stock badges */
+.trjf-badge { position: absolute; top: 12px; left: 12px; font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 50px; }
+.trjf-badge--stock { background: #d5edd5; color: #2e6b2e; }
+.trjf-badge--order { background: var(--jf-clay-light); color: var(--jf-clay-dark); }
+
+.trjf-card-body { padding: 16px 16px 18px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.trjf-card-type { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--jf-clay); }
+.trjf-card-name { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--brown-dark); line-height: 1.3; }
+.trjf-card-desc { font-size: 12px; color: var(--text-muted); line-height: 1.55; margin-top: 4px; flex: 1; }
+.trjf-card-footer { display: flex; align-items: flex-end; justify-content: space-between; margin-top: auto; padding-top: 14px; gap: 8px; }
+.trjf-card-price { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown-dark); font-weight: 400; }
+.trjf-card-compare { font-size: .8rem; color: var(--text-muted); text-decoration: line-through; margin-left: 4px; }
+
+/* Buttons op kaart */
+.trjf-btn-atc { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 8px 16px; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .15s; white-space: nowrap; text-decoration: none; display: inline-block; }
+.trjf-btn-atc:hover { background: var(--brown); transform: translateY(-1px); }
+.trjf-btn-order { background: var(--jf-clay); color: var(--white); border: none; border-radius: 50px; padding: 8px 16px; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s; white-space: nowrap; text-decoration: none; display: inline-block; }
+.trjf-btn-order:hover { background: var(--jf-clay-dark); }
+
+.trjf-empty { text-align: center; padding: 80px var(--page-margin); color: var(--text-muted); }
+
+/* ─── Brand story ────────────────────────────────────────────────────────── */
+.trjf-brand { background: var(--jf-clay-dark); color: #fff; padding: 64px var(--page-margin); }
+.trjf-brand-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; max-width: 1080px; margin: 0 auto; }
+.trjf-brand-label { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--jf-clay-mid); margin-bottom: 14px; }
+.trjf-brand h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: #fff; line-height: 1.25; margin-bottom: 20px; }
+.trjf-brand-text { font-size: .925rem; color: rgba(255,255,255,.75); line-height: 1.8; }
+.trjf-brand-text p { margin-bottom: 14px; }
+.trjf-brand-text p:last-child { margin-bottom: 0; }
+.trjf-brand-img { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; background: var(--jf-clay); }
+.trjf-brand-img img { width: 100%; height: 100%; object-fit: cover; }
+.trjf-brand-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 4rem; opacity: .3; }
+@media (max-width: 768px) { .trjf-brand-inner { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ─── Zo werkt het (uitleg-blok) ─────────────────────────────────────────── */
+.trjf-how { padding: 56px var(--page-margin); background: var(--jf-clay-light); border-top: 1px solid rgba(181,80,46,.15); border-bottom: 1px solid rgba(181,80,46,.15); }
+.trjf-how-title { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem,2.5vw,2rem); font-weight: 400; color: var(--jf-clay-dark); margin-bottom: 32px; text-align: center; }
+.trjf-how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+.trjf-how-step { background: var(--white); border-radius: 18px; padding: 26px 24px; text-align: center; }
+.trjf-how-num { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--jf-clay); color: #fff; font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 14px; }
+.trjf-how-step h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 400; color: var(--brown-dark); margin-bottom: 8px; }
+.trjf-how-step p { font-size: .85rem; color: var(--text-muted); line-height: 1.65; }
+@media (max-width: 700px) { .trjf-how-steps { grid-template-columns: 1fr; } .trjf-how { padding: 40px 4vw; } }
+
+/* ─── Pickup info ────────────────────────────────────────────────────────── */
+.trjf-pickup { background: var(--cream); padding: 56px var(--page-margin); border-top: 1px solid var(--cream-dark); }
+.trjf-pickup-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.trjf-pickup-card { background: var(--white); border-radius: 20px; padding: 28px 32px; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; }
+.trjf-pickup-icon { font-size: 2rem; margin-bottom: 14px; }
+.trjf-pickup-card h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--brown-dark); margin-bottom: 14px; }
+.trjf-hours-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-radius: 8px; font-size: 13px; }
+.trjf-hours-row:nth-child(odd) { background: var(--cream); }
+.trjf-hours-row .day { font-weight: 600; color: var(--brown-dark); }
+.trjf-hours-row .time { color: var(--text-muted); }
+.trjf-hours-row .time.closed { color: #c0392b; font-style: italic; }
+.trjf-pickup-address { font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.trjf-pickup-address strong { color: var(--brown-dark); display: block; margin-bottom: 4px; font-size: 14px; }
+.trjf-pickup-map-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 12px; color: var(--jf-clay); text-decoration: none; border-bottom: 1px solid rgba(181,80,46,.3); padding-bottom: 1px; }
+.trjf-pickup-map-link:hover { color: var(--jf-clay-dark); }
+.trjf-pickup-contact { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; flex: 1; }
+.trjf-pickup-contact-row { display: flex; align-items: flex-start; gap: 12px; font-size: 13.5px; color: var(--text); }
+.trjf-pickup-contact-row svg { flex-shrink: 0; margin-top: 2px; color: var(--jf-clay); }
+.trjf-pickup-contact-row a { color: var(--jf-clay); text-decoration: none; }
+.trjf-pickup-contact-row a:hover { text-decoration: underline; }
+.trjf-pickup-cta { margin-top: auto; padding-top: 20px; }
+.trjf-pickup-cta a { display: block; text-align: center; background: var(--jf-clay); color: var(--white); border-radius: 50px; padding: 12px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; text-decoration: none; transition: background .2s; }
+.trjf-pickup-cta a:hover { background: var(--jf-clay-dark); }
+@media (max-width: 900px) { .trjf-pickup-inner { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .trjf-pickup-inner { grid-template-columns: 1fr; } }
+
+/* ─── SEO text block ─────────────────────────────────────────────────────── */
+.trjf-seo { padding: 48px var(--page-margin) 64px; background: var(--page-bg); border-top: 1px solid var(--cream-dark); }
+.trjf-seo-inner h2, .trjf-seo-inner h3 { font-family: 'Playfair Display', serif; font-weight: 400; color: var(--brown-dark); margin: 28px 0 10px; font-size: 1.3rem; line-height: 1.25; }
+.trjf-seo-inner h2:first-child, .trjf-seo-inner h3:first-child { margin-top: 0; }
+.trjf-seo-inner p { font-size: .9rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 14px; }
+.trjf-seo-inner a { color: var(--jf-clay); text-decoration: underline; text-underline-offset: 2px; }
+.trjf-seo-inner strong, .trjf-seo-inner b { color: var(--brown-dark); font-weight: 600; }
+
+/* ─── Responsive grid ────────────────────────────────────────────────────── */
+@media (max-width: 1100px) { .trjf-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 700px) { .trjf-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .trjf-grid-wrap { padding: 24px 4vw 48px; } .trjf-hero-inner { padding: 36px 4vw 32px; } .trjf-usp-bar .trjf-usp-inner { flex-direction: column; } .trjf-usp-item { justify-content: center; text-align: center; } .trjf-pickup { padding: 36px 4vw; } .trjf-seo { padding: 36px 4vw 48px; } }
+@media (max-width: 400px) { .trjf-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .trjf-wrap *, .trjf-wrap *::before, .trjf-wrap *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+</style>
+
+{%- comment -%} Collectiebeschrijving splitsen: eerste alinea in header, rest in SEO-blok onderaan {%- endcomment -%}
+{%- if collection.description != blank -%}
+  {%- assign _desc_parts = collection.description | split: '</p>' -%}
+  {%- assign _desc_first = _desc_parts[0] | append: '</p>' -%}
+  {%- assign _desc_rest = '' -%}
+  {%- for _p in _desc_parts offset: 1 -%}
+    {%- if _p != '' -%}{%- assign _desc_rest = _desc_rest | append: _p | append: '</p>' -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<div class="trjf-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+  <meta itemprop="name" content="{{ collection.title }} – Muuss wandsysteem bij Tante Rie, Borne (Twente)">
+  <meta itemprop="description" content="Joeff Muuss: modulair wandsysteem met basishouders en schakels, boorvrij op te hangen. Te koop bij Tante Rie in Borne, Twente. Verzending door heel Nederland, of gratis ophalen in de winkel.">
+
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="trjf-hero" aria-label="{{ collection.title }} collectie">
+    <div class="trjf-hero-bg"></div>
+    <div class="trjf-hero-pattern"></div>
+    {%- if collection.image -%}
+      <div class="trjf-hero-img">
+        <img src="{{ collection.image | image_url: width: 1600 }}" alt="{{ collection.image.alt | default: collection.title | escape }}" loading="eager" width="1600" height="600">
+      </div>
+    {%- endif -%}
+    <div class="trjf-hero-inner">
+      <nav class="trjf-breadcrumb" aria-label="Kruimelpad">
+        <a href="/">Home</a><span aria-hidden="true">›</span>
+        <a href="/collections">Collecties</a><span aria-hidden="true">›</span>
+        <span>{{ collection.title }}</span>
+      </nav>
+      <div class="trjf-hero-label" aria-hidden="true">
+        <span>{%- render 'tr-icon', name: 'puzzle' -%}</span> Modulair wandsysteem, boorvrij
+      </div>
+      <h1 itemprop="headline">{{ collection.title }}</h1>
+      <p class="trjf-hero-sub">
+        {%- if section.settings.subtitle != blank -%}
+          {{ section.settings.subtitle }}
+        {%- else -%}
+          Eén basishouder, eindeloos te combineren. Muuss van Joeff, te koop bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>
+        {%- endif -%}
+      </p>
+      <div class="trjf-hero-meta">
+        <span class="trjf-hero-count">{{ collection.products_count }} producten</span>
+        <span class="trjf-hero-loc"><span aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</span> Bakkerssteeg 6, Borne</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Sticky bar (USP + filter) ───────────────────────────────────── -->
+  <div class="trjf-sticky-bar">
+
+  <!-- ── USP bar ───────────────────────────────────────────────────────── -->
+  <div class="trjf-usp-bar" role="complementary" aria-label="Belangrijke informatie">
+    <div class="trjf-usp-inner">
+      <div class="trjf-usp-item">
+        <span class="trjf-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'safety-pin' -%}</span>
+        <div class="trjf-usp-text">
+          <div class="trjf-usp-label">Boorvrij ophangen</div>
+          <div class="trjf-usp-sub">Nanotape inbegrepen bij elke basishouder</div>
+        </div>
+      </div>
+      <div class="trjf-usp-item">
+        <span class="trjf-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'puzzle' -%}</span>
+        <div class="trjf-usp-text">
+          <div class="trjf-usp-label">Eén basis, altijd wisselen</div>
+          <div class="trjf-usp-sub">Klik een andere schakel erin wanneer je wilt</div>
+        </div>
+      </div>
+      <div class="trjf-usp-item">
+        <span class="trjf-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'package' -%}</span>
+        <div class="trjf-usp-text">
+          <div class="trjf-usp-label">Verzending of ophalen</div>
+          <div class="trjf-usp-sub">Bezorgd thuis, of gratis ophalen in Borne</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Categorie quick-nav ───────────────────────────────────────────── -->
+  {%- assign _type_filter = nil -%}
+  {%- for f in collection.filters -%}
+    {%- if f.param_name == 'filter.p.product_type' -%}{%- assign _type_filter = f -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if _type_filter != nil and _type_filter.values.size > 1 -%}
+    <nav class="trjf-cat-nav" aria-label="Productcategorieën">
+      <a href="{{ collection.url }}" class="trjf-cat-pill{% unless request.path contains '?' %} active{% endunless %}">Alle producten</a>
+      {%- for fv in _type_filter.values -%}
+        <a href="{{ fv.url_to_add }}" class="trjf-cat-pill{% if fv.active %} active{% endif %}">{{ fv.label }}</a>
+      {%- endfor -%}
+    </nav>
+  {%- endif -%}
+
+  <!-- ── Filter & sort ─────────────────────────────────────────────────── -->
+  <div id="trjf-filter-overlay" class="trjf-filter-overlay"></div>
+  <form id="trjf-filter-form" action="{{ collection.url }}" method="get">
+    <input type="hidden" name="sort_by" value="{{ collection.sort_by | default: collection.default_sort_by }}">
+    <div class="trjf-filter-toolbar">
+      <div class="trjf-filter-groups">
+        {%- for filter in collection.filters -%}
+          {%- assign _has_active = false -%}
+          {%- for fv in filter.values -%}{%- if fv.active -%}{%- assign _has_active = true -%}{%- endif -%}{%- endfor -%}
+          <div class="trjf-filter-pill-wrap">
+            <button type="button" class="trjf-filter-pill{% if _has_active %} active{% endif %}" aria-expanded="false" data-trjf-pill>
+              {{ filter.label }}
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="trjf-filter-dropdown" data-trjf-dropdown>
+              {%- for fv in filter.values -%}
+                <label class="trjf-filter-option">
+                  <input type="checkbox" name="{{ filter.param_name }}" value="{{ fv.value }}"{% if fv.active %} checked{% endif %}>
+                  {{ fv.label }}
+                </label>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <select class="trjf-filter-sort" name="sort_by" aria-label="Sorteren" data-trjf-sort>
+        {%- assign _cur_sort = collection.sort_by | default: collection.default_sort_by -%}
+        <option value="created-descending"{% if _cur_sort == 'created-descending' %} selected{% endif %}>Nieuwste eerst</option>
+        <option value="price-ascending"{% if _cur_sort == 'price-ascending' %} selected{% endif %}>Prijs: laag → hoog</option>
+        <option value="price-descending"{% if _cur_sort == 'price-descending' %} selected{% endif %}>Prijs: hoog → laag</option>
+        <option value="title-ascending"{% if _cur_sort == 'title-ascending' %} selected{% endif %}>Naam: A → Z</option>
+        <option value="title-descending"{% if _cur_sort == 'title-descending' %} selected{% endif %}>Naam: Z → A</option>
+      </select>
+    </div>
+    {%- assign _any_active = false -%}
+    {%- for f in collection.filters -%}{%- for fv in f.values -%}{%- if fv.active -%}{%- assign _any_active = true -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+    {%- if _any_active -%}
+      <div class="trjf-active-strip">
+        {%- for f in collection.filters -%}
+          {%- for fv in f.values -%}
+            {%- if fv.active -%}
+              <a href="{{ fv.url_to_remove }}" class="trjf-filter-chip">{{ fv.label }} <span aria-hidden="true">×</span></a>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </form>
+
+  </div><!-- /trjf-sticky-bar -->
+
+  <!-- ── Product grid ──────────────────────────────────────────────────── -->
+  <div class="trjf-grid-wrap">
+    {%- if collection.products.size > 0 -%}
+      <div class="trjf-grid" role="list" aria-label="Joeff producten">
+        {%- for product in collection.products -%}
+          {%- assign _available = product.available -%}
+          {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+          <article class="trjf-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <a href="{{ product.url }}" class="trjf-card-img" aria-label="{{ product.title }}">
+              {%- if product.featured_image -%}
+                <img
+                  src="{{ product.featured_image | image_url: width: 500 }}"
+                  alt="{{ product.featured_image.alt | default: product.title | escape }} – Joeff Muuss bij Tante Rie Borne"
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                  itemprop="image">
+              {%- else -%}
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'puzzle', size: 48 -%}</div>
+              {%- endif -%}
+              {%- if _available -%}
+                <span class="trjf-badge trjf-badge--stock" aria-label="Op voorraad">Op voorraad</span>
+              {%- else -%}
+                <span class="trjf-badge trjf-badge--order" aria-label="Uitverkocht">Uitverkocht</span>
+              {%- endif -%}
+            </a>
+            <div class="trjf-card-body">
+              {%- if product.type != blank -%}
+                <span class="trjf-card-type" itemprop="category">{{ product.type }}</span>
+              {%- endif -%}
+              <a href="{{ product.url }}" style="text-decoration:none">
+                <p class="trjf-card-name" itemprop="name">{{ product.title }}</p>
+              </a>
+              {%- if _kaart_tekst != blank -%}
+                <p class="trjf-card-desc">{{ _kaart_tekst }}</p>
+              {%- endif -%}
+              <div class="trjf-card-footer">
+                <span class="trjf-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR">
+                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
+                  {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                  {{ product.price | money }}
+                  {%- if product.compare_at_price > product.price -%}
+                    <span class="trjf-card-compare">{{ product.compare_at_price | money }}</span>
+                  {%- endif -%}
+                </span>
+                {%- if _available -%}
+                  <button class="trjf-btn-atc" data-tr-atc data-variant-id="{{ product.selected_or_first_available_variant.id }}" aria-label="Voeg {{ product.title }} toe aan winkelwagen">
+                    In winkelwagen
+                  </button>
+                {%- else -%}
+                  <button class="trjf-btn-order" disabled aria-disabled="true">Uitverkocht</button>
+                {%- endif -%}
+              </div>
+            </div>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="trjf-empty" role="status">
+        <p>Geen producten gevonden met deze filters. <a href="{{ collection.url }}" style="color:var(--jf-clay)">Wis filters</a></p>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <!-- ── Zo werkt het ──────────────────────────────────────────────────── -->
+  <section class="trjf-how" aria-labelledby="trjf-how-heading">
+    <h2 class="trjf-how-title" id="trjf-how-heading">Zo werkt Muuss</h2>
+    <div class="trjf-how-steps">
+      <div class="trjf-how-step">
+        <span class="trjf-how-num">1</span>
+        <h3>Basishouder plakken</h3>
+        <p>Monteer de basishouder met de meegeleverde nanotape op de muur. Geen boor, geen gaatjes, geen pluggen.</p>
+      </div>
+      <div class="trjf-how-step">
+        <span class="trjf-how-num">2</span>
+        <h3>Schakel kiezen</h3>
+        <p>Klik de schakel erin die je nu wilt: een kaart, een tegeltje, kunstbloemen of een tentoonstellingshaakje.</p>
+      </div>
+      <div class="trjf-how-step">
+        <span class="trjf-how-num">3</span>
+        <h3>Wisselen wanneer je wilt</h3>
+        <p>Andere gelegenheid, ander seizoen, andere kaart? Wissel de schakel, de basishouder blijft gewoon zitten.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Brand story ───────────────────────────────────────────────────── -->
+  <section class="trjf-brand" aria-labelledby="trjf-brand-heading">
+    <div class="trjf-brand-inner">
+      <div>
+        <p class="trjf-brand-label">Over het merk</p>
+        <h2 id="trjf-brand-heading">Joeff: Muuss, het wandsysteem zonder vaste keuzes</h2>
+        <div class="trjf-brand-text">
+          {%- if section.settings.brand_text != blank -%}
+            {{ section.settings.brand_text }}
+          {%- else -%}
+            <p>Muuss is het modulaire wandsysteem van Joeff. Eén basishouder gaat vast tegen de muur, met nanotape. Wat je erin klikt, bepaal je zelf: een kaartschakel voor je mooiste foto's, een tegeltje-/kunstschakel, kunstbloemen of een tentoonstellingshaakje voor sieraden en ornamenten.</p>
+            <p>De schakels worden geprint in PLA, een plantaardige kunststof. Verandert je smaak, je seizoen of je interieur? Dan verandert alleen de schakel mee. De basishouder blijft gewoon zitten.</p>
+            <p>Bij Tante Rie in Borne vind je basishouders en de losse schakels, los te combineren tot jouw eigen galerijwand. Ook de kaarthouder TOON en de tegelhouder van Joeff, twee losstaande stukken voor op je bureau of dressoir, liggen bij ons in de winkel.</p>
+            <p>Borne ligt midden in Twente, op een halfuur van <strong>Enschede, Hengelo en Almelo</strong>. Loop binnen, kijk rond en neem het mee.</p>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="trjf-brand-img">
+        {%- if section.settings.brand_image != blank -%}
+          <img src="{{ section.settings.brand_image | image_url: width: 800 }}" alt="Joeff Muuss wandsysteem bij Tante Rie Borne Twente" loading="lazy" width="800" height="600">
+        {%- else -%}
+          <div class="trjf-brand-img-placeholder" aria-hidden="true">{%- render 'tr-icon', name: 'puzzle' -%}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
+  <section class="trjf-pickup" aria-labelledby="trjf-pickup-heading">
+    <h2 id="trjf-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Verzending &amp; ophalen in de winkel</h2>
+    <div class="trjf-pickup-inner">
+      <div class="trjf-pickup-card">
+        <div class="trjf-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</div>
+        <h3>Winkeladres</h3>
+        <div class="trjf-pickup-address">
+          <strong>Tante Rie</strong>
+          <span>Bakkerssteeg 6</span><br>
+          <span>7622 GX</span> <span>Borne</span><br>
+          <span>Twente</span>
+        </div>
+        <a href="https://maps.google.com/?q=Bakkerssteeg+6+Borne" class="trjf-pickup-map-link" target="_blank" rel="noopener" aria-label="Open in Google Maps">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Routebeschrijving in Google Maps
+        </a>
+      </div>
+      <div class="trjf-pickup-card">
+        <div class="trjf-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'clock' -%}</div>
+        <h3>Openingstijden</h3>
+        {%- assign days  = 'Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag' | split: ',' -%}
+        {%- assign hours = 'Gesloten,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,Gesloten' | split: ',' -%}
+        {%- for day in days -%}
+          {%- assign _h = hours[forloop.index0] -%}
+          <div class="trjf-hours-row">
+            <span class="day">{{ day }}</span>
+            <span class="time{% if _h == 'Gesloten' %} closed{% endif %}">{{ _h }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <div class="trjf-pickup-card">
+        <div class="trjf-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'chat' -%}</div>
+        <h3>Contact &amp; bestellen</h3>
+        <div class="trjf-pickup-contact">
+          <div class="trjf-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.1a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+            <div><a href="tel:+31638291189">+31 6 38291189</a></div>
+          </div>
+          <div class="trjf-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div><a href="mailto:webshop@tanterie.nl">webshop@tanterie.nl</a></div>
+          </div>
+          <div class="trjf-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div style="font-size:12.5px;color:var(--text-muted)">Liever bellen of mailen dan online bestellen? Ook prima.</div>
+          </div>
+        </div>
+        <div class="trjf-pickup-cta">
+          <a href="/pages/contact">Stuur een bericht</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEO tekstblok (resterende beschrijving uit Shopify admin) ─────── -->
+  <div class="trjf-seo">
+    <div class="trjf-seo-inner" style="max-width:760px;margin:0 auto;">
+      {%- if _desc_rest != '' -%}{{ _desc_rest }}{%- elsif section.settings.seo_text != blank -%}{{ section.settings.seo_text }}{%- endif -%}
+        <h2>Muuss wandsysteem kopen in Twente</h2>
+        <p>Tante Rie in Borne verkoopt de complete Muuss-lijn van Joeff: basishouders en de losse schakels om je eigen wand mee in te richten. Je combineert zelf hoeveel basishouders je ophangt en welke schakels erin komen. Staat een schakel er even niet? Dan bestellen we hem voor je.</p>
+
+        <h3>Welke schakels zijn er?</h3>
+        <p>Naast de basishouder verkopen we onder meer de <strong>kaarthouderschakel</strong>, <strong>tegeltje-/kunstschakel</strong>, <strong>kunstbloemschakel</strong> en het <strong>tentoonstellingshaakje</strong>. Ook los verkrijgbaar: het <strong>hartje</strong> en de <strong>teckel</strong>, twee speelse figuurtjes om aan je basishouder te hangen, en het 3D-geprinte <strong>kunstbloemvaasje</strong>.</p>
+
+        <h3>Montage en materiaal</h3>
+        <p>Elke basishouder wordt geleverd met dubbelzijdige nanotape. Geen boor, geen schroeven, geen gaten in de muur. De schakels en het vaasje zijn 3D-geprint in PLA, een kunststof gemaakt van plantaardig zetmeel.</p>
+
+        <h3>Losse kaarthouders van Joeff</h3>
+        <p>Niet elk product van Joeff hoort bij het Muuss-systeem. De kaarthouder <strong>TOON</strong> en de <strong>tegelhouder</strong> zijn losstaande stukken voor op je bureau, dressoir of vensterbank, zonder basishouder nodig.</p>
+
+        <h3>Verzending en ophalen</h3>
+        <p>Je bestelling wordt gewoon thuisbezorgd. Liever gratis ophalen? Kies daarvoor bij het afrekenen: de winkel zit aan de Bakkerssteeg 6 in Borne, dinsdag tot en met zaterdag open van 10:00 tot 17:00.</p>
+    </div>
+  </div>
+
+  <!-- ── JSON-LD CollectionPage ──────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": {{ shop.url | append: collection.url | json }},
+    "name": {{ collection.title | json }},
+    "description": {{ collection.description | strip_html | truncate: 200 | json }},
+    "url": {{ shop.url | append: collection.url | json }},
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Tante Rie",
+      "url": "https://tanterie.nl"
+    },
+    "numberOfItems": {{ collection.products_count }}
+  }
+  </script>
+
+</div>
+
+<script>
+(function () {
+  var usp, bar, rafId;
+
+  function updateFilterTop() {
+    usp = usp || document.querySelector('.trjf-usp-bar');
+    bar = bar || document.querySelector('.trjf-filter-toolbar');
+    if (!usp || !bar) return;
+    var bottom = usp.getBoundingClientRect().bottom;
+    if (bottom > 0 && bottom < window.innerHeight * 0.5) {
+      bar.style.top = bottom + 'px';
+    }
+  }
+
+  function onScroll() {
+    if (rafId) return;
+    rafId = requestAnimationFrame(function () { rafId = null; updateFilterTop(); });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', updateFilterTop);
+  window.addEventListener('load', updateFilterTop);
+  updateFilterTop();
+})();
+</script>
+
+<script>
+(function () {
+  var form   = document.getElementById('trjf-filter-form');
+  var overlay = document.getElementById('trjf-filter-overlay');
+  if (!form) return;
+
+  var pills     = form.querySelectorAll('[data-trjf-pill]');
+  var dropdowns = form.querySelectorAll('[data-trjf-dropdown]');
+
+  function closeAll() {
+    pills.forEach(function (p) { p.setAttribute('aria-expanded', 'false'); });
+    dropdowns.forEach(function (d) { d.classList.remove('open'); });
+    if (overlay) overlay.classList.remove('open');
+  }
+
+  pills.forEach(function (pill, i) {
+    pill.addEventListener('click', function () {
+      var isOpen = pill.getAttribute('aria-expanded') === 'true';
+      closeAll();
+      if (!isOpen) {
+        pill.setAttribute('aria-expanded', 'true');
+        dropdowns[i].classList.add('open');
+        if (overlay) overlay.classList.add('open');
+      }
+    });
+  });
+
+  if (overlay) overlay.addEventListener('click', closeAll);
+
+  form.querySelectorAll('input[type="checkbox"]').forEach(function (cb) {
+    cb.addEventListener('change', function () { form.submit(); });
+  });
+
+  var sortSel = form.querySelector('[data-trjf-sort]');
+  if (sortSel) {
+    sortSel.addEventListener('change', function () {
+      var hidden = form.querySelector('input[name="sort_by"]');
+      if (hidden) hidden.remove();
+      form.submit();
+    });
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Joeff Collectie",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Hero ondertitel",
+      "placeholder": "Laat leeg voor standaard tekst"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "Brand story afbeelding"
+    },
+    {
+      "type": "richtext",
+      "id": "brand_text",
+      "label": "Brand story tekst",
+      "info": "Laat leeg voor standaard tekst over Joeff/Muuss"
+    },
+    {
+      "type": "richtext",
+      "id": "seo_text",
+      "label": "SEO tekst (alternatief voor beschrijving)",
+      "info": "Wordt getoond als de collectiebeschrijving geen tweede alinea heeft"
+    }
+  ]
+}
+{% endschema %}

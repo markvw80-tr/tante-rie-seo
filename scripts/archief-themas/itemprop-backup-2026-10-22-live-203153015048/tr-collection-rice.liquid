@@ -1,0 +1,585 @@
+{% comment %} Tante Rie – Rice Collectie Landingspagina {% endcomment %}
+
+<style>
+/* ─── Rice design tokens ─────────────────────────────────────────────────── */
+:root {
+  --rice-berry:       #C03A6A;
+  --rice-berry-mid:   #D9618A;
+  --rice-berry-light: #FAE8F0;
+  --rice-berry-dark:  #8B2449;
+}
+
+/* ─── Wrapper ────────────────────────────────────────────────────────────── */
+.trrc-wrap *, .trrc-wrap *::before, .trrc-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.trrc-wrap { background: var(--cream); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.trrc-hero { position: relative; background: var(--rice-berry-dark); overflow: hidden; }
+.trrc-hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--rice-berry-dark) 0%, var(--rice-berry) 60%, var(--rice-berry-mid) 100%); }
+.trrc-hero-pattern { position: absolute; inset: 0; opacity: .08; background-image: radial-gradient(circle at 20% 50%, #fff 1.5px, transparent 1.5px), radial-gradient(circle at 70% 20%, #fff 1px, transparent 1px), radial-gradient(circle at 50% 80%, #fff 2px, transparent 2px); background-size: 48px 48px, 72px 72px, 60px 60px; }
+.trrc-hero-img { position: absolute; inset: 0; }
+.trrc-hero-img img { width: 100%; height: 100%; object-fit: cover; opacity: .2; }
+.trrc-hero-inner { position: relative; z-index: 1; padding: 52px var(--page-margin) 48px; max-width: 760px; }
+.trrc-breadcrumb { font-size: 12px; color: rgba(255,255,255,.6); letter-spacing: .04em; margin-bottom: 18px; }
+.trrc-breadcrumb a { color: rgba(255,255,255,.6); text-decoration: none; }
+.trrc-breadcrumb a:hover { color: #fff; }
+.trrc-breadcrumb span { margin: 0 6px; }
+.trrc-hero-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); border-radius: 50px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.9); margin-bottom: 18px; }
+.trrc-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1.15; margin-bottom: 14px; }
+.trrc-hero-sub { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: rgba(255,255,255,.8); margin-bottom: 28px; line-height: 1.6; max-width: 560px; }
+.trrc-hero-meta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.trrc-hero-count { font-size: 13px; color: rgba(255,255,255,.65); }
+.trrc-hero-loc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.12); border-radius: 50px; padding: 5px 14px; font-size: 12px; color: rgba(255,255,255,.85); }
+
+/* ─── Sticky bar ─────────────────────────────────────────────────────────── */
+.trrc-sticky-bar { position: sticky; top: var(--header-group-height, 64px); z-index: 7; background: var(--rice-berry-light); box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+
+/* ─── USP bar ────────────────────────────────────────────────────────────── */
+.trrc-usp-bar { background: var(--rice-berry-light); border-bottom: 1px solid rgba(192,58,106,.15); position: sticky; top: var(--header-group-height, 64px); z-index: 7; box-shadow: 0 -4px 0 4px var(--rice-berry-light); }
+.trrc-usp-inner { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; gap: 0; }
+.trrc-usp-item { display: flex; align-items: center; gap: 12px; padding: 18px 32px; border-right: 1px solid rgba(192,58,106,.15); flex: 1; min-width: 200px; }
+.trrc-usp-item:last-child { border-right: none; }
+.trrc-usp-icon { font-size: 1.4rem; flex-shrink: 0; }
+.trrc-usp-text strong { display: block; font-size: 13px; font-weight: 600; color: var(--rice-berry-dark); }
+.trrc-usp-text span { font-size: 12px; color: var(--rice-berry); }
+@media (max-width: 700px) { .trrc-usp-item { border-right: none; border-bottom: 1px solid rgba(192,58,106,.15); padding: 14px 20px; } .trrc-usp-item:last-child { border-bottom: none; } }
+
+/* ─── Category quick-nav ─────────────────────────────────────────────────── */
+.trrc-cat-nav { padding: 20px var(--page-margin) 0; overflow-x: auto; display: flex; gap: 8px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.trrc-cat-nav::-webkit-scrollbar { display: none; }
+.trrc-cat-pill { display: inline-flex; align-items: center; white-space: nowrap; border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 7px 18px; font-size: 12.5px; font-weight: 500; color: var(--brown-dark); background: var(--white); text-decoration: none; transition: border-color .2s, background .2s, color .2s; flex-shrink: 0; }
+.trrc-cat-pill:hover, .trrc-cat-pill.active { border-color: var(--rice-berry); background: var(--rice-berry); color: #fff; }
+
+/* ─── Filter toolbar ─────────────────────────────────────────────────────── */
+.trrc-filter-toolbar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 12px var(--page-margin); border-bottom: 1px solid rgba(192,58,106,.15); margin-bottom: 0; flex-wrap: wrap; gap: 10px; background: transparent; }
+.trrc-filter-groups { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.trrc-filter-pill-wrap { position: relative; }
+.trrc-filter-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 16px; font-size: 13px; background: var(--white); cursor: pointer; display: flex; gap: 6px; align-items: center; font-family: 'DM Sans', sans-serif; color: var(--brown-dark); }
+.trrc-filter-pill.active { border-color: var(--brown-dark); background: var(--brown-dark); color: var(--white); }
+.trrc-filter-pill svg { transition: transform .2s; }
+.trrc-filter-pill[aria-expanded="true"] svg { transform: rotate(180deg); }
+.trrc-filter-dropdown { display: none; position: absolute; background: var(--white); border: 1px solid var(--cream-dark); border-radius: 14px; padding: 16px; min-width: 200px; z-index: 20; box-shadow: 0 8px 24px rgba(0,0,0,.1); top: calc(100% + 8px); left: 0; max-height: 280px; overflow-y: auto; }
+.trrc-filter-dropdown.open { display: block; }
+.trrc-filter-option { display: flex; gap: 8px; align-items: center; font-size: 13px; padding: 6px 0; cursor: pointer; font-family: 'DM Sans', sans-serif; color: var(--brown-dark); }
+.trrc-filter-option input { cursor: pointer; accent-color: var(--rice-berry); }
+.trrc-active-strip { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px var(--page-margin) 10px; background: transparent; }
+.trrc-filter-chip { background: var(--rice-berry-light); border-radius: 50px; padding: 4px 12px; font-size: 12px; display: flex; gap: 6px; align-items: center; text-decoration: none; color: var(--rice-berry-dark); font-family: 'DM Sans', sans-serif; }
+.trrc-filter-sort { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 16px; font-size: 13px; background: var(--white); cursor: pointer; color: var(--brown-dark); font-family: 'DM Sans', sans-serif; appearance: none; -webkit-appearance: none; }
+.trrc-filter-overlay { display: none; position: fixed; inset: 0; z-index: 10; }
+.trrc-filter-overlay.open { display: block; }
+
+/* ─── Product grid ───────────────────────────────────────────────────────── */
+.trrc-grid-wrap { padding: 28px var(--page-margin) 64px; position: relative; z-index: 0; }
+.trrc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.trrc-card { background: var(--white); border-radius: 18px; overflow: hidden; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .22s ease, box-shadow .22s ease; animation: trrcFadeUp .45s ease both; }
+.trrc-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(139,36,73,.1); }
+@keyframes trrcFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.trrc-card:nth-child(1) { animation-delay: .04s; }
+.trrc-card:nth-child(2) { animation-delay: .08s; }
+.trrc-card:nth-child(3) { animation-delay: .12s; }
+.trrc-card:nth-child(4) { animation-delay: .16s; }
+.trrc-card:nth-child(n+5) { animation-delay: .20s; }
+.trrc-card-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); position: relative; display: block; }
+.trrc-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; transition: transform .4s ease; display: block; }
+.trrc-card:hover .trrc-card-img img { transform: scale(1.05); }
+.trrc-badge { position: absolute; top: 12px; left: 12px; font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 50px; }
+.trrc-badge--sale { background: var(--rice-berry-light); color: var(--rice-berry-dark); }
+.trrc-card-body { padding: 16px 16px 18px; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.trrc-card-type { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--rice-berry); }
+.trrc-card-name { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--brown-dark); line-height: 1.3; }
+.trrc-card-desc { font-size: 12px; color: var(--text-muted); line-height: 1.55; margin-top: 4px; flex: 1; }
+.trrc-card-footer { display: flex; align-items: flex-end; justify-content: space-between; margin-top: auto; padding-top: 14px; gap: 8px; }
+.trrc-card-price { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--brown-dark); font-weight: 400; }
+.trrc-card-compare { font-size: .8rem; color: var(--text-muted); text-decoration: line-through; margin-left: 4px; }
+.trrc-btn-atc { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 8px 16px; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .15s; white-space: nowrap; }
+.trrc-btn-atc:hover:not(:disabled) { background: var(--brown); transform: translateY(-1px); }
+.trrc-btn-atc.tr-atc-added { background: var(--green); }
+.trrc-btn-atc:disabled { background: var(--cream-dark); color: var(--text-muted); cursor: not-allowed; }
+.trrc-empty { text-align: center; padding: 80px var(--page-margin); color: var(--text-muted); }
+
+/* ─── Brand story ────────────────────────────────────────────────────────── */
+.trrc-brand { background: var(--rice-berry-dark); color: #fff; padding: 64px var(--page-margin); }
+.trrc-brand-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; max-width: 1080px; margin: 0 auto; }
+.trrc-brand-label { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--rice-berry-mid); margin-bottom: 14px; }
+.trrc-brand h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: #fff; line-height: 1.25; margin-bottom: 20px; }
+.trrc-brand-text { font-size: .925rem; color: rgba(255,255,255,.8); line-height: 1.8; }
+.trrc-brand-text p { margin-bottom: 14px; }
+.trrc-brand-text p:last-child { margin-bottom: 0; }
+.trrc-brand-img { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; background: var(--rice-berry); }
+.trrc-brand-img img { width: 100%; height: 100%; object-fit: cover; }
+.trrc-brand-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 4rem; opacity: .3; }
+@media (max-width: 768px) { .trrc-brand-inner { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ─── Pickup info ────────────────────────────────────────────────────────── */
+.trrc-pickup { background: var(--cream); padding: 56px var(--page-margin); border-top: 1px solid var(--cream-dark); }
+.trrc-pickup-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.trrc-pickup-card { background: var(--white); border-radius: 20px; padding: 28px 32px; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; }
+.trrc-pickup-icon { font-size: 2rem; margin-bottom: 14px; }
+.trrc-pickup-card h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--brown-dark); margin-bottom: 14px; }
+.trrc-hours-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-radius: 8px; font-size: 13px; }
+.trrc-hours-row:nth-child(odd) { background: var(--cream); }
+.trrc-hours-row .day { font-weight: 600; color: var(--brown-dark); }
+.trrc-hours-row .time { color: var(--text-muted); }
+.trrc-hours-row .time.closed { color: #c0392b; font-style: italic; }
+.trrc-pickup-address { font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.trrc-pickup-address strong { color: var(--brown-dark); display: block; margin-bottom: 4px; font-size: 14px; }
+.trrc-pickup-map-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 12px; color: var(--rice-berry); text-decoration: none; border-bottom: 1px solid rgba(192,58,106,.3); padding-bottom: 1px; }
+.trrc-pickup-map-link:hover { color: var(--rice-berry-dark); }
+.trrc-pickup-contact { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; flex: 1; }
+.trrc-pickup-contact-row { display: flex; align-items: flex-start; gap: 12px; font-size: 13.5px; color: var(--text); }
+.trrc-pickup-contact-row svg { flex-shrink: 0; margin-top: 2px; color: var(--rice-berry); }
+.trrc-pickup-contact-row a { color: var(--rice-berry); text-decoration: none; }
+.trrc-pickup-contact-row a:hover { text-decoration: underline; }
+.trrc-pickup-cta { margin-top: auto; padding-top: 20px; }
+.trrc-pickup-cta a { display: block; text-align: center; background: var(--rice-berry); color: var(--white); border-radius: 50px; padding: 12px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; text-decoration: none; transition: background .2s; }
+.trrc-pickup-cta a:hover { background: var(--rice-berry-dark); }
+@media (max-width: 900px) { .trrc-pickup-inner { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .trrc-pickup-inner { grid-template-columns: 1fr; } }
+
+/* ─── SEO text block ─────────────────────────────────────────────────────── */
+.trrc-seo { padding: 48px var(--page-margin) 64px; background: var(--page-bg); border-top: 1px solid var(--cream-dark); }
+.trrc-seo-inner h2, .trrc-seo-inner h3 { font-family: 'Playfair Display', serif; font-weight: 400; color: var(--brown-dark); margin: 28px 0 10px; font-size: 1.3rem; line-height: 1.25; }
+.trrc-seo-inner h2:first-child, .trrc-seo-inner h3:first-child { margin-top: 0; }
+.trrc-seo-inner p { font-size: .9rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 14px; }
+.trrc-seo-inner a { color: var(--rice-berry); text-decoration: underline; text-underline-offset: 2px; }
+.trrc-seo-inner strong, .trrc-seo-inner b { color: var(--brown-dark); font-weight: 600; }
+
+/* ─── Responsive grid ────────────────────────────────────────────────────── */
+@media (max-width: 1100px) { .trrc-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 700px) { .trrc-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .trrc-grid-wrap { padding: 24px 4vw 48px; } .trrc-hero-inner { padding: 36px 4vw 32px; } .trrc-pickup { padding: 36px 4vw; } .trrc-seo { padding: 36px 4vw 48px; } }
+@media (max-width: 400px) { .trrc-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .trrc-wrap *, .trrc-wrap *::before, .trrc-wrap *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+</style>
+
+{%- if collection.description != blank -%}
+  {%- assign _desc_parts = collection.description | split: '</p>' -%}
+  {%- assign _desc_first = _desc_parts[0] | append: '</p>' -%}
+  {%- assign _desc_rest = '' -%}
+  {%- for _p in _desc_parts offset: 1 -%}
+    {%- if _p != '' -%}{%- assign _desc_rest = _desc_rest | append: _p | append: '</p>' -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<div class="trrc-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+  <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+  <meta itemprop="description" content="Rice woonaccessoires bij Tante Rie in Borne, Twente. Vrolijke Deense collectie: servies, textiel en decoratie. Snel verzonden of afhalen in de winkel.">
+
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="trrc-hero" aria-label="{{ collection.title }} collectie">
+    <div class="trrc-hero-bg"></div>
+    <div class="trrc-hero-pattern"></div>
+    {%- if section.settings.hero_image -%}
+      <div class="trrc-hero-img">
+        <img src="{{ section.settings.hero_image | image_url: width: 1600 }}" alt="{{ section.settings.hero_image.alt | default: collection.title | escape }}" loading="eager" width="1600" height="600">
+      </div>
+    {%- elsif collection.image -%}
+      <div class="trrc-hero-img">
+        <img src="{{ collection.image | image_url: width: 1600 }}" alt="{{ collection.image.alt | default: collection.title | escape }}" loading="eager" width="1600" height="600">
+      </div>
+    {%- endif -%}
+    <div class="trrc-hero-inner">
+      <nav class="trrc-breadcrumb" aria-label="Kruimelpad">
+        <a href="/">Home</a><span aria-hidden="true">›</span>
+        <a href="/collections">Collecties</a><span aria-hidden="true">›</span>
+        <span>{{ collection.title }}</span>
+      </nav>
+      <div class="trrc-hero-label" aria-hidden="true">
+        <span>{%- render 'tr-icon', name: 'palette' -%}</span> Vrolijk Deens design
+      </div>
+      <h1 itemprop="headline">{{ section.settings.hero_title | default: collection.title }}</h1>
+      <p class="trrc-hero-sub">
+        {%- if section.settings.hero_sub != blank -%}
+          {{ section.settings.hero_sub }}
+        {%- else -%}
+          Vrolijke kleuren en speelse patronen, met zorg geselecteerd bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>
+        {%- endif -%}
+      </p>
+      <div class="trrc-hero-meta">
+        <span class="trrc-hero-count">{{ collection.products_count }} producten</span>
+        <span class="trrc-hero-loc"><span aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</span> Bakkerssteeg 6, Borne</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Sticky bar (USP + filter) ───────────────────────────────────── -->
+  <div class="trrc-sticky-bar">
+
+  <!-- ── USP bar ───────────────────────────────────────────────────────── -->
+  <div class="trrc-usp-bar" role="complementary" aria-label="Belangrijke informatie">
+    <div class="trrc-usp-inner">
+      <div class="trrc-usp-item">
+        <span class="trrc-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'palette' -%}</span>
+        <div class="trrc-usp-text">
+          <strong>Vrolijk Deens design</strong>
+          <span>Kleurrijke collectie uit Denemarken</span>
+        </div>
+      </div>
+      <div class="trrc-usp-item">
+        <span class="trrc-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'leaf' -%}</span>
+        <div class="trrc-usp-text">
+          <strong>Duurzame materialen</strong>
+          <span>Melamine, glas en katoen</span>
+        </div>
+      </div>
+      <div class="trrc-usp-item">
+        <span class="trrc-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'package' -%}</span>
+        <div class="trrc-usp-text">
+          <strong>Snel verzonden</strong>
+          <span>1 tot 2 werkdagen bezorgd</span>
+        </div>
+      </div>
+      <div class="trrc-usp-item">
+        <span class="trrc-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'store' -%}</span>
+        <div class="trrc-usp-text">
+          <strong>Afhalen in Borne</strong>
+          <span>Bakkerssteeg 6, di t/m za open</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Categorie quick-nav ───────────────────────────────────────────── -->
+  {%- assign _type_filter = nil -%}
+  {%- for f in collection.filters -%}
+    {%- if f.param_name == 'filter.p.product_type' -%}{%- assign _type_filter = f -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if _type_filter != nil and _type_filter.values.size > 1 -%}
+    <nav class="trrc-cat-nav" aria-label="Productcategorieën">
+      <a href="{{ collection.url }}" class="trrc-cat-pill{% unless request.path contains '?' %} active{% endunless %}">Alle producten</a>
+      {%- for fv in _type_filter.values -%}
+        <a href="{{ fv.url_to_add }}" class="trrc-cat-pill{% if fv.active %} active{% endif %}">{{ fv.label }}</a>
+      {%- endfor -%}
+    </nav>
+  {%- endif -%}
+
+  <!-- ── Filter & sort ─────────────────────────────────────────────────── -->
+  <div id="trrc-filter-overlay" class="trrc-filter-overlay"></div>
+  <form id="trrc-filter-form" action="{{ collection.url }}" method="get">
+    <input type="hidden" name="sort_by" value="{{ collection.sort_by | default: collection.default_sort_by }}">
+    <div class="trrc-filter-toolbar">
+      <div class="trrc-filter-groups">
+        {%- for filter in collection.filters -%}
+          {%- if filter.param_name == 'filter.p.product_type' -%}{%- continue -%}{%- endif -%}
+          {%- assign _has_active = false -%}
+          {%- for fv in filter.values -%}{%- if fv.active -%}{%- assign _has_active = true -%}{%- endif -%}{%- endfor -%}
+          <div class="trrc-filter-pill-wrap">
+            <button type="button" class="trrc-filter-pill{% if _has_active %} active{% endif %}" aria-expanded="false" data-trrc-pill>
+              {{ filter.label }}
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="trrc-filter-dropdown" data-trrc-dropdown>
+              {%- for fv in filter.values -%}
+                <label class="trrc-filter-option">
+                  <input type="checkbox" name="{{ filter.param_name }}" value="{{ fv.value }}"{% if fv.active %} checked{% endif %}>
+                  {{ fv.label }}
+                </label>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <select class="trrc-filter-sort" name="sort_by" aria-label="Sorteren" data-trrc-sort>
+        {%- assign _cur_sort = collection.sort_by | default: collection.default_sort_by -%}
+        <option value="created-descending"{% if _cur_sort == 'created-descending' %} selected{% endif %}>Nieuwste eerst</option>
+        <option value="price-ascending"{% if _cur_sort == 'price-ascending' %} selected{% endif %}>Prijs: laag naar hoog</option>
+        <option value="price-descending"{% if _cur_sort == 'price-descending' %} selected{% endif %}>Prijs: hoog naar laag</option>
+        <option value="title-ascending"{% if _cur_sort == 'title-ascending' %} selected{% endif %}>Naam: A naar Z</option>
+        <option value="title-descending"{% if _cur_sort == 'title-descending' %} selected{% endif %}>Naam: Z naar A</option>
+      </select>
+    </div>
+    {%- assign _any_active = false -%}
+    {%- for f in collection.filters -%}{%- for fv in f.values -%}{%- if fv.active -%}{%- assign _any_active = true -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+    {%- if _any_active -%}
+      <div class="trrc-active-strip">
+        {%- for f in collection.filters -%}
+          {%- for fv in f.values -%}
+            {%- if fv.active -%}
+              <a href="{{ fv.url_to_remove }}" class="trrc-filter-chip">{{ fv.label }} <span aria-hidden="true">×</span></a>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </form>
+
+  </div><!-- /trrc-sticky-bar -->
+
+  <!-- ── Product grid ──────────────────────────────────────────────────── -->
+  <div class="trrc-grid-wrap">
+    {%- if collection.products.size > 0 -%}
+      <div class="trrc-grid" role="list" aria-label="Rice producten">
+        {%- for product in collection.products -%}
+          {%- assign _sold_out = false -%}
+          {%- unless product.available -%}{%- assign _sold_out = true -%}{%- endunless -%}
+          {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+          <article class="trrc-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <a href="{{ product.url }}" class="trrc-card-img" aria-label="{{ product.title }}">
+              {%- if product.featured_image -%}
+                <img
+                  src="{{ product.featured_image | image_url: width: 500 }}"
+                  alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                  loading="lazy" width="500" height="500" itemprop="image">
+              {%- else -%}
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'palette', size: 48 -%}</div>
+              {%- endif -%}
+              {%- if product.compare_at_price > product.price -%}
+                <span class="trrc-badge trrc-badge--sale">Sale</span>
+              {%- endif -%}
+            </a>
+            <div class="trrc-card-body">
+              {%- if product.type != blank -%}
+                <span class="trrc-card-type" itemprop="category">{{ product.type }}</span>
+              {%- endif -%}
+              <a href="{{ product.url }}" style="text-decoration:none">
+                <p class="trrc-card-name" itemprop="name">{{ product.title }}</p>
+              </a>
+              {%- if _kaart_tekst != blank -%}
+                <p class="trrc-card-desc">{{ _kaart_tekst }}</p>
+              {%- elsif product.description != blank -%}
+                <p class="trrc-card-desc">{{ product.description | strip_html | truncate: 80 }}</p>
+              {%- endif -%}
+              <div class="trrc-card-footer">
+                <span class="trrc-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="priceCurrency" content="EUR">
+                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
+                  {{ product.price | money }}
+                  {%- if product.compare_at_price > product.price -%}
+                    <span class="trrc-card-compare">{{ product.compare_at_price | money }}</span>
+                  {%- endif -%}
+                </span>
+                {%- if _sold_out -%}
+                  <button class="trrc-btn-atc" disabled>Uitverkocht</button>
+                {%- else -%}
+                  <button class="trrc-btn-atc" data-tr-atc data-success-text="✓ Toegevoegd" data-variant-id="{{ product.selected_or_first_available_variant.id }}" aria-label="Voeg {{ product.title }} toe aan winkelwagen">In winkelwagen</button>
+                {%- endif -%}
+              </div>
+            </div>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="trrc-empty" role="status">
+        <p>Geen producten gevonden met deze filters. <a href="{{ collection.url }}" style="color:var(--rice-berry)">Wis filters</a></p>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <!-- ── Brand story ───────────────────────────────────────────────────── -->
+  <section class="trrc-brand" aria-labelledby="trrc-brand-heading">
+    <div class="trrc-brand-inner">
+      <div>
+        <p class="trrc-brand-label">Over het merk</p>
+        <h2 id="trrc-brand-heading">{{ section.settings.story_title | default: 'Rice: kleur in huis, vreugde in details' }}</h2>
+        <div class="trrc-brand-text">
+          {%- if section.settings.brand_text != blank -%}
+            {{ section.settings.brand_text }}
+          {%- else -%}
+            <p>Rice is een Deens lifestylemerk, opgericht door twee vriendinnen met een liefde voor vrolijke kleuren en speelse patronen. Elk stuk is ontworpen om je dag een beetje mooier te maken: van de keukentafel tot de slaapkamer.</p>
+            <p>De collectie omvat servies van melamine, glaswerk, textiel, manden en woonaccessoires in tientallen vrolijke patronen en kleurstellingen. Rice gebruikt duurzame materialen die meegaan.</p>
+            <p>Bij Tante Rie vind je een zorgvuldig geselecteerde collectie Rice artikelen. Staat iets er niet bij? Vraag ernaar via het contactformulier of kom langs in Borne.</p>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="trrc-brand-img">
+        {%- if section.settings.brand_image != blank -%}
+          <img src="{{ section.settings.brand_image | image_url: width: 800 }}" alt="Rice woonaccessoires bij Tante Rie Borne" loading="lazy" width="800" height="600">
+        {%- else -%}
+          <div class="trrc-brand-img-placeholder" aria-hidden="true">{%- render 'tr-icon', name: 'palette' -%}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
+  <section class="trrc-pickup" aria-labelledby="trrc-pickup-heading">
+    <h2 id="trrc-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Kopen bij Tante Rie in Borne</h2>
+    <div class="trrc-pickup-inner">
+      <div class="trrc-pickup-card">
+        <div class="trrc-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</div>
+        <h3>Winkeladres</h3>
+        <div class="trrc-pickup-address">
+          <strong>Tante Rie</strong>
+          Bakkerssteeg 6<br>
+          7622 GX Borne<br>
+          Twente
+        </div>
+        <a href="https://maps.google.com/?q=Bakkerssteeg+6+Borne" class="trrc-pickup-map-link" target="_blank" rel="noopener" aria-label="Open in Google Maps">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Routebeschrijving in Google Maps
+        </a>
+      </div>
+      <div class="trrc-pickup-card">
+        <div class="trrc-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'clock' -%}</div>
+        <h3>Openingstijden</h3>
+        {%- assign days  = 'Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag' | split: ',' -%}
+        {%- assign hours = 'Gesloten,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,10:00 – 17:00,Gesloten' | split: ',' -%}
+        {%- for day in days -%}
+          {%- assign _h = hours[forloop.index0] -%}
+          <div class="trrc-hours-row">
+            <span class="day">{{ day }}</span>
+            <span class="time{% if _h == 'Gesloten' %} closed{% endif %}">{{ _h }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="trrc-pickup-card">
+        <div class="trrc-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'chat' -%}</div>
+        <h3>Contact</h3>
+        <div class="trrc-pickup-contact">
+          <div class="trrc-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.28 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.1a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+            <div><a href="tel:+31638291189">06 38 29 11 89</a></div>
+          </div>
+          <div class="trrc-pickup-contact-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div><a href="mailto:webshop@tanterie.nl">webshop@tanterie.nl</a></div>
+          </div>
+        </div>
+        <div class="trrc-pickup-cta">
+          <a href="/pages/contact">Stuur een bericht</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEO tekstblok ─────────────────────────────────────────────────── -->
+  <div class="trrc-seo">
+    <div class="trrc-seo-inner" style="max-width:760px;margin:0 auto;">
+      {%- if _desc_rest != '' -%}
+        {{ _desc_rest }}
+      {%- elsif section.settings.seo_text != blank -%}
+        {{ section.settings.seo_text }}
+      {%- else -%}
+        <h2>Rice woonaccessoires kopen in Twente</h2>
+        <p>Bij Tante Rie in Borne vind je een uitgebreide collectie Rice producten. Van vrolijk melamine servies tot kleurrijke textiel en decoratieve manden. Rice staat bekend om zijn handgeschilderde patronen en gebruik van felle, vrolijke kleuren die je huis opleuken.</p>
+        <h3>Wat maakt Rice bijzonder?</h3>
+        <p>Rice begon als een klein Deens designmerk en groeide uit tot een wereldwijd geliefd lifestyle label. De producten zijn functioneel én decoratief: je kunt ze dagelijks gebruiken. Het melamine servies is licht, breukbestendig en vaatwasmachinebestendig. Ideaal voor buiten, picknicks of kinderen.</p>
+        <h3>Bezorging en afhalen</h3>
+        <p>Rice producten worden snel verzonden vanuit onze winkel in Borne. Je kunt ook langskomen en ter plekke kiezen. Wij zijn dinsdag tot en met zaterdag open van 10:00 tot 17:00. Je vindt ons aan de Bakkerssteeg 6 in het centrum van Borne.</p>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <!-- ── JSON-LD CollectionPage ──────────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": {{ shop.url | append: collection.url | json }},
+    "name": {{ collection.title | json }},
+    "description": {{ collection.description | strip_html | truncate: 200 | json }},
+    "url": {{ shop.url | append: collection.url | json }},
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Tante Rie",
+      "url": "https://tanterie.nl"
+    },
+    "numberOfItems": {{ collection.products_count }}
+  }
+  </script>
+
+</div>
+
+<script>
+(function () {
+  var form    = document.getElementById('trrc-filter-form');
+  var overlay = document.getElementById('trrc-filter-overlay');
+  if (!form) return;
+
+  var pills     = form.querySelectorAll('[data-trrc-pill]');
+  var dropdowns = form.querySelectorAll('[data-trrc-dropdown]');
+
+  function closeAll() {
+    pills.forEach(function (p) { p.setAttribute('aria-expanded', 'false'); });
+    dropdowns.forEach(function (d) { d.classList.remove('open'); });
+    if (overlay) overlay.classList.remove('open');
+  }
+
+  pills.forEach(function (pill, i) {
+    pill.addEventListener('click', function () {
+      var isOpen = pill.getAttribute('aria-expanded') === 'true';
+      closeAll();
+      if (!isOpen) {
+        pill.setAttribute('aria-expanded', 'true');
+        dropdowns[i].classList.add('open');
+        if (overlay) overlay.classList.add('open');
+      }
+    });
+  });
+
+  if (overlay) overlay.addEventListener('click', closeAll);
+
+  form.querySelectorAll('input[type="checkbox"]').forEach(function (cb) {
+    cb.addEventListener('change', function () { form.submit(); });
+  });
+
+  var sortSel = form.querySelector('[data-trrc-sort]');
+  if (sortSel) {
+    sortSel.addEventListener('change', function () {
+      var hidden = form.querySelector('input[name="sort_by"]');
+      if (hidden) hidden.remove();
+      form.submit();
+    });
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Rice Collectie",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Achtergrondafbeelding hero (optioneel)"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero titel",
+      "default": "Rice"
+    },
+    {
+      "type": "text",
+      "id": "hero_sub",
+      "label": "Hero ondertitel",
+      "placeholder": "Laat leeg voor standaard tekst"
+    },
+    {
+      "type": "header",
+      "content": "Merkverhaal"
+    },
+    {
+      "type": "text",
+      "id": "story_title",
+      "label": "Merkverhaal titel",
+      "placeholder": "Laat leeg voor standaard tekst"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "Merkverhaal afbeelding"
+    },
+    {
+      "type": "richtext",
+      "id": "brand_text",
+      "label": "Merkverhaal tekst",
+      "info": "Laat leeg voor standaard tekst over Rice"
+    },
+    {
+      "type": "header",
+      "content": "SEO tekst"
+    },
+    {
+      "type": "richtext",
+      "id": "seo_text",
+      "label": "SEO tekst onderaan",
+      "info": "Wordt gebruikt als de collectiebeschrijving leeg is"
+    }
+  ]
+}
+{% endschema %}

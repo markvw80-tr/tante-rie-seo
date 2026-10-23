@@ -1,0 +1,98 @@
+{
+  "shopifyqlQuery": {
+    "tableData": {
+      "columns": [
+        {
+          "name": "referrer_source",
+          "dataType": "STRING"
+        },
+        {
+          "name": "referrer_name",
+          "dataType": "STRING"
+        },
+        {
+          "name": "sessions",
+          "dataType": "INTEGER"
+        }
+      ],
+      "rows": [
+        {
+          "referrer_source": "direct",
+          "referrer_name": null,
+          "sessions": "450"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "google",
+          "sessions": "237"
+        },
+        {
+          "referrer_source": "social",
+          "referrer_name": "facebook",
+          "sessions": "18"
+        },
+        {
+          "referrer_source": "social",
+          "referrer_name": "instagram",
+          "sessions": "13"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "bing",
+          "sessions": "10"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "duckduckgo",
+          "sessions": "4"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "bboborne",
+          "sessions": "4"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "ecosia",
+          "sessions": "2"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "wl",
+          "sessions": "2"
+        },
+        {
+          "referrer_source": "email",
+          "referrer_name": "gmail",
+          "sessions": "2"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "blog2026",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "startpagina",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "linkkwartier",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "chatgpt",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "visitborne",
+          "sessions": "1"
+        }
+      ]
+    },
+    "parseErrors": []
+  }
+}

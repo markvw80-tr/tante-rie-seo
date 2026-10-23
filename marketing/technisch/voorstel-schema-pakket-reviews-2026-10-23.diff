@@ -1,0 +1,141 @@
+--- a/./sections/tr-accessoires-redesign.liquid
++++ b/./sections/tr-accessoires-redesign.liquid
+@@ -137,8 +137,11 @@
+     <div class="tra-product-info">
+       <div class="tra-tag-row">
+         {%- if cur.type != blank -%}<span class="tra-tag">{{ cur.type }}</span>{%- endif -%}
+-        {%- for tag in cur.tags limit: 3 -%}
++        {%- assign shown_tags = 0 -%}
++        {%- for tag in cur.tags -%}
+           {%- assign tl = tag | downcase -%}
++          {%- if tl == 'pakket' or shown_tags >= 3 -%}{%- continue -%}{%- endif -%}
++          {%- assign shown_tags = shown_tags | plus: 1 -%}
+           {%- if tl contains 'duurzaam' or tl contains 'bio' or tl contains 'rvs' -%}
+             <span class="tra-tag green">{{ tag }}</span>
+           {%- else -%}
+--- a/./sections/tr-product-bakmix.liquid
++++ b/./sections/tr-product-bakmix.liquid
+@@ -140,7 +140,7 @@
+ 
+     <div class="tr-product-info">
+       <div class="tr-tag-row">
+-        {%- for tag in cur.tags limit: 4 -%}<span class="tr-tag">{{ tag }}</span>{%- endfor -%}
++        {%- assign shown_tags = 0 -%}{%- for tag in cur.tags -%}{%- assign tl = tag | downcase -%}{%- if tl == 'pakket' or shown_tags >= 4 -%}{%- continue -%}{%- endif -%}{%- assign shown_tags = shown_tags | plus: 1 -%}<span class="tr-tag">{{ tag }}</span>{%- endfor -%}
+       </div>
+       <h1>{{ cur.title }}</h1>
+       <p class="tr-tagline">{{ section.settings.tagline | default: 'Bakmix van Bakzolder – bij Tante Rie' }}</p>
+--- a/./sections/tr-product-redesign.liquid
++++ b/./sections/tr-product-redesign.liquid
+@@ -255,7 +255,7 @@
+ 
+     <div class="tr-product-info">
+       <div class="tr-tag-row">
+-        {%- for tag in cur.tags limit: 4 -%}<span class="tr-tag">{{ tag }}</span>{%- endfor -%}
++        {%- assign shown_tags = 0 -%}{%- for tag in cur.tags -%}{%- assign tl = tag | downcase -%}{%- if tl == 'pakket' or shown_tags >= 4 -%}{%- continue -%}{%- endif -%}{%- assign shown_tags = shown_tags | plus: 1 -%}<span class="tr-tag">{{ tag }}</span>{%- endfor -%}
+         {%- unless hide_zetadvies -%}<span class="tr-tag">{{ cur.variants.first.weight | weight_with_unit }}</span>{%- endunless -%}
+       </div>
+       <h1>{{ cur.title }}</h1>
+--- a/./sections/tr-product-rice.liquid
++++ b/./sections/tr-product-rice.liquid
+@@ -137,8 +137,11 @@
+     <div class="trrp-product-info">
+       <div class="trrp-tag-row">
+         {%- if cur.type != blank -%}<span class="trrp-tag">{{ cur.type }}</span>{%- endif -%}
+-        {%- for tag in cur.tags limit: 3 -%}
++        {%- assign shown_tags = 0 -%}
++        {%- for tag in cur.tags -%}
+           {%- assign tl = tag | downcase -%}
++          {%- if tl == 'pakket' or shown_tags >= 3 -%}{%- continue -%}{%- endif -%}
++          {%- assign shown_tags = shown_tags | plus: 1 -%}
+           {%- if tl contains 'duurzaam' or tl contains 'bio' or tl contains 'rvs' -%}
+             <span class="trrp-tag green">{{ tag }}</span>
+           {%- else -%}
+--- a/./sections/tr-product-waterfles.liquid
++++ b/./sections/tr-product-waterfles.liquid
+@@ -137,8 +137,11 @@
+     <div class="trwfp-product-info">
+       <div class="trwfp-tag-row">
+         {%- if cur.type != blank -%}<span class="trwfp-tag">{{ cur.type }}</span>{%- endif -%}
+-        {%- for tag in cur.tags limit: 3 -%}
++        {%- assign shown_tags = 0 -%}
++        {%- for tag in cur.tags -%}
+           {%- assign tl = tag | downcase -%}
++          {%- if tl == 'pakket' or shown_tags >= 3 -%}{%- continue -%}{%- endif -%}
++          {%- assign shown_tags = shown_tags | plus: 1 -%}
+           {%- if tl contains 'duurzaam' or tl contains 'bio' or tl contains 'rvs' -%}
+             <span class="trwfp-tag green">{{ tag }}</span>
+           {%- else -%}
+--- a/./snippets/tr-offer-policies.liquid
++++ b/./snippets/tr-offer-policies.liquid
+@@ -8,6 +8,8 @@
+   werkt: 0 tot 300 gram = 4,50 euro (brievenbuspakje), 301 tot 5000 gram = 6,95 euro (pakket).
+   Voor een product geldt het laagste variantgewicht. Gewicht 0 (niet ingevuld) valt in de eerste klasse,
+   net als in de checkout. Pas de drempel en de bedragen hier aan als de verzendinstellingen veranderen.
++  Uitzondering: producten met de tag "pakket" zitten in het verzendprofiel "Pakket" (Nederland 6,95 euro,
++  ongeacht het gewicht). Die tag gaat voor op de gewichtsregel. De tag wordt niet getoond op de pagina.
+ 
+   @param {object} [product] - Het product; bepaalt het tarief via het laagste variantgewicht (gram).
+   @param {boolean} [is_thee] - Voedingsproduct (losse thee): retour niet toegestaan.
+@@ -24,6 +26,10 @@
+     {%- if v.weight < min_weight -%}{%- assign min_weight = v.weight -%}{%- endif -%}
+   {%- endfor -%}
+   {%- if min_weight > 300 and min_weight < 1000000 -%}{%- assign shipping_rate_value = '6.95' -%}{%- endif -%}
++  {%- for t in product.tags -%}
++    {%- assign t_lower = t | downcase | strip -%}
++    {%- if t_lower == 'pakket' -%}{%- assign shipping_rate_value = '6.95' -%}{%- endif -%}
++  {%- endfor -%}
+ {%- endif -%}
+     {%- if pickup_only -%}
+     "availableDeliveryMethod": "https://schema.org/OnSitePickup",
+--- a/./snippets/tr-product-schema.liquid
++++ b/./snippets/tr-product-schema.liquid
+@@ -9,7 +9,7 @@
+   - Andere producten → 14 dagen MerchantReturnFiniteReturnWindow (Dutch consumer law)
+ 
+   Verzending:
+-  - €4,50 flat tarief binnen NL, 1-2 werkdagen verwerking, 1 werkdag bezorging (verzendbeleid).
++  - €4,50 flat tarief binnen NL (producten met tag "pakket": €6,95), 1-2 werkdagen verwerking, 1 werkdag bezorging (verzendbeleid).
+   - Alleen afhalen (bunzlau, blond of pickup_only: true): doesNotShip + OnSitePickup.
+   - De verzend- en retourblokken staan in snippets/tr-offer-policies.liquid.
+ 
+@@ -45,6 +45,9 @@
+ {%- assign has_ratings = false -%}
+ {%- if jm_rating_mf and jm_count_raw > 0 -%}{%- assign has_ratings = true -%}{%- endif -%}
+ 
++{%- comment %} Losse reviews uit dezelfde Judge.me-metafield als de widget (max 10), zodat het themablok het enige Product-blok kan zijn {%- endcomment -%}
++{%- assign jm_reviews = product.metafields.judgeme.review_widget_data.value.reviews -%}
++
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+@@ -116,6 +119,30 @@
+     "bestRating": "{{ jm_rating_mf.value.scale_max | default: 5 }}",
+     "worstRating": "{{ jm_rating_mf.value.scale_min | default: 1 }}"
+   }
++  {%- if jm_reviews.size > 0 -%},
++  "review": [
++    {%- for r in jm_reviews limit: 10 -%}
++    {
++      "@type": "Review",
++      "reviewRating": {
++        "@type": "Rating",
++        "ratingValue": {{ r.rating | plus: 0 }},
++        "bestRating": 5,
++        "worstRating": 1
++      },
++      "author": {
++        "@type": "Person",
++        "name": {{ r.reviewer_name | default: 'Anoniem' | json }}
++      },
++      {%- if r.title != blank -%}
++      "name": {{ r.title | json }},
++      {%- endif -%}
++      "reviewBody": {{ r.body | strip_html | strip_newlines | json }},
++      "datePublished": {{ r.created_at | date: '%Y-%m-%d' | json }}
++    }{%- unless forloop.last -%},{%- endunless -%}
++    {%- endfor -%}
++  ]
+   {%- endif -%}
++  {%- endif -%}
+ }
+ </script>

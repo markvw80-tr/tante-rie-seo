@@ -1,0 +1,16 @@
+{
+  "gemaakt": "2026-10-22",
+  "doel": "Backup voor V43 (melamine naar sjabloon bunzlau-melamine), V45 (tag handgemaakt weg) en V46 (Rice-kommen naar sjabloon rice). Uitgelezen via Shopify Admin API vlak voor de wijziging.",
+  "producten": [
+    {"id": "gid://shopify/Product/12017686184200", "handle": "melamine-bord-wild-flowers-o-25-cm", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek"], "productType": "Melamine"},
+    {"id": "gid://shopify/Product/12017690444040", "handle": "melamine-bord-dragonfly-garden-o-25-cm", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek"], "productType": "Melamine"},
+    {"id": "gid://shopify/Product/12017690476808", "handle": "melamine-bord-fleur-fountain-o-25-cm", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek"], "productType": "Keramiek"},
+    {"id": "gid://shopify/Product/12017716461832", "handle": "melamine-bord-blooming-o-25-cm", "templateSuffix": "bunzlau", "tags": ["bunzlau"], "productType": "Melamine"},
+    {"id": "gid://shopify/Product/12017731141896", "handle": "melamine-kom-wild-flowers-o-15-cm", "templateSuffix": "bunzlau", "tags": ["bunzlau", "melamine"], "productType": "Melamine"},
+    {"id": "gid://shopify/Product/12017731174664", "handle": "melamine-kom-fleur-fountain-o-15-cm", "templateSuffix": "bunzlau", "tags": ["bunzlau", "melamine"], "productType": "Melamine"},
+    {"id": "gid://shopify/Product/12038206816520", "handle": "melamine-beker-1", "templateSuffix": "bunzlau", "tags": ["Bunzlau Castle", "Melamine"], "productType": "Melamine"},
+    {"id": "gid://shopify/Product/11956811727112", "handle": "2192-ricebowl-small", "templateSuffix": "bunzlau", "status": "ACTIVE (niet online)"},
+    {"id": "gid://shopify/Product/11956812906760", "handle": "1986-ricebowl-hoog", "templateSuffix": "bunzlau", "status": "ACTIVE (niet online)"},
+    {"id": "gid://shopify/Product/11956813693192", "handle": "2238-ricebowl-groot", "templateSuffix": "bunzlau", "status": "DRAFT"}
+  ]
+}

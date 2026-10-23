@@ -1,0 +1,376 @@
+{
+ "searchKeywordsCounts": [
+  {
+   "searchKeyword": "servies",
+   "insightsValue": {
+    "value": "209"
+   }
+  },
+  {
+   "searchKeyword": "bunzlau servies",
+   "insightsValue": {
+    "value": "150"
+   }
+  },
+  {
+   "searchKeyword": "tante rie, bakkerssteeg, borne",
+   "insightsValue": {
+    "value": "66"
+   }
+  },
+  {
+   "searchKeyword": "rie",
+   "insightsValue": {
+    "value": "53"
+   }
+  },
+  {
+   "searchKeyword": "bunzlau",
+   "insightsValue": {
+    "value": "51"
+   }
+  },
+  {
+   "searchKeyword": "serviesset",
+   "insightsValue": {
+    "value": "47"
+   }
+  },
+  {
+   "searchKeyword": "losse thee",
+   "insightsValue": {
+    "value": "39"
+   }
+  },
+  {
+   "searchKeyword": "porselein servies",
+   "insightsValue": {
+    "value": "32"
+   }
+  },
+  {
+   "searchKeyword": "theepot",
+   "insightsValue": {
+    "value": "25"
+   }
+  },
+  {
+   "searchKeyword": "arie borne",
+   "insightsValue": {
+    "value": "16"
+   }
+  },
+  {
+   "searchKeyword": "beige servies",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "beige servies set",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "biologische kaarsen kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "blond",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "bunzlau servies aanbieding",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "bunzlau servies sale",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "bunzlau uit polen kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "bunzlau winkels nederland",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "cadeau manden kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "cadeauwinkel borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "coffee",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "coolgrey thee kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "eervies",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "hibiscus thee kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "kado einkrl borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "kadowinkel borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "kamille thee kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "keramiek servies set",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "kookwinkel",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "kookwinkel borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "kookwinkel twente",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "losse thee kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "ronnefeldt thee",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "rooibos tea",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "rooibos thee los kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servies bunzlau",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servies bunzlau winkel bij fabriek ",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servies kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servies set",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servies winkel",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "serviesgoed",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servieswinkel",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "servieswinkels",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "serviezen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "stores",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "tante",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "tante rie",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "tante rie borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "tantes winkel",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "tante’s serviezen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "tea",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "teeladen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "thee",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "thee winkel",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "thee winkel borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "theehuis",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "theehuis borne",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "theewinkel",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "theey waar te koop",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "verse thee kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "winkel in borne marie aan ei d",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  },
+  {
+   "searchKeyword": "yerba mate kopen",
+   "insightsValue": {
+    "threshold": "15"
+   }
+  }
+ ]
+}

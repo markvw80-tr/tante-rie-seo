@@ -1,0 +1,18 @@
+{
+  "shopifyqlQuery": {
+    "tableData": {
+      "columns": [
+        {
+          "name": "sessions",
+          "dataType": "INTEGER"
+        }
+      ],
+      "rows": [
+        {
+          "sessions": "747"
+        }
+      ]
+    },
+    "parseErrors": []
+  }
+}

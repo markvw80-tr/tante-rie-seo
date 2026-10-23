@@ -1,0 +1,15 @@
+{
+ "_status": 200,
+ "_url": "https://mybusinessaccountmanagement.googleapis.com/v1/accounts",
+ "data": {
+  "accounts": [
+   {
+    "name": "accounts/101666303135035326611",
+    "accountName": "Mark van Wijk",
+    "type": "PERSONAL",
+    "verificationState": "UNVERIFIED",
+    "vettedState": "NOT_VETTED"
+   }
+  ]
+ }
+}

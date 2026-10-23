@@ -1,0 +1,119 @@
+{
+ "datum": "2026-10-21",
+ "venster": [
+  "2026-10-13",
+  "2026-10-19"
+ ],
+ "aandeel": {
+  "impressions": 928,
+  "impressions_totaal": 1588,
+  "aandeel_impressions": 58.4,
+  "clicks": 20,
+  "clicks_totaal": 59,
+  "aandeel_clicks": 33.9
+ },
+ "weken_op_rij": 0,
+ "rond": false,
+ "varianten": {
+  "http://www.tanterie.nl": {
+   "clicks": 39,
+   "impressions": 660,
+   "position": 3.8
+  },
+  "https://tanterie.nl": {
+   "clicks": 20,
+   "impressions": 928,
+   "position": 32.7
+  }
+ },
+ "track": {
+  "bunzlau servies": {
+   "http://www.tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 8,
+    "position": 2.6
+   },
+   "https://tanterie.nl/collections/bunzlau": {
+    "clicks": 0,
+    "impressions": 12,
+    "position": 32.9
+   }
+  },
+  "theewinkel": {
+   "https://tanterie.nl/": {
+    "clicks": 2,
+    "impressions": 35,
+    "position": 9.5
+   },
+   "http://www.tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 1,
+    "position": 1.0
+   }
+  },
+  "thee uit twente": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 3,
+    "position": 3.0
+   },
+   "https://tanterie.nl/collections/kruidenthee": {
+    "clicks": 0,
+    "impressions": 1,
+    "position": 73.0
+   },
+   "https://tanterie.nl/pages/theewinkel-borne-twente": {
+    "clicks": 0,
+    "impressions": 6,
+    "position": 27.3
+   }
+  },
+  "tea": {
+   "http://www.tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 42,
+    "position": 2.8
+   }
+  }
+ },
+ "aandeel_nietmerk": {
+  "impressions": 516,
+  "impressions_totaal": 856,
+  "aandeel_impressions": 60.3,
+  "clicks": 2,
+  "clicks_totaal": 4,
+  "aandeel_clicks": 50.0
+ },
+ "weken_op_rij_nietmerk": 0,
+ "rond_nietmerk": false,
+ "rond_bevestigd": false,
+ "gbp": {
+  "venster": [
+   "2026-10-10",
+   "2026-10-16"
+  ],
+  "vorig_venster": [
+   "2026-10-03",
+   "2026-10-09"
+  ],
+  "laatste_dag_met_data": "2026-10-18",
+  "nu": {
+   "BUSINESS_DIRECTION_REQUESTS": 31,
+   "WEBSITE_CLICKS": 26,
+   "CALL_CLICKS": 3,
+   "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 40,
+   "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 16,
+   "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 32,
+   "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 4
+  },
+  "vorig": {
+   "BUSINESS_DIRECTION_REQUESTS": 14,
+   "WEBSITE_CLICKS": 29,
+   "CALL_CLICKS": 0,
+   "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 45,
+   "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 13,
+   "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 40,
+   "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 10
+  }
+ }
+}

@@ -1,0 +1,663 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup V54: verzendprofiel per variant v\u00f3\u00f3r de wijziging. Terugdraaien: varianten terugzetten naar het genoemde profiel (Algemeen profiel = gid://shopify/DeliveryProfile/135555744008, Breekbare producten = gid://shopify/DeliveryProfile/142081851656).",
+ "naar_pakket": [
+  {
+   "handle": "melamine-beker-1",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58057830203656",
+    "gid://shopify/ProductVariant/58057830236424",
+    "gid://shopify/ProductVariant/58057830269192",
+    "gid://shopify/ProductVariant/58057830301960",
+    "gid://shopify/ProductVariant/58057830334728"
+   ]
+  },
+  {
+   "handle": "melamine-bord-blooming-o-25-cm",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58005596700936"
+   ]
+  },
+  {
+   "handle": "melamine-bord-dragonfly-garden-o-25-cm",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58005564424456"
+   ]
+  },
+  {
+   "handle": "melamine-bord-fleur-fountain-o-25-cm",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58005564457224"
+   ]
+  },
+  {
+   "handle": "melamine-bord-wild-flowers-o-25-cm",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58005559542024"
+   ]
+  },
+  {
+   "handle": "melamine-kom-fleur-fountain-o-15-cm",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58005620261128"
+   ]
+  },
+  {
+   "handle": "melamine-kom-wild-flowers-o-15-cm",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58005620228360"
+   ]
+  },
+  {
+   "handle": "rice-a",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845058306312",
+    "gid://shopify/ProductVariant/57845058339080",
+    "gid://shopify/ProductVariant/57932290588936",
+    "gid://shopify/ProductVariant/57932335644936",
+    "gid://shopify/ProductVariant/57940429832456",
+    "gid://shopify/ProductVariant/57940437467400"
+   ]
+  },
+  {
+   "handle": "rice-b",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845063123208",
+    "gid://shopify/ProductVariant/57845063155976",
+    "gid://shopify/ProductVariant/57845063188744",
+    "gid://shopify/ProductVariant/57845063221512",
+    "gid://shopify/ProductVariant/57845063254280",
+    "gid://shopify/ProductVariant/57845063287048"
+   ]
+  },
+  {
+   "handle": "rice-c",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845063319816",
+    "gid://shopify/ProductVariant/57845063352584",
+    "gid://shopify/ProductVariant/57845063385352",
+    "gid://shopify/ProductVariant/57845063418120",
+    "gid://shopify/ProductVariant/57932488671496",
+    "gid://shopify/ProductVariant/57940415578376"
+   ]
+  },
+  {
+   "handle": "rice-d",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845063450888",
+    "gid://shopify/ProductVariant/57845063483656",
+    "gid://shopify/ProductVariant/57845063516424",
+    "gid://shopify/ProductVariant/57845063549192",
+    "gid://shopify/ProductVariant/57932602933512"
+   ]
+  },
+  {
+   "handle": "rice-e",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845063647496",
+    "gid://shopify/ProductVariant/57845063680264",
+    "gid://shopify/ProductVariant/57845063713032",
+    "gid://shopify/ProductVariant/57845063745800",
+    "gid://shopify/ProductVariant/57932643270920",
+    "gid://shopify/ProductVariant/58596629086472"
+   ]
+  },
+  {
+   "handle": "rice-f",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845063975176",
+    "gid://shopify/ProductVariant/57845064007944",
+    "gid://shopify/ProductVariant/57845064040712",
+    "gid://shopify/ProductVariant/57845064073480",
+    "gid://shopify/ProductVariant/57845064106248",
+    "gid://shopify/ProductVariant/57932543525128",
+    "gid://shopify/ProductVariant/58596633575688",
+    "gid://shopify/ProductVariant/58596633608456"
+   ]
+  },
+  {
+   "handle": "rice-g",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845064171784",
+    "gid://shopify/ProductVariant/57845064204552",
+    "gid://shopify/ProductVariant/57845064237320",
+    "gid://shopify/ProductVariant/57845064270088",
+    "gid://shopify/ProductVariant/57845064302856",
+    "gid://shopify/ProductVariant/57940405780744"
+   ]
+  },
+  {
+   "handle": "rice-h",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845064335624",
+    "gid://shopify/ProductVariant/57845064368392",
+    "gid://shopify/ProductVariant/57845064401160",
+    "gid://shopify/ProductVariant/57845064433928",
+    "gid://shopify/ProductVariant/57845064466696",
+    "gid://shopify/ProductVariant/57932215845128"
+   ]
+  },
+  {
+   "handle": "rice-i",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845064532232",
+    "gid://shopify/ProductVariant/57845064565000",
+    "gid://shopify/ProductVariant/57845064597768",
+    "gid://shopify/ProductVariant/57845064630536",
+    "gid://shopify/ProductVariant/57940371013896",
+    "gid://shopify/ProductVariant/57940375044360"
+   ]
+  },
+  {
+   "handle": "rice-j",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845064728840",
+    "gid://shopify/ProductVariant/57932914983176",
+    "gid://shopify/ProductVariant/57940362428680",
+    "gid://shopify/ProductVariant/57940363051272",
+    "gid://shopify/ProductVariant/58596633641224"
+   ]
+  },
+  {
+   "handle": "rice-k",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845066957064",
+    "gid://shopify/ProductVariant/57845066989832",
+    "gid://shopify/ProductVariant/57845067022600",
+    "gid://shopify/ProductVariant/57932918849800",
+    "gid://shopify/ProductVariant/57932920815880",
+    "gid://shopify/ProductVariant/58232681464072"
+   ]
+  },
+  {
+   "handle": "rice-l",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845067186440",
+    "gid://shopify/ProductVariant/57845067219208",
+    "gid://shopify/ProductVariant/57932927369480",
+    "gid://shopify/ProductVariant/57940358758664",
+    "gid://shopify/ProductVariant/58596633706760",
+    "gid://shopify/ProductVariant/58596633739528"
+   ]
+  },
+  {
+   "handle": "rice-m",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845067284744",
+    "gid://shopify/ProductVariant/57845067317512",
+    "gid://shopify/ProductVariant/57932931629320",
+    "gid://shopify/ProductVariant/57932932251912",
+    "gid://shopify/ProductVariant/58232688115976",
+    "gid://shopify/ProductVariant/58596633805064"
+   ]
+  },
+  {
+   "handle": "rice-n",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845067415816",
+    "gid://shopify/ProductVariant/57845067448584",
+    "gid://shopify/ProductVariant/57845067481352",
+    "gid://shopify/ProductVariant/57932942278920",
+    "gid://shopify/ProductVariant/57932945752328",
+    "gid://shopify/ProductVariant/57940348240136"
+   ]
+  },
+  {
+   "handle": "rice-o",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845067579656",
+    "gid://shopify/ProductVariant/57845067612424",
+    "gid://shopify/ProductVariant/57845067645192",
+    "gid://shopify/ProductVariant/57845067677960",
+    "gid://shopify/ProductVariant/57845067710728",
+    "gid://shopify/ProductVariant/57932979601672"
+   ]
+  },
+  {
+   "handle": "rice-p",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845067776264",
+    "gid://shopify/ProductVariant/57845067809032",
+    "gid://shopify/ProductVariant/57845067841800",
+    "gid://shopify/ProductVariant/57845067874568",
+    "gid://shopify/ProductVariant/57845067907336",
+    "gid://shopify/ProductVariant/57940339360008",
+    "gid://shopify/ProductVariant/58596633837832"
+   ]
+  },
+  {
+   "handle": "rice-q",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57932995592456",
+    "gid://shopify/ProductVariant/57932995625224"
+   ]
+  },
+  {
+   "handle": "rice-r",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845068005640",
+    "gid://shopify/ProductVariant/57845068038408",
+    "gid://shopify/ProductVariant/57845068071176",
+    "gid://shopify/ProductVariant/57845068103944",
+    "gid://shopify/ProductVariant/57933016367368",
+    "gid://shopify/ProductVariant/58596633903368"
+   ]
+  },
+  {
+   "handle": "rice-s",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845068169480",
+    "gid://shopify/ProductVariant/57845068202248",
+    "gid://shopify/ProductVariant/57845068235016",
+    "gid://shopify/ProductVariant/57933036749064",
+    "gid://shopify/ProductVariant/57933053853960",
+    "gid://shopify/ProductVariant/58232684970248",
+    "gid://shopify/ProductVariant/58596633968904"
+   ]
+  },
+  {
+   "handle": "rice-t",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845068267784",
+    "gid://shopify/ProductVariant/57845068300552",
+    "gid://shopify/ProductVariant/57845068333320",
+    "gid://shopify/ProductVariant/57845068366088",
+    "gid://shopify/ProductVariant/57845068398856",
+    "gid://shopify/ProductVariant/57933064241416"
+   ]
+  },
+  {
+   "handle": "rice-u",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845068497160",
+    "gid://shopify/ProductVariant/57845068529928",
+    "gid://shopify/ProductVariant/57845068562696",
+    "gid://shopify/ProductVariant/57845068595464",
+    "gid://shopify/ProductVariant/57845068628232",
+    "gid://shopify/ProductVariant/57845068661000"
+   ]
+  },
+  {
+   "handle": "rice-v",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845068693768",
+    "gid://shopify/ProductVariant/57845068726536",
+    "gid://shopify/ProductVariant/57845068759304",
+    "gid://shopify/ProductVariant/57845068792072",
+    "gid://shopify/ProductVariant/57845068824840",
+    "gid://shopify/ProductVariant/57845068857608"
+   ]
+  },
+  {
+   "handle": "rice-w",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845068923144",
+    "gid://shopify/ProductVariant/57845068955912",
+    "gid://shopify/ProductVariant/57845068988680",
+    "gid://shopify/ProductVariant/57845069021448",
+    "gid://shopify/ProductVariant/57940295123208"
+   ]
+  },
+  {
+   "handle": "rice-x",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845069054216",
+    "gid://shopify/ProductVariant/57845069086984",
+    "gid://shopify/ProductVariant/57845069119752",
+    "gid://shopify/ProductVariant/57845069152520",
+    "gid://shopify/ProductVariant/57845069185288",
+    "gid://shopify/ProductVariant/57845069218056"
+   ]
+  },
+  {
+   "handle": "rice-y",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845069283592",
+    "gid://shopify/ProductVariant/57845069316360",
+    "gid://shopify/ProductVariant/57845069349128",
+    "gid://shopify/ProductVariant/57845069381896",
+    "gid://shopify/ProductVariant/57845069414664",
+    "gid://shopify/ProductVariant/57940272251144"
+   ]
+  },
+  {
+   "handle": "rice-z",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57845069447432",
+    "gid://shopify/ProductVariant/57845069480200",
+    "gid://shopify/ProductVariant/57845069545736",
+    "gid://shopify/ProductVariant/57845069578504",
+    "gid://shopify/ProductVariant/57940277887240"
+   ]
+  },
+  {
+   "handle": "servetten-garden-delight",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57964309741832"
+   ]
+  },
+  {
+   "handle": "theemuts-ruit",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57993149022472"
+   ]
+  },
+  {
+   "handle": "theemuts-streep",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57993144107272"
+   ]
+  },
+  {
+   "handle": "waterfles-bosvogels-geisoleerd-rvs",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57803754537224"
+   ]
+  },
+  {
+   "handle": "waterfles-bosvogels-roze",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57803754635528"
+   ]
+  },
+  {
+   "handle": "waterfles-de-blauwe-fiets",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57803754864904"
+   ]
+  },
+  {
+   "handle": "waterfles-delfts-blauw",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57803754504456"
+   ]
+  },
+  {
+   "handle": "waterfles-grachtenpanden",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57803754701064"
+   ]
+  },
+  {
+   "handle": "bunzlau-textiel",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58773353398536"
+   ]
+  },
+  {
+   "handle": "coldbrew-theefles-kaki",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57913702318344"
+   ]
+  },
+  {
+   "handle": "ovenwant-even-bijkletsen-kitchen",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123601672"
+   ]
+  },
+  {
+   "handle": "schort-even-bijkletsen-kitchen",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771124060424"
+   ]
+  }
+ ],
+ "naar_breekbaar": [
+  {
+   "handle": "eb-thermo-bottle-0-5l-hearts",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58061393985800"
+   ]
+  },
+  {
+   "handle": "mazagran-liefste-juf",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58061393428744"
+   ]
+  },
+  {
+   "handle": "mazagran-orange-0-5l",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58061393953032"
+   ]
+  },
+  {
+   "handle": "meester",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58062358020360"
+   ]
+  },
+  {
+   "handle": "miss-creativity",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58059841831176"
+   ]
+  },
+  {
+   "handle": "opa",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58379845009672"
+   ]
+  },
+  {
+   "handle": "papa",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58062358249736"
+   ]
+  },
+  {
+   "handle": "teapot-1-5l-blah",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58061394084104"
+   ]
+  },
+  {
+   "handle": "thank-you",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58062357430536"
+   ]
+  },
+  {
+   "handle": "the-man",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58062358348040"
+   ]
+  },
+  {
+   "handle": "pineut-watertwist-carafe-citrus-mint-verbena-kopie",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57986560721160"
+   ]
+  },
+  {
+   "handle": "pineut-watertwist-carafe-iced-tea-mango-green-tea-kopie",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57986579005704"
+   ]
+  },
+  {
+   "handle": "pineut-watertwist-carafe-sangria-red-wine-bio-kopie",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57986569109768"
+   ]
+  },
+  {
+   "handle": "pineut-watertwist-carafe-strawberry-hibiscus-kopie",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57986555019528"
+   ]
+  },
+  {
+   "handle": "beker-coffee-0-35l",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771124158728"
+   ]
+  },
+  {
+   "handle": "beker-paarse-bloem",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58479146926344"
+   ]
+  },
+  {
+   "handle": "beker-vogels",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58479146696968"
+   ]
+  },
+  {
+   "handle": "cappuccinobeker-0-5l-dier-hond",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123470600"
+   ]
+  },
+  {
+   "handle": "cappuccinobeker-0-5l-dier-kat",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123208456"
+   ]
+  },
+  {
+   "handle": "kom-15cm-dier-hond",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123536136"
+   ]
+  },
+  {
+   "handle": "kom-15cm-dier-kat",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123503368"
+   ]
+  },
+  {
+   "handle": "lichthuisje-met-trapgevel-sint-pietenhuis",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123732744"
+   ]
+  },
+  {
+   "handle": "lichthuisje-trapgevel-halloween-spookhuis",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123667208"
+   ]
+  },
+  {
+   "handle": "mazagran-0-5l-oma",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123634440"
+   ]
+  },
+  {
+   "handle": "minimok-rode-hartjes-0-2l",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771124125960"
+   ]
+  },
+  {
+   "handle": "ovaal-bord-27cm-sint-iconen",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123962120"
+   ]
+  },
+  {
+   "handle": "pineut-watertwist-carafe-strawberry-hibiscus",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/57986554200328"
+   ]
+  },
+  {
+   "handle": "voorraadpot-vierkant-16x20cm-sint-momenten",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123765512"
+   ]
+  },
+  {
+   "handle": "xl-beker-0-5l-halloween-toverdrank",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123568904"
+   ]
+  },
+  {
+   "handle": "xl-beker-0-5l-sint-iconen",
+   "profiel_voor": "Algemeen profiel",
+   "varianten": [
+    "gid://shopify/ProductVariant/58771123929352"
+   ]
+  }
+ ]
+}

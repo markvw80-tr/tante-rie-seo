@@ -1,0 +1,279 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup V58: tags v\u00f3\u00f3r toevoegen van tag 'pakket' (alleen toevoeging; terugdraaien = tagsRemove pakket)",
+ "producten": [
+  {
+   "id": "gid://shopify/Product/11966533796104",
+   "handle": "waterfles-delfts-blauw",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11966533828872",
+   "handle": "waterfles-bosvogels-geisoleerd-rvs",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11966533927176",
+   "handle": "waterfles-bosvogels-roze",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11966533992712",
+   "handle": "waterfles-grachtenpanden",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11966534156552",
+   "handle": "waterfles-de-blauwe-fiets",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976810725640",
+   "handle": "rice-a",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976810922248",
+   "handle": "rice-b",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976810955016",
+   "handle": "rice-c",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976810987784",
+   "handle": "rice-d",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811053320",
+   "handle": "rice-e",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811118856",
+   "handle": "rice-f",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811184392",
+   "handle": "rice-g",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811217160",
+   "handle": "rice-h",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811282696",
+   "handle": "rice-i",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811381000",
+   "handle": "rice-j",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811479304",
+   "handle": "rice-k",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811643144",
+   "handle": "rice-l",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811741448",
+   "handle": "rice-m",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811872520",
+   "handle": "rice-n",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976811938056",
+   "handle": "rice-o",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812003592",
+   "handle": "rice-p",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812101896",
+   "handle": "rice-r",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812167432",
+   "handle": "rice-s",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812200200",
+   "handle": "rice-t",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812298504",
+   "handle": "rice-u",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812331272",
+   "handle": "rice-v",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812396808",
+   "handle": "rice-w",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812429576",
+   "handle": "rice-x",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812495112",
+   "handle": "rice-y",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11976812527880",
+   "handle": "rice-z",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11992568824072",
+   "handle": "coldbrew-theefles-kaki",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/11996484862216",
+   "handle": "rice-q",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/12006480445704",
+   "handle": "servetten-garden-delight",
+   "tags_voor": [
+    "bunzlau",
+    "handgemaakt",
+    "keramiek"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12013846823176",
+   "handle": "pineut-cake-pouchbag-lemon-poppy-cake",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/12013854654728",
+   "handle": "pineut-cake-pouchbag-lemon-poppy-cake-kopie",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/12015673606408",
+   "handle": "bewaarblik-rechthoekig-flowerbed-19x15-cm",
+   "tags_voor": [
+    "bunzlau",
+    "handgemaakt",
+    "keramiek"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12015679406344",
+   "handle": "theemuts-streep",
+   "tags_voor": [
+    "bunzlau",
+    "handgemaakt",
+    "keramiek"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12015680225544",
+   "handle": "theemuts-ruit",
+   "tags_voor": [
+    "bunzlau",
+    "handgemaakt",
+    "keramiek"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12017686184200",
+   "handle": "melamine-bord-wild-flowers-o-25-cm",
+   "tags_voor": [
+    "bunzlau"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12017690444040",
+   "handle": "melamine-bord-dragonfly-garden-o-25-cm",
+   "tags_voor": [
+    "bunzlau"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12017690476808",
+   "handle": "melamine-bord-fleur-fountain-o-25-cm",
+   "tags_voor": [
+    "bunzlau"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12017716461832",
+   "handle": "melamine-bord-blooming-o-25-cm",
+   "tags_voor": [
+    "bunzlau"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12017731141896",
+   "handle": "melamine-kom-wild-flowers-o-15-cm",
+   "tags_voor": [
+    "bunzlau",
+    "melamine"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12017731174664",
+   "handle": "melamine-kom-fleur-fountain-o-15-cm",
+   "tags_voor": [
+    "bunzlau",
+    "melamine"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12038206816520",
+   "handle": "melamine-beker-1",
+   "tags_voor": [
+    "Bunzlau Castle",
+    "Melamine"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12268271534344",
+   "handle": "ovenwant-even-bijkletsen-kitchen",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/12268271862024",
+   "handle": "schort-even-bijkletsen-kitchen",
+   "tags_voor": []
+  },
+  {
+   "id": "gid://shopify/Product/12269014417672",
+   "handle": "bunzlau-textiel",
+   "tags_voor": []
+  }
+ ]
+}

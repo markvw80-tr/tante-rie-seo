@@ -1,0 +1,32 @@
+{
+  "gemaakt": "2026-10-22",
+  "doel": "Backup voor actie 4 (titles en meta's Joeff, thee-bewaarblikken, Muuss-pagina), uitgelezen via Shopify Admin API vlak voor de wijziging",
+  "resources": [
+    {
+      "id": "gid://shopify/Collection/579105456392",
+      "type": "collection",
+      "handle": "joeff",
+      "url": "https://tanterie.nl/collections/joeff",
+      "seo_title": "Joeff Muuss kopen | Modulair wandsysteem | Tante Rie",
+      "seo_description": "Joeff Muuss: boorvrij wandsysteem met basishouders en schakels. Te koop bij Tante Rie in Borne. Online bestellen of afhalen in onze winkel in Twente."
+    },
+    {
+      "id": "gid://shopify/Collection/562351145224",
+      "type": "collection",
+      "handle": "thee-bewaarblikken",
+      "url": "https://tanterie.nl/collections/thee-bewaarblikken",
+      "seo_title": "Thee Bewaarblikken voor Losse Thee | Tante Rie",
+      "seo_description": "Bewaar je losse thee vers en stijlvol. Ontdek onze thee bewaarblikken van 100 gram — ook als cadeau. Bestel online bij Tante Rie."
+    },
+    {
+      "id": "gid://shopify/Page/168703623432",
+      "type": "page",
+      "handle": "muuss-van-joeff-de-wand-die-met-je-meebeweegt",
+      "url": "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt",
+      "seo_title": "Muuss van Joeff: de wand die met je meebeweegt | Tante Rie",
+      "seo_title_metafield": "gid://shopify/Metafield/113210693484808",
+      "seo_description": "Muuss van Joeff bij Tante Rie in Borne: een boorvrij wandsysteem dat meegroeit met je smaak. Ontdek de basishouder en alle schakels, in de winkel of online.",
+      "seo_description_metafield": "gid://shopify/Metafield/113210693517576"
+    }
+  ]
+}

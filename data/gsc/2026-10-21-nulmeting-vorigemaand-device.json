@@ -1,0 +1,48 @@
+{
+  "property": "sc-domain:tanterie.nl",
+  "rows": [
+    {
+      "keys": [
+        "MOBILE"
+      ],
+      "clicks": 300,
+      "impressions": 8015,
+      "ctr": 3.74,
+      "position": 9.5,
+      "device": "MOBILE"
+    },
+    {
+      "keys": [
+        "DESKTOP"
+      ],
+      "clicks": 88,
+      "impressions": 5139,
+      "ctr": 1.71,
+      "position": 23.6,
+      "device": "DESKTOP"
+    },
+    {
+      "keys": [
+        "TABLET"
+      ],
+      "clicks": 14,
+      "impressions": 201,
+      "ctr": 6.97,
+      "position": 7.6,
+      "device": "TABLET"
+    }
+  ],
+  "totals": {
+    "clicks": 402,
+    "impressions": 13355,
+    "ctr": 3.01,
+    "position": 0
+  },
+  "quick_wins": [],
+  "row_count": 3,
+  "error": null,
+  "date_range": {
+    "start": "2026-08-25",
+    "end": "2026-09-21"
+  }
+}

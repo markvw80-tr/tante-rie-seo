@@ -1,0 +1,178 @@
+diff -ru theme-orig/sections/tr-collection-bunzlau.liquid theme/sections/tr-collection-bunzlau.liquid
+--- theme-orig/sections/tr-collection-bunzlau.liquid	2026-10-23 08:00:28
++++ theme/sections/tr-collection-bunzlau.liquid	2026-10-23 08:00:14
+@@ -156,6 +156,8 @@
+ @media (max-width: 700px) { .trbz-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .trbz-grid-wrap { padding: 24px 4vw 48px; } .trbz-hero-inner { padding: 36px 4vw 32px; } .trbz-usp-bar .trbz-usp-inner { flex-direction: column; } .trbz-usp-item { justify-content: center; text-align: center; } .trbz-pickup { padding: 36px 4vw; } .trbz-seo { padding: 36px 4vw 48px; } }
+ @media (max-width: 400px) { .trbz-grid { grid-template-columns: 1fr; } }
+ @media (prefers-reduced-motion: reduce) { .trbz-wrap *, .trbz-wrap *::before, .trbz-wrap *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
++.trbz-winkelfoto { margin: 0 auto 32px; max-width: 360px; }
++.trbz-winkelfoto img { display: block; width: 100%; height: auto; border-radius: 20px; }
+ </style>
+ 
+ {%- comment -%} Collectiebeschrijving splitsen: eerste alinea in header, rest in SEO-blok onderaan {%- endcomment -%}
+@@ -454,6 +456,11 @@
+   <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
+   <section class="trbz-pickup" aria-labelledby="trbz-pickup-heading">
+     <h2 id="trbz-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Alleen afhalen in de winkel</h2>
++    {%- if section.settings.foto_winkel != blank -%}
++    <figure class="trbz-winkelfoto">
++      {{ section.settings.foto_winkel | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 360px, calc(100vw - 48px)', loading: 'lazy' }}
++    </figure>
++    {%- endif -%}
+     <div class="trbz-pickup-inner">
+       <div class="trbz-pickup-card">
+         <div class="trbz-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</div>
+@@ -629,6 +636,11 @@
+       "id": "subtitle",
+       "label": "Hero ondertitel",
+       "placeholder": "Laat leeg voor standaard tekst"
++    },
++    {
++      "type": "image_picker",
++      "id": "foto_winkel",
++      "label": "Foto winkel (Bunzlau-wand)"
+     },
+     {
+       "type": "image_picker",
+diff -ru theme-orig/sections/tr-collection-rice.liquid theme/sections/tr-collection-rice.liquid
+--- theme-orig/sections/tr-collection-rice.liquid	2026-10-23 08:00:28
++++ theme/sections/tr-collection-rice.liquid	2026-10-23 08:00:14
+@@ -149,6 +149,8 @@
+ @media (max-width: 700px) { .trrc-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } .trrc-grid-wrap { padding: 24px 4vw 48px; } .trrc-hero-inner { padding: 36px 4vw 32px; } .trrc-pickup { padding: 36px 4vw; } .trrc-seo { padding: 36px 4vw 48px; } }
+ @media (max-width: 400px) { .trrc-grid { grid-template-columns: 1fr; } }
+ @media (prefers-reduced-motion: reduce) { .trrc-wrap *, .trrc-wrap *::before, .trrc-wrap *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
++.trrc-winkelfoto { margin: 0 auto 32px; max-width: 360px; }
++.trrc-winkelfoto img { display: block; width: 100%; height: auto; border-radius: 20px; }
+ </style>
+ 
+ {%- if collection.description != blank -%}
+@@ -394,6 +396,11 @@
+   <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
+   <section class="trrc-pickup" aria-labelledby="trrc-pickup-heading">
+     <h2 id="trrc-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Kopen bij Tante Rie in Borne</h2>
++    {%- if section.settings.foto_winkel != blank -%}
++    <figure class="trrc-winkelfoto">
++      {{ section.settings.foto_winkel | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 360px, calc(100vw - 48px)', loading: 'lazy' }}
++    </figure>
++    {%- endif -%}
+     <div class="trrc-pickup-inner">
+       <div class="trrc-pickup-card">
+         <div class="trrc-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</div>
+@@ -559,6 +566,11 @@
+       "id": "story_title",
+       "label": "Merkverhaal titel",
+       "placeholder": "Laat leeg voor standaard tekst"
++    },
++    {
++      "type": "image_picker",
++      "id": "foto_winkel",
++      "label": "Foto winkel (Rice-wand)"
+     },
+     {
+       "type": "image_picker",
+diff -ru theme-orig/sections/tr-page-lokaal.liquid theme/sections/tr-page-lokaal.liquid
+--- theme-orig/sections/tr-page-lokaal.liquid	2026-10-23 07:59:31
++++ theme/sections/tr-page-lokaal.liquid	2026-10-23 08:00:14
+@@ -62,11 +62,28 @@
+ }
+ .trlok-content h2:not(:first-child) { margin-top: 40px; }
+ 
++.trlok-figure {
++  margin: 0 auto 32px;
++  max-width: 420px;
++}
++.trlok-figure img {
++  display: block;
++  width: 100%;
++  height: auto;
++  border-radius: 8px;
++}
++.trlok-hero .trlok-figure { margin: 0 auto; }
++
+ </style>
+ 
+ <div class="trlok-hero">
+   <h1 class="trlok-h1">Theewinkel in Borne: Tante Rie aan de Bakkerssteeg</h1>
+   <p class="trlok-intro">Tante Rie is de theewinkel in het centrum van Borne, aan de Bakkerssteeg 6. Je vindt hier ruim 130 soorten losse thee, servies van Bunzlau Castle en Blond Amsterdam, theeaccessoires, cadeaus en bakmixen. De winkel is open van dinsdag tot en met zaterdag van 10.00 tot 17.00 uur. We nemen de tijd om met je mee te zoeken naar een thee die past bij wat je graag drinkt, of het nu voor jezelf is of voor iemand anders.</p>
++{%- if section.settings.foto_gevel != blank -%}
++<figure class="trlok-figure">
++  {{ section.settings.foto_gevel | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 420px, calc(100vw - 48px)', loading: 'eager', fetchpriority: 'high' }}
++</figure>
++{%- endif -%}
+ </div>
+ 
+ <div class="trlok-content">
+@@ -75,10 +92,22 @@
+     <p>In de winkel vind je <a href="/collections/thee">losse thee</a> in veel soorten, van zwarte thee zoals Earl Grey en Assam tot <a href="/collections/groene-thee">groene thee</a>, witte thee, <a href="/collections/rooibos">rooibos</a>, <a href="/collections/kruidenthee">kruidenthee</a> en <a href="/collections/vruchtenthee">vruchtenthee</a>. Weet je nog niet wat je zoekt, vertel dan wat je lekker vindt en wat je liever laat staan. Dan stellen we een paar soorten voor en vertellen we hoe je ze het best zet. Je mag gerust aan de thee ruiken en soms ook proeven, zodat je weet wat je mee naar huis neemt.</p>
+     <p>Voor thuis hebben we <a href="/collections/theefilters-en-maatschepjes">theefilters en maatschepjes</a> en <a href="/collections/thee-bewaarblikken">bewaarblikken voor losse thee</a>, zodat je thee lang goed blijft. Hoe lang je welke thee laat trekken en hoe heet het water moet zijn, lees je ook op onze pagina over <a href="/pages/theebereiding-faq">theebereiding</a>.</p>
+ 
++    {%- if section.settings.foto_theewand != blank -%}
++    <figure class="trlok-figure">
++      {{ section.settings.foto_theewand | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 420px, calc(100vw - 48px)', loading: 'lazy' }}
++    </figure>
++    {%- endif -%}
++
+     <h2>Servies bekijken en afhalen in de winkel</h2>
+     <p>Veel mensen komen naar de winkel voor het servies. Het blauwe, handgemaakte Poolse aardewerk van <a href="/collections/bunzlau">Bunzlau Castle</a> kun je bij ons in handen nemen, zodat je kleur en decor kunt vergelijken met wat je thuis al hebt. Neem gerust een kopje of schoteltje mee als je wilt aanvullen. Zoek je een decor dat niet in de winkel staat, dan kunnen we het voor je bestellen. Daarnaast verkopen we het kleurrijke servies van <a href="/collections/blond">Blond Amsterdam</a>. Op de pagina over <a href="/pages/blond-amsterdam-servies">Blond Amsterdam servies</a> lees je meer over het merk en het servies.</p>
+     <p>Het aardewerk van Bunzlau Castle en het servies van Blond Amsterdam versturen we niet. Je koopt ze in de winkel, of je bestelt online en haalt je bestelling op aan de Bakkerssteeg. Het melamineservies van Bunzlau Castle versturen we wel. Een overzicht van al ons servies, ook van Rice, vind je op de pagina <a href="/pages/serviezen">serviezen</a>.</p>
+ 
++    {%- if section.settings.foto_bunzlau != blank -%}
++    <figure class="trlok-figure">
++      {{ section.settings.foto_bunzlau | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 420px, calc(100vw - 48px)', loading: 'lazy' }}
++    </figure>
++    {%- endif -%}
++
+     <h2>Een theewinkel voor heel Twente</h2>
+     <p>Borne ligt tussen Hengelo en Almelo. Naast thee vind je bij ons ook <a href="/collections/bakmixen">bakmixen</a> en <a href="/pages/thee-en-koffie">koffiebonen</a>, dus ook wie in Twente een kleine kookwinkel zoekt, kan bij ons terecht. Voor een cadeau helpt onze <a href="/pages/thee-cadeau">gids voor theecadeaus</a> je op weg.</p>
+ 
+@@ -154,7 +183,11 @@
+   "name": "Lokale SEO Pagina",
+   "tag": "section",
+   "class": "section-wrapper",
+-  "settings": [],
++  "settings": [
++    { "type": "image_picker", "id": "foto_gevel", "label": "Foto gevel (bovenaan)" },
++    { "type": "image_picker", "id": "foto_theewand", "label": "Foto theewand (bij losse thee)" },
++    { "type": "image_picker", "id": "foto_bunzlau", "label": "Foto Bunzlau-wand (bij servies)" }
++  ],
+   "presets": [{ "name": "Lokale SEO Pagina" }]
+ }
+ {% endschema %}
+diff -ru theme-orig/templates/collection.bunzlau.json theme/templates/collection.bunzlau.json
+--- theme-orig/templates/collection.bunzlau.json	2026-10-23 07:59:31
++++ theme/templates/collection.bunzlau.json	2026-10-23 08:00:14
+@@ -12,6 +12,7 @@
+     "trbz_collection": {
+       "type": "tr-collection-bunzlau",
+       "settings": {
++        "foto_winkel": "shopify://shop_images/bunzlau-wand.jpg",
+         "subtitle": "",
+         "brand_image": "shopify://shop_images/06_Tante-Rie_Bunzlau_ontbijt-uitgebreid_LQ_JochemBoxemPhotography-11995_2b8b959b-9fd4-4ff5-adaf-d1e9b1fbe070.jpg",
+         "brand_text": "",
+diff -ru theme-orig/templates/collection.rice.json theme/templates/collection.rice.json
+--- theme-orig/templates/collection.rice.json	2026-10-23 07:59:31
++++ theme/templates/collection.rice.json	2026-10-23 08:00:14
+@@ -12,6 +12,7 @@
+     "rice_landing": {
+       "type": "tr-collection-rice",
+       "settings": {
++        "foto_winkel": "shopify://shop_images/rice-melamine-wand.jpg",
+         "hero_image": "shopify://shop_images/download.png",
+         "hero_title": "Rice",
+         "hero_sub": "Vrolijke woonaccessoires uit Denemarken, met zorg geselecteerd bij Tante Rie",
+diff -ru theme-orig/templates/page.lokaal.json theme/templates/page.lokaal.json
+--- theme-orig/templates/page.lokaal.json	2026-10-23 07:59:31
++++ theme/templates/page.lokaal.json	2026-10-23 08:00:14
+@@ -11,7 +11,11 @@
+   "sections": {
+     "main": {
+       "type": "tr-page-lokaal",
+-      "settings": {}
++      "settings": {
++        "foto_gevel": "shopify://shop_images/gevel-bakkerssteeg-6.jpg",
++        "foto_theewand": "shopify://shop_images/theewand-losse-thee.jpg",
++        "foto_bunzlau": "shopify://shop_images/bunzlau-wand.jpg"
++      }
+     }
+   },
+   "order": [

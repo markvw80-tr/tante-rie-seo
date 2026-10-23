@@ -1,0 +1,640 @@
+{
+ "_status": 200,
+ "_url": "https://mybusinessbusinessinformation.googleapis.com/v1/attributes?parent=locations%2F6267696427702073490&pageSize=200",
+ "data": {
+  "attributeMetadata": [
+   {
+    "parent": "attributes/accepts_donations_during_crisis",
+    "valueType": "BOOL",
+    "displayName": "Accepteert donaties",
+    "groupDisplayName": "Noodhulp",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Accepteert donaties"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/offers_free_products_services_during_crisis",
+    "valueType": "BOOL",
+    "displayName": "Biedt kosteloze producten of services",
+    "groupDisplayName": "Noodhulp",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Biedt kosteloze producten of services"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/needs_volunteers_during_crisis",
+    "valueType": "BOOL",
+    "displayName": "Heeft vrijwilligers nodig",
+    "groupDisplayName": "Noodhulp",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Heeft vrijwilligers nodig"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/offers_employment_during_crisis",
+    "valueType": "BOOL",
+    "displayName": "Neemt ontheemden in dienst",
+    "groupDisplayName": "Noodhulp",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Neemt ontheemden in dienst"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/is_owned_by_women",
+    "valueType": "BOOL",
+    "displayName": "Gerund door een vrouwelijke ondernemer",
+    "groupDisplayName": "Aangeleverd door het bedrijf",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Gerund door een vrouwelijke ondernemer"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_delivery",
+    "valueType": "BOOL",
+    "displayName": "Bezorging",
+    "groupDisplayName": "Serviceopties",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Bezorging"
+     },
+     {
+      "value": false,
+      "displayName": "Geen bezorging"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_in_store_pickup",
+    "valueType": "BOOL",
+    "displayName": "Ophalen in de winkel",
+    "groupDisplayName": "Serviceopties",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Ophalen in de winkel"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_in_store_shopping",
+    "valueType": "BOOL",
+    "displayName": "Winkelbezoek mogelijk",
+    "groupDisplayName": "Serviceopties",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Winkelbezoek mogelijk"
+     },
+     {
+      "value": false,
+      "displayName": "Winkelbezoek niet mogelijk"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_onsite_services",
+    "valueType": "BOOL",
+    "displayName": "Services op bedrijfslocatie",
+    "groupDisplayName": "Serviceopties",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Services op bedrijfslocatie"
+     },
+     {
+      "value": false,
+      "displayName": "Geen services op bedrijfslocatie beschikbaar"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_takeout",
+    "valueType": "BOOL",
+    "displayName": "Afhalen",
+    "groupDisplayName": "Serviceopties",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Afhalen"
+     },
+     {
+      "value": false,
+      "displayName": "Geen afhaalmaaltijden"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/serves_dine_in",
+    "valueType": "BOOL",
+    "displayName": "Ter plaatse eten",
+    "groupDisplayName": "Serviceopties",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Ter plaatse eten"
+     },
+     {
+      "value": false,
+      "displayName": "Niet binnen eten"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_assisted_listening_devices",
+    "valueType": "BOOL",
+    "displayName": "Apparatuur voor luisterondersteuning",
+    "groupDisplayName": "Toegankelijkheid",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Apparatuur voor luisterondersteuning"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_hearing_loop",
+    "valueType": "BOOL",
+    "displayName": "Ondersteunende ringleiding",
+    "groupDisplayName": "Toegankelijkheid",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Ondersteunende ringleiding"
+     },
+     {
+      "value": false,
+      "displayName": " Beschikt niet over een ondersteunende ringleiding"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_wheelchair_accessible_restroom",
+    "valueType": "BOOL",
+    "displayName": "Rolstoeltoegankelijk toilet",
+    "groupDisplayName": "Toegankelijkheid",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Rolstoeltoegankelijk toilet"
+     },
+     {
+      "value": false,
+      "displayName": "Geen rolstoeltoegankelijk toilet"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_wheelchair_accessible_entrance",
+    "valueType": "BOOL",
+    "displayName": "Rolstoeltoegankelijke ingang",
+    "groupDisplayName": "Toegankelijkheid",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Rolstoeltoegankelijke ingang"
+     },
+     {
+      "value": false,
+      "displayName": "Geen rolstoeltoegankelijke ingang"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_wheelchair_accessible_parking",
+    "valueType": "BOOL",
+    "displayName": "Rolstoeltoegankelijke parking",
+    "groupDisplayName": "Toegankelijkheid",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Rolstoeltoegankelijke parking"
+     },
+     {
+      "value": false,
+      "displayName": "Geen rolstoeltoegankelijke parking"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_wheelchair_accessible_seating",
+    "valueType": "BOOL",
+    "displayName": "Rolstoeltoegankelijke zitplaatsen",
+    "groupDisplayName": "Toegankelijkheid",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Rolstoeltoegankelijke zitplaatsen"
+     },
+     {
+      "value": false,
+      "displayName": "Geen rolstoeltoegankelijke zitplaatsen"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_restroom_unisex",
+    "valueType": "BOOL",
+    "displayName": "Genderneutraal toilet",
+    "groupDisplayName": "Voorzieningen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Genderneutraal toilet"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/wi_fi",
+    "valueType": "ENUM",
+    "displayName": "Wifi",
+    "groupDisplayName": "Voorzieningen",
+    "valueMetadata": [
+     {
+      "value": "paid_wi_fi",
+      "displayName": "Betaald"
+     },
+     {
+      "value": "free_wi_fi",
+      "displayName": "Gratis"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/welcomes_lgbtq",
+    "valueType": "BOOL",
+    "displayName": "LGBTQ+ vriendelijk",
+    "groupDisplayName": "Publiek",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "LGBTQ+ vriendelijk"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/is_transgender_safespace",
+    "valueType": "BOOL",
+    "displayName": "Veilige omgeving voor transgenders",
+    "groupDisplayName": "Publiek",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Veilige omgeving voor transgenders"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/requires_appointments",
+    "valueType": "BOOL",
+    "displayName": "Afspraak verplicht",
+    "groupDisplayName": "Planning",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Afspraak verplicht"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_recycling_electronics",
+    "valueType": "BOOL",
+    "displayName": "Elektronica",
+    "groupDisplayName": "Recycling",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Elektronica"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/requires_cash_only",
+    "valueType": "BOOL",
+    "displayName": "Alleen contant geld",
+    "groupDisplayName": "Betalen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Alleen contant geld"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/pay_check",
+    "valueType": "BOOL",
+    "displayName": "Cheques",
+    "groupDisplayName": "Betalen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Cheques"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/pay_mobile_nfc",
+    "valueType": "BOOL",
+    "displayName": "Contactloos mobiel betalen",
+    "groupDisplayName": "Betalen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Contactloos mobiel betalen"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/pay_credit_card",
+    "valueType": "BOOL",
+    "displayName": "Creditcards",
+    "groupDisplayName": "Betalen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Creditcards"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/pay_credit_card_types_accepted",
+    "valueType": "REPEATED_ENUM",
+    "displayName": "Creditcards",
+    "groupDisplayName": "Betalen",
+    "repeatable": true,
+    "valueMetadata": [
+     {
+      "value": "american_express",
+      "displayName": "American Express"
+     },
+     {
+      "value": "china_union_pay",
+      "displayName": "China UnionPay"
+     },
+     {
+      "value": "diners_club",
+      "displayName": "Diners Club"
+     },
+     {
+      "value": "discover",
+      "displayName": "Discover"
+     },
+     {
+      "value": "jcb",
+      "displayName": "JCB"
+     },
+     {
+      "value": "mastercard",
+      "displayName": "MasterCard"
+     },
+     {
+      "value": "visa",
+      "displayName": "VISA"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/pay_debit_card",
+    "valueType": "BOOL",
+    "displayName": "Pinpassen",
+    "groupDisplayName": "Betalen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Pinpassen"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_lactation_space",
+    "valueType": "BOOL",
+    "displayName": "Borstvoedingsruimte",
+    "groupDisplayName": "Kinderen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Borstvoedingsruimte"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_changing_tables",
+    "valueType": "BOOL",
+    "displayName": "Heeft een of meer babyverschoontafels",
+    "groupDisplayName": "Kinderen",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Heeft een of meer babyverschoontafels"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_parking_street_paid",
+    "valueType": "BOOL",
+    "displayName": "Betaald parkeren op straat",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Betaald parkeren op straat"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_parking_garage_paid",
+    "valueType": "BOOL",
+    "displayName": "Betaalde parkeergarage",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Betaalde parkeergarage"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_parking_lot_paid",
+    "valueType": "BOOL",
+    "displayName": "Betaalde parkeerplaats",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Betaalde parkeerplaats"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_parking_garage_free",
+    "valueType": "BOOL",
+    "displayName": "Gratis parkeergarage",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Gratis parkeergarage"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_parking_lot_free",
+    "valueType": "BOOL",
+    "displayName": "Gratis parkeerplaats",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Gratis parkeerplaats"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_parking_street_free",
+    "valueType": "BOOL",
+    "displayName": "Gratis parkeren op straat",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Gratis parkeren op straat"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/has_onsite_parking",
+    "valueType": "BOOL",
+    "displayName": "Parkeren op het terrein",
+    "groupDisplayName": "Parkeren",
+    "valueMetadata": [
+     {
+      "value": true,
+      "displayName": "Parkeren op het terrein"
+     }
+    ]
+   },
+   {
+    "parent": "attributes/url_appointment",
+    "valueType": "URL",
+    "displayName": "Afspraaklinks",
+    "groupDisplayName": "URL's van plaatspagina's",
+    "repeatable": true
+   },
+   {
+    "parent": "attributes/url_facebook",
+    "valueType": "URL",
+    "displayName": "Facebook",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_instagram",
+    "valueType": "URL",
+    "displayName": "Instagram",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_shop_online",
+    "valueType": "URL",
+    "displayName": "Link om een bestelling te plaatsen",
+    "groupDisplayName": "URL's van plaatspagina's",
+    "repeatable": true
+   },
+   {
+    "parent": "attributes/url_linkedin",
+    "valueType": "URL",
+    "displayName": "LinkedIn",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_order_ahead",
+    "valueType": "URL",
+    "displayName": "Links voor van tevoren bestellen",
+    "groupDisplayName": "URL's van plaatspagina's",
+    "repeatable": true
+   },
+   {
+    "parent": "attributes/url_text_messaging",
+    "valueType": "URL",
+    "displayName": "Nummer voor tekstberichten",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_pinterest",
+    "valueType": "URL",
+    "displayName": "Pinterest",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_tiktok",
+    "valueType": "URL",
+    "displayName": "TikTok",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_inventory_search",
+    "valueType": "URL",
+    "displayName": "URL voor voorraad doorzoeken",
+    "groupDisplayName": "URL's van plaatspagina's",
+    "repeatable": true,
+    "deprecated": true
+   },
+   {
+    "parent": "attributes/url_whatsapp",
+    "valueType": "URL",
+    "displayName": "WhatsApp",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_twitter",
+    "valueType": "URL",
+    "displayName": "X (Twitter)",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/url_youtube",
+    "valueType": "URL",
+    "displayName": "YouTube",
+    "groupDisplayName": "URL's van plaatspagina's"
+   },
+   {
+    "parent": "attributes/preferred_messaging_service",
+    "valueType": "ENUM",
+    "displayName": "Primaire chat",
+    "groupDisplayName": "Kenmerken voor Places-pagina",
+    "valueMetadata": [
+     {
+      "value": "facebook_messenger",
+      "displayName": "Facebook Messenger"
+     },
+     {
+      "value": "rcs_for_business",
+      "displayName": "RCS voor bedrijven"
+     },
+     {
+      "value": "text_messaging",
+      "displayName": "Tekstbericht"
+     },
+     {
+      "value": "whatsapp",
+      "displayName": "WhatsApp"
+     }
+    ]
+   }
+  ]
+ }
+}

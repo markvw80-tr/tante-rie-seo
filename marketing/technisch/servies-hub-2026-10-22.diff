@@ -1,0 +1,65 @@
+# Servies-hub (V12). Themakopie "servies-hub 2026-10-22", theme-id 203987484936, ongepubliceerd.
+# Preview: https://tanterie.nl/collections/servies?preview_theme_id=203987484936
+# Niet naar live gepusht. Collectie-SEO (title en meta) valt hier buiten.
+
+diff -u a/sections/tr-servies-hub.liquid b/sections/tr-servies-hub.liquid
+--- a/sections/tr-servies-hub.liquid
++++ b/sections/tr-servies-hub.liquid
+@@ -143,6 +143,15 @@
+   text-transform: uppercase;
+   color: rgba(255,255,255,.9);
+ }
++.trsv-text {
++  max-width: 680px;
++  margin: 40px auto 0;
++  text-align: center;
++  font-size: 15px;
++  line-height: 1.7;
++  color: var(--text-muted);
++}
++.trsv-text a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+ @media (max-width: 700px) {
+   .trsv-grid { grid-template-columns: 1fr; max-width: 440px; }
+   .trsv-card { aspect-ratio: 4/3; }
+@@ -203,6 +212,9 @@
+         {%- endif -%}
+       {%- endfor -%}
+     </div>
++    {%- if section.settings.body_text != blank -%}
++      <div class="trsv-text">{{ section.settings.body_text }}</div>
++    {%- endif -%}
+   </div>
+ </div>
+ 
+@@ -213,7 +225,8 @@
+   "settings": [
+     { "type": "text", "id": "eyebrow", "label": "Eyebrow tekst", "default": "Onze serviescollectie" },
+     { "type": "text", "id": "title", "label": "Paginatitel", "default": "Servies met karakter" },
+-    { "type": "textarea", "id": "subtitle", "label": "Ondertitel", "default": "Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past." }
++    { "type": "textarea", "id": "subtitle", "label": "Ondertitel", "default": "Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past." },
++    { "type": "richtext", "id": "body_text", "label": "Tekst onder de kaarten" }
+   ],
+   "blocks": [
+     {
+diff -u a/templates/collection.servies.json b/templates/collection.servies.json
+--- a/templates/collection.servies.json
++++ b/templates/collection.servies.json
+@@ -40,7 +40,7 @@
+             "collection": "",
+             "label": "Blond Amsterdam",
+             "subtitle": "Kleurrijk en vrolijk servies",
+-            "url": "",
++            "url": "/collections/blond",
+             "image_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/14_Tante-Rie_Blond_high-tea_LQ_JochemBoxemPhotography-12161_c6d5e30d-f220-4c83-b13f-8efc8df6c0e2.jpg?v=1781780354",
+             "coming_soon": false
+           }
+@@ -54,7 +54,8 @@
+       "settings": {
+         "eyebrow": "Onze serviescollectie",
+         "title": "Servies met karakter",
+-        "subtitle": "Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past."
++        "subtitle": "Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past.",
++        "body_text": "<p>Bij Tante Rie, de theewinkel in Borne, kies je servies per merk. Bunzlau Castle is handgemaakt Pools aardewerk, Blond Amsterdam brengt kleurrijke mokken en borden met een tekst, en Rice is melamine dat bijna niet kapot gaat. Wil je eerst zien wat er in de winkel ligt, lees dan het overzicht van <a href=\"/pages/serviezen\">servies in de winkel in Borne</a>.</p>"
+       }
+     }
+   },

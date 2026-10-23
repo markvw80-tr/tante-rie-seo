@@ -1,0 +1,404 @@
+{% comment %} Tante Rie – Rice Productpagina {% endcomment %}
+{% comment %} Fonts worden geladen via theme.liquid – niet opnieuw hier {% endcomment %}
+
+<style>
+/* ─── Tante Rie huisstijl design tokens (generieke productpagina's) ──────── */
+:root {
+  --rrp-main:  #C03A6A;
+  --rrp-mid:   #D9618A;
+  --rrp-light: #FAE8F0;
+  --rrp-dark:  #8B2449;
+}
+
+.trrp-product-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 80vh; }
+
+/* Gallery – top en hoogte via --header-group-height zodat banner meegeteld wordt */
+.trrp-gallery {
+  position: sticky;
+  top: var(--header-group-height, 64px);
+  height: calc(100vh - var(--header-group-height, 64px));
+  display: flex; flex-direction: column;
+  background: var(--page-bg);
+}
+.trrp-gallery-main { flex: 1; overflow: hidden; position: relative; background: var(--page-bg); }
+.trrp-gallery-main img { width: 100%; height: 100%; object-fit: contain; background: var(--page-bg); transition: transform .5s cubic-bezier(.25,.46,.45,.94); padding: 20px; }
+.trrp-gallery-main:hover img { transform: scale(1.03); }
+.trrp-gallery-thumbs { flex-shrink: 0; display: flex; gap: 10px; padding: 12px 16px 14px; background: var(--page-bg); border-top: 1px solid rgba(0,0,0,.06); }
+.trrp-thumb { flex: 1; height: 72px; border-radius: 8px; cursor: pointer; background: var(--page-bg); overflow: hidden; box-shadow: 0 0 0 2px transparent; transition: box-shadow .2s; }
+.trrp-thumb.active { box-shadow: 0 0 0 2px var(--rrp-main); }
+.trrp-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 4px; background: var(--page-bg); display: block; }
+.trrp-product-info { padding: 48px var(--page-margin) 64px; overflow-y: auto; display: flex; flex-direction: column; }
+.trrp-tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.trrp-tag { background: var(--cream-dark); color: var(--brown-dark); font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; padding: 5px 12px; border-radius: 50px; }
+.trrp-tag.green { background: var(--rrp-light); color: var(--rrp-main); }
+.trrp-product-info h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; line-height: 1.15; color: var(--brown-dark); margin-bottom: 10px; }
+.trrp-tagline { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: var(--text-muted); margin-bottom: 24px; }
+.trrp-rating-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+.trrp-section-label { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+.trrp-details-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 28px; }
+.trrp-detail-card { background: var(--white); border-radius: 14px; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; gap: 5px; border: 1px solid var(--cream-dark); text-align: center; transition: transform .2s, box-shadow .2s; }
+.trrp-detail-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+.trrp-detail-icon { font-size: 1.3rem; flex-shrink: 0; }
+.trrp-detail-value { font-size: .78rem; color: var(--brown-dark); font-weight: 500; line-height: 1.3; word-break: break-word; white-space: normal; overflow: visible; }
+.trrp-detail-label { font-size: 9px; color: var(--text-muted); letter-spacing: .05em; text-transform: uppercase; }
+.trrp-desc-block { background: var(--white); border-radius: 16px; padding: 20px 22px; margin-bottom: 28px; border-left: 3px solid var(--brown-light); }
+.trrp-desc-block p { font-family: 'DM Sans', sans-serif; font-size: .95rem; line-height: 1.75; color: var(--text); overflow: visible; display: block; }
+.trrp-purchase-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.trrp-price { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--brown-dark); }
+.trrp-price-sub { font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-top: 2px; }
+.trrp-qty-control { display: flex; align-items: center; border: 1px solid var(--cream-dark); border-radius: 50px; overflow: hidden; background: var(--white); }
+.trrp-qty-btn { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 1.2rem; color: var(--brown-dark); display: flex; align-items: center; justify-content: center; transition: background .15s; }
+.trrp-qty-btn:hover { background: var(--cream-dark); }
+.trrp-qty-num { width: 32px; text-align: center; font-weight: 500; font-size: .95rem; color: var(--brown-dark); }
+.trrp-btn-primary { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 17px 32px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .15s; width: 100%; display: block; margin-bottom: 10px; }
+.trrp-btn-primary:hover { background: var(--brown); transform: translateY(-1px); }
+.trrp-btn-secondary { background: transparent; color: var(--brown-dark); border: 1.5px solid var(--brown-light); border-radius: 50px; padding: 15px 32px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; transition: background .2s; width: 100%; display: block; margin-bottom: 22px; }
+.trrp-btn-secondary:hover { background: var(--cream-dark); }
+.trrp-trust-strip { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 32px; }
+.trrp-trust-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+.trrp-accordion { border-top: 1px solid var(--cream-dark); }
+.trrp-accordion-item { border-bottom: 1px solid var(--cream-dark); }
+.trrp-accordion-trigger { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 16px 0; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; color: var(--brown-dark); text-align: left; }
+.trrp-accordion-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.trrp-accordion-body.open { max-height: 600px; }
+.trrp-accordion-body p { padding: 0 0 16px; font-size: 13.5px; color: var(--text-muted); line-height: 1.7; }
+.trrp-chevron { font-size: 12px; color: var(--brown-light); transition: transform .25s; display: inline-block; }
+.trrp-accordion-trigger.open .trrp-chevron { transform: rotate(180deg); }
+.trrp-combine-section { background: var(--page-bg); padding: 56px var(--page-margin); border-top: 1px solid var(--cream-dark); }
+.trrp-section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 28px; }
+.trrp-section-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; color: var(--brown-dark); }
+.trrp-see-all { font-size: 13px; color: var(--brown); text-decoration: none; border-bottom: 1px solid var(--brown-light); }
+.trrp-thee-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.trrp-thee-card { background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; }
+.trrp-thee-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+.trrp-thee-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); }
+.trrp-thee-img img { width: 100%; height: 100%; object-fit: contain; padding: 10px; transition: transform .4s; display: block; }
+.trrp-thee-card:hover .trrp-thee-img img { transform: scale(1.05); }
+.trrp-thee-body { padding: 12px 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.trrp-thee-type { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--rrp-main); }
+.trrp-thee-name { font-family: 'DM Sans', sans-serif; font-size: .9rem; color: var(--brown-dark); line-height: 1.3; }
+.trrp-thee-price { font-size: .85rem; color: var(--brown); font-weight: 500; margin-top: auto; padding-top: 8px; }
+@media (max-width: 900px) {
+  .trrp-product-grid { grid-template-columns: 1fr; }
+  .trrp-gallery { position: relative; height: auto; top: 0; }
+  .trrp-gallery-main { height: 75vw; }
+  .trrp-thee-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .trrp-thee-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+}
+/* Variants */
+.trrp-variants { margin-bottom: 22px; }
+.trrp-variant-label { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+.trrp-variant-label strong { color: var(--brown-dark); font-weight: 600; text-transform: none; letter-spacing: 0; font-size: 13px; }
+.trrp-variant-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.trrp-variant-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 18px; min-height: 44px; display: inline-flex; align-items: center; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--brown-dark); background: var(--white); cursor: pointer; transition: border-color .2s, background .2s; white-space: nowrap; }
+.trrp-variant-pill:hover { border-color: var(--rrp-mid); }
+.trrp-variant-pill.active { border-color: var(--rrp-main); background: var(--rrp-main); color: var(--white); }
+.trrp-variant-pill.unavailable { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+.trrp-variant-swatch { width: 44px; height: 44px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: border-color .2s, transform .15s; outline: 2px solid transparent; outline-offset: 2px; position: relative; }
+.trrp-variant-swatch:hover { transform: scale(1.08); }
+.trrp-variant-swatch.active { outline-color: var(--brown-dark); }
+.trrp-variant-swatch.unavailable { opacity: .35; cursor: not-allowed; }
+.trrp-variant-swatch.unavailable::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: linear-gradient(135deg, transparent 45%, var(--text-muted) 45%, var(--text-muted) 55%, transparent 55%); }
+/* Sticky ATC mobiel */
+@media (max-width: 700px) {
+  .trrp-sticky-atc { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; background: var(--white); border-top: 1px solid var(--cream-dark); padding: 12px 16px; gap: 10px; align-items: center; box-shadow: 0 -4px 20px rgba(0,0,0,.08); }
+  .trrp-sticky-atc-price { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--brown-dark); white-space: nowrap; }
+  .trrp-sticky-atc-btn { flex: 1; background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 14px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; }
+  .trrp-product-info { padding-bottom: 80px; }
+}
+@media (min-width: 701px) { .trrp-sticky-atc { display: none; } }
+</style>
+
+<div class="trrp-wrap">
+  {%- assign cur = product -%}
+
+  <div class="trrp-breadcrumb">
+    <a href="/">Home</a><span>›</span>
+    {%- for c in cur.collections limit:1 -%}<a href="{{ c.url }}">{{ c.title }}</a><span>›</span>{%- endfor -%}
+    {{ cur.title }}
+  </div>
+
+  <div class="trrp-product-grid">
+    <div class="trrp-gallery">
+      <div class="trrp-gallery-main">
+        <img id="trrp-main-img" src="{{ cur.featured_image | image_url: width: 900 }}" alt="{{ cur.featured_image.alt | escape }}" fetchpriority="high">
+      </div>
+      <div class="trrp-gallery-thumbs">
+        {%- for img in cur.images limit: 4 -%}
+          <div class="trrp-thumb {% if forloop.first %}active{% endif %}" onclick="trrpSwitchImg(this,'{{ img | image_url: width: 900 }}')">
+            <img src="{{ img | image_url: width: 200 }}" alt="" loading="lazy">
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="trrp-product-info">
+      <div class="trrp-tag-row">
+        {%- if cur.type != blank -%}<span class="trrp-tag">{{ cur.type }}</span>{%- endif -%}
+        {%- for tag in cur.tags limit: 3 -%}
+          {%- assign tl = tag | downcase -%}
+          {%- if tl contains 'duurzaam' or tl contains 'bio' or tl contains 'rvs' -%}
+            <span class="trrp-tag green">{{ tag }}</span>
+          {%- else -%}
+            <span class="trrp-tag">{{ tag }}</span>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <h1>{{ cur.title }}</h1>
+      <p class="trrp-tagline">{{ section.settings.tagline | default: cur.type | append: ' van Rice bij Tante Rie' }}</p>
+
+      <!-- Dynamische sterren via Judge.me -->
+      <div class="trrp-rating-bar">
+        {%- render 'judgeme_widgets', widget_type: 'judgeme_product_stars', concierge_install: true, product: cur -%}
+        <span style="font-size:13px;color:var(--text-muted);"><a href="#trrp-reviews" style="color:var(--brown);text-decoration:none;border-bottom:1px solid var(--brown-light);">Bekijk beoordelingen</a></span>
+      </div>
+
+      <div class="trrp-divider"></div>
+
+      {%- if cur.variants.size > 1 -%}
+        <script type="application/json" id="trrp-variant-data-{{ cur.id }}">
+          {
+            "variants": [
+              {%- for v in cur.variants -%}
+                {%- if v.featured_image -%}{%- assign v_img = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign v_img = '' -%}{%- endif -%}
+                {
+                  "id": {{ v.id }},
+                  "price": {{ v.price }},
+                  "available": {{ v.available }},
+                  "title": {{ v.title | json }},
+                  "options": {{ v.options | json }},
+                  "img": {{ v_img | json }}
+                }{%- unless forloop.last -%},{%- endunless -%}
+              {%- endfor -%}
+            ],
+            "fallbackImg": {{ cur.featured_image | image_url: width: 900 | json }},
+            "initialOptions": {{ cur.selected_or_first_available_variant.options | json }}
+          }
+        </script>
+        <div class="trrp-variants" data-trrp-variants data-product-id="{{ cur.id }}">
+          {%- for opt in cur.options_with_values -%}
+            {%- assign opt_idx = forloop.index0 -%}
+            {%- assign opt_name_lower = opt.name | downcase -%}
+            {%- assign opt_selected = cur.selected_or_first_available_variant.options[opt_idx] -%}
+            <div class="trrp-variants-group" data-option-index="{{ opt_idx }}">
+              <p class="trrp-variant-label">{{ opt.name }}: <strong data-trrp-option-val="{{ opt_idx }}">{{ opt_selected }}</strong></p>
+              <div class="trrp-variant-pills">
+                {%- for val in opt.values -%}
+                  {%- assign is_active = false -%}
+                  {%- if val == opt_selected -%}{%- assign is_active = true -%}{%- endif -%}
+                  {%- if opt_name_lower == 'kleur' or opt_name_lower == 'color' or opt_name_lower == 'colour' -%}
+                    <div class="trrp-variant-swatch{% if is_active %} active{% endif %}"
+                         style="background:{{ val | downcase | replace: ' ', '' }};"
+                         data-trrp-swatch
+                         data-option-index="{{ opt_idx }}"
+                         data-value="{{ val | escape }}"
+                         title="{{ val | escape }}"></div>
+                  {%- else -%}
+                    <button type="button"
+                            class="trrp-variant-pill{% if is_active %} active{% endif %}"
+                            data-trrp-pill
+                            data-option-index="{{ opt_idx }}"
+                            data-value="{{ val | escape }}">{{ val }}</button>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- assign v_materiaal   = cur.metafields.specificaties.materiaal.value | default: section.settings.materiaal -%}
+      {%- assign v_afmetingen  = cur.metafields.specificaties.afmeting.value | default: section.settings.afmetingen -%}
+      {%- assign v_duurzaamheid = cur.metafields.specificaties.duurzaamheid.value | default: section.settings.duurzaamheid -%}
+      {%- if v_materiaal != blank or v_afmetingen != blank or v_duurzaamheid != blank -%}
+      <p class="trrp-section-label" style="margin-bottom:10px;">Productdetails</p>
+      <div class="trrp-details-grid">
+        {%- if v_materiaal != blank -%}
+        <div class="trrp-detail-card">
+          <span class="trrp-detail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'rock' -%}</span>
+          <span class="trrp-detail-value">{{ v_materiaal }}</span>
+          <span class="trrp-detail-label">Materiaal</span>
+        </div>
+        {%- endif -%}
+        {%- if v_afmetingen != blank -%}
+        <div class="trrp-detail-card">
+          <span class="trrp-detail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'ruler' -%}</span>
+          <span class="trrp-detail-value">{{ v_afmetingen }}</span>
+          <span class="trrp-detail-label">Afmetingen</span>
+        </div>
+        {%- endif -%}
+        {%- if v_duurzaamheid != blank -%}
+        <div class="trrp-detail-card">
+          <span class="trrp-detail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'recycle' -%}</span>
+          <span class="trrp-detail-value">{{ v_duurzaamheid }}</span>
+          <span class="trrp-detail-label">Duurzaamheid</span>
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+
+      <div class="trrp-desc-block">
+        <p class="trrp-section-label" style="margin-bottom:8px;">Over dit product</p>
+        {%- if section.settings.verhaal_tekst != blank -%}
+          <p>{{ section.settings.verhaal_tekst }}</p>
+        {%- else -%}
+          <p>{{ cur.description | strip_html }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="trrp-purchase-row">
+        <div>
+          <div class="trrp-price">{{ cur.price | money }}</div>
+          <div class="trrp-price-sub">Belasting inbegrepen</div>
+        </div>
+        <div class="trrp-qty-control">
+          <button class="trrp-qty-btn" onclick="trrpChangeQty(-1)">&#8722;</button>
+          <span class="trrp-qty-num" id="trrp-qty">1</span>
+          <button class="trrp-qty-btn" onclick="trrpChangeQty(1)">+</button>
+        </div>
+      </div>
+
+      <button type="button" class="trrp-btn-primary" data-tr-atc data-qty-from="#trrp-qty" data-success-text="✓ Toegevoegd" data-variant-id="{{ cur.selected_or_first_available_variant.id }}">Aan winkelwagen toevoegen</button>
+      <button class="trrp-btn-secondary">♡ Op verlanglijst</button>
+
+      <div class="trrp-trust-strip">
+        <span class="trrp-trust-item">✓ Snel verzonden</span>
+        <span class="trrp-trust-item">✓ Uit eigen winkel Borne</span>
+        <span class="trrp-trust-item">✓ Veilig betalen</span>
+        <span class="trrp-trust-item">✓ Klantvriendelijke retour</span>
+      </div>
+
+      <div class="trrp-accordion" data-tr-accordion>
+        <div class="trrp-accordion-item">
+          <button class="trrp-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Gebruiksinstructie <span class="trrp-chevron">▾</span></button>
+          <div class="trrp-accordion-body" data-tr-accordion-body><p>{{ section.settings.gebruiksinstructie | default: cur.description | strip_html }}</p></div>
+        </div>
+        <div class="trrp-accordion-item">
+          <button class="trrp-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Reiniging &amp; onderhoud <span class="trrp-chevron">▾</span></button>
+          <div class="trrp-accordion-body" data-tr-accordion-body><p>{{ section.settings.reiniging | default: 'Raadpleeg de verpakking voor specifieke reinigingsinstructies.' }}</p></div>
+        </div>
+        <div class="trrp-accordion-item">
+          <button class="trrp-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Verzending &amp; retour <span class="trrp-chevron">▾</span></button>
+          <div class="trrp-accordion-body" data-tr-accordion-body><p>Bestellingen worden dezelfde werkdag verwerkt. Retourneren is mogelijk binnen 14 dagen, mits ongebruikt en in originele verpakking. Neem contact op via webshop@tanterie.nl.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="trrp-combine-section">
+    <div class="trrp-section-header">
+      <h2 class="trrp-section-title">Ontdek meer Rice servies</h2>
+      <a href="/collections/rice" class="trrp-see-all">Alle Rice producten</a>
+    </div>
+    <div class="trrp-thee-grid">
+      {%- assign shown = 0 -%}
+      {%- for p in collections['rice'].products -%}
+        {%- if shown < 4 -%}{%- assign shown = shown | plus: 1 -%}
+          <a class="trrp-thee-card" href="{{ p.url }}">
+            <div class="trrp-thee-img"><img src="{{ p.featured_image | image_url: width: 400 }}" alt="{{ p.title | escape }}" loading="lazy"></div>
+            <div class="trrp-thee-body">
+              <span class="trrp-thee-type">{{ p.type }}</span>
+              <p class="trrp-thee-name">{{ p.title }}</p>
+              <p class="trrp-thee-price">{{ p.price | money }}</p>
+            </div>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+
+</div>
+
+<!-- ── JSON-LD BreadcrumbList + Product ──────────────────────────── -->
+{%- render 'tr-product-schema', product: cur, brand_name: 'Rice' -%}
+
+<div class="trrp-sticky-atc" id="trrp-sticky-atc">
+  <div>
+    <div class="trrp-sticky-atc-price" id="trrp-sticky-price">{{ cur.price | money }}</div>
+  </div>
+  <button type="button" class="trrp-sticky-atc-btn" data-tr-atc data-qty-from="#trrp-qty" data-variant-id="{{ cur.selected_or_first_available_variant.id }}">In winkelwagen</button>
+</div>
+
+<script>
+function trrpSwitchImg(el,src){document.getElementById('trrp-main-img').src=src;document.querySelectorAll('.trrp-thumb').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+function trrpChangeQty(d){const e=document.getElementById('trrp-qty');e.textContent=Math.max(1,parseInt(e.textContent)+d);}
+
+(function(){
+  const wrap = document.querySelector('[data-trrp-variants]');
+  if(!wrap) return;
+
+  const productId = wrap.dataset.productId;
+  const dataEl = document.getElementById('trrp-variant-data-' + productId);
+  if(!dataEl) return;
+
+  let parsed;
+  try { parsed = JSON.parse(dataEl.textContent); } catch(e) { return; }
+
+  const variants = parsed.variants || [];
+  const fallbackImg = parsed.fallbackImg || '';
+  if(!variants.length) return;
+
+  const currentOptions = parsed.initialOptions.slice();
+
+  function findVariant(opts) {
+    return variants.find(v => opts.every((o, i) => v.options[i] === o)) || null;
+  }
+
+  function updateUI(variant) {
+    if(!variant) return;
+    const priceEl = document.querySelector('.trrp-price');
+    if(priceEl) priceEl.textContent = (variant.price / 100).toLocaleString('nl-NL', {style:'currency', currency:'EUR'});
+    document.querySelectorAll('[data-tr-atc][data-variant-id]').forEach(btn => {
+      btn.dataset.variantId = variant.id;
+      btn.disabled = !variant.available;
+      btn.textContent = variant.available ? (btn.classList.contains('trrp-sticky-atc-btn') ? 'In winkelwagen' : 'Aan winkelwagen toevoegen') : 'Uitverkocht';
+    });
+    const stickyPrice = document.getElementById('trrp-sticky-price');
+    if(stickyPrice) stickyPrice.textContent = (variant.price / 100).toLocaleString('nl-NL', {style:'currency', currency:'EUR'});
+    const imgSrc = (variant.img && variant.img.length > 10) ? variant.img : fallbackImg;
+    if(imgSrc) {
+      const mainImg = document.getElementById('trrp-main-img');
+      if(mainImg) mainImg.src = imgSrc;
+      document.querySelectorAll('.trrp-thumb').forEach(t => t.classList.remove('active'));
+    }
+  }
+
+  function selectOption(optionIndex, value) {
+    currentOptions[optionIndex] = value;
+    const labelEl = document.querySelector('[data-trrp-option-val="'+optionIndex+'"]');
+    if(labelEl) labelEl.textContent = value;
+    wrap.querySelectorAll('[data-option-index="'+optionIndex+'"]').forEach(el => {
+      el.classList.toggle('active', el.dataset.value === value);
+    });
+    updateUI(findVariant(currentOptions));
+  }
+
+  wrap.addEventListener('click', e => {
+    const pill = e.target.closest('[data-trrp-pill]');
+    if(pill) selectOption(parseInt(pill.dataset.optionIndex), pill.dataset.value);
+    const swatch = e.target.closest('[data-trrp-swatch]');
+    if(swatch) selectOption(parseInt(swatch.dataset.optionIndex), swatch.dataset.value);
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "TR Rice Productpagina",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Productdetails" },
+    { "type": "text", "id": "materiaal", "label": "Materiaal", "placeholder": "bijv. Melamine" },
+    { "type": "text", "id": "afmetingen", "label": "Afmetingen", "placeholder": "bijv. \u00d89cm, 15cm" },
+    { "type": "text", "id": "duurzaamheid", "label": "Duurzaamheid", "placeholder": "bijv. Herbruikbaar" },
+    { "type": "header", "content": "Teksten" },
+    { "type": "text", "id": "tagline", "label": "Tagline", "placeholder": "bijv. Kleurrijk servies van Rice, gemaakt voor dagelijks gebruik" },
+    { "type": "textarea", "id": "verhaal_tekst", "label": "Productomschrijving", "info": "Laat leeg om de Shopify-productbeschrijving te gebruiken" },
+    { "type": "textarea", "id": "gebruiksinstructie", "label": "Gebruiksinstructie", "placeholder": "Hoe gebruik je dit product?", "info": "Laat leeg om de productbeschrijving te gebruiken" },
+    { "type": "textarea", "id": "reiniging", "label": "Reiniging & onderhoud", "placeholder": "bijv. Vaatwasserbestendig" }
+  ]
+}
+{% endschema %}

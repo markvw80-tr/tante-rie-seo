@@ -1,0 +1,33 @@
+{
+  "shopifyqlQuery": {
+    "tableData": {
+      "columns": [
+        {
+          "name": "sales_channel",
+          "dataType": "STRING"
+        },
+        {
+          "name": "orders",
+          "dataType": "INTEGER"
+        },
+        {
+          "name": "total_sales",
+          "dataType": "MONEY"
+        }
+      ],
+      "rows": [
+        {
+          "sales_channel": "Point of Sale",
+          "orders": "698",
+          "total_sales": "14895.61"
+        },
+        {
+          "sales_channel": "Online Store",
+          "orders": "2",
+          "total_sales": "27.25"
+        }
+      ]
+    },
+    "parseErrors": []
+  }
+}

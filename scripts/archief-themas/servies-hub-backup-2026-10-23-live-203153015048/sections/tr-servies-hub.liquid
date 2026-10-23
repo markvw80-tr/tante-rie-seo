@@ -1,0 +1,268 @@
+{% comment %} Tante Rie – Servies Hub: merk-overzichtspagina {% endcomment %}
+
+<style>
+.trsv-wrap *, .trsv-wrap *::before, .trsv-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.trsv-wrap {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.trsv-intro {
+  padding: 64px 5vw 48px;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.trsv-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.trsv-eyebrow::before,
+.trsv-eyebrow::after { content: ''; display: block; width: 32px; height: 1px; background: var(--green); }
+.trsv-intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--brown-dark);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.trsv-intro-sub {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.trsv-brands {
+  padding: 0 5vw 80px;
+}
+.trsv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.trsv-card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 3/4;
+  text-decoration: none;
+  display: block;
+  background: var(--page-bg);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.trsv-card:not(.trsv-card--soon):hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 48px rgba(74,50,34,.12);
+}
+.trsv-card--soon {
+  cursor: default;
+  opacity: .85;
+}
+.trsv-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+}
+.trsv-card:not(.trsv-card--soon):hover img { transform: scale(1.05); }
+.trsv-card-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--cream-dark);
+}
+.trsv-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(44,26,10,.75) 30%, rgba(44,26,10,.1) 70%);
+}
+.trsv-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 24px;
+}
+.trsv-label h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+.trsv-label p {
+  font-size: 13px;
+  color: rgba(255,255,255,.78);
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+.trsv-arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,.2);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+.trsv-card:not(.trsv-card--soon):hover .trsv-arrow { background: rgba(255,255,255,.35); }
+.trsv-arrow svg { width: 14px; height: 14px; stroke: white; fill: none; stroke-width: 2; }
+.trsv-soon-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255,255,255,.2);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 50px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.9);
+}
+@media (max-width: 700px) {
+  .trsv-grid { grid-template-columns: 1fr; max-width: 440px; }
+  .trsv-card { aspect-ratio: 4/3; }
+}
+</style>
+
+<div class="trsv-wrap">
+  <div class="trsv-intro">
+    <div class="trsv-eyebrow">{{ section.settings.eyebrow | default: 'Onze serviescollectie' }}</div>
+    <h1>{{ section.settings.title | default: 'Servies met karakter' }}</h1>
+    <p class="trsv-intro-sub">{{ section.settings.subtitle | default: 'Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past.' }}</p>
+  </div>
+
+  <div class="trsv-brands">
+    <div class="trsv-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'brand_card' -%}
+          {%- assign is_soon = block.settings.coming_soon -%}
+          {%- assign col = block.settings.collection -%}
+          {%- assign card_url = col.url | default: block.settings.url -%}
+          {%- assign card_img = block.settings.image | default: col.image -%}
+          {%- assign card_img_url = block.settings.image_url -%}
+          {%- assign card_title = block.settings.label | default: col.title | default: 'Merk' -%}
+          {%- assign card_sub = block.settings.subtitle -%}
+
+          {%- if is_soon -%}
+            <div class="trsv-card trsv-card--soon" {{ block.shopify_attributes }}>
+          {%- else -%}
+            <a href="{{ card_url }}" class="trsv-card" {{ block.shopify_attributes }}>
+          {%- endif -%}
+
+            {%- if card_img -%}
+              <img src="{{ card_img | image_url: width: 700 }}"
+                   srcset="{{ card_img | image_url: width: 400 }} 400w, {{ card_img | image_url: width: 700 }} 700w, {{ card_img | image_url: width: 900 }} 900w"
+                   sizes="(max-width: 700px) 90vw, 30vw"
+                   alt="{{ card_title | escape }}" loading="lazy">
+            {%- elsif card_img_url != blank -%}
+              <img src="{{ card_img_url }}"
+                   alt="{{ card_title | escape }}" loading="lazy">
+            {%- else -%}
+              <div class="trsv-card-bg"></div>
+            {%- endif -%}
+
+            <div class="trsv-overlay"></div>
+
+            {%- if is_soon -%}
+              <div class="trsv-soon-badge">Binnenkort</div>
+            {%- else -%}
+              <div class="trsv-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            {%- endif -%}
+
+            <div class="trsv-label">
+              <h2>{{ card_title }}</h2>
+              {%- if card_sub != blank -%}<p>{{ card_sub }}</p>{%- endif -%}
+            </div>
+
+          {%- if is_soon -%}</div>{%- else -%}</a>{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Servies Hub",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow tekst", "default": "Onze serviescollectie" },
+    { "type": "text", "id": "title", "label": "Paginatitel", "default": "Servies met karakter" },
+    { "type": "textarea", "id": "subtitle", "label": "Ondertitel", "default": "Van handgemaakt Pools aardewerk tot kleurrijke melamine: kies het servies dat bij jou past." }
+  ],
+  "blocks": [
+    {
+      "type": "brand_card",
+      "name": "Merk-kaart",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collectie" },
+        { "type": "text", "id": "label", "label": "Naam (overschrijft collectienaam)" },
+        { "type": "text", "id": "subtitle", "label": "Ondertitel" },
+        { "type": "url", "id": "url", "label": "URL (fallback als geen collectie)" },
+        { "type": "image_picker", "id": "image", "label": "Afbeelding (overschrijft collectieafbeelding)" },
+        { "type": "text", "id": "image_url", "label": "Afbeelding URL (directe CDN-link, fallback)" },
+        { "type": "checkbox", "id": "coming_soon", "label": "Binnenkort beschikbaar", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Servies Hub",
+      "blocks": [
+        {
+          "type": "brand_card",
+          "settings": {
+            "label": "Bunzlau Castle",
+            "subtitle": "Handgemaakt Pools aardewerk, 40+ decors",
+            "url": "/collections/bunzlau",
+            "coming_soon": false
+          }
+        },
+        {
+          "type": "brand_card",
+          "settings": {
+            "label": "Rice",
+            "subtitle": "Kleurrijke melamine, bijna onbreekbaar",
+            "url": "/collections/rice",
+            "coming_soon": false
+          }
+        },
+        {
+          "type": "brand_card",
+          "settings": {
+            "label": "Blond Amsterdam",
+            "subtitle": "Kleurrijk en vrolijk servies",
+            "coming_soon": true
+          }
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6
+}
+{% endschema %}

@@ -1,0 +1,47 @@
+{
+  "orders": {
+    "edges": [
+      {
+        "node": {
+          "name": "#3879",
+          "createdAt": "2026-10-10T11:31:29Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "13.75"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": null,
+            "firstVisit": null
+          }
+        }
+      },
+      {
+        "node": {
+          "name": "#4026",
+          "createdAt": "2026-10-19T13:08:21Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "13.5"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": null,
+            "firstVisit": null
+          }
+        }
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": false
+    }
+  }
+}

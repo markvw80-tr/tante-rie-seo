@@ -1,0 +1,95 @@
+{
+  "datum": "2026-10-23",
+  "bron": "V51",
+  "status_alle": "READY",
+  "bestanden": [
+    {
+      "naam": "blond-amsterdam-wand",
+      "bestandsnaam": "blond-amsterdam-wand.jpg",
+      "file_id": "gid://shopify/MediaImage/72409602916616",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/blond-amsterdam-wand.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Kleurrijke Blond Amsterdam bekers en mokken in de winkel van Tante Rie in Borne",
+      "alt_bron": "V51"
+    },
+    {
+      "naam": "bunzlau-kast",
+      "bestandsnaam": "bunzlau-kast.jpg",
+      "file_id": "gid://shopify/MediaImage/72409602949384",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/bunzlau-kast.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Witte buffetkast met blauw Bunzlau Castle aardewerk, mokken en theedoeken in de winkel van Tante Rie in Borne",
+      "alt_bron": "zelf geschreven op basis van de foto"
+    },
+    {
+      "naam": "bunzlau-wand",
+      "bestandsnaam": "bunzlau-wand.jpg",
+      "file_id": "gid://shopify/MediaImage/72409602982152",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/bunzlau-wand.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Wand met blauw Bunzlau Castle aardewerk in de winkel van Tante Rie",
+      "alt_bron": "V51"
+    },
+    {
+      "naam": "cadeautafel-winkel",
+      "bestandsnaam": "cadeautafel-winkel.jpg",
+      "file_id": "gid://shopify/MediaImage/72409603014920",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/cadeautafel-winkel.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Tafel met kaarsen, chocolade en verpakte cadeautjes in de winkel van Tante Rie in Borne",
+      "alt_bron": "zelf geschreven op basis van de foto"
+    },
+    {
+      "naam": "gevel-bakkerssteeg-6",
+      "bestandsnaam": "gevel-bakkerssteeg-6.jpg",
+      "file_id": "gid://shopify/MediaImage/72409603047688",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/gevel-bakkerssteeg-6.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Winkelpui van Tante Rie aan de Bakkerssteeg 6 in Borne",
+      "alt_bron": "V51"
+    },
+    {
+      "naam": "rice-melamine-wand",
+      "bestandsnaam": "rice-melamine-wand.jpg",
+      "file_id": "gid://shopify/MediaImage/72409603080456",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/rice-melamine-wand.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Rice melamine bekers met letters en borden in de winkel van Tante Rie",
+      "alt_bron": "V51"
+    },
+    {
+      "naam": "theewand-losse-thee",
+      "bestandsnaam": "theewand-losse-thee.jpg",
+      "file_id": "gid://shopify/MediaImage/72409603113224",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/theewand-losse-thee.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Wand met losse thee in zakjes en proefpotjes bij Tante Rie in Borne",
+      "alt_bron": "V51"
+    },
+    {
+      "naam": "toonbank-bunzlau-theedoeken",
+      "bestandsnaam": "toonbank-bunzlau-theedoeken.jpg",
+      "file_id": "gid://shopify/MediaImage/72409603145992",
+      "status": "READY",
+      "cdn_url": "https://cdn.shopify.com/s/files/1/0999/6274/9192/files/toonbank-bunzlau-theedoeken.jpg?v=1792735101",
+      "breedte": 1536,
+      "hoogte": 2048,
+      "alt": "Toonbank met Bunzlau Castle aardewerk en gekleurde theedoeken in de winkel van Tante Rie in Borne",
+      "alt_bron": "zelf geschreven op basis van de foto"
+    }
+  ]
+}

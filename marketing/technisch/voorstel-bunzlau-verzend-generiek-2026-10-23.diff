@@ -1,0 +1,57 @@
+--- /private/tmp/claude-502/-Users-markvanwijk-Tante-Rie-SEO/1c751388-c258-4414-9897-6c2624328a37/scratchpad/live/sections/tr-product-bunzlau-melamine.liquid	2026-10-23 12:04:22
++++ sections/tr-product-bunzlau-melamine.liquid	2026-10-23 13:32:22
+@@ -237,6 +237,18 @@
+   {%- assign init_alt = cur.featured_image.alt | default: cur.title | escape -%}
+ {%- endif -%}
+ {%- assign _available = cur.selected_or_first_available_variant.available -%}
++{%- comment -%} Producttype bepaalt tagline, materiaal en fallback-omschrijving. Alleen type Melamine toont het materiaal Melamine. {%- endcomment -%}
++{%- assign _type = cur.type | strip -%}
++{%- assign _is_melamine = false -%}
++{%- assign _type_lc = _type | downcase -%}
++{%- if _type_lc == 'melamine' -%}{%- assign _is_melamine = true -%}{%- endif -%}
++{%- if _is_melamine -%}
++  {%- assign _tagline = 'Melamine servies van Bunzlau Castle' -%}
++{%- elsif _type != blank -%}
++  {%- assign _tagline = _type | append: ' van Bunzlau Castle' -%}
++{%- else -%}
++  {%- assign _tagline = 'Bunzlau Castle' -%}
++{%- endif -%}
+ {%- assign _vaatwasser = false -%}
+ {%- assign _oven = false -%}
+ {%- assign _magnetron = false -%}
+@@ -305,7 +317,7 @@
+ 
+       <!-- Titel -->
+       <h1 itemprop="name">{{ cur.title }}</h1>
+-      <p class="trbzp-tagline">Melamine servies van Bunzlau Castle</p>
++      <p class="trbzp-tagline">{{ _tagline }}</p>
+ 
+       <!-- Prijs -->
+       <div class="trbzp-price-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+@@ -331,7 +343,7 @@
+ 
+       <!-- Specs strip -->
+       <div class="trbzp-specs-strip">
+-        <div class="trbzp-spec-pill"><span class="trbzp-spec-icon" aria-hidden="true">{%- render 'tr-icon', name: 'jar' -%}</span><span class="trbzp-spec-value">Melamine</span><span class="trbzp-spec-label">Materiaal</span></div>
++        {%- if _is_melamine -%}<div class="trbzp-spec-pill"><span class="trbzp-spec-icon" aria-hidden="true">{%- render 'tr-icon', name: 'jar' -%}</span><span class="trbzp-spec-value">Melamine</span><span class="trbzp-spec-label">Materiaal</span></div>{%- endif -%}
+         <div class="trbzp-spec-pill"><span class="trbzp-spec-icon" aria-hidden="true">{%- render 'tr-icon', name: 'package' -%}</span><span class="trbzp-spec-value">1 tot 2 dagen</span><span class="trbzp-spec-label">Verzending</span></div>
+       </div>
+ 
+@@ -384,7 +396,7 @@
+       <div class="trbzp-accordion">
+         <div class="trbzp-accordion-item">
+           <button type="button" class="trbzp-accordion-trigger open" aria-expanded="true" data-trbzp-acc>Productomschrijving<span class="trbzp-chevron">▾</span></button>
+-          <div class="trbzp-accordion-body open"><div class="trbzp-accordion-body-inner" itemprop="description">{%- if cur.description != blank -%}{{ cur.description }}{%- else -%}<p>Bunzlau Castle melamine bij Tante Rie in Borne.</p>{%- endif -%}</div></div>
++          <div class="trbzp-accordion-body open"><div class="trbzp-accordion-body-inner" itemprop="description">{%- if cur.description != blank -%}{{ cur.description }}{%- else -%}<p>{%- if _is_melamine -%}Bunzlau Castle melamine{%- else -%}Bunzlau Castle{%- endif -%} bij Tante Rie in Borne.</p>{%- endif -%}</div></div>
+         </div>
+         <div class="trbzp-accordion-item">
+           <button type="button" class="trbzp-accordion-trigger" aria-expanded="false" data-trbzp-acc>Specificaties<span class="trbzp-chevron">▾</span></button>
+@@ -395,7 +407,7 @@
+               <tr><td>Decor</td><td id="trbzp-spec-decor">{{ cur.selected_or_first_available_variant.title | replace: 'Default Title', '–' }}</td></tr>
+               <tr><td>Gewicht</td><td id="trbzp-spec-weight">{%- assign _vw = cur.selected_or_first_available_variant.weight -%}{%- if _vw > 0 -%}{{ _vw | times: 1000 | round }} g{%- else -%}–{%- endif -%}</td></tr>
+               <tr><td>Merk</td><td>Bunzlau Castle</td></tr>
+-              <tr><td>Materiaal</td><td>Melamine</td></tr>
++              {%- if _is_melamine -%}<tr><td>Materiaal</td><td>Melamine</td></tr>{%- endif -%}
+               {%- if cur.metafields.custom.inhoud_ml != blank -%}<tr><td>Inhoud</td><td>{{ cur.metafields.custom.inhoud_ml }} ml</td></tr>{%- endif -%}
+               {%- if cur.metafields.custom.hoogte_cm != blank -%}<tr><td>Hoogte</td><td>{{ cur.metafields.custom.hoogte_cm }} cm</td></tr>{%- endif -%}
+               {%- if cur.metafields.custom.diameter_cm != blank -%}<tr><td>Diameter</td><td>{{ cur.metafields.custom.diameter_cm }} cm</td></tr>{%- endif -%}

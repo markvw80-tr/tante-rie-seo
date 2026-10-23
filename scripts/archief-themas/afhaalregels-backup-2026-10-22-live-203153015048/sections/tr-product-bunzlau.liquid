@@ -1,0 +1,560 @@
+{% comment %} Tante Rie – Bunzlau Castle Productpagina {% endcomment %}
+
+<style>
+:root {
+  --bz-blue:       #2C5F8A;
+  --bz-blue-mid:   #4A7BAF;
+  --bz-blue-light: #E8F1F8;
+  --bz-blue-dark:  #1A3D5C;
+}
+
+.trbzp-wrap *, .trbzp-wrap *::before, .trbzp-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.trbzp-wrap { background: var(--cream); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+/* ── Desktop: twee kolommen ── */
+.trbzp-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
+
+.trbzp-gallery { position: sticky; top: var(--header-group-height, 64px); height: calc(100vh - var(--header-group-height, 64px)); display: flex; flex-direction: column; background: var(--page-bg); }
+.trbzp-gallery-main { flex: 1; overflow: hidden; position: relative; background: var(--page-bg); }
+.trbzp-gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 24px; transition: transform .5s cubic-bezier(.25,.46,.45,.94); }
+.trbzp-gallery-main:hover img { transform: scale(1.03); }
+.trbzp-gallery-badge { position: absolute; top: 16px; left: 16px; background: var(--white); border-radius: 50px; padding: 6px 14px; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--bz-blue-dark); box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+.trbzp-gallery-brand { position: absolute; top: 16px; right: 16px; background: var(--bz-blue); border-radius: 50px; padding: 6px 14px; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--white); }
+.trbzp-gallery-thumbs { flex-shrink: 0; display: flex; gap: 8px; padding: 10px 14px 12px; background: var(--page-bg); border-top: 1px solid rgba(0,0,0,.06); overflow-x: auto; scrollbar-width: none; }
+.trbzp-gallery-thumbs::-webkit-scrollbar { display: none; }
+.trbzp-thumb { flex-shrink: 0; width: 60px; height: 60px; border-radius: 8px; cursor: pointer; background: var(--page-bg); overflow: hidden; box-shadow: 0 0 0 2px transparent; transition: box-shadow .2s; }
+.trbzp-thumb.active { box-shadow: 0 0 0 2px var(--bz-blue); }
+.trbzp-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 4px; display: block; }
+
+.trbzp-info { padding: 40px var(--page-margin) 80px; overflow-y: auto; display: flex; flex-direction: column; }
+
+.trbzp-breadcrumb { font-size: 12px; color: var(--text-muted); letter-spacing: .04em; margin-bottom: 14px; }
+.trbzp-breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.trbzp-breadcrumb span { margin: 0 6px; }
+
+.trbzp-tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.trbzp-tag { background: var(--bz-blue-light); color: var(--bz-blue-dark); font-size: 10px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; padding: 4px 10px; border-radius: 50px; }
+.trbzp-tag.neutral { background: var(--tag-bg); color: var(--brown-dark); }
+.trbzp-tag.green { background: #d5edd5; color: #2e6b2e; }
+
+.trbzp-info h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 400; color: var(--brown-dark); line-height: 1.2; margin-bottom: 4px; }
+.trbzp-tagline { font-style: italic; font-size: .9rem; color: var(--text-muted); margin-bottom: 16px; }
+
+.trbzp-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.trbzp-price { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--brown-dark); }
+.trbzp-price-compare { font-size: 1rem; color: var(--text-muted); text-decoration: line-through; }
+.trbzp-price-sub { font-size: 11px; color: var(--text-muted); margin-bottom: 16px; }
+
+.trbzp-avail { display: flex; align-items: center; gap: 10px; border-radius: 12px; padding: 12px 16px; margin-bottom: 12px; font-size: 13px; font-weight: 500; }
+.trbzp-avail[hidden] { display: none; }
+.trbzp-avail--in { background: #d5edd5; color: #1e5a1e; }
+.trbzp-avail--order { background: var(--bz-blue-light); color: var(--bz-blue-dark); }
+.trbzp-avail-icon { font-size: 1.1rem; flex-shrink: 0; }
+.trbzp-avail-text strong { display: block; font-size: 13.5px; }
+.trbzp-avail-text span { font-size: 11.5px; font-weight: 400; opacity: .8; }
+
+.trbzp-pickup { display: flex; align-items: center; gap: 10px; background: var(--bz-blue-light); border-radius: 12px; padding: 10px 14px; margin-bottom: 20px; font-size: 12.5px; color: var(--bz-blue-dark); }
+.trbzp-pickup-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+/* Specs: horizontale strip */
+.trbzp-specs-strip { display: flex; gap: 8px; margin-bottom: 20px; }
+.trbzp-spec-pill { flex: 1; background: var(--white); border: 1px solid var(--cream-dark); border-radius: 12px; padding: 10px 8px; display: flex; flex-direction: column; align-items: center; gap: 3px; text-align: center; }
+.trbzp-spec-icon { font-size: 1.2rem; }
+.trbzp-spec-value { font-size: .8rem; font-weight: 600; color: var(--brown-dark); }
+.trbzp-spec-label { font-size: 9.5px; color: var(--text-muted); }
+
+.trbzp-variants { margin-bottom: 18px; }
+.trbzp-variant-label { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+.trbzp-variant-label strong { color: var(--brown-dark); font-weight: 600; }
+.trbzp-variant-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+.trbzp-variant-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 7px 16px; min-height: 40px; display: inline-flex; align-items: center; font-size: 13px; color: var(--brown-dark); background: var(--white); cursor: pointer; transition: border-color .2s, background .2s; white-space: nowrap; }
+.trbzp-variant-pill:hover { border-color: var(--bz-blue-mid); }
+.trbzp-variant-pill.active { border-color: var(--bz-blue); background: var(--bz-blue); color: var(--white); }
+.trbzp-variant-pill.unavailable { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+
+.trbzp-qty-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.trbzp-qty { display: flex; align-items: center; border: 1px solid var(--cream-dark); border-radius: 50px; overflow: hidden; background: var(--white); }
+.trbzp-qty-btn { width: 38px; height: 42px; background: none; border: none; cursor: pointer; font-size: 1.1rem; color: var(--brown-dark); display: flex; align-items: center; justify-content: center; }
+.trbzp-qty-btn:hover { background: var(--cream-dark); }
+.trbzp-qty-num { width: 30px; text-align: center; font-weight: 500; font-size: .9rem; color: var(--brown-dark); }
+
+.trbzp-btn-primary { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 16px 28px; font-size: 14px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: background .2s; width: 100%; display: block; margin-bottom: 10px; }
+.trbzp-btn-primary:hover { background: var(--brown); }
+.trbzp-btn-primary.bz-order { background: var(--bz-blue); }
+.trbzp-btn-primary.bz-order:hover { background: var(--bz-blue-dark); }
+
+/* USP balk */
+.trbzp-usps { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 20px 0; padding-top: 20px; border-top: 1px solid var(--cream-dark); }
+.trbzp-usp { display: flex; align-items: center; gap: 10px; }
+.trbzp-usp svg { width: 22px; height: 22px; color: var(--bz-blue); flex-shrink: 0; }
+.trbzp-usp-text { }
+.trbzp-usp-label { font-size: 12px; font-weight: 600; color: var(--brown-dark); line-height: 1.2; }
+.trbzp-usp-sub { font-size: 10.5px; color: var(--text-muted); }
+
+.trbzp-btn-secondary { background: transparent; color: var(--brown-dark); border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 12px 24px; font-size: 13px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; cursor: pointer; width: 100%; display: block; margin-top: 20px; text-align: center; text-decoration: none; }
+.trbzp-btn-secondary:hover { background: var(--cream-dark); }
+
+/* Bestelformulier */
+.trbzp-order-form-wrap { margin: 12px 0; display: none; }
+.trbzp-order-form-wrap.visible { display: block; }
+.trbzp-order-form { background: var(--bz-blue-light); border: 1px solid rgba(44,95,138,.2); border-radius: 16px; padding: 20px; }
+.trbzp-order-form h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 400; color: var(--bz-blue-dark); margin-bottom: 4px; }
+.trbzp-order-form-sub { font-size: 12px; color: var(--bz-blue-dark); opacity: .75; margin-bottom: 14px; }
+.trbzp-order-sku { display: flex; align-items: center; gap: 8px; background: var(--white); border-radius: 8px; padding: 8px 12px; margin-bottom: 14px; font-size: 12.5px; color: var(--bz-blue-dark); }
+.trbzp-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+.trbzp-form-group { display: flex; flex-direction: column; gap: 3px; margin-bottom: 8px; }
+.trbzp-form-group label { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--bz-blue-dark); }
+.trbzp-form-group input, .trbzp-form-group textarea { background: var(--white); border: 1px solid rgba(44,95,138,.25); border-radius: 8px; padding: 8px 12px; font-size: 13px; color: var(--brown-dark); outline: none; width: 100%; }
+.trbzp-form-group input:focus, .trbzp-form-group textarea:focus { border-color: var(--bz-blue); }
+.trbzp-form-group textarea { min-height: 72px; resize: vertical; }
+.trbzp-form-optional { font-size: 9px; font-weight: 400; color: var(--text-muted); text-transform: none; letter-spacing: 0; margin-left: 3px; }
+.trbzp-form-qty { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.trbzp-form-qty label { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--bz-blue-dark); white-space: nowrap; }
+.trbzp-form-qty-ctrl { display: flex; align-items: center; border: 1px solid rgba(44,95,138,.25); border-radius: 50px; overflow: hidden; background: var(--white); }
+.trbzp-form-qty-btn { width: 34px; height: 36px; background: none; border: none; cursor: pointer; font-size: 1rem; color: var(--bz-blue); display: flex; align-items: center; justify-content: center; }
+.trbzp-form-qty-num { width: 28px; text-align: center; font-weight: 600; font-size: .9rem; color: var(--bz-blue-dark); }
+.trbzp-btn-order-submit { background: var(--bz-blue); color: var(--white); border: none; border-radius: 50px; padding: 13px 24px; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; width: 100%; }
+.trbzp-form-success { display: none; text-align: center; padding: 20px; }
+.trbzp-form-success h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--brown-dark); margin-bottom: 4px; }
+.trbzp-form-success p { font-size: 12.5px; color: var(--text-muted); }
+
+/* Accordion */
+.trbzp-accordion { border-top: 1px solid var(--cream-dark); margin-top: 4px; }
+.trbzp-accordion-item { border-bottom: 1px solid var(--cream-dark); }
+.trbzp-accordion-trigger { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 14px 0; font-size: 13.5px; font-weight: 500; color: var(--brown-dark); text-align: left; }
+.trbzp-accordion-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.trbzp-accordion-body.open { max-height: 900px; }
+.trbzp-accordion-body-inner { padding: 0 0 16px; font-size: 13px; color: var(--text-muted); line-height: 1.75; }
+.trbzp-accordion-body-inner p { margin-bottom: 8px; }
+.trbzp-chevron { font-size: 11px; color: var(--brown-light); transition: transform .25s; }
+.trbzp-accordion-trigger.open .trbzp-chevron { transform: rotate(180deg); }
+
+.trbzp-specs-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.trbzp-specs-table tr:nth-child(odd) { background: var(--cream); }
+.trbzp-specs-table td { padding: 8px 10px; color: var(--text); vertical-align: middle; }
+.trbzp-specs-table td:first-child { color: var(--text-muted); width: 50%; }
+.trbzp-icon--yes { background: #d5edd5; color: #2e7d32; border-radius: 50%; padding: 1px 5px; font-size: 11px; }
+.trbzp-icon--no  { background: #fde8e8; color: #c62828; border-radius: 50%; padding: 1px 5px; font-size: 11px; }
+
+/* Related */
+.trbzp-related { background: var(--page-bg); border-top: 1px solid var(--cream-dark); padding: 40px var(--page-margin) 60px; }
+.trbzp-related-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.trbzp-related-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; color: var(--brown-dark); }
+.trbzp-related-link { font-size: 12.5px; color: var(--bz-blue); text-decoration: none; border-bottom: 1px solid rgba(44,95,138,.3); }
+.trbzp-related-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+.trbzp-related-card { background: var(--white); border-radius: 14px; overflow: hidden; border: 1px solid var(--cream-dark); text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s; }
+.trbzp-related-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+.trbzp-related-card-img { aspect-ratio: 1; background: var(--page-bg); overflow: hidden; }
+.trbzp-related-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 10px; }
+.trbzp-related-card-body { padding: 10px 12px 12px; }
+.trbzp-related-card-name { font-size: 12.5px; font-weight: 600; color: var(--brown-dark); line-height: 1.3; margin-bottom: 3px; }
+.trbzp-related-card-price { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--brown-dark); }
+.trbzp-related-card-badge { font-size: 9.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border-radius: 50px; margin-top: 4px; display: inline-block; }
+.trbzp-related-card-badge.stock { background: #d5edd5; color: #2e6b2e; }
+.trbzp-related-card-badge.order { background: var(--bz-blue-light); color: var(--bz-blue-dark); }
+
+/* Sticky ATC — alleen mobiel */
+.trbzp-sticky-atc { display: none; }
+
+/* ══════════════════════════════════════════
+   MOBIEL  ≤ 700px
+══════════════════════════════════════════ */
+@media (max-width: 700px) {
+
+  /* Eén kolom, volgorde via flex */
+  .trbzp-grid { display: flex; flex-direction: column; min-height: auto; }
+
+  /* 1 — Foto */
+  .trbzp-gallery { position: static; height: auto; order: 1; }
+  .trbzp-gallery-main { aspect-ratio: 1/1; max-height: 80vw; }
+  .trbzp-gallery-main img { padding: 10px; }
+  .trbzp-gallery-badge, .trbzp-gallery-brand { display: none; }
+
+  /* 2 — Thumbnails: één rij, scroll bij veel foto's */
+  .trbzp-gallery-thumbs {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    padding: 8px 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .trbzp-thumb { flex-shrink: 0; width: 52px; height: 52px; }
+
+  /* 3 — Info paneel */
+  .trbzp-info { order: 3; padding: 16px 16px 90px; }
+
+  .trbzp-breadcrumb { display: none; }
+
+  /* Tags kleiner */
+  .trbzp-tag { font-size: 9.5px; padding: 3px 9px; }
+
+  /* Specs: drie gelijke kolommen in één rij */
+  .trbzp-specs-strip { gap: 6px; }
+  .trbzp-spec-pill { padding: 8px 6px; border-radius: 10px; }
+  .trbzp-spec-icon { font-size: 1rem; }
+  .trbzp-spec-value { font-size: .75rem; }
+  .trbzp-spec-label { font-size: 9px; }
+
+  /* Bestelformulier: één kolom */
+  .trbzp-form-row { grid-template-columns: 1fr; }
+
+  /* USPs: twee kolommen, compact */
+  .trbzp-usps { grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+
+  /* Related: twee kolommen */
+  .trbzp-related-grid { grid-template-columns: repeat(2,1fr); }
+  .trbzp-related { padding: 28px 16px 40px; }
+
+  /* Sticky ATC balk */
+  .trbzp-sticky-atc {
+    display: flex;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--white);
+    border-top: 1px solid var(--cream-dark);
+    padding: 10px 16px 14px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 -3px 16px rgba(0,0,0,.08);
+  }
+  .trbzp-sticky-price { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--brown-dark); white-space: nowrap; }
+  .trbzp-sticky-btn { flex: 1; background: var(--bz-blue); color: var(--white); border: none; border-radius: 50px; padding: 13px 16px; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+}
+
+@media (max-width: 1100px) { .trbzp-related-grid { grid-template-columns: repeat(3,1fr); } }
+@media (prefers-reduced-motion: reduce) { .trbzp-wrap *, .trbzp-wrap *::before, .trbzp-wrap *::after { transition-duration: .01ms !important; } }
+</style>
+
+{%- assign cur = product -%}
+{%- if cur.selected_or_first_available_variant.featured_image -%}
+  {%- assign init_img = cur.selected_or_first_available_variant.featured_image | image_url: width: 900 -%}
+  {%- assign init_alt = cur.selected_or_first_available_variant.featured_image.alt | default: cur.title | escape -%}
+{%- else -%}
+  {%- assign init_img = cur.featured_image | image_url: width: 900 -%}
+  {%- assign init_alt = cur.featured_image.alt | default: cur.title | escape -%}
+{%- endif -%}
+{%- assign _available = cur.selected_or_first_available_variant.available -%}
+{%- assign _vaatwasser = false -%}
+{%- assign _oven = false -%}
+{%- assign _magnetron = false -%}
+{%- for tag in cur.tags -%}
+  {%- assign _tl = tag | downcase -%}
+  {%- if _tl contains 'vaatwasser' -%}{%- assign _vaatwasser = true -%}{%- endif -%}
+  {%- if _tl contains 'ovenbestendig' or _tl contains 'oven' -%}{%- assign _oven = true -%}{%- endif -%}
+  {%- if _tl contains 'magnetron' -%}{%- assign _magnetron = true -%}{%- endif -%}
+{%- endfor -%}
+
+<div class="trbzp-wrap" itemscope itemtype="https://schema.org/Product">
+  <meta itemprop="name" content="{{ cur.title | escape }}">
+  <meta itemprop="brand" content="Bunzlau Castle">
+  {%- if cur.featured_image -%}<meta itemprop="image" content="{{ cur.featured_image | image_url: width: 900 }}">{%- endif -%}
+  <meta itemprop="description" content="{{ cur.description | strip_html | truncate: 200 | escape }}">
+
+  <div class="trbzp-grid">
+
+    <!-- 1. GALLERY -->
+    <aside class="trbzp-gallery" aria-label="Productafbeeldingen">
+      <div class="trbzp-gallery-main" id="trbzp-main-img-wrap">
+        <img id="trbzp-main-img"
+          src="{{ init_img }}"
+          alt="{{ init_alt }} – Bunzlau Castle bij Tante Rie Borne"
+          loading="eager" width="900" height="900">
+        <span class="trbzp-gallery-badge" aria-hidden="true">Bunzlau Castle</span>
+        {%- if cur.type != blank -%}<span class="trbzp-gallery-brand" aria-hidden="true">{{ cur.type }}</span>{%- endif -%}
+      </div>
+      {%- if cur.images.size > 1 -%}
+        <div class="trbzp-gallery-thumbs" role="list" aria-label="Productfoto's">
+          {%- for img in cur.images limit: 12 -%}
+            <button class="trbzp-thumb{% if forloop.first %} active{% endif %}"
+              type="button" data-trbzp-thumb
+              data-src="{{ img | image_url: width: 900 }}"
+              data-alt="{{ img.alt | default: cur.title | escape }}"
+              aria-label="Afbeelding {{ forloop.index }}" role="listitem">
+              <img src="{{ img | image_url: width: 140 }}" alt="{{ img.alt | default: cur.title | escape }}" loading="lazy" width="60" height="60">
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </aside>
+
+    <!-- 2. INFO -->
+    <div class="trbzp-info">
+
+      <nav class="trbzp-breadcrumb" aria-label="Kruimelpad">
+        <a href="/">Home</a><span>›</span>
+        {%- if cur.collections.first -%}<a href="{{ cur.collections.first.url }}">{{ cur.collections.first.title }}</a><span>›</span>{%- endif -%}
+        <span>{{ cur.title }}</span>
+      </nav>
+
+      <!-- Tags -->
+      <div class="trbzp-tag-row">
+        <span class="trbzp-tag">Bunzlau Castle</span>
+        {%- if cur.type != blank -%}<span class="trbzp-tag neutral">{{ cur.type }}</span>{%- endif -%}
+        {%- for tag in cur.tags -%}
+          {%- assign _tl = tag | downcase -%}
+          {%- if _tl == 'ovenbestendig' -%}<span class="trbzp-tag green">Ovenbestendig</span>
+          {%- elsif _tl == 'magnetronbestendig' or _tl == 'magnetron' -%}<span class="trbzp-tag green">Magnetron</span>
+          {%- elsif _tl == 'vaatwasserbestendig' or _tl == 'vaatwasser' -%}<span class="trbzp-tag green">Vaatwasser</span>
+          {%- elsif _tl == 'handgemaakt' -%}<span class="trbzp-tag neutral">Handgemaakt</span>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <!-- Titel -->
+      <h1 itemprop="name">{{ cur.title }}</h1>
+      <p class="trbzp-tagline">{{ cur.type | default: 'Bunzlau Castle' }}, authentiek aardewerk</p>
+
+      <!-- Prijs -->
+      <div class="trbzp-price-row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <meta itemprop="priceCurrency" content="EUR">
+        <meta itemprop="availability" content="{%- if _available -%}https://schema.org/InStock{%- else -%}https://schema.org/PreOrder{%- endif -%}">
+        <span class="trbzp-price" id="trbzp-price">
+          <meta itemprop="price" content="{{ cur.selected_or_first_available_variant.price | divided_by: 100.0 }}">
+          {{ cur.selected_or_first_available_variant.price | money }}
+        </span>
+        {%- if cur.compare_at_price > cur.price -%}<span class="trbzp-price-compare">{{ cur.compare_at_price | money }}</span>{%- endif -%}
+      </div>
+      <p class="trbzp-price-sub">Incl. BTW · Alleen afhalen in Borne</p>
+
+      <!-- Beschikbaarheid -->
+      <div class="trbzp-avail trbzp-avail--in" id="trbzp-avail-in" role="status"{% unless _available %} hidden{% endunless %}>
+        <span class="trbzp-avail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'check' -%}</span>
+        <div class="trbzp-avail-text"><strong>Op voorraad</strong><span>Vandaag op te halen</span></div>
+      </div>
+      <div class="trbzp-avail trbzp-avail--order" id="trbzp-avail-order" role="status"{% if _available %} hidden{% endif %}>
+        <span class="trbzp-avail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'package' -%}</span>
+        <div class="trbzp-avail-text"><strong>Te bestellen</strong><span>Wij bellen je zodra het klaar ligt</span></div>
+      </div>
+
+      <!-- Ophaalnotice -->
+      <div class="trbzp-pickup">
+        <span class="trbzp-pickup-icon" aria-hidden="true">{%- render 'tr-icon', name: 'store' -%}</span>
+        <span>Alleen afhalen · Bakkerssteeg 6, Borne · Di t/m za 10–17u</span>
+      </div>
+
+      <!-- Specs strip -->
+      <div class="trbzp-specs-strip">
+        <div class="trbzp-spec-pill"><span class="trbzp-spec-icon" aria-hidden="true">{%- render 'tr-icon', name: 'jar' -%}</span><span class="trbzp-spec-value">Aardewerk</span><span class="trbzp-spec-label">Materiaal</span></div>
+        <div class="trbzp-spec-pill"><span class="trbzp-spec-icon" aria-hidden="true">{%- render 'tr-icon', name: 'hand' -%}</span><span class="trbzp-spec-value">Handgemaakt</span><span class="trbzp-spec-label">Productie</span></div>
+        <div class="trbzp-spec-pill"><span class="trbzp-spec-icon" aria-hidden="true">{%- if _vaatwasser -%}{%- render 'tr-icon', name: 'check' -%}{%- else -%}{%- render 'tr-icon', name: 'hand' -%}{%- endif -%}</span><span class="trbzp-spec-value">{%- if _vaatwasser -%}Ja{%- else -%}Handwas{%- endif -%}</span><span class="trbzp-spec-label">Vaatwasser</span></div>
+      </div>
+
+      <!-- Varianten -->
+      {%- if cur.variants.size > 1 -%}
+        <script type="application/json" id="trbzp-variant-data">
+        {"variants":[{%- for v in cur.variants -%}{%- if v.featured_image -%}{%- assign _vi = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign _vi = '' -%}{%- endif -%}{"id":{{ v.id }},"price":"{{ v.price | money }}","available":{{ v.available }},"options":{{ v.options | json }},"image":"{{ _vi }}","alt":"{{ v.featured_image.alt | default: v.title | escape }}","sku":{{ v.sku | json }},"ean":{{ v.barcode | json }},"decor":{{ v.title | replace: 'Default Title', '' | json }},"weight":{{ v.weight | times: 1000 | round }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}],"initialOptions":{{ cur.selected_or_first_available_variant.options | json }}}
+        </script>
+        <div class="trbzp-variants" data-trbzp-variants>
+          {%- for opt in cur.options_with_values -%}
+            {%- assign _oi = forloop.index0 -%}
+            {%- assign _os = cur.selected_or_first_available_variant.options[_oi] -%}
+            <div class="trbzp-variants-group" data-option-index="{{ _oi }}">
+              <p class="trbzp-variant-label">{{ opt.name }}: <strong data-trbzp-opt-val="{{ _oi }}">{{ _os }}</strong></p>
+              <div class="trbzp-variant-pills">
+                {%- for val in opt.values -%}
+                  <button type="button"
+                    class="trbzp-variant-pill{% if val == _os %} active{% endif %}"
+                    data-trbzp-pill data-option-index="{{ _oi }}" data-value="{{ val | escape }}"
+                    aria-pressed="{%- if val == _os -%}true{%- else -%}false{%- endif -%}">{{ val }}</button>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <!-- Aantal -->
+      <div class="trbzp-qty-row">
+        <div class="trbzp-qty" aria-label="Aantal">
+          <button type="button" class="trbzp-qty-btn" id="trbzp-qty-minus" aria-label="Minder">−</button>
+          <span class="trbzp-qty-num" id="trbzp-qty-val" aria-live="polite">1</span>
+          <button type="button" class="trbzp-qty-btn" id="trbzp-qty-plus" aria-label="Meer">+</button>
+        </div>
+      </div>
+
+      <!-- CTA knop -->
+      <button type="button" id="trbzp-atc" class="trbzp-btn-primary{% unless _available %} bz-order{% endunless %}"
+        data-variant-id="{{ cur.selected_or_first_available_variant.id }}"
+        data-available="{{ _available }}"
+        {%- if _available %} data-tr-atc{% endif %}
+        {%- unless _available %} aria-expanded="false" aria-controls="trbzp-order-form-wrap"{% endunless %}>{%- if _available -%}In winkelwagen{%- else -%}Bestellen{%- endif -%}</button>
+      <div class="trbzp-order-form-wrap" id="trbzp-order-form-wrap" aria-live="polite">
+        <div class="trbzp-order-form">
+          <h3>Stuur een bestelverzoek</h3>
+          <p class="trbzp-order-form-sub">Wij bellen of mailen je zodra het klaar ligt.</p>
+          <div class="trbzp-order-sku"><span>Geselecteerd: <strong id="trbzp-sku-label">{{ cur.title }}{% if cur.selected_or_first_available_variant.title != 'Default Title' %} – {{ cur.selected_or_first_available_variant.title }}{% endif %}</strong></span></div>
+          <form method="post" action="/contact#trbzp-order-form-wrap" id="trbzp-contact-form" accept-charset="UTF-8">
+            <input type="hidden" name="form_type" value="contact">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="hidden" name="contact[subject]" value="Bestelverzoek Bunzlau Castle – {{ cur.title }}">
+            <input type="hidden" name="contact[body_prefix]" id="trbzp-hidden-product" value="Product: {{ cur.title }} | SKU: {{ cur.selected_or_first_available_variant.sku }}">
+            <div class="trbzp-form-row">
+              <div class="trbzp-form-group"><label for="trbzp-naam">Naam</label><input type="text" id="trbzp-naam" name="contact[naam]" placeholder="Voor- en achternaam" required autocomplete="name"></div>
+              <div class="trbzp-form-group"><label for="trbzp-tel">Telefoon</label><input type="tel" id="trbzp-tel" name="contact[telefoon]" placeholder="06 12345678" required autocomplete="tel"></div>
+            </div>
+            <div class="trbzp-form-group"><label for="trbzp-email">E-mailadres</label><input type="email" id="trbzp-email" name="contact[email]" placeholder="jouw@email.nl" required autocomplete="email"></div>
+            <div class="trbzp-form-group"><label for="trbzp-adres">Adres <span class="trbzp-form-optional">(optioneel)</span></label><input type="text" id="trbzp-adres" name="contact[adres]" placeholder="Straat, postcode, plaats"></div>
+            <div class="trbzp-form-qty">
+              <label>Aantal</label>
+              <div class="trbzp-form-qty-ctrl">
+                <button type="button" class="trbzp-form-qty-btn" id="trbzp-form-qty-minus">−</button>
+                <span class="trbzp-form-qty-num" id="trbzp-form-qty-val">1</span>
+                <button type="button" class="trbzp-form-qty-btn" id="trbzp-form-qty-plus">+</button>
+              </div>
+              <input type="hidden" name="contact[aantal]" id="trbzp-form-qty-input" value="1">
+            </div>
+            <div class="trbzp-form-group"><label for="trbzp-opmerkingen">Opmerkingen <span class="trbzp-form-optional">(optioneel)</span></label><textarea id="trbzp-opmerkingen" name="contact[opmerkingen]" placeholder="Bijv. gewenste ophaaldatum…"></textarea></div>
+            <button type="submit" class="trbzp-btn-order-submit">Verstuur verzoek</button>
+          </form>
+          <div class="trbzp-form-success" id="trbzp-form-success" role="alert"><h4>Gelukt!</h4><p>We bellen of mailen je binnenkort.</p></div>
+        </div>
+      </div>
+
+      <!-- USPs -->
+      <div class="trbzp-usps">
+        <div class="trbzp-usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><div class="trbzp-usp-text"><div class="trbzp-usp-label">Alleen in Borne</div><div class="trbzp-usp-sub">Afhalen in de winkel</div></div></div>
+        <div class="trbzp-usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 0-5.5 2.5-5.5 5.5 0 1.5.6 2.9 1.6 3.9L12 21l3.9-8.6c1-1 1.6-2.4 1.6-3.9C17.5 5.5 15 3 12 3z"/></svg><div class="trbzp-usp-text"><div class="trbzp-usp-label">Uniek decor</div><div class="trbzp-usp-sub">Elk stuk anders</div></div></div>
+        <div class="trbzp-usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17.5C5.3 16.2 4 14.2 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8c0 2.2-1.3 4.2-3 5.5"/></svg><div class="trbzp-usp-text"><div class="trbzp-usp-label">Handgemaakt</div><div class="trbzp-usp-sub">Ambacht uit Polen</div></div></div>
+        <div class="trbzp-usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><div class="trbzp-usp-text"><div class="trbzp-usp-label">Steengoed</div><div class="trbzp-usp-sub">Duurzaam &amp; sterk</div></div></div>
+      </div>
+
+      <!-- Accordion -->
+      <div class="trbzp-accordion">
+        <div class="trbzp-accordion-item">
+          <button type="button" class="trbzp-accordion-trigger open" aria-expanded="true" data-trbzp-acc>Productomschrijving<span class="trbzp-chevron">▾</span></button>
+          <div class="trbzp-accordion-body open"><div class="trbzp-accordion-body-inner" itemprop="description">{%- if cur.description != blank -%}{{ cur.description }}{%- else -%}<p>Bunzlau Castle aardewerk bij Tante Rie in Borne.</p>{%- endif -%}</div></div>
+        </div>
+        <div class="trbzp-accordion-item">
+          <button type="button" class="trbzp-accordion-trigger" aria-expanded="false" data-trbzp-acc>Specificaties<span class="trbzp-chevron">▾</span></button>
+          <div class="trbzp-accordion-body"><div class="trbzp-accordion-body-inner">
+            <table class="trbzp-specs-table">
+              <tr><td>Artikelnummer</td><td id="trbzp-spec-sku">{{ cur.selected_or_first_available_variant.sku | default: '–' }}</td></tr>
+              <tr><td>EAN</td><td id="trbzp-spec-ean">{{ cur.selected_or_first_available_variant.barcode | default: '–' }}</td></tr>
+              <tr><td>Decor</td><td id="trbzp-spec-decor">{{ cur.selected_or_first_available_variant.title | replace: 'Default Title', '–' }}</td></tr>
+              <tr><td>Gewicht</td><td id="trbzp-spec-weight">{%- assign _vw = cur.selected_or_first_available_variant.weight -%}{%- if _vw > 0 -%}{{ _vw | times: 1000 | round }} g{%- else -%}–{%- endif -%}</td></tr>
+              <tr><td>Merk</td><td>Bunzlau Castle</td></tr>
+              <tr><td>Materiaal</td><td>Keramisch aardewerk (steengoed)</td></tr>
+              <tr><td>Gemaakt in</td><td>Polen</td></tr>
+              {%- if cur.metafields.custom.inhoud_ml != blank -%}<tr><td>Inhoud</td><td>{{ cur.metafields.custom.inhoud_ml }} ml</td></tr>{%- endif -%}
+              {%- if cur.metafields.custom.hoogte_cm != blank -%}<tr><td>Hoogte</td><td>{{ cur.metafields.custom.hoogte_cm }} cm</td></tr>{%- endif -%}
+              {%- if cur.metafields.custom.diameter_cm != blank -%}<tr><td>Diameter</td><td>{{ cur.metafields.custom.diameter_cm }} cm</td></tr>{%- endif -%}
+              <tr><td>Vaatwasserbestendig</td><td><span class="{%- if _vaatwasser -%}trbzp-icon--yes{%- else -%}trbzp-icon--no{%- endif -%}" aria-hidden="true">{%- if _vaatwasser -%}✓{%- else -%}✗{%- endif -%}</span> {%- if _vaatwasser -%}Ja{%- else -%}Handwas aanbevolen{%- endif -%}</td></tr>
+              <tr><td>Ovenbestendig</td><td><span class="{%- if _oven -%}trbzp-icon--yes{%- else -%}trbzp-icon--no{%- endif -%}" aria-hidden="true">{%- if _oven -%}✓{%- else -%}✗{%- endif -%}</span> {%- if _oven -%}Ja{%- else -%}Nee{%- endif -%}</td></tr>
+              <tr><td>Magnetronbestendig</td><td><span class="{%- if _magnetron -%}trbzp-icon--yes{%- else -%}trbzp-icon--no{%- endif -%}" aria-hidden="true">{%- if _magnetron -%}✓{%- else -%}✗{%- endif -%}</span> {%- if _magnetron -%}Ja{%- else -%}Niet aanbevolen{%- endif -%}</td></tr>
+            </table>
+            <p style="margin-top:10px"><strong>Onderhoudstip:</strong> Was met de hand in warm water met mild zeep.</p>
+          </div></div>
+        </div>
+        <div class="trbzp-accordion-item">
+          <button type="button" class="trbzp-accordion-trigger" aria-expanded="false" data-trbzp-acc>Ophaalinformatie<span class="trbzp-chevron">▾</span></button>
+          <div class="trbzp-accordion-body"><div class="trbzp-accordion-body-inner">
+            <p><strong>Tante Rie verzendt niet.</strong> Je haalt alles op in de winkel.</p>
+            <p><strong>Adres:</strong> Bakkerssteeg 6, 7622 GX Borne</p>
+            <p><strong>Openingstijden:</strong><br>Di t/m za 10:00–17:00<br>Ma &amp; zo gesloten</p>
+            {%- unless _available -%}<p><strong>Op bestelling:</strong> Altijd te bestellen. Na je verzoek spreken we een ophaaldatum af.</p>{%- endunless -%}
+            <p>Vragen? <a href="/pages/contact" style="color:var(--bz-blue)">Neem contact op</a>.</p>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- Terug-knop helemaal onderaan -->
+      <a href="{{ cur.collections.first.url | default: '/collections/bunzlau' }}" class="trbzp-btn-secondary">← Terug naar de Bunzlau collectie</a>
+
+    </div><!-- /info -->
+  </div><!-- /grid -->
+
+  <!-- Gerelateerde producten -->
+  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+    <section class="trbzp-related">
+      <div class="trbzp-related-header">
+        <h2 class="trbzp-related-title">Meer Bunzlau Castle</h2>
+        <a href="{{ cur.collections.first.url | default: '/collections/bunzlau' }}" class="trbzp-related-link">Bekijk alles →</a>
+      </div>
+      <div class="trbzp-related-grid">
+        {%- for rp in recommendations.products limit: 4 -%}
+          <a href="{{ rp.url }}" class="trbzp-related-card">
+            <div class="trbzp-related-card-img">{%- if rp.featured_image -%}<img src="{{ rp.featured_image | image_url: width: 400 }}" alt="{{ rp.featured_image.alt | default: rp.title | escape }}" loading="lazy" width="200" height="200">{%- endif -%}</div>
+            <div class="trbzp-related-card-body">
+              <p class="trbzp-related-card-name">{{ rp.title }}</p>
+              <p class="trbzp-related-card-price">{{ rp.price | money }}</p>
+              <span class="trbzp-related-card-badge {% if rp.available %}stock{% else %}order{% endif %}">{%- if rp.available -%}Op voorraad{%- else -%}Te bestellen{%- endif -%}</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+
+  <!-- Sticky ATC (mobiel) -->
+  <div class="trbzp-sticky-atc">
+    <span class="trbzp-sticky-price" id="trbzp-sticky-price">{{ cur.selected_or_first_available_variant.price | money }}</span>
+    <button type="button" class="trbzp-sticky-btn" id="trbzp-sticky-btn">{%- if _available -%}In winkelwagen{%- else -%}Bestellen{%- endif -%}</button>
+  </div>
+
+  {%- render 'tr-product-schema', product: cur, brand_name: 'Bunzlau Castle' -%}
+</div>
+
+<script>
+(function(){
+  window._trbzpTitle={{ cur.title | json }};
+  var thumbs=document.querySelectorAll('[data-trbzp-thumb]'),mainImg=document.getElementById('trbzp-main-img');
+  thumbs.forEach(function(t){t.addEventListener('click',function(){if(mainImg){mainImg.src=t.dataset.src;mainImg.alt=t.dataset.alt;}thumbs.forEach(function(x){x.classList.remove('active');});t.classList.add('active');});});
+  document.querySelectorAll('[data-trbzp-acc]').forEach(function(btn){btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!o);btn.classList.toggle('open',!o);var b=btn.nextElementSibling;if(b)b.classList.toggle('open',!o);});});
+  var qty=1,qEl=document.getElementById('trbzp-qty-val');
+  var qm=document.getElementById('trbzp-qty-minus'),qp=document.getElementById('trbzp-qty-plus');
+  if(qm)qm.addEventListener('click',function(){if(qty>1){qty--;if(qEl)qEl.textContent=qty;}});
+  if(qp)qp.addEventListener('click',function(){qty++;if(qEl)qEl.textContent=qty;});
+  var fq=1,fqEl=document.getElementById('trbzp-form-qty-val'),fqIn=document.getElementById('trbzp-form-qty-input');
+  function setFQ(n){fq=Math.max(1,n);if(fqEl)fqEl.textContent=fq;if(fqIn)fqIn.value=fq;}
+  var fm=document.getElementById('trbzp-form-qty-minus'),fp=document.getElementById('trbzp-form-qty-plus');
+  if(fm)fm.addEventListener('click',function(){setFQ(fq-1);});if(fp)fp.addEventListener('click',function(){setFQ(fq+1);});
+  var atc=document.getElementById('trbzp-atc'),ow=document.getElementById('trbzp-order-form-wrap');
+  var availIn=document.getElementById('trbzp-avail-in'),availOrder=document.getElementById('trbzp-avail-order');
+  if(atc&&ow){
+    atc.addEventListener('click',function(e){
+      if(atc.dataset.available==='false'){
+        e.preventDefault();
+        var o=ow.classList.toggle('visible');
+        atc.setAttribute('aria-expanded',o);
+        if(o)ow.scrollIntoView({behavior:'smooth',block:'nearest'});
+      }
+    });
+  }
+  var vw=document.querySelector('[data-trbzp-variants]'),rd=document.getElementById('trbzp-variant-data');
+  if(!vw||!rd)return;
+  var data=JSON.parse(rd.textContent),sel=data.initialOptions.slice();
+  var pEl=document.getElementById('trbzp-price'),spEl=document.getElementById('trbzp-sticky-price'),sbEl=document.getElementById('trbzp-sticky-btn');
+  function mv(){return data.variants.find(function(v){return v.options.every(function(o,i){return o===sel[i];});});}
+  function ui(v){
+    if(!v)return;
+    if(pEl)pEl.innerHTML='<meta itemprop="price" content="'+(v.price.replace(/[^0-9,]/g,'').replace(',','.'))+'">'+v.price;
+    if(spEl)spEl.textContent=v.price;
+    if(atc){
+      atc.dataset.variantId=v.id;
+      atc.dataset.available=v.available?'true':'false';
+      atc.textContent=v.available?'In winkelwagen':'Bestel nu';
+      atc.classList.toggle('bz-order',!v.available);
+      if(v.available){atc.setAttribute('data-tr-atc','');atc.removeAttribute('aria-expanded');atc.removeAttribute('aria-controls');}
+      else{atc.removeAttribute('data-tr-atc');atc.setAttribute('aria-controls','trbzp-order-form-wrap');atc.setAttribute('aria-expanded',(ow&&ow.classList.contains('visible'))?'true':'false');}
+    }
+    if(sbEl)sbEl.textContent=v.available?'In winkelwagen':'Bestel nu';
+    if(availIn&&availOrder){availIn.hidden=!v.available;availOrder.hidden=v.available;}
+    if(ow&&v.available){ow.classList.remove('visible');}
+    if(v.image&&mainImg){mainImg.src=v.image;mainImg.alt=v.alt||'';}
+    var ss=document.getElementById('trbzp-spec-sku'),se=document.getElementById('trbzp-spec-ean'),sd=document.getElementById('trbzp-spec-decor'),sw=document.getElementById('trbzp-spec-weight');
+    if(ss)ss.textContent=v.sku||'–';if(se)se.textContent=v.ean||'–';if(sd)sd.textContent=v.decor||'–';if(sw)sw.textContent=v.weight>0?v.weight+' g':'–';
+    var sl=document.getElementById('trbzp-sku-label'),hp=document.getElementById('trbzp-hidden-product');
+    if(sl&&v.options)sl.textContent=(window._trbzpTitle||'')+(v.options.join(', ')!=='Default Title'?' – '+v.options.join(' / '):'');
+    if(hp&&v.options)hp.value='Product: '+(window._trbzpTitle||'')+' | Decor: '+v.options.join(' / ');
+  }
+  document.querySelectorAll('[data-trbzp-pill]').forEach(function(pill){pill.addEventListener('click',function(){var idx=parseInt(pill.dataset.optionIndex,10),val=pill.dataset.value;sel[idx]=val;vw.querySelectorAll('[data-option-index="'+idx+'"]').forEach(function(p){p.classList.toggle('active',p.dataset.value===val);p.setAttribute('aria-pressed',p.dataset.value===val);});var lbl=vw.querySelector('[data-trbzp-opt-val="'+idx+'"]');if(lbl)lbl.textContent=val;ui(mv());});});
+  if(sbEl&&atc)sbEl.addEventListener('click',function(){atc.click();});
+})();
+</script>
+
+{% schema %}
+{"name":"Bunzlau Productpagina","tag":"div","settings":[{"type":"text","id":"tagline","label":"Tagline","placeholder":"Laat leeg voor automatische tagline"}]}
+{% endschema %}

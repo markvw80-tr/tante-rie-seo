@@ -1,0 +1,220 @@
+diff -u a/sections/tr-collection-blond.liquid b/sections/tr-collection-blond.liquid
+--- a/sections/tr-collection-blond.liquid
++++ b/sections/tr-collection-blond.liquid
+@@ -172,7 +172,8 @@
+ 
+ <div class="trba-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Blond Amsterdam woonaccessoires en cadeaus bij Tante Rie in Borne, Twente. Heel de collectie op bestelling beschikbaar. Afhalen in Borne, bereikbaar vanuit Enschede, Hengelo en Almelo.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trba-hero" aria-label="{{ collection.title }} collectie">
+@@ -498,7 +499,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-bunzlau.liquid b/sections/tr-collection-bunzlau.liquid
+--- a/sections/tr-collection-bunzlau.liquid
++++ b/sections/tr-collection-bunzlau.liquid
+@@ -170,7 +170,8 @@
+ 
+ <div class="trbz-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Bunzlau Castle aardewerk te koop bij Tante Rie in Borne, Twente. Heel de collectie op bestelling beschikbaar. Afhalen in Borne, bereikbaar vanuit Enschede, Hengelo en Almelo.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trbz-hero" aria-label="{{ collection.title }} collectie">
+@@ -534,7 +535,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-groene-thee.liquid b/sections/tr-collection-groene-thee.liquid
+--- a/sections/tr-collection-groene-thee.liquid
++++ b/sections/tr-collection-groene-thee.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trgt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Groene thee kopen bij Tante Rie in Borne, Twente. Ruim assortiment losse groene thee, van Japanse Sencha tot Chinese Gunpowder. Afhalen of verzenden, bereikbaar vanuit Enschede, Hengelo en Almelo.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trgt-hero" aria-label="{{ collection.title }} collectie">
+@@ -474,7 +475,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-joeff.liquid b/sections/tr-collection-joeff.liquid
+--- a/sections/tr-collection-joeff.liquid
++++ b/sections/tr-collection-joeff.liquid
+@@ -180,7 +180,8 @@
+ 
+ <div class="trjf-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Muuss wandsysteem bij Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Joeff Muuss: modulair wandsysteem met basishouders en schakels, boorvrij op te hangen. Te koop bij Tante Rie in Borne, Twente. Verzending door heel Nederland, of gratis ophalen in de winkel.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trjf-hero" aria-label="{{ collection.title }} collectie">
+@@ -508,7 +509,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-kruidenthee.liquid b/sections/tr-collection-kruidenthee.liquid
+--- a/sections/tr-collection-kruidenthee.liquid
++++ b/sections/tr-collection-kruidenthee.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trkt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Kruidenthee kopen bij Tante Rie in Borne, Twente. Kamille, pepermunt, gember-citroen en meer. Cafeïnevrij, puur natuur.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trkt-hero" aria-label="{{ collection.title }} collectie">
+@@ -474,7 +475,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-rice.liquid b/sections/tr-collection-rice.liquid
+--- a/sections/tr-collection-rice.liquid
++++ b/sections/tr-collection-rice.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trrc-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Rice woonaccessoires bij Tante Rie in Borne, Twente. Vrolijke Deense collectie: servies, textiel en decoratie. Snel verzonden of afhalen in de winkel.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trrc-hero" aria-label="{{ collection.title }} collectie">
+@@ -466,7 +467,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-rooibos.liquid b/sections/tr-collection-rooibos.liquid
+--- a/sections/tr-collection-rooibos.liquid
++++ b/sections/tr-collection-rooibos.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trrt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Rooibos thee kopen bij Tante Rie in Borne, Twente. Ruim assortiment losse rooibos, cafeïnevrij en vol van smaak. Afhalen of verzenden.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trrt-hero" aria-label="{{ collection.title }} collectie">
+@@ -474,7 +475,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-vruchten-thee.liquid b/sections/tr-collection-vruchten-thee.liquid
+--- a/sections/tr-collection-vruchten-thee.liquid
++++ b/sections/tr-collection-vruchten-thee.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trvt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Vruchtenthee kopen bij Tante Rie in Borne, Twente. Aardbei, hibiscus, tropisch en meer. Cafeïnevrij, ook lekker als ijsthee.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trvt-hero" aria-label="{{ collection.title }} collectie">
+@@ -474,7 +475,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-witte-thee.liquid b/sections/tr-collection-witte-thee.liquid
+--- a/sections/tr-collection-witte-thee.liquid
++++ b/sections/tr-collection-witte-thee.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trwt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Witte thee kopen bij Tante Rie in Borne, Twente. Silver Needle, White Peony en meer. De meest delicate thee, zacht van smaak.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trwt-hero" aria-label="{{ collection.title }} collectie">
+@@ -474,7 +475,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",
+diff -u a/sections/tr-collection-zwarte-thee.liquid b/sections/tr-collection-zwarte-thee.liquid
+--- a/sections/tr-collection-zwarte-thee.liquid
++++ b/sections/tr-collection-zwarte-thee.liquid
+@@ -162,7 +162,8 @@
+ 
+ <div class="trzt-wrap" itemscope itemtype="https://schema.org/CollectionPage">
+   <meta itemprop="name" content="{{ collection.title }} – Tante Rie, Borne (Twente)">
+-  <meta itemprop="description" content="Zwarte thee kopen bij Tante Rie in Borne, Twente. Ruim assortiment losse zwarte thee, van klassieke Assam tot geurige Earl Grey. Afhalen in Borne, bereikbaar vanuit Enschede, Hengelo en Almelo.">
++  {%- assign _seo_desc = page_description | default: collection.description | strip_html | strip | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' -%}
++  {%- if _seo_desc != blank -%}<meta itemprop="description" content="{{ _seo_desc | escape }}">{%- endif -%}
+ 
+   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+   <section class="trzt-hero" aria-label="{{ collection.title }} collectie">
+@@ -474,7 +475,7 @@
+     "@type": "CollectionPage",
+     "@id": {{ shop.url | append: collection.url | json }},
+     "name": {{ collection.title | json }},
+-    "description": {{ collection.description | strip_html | truncate: 200 | json }},
++    "description": {{ _seo_desc | json }},
+     "url": {{ shop.url | append: collection.url | json }},
+     "isPartOf": {
+       "@type": "WebSite",

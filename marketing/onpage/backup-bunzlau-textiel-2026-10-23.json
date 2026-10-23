@@ -1,0 +1,10 @@
+{
+  "gemaakt": "2026-10-23",
+  "doel": "Backup V62: producttype, sjabloon en tags van 4 Bunzlau-producten vóór de wijziging",
+  "producten": [
+    {"id": "gid://shopify/Product/12015679406344", "handle": "theemuts-streep", "productType": "", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek", "pakket"]},
+    {"id": "gid://shopify/Product/12015680225544", "handle": "theemuts-ruit", "productType": "Keramiek", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek", "pakket"]},
+    {"id": "gid://shopify/Product/12006480445704", "handle": "servetten-garden-delight", "productType": "Servetten", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek", "pakket"]},
+    {"id": "gid://shopify/Product/12015673606408", "handle": "bewaarblik-rechthoekig-flowerbed-19x15-cm", "productType": "Koekblik", "templateSuffix": "bunzlau", "tags": ["bunzlau", "handgemaakt", "keramiek", "pakket"]}
+  ]
+}

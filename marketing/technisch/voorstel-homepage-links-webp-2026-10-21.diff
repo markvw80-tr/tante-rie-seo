@@ -1,0 +1,36 @@
+diff --git a/sections/tr-homepage-redesign.liquid b/sections/tr-homepage-redesign.liquid
+index 4a7ea58..708a6c7 100644
+--- a/sections/tr-homepage-redesign.liquid
++++ b/sections/tr-homepage-redesign.liquid
+@@ -59,6 +59,9 @@
+ /* Geen JS: dan geen pijlen, wel gewoon swipen/scrollen */
+ .trh-col-nav { display: none; }
+ .trh-col-slider-wrap.is-enhanced .trh-col-nav { display: flex; }
++.trh-more-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 32px; margin-top: 28px; }
++.trh-more-links a { font-size: 14px; color: var(--brown); text-decoration: none; border-bottom: 1px solid var(--brown-light); padding-bottom: 1px; }
++.trh-more-links a:hover { color: var(--brown-dark); }
+ .trh-col-card:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(74,50,34,.12); }
+ .trh-col-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+ .trh-col-card:hover img { transform: scale(1.05); }
+@@ -226,7 +229,7 @@
+                      srcset="{{ card_image | image_url: width: 400 }} 400w,
+                              {{ card_image | image_url: width: 600 }} 600w,
+                              {{ card_image | image_url: width: 900 }} 900w"
+-                     sizes="(min-width: 990px) 25vw, (min-width: 750px) 50vw, 100vw"
++                     sizes="(min-width: 901px) min(23vw, 350px), (min-width: 501px) 42vw, 67vw"
+                      alt="{{ card_title | escape }}"
+                      width="{{ card_image.width | default: 600 }}"
+                      height="{{ card_image.height | default: 400 }}"
+@@ -254,6 +257,12 @@
+         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+       </button>
+     </div>
++
++    <nav class="trh-more-links" aria-label="Meer van Tante Rie">
++      <a href="/pages/theewinkel-borne-twente">Theewinkel in Borne, Twente</a>
++      <a href="/collections/bunzlau">Bunzlau servies</a>
++      <a href="/pages/serviezen">Serviezen en serviesstellen</a>
++    </nav>
+   </section>
+ 
+   <section class="trh-featured">

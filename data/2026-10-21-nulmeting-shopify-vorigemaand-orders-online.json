@@ -1,0 +1,134 @@
+{
+  "orders": {
+    "edges": [
+      {
+        "node": {
+          "name": "#2943",
+          "createdAt": "2026-09-01T14:33:58Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "29.65"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": {
+              "source": "direct",
+              "sourceType": null,
+              "referrerUrl": "https://tanterie.nl/",
+              "landingPage": "https://tanterie.nl/collections/groene-thee",
+              "utmParameters": null
+            },
+            "firstVisit": {
+              "source": "direct",
+              "sourceType": null,
+              "referrerUrl": "https://tanterie.nl/"
+            }
+          }
+        }
+      },
+      {
+        "node": {
+          "name": "#2964",
+          "createdAt": "2026-09-03T05:38:17Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "12.45"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": null,
+            "firstVisit": null
+          }
+        }
+      },
+      {
+        "node": {
+          "name": "#3057",
+          "createdAt": "2026-09-08T12:08:44Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "46.85"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": {
+              "source": "direct",
+              "sourceType": null,
+              "referrerUrl": null,
+              "landingPage": "https://tanterie.nl/",
+              "utmParameters": null
+            },
+            "firstVisit": {
+              "source": "Google",
+              "sourceType": "SEO",
+              "referrerUrl": "https://www.google.com/"
+            }
+          }
+        }
+      },
+      {
+        "node": {
+          "name": "#3069",
+          "createdAt": "2026-09-08T18:36:36Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "19.75"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": null,
+            "firstVisit": null
+          }
+        }
+      },
+      {
+        "node": {
+          "name": "#3085",
+          "createdAt": "2026-09-09T12:21:23Z",
+          "sourceName": "web",
+          "displayFinancialStatus": "PAID",
+          "cancelledAt": null,
+          "currentTotalPriceSet": {
+            "shopMoney": {
+              "amount": "30.6"
+            }
+          },
+          "customerJourneySummary": {
+            "ready": true,
+            "lastVisit": {
+              "source": "Google",
+              "sourceType": "SEO",
+              "referrerUrl": "https://www.google.com/",
+              "landingPage": "https://tanterie.nl/products/beste-van-borne",
+              "utmParameters": null
+            },
+            "firstVisit": {
+              "source": "Google",
+              "sourceType": "SEO",
+              "referrerUrl": "https://www.google.com/"
+            }
+          }
+        }
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": false
+    }
+  }
+}

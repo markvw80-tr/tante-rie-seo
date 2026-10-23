@@ -1,0 +1,43 @@
+--- a/snippets/tr-product-schema.liquid	2026-10-23 10:44:03
++++ b/snippets/tr-product-schema.liquid	2026-10-23 10:44:03
+@@ -45,6 +45,9 @@
+ {%- assign has_ratings = false -%}
+ {%- if jm_rating_mf and jm_count_raw > 0 -%}{%- assign has_ratings = true -%}{%- endif -%}
+ 
++{%- comment %} Losse reviews uit dezelfde Judge.me-metafield als de widget (max 10), zodat het themablok het enige Product-blok kan zijn {%- endcomment -%}
++{%- assign jm_reviews = product.metafields.judgeme.review_widget_data.value.reviews -%}
++
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+@@ -116,6 +119,30 @@
+     "bestRating": "{{ jm_rating_mf.value.scale_max | default: 5 }}",
+     "worstRating": "{{ jm_rating_mf.value.scale_min | default: 1 }}"
+   }
++  {%- if jm_reviews.size > 0 -%},
++  "review": [
++    {%- for r in jm_reviews limit: 10 -%}
++    {
++      "@type": "Review",
++      "reviewRating": {
++        "@type": "Rating",
++        "ratingValue": {{ r.rating | plus: 0 }},
++        "bestRating": 5,
++        "worstRating": 1
++      },
++      "author": {
++        "@type": "Person",
++        "name": {{ r.reviewer_name | default: 'Anoniem' | json }}
++      },
++      {%- if r.title != blank -%}
++      "name": {{ r.title | json }},
++      {%- endif -%}
++      "reviewBody": {{ r.body | strip_html | strip_newlines | json }},
++      "datePublished": {{ r.created_at | date: '%Y-%m-%d' | json }}
++    }{%- unless forloop.last -%},{%- endunless -%}
++    {%- endfor -%}
++  ]
+   {%- endif -%}
++  {%- endif -%}
+ }
+ </script>

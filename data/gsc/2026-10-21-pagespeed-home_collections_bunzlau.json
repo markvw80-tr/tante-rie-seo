@@ -1,0 +1,2339 @@
+{
+  "url": "https://tanterie.nl/collections/bunzlau",
+  "psi": {
+    "mobile": {
+      "url": "https://tanterie.nl/collections/bunzlau",
+      "strategy": "mobile",
+      "lighthouse_scores": {
+        "performance": 68,
+        "accessibility": 97,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lab_metrics": {
+        "first-contentful-paint": {
+          "value": 3193.396240123925,
+          "display": "3.2\u00a0s",
+          "score": 0.43
+        },
+        "largest-contentful-paint": {
+          "value": 5101.004797238569,
+          "display": "5.1\u00a0s",
+          "score": 0.25
+        },
+        "total-blocking-time": {
+          "value": 247.5,
+          "display": "250\u00a0ms",
+          "score": 0.84
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0",
+          "score": 1
+        },
+        "speed-index": {
+          "value": 4474.524011520206,
+          "display": "4.5\u00a0s",
+          "score": 0.73
+        },
+        "interactive": {
+          "value": 11865.140346117092,
+          "display": "11.9\u00a0s",
+          "score": 0.17
+        }
+      },
+      "field_metrics": {},
+      "opportunities": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "savings_ms": 150,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "total-byte-weight",
+          "title": "Avoids enormous network payloads",
+          "display": "Total size was 2,531\u00a0KiB",
+          "score": 1,
+          "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn how to reduce payload sizes](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/)."
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "display": "4.4\u00a0s",
+          "score": 0,
+          "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+        },
+        {
+          "id": "bootup-time",
+          "title": "JavaScript execution time",
+          "display": "0.9\u00a0s",
+          "score": 1,
+          "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/)."
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "display": "",
+          "score": null,
+          "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)"
+        },
+        {
+          "id": "long-tasks",
+          "title": "Avoid long main-thread tasks",
+          "display": "11 long tasks found",
+          "score": 1,
+          "description": "Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. [Learn how to avoid long main-thread tasks](https://web.dev/articles/optimize-long-tasks)"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "display": "",
+          "score": 1,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "display": "Est savings of 63\u00a0KiB",
+          "score": 0,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+        }
+      ],
+      "audit_details": {
+        "main-thread-tasks": {
+          "title": "Tasks",
+          "headings": [
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "startTime": 1024.444,
+              "duration": 61.279
+            },
+            {
+              "startTime": 1098.901,
+              "duration": 5.316
+            },
+            {
+              "startTime": 1104.535,
+              "duration": 75.781
+            },
+            {
+              "startTime": 1180.333,
+              "duration": 5.856
+            },
+            {
+              "startTime": 1186.225,
+              "duration": 12.962
+            }
+          ],
+          "total_items": 91
+        },
+        "resource-summary": {
+          "title": "Resources Summary",
+          "headings": [
+            "label",
+            "requestCount",
+            "transferSize"
+          ],
+          "items": [
+            {
+              "label": "Total",
+              "requestCount": 348,
+              "transferSize": 2591663
+            },
+            {
+              "label": "Other",
+              "requestCount": 152,
+              "transferSize": 974249
+            },
+            {
+              "label": "Script",
+              "requestCount": 148,
+              "transferSize": 582861
+            },
+            {
+              "label": "Image",
+              "requestCount": 21,
+              "transferSize": 515983
+            },
+            {
+              "label": "Font",
+              "requestCount": 8,
+              "transferSize": 294641
+            }
+          ],
+          "total_items": 9
+        },
+        "js-libraries": {
+          "title": "Detected JavaScript libraries",
+          "headings": [
+            "name",
+            "version"
+          ],
+          "items": [
+            {
+              "name": "Shopify"
+            },
+            {
+              "name": "core-js",
+              "version": "core-js-global@2.6.12"
+            }
+          ],
+          "total_items": 2
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "headings": [
+            "node",
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "node": "{'type': 'node', 'nodeLabel': 'Ontbijtbord \u00d8: 20 cm - Lace | Bunzlau Castle \u2013 Bunzlau Castle bij Tante Rie Bor\u2026', 'lhId': 'page-16-IMG', 'boundingRect': {'right': 199, 'height': 182, 'width': 182, 'bo",
+              "url": "https://tanterie.nl/cdn/shop/files/1086_0884.jpg?v=1780731080&width=500",
+              "totalBytes": 49662,
+              "wastedBytes": 38249
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,5,ARTICLE,0,A,0,IMG', 'nodeLabel': 'Dinerbord \u00d8: 25,5 cm - Blue Eyes | Bunzlau Castle \u2013 Bunzlau Castle bij Tante Ri\u2026', 'snippet': '<img src=\"//ta",
+              "url": "https://tanterie.nl/cdn/shop/files/1257_0071.jpg?v=1780772966&width=500",
+              "totalBytes": 43174,
+              "wastedBytes": 31761
+            },
+            {
+              "node": "{'lhId': 'page-18-IMG', 'snippet': '<img src=\"//tanterie.nl/cdn/shop/files/1261_0375e.jpg?v=1780732672&amp;width=500\" alt=\"Gebaksbord \u00d8: 16 cm - Blue Valentine | Bunzlau Castle \u2013 Bunzlau Castle bij\u2026\" ",
+              "url": "https://tanterie.nl/cdn/shop/files/1261_0375e.jpg?v=1780732672&width=500",
+              "totalBytes": 36384,
+              "wastedBytes": 26418
+            },
+            {
+              "node": "{'lhId': 'page-19-IMG', 'type': 'node', 'boundingRect': {'width': 182, 'height': 182, 'left': 213, 'top': 3240, 'right': 395, 'bottom': 3421}, 'selector': 'div.trbz-grid > article.trbz-card > a.trbz-c",
+              "url": "https://tanterie.nl/cdn/shop/files/1266_0071.jpg?v=1780773497&width=500",
+              "totalBytes": 34430,
+              "wastedBytes": 24999
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,13,ARTICLE,0,A,0,IMG', 'nodeLabel': 'Boeren Mok 500 ml - Lace | Bunzlau Castle \u2013 Bunzlau Castle bij Tante Rie Borne', 'boundingRect': {'bottom': ",
+              "url": "https://tanterie.nl/cdn/shop/files/1073_0884.jpg?v=1780778968&width=500",
+              "totalBytes": 34116,
+              "wastedBytes": 24771
+            }
+          ],
+          "total_items": 18
+        },
+        "network-server-latency": {
+          "title": "Server Backend Latencies",
+          "headings": [
+            "origin",
+            "serverResponseTime"
+          ],
+          "items": [
+            {
+              "origin": "https://tanterie.nl",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://cdn.shopify.com",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://fonts.googleapis.com",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://monorail-edge.shopifysvc.com",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://otlp-http-production.shopifysvc.com",
+              "serverResponseTime": 1
+            }
+          ],
+          "total_items": 9
+        },
+        "bootup-time": {
+          "title": "JavaScript execution time",
+          "headings": [
+            "url",
+            "total",
+            "scripting",
+            "scriptParseCompile"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "total": 1786.2455999999981,
+              "scripting": 77.67840000000001,
+              "scriptParseCompile": 94.57919999999999
+            },
+            {
+              "url": "Unattributable",
+              "total": 917.1179999999856,
+              "scripting": 94.94040000000007,
+              "scriptParseCompile": 0
+            },
+            {
+              "url": "https://tanterie.nl/cdn/s/trekkie.storefront.6efba1340ec6769622eb0d10b5cb070d43fb8d55.min.js",
+              "total": 163.50359999999998,
+              "scripting": 135.4212,
+              "scriptParseCompile": 18.474
+            },
+            {
+              "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.register_cLcgCW8c.esm.js",
+              "total": 147.4788000000001,
+              "scripting": 82.66680000000008,
+              "scriptParseCompile": 17.868
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.11.0.min.js",
+              "total": 126.23400000000001,
+              "scripting": 110.0652,
+              "scriptParseCompile": 14.5104
+            }
+          ],
+          "total_items": 10
+        },
+        "valid-source-maps": {
+          "title": "Page has valid source maps",
+          "headings": [
+            "scriptUrl",
+            "sourceMapUrl"
+          ],
+          "items": [
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_CuDhieq2.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_CuDhieq2.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_Cm2eF3Yu.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_Cm2eF3Yu.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-login_DcnwJy00.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-login_DcnwJy00.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-cart-sync_DnEAZHHD.nl.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-cart-sync_DnEAZHHD.nl.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_CskA7jDP.nl.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_CskA7jDP.nl.esm.js.map"
+            }
+          ],
+          "total_items": 96
+        },
+        "mainthread-work-breakdown": {
+          "title": "Minimize main-thread work",
+          "headings": [
+            "groupLabel",
+            "duration"
+          ],
+          "items": [
+            {
+              "groupLabel": "Other",
+              "duration": 1453.982399999984
+            },
+            {
+              "groupLabel": "Style & Layout",
+              "duration": 1246.1063999999985
+            },
+            {
+              "groupLabel": "Script Evaluation",
+              "duration": 1012.3859999999976
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 376.9235999999998
+            },
+            {
+              "groupLabel": "Rendering",
+              "duration": 138.84239999999892
+            }
+          ],
+          "total_items": 6
+        },
+        "total-byte-weight": {
+          "title": "Avoids enormous network payloads",
+          "headings": [
+            "url",
+            "totalBytes"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/checkout-web/assets/c1/164ad2e3.BQn9Y2Td.js",
+              "totalBytes": 190253
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/checkout-web/assets/c1/6a2fc6d6.LB9cO4cH.js",
+              "totalBytes": 92586
+            },
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "totalBytes": 91777
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/checkout-web/assets/c1/4b4bc88f.cgIhnW4J.js",
+              "totalBytes": 87504
+            },
+            {
+              "url": "https://cdn.shopify.com/shop-assets/static_uploads/shoplift/GTStandard-MMedium.woff2",
+              "totalBytes": 65842
+            }
+          ],
+          "total_items": 10
+        },
+        "origin-isolation": {
+          "title": "Ensure proper origin isolation with COOP",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No COOP header found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "errors-in-console": {
+          "title": "Browser errors were logged to the console",
+          "headings": [
+            "sourceLocation",
+            "description"
+          ],
+          "items": [
+            {
+              "sourceLocation": "https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/checkout-DTJs6qRt.js",
+              "description": "Error producing monorail event MonorailUnableToProduceError: Error producing to the Monorail Edge. Response received: {\"status\":400,\"message\":\"Invalid agent: Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Chrome-Lighthouse\"}\n    at U.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/AnalyticsProvider-B8WHd08-.js:2:7011)"
+            },
+            {
+              "sourceLocation": "https://otlp-http-production.shopifysvc.com/v1/metrics",
+              "description": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT"
+            },
+            {
+              "sourceLocation": "https://otlp-http-production.shopifysvc.com/v1/logs",
+              "description": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT"
+            },
+            {
+              "sourceLocation": "https://monorail-edge.shopifysvc.com/v1/produce",
+              "description": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+            },
+            {
+              "sourceLocation": "https://monorail-edge.shopifysvc.com/v1/produce",
+              "description": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+            }
+          ],
+          "total_items": 8
+        },
+        "long-tasks": {
+          "title": "Avoid long main-thread tasks",
+          "headings": [
+            "url",
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/view-transitions.js?v=7106414069516106341791536157",
+              "startTime": 5101.004797238569,
+              "duration": 194.9999999999991
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.11.0.min.js",
+              "startTime": 8276.007795512673,
+              "duration": 113
+            },
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "startTime": 2701.002398619285,
+              "duration": 91
+            },
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "startTime": 2401.0020987918742,
+              "duration": 88
+            },
+            {
+              "url": "Unattributable",
+              "startTime": 1201.000899482232,
+              "duration": 74
+            }
+          ],
+          "total_items": 11
+        },
+        "color-contrast": {
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,10,SECTION,0,DIV,0,DIV,0,P', 'boundingRect': {'top': 9846, 'height': 18, 'left': 16, 'right': 396, 'bottom': 9864, 'width': 380}, 'snippet': '<p class=\"trbz-"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,4,FOOTER,2,DIV,1,DIV,0,DIV,0,DIV,0,SPAN', 'nodeLabel': '\u00a9 2026 Tante Rie', 'snippet': '<span class=\"footer-utilities__text\">', 'lhId': '1-52-SPAN', 'selector': 'div.section > d"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,4,FOOTER,2,DIV,1,DIV,0,DIV,0,DIV,0,SPAN,1,A', 'type': 'node', 'lhId': '1-54-A', 'selector': 'div.utilities > div.footer-utilities__group-copyright > span.footer-utilities__text"
+            }
+          ],
+          "total_items": 3
+        },
+        "aria-allowed-role": {
+          "title": "Uses ARIA roles only on compatible elements",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,0,ARTICLE', 'snippet': '<article class=\"trbz-card\" role=\"listitem\" itemscope=\"\" itemtype=\"https://schema.org/Product\">', 'selector': 'div.trbz-wr"
+            },
+            {
+              "node": "{'explanation': 'Fix any of the following:\\n  ARIA role listitem is not allowed for given element', 'nodeLabel': 'OP VOORRAAD\\nKERAMIEK\\n\\nGebaksbord \u00d8: 16 cm\\n\\nPrijs vanaf\\n\u20ac19,95\\nIN WINKELWAGEN', "
+            },
+            {
+              "node": "{'snippet': '<article class=\"trbz-card\" role=\"listitem\" itemscope=\"\" itemtype=\"https://schema.org/Product\">', 'selector': 'div.trbz-wrap > div.trbz-grid-wrap > div.trbz-grid > article.trbz-card', 'bou"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,3,ARTICLE', 'snippet': '<article class=\"trbz-card\" role=\"listitem\" itemscope=\"\" itemtype=\"https://schema.org/Product\">', 'explanation': 'Fix any "
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,4,ARTICLE', 'snippet': '<article class=\"trbz-card\" role=\"listitem\" itemscope=\"\" itemtype=\"https://schema.org/Product\">', 'lhId': '1-4-ARTICLE', '"
+            }
+          ],
+          "total_items": 50
+        },
+        "baseline": {
+          "title": "Baseline Features",
+          "headings": [
+            "featureId",
+            "displayStatus",
+            "source"
+          ],
+          "items": [
+            {
+              "featureId": "https://webstatus.dev/features/referencetarget",
+              "displayStatus": "{'displayString': 'Limited Availability', 'status': 'limited', 'type': 'baseline-status'}",
+              "source": "exit-interstitial.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/link-rel-expect",
+              "displayStatus": "{'status': 'limited', 'type': 'baseline-status', 'displayString': 'Limited Availability'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/blocking-render",
+              "displayStatus": "{'displayString': 'Limited Availability', 'status': 'limited', 'type': 'baseline-status'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/cross-document-view-transitions",
+              "displayStatus": "{'type': 'baseline-status', 'status': 'limited', 'displayString': 'Limited Availability'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/autofill",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Limited Availability', 'status': 'limited'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            }
+          ],
+          "total_items": 83
+        },
+        "label-content-name-mismatch": {
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'boundingRect': {'bottom': 893, 'right': 199, 'left': 17, 'top': 711, 'width': 182, 'height': 182}, 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,0,ARTICLE,0,A', 'snippet': '<a href=\"/product"
+            },
+            {
+              "node": "{'snippet': '<button class=\"trbz-btn-atc\" data-tr-atc=\"\" data-variant-id=\"57953071923464\" aria-label=\"Voeg Boeren mok 240 ml toe aan winkelwagen\">', 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,D"
+            },
+            {
+              "node": "{'snippet': '<a href=\"/products/gebaksbord-o-16-cm-1\" class=\"trbz-card-img\" aria-label=\"Gebaksbord \u00d8: 16 cm\">', 'nodeLabel': 'OP VOORRAAD', 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,1,ARTI"
+            },
+            {
+              "node": "{'boundingRect': {'bottom': 1043, 'left': 339, 'top': 1003, 'width': 40, 'right': 379, 'height': 40}, 'snippet': '<button class=\"trbz-btn-atc\" data-tr-atc=\"\" data-variant-id=\"57951810814216\" aria-labe"
+            },
+            {
+              "node": "{'explanation': 'Fix any of the following:\\n  Text inside the element is not included in the accessible name', 'nodeLabel': 'OP VOORRAAD', 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,2,ARTIC"
+            }
+          ],
+          "total_items": 101
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedMs"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/view-transitions.js?v=7106414069516106341791536157",
+              "totalBytes": 1966,
+              "wastedMs": 151
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/compiled_assets/styles.css?v=8026134315338458671791536183",
+              "totalBytes": 43550,
+              "wastedMs": 1351
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-menu.css?v=36636760031302663031791536157",
+              "totalBytes": 2219,
+              "wastedMs": 451
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/base.css?v=80415010869825589501791536157",
+              "totalBytes": 15416,
+              "wastedMs": 751
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/overflow-list.css?v=16727044177065489451791536157",
+              "totalBytes": 1716,
+              "wastedMs": 451
+            }
+          ],
+          "total_items": 8
+        },
+        "csp-xss": {
+          "title": "Ensure CSP is effective against XSS attacks",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "`script-src` directive is missing. This can allow the execution of unsafe scripts.",
+              "directive": "script-src",
+              "severity": "High"
+            },
+            {
+              "description": "Missing `object-src` allows the injection of plugins that execute unsafe scripts. Consider setting `object-src` to `'none'` if you can.",
+              "directive": "object-src",
+              "severity": "High"
+            }
+          ],
+          "total_items": 2
+        },
+        "viewport-insight": {
+          "title": "Optimize viewport for mobile",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'nodeLabel': 'head > meta', 'boundingRect': {'width': 0, 'height': 0, 'left': 0, 'top': 0, 'right': 0, 'bottom': 0}, 'snippet': '<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">', "
+            }
+          ],
+          "total_items": 1
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "headings": [
+            "url",
+            "cacheLifetimeMs",
+            "totalBytes"
+          ],
+          "items": [
+            {
+              "url": "https://shop.app/pay/assets/sprite.svg",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 10001
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css",
+              "cacheLifetimeMs": 300000,
+              "totalBytes": 3183
+            },
+            {
+              "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.shop-login.esm.js",
+              "cacheLifetimeMs": 1800000,
+              "totalBytes": 1735
+            },
+            {
+              "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.nl.esm.js",
+              "cacheLifetimeMs": 1800000,
+              "totalBytes": 1552
+            },
+            {
+              "url": "https://shop.app/checkouts/internal/preloads.js?locale=nl-NL&shop_id=99962749192",
+              "cacheLifetimeMs": 60000,
+              "totalBytes": 624
+            }
+          ],
+          "total_items": 5
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/compiled_assets/styles.css?v=8026134315338458671791536183",
+              "totalBytes": 42044,
+              "wastedBytes": 40199
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/base.css?v=80415010869825589501791536157",
+              "totalBytes": 14104,
+              "wastedBytes": 12372
+            },
+            {
+              "url": "https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/tailwind-YmkFwXk3.css",
+              "totalBytes": 12092,
+              "wastedBytes": 12092
+            }
+          ],
+          "total_items": 3
+        },
+        "dom-size-insight": {
+          "title": "Optimize DOM size",
+          "headings": [
+            "statistic",
+            "node",
+            "value"
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": "{'type': 'numeric', 'granularity': 1, 'value': 1629}"
+            },
+            {
+              "statistic": "DOM depth",
+              "node": "{'path': '1,HTML,1,BODY,1,DIV,2,HEADER,0,HEADER-COMPONENT,2,DIV,0,DIV,2,DIV,3,HEADER-ACTIONS,0,DIV,1,SHOPIFY-ACCOUNT,a,#document-fragment,0,DIV,0,DIV,1,DIALOG,0,DIV,1,DIV,0,DIV,0,SHOPIFY-LOGIN-FORM-LO",
+              "value": "{'value': 28, 'type': 'numeric', 'granularity': 1}"
+            },
+            {
+              "statistic": "Most children",
+              "node": "{'lhId': 'page-35-DIV', 'nodeLabel': 'OP VOORRAAD\\nKERAMIEK\\n\\nBoeren mok 240 ml\\n\\nPrijs vanaf\\n\u20ac19,95\\nIN WINKELWAGEN\\nOP V\u2026', 'type': 'node', 'boundingRect': {'right': 396, 'top': 710, 'height': 90",
+              "value": "{'type': 'numeric', 'granularity': 1, 'value': 50}"
+            }
+          ],
+          "total_items": 3
+        },
+        "has-hsts": {
+          "title": "Use a strong HSTS policy",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "`max-age` is too low",
+              "directive": "max-age",
+              "severity": "High"
+            },
+            {
+              "description": "No `includeSubDomains` directive found",
+              "directive": "includeSubDomains",
+              "severity": "Medium"
+            },
+            {
+              "description": "No `preload` directive found",
+              "directive": "preload",
+              "severity": "Medium"
+            }
+          ],
+          "total_items": 3
+        },
+        "non-composited-animations": {
+          "title": "Avoid non-composited animations",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'path': '1,HTML,1,BODY,1,DIV,2,HEADER,0,HEADER-COMPONENT,2,DIV,0,DIV,2,DIV,3,HEADER-ACTIONS,0,DIV,1,SHOPIFY-ACCOUNT,a,#document-fragment,0,DIV,0,DIV,1,DIALOG,0,DIV,1,DIV,0,DIV,0,SHOPIFY-LOGIN-FORM-LO"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,1,DIV,1,DIV,2,ASIDE,0,ANNOUNCEMENT-BAR-COMPONENT,1,DIV,0,SLIDESHOW-SLIDE', 'nodeLabel': 'aside.announcement-bar > announcement-bar-component.announcement-bar__slider > div.anno"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,1,DIV,1,DIV,2,ASIDE,0,ANNOUNCEMENT-BAR-COMPONENT,1,DIV,1,SLIDESHOW-SLIDE', 'selector': 'aside.announcement-bar > announcement-bar-component.announcement-bar__slider > div.annou"
+            }
+          ],
+          "total_items": 3
+        },
+        "user-timings": {
+          "title": "User Timing marks and measures",
+          "headings": [
+            "name",
+            "timingType",
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "name": "shopify.content_for_header.start",
+              "timingType": "Mark",
+              "startTime": 1149.807
+            },
+            {
+              "name": "shopify.content_for_header.end",
+              "timingType": "Mark",
+              "startTime": 1248.965
+            }
+          ],
+          "total_items": 2
+        },
+        "third-parties-insight": {
+          "title": "3rd parties",
+          "headings": [
+            "entity",
+            "transferSize",
+            "mainThreadTime"
+          ],
+          "items": [
+            {
+              "entity": "Shopify",
+              "transferSize": 394920,
+              "mainThreadTime": 142.6769998371601
+            },
+            {
+              "entity": "shop.app",
+              "transferSize": 47310,
+              "mainThreadTime": 11.380999982357025
+            },
+            {
+              "entity": "Google Fonts",
+              "transferSize": 57986,
+              "mainThreadTime": 0
+            }
+          ],
+          "total_items": 3
+        },
+        "trusted-types-xss": {
+          "title": "Mitigate DOM-based XSS with Trusted Types",
+          "headings": [
+            "description",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No `Content-Security-Policy` header with Trusted Types directive found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "network-rtt": {
+          "title": "Network Round Trip Times",
+          "headings": [
+            "origin",
+            "rtt"
+          ],
+          "items": [
+            {
+              "origin": "https://fonts.googleapis.com",
+              "rtt": 3.799305
+            },
+            {
+              "origin": "https://monorail-edge.shopifysvc.com",
+              "rtt": 3.6528899999999993
+            },
+            {
+              "origin": "https://shop.app",
+              "rtt": 2.9202300000000005
+            },
+            {
+              "origin": "https://error-analytics-sessions-production.shopifysvc.com",
+              "rtt": 2.919120000000001
+            },
+            {
+              "origin": "https://cdn.shopify.com",
+              "rtt": 1.2105
+            }
+          ],
+          "total_items": 9
+        },
+        "server-response-time": {
+          "title": "Initial server response time was short",
+          "headings": [
+            "url",
+            "responseTime"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "responseTime": 12
+            }
+          ],
+          "total_items": 1
+        },
+        "network-requests": {
+          "title": "Network Requests",
+          "headings": [
+            "url",
+            "protocol",
+            "networkRequestTime",
+            "networkEndTime",
+            "transferSize",
+            "resourceSize",
+            "statusCode",
+            "mimeType",
+            "resourceType"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "protocol": "h2",
+              "networkRequestTime": 1.3700000047683716,
+              "networkEndTime": 1017.3150000274181,
+              "transferSize": 91777,
+              "resourceSize": 584743,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/base.css?v=80415010869825589501791536157",
+              "protocol": "h2",
+              "networkRequestTime": 1032.238999992609,
+              "networkEndTime": 1066.266999989748,
+              "transferSize": 15416,
+              "resourceSize": 86426,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-design.css?v=131501437177022618851791536157",
+              "protocol": "h2",
+              "networkRequestTime": 1032.3780000209808,
+              "networkEndTime": 1059.7619999945164,
+              "transferSize": 1876,
+              "resourceSize": 1886,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-base.css?v=60865177606801530341791536157",
+              "protocol": "h2",
+              "networkRequestTime": 1034.280000001192,
+              "networkEndTime": 1061.2829999923706,
+              "transferSize": 2699,
+              "resourceSize": 6312,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-menu.css?v=36636760031302663031791536157",
+              "protocol": "h2",
+              "networkRequestTime": 1034.58599999547,
+              "networkEndTime": 1130.1110000312328,
+              "transferSize": 2219,
+              "resourceSize": 3320,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            }
+          ],
+          "total_items": 350
+        }
+      },
+      "failed_audits": [
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "4.4\u00a0s",
+          "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "display": "",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as `offsetWidth`) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations."
+        },
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "display": "",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "display": "",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast)."
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "display": "",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch)."
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": "",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load."
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 150\u00a0ms",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path."
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "display": "",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.17,
+          "display": "11.9\u00a0s",
+          "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/)."
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.25,
+          "display": "5.1\u00a0s",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)"
+        },
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.43,
+          "display": "3.2\u00a0s",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/)."
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 304\u00a0KiB",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "display": "Est savings of 16\u00a0KiB",
+          "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache)."
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.68,
+          "display": "190\u00a0ms",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/)."
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.73,
+          "display": "4.5\u00a0s",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/)."
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.84,
+          "display": "250\u00a0ms",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/)."
+        }
+      ],
+      "passed_audits_count": 86,
+      "seo_audits": [
+        {
+          "id": "is-crawlable",
+          "title": "Page isn\u2019t blocked from indexing",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "http-status-code",
+          "title": "Page has successful HTTP status code",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "link-text",
+          "title": "Links have descriptive text",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "crawlable-anchors",
+          "title": "Links are crawlable",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is valid",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements have `[alt]` attributes",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "hreflang",
+          "title": "Document has a valid `hreflang`",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "canonical",
+          "title": "Document has a valid `rel=canonical`",
+          "score": 1,
+          "pass": true
+        }
+      ],
+      "accessibility_audits": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "display": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "display": ""
+        }
+      ],
+      "analysis_timestamp": "2026-10-21T18:51:50.406Z",
+      "error": null
+    },
+    "desktop": {
+      "url": "https://tanterie.nl/collections/bunzlau",
+      "strategy": "desktop",
+      "lighthouse_scores": {
+        "performance": 87,
+        "accessibility": 94,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "lab_metrics": {
+        "first-contentful-paint": {
+          "value": 732.0113162888697,
+          "display": "0.7\u00a0s",
+          "score": 0.97
+        },
+        "largest-contentful-paint": {
+          "value": 1101.0092925984275,
+          "display": "1.1\u00a0s",
+          "score": 0.92
+        },
+        "total-blocking-time": {
+          "value": 222,
+          "display": "220\u00a0ms",
+          "score": 0.75
+        },
+        "cumulative-layout-shift": {
+          "value": 0.000161049927600802,
+          "display": "0",
+          "score": 1
+        },
+        "speed-index": {
+          "value": 1887.123831849579,
+          "display": "1.9\u00a0s",
+          "score": 0.67
+        },
+        "interactive": {
+          "value": 2386.385450225465,
+          "display": "2.4\u00a0s",
+          "score": 0.91
+        }
+      },
+      "field_metrics": {},
+      "opportunities": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "savings_ms": 40,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "display": "Total size was 2,800\u00a0KiB",
+          "score": 0.5,
+          "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn how to reduce payload sizes](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/)."
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "display": "3.9\u00a0s",
+          "score": 0,
+          "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+        },
+        {
+          "id": "bootup-time",
+          "title": "JavaScript execution time",
+          "display": "0.8\u00a0s",
+          "score": 1,
+          "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/)."
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "display": "1 layout shift found",
+          "score": 1,
+          "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)"
+        },
+        {
+          "id": "long-tasks",
+          "title": "Avoid long main-thread tasks",
+          "display": "9 long tasks found",
+          "score": 1,
+          "description": "Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. [Learn how to avoid long main-thread tasks](https://web.dev/articles/optimize-long-tasks)"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "display": "",
+          "score": 1,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "display": "Est savings of 63\u00a0KiB",
+          "score": 0,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+        }
+      ],
+      "audit_details": {
+        "trusted-types-xss": {
+          "title": "Mitigate DOM-based XSS with Trusted Types",
+          "headings": [
+            "description",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No `Content-Security-Policy` header with Trusted Types directive found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "errors-in-console": {
+          "title": "Browser errors were logged to the console",
+          "headings": [
+            "sourceLocation",
+            "description"
+          ],
+          "items": [
+            {
+              "sourceLocation": "https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/checkout-DTJs6qRt.js",
+              "description": "Error producing monorail event MonorailUnableToProduceError: Error producing to the Monorail Edge. Response received: {\"status\":400,\"message\":\"Invalid agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Chrome-Lighthouse\"}\n    at U.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/AnalyticsProvider-B8WHd08-.js:2:7011)"
+            },
+            {
+              "sourceLocation": "https://otlp-http-production.shopifysvc.com/v1/metrics",
+              "description": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT"
+            },
+            {
+              "sourceLocation": "https://otlp-http-production.shopifysvc.com/v1/logs",
+              "description": "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT"
+            },
+            {
+              "sourceLocation": "https://monorail-edge.shopifysvc.com/v1/produce",
+              "description": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+            },
+            {
+              "sourceLocation": "https://monorail-edge.shopifysvc.com/v1/produce",
+              "description": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+            }
+          ],
+          "total_items": 8
+        },
+        "csp-xss": {
+          "title": "Ensure CSP is effective against XSS attacks",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "`script-src` directive is missing. This can allow the execution of unsafe scripts.",
+              "directive": "script-src",
+              "severity": "High"
+            },
+            {
+              "description": "Missing `object-src` allows the injection of plugins that execute unsafe scripts. Consider setting `object-src` to `'none'` if you can.",
+              "directive": "object-src",
+              "severity": "High"
+            }
+          ],
+          "total_items": 2
+        },
+        "non-composited-animations": {
+          "title": "Avoid non-composited animations",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'path': '1,HTML,1,BODY,1,DIV,2,HEADER,0,HEADER-COMPONENT,2,DIV,0,DIV,2,DIV,3,HEADER-ACTIONS,0,DIV,1,SHOPIFY-ACCOUNT,a,#document-fragment,0,DIV,0,DIV,1,DIALOG,0,DIV,1,DIV,0,DIV,0,SHOPIFY-LOGIN-FORM-LO"
+            },
+            {
+              "node": "{'boundingRect': {'top': 15, 'right': 1010, 'left': 330, 'height': 12, 'bottom': 27, 'width': 680}, 'lhId': 'page-40-SLIDESHOW-SLIDE', 'nodeLabel': 'aside.announcement-bar > announcement-bar-component"
+            },
+            {
+              "node": "{'type': 'node', 'path': '1,HTML,1,BODY,1,DIV,1,DIV,2,ASIDE,0,ANNOUNCEMENT-BAR-COMPONENT,1,DIV,1,SLIDESHOW-SLIDE', 'selector': 'aside.announcement-bar > announcement-bar-component.announcement-bar__sl"
+            }
+          ],
+          "total_items": 3
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedMs"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/compiled_assets/styles.css?v=8026134315338458671791536183",
+              "totalBytes": 43540,
+              "wastedMs": 241
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/view-transitions.js?v=7106414069516106341791536157",
+              "totalBytes": 1956
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/overflow-list.css?v=16727044177065489451791536157",
+              "totalBytes": 1712,
+              "wastedMs": 121
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/base.css?v=80415010869825589501791536157",
+              "totalBytes": 15420,
+              "wastedMs": 121
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-base.css?v=60865177606801530341791536157",
+              "totalBytes": 2701,
+              "wastedMs": 121
+            }
+          ],
+          "total_items": 8
+        },
+        "color-contrast": {
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,10,SECTION,0,DIV,0,DIV,0,P', 'type': 'node', 'snippet': '<p class=\"trbz-brand-label\">', 'explanation': 'Fix any of the following:\\n  Element has insufficient"
+            },
+            {
+              "node": "{'explanation': 'Fix any of the following:\\n  Element has insufficient color contrast of 3.83 (foreground color: #787a6d, background color: #eef1ea, font size: 9.0pt (12px), font weight: normal). Expe"
+            },
+            {
+              "node": "{'selector': 'div.utilities > div.footer-utilities__group-copyright > span.footer-utilities__text > a', 'lhId': '1-55-A', 'boundingRect': {'bottom': 9620, 'right': 139, 'width': 53, 'height': 15, 'lef"
+            }
+          ],
+          "total_items": 3
+        },
+        "long-tasks": {
+          "title": "Avoid long main-thread tasks",
+          "headings": [
+            "url",
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/view-transitions.js?v=7106414069516106341791536157",
+              "startTime": 1080.001822078123,
+              "duration": 168
+            },
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "startTime": 521.001822078123,
+              "duration": 129
+            },
+            {
+              "url": "https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/checkout-DTJs6qRt.js",
+              "startTime": 2607.053843708513,
+              "duration": 100
+            },
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "startTime": 440.00182207812315,
+              "duration": 80.99999999999989
+            },
+            {
+              "url": "https://cdn.shopify.com/storefront/web-components/account.js",
+              "startTime": 1001.001822078123,
+              "duration": 79
+            }
+          ],
+          "total_items": 9
+        },
+        "third-parties-insight": {
+          "title": "3rd parties",
+          "headings": [
+            "entity",
+            "transferSize",
+            "mainThreadTime"
+          ],
+          "items": [
+            {
+              "entity": "Shopify",
+              "transferSize": 391739,
+              "mainThreadTime": 116.9900000244379
+            },
+            {
+              "entity": "shop.app",
+              "transferSize": 47191,
+              "mainThreadTime": 6.6859999895095825
+            },
+            {
+              "entity": "Google Fonts",
+              "transferSize": 57985,
+              "mainThreadTime": 0
+            }
+          ],
+          "total_items": 3
+        },
+        "viewport-insight": {
+          "title": "Optimize viewport for mobile",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'nodeLabel': 'head > meta', 'boundingRect': {'top': 0, 'left': 0, 'right': 0, 'bottom': 0, 'height': 0, 'width': 0}, 'type': 'node', 'path': '1,HTML,0,HEAD,5,META', 'snippet': '<meta name=\"viewport\" "
+            }
+          ],
+          "total_items": 1
+        },
+        "main-thread-tasks": {
+          "title": "Tasks",
+          "headings": [
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "startTime": 817.73,
+              "duration": 26.43
+            },
+            {
+              "startTime": 845.932,
+              "duration": 11.334
+            },
+            {
+              "startTime": 857.333,
+              "duration": 6.869
+            },
+            {
+              "startTime": 920.48,
+              "duration": 6.779
+            },
+            {
+              "startTime": 930.06,
+              "duration": 14.511
+            }
+          ],
+          "total_items": 123
+        },
+        "js-libraries": {
+          "title": "Detected JavaScript libraries",
+          "headings": [
+            "name",
+            "version"
+          ],
+          "items": [
+            {
+              "name": "Shopify"
+            },
+            {
+              "name": "core-js",
+              "version": "core-js-global@2.6.12"
+            }
+          ],
+          "total_items": 2
+        },
+        "origin-isolation": {
+          "title": "Ensure proper origin isolation with COOP",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No COOP header found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "headings": [
+            "node",
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "node": "{'snippet': '<img src=\"//tanterie.nl/cdn/shop/files/1086_0884.jpg?v=1780731080&amp;width=500\" alt=\"Ontbijtbord \u00d8: 20 cm - Lace | Bunzlau Castle \u2013 Bunzlau Castle bij Tante Ri\u2026\" loading=\"lazy\" width=\"50",
+              "url": "https://tanterie.nl/cdn/shop/files/1086_0884.jpg?v=1780731080&width=500",
+              "totalBytes": 49662,
+              "wastedBytes": 37869
+            },
+            {
+              "node": "{'type': 'node', 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,5,ARTICLE,0,A,0,IMG', 'selector': 'div.trbz-grid > article.trbz-card > a.trbz-card-img > img', 'nodeLabel': 'Dinerbord \u00d8: 25,5 cm",
+              "url": "https://tanterie.nl/cdn/shop/files/1257_0071.jpg?v=1780772966&width=500",
+              "totalBytes": 43174,
+              "wastedBytes": 31381
+            },
+            {
+              "node": "{'snippet': '<img src=\"//tanterie.nl/cdn/shop/files/1261_0375e.jpg?v=1780732672&amp;width=500\" alt=\"Gebaksbord \u00d8: 16 cm - Blue Valentine | Bunzlau Castle \u2013 Bunzlau Castle bij\u2026\" loading=\"lazy\" width=\"5",
+              "url": "https://tanterie.nl/cdn/shop/files/1261_0375e.jpg?v=1780732672&width=500",
+              "totalBytes": 36384,
+              "wastedBytes": 26086
+            },
+            {
+              "node": "{'snippet': '<img src=\"//tanterie.nl/cdn/shop/files/1266_0071.jpg?v=1780773497&amp;width=500\" alt=\"Bord \u00d8: 23,5 cm - Blue Eyes | Bunzlau Castle \u2013 Bunzlau Castle bij Tante Ri\u2026\" loading=\"lazy\" width=\"50",
+              "url": "https://tanterie.nl/cdn/shop/files/1266_0071.jpg?v=1780773497&width=500",
+              "totalBytes": 34430,
+              "wastedBytes": 24685
+            },
+            {
+              "node": "{'snippet': '<img src=\"//tanterie.nl/cdn/shop/files/1073_0884.jpg?v=1780778968&amp;width=500\" alt=\"Boeren Mok 500 ml - Lace | Bunzlau Castle \u2013 Bunzlau Castle bij Tante Rie B\u2026\" loading=\"lazy\" width=\"50",
+              "url": "https://tanterie.nl/cdn/shop/files/1073_0884.jpg?v=1780778968&width=500",
+              "totalBytes": 34116,
+              "wastedBytes": 24460
+            }
+          ],
+          "total_items": 28
+        },
+        "list": {
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'lhId': '1-157-UL', 'snippet': '<ul part=\"list\" style=\"height: 21.7188px; flex-wrap: wrap; counter-reset: overflow-count 0;\">', 'nodeLabel': 'ul', 'selector': 'ul', 'path': '1,HTML,1,BODY,1,DIV,2,HEA"
+            }
+          ],
+          "total_items": 1
+        },
+        "server-response-time": {
+          "title": "Initial server response time was short",
+          "headings": [
+            "url",
+            "responseTime"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "responseTime": 13
+            }
+          ],
+          "total_items": 1
+        },
+        "network-requests": {
+          "title": "Network Requests",
+          "headings": [
+            "url",
+            "protocol",
+            "networkRequestTime",
+            "networkEndTime",
+            "transferSize",
+            "resourceSize",
+            "statusCode",
+            "mimeType",
+            "resourceType"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "protocol": "h2",
+              "networkRequestTime": 2.849000006914139,
+              "networkEndTime": 813.9409999996424,
+              "transferSize": 91780,
+              "resourceSize": 584743,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/base.css?v=80415010869825589501791536157",
+              "protocol": "h2",
+              "networkRequestTime": 822.9990000277758,
+              "networkEndTime": 908.7970000058413,
+              "transferSize": 15420,
+              "resourceSize": 86426,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-design.css?v=131501437177022618851791536157",
+              "protocol": "h2",
+              "networkRequestTime": 823.6110000014305,
+              "networkEndTime": 902.4510000050068,
+              "transferSize": 1878,
+              "resourceSize": 1886,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-base.css?v=60865177606801530341791536157",
+              "protocol": "h2",
+              "networkRequestTime": 823.652999997139,
+              "networkEndTime": 904.6880000084639,
+              "transferSize": 2701,
+              "resourceSize": 6312,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/tr-menu.css?v=36636760031302663031791536157",
+              "protocol": "h2",
+              "networkRequestTime": 823.820999994874,
+              "networkEndTime": 901.5610000044107,
+              "transferSize": 2223,
+              "resourceSize": 3320,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet"
+            }
+          ],
+          "total_items": 388
+        },
+        "bootup-time": {
+          "title": "JavaScript execution time",
+          "headings": [
+            "url",
+            "total",
+            "scripting",
+            "scriptParseCompile"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "total": 1576.9779999999998,
+              "scripting": 120.60100000000003,
+              "scriptParseCompile": 53.083999999999996
+            },
+            {
+              "url": "Unattributable",
+              "total": 763.7039999999964,
+              "scripting": 66.96400000000004,
+              "scriptParseCompile": 0
+            },
+            {
+              "url": "https://cdn.shopify.com/storefront/web-components/account.js",
+              "total": 229.30100000000004,
+              "scripting": 61.622000000000035,
+              "scriptParseCompile": 3.388
+            },
+            {
+              "url": "https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/checkout-DTJs6qRt.js",
+              "total": 143.28500000000005,
+              "scripting": 118.86700000000008,
+              "scriptParseCompile": 2.458
+            },
+            {
+              "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.register_cLcgCW8c.esm.js",
+              "total": 115.21599999999998,
+              "scripting": 75.76100000000001,
+              "scriptParseCompile": 4.726
+            }
+          ],
+          "total_items": 8
+        },
+        "baseline": {
+          "title": "Baseline Features",
+          "headings": [
+            "featureId",
+            "displayStatus",
+            "source"
+          ],
+          "items": [
+            {
+              "featureId": "https://webstatus.dev/features/referencetarget",
+              "displayStatus": "{'displayString': 'Limited Availability', 'type': 'baseline-status', 'status': 'limited'}",
+              "source": "exit-interstitial.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/link-rel-expect",
+              "displayStatus": "{'status': 'limited', 'displayString': 'Limited Availability', 'type': 'baseline-status'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/blocking-render",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Limited Availability', 'status': 'limited'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/cross-document-view-transitions",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Limited Availability', 'status': 'limited'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/autofill",
+              "displayStatus": "{'status': 'limited', 'displayString': 'Limited Availability', 'type': 'baseline-status'}",
+              "source": "https://tanterie.nl/collections/bunzlau"
+            }
+          ],
+          "total_items": 83
+        },
+        "layout-shifts": {
+          "title": "Avoid large layout shifts",
+          "headings": [
+            "node",
+            "score"
+          ],
+          "items": [
+            {
+              "node": "{'lhId': 'page-28-EM', 'boundingRect': {'left': 436, 'top': 458, 'height': 21, 'width': 45, 'right': 481, 'bottom': 479}, 'nodeLabel': 'Borne', 'type': 'node', 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DI",
+              "score": 0.000161049927600802
+            }
+          ],
+          "total_items": 1
+        },
+        "valid-source-maps": {
+          "title": "Page has valid source maps",
+          "headings": [
+            "scriptUrl",
+            "sourceMapUrl"
+          ],
+          "items": [
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_CuDhieq2.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_CuDhieq2.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_Cm2eF3Yu.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/translations/chunk.nl_Cm2eF3Yu.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-login_DcnwJy00.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-login_DcnwJy00.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-cart-sync_DnEAZHHD.nl.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.shop-cart-sync_DnEAZHHD.nl.esm.js.map"
+            },
+            {
+              "scriptUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_CskA7jDP.nl.esm.js",
+              "sourceMapUrl": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_CskA7jDP.nl.esm.js.map"
+            }
+          ],
+          "total_items": 95
+        },
+        "network-rtt": {
+          "title": "Network Round Trip Times",
+          "headings": [
+            "origin",
+            "rtt"
+          ],
+          "items": [
+            {
+              "origin": "https://monorail-edge.shopifysvc.com",
+              "rtt": 3.6899400000000013
+            },
+            {
+              "origin": "https://fonts.googleapis.com",
+              "rtt": 3.1704749999999997
+            },
+            {
+              "origin": "https://error-analytics-sessions-production.shopifysvc.com",
+              "rtt": 3.04752
+            },
+            {
+              "origin": "https://shop.app",
+              "rtt": 2.1681449999999995
+            },
+            {
+              "origin": "https://cdn.shopify.com",
+              "rtt": 0.9804599999999999
+            }
+          ],
+          "total_items": 9
+        },
+        "mainthread-work-breakdown": {
+          "title": "Minimize main-thread work",
+          "headings": [
+            "groupLabel",
+            "duration"
+          ],
+          "items": [
+            {
+              "groupLabel": "Other",
+              "duration": 1438.4159999999388
+            },
+            {
+              "groupLabel": "Style & Layout",
+              "duration": 1064.5810000000001
+            },
+            {
+              "groupLabel": "Script Evaluation",
+              "duration": 943.8719999999967
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 212.2779999999998
+            },
+            {
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 126.56700000000002
+            }
+          ],
+          "total_items": 7
+        },
+        "has-hsts": {
+          "title": "Use a strong HSTS policy",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "`max-age` is too low",
+              "directive": "max-age",
+              "severity": "High"
+            },
+            {
+              "description": "No `includeSubDomains` directive found",
+              "directive": "includeSubDomains",
+              "severity": "Medium"
+            },
+            {
+              "description": "No `preload` directive found",
+              "directive": "preload",
+              "severity": "Medium"
+            }
+          ],
+          "total_items": 3
+        },
+        "resource-summary": {
+          "title": "Resources Summary",
+          "headings": [
+            "label",
+            "requestCount",
+            "transferSize"
+          ],
+          "items": [
+            {
+              "label": "Total",
+              "requestCount": 387,
+              "transferSize": 2867357
+            },
+            {
+              "label": "Other",
+              "requestCount": 182,
+              "transferSize": 1088833
+            },
+            {
+              "label": "Image",
+              "requestCount": 31,
+              "transferSize": 678954
+            },
+            {
+              "label": "Script",
+              "requestCount": 147,
+              "transferSize": 581757
+            },
+            {
+              "label": "Font",
+              "requestCount": 8,
+              "transferSize": 294636
+            }
+          ],
+          "total_items": 9
+        },
+        "aria-allowed-role": {
+          "title": "Uses ARIA roles only on compatible elements",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'selector': 'nav.menu-list > overflow-list.overflow-menu > li.menu-list__list-item > button.menu-list__link', 'lhId': '1-0-BUTTON', 'boundingRect': {'height': 0, 'top': 0, 'left': 0, 'bottom': 0, 'wi"
+            },
+            {
+              "node": "{'nodeLabel': 'OP VOORRAAD\\nKERAMIEK\\n\\nBoeren mok 240 ml\\n\\nPrijs vanaf\\n\u20ac19,95\\nIN WINKELWAGEN', 'explanation': 'Fix any of the following:\\n  ARIA role listitem is not allowed for given element', 'l"
+            },
+            {
+              "node": "{'boundingRect': {'left': 360, 'right': 660, 'height': 448, 'bottom': 1203, 'width': 300, 'top': 755}, 'lhId': '1-2-ARTICLE', 'snippet': '<article class=\"trbz-card\" role=\"listitem\" itemscope=\"\" itemty"
+            },
+            {
+              "node": "{'lhId': '1-3-ARTICLE', 'explanation': 'Fix any of the following:\\n  ARIA role listitem is not allowed for given element', 'nodeLabel': 'OP VOORRAAD\\nKERAMIEK\\n\\nOntbijtbord \u00d8: 20 cm\\n\\nPrijs vanaf\\n\u20ac"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,3,ARTICLE', 'type': 'node', 'explanation': 'Fix any of the following:\\n  ARIA role listitem is not allowed for given element', 'nodeLabel': 'OP V"
+            }
+          ],
+          "total_items": 51
+        },
+        "total-byte-weight": {
+          "title": "Avoid enormous network payloads",
+          "headings": [
+            "url",
+            "totalBytes"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/checkout-web/assets/c1/164ad2e3.BQn9Y2Td.js",
+              "totalBytes": 190255
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/checkout-web/assets/c1/6a2fc6d6.LB9cO4cH.js",
+              "totalBytes": 92565
+            },
+            {
+              "url": "https://tanterie.nl/collections/bunzlau",
+              "totalBytes": 91780
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/checkout-web/assets/c1/4b4bc88f.cgIhnW4J.js",
+              "totalBytes": 87510
+            },
+            {
+              "url": "https://cdn.shopify.com/shop-assets/static_uploads/shoplift/GTStandard-MMedium.woff2",
+              "totalBytes": 65836
+            }
+          ],
+          "total_items": 10
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/compiled_assets/styles.css?v=8026134315338458671791536183",
+              "totalBytes": 42043,
+              "wastedBytes": 39574
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shop/t/39/assets/base.css?v=80415010869825589501791536157",
+              "totalBytes": 14104,
+              "wastedBytes": 12430
+            },
+            {
+              "url": "https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/tailwind-YmkFwXk3.css",
+              "totalBytes": 12094,
+              "wastedBytes": 12094
+            }
+          ],
+          "total_items": 3
+        },
+        "dom-size-insight": {
+          "title": "Optimize DOM size",
+          "headings": [
+            "statistic",
+            "node",
+            "value"
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": "{'type': 'numeric', 'value': 1629, 'granularity': 1}"
+            },
+            {
+              "statistic": "DOM depth",
+              "node": "{'nodeLabel': 'button.relative > span.mx-auto > svg.flex > title', 'type': 'node', 'path': '1,HTML,1,BODY,1,DIV,2,HEADER,0,HEADER-COMPONENT,2,DIV,0,DIV,2,DIV,3,HEADER-ACTIONS,0,DIV,1,SHOPIFY-ACCOUNT,a",
+              "value": "{'granularity': 1, 'value': 28, 'type': 'numeric'}"
+            },
+            {
+              "statistic": "Most children",
+              "node": "{'boundingRect': {'top': 755, 'width': 1260, 'bottom': 6825, 'height': 6070, 'right': 1300, 'left': 40}, 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV', 'type': 'node', 'snippet': '<div class=",
+              "value": "{'granularity': 1, 'type': 'numeric', 'value': 50}"
+            }
+          ],
+          "total_items": 3
+        },
+        "network-server-latency": {
+          "title": "Server Backend Latencies",
+          "headings": [
+            "origin",
+            "serverResponseTime"
+          ],
+          "items": [
+            {
+              "origin": "https://tanterie.nl",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://shop.app",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://cdn.shopify.com",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://fonts.googleapis.com",
+              "serverResponseTime": 1
+            },
+            {
+              "origin": "https://otlp-http-production.shopifysvc.com",
+              "serverResponseTime": 1
+            }
+          ],
+          "total_items": 9
+        },
+        "label-content-name-mismatch": {
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'lhId': '1-56-A', 'nodeLabel': 'OP VOORRAAD', 'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,0,ARTICLE,0,A', 'type': 'node', 'explanation': 'Fix any of the following:\\n  Text inside the elemen"
+            },
+            {
+              "node": "{'path': '1,HTML,1,BODY,3,MAIN,0,DIV,1,DIV,8,DIV,0,DIV,0,ARTICLE,1,DIV,2,DIV,1,BUTTON', 'type': 'node', 'selector': 'article.trbz-card > div.trbz-card-body > div.trbz-card-footer > button.trbz-btn-atc"
+            },
+            {
+              "node": "{'lhId': '1-58-A', 'explanation': 'Fix any of the following:\\n  Text inside the element is not included in the accessible name', 'snippet': '<a href=\"/products/gebaksbord-o-16-cm-1\" class=\"trbz-card-i"
+            },
+            {
+              "node": "{'selector': 'article.trbz-card > div.trbz-card-body > div.trbz-card-footer > button.trbz-btn-atc', 'lhId': '1-59-BUTTON', 'explanation': 'Fix any of the following:\\n  Text inside the element is not i"
+            },
+            {
+              "node": "{'selector': 'div.trbz-grid-wrap > div.trbz-grid > article.trbz-card > a.trbz-card-img', 'lhId': '1-60-A', 'boundingRect': {'right': 979, 'width': 298, 'height': 298, 'top': 756, 'bottom': 1054, 'left"
+            }
+          ],
+          "total_items": 101
+        },
+        "identical-links-same-purpose": {
+          "title": "Identical links have the same purpose.",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'selector': 'nav.menu-list > overflow-list.overflow-menu > li.menu-list__list-item > a.menu-list__link', 'snippet': '<a href=\"/collections/thee-accessoires\" data-skip-node-update=\"true\" class=\"menu-l"
+            }
+          ],
+          "total_items": 1
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "headings": [
+            "url",
+            "cacheLifetimeMs",
+            "totalBytes"
+          ],
+          "items": [
+            {
+              "url": "https://shop.app/pay/assets/sprite.svg",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 9766
+            },
+            {
+              "url": "https://tanterie.nl/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css",
+              "cacheLifetimeMs": 300000,
+              "totalBytes": 2881
+            },
+            {
+              "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.shop-login.esm.js",
+              "cacheLifetimeMs": 1800000,
+              "totalBytes": 1735
+            },
+            {
+              "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.nl.esm.js",
+              "cacheLifetimeMs": 1800000,
+              "totalBytes": 1553
+            },
+            {
+              "url": "https://shop.app/checkouts/internal/preloads.js?locale=nl-NL&shop_id=99962749192",
+              "cacheLifetimeMs": 60000,
+              "totalBytes": 716
+            }
+          ],
+          "total_items": 5
+        },
+        "user-timings": {
+          "title": "User Timing marks and measures",
+          "headings": [
+            "name",
+            "timingType",
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "name": "shopify.content_for_header.start",
+              "timingType": "Mark",
+              "startTime": 932.875
+            },
+            {
+              "name": "shopify.content_for_header.end",
+              "timingType": "Mark",
+              "startTime": 983.561
+            }
+          ],
+          "total_items": 2
+        }
+      },
+      "failed_audits": [
+        {
+          "id": "errors-in-console",
+          "title": "Browser errors were logged to the console",
+          "score": 0,
+          "display": "",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "display": "",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast)."
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "display": "",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as `offsetWidth`) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations."
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 421\u00a0KiB",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)"
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "score": 0,
+          "display": "",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.13/list)."
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": "",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load."
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0,
+          "display": "",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "3.9\u00a0s",
+          "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "display": "",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch)."
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0.5,
+          "display": "",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path."
+        },
+        {
+          "id": "total-byte-weight",
+          "title": "Avoid enormous network payloads",
+          "score": 0.5,
+          "display": "Total size was 2,800\u00a0KiB",
+          "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn how to reduce payload sizes](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/)."
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "display": "Est savings of 16\u00a0KiB",
+          "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache)."
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.67,
+          "display": "1.9\u00a0s",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/)."
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.75,
+          "display": "220\u00a0ms",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/)."
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.78,
+          "display": "170\u00a0ms",
+          "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/)."
+        }
+      ],
+      "passed_audits_count": 90,
+      "seo_audits": [
+        {
+          "id": "is-crawlable",
+          "title": "Page isn\u2019t blocked from indexing",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "http-status-code",
+          "title": "Page has successful HTTP status code",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "link-text",
+          "title": "Links have descriptive text",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "crawlable-anchors",
+          "title": "Links are crawlable",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is valid",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements have `[alt]` attributes",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "hreflang",
+          "title": "Document has a valid `hreflang`",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "canonical",
+          "title": "Document has a valid `rel=canonical`",
+          "score": 1,
+          "pass": true
+        }
+      ],
+      "accessibility_audits": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "display": ""
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "score": 0,
+          "display": ""
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "display": ""
+        }
+      ],
+      "analysis_timestamp": "2026-10-21T18:52:41.468Z",
+      "error": null
+    }
+  },
+  "crux": {
+    "target": "https://tanterie.nl/collections/bunzlau",
+    "metrics": {},
+    "collection_period": null,
+    "form_factor": "ALL",
+    "error": "CrUX API request failed: 403 Client Error: Forbidden for url: https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=VERWIJDERD"
+  },
+  "error": null
+}

@@ -1,0 +1,67 @@
+diff -u a/blocks/_announcement.liquid b/blocks/_announcement.liquid
+--- a/blocks/_announcement.liquid
++++ b/blocks/_announcement.liquid
+@@ -4,6 +4,18 @@
+ {%- assign plain_text = block_settings.text | strip_newlines | strip_html | strip -%}
+ {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
+ 
++{%- assign _link = block_settings.link -%}
++{%- comment -%} Afhaal-merken (template blond of bunzlau): geen verzendregels tonen. {%- endcomment -%}
++{%- if template.suffix == 'blond' or template.suffix == 'bunzlau' -%}
++  {%- if _link != blank -%}{%- assign _link = '/pages/theewinkel-borne-twente' -%}{%- endif -%}
++  {%- assign _lower = plain_text | downcase -%}
++  {%- if _lower contains 'verzendkosten' -%}
++    {%- assign plain_text = 'Bakkerssteeg 6 in Borne, dinsdag tot en met zaterdag 10:00 tot 17:00' -%}
++  {%- elsif _lower contains 'verzending' -%}
++    {%- assign plain_text = 'Alleen afhalen in Borne' -%}
++  {%- endif -%}
++{%- endif -%}
++
+ {%- unless plain_text == '' -%}
+   <slideshow-slide
+     ref="slides[]"
+@@ -27,16 +39,16 @@
+     aria-hidden="{% if block_index == 0 %}false{% else %}true{% endif %}"
+   >
+     <p class="announcement-bar__text">
+-      {{ block.settings.text }}
++      {{ plain_text }}
+     </p>
+ 
+-    {% if block_settings.link != blank %}
++    {% if _link != blank %}
+       <a
+         class="announcement-bar__link"
+-        href="{{ block_settings.link }}"
++        href="{{ _link }}"
+       >
+         <span class="visually-hidden">
+-          {{ block_settings.text | strip_html }}
++          {{ plain_text }}
+         </span>
+       </a>
+     {% endif %}
+diff -u a/sections/tr-product-blond.liquid b/sections/tr-product-blond.liquid
+--- a/sections/tr-product-blond.liquid
++++ b/sections/tr-product-blond.liquid
+@@ -601,7 +601,7 @@
+           </button>
+           <div class="trbap-accordion-body" role="region">
+             <div class="trbap-accordion-body-inner">
+-              <p><strong>Tante Rie verzendt niet.</strong> Je haalt alles op in de winkel.</p>
++              <p><strong>Dit product versturen we niet.</strong> {% if _available %}Je bestelt online en haalt het op in onze winkel in Borne.{% else %}Je stuurt een bestelverzoek en haalt het product daarna op in onze winkel in Borne.{% endif %}</p>
+               <p><strong>Adres:</strong> Bakkerssteeg 6, 7622 GX Borne (Twente)</p>
+               <p><strong>Openingstijden:</strong><br>
+                 Dinsdag t/m zaterdag &nbsp;10:00 – 17:00 uur<br>
+diff -u a/sections/tr-product-bunzlau.liquid b/sections/tr-product-bunzlau.liquid
+--- a/sections/tr-product-bunzlau.liquid
++++ b/sections/tr-product-bunzlau.liquid
+@@ -451,7 +451,7 @@
+         <div class="trbzp-accordion-item">
+           <button type="button" class="trbzp-accordion-trigger" aria-expanded="false" data-trbzp-acc>Ophaalinformatie<span class="trbzp-chevron">▾</span></button>
+           <div class="trbzp-accordion-body"><div class="trbzp-accordion-body-inner">
+-            <p><strong>Tante Rie verzendt niet.</strong> Je haalt alles op in de winkel.</p>
++            <p><strong>Dit product versturen we niet.</strong> {% if _available %}Je bestelt online en haalt het op in onze winkel in Borne.{% else %}Je stuurt een bestelverzoek en haalt het product daarna op in onze winkel in Borne.{% endif %}</p>
+             <p><strong>Adres:</strong> Bakkerssteeg 6, 7622 GX Borne</p>
+             <p><strong>Openingstijden:</strong><br>Di t/m za 10:00–17:00<br>Ma &amp; zo gesloten</p>
+             {%- unless _available -%}<p><strong>Op bestelling:</strong> Altijd te bestellen. Na je verzoek spreken we een ophaaldatum af.</p>{%- endunless -%}

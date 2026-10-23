@@ -1,0 +1,4866 @@
+{
+ "property": "sc-domain:tanterie.nl",
+ "total": 14,
+ "results": [
+  {
+   "url": "https://tanterie.nl/",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-21T02:01:42Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/products/mooie-dromen-bio",
+     "http://tanterie.nl/",
+     "https://tanterie.nl/cadeaus-en-lekkers/"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/",
+    "user_canonical": "https://tanterie.nl/",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "FAIL",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Droom der Zuidzee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Citroen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kir Royal",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Beste van Borne",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Geluksthee",
+        "issues": [
+         {
+          "issueMessage": "Either \"offers\", \"review\", or \"aggregateRating\" should be specified",
+          "severity": "ERROR"
+         }
+        ]
+       },
+       {
+        "name": "Ovenschaal Vierkant 1550 ml",
+        "issues": [
+         {
+          "issueMessage": "Either \"offers\", \"review\", or \"aggregateRating\" should be specified",
+          "severity": "ERROR"
+         }
+        ]
+       },
+       {
+        "name": "Boeren mok 240 ml",
+        "issues": [
+         {
+          "issueMessage": "Either \"offers\", \"review\", or \"aggregateRating\" should be specified",
+          "severity": "ERROR"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Rond",
+        "issues": [
+         {
+          "issueMessage": "Either \"offers\", \"review\", or \"aggregateRating\" should be specified",
+          "severity": "ERROR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Droom der Zuidzee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Citroen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kir Royal",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Beste van Borne",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Review snippets",
+      "items": [
+       {
+        "name": "Theetip Rond",
+        "issues": []
+       },
+       {
+        "name": "Boeren mok 240 ml",
+        "issues": []
+       },
+       {
+        "name": "Ovenschaal Vierkant 1550 ml",
+        "issues": []
+       },
+       {
+        "name": "Geluksthee",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://webshop.tanterie.nl/",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "NEUTRAL",
+    "coverage_state": "Page with redirect",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-17T12:18:09Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/",
+     "https://webshop.tanterie.nl/sitemap_products_1.xml?from=10587285455112&to=10715844018440"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/",
+    "user_canonical": "https://tanterie.nl/",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": null,
+   "verdict": "NEUTRAL",
+   "error": null
+  },
+  {
+   "url": "http://www.tanterie.nl/",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "NEUTRAL",
+    "coverage_state": "Page with redirect",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-21T02:01:42Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://www.goudengids.nl/nl/zoeken/zwilling/57/",
+     "https://keukenprinsesblog.wordpress.com/2016/06/26/blog-bunzlau/",
+     "http://drimble.nl/bedrijf/borne/28995244/tante-rie.html"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/",
+    "user_canonical": "https://tanterie.nl/",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": null,
+   "verdict": "NEUTRAL",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/collections/bunzlau",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-18T18:30:19Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/products/kaart-maps-gekleurde-kaarten?variant=58173600825608",
+     "https://tanterie.nl/pages/cold-brew-thee"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/collections/bunzlau",
+    "user_canonical": "https://tanterie.nl/collections/bunzlau",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Boeren mok 240 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Dinerbord Ø: 25,5 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rijstkom 500 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Mok Tumbler 220 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rijstkom 300 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Tulp mok 330 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melk Mok 230 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rechte mok 250 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Boeren Mok 500 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 450 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Boeren mok 370 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Gebaksbord Ø: 16 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bord Ø: 23,5 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rijstkom 600 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theelepel",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Mok Tumbler 100 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melkkan 180 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ovale schaal",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 250 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Kom Wild Flowers Ø: 15 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Bord Wild Flowers Ø: 25 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bewaarblik Rechthoekig Flowerbed 19x15 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ontbijtbord Ø: 20 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theelepel Hart",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rechte mok 160 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Suikerpot 200 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Theepot",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Diep bord Ø: 23,5 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 150 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Gewelfde Kom 220 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ramekin kom 190 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ovenschaal Vierkant 1550 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Waterglas Summer Breeze 300 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Petit Four ø 12,3 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Bloem",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Kom Fleur Fountain Ø: 15 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Bord Dragonfly Garden Ø: 25 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Hart",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Schotel Rechthoek",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 800 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ovenschaal met Handvaten 1200 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Soepkom 360 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rode wijnglas Summer Breeze 460 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Soepkom 440 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Rond",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Serveerschaal 100 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rode wijnglas Bubble 460 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Waterglas Bubble 300 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Bord Blooming Ø: 25 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Witte wijnglas Bubble 350 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Boeren mok 240 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Dinerbord Ø: 25,5 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rijstkom 500 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Mok Tumbler 220 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rijstkom 300 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Tulp mok 330 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melk Mok 230 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rechte mok 250 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Boeren Mok 500 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 450 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Boeren mok 370 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Gebaksbord Ø: 16 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bord Ø: 23,5 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rijstkom 600 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theelepel",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Mok Tumbler 100 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melkkan 180 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ovale schaal",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 250 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Kom Wild Flowers Ø: 15 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Bord Wild Flowers Ø: 25 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bewaarblik Rechthoekig Flowerbed 19x15 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ontbijtbord Ø: 20 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theelepel Hart",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rechte mok 160 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Suikerpot 200 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Theepot",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Diep bord Ø: 23,5 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 150 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Gewelfde Kom 220 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ramekin kom 190 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ovenschaal Vierkant 1550 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Waterglas Summer Breeze 300 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Petit Four ø 12,3 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Bloem",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Kom Fleur Fountain Ø: 15 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Bord Dragonfly Garden Ø: 25 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Hart",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Schotel Rechthoek",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kom 800 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Ovenschaal met Handvaten 1200 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Soepkom 360 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rode wijnglas Summer Breeze 460 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Soepkom 440 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Theetip Rond",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Serveerschaal 100 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Rode wijnglas Bubble 460 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Waterglas Bubble 300 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Melamine Bord Blooming Ø: 25 cm",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Witte wijnglas Bubble 350 ml",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/collections/thee",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-19T14:25:51Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://webshop.tanterie.nl/collections/thee",
+     "https://tanterie.nl/collections/blond",
+     "https://tanterie.nl/pages/veelgestelde-vragen"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/collections/thee",
+    "user_canonical": "https://tanterie.nl/collections/thee",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/collections/groene-thee",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-12T01:19:54Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/products/kaart-maps-gekleurde-kaarten?variant=58173600825608",
+     "https://tanterie.nl/pages/privacy-policy"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/collections/groene-thee",
+    "user_canonical": "https://tanterie.nl/collections/groene-thee",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Kir Royal",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Citrus Gember",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sinas Gember",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Oud Borne",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "China Jasmijn",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sunny White",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Cactus Vijg",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Zonnestralen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Perzik",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Japan Sencha",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "China Sencha",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Citroen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Hartverwarmer",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Mams Thee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Italiaanse Earl Grey",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Earl Grey",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Heanig An",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Chai",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sweet Love",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Alle Tijd",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Opkikkertje",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Cranberry",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "1001 Nacht",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Dorset Thee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Meloen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Spanjaards thee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Tropisch goud",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sunset sencha",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Elfjesthee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Dadel Gember",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sweet Roses",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Green de Cassis",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "‘N Beetje Bijzonder",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bornse Boris",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bonjour!",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Exotisch Groen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Marocco Mint",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Morgenbloesem",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Vanille",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Vriendschap",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kerstgroetjes",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Zoete Verleiding",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Kir Royal",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Citrus Gember",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sinas Gember",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Oud Borne",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "China Jasmijn",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sunny White",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Cactus Vijg",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Zonnestralen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Perzik",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Japan Sencha",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "China Sencha",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Citroen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Hartverwarmer",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Mams Thee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Italiaanse Earl Grey",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Earl Grey",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Heanig An",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Chai",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sweet Love",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Alle Tijd",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Opkikkertje",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Cranberry",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "1001 Nacht",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Dorset Thee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Meloen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Spanjaards thee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Tropisch goud",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sunset sencha",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Elfjesthee",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Dadel Gember",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Sweet Roses",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Green de Cassis",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "‘N Beetje Bijzonder",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bornse Boris",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Bonjour!",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Exotisch Groen",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Marocco Mint",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Morgenbloesem",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Groene Vanille",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Vriendschap",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Kerstgroetjes",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       },
+       {
+        "name": "Zoete Verleiding",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"availability\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/products/luminlique-3-opzetters",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-07-13T17:02:24Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/sitemap_products_1.xml?from=10587285455112&to=12059685880072"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/products/luminlique-3-opzetters",
+    "user_canonical": "https://tanterie.nl/products/luminlique-3-opzetters",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "FAIL",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Luminlique klein 3 opzetters",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Luminlique klein 3 opzetters",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"image\"",
+          "severity": "ERROR"
+         },
+         {
+          "issueMessage": "Missing field \"description\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     },
+     {
+      "type": "Review snippets",
+      "items": [
+       {
+        "name": "Tante Rie",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/products/rice-j",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-15T14:12:16Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://webshop.tanterie.nl/products/rice-j"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/products/rice-j",
+    "user_canonical": "https://tanterie.nl/products/rice-j",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "FAIL",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Rice J",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Rice J",
+        "issues": [
+         {
+          "issueMessage": "Duplicate field \"brand\"",
+          "severity": "ERROR"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"returnShippingFeesAmount\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       },
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/products/exotic-punch",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-20T01:22:41Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://webshop.tanterie.nl/products/exotic-punch",
+     "https://tanterie.nl/pages/cold-brew-thee"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/products/exotic-punch",
+    "user_canonical": "https://tanterie.nl/products/exotic-punch",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Exotic Punch",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Exotic Punch",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/products/earl-grey",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-10T15:52:23Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://webshop.tanterie.nl/products/earl-grey"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/products/earl-grey",
+    "user_canonical": "https://tanterie.nl/products/earl-grey",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Earl Grey",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"review\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"aggregateRating\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Earl Grey",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/products/beste-van-borne",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-18T08:57:33Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/products/teeli-flip-xs-theefilter?variant=57899750686984",
+     "https://webshop.tanterie.nl/products/beste-van-borne",
+     "https://tanterie.nl/products/kamille"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/products/beste-van-borne",
+    "user_canonical": "https://tanterie.nl/products/beste-van-borne",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+     {
+      "type": "Product snippets",
+      "items": [
+       {
+        "name": "Beste van Borne",
+        "issues": []
+       }
+      ]
+     },
+     {
+      "type": "Merchant listings",
+      "items": [
+       {
+        "name": "Beste van Borne",
+        "issues": [
+         {
+          "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+          "severity": "WARNING"
+         },
+         {
+          "issueMessage": "Missing field \"shippingDetails\"",
+          "severity": "WARNING"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "Breadcrumbs",
+      "items": [
+       {
+        "name": "Unnamed item",
+        "issues": []
+       }
+      ]
+     },
+     {
+      "type": "Review snippets",
+      "items": [
+       {
+        "name": "Beste van Borne",
+        "issues": []
+       }
+      ]
+     }
+    ]
+   },
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/pages/serviezen",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-18T04:20:21Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://webshop.tanterie.nl/sitemap_pages_1.xml?from=157979967752&to=166707790088"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/pages/serviezen",
+    "user_canonical": "https://tanterie.nl/pages/serviezen",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": null,
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://tanterie.nl/blogs/nieuws/tijd-voor-ijsthee",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-03T14:57:22Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+     "https://tanterie.nl/sitemap_blogs_1.xml",
+     "https://tanterie.nl/blogs/nieuws"
+    ]
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/blogs/nieuws/tijd-voor-ijsthee",
+    "user_canonical": "https://tanterie.nl/blogs/nieuws/tijd-voor-ijsthee",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": null,
+   "verdict": "PASS",
+   "error": null
+  },
+  {
+   "url": "https://webshop.tanterie.nl/products/zoethout",
+   "property": "sc-domain:tanterie.nl",
+   "index_status": {
+    "verdict": "NEUTRAL",
+    "coverage_state": "Page with redirect",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-07-28T07:23:18Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": []
+   },
+   "crawl_info": null,
+   "canonical": {
+    "google_canonical": "https://tanterie.nl/products/zoethout",
+    "user_canonical": "https://tanterie.nl/products/zoethout",
+    "match": true
+   },
+   "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+   },
+   "rich_results": null,
+   "verdict": "NEUTRAL",
+   "error": null
+  }
+ ],
+ "summary": {
+  "pass": 11,
+  "fail": 0,
+  "neutral": 3,
+  "error": 0
+ },
+ "error": null
+}

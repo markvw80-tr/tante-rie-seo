@@ -1,0 +1,88 @@
+{
+  "shopifyqlQuery": {
+    "tableData": {
+      "columns": [
+        {
+          "name": "referrer_source",
+          "dataType": "STRING"
+        },
+        {
+          "name": "referrer_name",
+          "dataType": "STRING"
+        },
+        {
+          "name": "sessions",
+          "dataType": "INTEGER"
+        }
+      ],
+      "rows": [
+        {
+          "referrer_source": "direct",
+          "referrer_name": null,
+          "sessions": "443"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "google",
+          "sessions": "229"
+        },
+        {
+          "referrer_source": "social",
+          "referrer_name": "instagram",
+          "sessions": "17"
+        },
+        {
+          "referrer_source": "social",
+          "referrer_name": "facebook",
+          "sessions": "17"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "bing",
+          "sessions": "10"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "shopify",
+          "sessions": "2"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "ecosia",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "leafplk",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "duckduckgo",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "search",
+          "referrer_name": "yahoo!",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "startpagina",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "wnnkd",
+          "sessions": "1"
+        },
+        {
+          "referrer_source": "unknown",
+          "referrer_name": "webdig",
+          "sessions": "1"
+        }
+      ]
+    },
+    "parseErrors": []
+  }
+}

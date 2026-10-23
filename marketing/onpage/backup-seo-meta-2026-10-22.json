@@ -1,0 +1,17 @@
+{
+  "gemaakt": "2026-10-22",
+  "doel": "Backup voor V40 (vijf product-meta's), V12 (SEO van /collections/servies) en V45 (type en tag melamine). Uitgelezen via Shopify Admin API vlak voor de wijziging.",
+  "seo": [
+    {"id": "gid://shopify/Product/12038838518024", "handle": "forever-young", "title": "Forever young | Tante Rie", "description": "De Forever Young XL Mazagran beker met vrolijke verjaardagstekeningen. Te personaliseren met een eigen tekst."},
+    {"id": "gid://shopify/Product/12039138377992", "handle": "eb-cappuccino-mug-0-5l-hearts", "title": "Cappuccino mug 0,5L hearts | Tante Rie", "description": "Cappuccino mok van 0,5 liter met kleurige hartjes, lekker robuust en breed. Ook te personaliseren, te bestellen bij Tante Rie."},
+    {"id": "gid://shopify/Product/12039798063368", "handle": "thank-you", "title": "Thank you | Tante Rie", "description": "De Blond Amsterdam Thank You Mazagran van 0,5 liter, geschikt voor koffie en thee. Te personaliseren met een tekst."},
+    {"id": "gid://shopify/Product/12039798128904", "handle": "hart-voor-de-zorg", "title": "Hart voor de zorg | Tante Rie", "description": "De Hart voor de Zorg mok van 0,5 liter met zorg-illustraties. Laat een naam op het handvat zetten door het atelier."},
+    {"id": "gid://shopify/Product/12156024389896", "handle": "opa", "title": "Mazagran Opa 0,5L | Blond Amsterdam | Tante Rie", "description": "Kleurrijke Blond Amsterdam mazagran voor opa, inhoud 0,5 liter, te personaliseren in ons atelier. Bestel bij Tante Rie in Borne."},
+    {"id": "gid://shopify/Collection/579349709064", "handle": "servies", "title": "Servies Kopen | Bunzlau, Rice & Blond Amsterdam | Tante Rie", "description": "Mooi servies van Bunzlau Castle, Rice DK en Blond Amsterdam bij Tante Rie in Borne. Theepotten, mokken, borden en kommen. Online bestellen of afhalen in Twente."}
+  ],
+  "melamine": [
+    {"id": "gid://shopify/Product/12017686184200", "handle": "melamine-bord-wild-flowers-o-25-cm", "productType": "Melamine", "tags": ["bunzlau", "keramiek"]},
+    {"id": "gid://shopify/Product/12017690444040", "handle": "melamine-bord-dragonfly-garden-o-25-cm", "productType": "Melamine", "tags": ["bunzlau", "keramiek"]},
+    {"id": "gid://shopify/Product/12017690476808", "handle": "melamine-bord-fleur-fountain-o-25-cm", "productType": "Keramiek", "tags": ["bunzlau", "keramiek"]}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "property": "sc-domain:tanterie.nl",
+  "sitemaps": [
+    {
+      "path": "https://tanterie.nl/sitemap.xml",
+      "last_submitted": "2026-07-26T10:29:06.423Z",
+      "is_pending": false,
+      "is_index": true,
+      "type": null,
+      "warnings": "0",
+      "errors": "0",
+      "contents": [
+        {
+          "type": "web",
+          "submitted": "487",
+          "indexed": "0"
+        },
+        {
+          "type": "image",
+          "submitted": "424",
+          "indexed": "0"
+        }
+      ]
+    }
+  ],
+  "error": null
+}

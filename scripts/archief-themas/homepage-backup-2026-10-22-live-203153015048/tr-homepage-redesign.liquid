@@ -1,0 +1,480 @@
+{% comment %} Tante Rie – Homepage Redesign {% endcomment %}
+{% comment %} Fonts worden geladen via theme.liquid – niet opnieuw hier {% endcomment %}
+
+<style>
+.trh-hero { position: relative; width: 100%; min-height: 70vh; display: flex; align-items: center; overflow: hidden; background: var(--page-bg); }
+.trh-hero-img { position: absolute; inset: 0; z-index: 0; }
+.trh-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.trh-hero-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to right, rgba(238,241,234,.93) 38%, rgba(238,241,234,.15) 100%); }
+.trh-hero-content { position: relative; z-index: 2; padding: 80px var(--page-margin); max-width: 560px; animation: trhFadeUp .6s ease both; }
+.trh-hero-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+.trh-hero-eyebrow::after { content: ''; display: block; width: 40px; height: 1px; background: var(--green); }
+.trh-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 400; line-height: 1.1; color: var(--brown-dark); margin-bottom: 20px; }
+.trh-hero-sub { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1.05rem; color: var(--text-muted); margin-bottom: 36px; line-height: 1.6; }
+.trh-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+.trh-btn-primary { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 15px 32px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: background .2s, transform .15s; }
+.trh-btn-primary:hover { background: var(--brown); transform: translateY(-1px); }
+.trh-btn-secondary { background: transparent; color: var(--brown-dark); border: 1.5px solid var(--brown-light); border-radius: 50px; padding: 14px 32px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: background .2s; }
+.trh-btn-secondary:hover { background: var(--cream-dark); }
+.trh-hero-badge { position: absolute; bottom: 40px; right: var(--page-margin); z-index: 2; background: var(--white); border-radius: 50%; width: 110px; height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(74,50,34,.12); text-align: center; }
+.trh-hero-badge-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--brown-dark); line-height: 1; }
+.trh-hero-badge-label { font-size: 10px; color: var(--text-muted); letter-spacing: .06em; text-transform: uppercase; margin-top: 4px; line-height: 1.3; }
+.trh-usp { background: var(--brown-dark); padding: 16px max(var(--page-margin), calc((100% - var(--content-max)) / 2)); }
+.trh-usp-inner { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center; }
+.trh-usp-item { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: rgba(255,255,255,.9); letter-spacing: .04em; }
+.trh-usp-item svg { width: 16px; height: 16px; stroke: var(--brown-light); fill: none; stroke-width: 2; flex-shrink: 0; }
+.trh-section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 36px; flex-wrap: wrap; gap: 12px; }
+.trh-section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 400; color: var(--brown-dark); }
+.trh-section-sub { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: .9rem; color: var(--text-muted); margin-top: 4px; }
+.trh-see-all { font-size: 13px; color: var(--brown); text-decoration: none; border-bottom: 1px solid var(--brown-light); padding-bottom: 1px; white-space: nowrap; }
+.trh-collections { padding: 72px max(var(--page-margin), calc((100% - var(--content-max)) / 2)); background: var(--cream); }
+/* Collectie-slider: horizontale scroller met scroll-snap. Bewust geen
+   JS-carousel die kaarten pas na laden invoegt - alle kaarten staan in de HTML,
+   de pijlen scrollen alleen. Zonder JS blijft het een swipebare rij. */
+.trh-col-slider-wrap { position: relative; }
+.trh-col-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  /* proximity, niet mandatory: bij mandatory dwingt de browser altijd naar een
+     snappunt, waardoor de laatste (deels zichtbare) kaart niet blijft staan */
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  /* ruimte zodat de hover-lift en schaduw niet worden afgekapt */
+  padding: 8px 0 20px;
+  margin: -8px 0 -12px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+}
+.trh-col-grid::-webkit-scrollbar { display: none; }
+.trh-col-grid:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; border-radius: 20px; }
+.trh-col-card { flex: 0 0 calc((100% - 48px) / 4); scroll-snap-align: start; border-radius: 20px; overflow: hidden; position: relative; aspect-ratio: 3/4; text-decoration: none; display: block; background: var(--page-bg); transition: transform .25s ease, box-shadow .25s ease; }
+.trh-col-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--white); box-shadow: 0 4px 20px rgba(74,50,34,.16); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: opacity .2s, background .2s; }
+.trh-col-nav:hover { background: var(--cream-dark); }
+.trh-col-nav svg { width: 18px; height: 18px; stroke: var(--brown-dark); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.trh-col-nav--prev { left: -14px; }
+.trh-col-nav--next { right: -14px; }
+.trh-col-nav[disabled] { opacity: 0; pointer-events: none; }
+/* Geen JS: dan geen pijlen, wel gewoon swipen/scrollen */
+.trh-col-nav { display: none; }
+.trh-col-slider-wrap.is-enhanced .trh-col-nav { display: flex; }
+.trh-col-card:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(74,50,34,.12); }
+.trh-col-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+.trh-col-card:hover img { transform: scale(1.05); }
+.trh-col-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(44,26,10,.72) 30%, transparent 70%); }
+.trh-col-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 20px; }
+.trh-col-label h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; color: var(--white); margin-bottom: 4px; }
+.trh-col-label p { font-size: 12px; color: rgba(255,255,255,.75); font-family: 'DM Sans', sans-serif; font-style: italic; }
+.trh-col-arrow { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; background: rgba(255,255,255,.2); backdrop-filter: blur(4px); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background .2s; }
+.trh-col-card:hover .trh-col-arrow { background: rgba(255,255,255,.35); }
+.trh-col-arrow svg { width: 14px; height: 14px; stroke: white; fill: none; stroke-width: 2; }
+.trh-featured { padding: 72px max(var(--page-margin), calc((100% - var(--content-max)) / 2)); background: var(--page-bg); }
+.trh-prod-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.trh-prod-card { background: var(--white); border-radius: 18px; overflow: hidden; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .22s ease, box-shadow .22s ease; }
+.trh-prod-card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px rgba(74,50,34,.1); }
+.trh-prod-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); display: block; }
+.trh-prod-img img { width: 100%; height: 100%; object-fit: contain; padding: 14px; transition: transform .4s; display: block; }
+.trh-prod-card:hover .trh-prod-img img { transform: scale(1.05); }
+.trh-prod-body { padding: 14px 16px 18px; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.trh-prod-type { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--green); }
+.trh-prod-name { font-family: 'DM Sans', sans-serif; font-size: .95rem; font-weight: 600; color: var(--brown-dark); line-height: 1.3; }
+.trh-prod-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-top: 3px; flex: 1; }
+.trh-prod-flavors { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-top: 3px; flex: 1; }
+.trh-flavor-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; flex: 1; align-content: flex-start; }
+.trh-flavor-chip { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: .04em; padding: 3px 9px; border-radius: 50px; background: var(--tag-bg); color: var(--green); border: 1px solid rgba(59,82,64,.13); white-space: nowrap; }
+.trh-prod-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; gap: 8px; }
+.trh-prod-price { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; color: var(--brown-dark); display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.trh-prod-compare { font-size: .8rem; color: var(--text-muted); text-decoration: line-through; font-family: 'DM Sans', sans-serif; font-weight: 400; }
+.trh-about { padding: 72px max(var(--page-margin), calc((100% - var(--content-max)) / 2)); background: var(--cream); }
+.trh-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.trh-about-img { border-radius: 24px; overflow: hidden; aspect-ratio: 4/5; }
+.trh-about-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+.trh-about-img:hover img { transform: scale(1.03); }
+.trh-about-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+.trh-about-eyebrow::after { content: ''; display: block; width: 32px; height: 1px; background: var(--green); }
+.trh-about-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 2.8vw, 2.4rem); font-weight: 400; color: var(--brown-dark); line-height: 1.15; margin-bottom: 20px; }
+.trh-about-text { font-family: 'DM Sans', sans-serif; font-size: .95rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+.trh-about-stats { display: flex; gap: 32px; margin: 28px 0; }
+.trh-stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--brown-dark); line-height: 1; }
+.trh-stat-label { font-size: 12px; color: var(--text-muted); letter-spacing: .04em; margin-top: 4px; }
+.trh-prod-btn { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 10px 18px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: background .2s; white-space: nowrap; }
+.trh-prod-btn:hover { background: var(--brown); }
+@keyframes trhFadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .trh-hero-content { animation: none; }
+  .trh-col-card:hover { transform: none; box-shadow: 0 2px 8px rgba(74,50,34,.08); }
+  .trh-col-card:hover img { transform: none; }
+  .trh-prod-card:hover { transform: none; box-shadow: 0 2px 8px rgba(74,50,34,.06); }
+  .trh-prod-card:hover .trh-prod-img img { transform: none; }
+  .trh-about-img:hover img { transform: none; }
+  .trh-btn-primary:hover { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trh-col-grid { scroll-behavior: auto; }
+}
+@media (max-width: 900px) {
+  .trh-prod-grid { grid-template-columns: repeat(2, 1fr); }
+  /* 2,2 kaarten in beeld: de halve kaart maakt zichtbaar dat er meer is */
+  .trh-col-card { flex-basis: calc((100% - 32px) / 2.2); }
+  .trh-col-nav { display: none !important; }
+  .trh-about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .trh-hero { min-height: 70vh; }
+  .trh-hero-overlay { background: linear-gradient(to bottom, rgba(238,241,234,.9) 50%, rgba(238,241,234,.4) 100%); }
+  .trh-hero-badge { display: none; }
+}
+@media (max-width: 500px) {
+  .trh-prod-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .trh-col-grid { gap: 10px; }
+  .trh-col-card { flex-basis: calc((100% - 10px) / 1.35); }
+  .trh-usp-inner { gap: 16px; }
+}
+</style>
+
+{%- assign featured_col = section.settings.featured_collection -%}
+{%- if featured_col == blank -%}{%- assign featured_col = 'thee' -%}{%- endif -%}
+
+{%- comment -%}Hero badge: setting overrules auto-count uit gekozen collectie {%- endcomment -%}
+{%- assign hero_badge_col = section.settings.hero_badge_collection -%}
+{%- if section.settings.hero_badge_num != blank -%}
+  {%- assign hero_badge_num = section.settings.hero_badge_num -%}
+{%- elsif hero_badge_col != blank -%}
+  {%- assign hero_badge_num = hero_badge_col.products_count | append: '+' -%}
+{%- else -%}
+  {%- assign hero_badge_num = collections.thee.products_count | append: '+' -%}
+{%- endif -%}
+{%- assign hero_badge_label = section.settings.hero_badge_label | default: 'theesoorten' -%}
+
+<div class="trh-wrap">
+  <section class="trh-hero">
+    <div class="trh-hero-img">
+      {%- if section.settings.hero_image != blank -%}
+        <img src="{{ section.settings.hero_image | image_url: width: 1200 }}"
+             srcset="{{ section.settings.hero_image | image_url: width: 600 }} 600w,
+                     {{ section.settings.hero_image | image_url: width: 900 }} 900w,
+                     {{ section.settings.hero_image | image_url: width: 1200 }} 1200w,
+                     {{ section.settings.hero_image | image_url: width: 1800 }} 1800w"
+             sizes="100vw"
+             alt="{{ section.settings.hero_image.alt | default: 'Tante Rie' | escape }}"
+             width="{{ section.settings.hero_image.width }}"
+             height="{{ section.settings.hero_image.height }}"
+             loading="eager" fetchpriority="high">
+      {%- else -%}
+        <img src="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/38_Tante_Rie_winkel_thee_LQ_JochemBoxemPhotography-12508.webp"
+             srcset="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/38_Tante_Rie_winkel_thee_LQ_JochemBoxemPhotography-12508.webp?width=600 600w,
+                     https://cdn.shopify.com/s/files/1/0999/6274/9192/files/38_Tante_Rie_winkel_thee_LQ_JochemBoxemPhotography-12508.webp?width=1200 1200w,
+                     https://cdn.shopify.com/s/files/1/0999/6274/9192/files/38_Tante_Rie_winkel_thee_LQ_JochemBoxemPhotography-12508.webp?width=1800 1800w"
+             sizes="100vw"
+             alt="Tante Rie theewinkel Borne"
+             width="1800" height="1200"
+             loading="eager" fetchpriority="high">
+      {%- endif -%}
+    </div>
+    <div class="trh-hero-overlay"></div>
+    <div class="trh-hero-content">
+      <div class="trh-hero-eyebrow">{{ section.settings.hero_eyebrow | default: 'Theespeciaalzaak Borne' }}</div>
+      <h1>{{ section.settings.hero_title | default: 'Een kopje rust, vers van Tante Rie' }}</h1>
+      <p class="trh-hero-sub">{{ section.settings.hero_sub | default: 'Meer dan 130 zorgvuldig geselecteerde theesoorten: van klassiek tot verrassend.' }}</p>
+      <div class="trh-hero-btns">
+        <a href="{{ section.settings.hero_cta_primary_url | default: '/collections/thee' }}" class="trh-btn-primary">{{ section.settings.hero_cta_primary_text | default: 'Ontdek alle theesoorten' }}</a>
+        <a href="{{ section.settings.hero_cta_secondary_url | default: '/pages/over-ons' }}" class="trh-btn-secondary">{{ section.settings.hero_cta_secondary_text | default: 'Ons verhaal' }}</a>
+      </div>
+    </div>
+    {%- unless section.settings.hide_hero_badge -%}
+      <div class="trh-hero-badge"><span class="trh-hero-badge-num">{{ hero_badge_num }}</span><span class="trh-hero-badge-label">{{ hero_badge_label }}</span></div>
+    {%- endunless -%}
+  </section>
+
+  <div class="trh-usp">
+    <div class="trh-usp-inner">
+      {%- if section.settings.usp_1 != blank -%}<span class="trh-usp-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>{{ section.settings.usp_1 }}</span>{%- endif -%}
+      {%- if section.settings.usp_2 != blank -%}<span class="trh-usp-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>{{ section.settings.usp_2 }}</span>{%- endif -%}
+      {%- if section.settings.usp_3 != blank -%}<span class="trh-usp-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>{{ section.settings.usp_3 }}</span>{%- endif -%}
+      {%- if section.settings.usp_4 != blank -%}
+        {%- assign rating = shop.metafields.judgeme.all_reviews_rating -%}
+        {%- if rating -%}{%- assign usp4_text = section.settings.usp_4 | replace: '{rating}', rating -%}{%- else -%}{%- assign usp4_text = section.settings.usp_4 | replace: '{rating}', '4.9' -%}{%- endif -%}
+        <span class="trh-usp-item"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>{{ usp4_text }}</span>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <section class="trh-collections">
+    <div class="trh-section-header">
+      <div><h2 class="trh-section-title">Thee naar jouw smaak</h2><p class="trh-section-sub">Kies je theesoort en ontdek onze selectie</p></div>
+      <a href="/collections/thee" class="trh-see-all">Alle theesoorten</a>
+    </div>
+    <div class="trh-col-slider-wrap" data-trh-slider>
+      <button class="trh-col-nav trh-col-nav--prev" type="button" data-trh-slider-prev aria-label="Vorige theesoorten" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+
+      {%- comment -%}
+        role=group + tabindex maken de scroller bedienbaar met het toetsenbord.
+        Alle kaarten staan in de HTML; de pijlen scrollen alleen.
+      {%- endcomment -%}
+      <div class="trh-col-grid" data-trh-slider-track tabindex="0" role="group" aria-label="Theesoorten, horizontaal scrollbaar">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'collection_card' -%}
+            {%- assign col = block.settings.collection -%}
+            {%- assign card_title = block.settings.title | default: col.title -%}
+            {%- assign card_image = block.settings.image | default: col.image -%}
+            {%- assign card_url = col.url | default: '#' -%}
+            <a href="{{ card_url }}" class="trh-col-card" {{ block.shopify_attributes }}>
+              {%- if card_image -%}
+                <img src="{{ card_image | image_url: width: 600 }}"
+                     srcset="{{ card_image | image_url: width: 400 }} 400w,
+                             {{ card_image | image_url: width: 600 }} 600w,
+                             {{ card_image | image_url: width: 900 }} 900w"
+                     sizes="(min-width: 990px) 25vw, (min-width: 750px) 50vw, 100vw"
+                     alt="{{ card_title | escape }}"
+                     width="{{ card_image.width | default: 600 }}"
+                     height="{{ card_image.height | default: 400 }}"
+                     loading="lazy">
+              {%- endif -%}
+              <div class="trh-col-overlay"></div>
+              <div class="trh-col-label">
+                <h3>{{ card_title }}</h3>
+                {%- if block.settings.subtitle != blank -%}<p>{{ block.settings.subtitle }}</p>{%- endif -%}
+              </div>
+              <div class="trh-col-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- comment -%}Fallback: geen blocks ingesteld -> oude hardcoded 4 cards{%- endcomment -%}
+        <a href="/collections/groene-thee" class="trh-col-card"><img src="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/4589692417.jpg?v=1773259260" alt="Groene thee" loading="lazy"><div class="trh-col-overlay"></div><div class="trh-col-label"><h3>Groene Thee</h3><p>Fris, licht &amp; vol antioxidanten</p></div><div class="trh-col-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a>
+        <a href="/collections/zwarte-thee" class="trh-col-card"><img src="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/4589690703.jpg?v=1773259297" alt="Zwarte thee" loading="lazy"><div class="trh-col-overlay"></div><div class="trh-col-label"><h3>Zwarte Thee</h3><p>Vol, krachtig &amp; aromatisch</p></div><div class="trh-col-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a>
+        <a href="/collections/kruidenthee" class="trh-col-card"><img src="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/4589691855.jpg?v=1771444823" alt="Kruidenthee" loading="lazy"><div class="trh-col-overlay"></div><div class="trh-col-label"><h3>Kruidenthee</h3><p>Cafeïnevrij &amp; rustgevend</p></div><div class="trh-col-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a>
+        <a href="/collections/rooibos" class="trh-col-card"><img src="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/amaretto.jpg?v=1771873460" alt="Rooibos" loading="lazy"><div class="trh-col-overlay"></div><div class="trh-col-label"><h3>Rooibos</h3><p>Warm, zoet &amp; cafeïnevrij</p></div><div class="trh-col-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></a>
+      {%- endif -%}
+      </div>
+
+      <button class="trh-col-nav trh-col-nav--next" type="button" data-trh-slider-next aria-label="Volgende theesoorten">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="trh-featured">
+    <div class="trh-section-header">
+      <div><h2 class="trh-section-title">Favorieten van onze klanten</h2><p class="trh-section-sub">De meest geliefde theesoorten uit onze winkel</p></div>
+      <a href="/collections/{{ featured_col }}" class="trh-see-all">Alle theesoorten</a>
+    </div>
+    <div class="trh-prod-grid">
+      {%- assign shown = 0 -%}
+      {%- for p in collections[featured_col].products -%}
+        {%- if shown < 4 -%}{%- assign shown = shown | plus: 1 -%}
+        <div class="trh-prod-card">
+          <a href="{{ p.url }}" class="trh-prod-img"><img src="{{ p.featured_image | image_url: width: 500 }}" srcset="{{ p.featured_image | image_url: width: 250 }} 250w, {{ p.featured_image | image_url: width: 375 }} 375w, {{ p.featured_image | image_url: width: 500 }} 500w" sizes="(max-width: 900px) 50vw, 280px" alt="{{ p.featured_image.alt | default: p.title | escape }}" width="{{ p.featured_image.width | default: 500 }}" height="{{ p.featured_image.height | default: 500 }}" loading="lazy"></a>
+          <div class="trh-prod-body">
+            {%- if p.type != blank -%}<span class="trh-prod-type">{{ p.type }}</span>{%- endif -%}
+            <a href="{{ p.url }}" style="text-decoration:none;"><p class="trh-prod-name">{{ p.title }}</p></a>
+            {%- if p.metafields.custom.smaakprofiel != blank -%}
+              <p class="trh-prod-flavors">{{ p.metafields.custom.smaakprofiel }}</p>
+            {%- endif -%}
+            <div class="trh-prod-footer">
+              <span class="trh-prod-price">
+                {{ p.price | money }}
+                {%- if p.compare_at_price > p.price -%}
+                  <span class="trh-prod-compare">{{ p.compare_at_price | money }}</span>
+                {%- endif -%}
+              </span>
+              <button class="trh-prod-btn" data-tr-atc data-success-text="✓ Toegevoegd" data-variant-id="{{ p.selected_or_first_available_variant.id }}" aria-label="{{ p.title | escape }} toevoegen aan winkelwagen">In winkelwagen</button>
+            </div>
+          </div>
+        </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+
+  {%- comment -%}
+    Machine-leesbare versie van de vier uitgelichte producten hierboven.
+    Zelfde collectie, zelfde volgorde, zelfde limiet, dus de lijst komt altijd
+    overeen met wat er op de pagina staat.
+  {%- endcomment -%}
+  {%- capture featured_ld -%}
+    {%- assign ld_shown = 0 -%}
+    {%- for p in collections[featured_col].products -%}
+      {%- if ld_shown >= 4 -%}{%- break -%}{%- endif -%}
+      {%- if ld_shown > 0 -%},{%- endif -%}
+      {%- assign ld_shown = ld_shown | plus: 1 -%}
+      {
+        "@type": "ListItem",
+        "position": {{ ld_shown }},
+        "item": {
+          "@type": "Product",
+          "name": {{ p.title | json }},
+          "url": {{ shop.url | append: p.url | json }},
+          {%- if p.featured_image -%}
+          "image": {{ p.featured_image | image_url: width: 800 | prepend: 'https:' | json }},
+          {%- endif -%}
+          "offers": {
+            "@type": "Offer",
+            "price": "{{ p.price | divided_by: 100.0 }}",
+            "priceCurrency": {{ cart.currency.iso_code | json }},
+            "availability": "https://schema.org/{% if p.available %}InStock{% else %}OutOfStock{% endif %}",
+            "url": {{ shop.url | append: p.url | json }}
+          }
+        }
+      }
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- assign featured_ld = featured_ld | strip -%}
+  {%- if featured_ld != blank -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Favorieten van onze klanten",
+      "itemListElement": [{{ featured_ld }}]
+    }
+    </script>
+  {%- endif -%}
+
+  <section class="trh-about">
+    <div class="trh-about-grid">
+      <div class="trh-about-img">
+        {%- if section.settings.about_image != blank -%}
+          <img src="{{ section.settings.about_image | image_url: width: 800 }}"
+               srcset="{{ section.settings.about_image | image_url: width: 400 }} 400w,
+                       {{ section.settings.about_image | image_url: width: 600 }} 600w,
+                       {{ section.settings.about_image | image_url: width: 800 }} 800w,
+                       {{ section.settings.about_image | image_url: width: 1200 }} 1200w"
+               sizes="(min-width: 750px) 50vw, 100vw"
+               alt="{{ section.settings.about_image.alt | default: 'Over Tante Rie' | escape }}"
+               width="{{ section.settings.about_image.width }}"
+               height="{{ section.settings.about_image.height }}"
+               loading="lazy">
+        {%- else -%}
+          <img src="https://cdn.shopify.com/s/files/1/0999/6274/9192/files/26_Tante-Rie_Algemeen_thee_LQ_JochemBoxemPhotography-12303_1.png?width=800" alt="Over Tante Rie" loading="lazy">
+        {%- endif -%}
+      </div>
+      <div>
+        <div class="trh-about-eyebrow">Ons verhaal</div>
+        {%- comment -%}
+          De <br> in de oude titel plakte de woorden aan elkaar zodra de HTML
+          zonder opmaak werd uitgelezen ('geselecteerd,voor'). Nu één regel.
+        {%- endcomment -%}
+        <h2 class="trh-about-title">{{ section.settings.about_title | default: 'Onze theewinkel in Borne, sinds 2024' }}</h2>
+        <div class="trh-divider"></div>
+        <p class="trh-about-text">{{ section.settings.about_text_1 | default: 'Tante Rie opende in 2024 haar deuren in het centrum van Borne. De winkel draagt de naam van Rie Badart, de moeder van de oprichtster: een vrouw die altijd met een kopje thee klaarzat als je binnenkwam.' }}</p>
+        <p class="trh-about-text">{{ section.settings.about_text_2 | default: 'Eigenaar Nikkie selecteert elk product met de hand. Meer dan 130 soorten losse thee, van Japanse Sencha en Ceylon zwarte thee tot biologische kruidenthee en seizoensblends. Alles wordt per bestelling vers verpakt, niet maanden vooruit. Daarnaast vind je theepotten en servies van Bunzlau Castle, theeblikken, filters en samengestelde theecadeaus.' }}</p>
+        <p class="trh-about-text">{{ section.settings.about_text_3 | default: 'In de winkel aan de Bakkerssteeg kun je thee ruiken, proeven en vragen stellen. Bestel je online, dan versturen we binnen 1 tot 2 werkdagen met PostNL of DHL naar heel Nederland. Borne ligt centraal in Twente, op vijf minuten rijden van Hengelo.' }}</p>
+        <div class="trh-about-stats">
+          <div><div class="trh-stat-num">130+</div><div class="trh-stat-label">Theesoorten</div></div>
+          <div><div class="trh-stat-num">{%- if rating -%}{{ rating | round: 1 }}{%- else -%}4.9{%- endif -%}<span aria-hidden="true">★</span><span class="visually-hidden"> sterren</span></div><div class="trh-stat-label">Gemiddelde review</div></div>
+          <div><div class="trh-stat-num">1</div><div class="trh-stat-label">Winkel in Borne</div></div>
+        </div>
+        <a href="{{ section.settings.about_cta_url | default: '/collections/thee' }}" class="trh-btn-primary">{{ section.settings.about_cta_text | default: 'Ontdek ons assortiment' }}</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  // Collectie-slider. Progressive enhancement: zonder dit script blijft de rij
+  // gewoon scroll- en swipebaar, alleen zonder pijlen.
+  (function () {
+    document.querySelectorAll('[data-trh-slider]').forEach(function (wrap) {
+      var track = wrap.querySelector('[data-trh-slider-track]');
+      var prev = wrap.querySelector('[data-trh-slider-prev]');
+      var next = wrap.querySelector('[data-trh-slider-next]');
+      if (!track || !prev || !next) return;
+
+      wrap.classList.add('is-enhanced');
+
+      function step() {
+        var card = track.querySelector('.trh-col-card');
+        if (!card) return track.clientWidth;
+        var gap = parseFloat(getComputedStyle(track).columnGap || '16') || 16;
+        return card.getBoundingClientRect().width + gap;
+      }
+
+      function sync() {
+        // 2px marge: sub-pixel scrollposities halen de uiterste stand net niet
+        var max = track.scrollWidth - track.clientWidth;
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= max - 2;
+        // Niets te scrollen: beide pijlen weg
+        if (max <= 2) { prev.disabled = true; next.disabled = true; }
+      }
+
+      prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+      next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+      track.addEventListener('scroll', sync, { passive: true });
+      window.addEventListener('resize', sync);
+      sync();
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "TR Homepage Redesign",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Hero" },
+    { "type": "image_picker", "id": "hero_image", "label": "Hero afbeelding", "info": "Leeg = standaard winkelfoto" },
+    { "type": "text", "id": "hero_eyebrow", "label": "Eyebrow tekst", "default": "Theespeciaalzaak Borne" },
+    { "type": "text", "id": "hero_title", "label": "Hoofdtitel", "default": "Een kopje rust, vers van Tante Rie" },
+    { "type": "textarea", "id": "hero_sub", "label": "Subtitel", "default": "Meer dan 130 zorgvuldig geselecteerde theesoorten." },
+    { "type": "text", "id": "hero_cta_primary_text", "label": "Primaire knop tekst", "default": "Ontdek alle theesoorten" },
+    { "type": "url", "id": "hero_cta_primary_url", "label": "Primaire knop link" },
+    { "type": "text", "id": "hero_cta_secondary_text", "label": "Secundaire knop tekst", "default": "Ons verhaal" },
+    { "type": "url", "id": "hero_cta_secondary_url", "label": "Secundaire knop link" },
+    { "type": "header", "content": "Hero badge" },
+    { "type": "checkbox", "id": "hide_hero_badge", "label": "Badge verbergen", "default": false },
+    { "type": "collection", "id": "hero_badge_collection", "label": "Auto-tel collectie", "info": "Aantal producten in deze collectie wordt het badge-nummer. Leeg = collections.thee" },
+    { "type": "text", "id": "hero_badge_num", "label": "Nummer (overschrijft auto-tel)", "info": "Leeg = automatisch tellen uit collectie" },
+    { "type": "text", "id": "hero_badge_label", "label": "Label", "default": "theesoorten" },
+    { "type": "header", "content": "USP balk" },
+    { "type": "text", "id": "usp_1", "label": "USP 1", "default": "Vers verpakt uit eigen winkel" },
+    { "type": "text", "id": "usp_2", "label": "USP 2", "default": "Meer dan 130 theesoorten" },
+    { "type": "text", "id": "usp_3", "label": "USP 3", "default": "Snel verzonden" },
+    { "type": "text", "id": "usp_4", "label": "USP 4 (ster-icoon)", "default": "4.9 / 5, geliefd bij theeliefhebbers", "info": "Gebruik {rating} om de automatische Judge.me score in te voegen" },
+    { "type": "header", "content": "Collectie kaarten" },
+    { "type": "paragraph", "content": "Voeg tot 8 collectie-kaarten toe als blocks. Zonder blocks valt 't terug op de standaard 4 (groene/zwarte/kruiden/rooibos)." },
+    { "type": "header", "content": "Uitgelichte producten" },
+    { "type": "collection", "id": "featured_collection", "label": "Collectie", "info": "Kies welke collectie getoond wordt in de 'Favorieten' sectie. Standaard: thee" },
+    { "type": "header", "content": "Over ons" },
+    { "type": "image_picker", "id": "about_image", "label": "Afbeelding" },
+    { "type": "text", "id": "about_title", "label": "Titel", "default": "Onze theewinkel in Borne, sinds 2024" },
+    { "type": "textarea", "id": "about_text_1", "label": "Eerste alinea" },
+    { "type": "textarea", "id": "about_text_2", "label": "Tweede alinea" },
+    { "type": "textarea", "id": "about_text_3", "label": "Derde alinea" },
+    { "type": "text", "id": "about_cta_text", "label": "Knop tekst", "default": "Ontdek ons assortiment" },
+    { "type": "url", "id": "about_cta_url", "label": "Knop link" }
+  ],
+  "blocks": [
+    {
+      "type": "collection_card",
+      "name": "Collectie kaart",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collectie" },
+        { "type": "image_picker", "id": "image", "label": "Afbeelding", "info": "Leeg = collectie-hoofdafbeelding" },
+        { "type": "text", "id": "title", "label": "Titel", "info": "Leeg = naam van de collectie" },
+        { "type": "text", "id": "subtitle", "label": "Ondertitel" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "TR Homepage Redesign",
+      "blocks": [
+        { "type": "collection_card", "settings": { "title": "Groene Thee", "subtitle": "Fris, licht & vol antioxidanten" } },
+        { "type": "collection_card", "settings": { "title": "Zwarte Thee", "subtitle": "Vol, krachtig & aromatisch" } },
+        { "type": "collection_card", "settings": { "title": "Kruidenthee", "subtitle": "Cafeïnevrij & rustgevend" } },
+        { "type": "collection_card", "settings": { "title": "Rooibos", "subtitle": "Warm, zoet & cafeïnevrij" } },
+        { "type": "collection_card", "settings": { "title": "Witte Thee", "subtitle": "Delicaat, zacht & licht" } },
+        { "type": "collection_card", "settings": { "title": "Vruchtenthee", "subtitle": "Fruitig & cafeïnevrij" } },
+        { "type": "collection_card", "settings": { "title": "IJsthee & Cold Brew", "subtitle": "Koud gezet, zacht van smaak" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

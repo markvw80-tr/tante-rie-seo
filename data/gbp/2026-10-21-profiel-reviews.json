@@ -1,0 +1,437 @@
+{
+ "total": [
+  33,
+  4.800000190734863
+ ],
+ "reviews": [
+  {
+   "reviewId": "AbFvOqmWB1jakFdhaM8HRWOYc4mCWyIvRfgA8r4Ne-W7C2FJJLfeK2tdnFTBjiUaLObXUpVgZ_sO",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV1KSlnYBMUXCQGWJnUgkqaaQJ2GhlRgRcBv1gq1KEm-1eM9w6z=s120-c-rp-mo-br100",
+    "displayName": "Thudela Arrindell"
+   },
+   "starRating": "THREE",
+   "createTime": "2026-10-19T06:36:41.249420Z",
+   "updateTime": "2026-10-19T06:36:41.249420Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqmWB1jakFdhaM8HRWOYc4mCWyIvRfgA8r4Ne-W7C2FJJLfeK2tdnFTBjiUaLObXUpVgZ_sO",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/Ci9DQUlRQUNvZENodHljRjlvT25OSFNGUmxRVXBuWmpZNVpGTldWSGt4UkhoRVluYxAB"
+  },
+  {
+   "reviewId": "AbFvOqlP7WaxUEBeDvW4K6mSUtmckVNBsMP8siZasArbm7lOV9yo3gYxJadpY4qOLjW_rv41hL_qJQ",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXwSNxBi3bAmJ0qErgXJxzbeIZ8fY2uQ0NNkwuzkz7gP4FC1WcD=s120-c-rp-mo-br100",
+    "displayName": "Nagelsalon Mani Magic"
+   },
+   "starRating": "FIVE",
+   "comment": "De heerlijkste thee en ik heb een hele mooie beker voor mijn dochter kunnen kopen die ze  al een poosje graag wilde hebben❤️\n\n(Translated by Google)\nThe most delicious tea and I was able to buy a very beautiful mug for my daughter that she has wanted for a while ❤️",
+   "createTime": "2026-06-17T12:48:16.643899Z",
+   "updateTime": "2026-06-17T12:48:16.643899Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqlP7WaxUEBeDvW4K6mSUtmckVNBsMP8siZasArbm7lOV9yo3gYxJadpY4qOLjW_rv41hL_qJQ",
+   "reviewMediaItems": [
+    {
+     "thumbnailUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLfdxT6VwWQn1yadOJ9WATQVDJlcI0RzAyUqF29YsMRuX2QVRFS_RmEk__RJ1I-ZAC7RAj_1OnytL-5-K0PwEc96-xjJ5TT2H4mpO9RM0baYS1tUhJGdbHRxTaWdXiRtUL_qBePi3W5unJjw=k-no"
+    }
+   ],
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/Ci9DQUlRQUNvZENodHljRjlvT21jelFXdG1aWGh1YkZaaE1VdElOMUo2YW1kV1RYYxAB"
+  },
+  {
+   "reviewId": "AbFvOqnffEI-W_NxWbdDJoB37SB_tzh2cq7qToS-_ARuGQjxZ-wVBnYyDBaOyryEQCy7jC00k0-hpQ",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXEb_k8S5XAZtlwFrOOHQuz5rkCUEKbxWJuAxNI_QP3VFLaA8Vrtg=s120-c-rp-mo-ba12-br100",
+    "displayName": "Lidy de Koning"
+   },
+   "starRating": "FIVE",
+   "comment": "En nu MET webshop: webshop.tanterie.nl\n\n(Translated by Google)\nAnd now WITH a webshop: webshop.tanterie.nl",
+   "createTime": "2026-02-01T11:13:17.377695Z",
+   "updateTime": "2026-02-01T11:13:17.377695Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnffEI-W_NxWbdDJoB37SB_tzh2cq7qToS-_ARuGQjxZ-wVBnYyDBaOyryEQCy7jC00k0-hpQ",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeWJUUmtZamRwWW05VmFVTnRSMG94T1ZWeU5YYxAB"
+  },
+  {
+   "reviewId": "AbFvOqn8bzXblNsSWUFNGfNbtbv-P-RaDwQ-FuhYlXaBm5Krf03VXeqpWii2M8thubinqwN-YA_ymw",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHBTGoXbiH0m3U0tFFPrkGrWymAw3wSsDtPb7evoB1uFQ7VIl0=s120-c-rp-mo-br100",
+    "displayName": "Marlot Wolters"
+   },
+   "starRating": "FOUR",
+   "createTime": "2025-03-29T17:21:20.304146Z",
+   "updateTime": "2025-03-29T17:21:20.304146Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqn8bzXblNsSWUFNGfNbtbv-P-RaDwQ-FuhYlXaBm5Krf03VXeqpWii2M8thubinqwN-YA_ymw",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnTUNJc1BxbkJREAE"
+  },
+  {
+   "reviewId": "AbFvOqnx7JEwaICvaSdUg8nRuFw2fhQMru6iFSywOqK0f4o9ACthLQYyYS-_PXaixsFvy69TLU-HOQ",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIYGndKOuUM6rL9jH5QPzXqDdZ3PXbwrGQ-qC-DHtccFN0xD0w=s120-c-rp-mo-br100",
+    "displayName": "Cindy Stokhorst"
+   },
+   "starRating": "FIVE",
+   "comment": "Geweldige cakemixen te krijgen 👍\n\n(Translated by Google)\nGreat cake mixes available 👍",
+   "createTime": "2025-03-04T19:32:41.440568Z",
+   "updateTime": "2025-03-04T19:35:32.009164Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnx7JEwaICvaSdUg8nRuFw2fhQMru6iFSywOqK0f4o9ACthLQYyYS-_PXaixsFvy69TLU-HOQ",
+   "reviewMediaItems": [
+    {
+     "thumbnailUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLffS8xyKCd7t-RwHgKs3-6mcM3hfzpy-q7dvvddjVJaVWl-0ToV1CqoTxGPzIptAKgM5BnxxgQY7wk4dyAR3CHGp9Kc99GyQGbGMJrcRhH72SuEpn9x69LFdpO5QMlEgP12xIbLdQ=k-no"
+    }
+   ],
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnTUNRX3J2amNnEAE"
+  },
+  {
+   "reviewId": "AbFvOqnoRTH1D13T5e2vovz5cmTAKe215phv41T_oODxJ1RgsFS3C0G1sqvNkt6WrSe7ritk_DfWuA",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWYqYjXfimbq78qbwR6ABcWR4gaZCWXa2A1rXhdqQ5HmOstx1I=s120-c-rp-mo-ba12-br100",
+    "displayName": "Laudepauw"
+   },
+   "starRating": "FIVE",
+   "createTime": "2024-11-12T21:36:28.403318Z",
+   "updateTime": "2024-11-12T21:36:28.403318Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnoRTH1D13T5e2vovz5cmTAKe215phv41T_oODxJ1RgsFS3C0G1sqvNkt6WrSe7ritk_DfWuA",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUQzeks2NjRBRRAB"
+  },
+  {
+   "reviewId": "AbFvOqkYHVWdQ_tvcPC8QkNfUxQOiDDtMpEZfScwvzbn97InvO7702XKjGgxYgqA5HzkNSxNxu6q4Q",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKov7Z7FJU-KvGCLsAAAU7VqL-jJJg5cO9ViSc2JCjsRtUPxQ=s120-c-rp-mo-ba12-br100",
+    "displayName": "Marleen Olthoff"
+   },
+   "starRating": "FIVE",
+   "comment": "Leuk, klein winkeltje met ruime keus aan thee en benodigdheden\n\n(Translated by Google)\nNice little shop with a wide selection of tea and supplies",
+   "createTime": "2024-11-06T06:33:03.915784Z",
+   "updateTime": "2024-11-06T06:33:03.915784Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqkYHVWdQ_tvcPC8QkNfUxQOiDDtMpEZfScwvzbn97InvO7702XKjGgxYgqA5HzkNSxNxu6q4Q",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUMzd1pHTmtBRRAB"
+  },
+  {
+   "reviewId": "AbFvOqnUJ6D-vo9sxPhw-_LAfXQp-4tLv76S2YnmkbVRwPLjWO8ZH-DXcDPehnKgMDfQn-XmL38A",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzTQAWOoX81EE54iry-wKIzkQo6xs535H3Oi6rRVRHGEWSDQ=s120-c-rp-mo-ba12-br100",
+    "displayName": "gooost"
+   },
+   "starRating": "FIVE",
+   "comment": "Ontzettend leuk winkeltje waar ook echt de tijd wordt genomen voor gedegen advies. De thee die wij hebben gekocht is heerlijk!\n\n(Translated by Google)\nA really lovely shop where they really take the time to give sound advice. The tea we bought is delicious!",
+   "createTime": "2024-09-01T09:11:06.061706Z",
+   "updateTime": "2024-09-01T09:11:06.061706Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnUJ6D-vo9sxPhw-_LAfXQp-4tLv76S2YnmkbVRwPLjWO8ZH-DXcDPehnKgMDfQn-XmL38A",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIeE9fTGtBRRAB"
+  },
+  {
+   "reviewId": "AbFvOqlK1WUNMGQSvJZw7RI3AKz34jILQSZLPIhIppeXpRrF2UYblb7m52S0NygHijR5ApsM51-KiQ",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLFheB34I1vrHwlvzyFRchtnaFEf3_FI1Tci8O9cPsZnulV=s120-c-rp-mo-ba12-br100",
+    "displayName": "Tamara Van limbeek"
+   },
+   "starRating": "FIVE",
+   "createTime": "2023-12-03T19:09:44.677428Z",
+   "updateTime": "2023-12-03T19:09:44.677428Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqlK1WUNMGQSvJZw7RI3AKz34jILQSZLPIhIppeXpRrF2UYblb7m52S0NygHijR5ApsM51-KiQ",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURsczZlVFZBEAE"
+  },
+  {
+   "reviewId": "AbFvOqlhoiX5YSQoqVXRIfmzkduJ_RfeOMhAAs-Ub8IION5jcdiUl3jVp7aJn01il4tD6rVsiwZs_g",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK7BvHcqcrv2P2CHlXrTlafBnDMYICAYkAjudMBf50GumGz=s120-c-rp-mo-br100",
+    "displayName": "Re becca"
+   },
+   "starRating": "FIVE",
+   "createTime": "2023-10-06T10:11:13.760227Z",
+   "updateTime": "2023-10-06T10:11:13.760227Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqlhoiX5YSQoqVXRIfmzkduJ_RfeOMhAAs-Ub8IION5jcdiUl3jVp7aJn01il4tD6rVsiwZs_g",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURaemQzWUdnEAE"
+  },
+  {
+   "reviewId": "AbFvOql6eFkkRSsCqW96fH3Ns6zAbHyvr-nTWuhPJq1xeJecRXD4stoN0YezOv1BsbB7NgI1T_fUOA",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKzjS_b1owX-3MomzMNcDB05dUNsSy2yeWAk1m2HGRMfXMn3w=s120-c-rp-mo-br100",
+    "displayName": "Jan Kassner"
+   },
+   "starRating": "FIVE",
+   "createTime": "2023-10-06T08:40:26.388861Z",
+   "updateTime": "2023-10-06T08:40:26.388861Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOql6eFkkRSsCqW96fH3Ns6zAbHyvr-nTWuhPJq1xeJecRXD4stoN0YezOv1BsbB7NgI1T_fUOA",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURaellyUFJ3EAE"
+  },
+  {
+   "reviewId": "AbFvOqnq4c_07INcY1qUBZGuGqz23mDnrGNJURqOtrJ_lLE2GWn5v7f4dYFbZCb7H8eELdy_IU6zfQ",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW3z_EMDUXdzN4w2oAAkKVas3OqyquCdCOym0hzFAbvP6jHgp3x=s120-c-rp-mo-ba12-br100",
+    "displayName": "Martin ten Hoopen"
+   },
+   "starRating": "FIVE",
+   "comment": "Goede drank.... en lekkere thee...\n\n(Translated by Google)\nGood drinks.... and delicious tea...",
+   "createTime": "2022-10-01T15:00:56.699611Z",
+   "updateTime": "2022-10-01T15:00:56.699611Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnq4c_07INcY1qUBZGuGqz23mDnrGNJURqOtrJ_lLE2GWn5v7f4dYFbZCb7H8eELdy_IU6zfQ",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURldU1pMkpBEAE"
+  },
+  {
+   "reviewId": "AbFvOqmuRUsU5BWa1b6REavCm4--Mvn7pxO6EoSIN94L9Pd6UMB0uSXXCN17uDeJbHorqZv6Paby",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL7-CBuOriDkI7-1BKyB04WlTDIktq5tuVnGYnsIhwlL_xZEA=s120-c-rp-mo-ba12-br100",
+    "displayName": "Peter Krikke"
+   },
+   "starRating": "FOUR",
+   "createTime": "2022-08-09T11:16:02.140315Z",
+   "updateTime": "2022-08-09T11:16:02.140315Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqmuRUsU5BWa1b6REavCm4--Mvn7pxO6EoSIN94L9Pd6UMB0uSXXCN17uDeJbHorqZv6Paby",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSUN1cjdLWU1nEAE"
+  },
+  {
+   "reviewId": "AbFvOqnFF2KrI8YLoOktJ1JRgu2bFfEwl0q0vq1X0uBnkaOJqWo6bxUREY27pgxZ5JlAsSCg2cMs",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUsIK4ca-9Y4GcHetszZTFIHUe2dpZmiVl1uGl79z0UkDl3VTpO=s120-c-rp-mo-ba12-br100",
+    "displayName": "William Simons"
+   },
+   "starRating": "FIVE",
+   "comment": "Knus, mooi winkeltje.\nHeel veel keus, super vriendelijk personeel!\n\n(Translated by Google)\nCozy, beautiful little shop.\n\nLots of choice, super friendly staff!",
+   "createTime": "2022-06-05T07:03:54.016658Z",
+   "updateTime": "2022-06-05T07:03:55.255573Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnFF2KrI8YLoOktJ1JRgu2bFfEwl0q0vq1X0uBnkaOJqWo6bxUREY27pgxZ5JlAsSCg2cMs",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUNPd3BMLTBRRRAB"
+  },
+  {
+   "reviewId": "AbFvOqko_qxvlBk0jhLLR2ehQ5GntxImsQ9d1JVk2wMxh2nsElmXp6wsqOJ_hy4QKPGPLYYpNM07-Q",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK-kG8VgCW7XMrBFbuqkDj_oFhulqi3OneE8YxMYRZqoyL5Ow=s120-c-rp-mo-br100",
+    "displayName": "Mirjam Kuilder"
+   },
+   "starRating": "FIVE",
+   "comment": "Wat een leuke winkel! We hebben hier onze bedank cadeautjes gekocht voor onze bruiloft. Samen met de eigenaar heb ik chocolademelk spoons uitgezocht en deze heeft ze super leuk voor ons ingepakt. Nogmaals dank!\n\n(Translated by Google)\nWhat a lovely shop! We bought our wedding thank-you gifts here. I picked out chocolate milk spoons together with the owner, and she wrapped them up really nicely for us. Thanks again!",
+   "createTime": "2022-03-29T14:12:58.430916Z",
+   "updateTime": "2022-03-29T14:12:58.430916Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqko_qxvlBk0jhLLR2ehQ5GntxImsQ9d1JVk2wMxh2nsElmXp6wsqOJ_hy4QKPGPLYYpNM07-Q",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURXaGM3RWFREAE"
+  },
+  {
+   "reviewId": "AbFvOqnBW9--cWoriUAzlPg2Fa-cUpuBt47tzRxNUybs1dfuoN3FWGU6QqNbk4NdFYrYKnZ7e5YV1A",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW1xW0b1Ot6ZhqDCU5TrEbONzNEH2glC5XrmmreTzS9_zQ-LI0J=s120-c-rp-mo-ba12-br100",
+    "displayName": "Jos Kolner"
+   },
+   "starRating": "FIVE",
+   "createTime": "2021-11-14T09:06:41.595140Z",
+   "updateTime": "2021-11-14T09:06:41.595140Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnBW9--cWoriUAzlPg2Fa-cUpuBt47tzRxNUybs1dfuoN3FWGU6QqNbk4NdFYrYKnZ7e5YV1A",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSUNHdjRPZ0ZREAE"
+  },
+  {
+   "reviewId": "AbFvOqn319E9bbjCMwKATdgx1Mk-QDowxwcNG46uzf8ePLqEtHNVT2AZJsFFypqF1UOR7bES_5DO",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFodVX_wHF2So_xouunMQkrh0GrVWz6Tzge0gb1441MS91p2Mw=s120-c-rp-mo-ba12-br100",
+    "displayName": "Erik Slagers"
+   },
+   "starRating": "FIVE",
+   "comment": "Mooiste thee en Blond Amsterdam winkel in Twente. En.... super aardige verkoopsters\n\n(Translated by Google)\nThe most beautiful tea and Blond Amsterdam shop in Twente. And... super friendly saleswomen.",
+   "createTime": "2019-09-11T18:55:44.117511Z",
+   "updateTime": "2021-09-23T08:22:01.447292Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqn319E9bbjCMwKATdgx1Mk-QDowxwcNG46uzf8ePLqEtHNVT2AZJsFFypqF1UOR7bES_5DO",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSUMwMEsyTFFBEAE"
+  },
+  {
+   "reviewId": "AbFvOqkMt-Hk_F_y1bCOCC8ECul6z1Bz-slv5XN2KKlrBzWgCv1GfKKuVndNHR7taAXZeSA69zCq",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKcumW4APNZVL1SBmjHLEDH_ne6LKxlJfVwF9c2XfllJQU0Ow=s120-c-rp-mo-ba12-br100",
+    "displayName": "Babs Babs"
+   },
+   "starRating": "FIVE",
+   "comment": "Mooie winkel, perfect geregeld met click en collect.\nMooie set van Blond Amsterdam bij hun gekocht.\nNog een mooi cadeautje gekregen omdat ik terug kwam met het blond.\nNetjes opgelost, super service.\n\n(Translated by Google)\nBeautiful shop, click and collect perfectly arranged.\nBought a beautiful set from Blond Amsterdam there.\nReceived a nice little gift because I returned the blond hair.\nResolved nicely, super service.",
+   "createTime": "2021-02-16T14:53:21.075850Z",
+   "updateTime": "2021-02-16T14:54:34.533342Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqkMt-Hk_F_y1bCOCC8ECul6z1Bz-slv5XN2KKlrBzWgCv1GfKKuVndNHR7taAXZeSA69zCq",
+   "reviewMediaItems": [
+    {
+     "thumbnailUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeSOVtxKvivdivtPXPCX4D60ILO9uv0TdPl_Bz7_FplByVf-OIz5bmHmGlGsl9bnua1LWu65KxrRL1XZsArWuynsoFqIkPN82CFEdFWeCX_a2V-sbQWD0go8CSm72ds1a8xE8lM=k-no"
+    }
+   ],
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSUN5MTdEZ2Z3EAE"
+  },
+  {
+   "reviewId": "AbFvOqnG-oSXoUeVVwV3HVDkXudlUeJxzkJT0bP7APs1sCrzcSU-nGOSpr4ZB4GS2kuSywOYYl-_aw",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJvxD_ifXQEj97-qi3cH_oAmvJB8T5QVQ2XWMc1lMi4Xo_DgA=s120-c-rp-mo-ba12-br100",
+    "displayName": "Pien Sluman"
+   },
+   "starRating": "FIVE",
+   "comment": "Altijd een gezellige sweer en geweldig mooie producten en lekkere thee.\n\n(Translated by Google)\nAlways a pleasant sweer and wonderfully beautiful products and delicious tea.",
+   "createTime": "2020-10-03T10:11:29.894269Z",
+   "updateTime": "2020-10-03T10:11:29.894269Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnG-oSXoUeVVwV3HVDkXudlUeJxzkJT0bP7APs1sCrzcSU-nGOSpr4ZB4GS2kuSywOYYl-_aw",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSURDdVpLZG1nRRAB"
+  },
+  {
+   "reviewId": "AbFvOqkOsQZFs2aNODv7V1ppCaS7mfZNLWLOMAPCHiTGTZm9xeCnAN7bqH2j5MdCAhORLFprB0ymvg",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXTaDMzCPt-YzOohdjQ3w4mfP-hBW9HVdKtkZJqbekr6kI2tsRd=s120-c-rp-mo-ba12-br100",
+    "displayName": "Linde"
+   },
+   "starRating": "FIVE",
+   "comment": "Een mooie winkel met veel leuke spulletjes!\n\n(Translated by Google)\nA beautiful shop with lots of nice things!",
+   "createTime": "2020-07-29T15:29:32.271800Z",
+   "updateTime": "2020-07-29T15:30:06.579441Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqkOsQZFs2aNODv7V1ppCaS7mfZNLWLOMAPCHiTGTZm9xeCnAN7bqH2j5MdCAhORLFprB0ymvg",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSUQ4eTdTb0RBEAE"
+  },
+  {
+   "reviewId": "AbFvOqn1sn2QA3Tq4K38RUtqMbFnAipTAnYpJQwXP4ygzRci-bpsa2d43FIGa_6XXi-VJOfzMXC5Sg",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWRNdJinZoBJ6Nx4Nl3yP5MKEBCHnWN3mz0p73DvqRIP70od1472Q=s120-c-rp-mo-ba12-br100",
+    "displayName": "gesinus kelder"
+   },
+   "starRating": "FIVE",
+   "comment": "Voor iedereen zijn persoonlijke smaak ervaring met jouw thee\n\n(Translated by Google)\nEveryone's personal taste experience with your tea",
+   "createTime": "2020-02-24T18:03:15.954966Z",
+   "updateTime": "2020-02-24T18:04:24.969982Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqn1sn2QA3Tq4K38RUtqMbFnAipTAnYpJQwXP4ygzRci-bpsa2d43FIGa_6XXi-VJOfzMXC5Sg",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURzMUl6YkZnEAE"
+  },
+  {
+   "reviewId": "AbFvOqk_UFLppajVHjvVP2nO4tJPXs3uIC8oWK6mjPwtvTTViFFM-ALQY9uX4NDlNXjfg0t0Q5rcSg",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJKPGnIi7rLiq3c6y0KYtwcLEpLkqz7oyN9uojUZzmdrT3KyQ=s120-c-rp-mo-ba12-br100",
+    "displayName": "Carien W"
+   },
+   "starRating": "FIVE",
+   "comment": "Gezellige winkel met mooie spullen\n\n(Translated by Google)\nCozy shop with beautiful items",
+   "createTime": "2020-01-23T20:25:41.429819Z",
+   "updateTime": "2020-01-23T20:25:41.429819Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqk_UFLppajVHjvVP2nO4tJPXs3uIC8oWK6mjPwtvTTViFFM-ALQY9uX4NDlNXjfg0t0Q5rcSg",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUNzOUxUYm5nRRAB"
+  },
+  {
+   "reviewId": "AbFvOqnfRxnQpkXBHAYwaUEKVDZsq8x3ev2dJRGigyLTP9DFHttAsHmJ5v2TZUCh3o2jEmeiwly2",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8vG1HMXRFo-L9tfxEdXzI_0XTsfDFNwQoc5meD255-oa8W7aE=s120-c-rp-mo-ba12-br100",
+    "displayName": "Oscar Geelof"
+   },
+   "starRating": "FOUR",
+   "createTime": "2019-10-19T07:12:13.015913Z",
+   "updateTime": "2019-10-19T07:12:13.015913Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnfRxnQpkXBHAYwaUEKVDZsq8x3ev2dJRGigyLTP9DFHttAsHmJ5v2TZUCh3o2jEmeiwly2",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUQwMEoyMHRnRRAB"
+  },
+  {
+   "reviewId": "AbFvOqmOSLHxjW0hJGBIq7gYhtc07n6A4uc6dqB6AwjzfbT9iqMqkjXGP1rKCF9Rio364OnfFGvzMQ",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXUNV2EHY4XfxtVbewxYnhtKMw8_ujsH0bfjSigy9DCgplKVPk6yQ=s120-c-rp-mo-br100",
+    "displayName": "danielle christenhusz"
+   },
+   "starRating": "FOUR",
+   "createTime": "2019-10-04T14:30:57.747990Z",
+   "updateTime": "2019-10-04T14:30:57.747990Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqmOSLHxjW0hJGBIq7gYhtc07n6A4uc6dqB6AwjzfbT9iqMqkjXGP1rKCF9Rio364OnfFGvzMQ",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUMwNVpqSzBnRRAB"
+  },
+  {
+   "reviewId": "AbFvOqlffjDLdkTRNPoVDh5yLc-WyRX35guMdJgYiWCNUcFp7KOE5R9NkTxb49qRk4OPtbwXdJvD",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLArtwB_NsM0-JEFKoSyfMiQcm08WlU7-lQkWfwBBpXu53ctA=s120-c-rp-mo-br100",
+    "displayName": "Irma Weber"
+   },
+   "starRating": "FOUR",
+   "createTime": "2019-02-13T12:22:18.029867Z",
+   "updateTime": "2019-02-13T12:22:18.029867Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqlffjDLdkTRNPoVDh5yLc-WyRX35guMdJgYiWCNUcFp7KOE5R9NkTxb49qRk4OPtbwXdJvD",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUNvcHVILThRRRAB"
+  },
+  {
+   "reviewId": "AbFvOqm-aKRQt959sRCme1ML0wHMdur3nkf_zwVa4pdVviKJ6WX2dpWF63J3hy1dw79B6xgi_8oueg",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLVe7YiBuFgiRI8M5WjsmzDWmu_4zBJ81M1yrOU8irNG8k5qg=s120-c-rp-mo-br100",
+    "displayName": "Irene Jannink"
+   },
+   "starRating": "FIVE",
+   "createTime": "2018-12-13T13:37:27.314832Z",
+   "updateTime": "2018-12-13T13:37:27.314832Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqm-aKRQt959sRCme1ML0wHMdur3nkf_zwVa4pdVviKJ6WX2dpWF63J3hy1dw79B6xgi_8oueg",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUNJcl9Lem93RRAB"
+  },
+  {
+   "reviewId": "AbFvOql_LQL18znsY9rXMz77GcHWFbVPPbjt5NpwRIg-kIel8LruF2bGAT6CdADCw4is-uful5mw",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWS0nkJU4-hy_kv9eBjoLfcaFTSGrnKnG1FHnLUuC6l2BCJg4o=s120-c-rp-mo-ba12-br100",
+    "displayName": "Marcel Sissing"
+   },
+   "starRating": "FIVE",
+   "comment": "Prima service en veel keuze voor iets speciaals\n\n(Translated by Google)\nGreat service and a wide selection for something special",
+   "createTime": "2018-10-02T12:47:07.186870Z",
+   "updateTime": "2018-10-02T12:47:45.929684Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOql_LQL18znsY9rXMz77GcHWFbVPPbjt5NpwRIg-kIel8LruF2bGAT6CdADCw4is-uful5mw",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSURBeDZHa2l3RRAB"
+  },
+  {
+   "reviewId": "AbFvOqndZsGBt2e6m8dh6AmF5bNx6h8dV-BJva7BLozoiG9OB-H8jzcVgqVyHI0SIHwaXyZu5k7M7Q",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUbg0Bjisg2jAwyofnhG6I8tYQz7PTbuZV7gV9M_SJv0Ce-pWirBw=s120-c-rp-mo-ba12-br100",
+    "displayName": "Paula Kolner"
+   },
+   "starRating": "FIVE",
+   "comment": "Prachtige winkel voor de Bunzlau liefhebber\n\n(Translated by Google)\nBeautiful shop for the Bunzlau lover",
+   "createTime": "2018-08-26T13:49:55.781644Z",
+   "updateTime": "2018-08-26T13:49:55.781644Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqndZsGBt2e6m8dh6AmF5bNx6h8dV-BJva7BLozoiG9OB-H8jzcVgqVyHI0SIHwaXyZu5k7M7Q",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSUNBbGFXYi13RRAB"
+  },
+  {
+   "reviewId": "AbFvOql3qPIbk2UM2kMQUFbbuc8Fg_a6aiyG1SVXfaf9uFIBDipwq3_QctFRacvU8ApkWbUeQX6F",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIkV75qjCwz_AGSvPVLCPzNhDwXrp9WwVvTG7SZ4Bybh17TDw=s120-c-rp-mo-br100",
+    "displayName": "Scott Mulder"
+   },
+   "starRating": "FIVE",
+   "createTime": "2018-07-06T09:18:46.074Z",
+   "updateTime": "2018-07-06T09:18:46.074Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOql3qPIbk2UM2kMQUFbbuc8Fg_a6aiyG1SVXfaf9uFIBDipwq3_QctFRacvU8ApkWbUeQX6F",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSURBNjZqU2l3RRAB"
+  },
+  {
+   "reviewId": "AbFvOqk3fwuojaEdKoYfM6UbdyFcQQ-VG_woeqiqlldZqhSQER_dbYUTAwfG52DDUJczAAA00jyKlg",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJewhsND_ar0tl_a5yxiISJhAXhsFzjw3hC58822cfbc4IQMg=s120-c-rp-mo-br100",
+    "displayName": "Jim Mulder"
+   },
+   "starRating": "FIVE",
+   "createTime": "2017-11-19T01:29:34.646Z",
+   "updateTime": "2017-11-19T01:29:34.646Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqk3fwuojaEdKoYfM6UbdyFcQQ-VG_woeqiqlldZqhSQER_dbYUTAwfG52DDUJczAAA00jyKlg",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSURBaExYRnVnRRAB"
+  },
+  {
+   "reviewId": "AbFvOqk6BrjgrYLgu7JtHf2gpl1Jj_yr-Gd5kq3ySY1Ucuy5cQMO79vVbbBFULfkgmaXADgnrTsScA",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKG9jQhM-MD56mP0vwj_NTt5HijyKWxz8SubjurszHvXQ0fQA=s120-c-rp-mo-br100",
+    "displayName": "michiel soethoudt"
+   },
+   "starRating": "FIVE",
+   "createTime": "2017-04-14T13:55:27.625Z",
+   "updateTime": "2017-04-14T13:55:27.625Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqk6BrjgrYLgu7JtHf2gpl1Jj_yr-Gd5kq3ySY1Ucuy5cQMO79vVbbBFULfkgmaXADgnrTsScA",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSUNBdkpPNEt3EAE"
+  },
+  {
+   "reviewId": "AbFvOqnqNzHoYGzTQM6kp2lPOhaQImciDb-QiUTy5xdXS8L1KZSdRBRR7XSfUFbQPfTk0Yj1Yb2M4A",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUxUkFcUPa_FlfK2EXTpelWZ3pL1-Xa3qVMf8aAS-dhOYQYqXc=s120-c-rp-mo-br100",
+    "displayName": "Jeroen Mulder"
+   },
+   "starRating": "FIVE",
+   "comment": "Fantastisch leuk winkeltje in het centrum van Borne.\nVele soorten thee, koffie, bak- en cake mixen en serviezen en delicatessen waaronder Jerom,s delicate snoeperijen ;-).\nEcht een aanrader.\n\n(Translated by Google)\nFantastic little shop in the center of Borne.\nMany types of tea, coffee, baking and cake mixes, tableware, and delicacies, including Jerom's delicate sweets ;-).\n\nHighly recommended.",
+   "createTime": "2016-05-19T19:11:18.977Z",
+   "updateTime": "2016-05-19T19:11:18.977Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqnqNzHoYGzTQM6kp2lPOhaQImciDb-QiUTy5xdXS8L1KZSdRBRR7XSfUFbQPfTk0Yj1Yb2M4A",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChdDSUhNMG9nS0VJQ0FnSURnMkpPTzBBRRAB"
+  },
+  {
+   "reviewId": "AbFvOqknGH2K587Te4vYMAA62UiL_e_ImGPOQpKE45WG42pcBkVZYkevcHIYijIlKf4e0aQfxcaIUw",
+   "reviewer": {
+    "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWFkSd-UyicaKkTTl21Q7bELyYAhw-Ga9XmFmxDp40X-zrwukSH=s120-c-rp-mo-br100",
+    "displayName": "Jeroen Mulder"
+   },
+   "starRating": "FIVE",
+   "comment": "Fantastisch leuk winkeltje in het centrum van Borne.\nVele soorten thee, koffie, bak- en cake mixen en serviezen, waaronder bunzlau castle.\nEcht een aanrader.\n\n(Translated by Google)\nFantastic little shop in the center of Borne.\nA wide variety of teas, coffees, baking and cake mixes, and tableware, including Bunzlau Castle.\nHighly recommended.",
+   "createTime": "2015-07-11T12:56:05.669Z",
+   "updateTime": "2015-07-11T12:56:05.669Z",
+   "name": "accounts/101666303135035326611/locations/6267696427702073490/reviews/AbFvOqknGH2K587Te4vYMAA62UiL_e_ImGPOQpKE45WG42pcBkVZYkevcHIYijIlKf4e0aQfxcaIUw",
+   "reviewReplyUrl": "https://business.google.com/n/6267696427702073490/reviews/ChZDSUhNMG9nS0VJQ0FnSURndnBMa0NREAE"
+  }
+ ]
+}

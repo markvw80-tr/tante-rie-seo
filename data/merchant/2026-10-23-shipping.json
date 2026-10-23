@@ -1,0 +1,111 @@
+{
+  "name": "accounts/5716348221/shippingSettings",
+  "services": [
+    {
+      "serviceName": "flat_11.95_EUR_642427420936_1179601174792_Custom_rate_price_based",
+      "active": true,
+      "deliveryCountries": [
+        "BE"
+      ],
+      "currencyCode": "EUR",
+      "deliveryTime": {
+        "minTransitDays": 1,
+        "maxTransitDays": 9,
+        "minHandlingDays": 1,
+        "maxHandlingDays": 1
+      },
+      "rateGroups": [
+        {
+          "singleValue": {
+            "flatRate": {
+              "amountMicros": "11950000",
+              "currencyCode": "EUR"
+            }
+          }
+        }
+      ],
+      "shipmentType": "DELIVERY"
+    },
+    {
+      "serviceName": "weight_based_KILOGRAM_642427388168_Custom_rate_weight_based",
+      "active": true,
+      "deliveryCountries": [
+        "NL"
+      ],
+      "currencyCode": "EUR",
+      "deliveryTime": {
+        "minTransitDays": 1,
+        "maxTransitDays": 4,
+        "minHandlingDays": 1,
+        "maxHandlingDays": 1
+      },
+      "rateGroups": [
+        {
+          "mainTable": {
+            "rowHeaders": {
+              "weights": [
+                {
+                  "amountMicros": "300000",
+                  "unit": "KILOGRAM"
+                },
+                {
+                  "amountMicros": "300900",
+                  "unit": "KILOGRAM"
+                },
+                {
+                  "amountMicros": "5000000",
+                  "unit": "KILOGRAM"
+                },
+                {
+                  "amountMicros": "-1",
+                  "unit": "KILOGRAM"
+                }
+              ]
+            },
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "flatRate": {
+                      "amountMicros": "4500000",
+                      "currencyCode": "EUR"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "flatRate": {
+                      "amountMicros": "6950000",
+                      "currencyCode": "EUR"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "flatRate": {
+                      "amountMicros": "6950000",
+                      "currencyCode": "EUR"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "noShipping": true
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "shipmentType": "DELIVERY"
+    }
+  ],
+  "etag": "OAJCcwgBEAEabQpBZmxhdF8xMS45NV9FVVJfNjQyNDI3NDIwOTM2XzExNzk2MDExNzQ3OTJfQ3VzdG9tX3JhdGVfcHJpY2VfYmFzZWQSBCICQkUaA0VVUiIMCgQIARAJGgQIARABKg0IARoJIgcIAhCwr9kFWAFCogEIAhABGpsBCjt3ZWlnaHRfYmFzZWRfS0lMT0dSQU1fNjQyNDI3Mzg4MTY4X0N1c3RvbV9yYXRlX3dlaWdodF9iYXNlZBIEIgJOTBoDRVVSIgwKBAgBEAQaBAgBEAEqQQgDGj0aHAgDEAIY4KcSGOSuEhjAlrECGP///////////wEiBwgCEKDUkgIiBwgCEPCYqAMiBwgCEPCYqAMiAggGWAE="
+}

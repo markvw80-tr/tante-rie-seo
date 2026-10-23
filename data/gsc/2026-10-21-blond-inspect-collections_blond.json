@@ -1,0 +1,1733 @@
+{
+  "url": "https://tanterie.nl/collections/blond",
+  "property": "sc-domain:tanterie.nl",
+  "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-15T10:04:52Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+      "https://tanterie.nl/products/melkkan-180-ml?variant=57955622256904",
+      "https://tanterie.nl/pages/privacy-policy"
+    ]
+  },
+  "crawl_info": null,
+  "canonical": {
+    "google_canonical": "https://tanterie.nl/collections/blond",
+    "user_canonical": "https://tanterie.nl/collections/blond",
+    "match": true
+  },
+  "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+  },
+  "rich_results": {
+    "verdict": "PASS",
+    "detected_items": [
+      {
+        "type": "Product snippets",
+        "items": [
+          {
+            "name": "EB PINK: MUG 0,35L HEARTS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "EB: CAPPUCCINO MUG 0,5L TEA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "DIER: MUG CAT LOVER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "HART VOOR DE ZORG",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAMA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "EB: CAPPUCCINO MUG 0,5L HEARTS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN A HUG IN A MUG",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "BEST FRIEND",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "50 JAAR",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "DIER: MUG: HORSE LOVER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "ED: BORD 18 CM TOMPOUCE",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "FOREVER YOUNG",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "EB: THERMO BOTTLE 0,5L HEARTS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "I DO",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "CUP OF SUNSHINE",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "CONGRATULATIONS PARTY",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "PAPA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "DAD",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MEESTER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN SISTER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "COZY DAYS: LIGHT HOUSE STEPPED GABLE COZY",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MISS CREATIVITY",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN LIEFSTE JUF",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "LOVE GREEN GIRL",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MISS BRAINS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "KITCHEN QUEEN",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "COZY DAYS: MUG 0,35L TEA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "ED: PLATE 18 CM CROISSANT",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN CHEERS TO 18 YEARS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN ORANGE 0,5L",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "GAME ON",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "FASHION GIRL",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MATCHA PRINCESS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "THANK YOU",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "GROOM",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "THE MAN",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "TEAPOT 1,5L BLAH",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "HEARTS PLATE 22 CM",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "LOVE TO TRAVEL",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN GRADUATED 0,5L",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"review\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"aggregateRating\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Merchant listings",
+        "items": [
+          {
+            "name": "EB PINK: MUG 0,35L HEARTS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "EB: CAPPUCCINO MUG 0,5L TEA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "DIER: MUG CAT LOVER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "HART VOOR DE ZORG",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAMA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "EB: CAPPUCCINO MUG 0,5L HEARTS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN A HUG IN A MUG",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "BEST FRIEND",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "50 JAAR",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "DIER: MUG: HORSE LOVER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "ED: BORD 18 CM TOMPOUCE",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "FOREVER YOUNG",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "EB: THERMO BOTTLE 0,5L HEARTS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "I DO",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "CUP OF SUNSHINE",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "CONGRATULATIONS PARTY",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "PAPA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "DAD",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MEESTER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN SISTER",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "COZY DAYS: LIGHT HOUSE STEPPED GABLE COZY",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MISS CREATIVITY",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN LIEFSTE JUF",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "LOVE GREEN GIRL",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MISS BRAINS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "KITCHEN QUEEN",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "COZY DAYS: MUG 0,35L TEA",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "ED: PLATE 18 CM CROISSANT",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN CHEERS TO 18 YEARS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN ORANGE 0,5L",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "GAME ON",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "FASHION GIRL",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MATCHA PRINCESS",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "THANK YOU",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "GROOM",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "THE MAN",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "TEAPOT 1,5L BLAH",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "HEARTS PLATE 22 CM",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "LOVE TO TRAVEL",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          },
+          {
+            "name": "MAZAGRAN GRADUATED 0,5L",
+            "issues": [
+              {
+                "issueMessage": "Missing field \"description\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "No global identifier provided (e.g., gtin, brand)",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"availability\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"shippingDetails\"",
+                "severity": "WARNING"
+              },
+              {
+                "issueMessage": "Missing field \"hasMerchantReturnPolicy\"",
+                "severity": "WARNING"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Breadcrumbs",
+        "items": [
+          {
+            "name": "Unnamed item",
+            "issues": []
+          }
+        ]
+      }
+    ]
+  },
+  "verdict": "PASS",
+  "error": null
+}

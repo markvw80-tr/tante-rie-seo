@@ -1,0 +1,404 @@
+{% comment %} Tante Rie – Waterfles Productpagina {% endcomment %}
+{% comment %} Fonts worden geladen via theme.liquid – niet opnieuw hier {% endcomment %}
+
+<style>
+/* ─── Tante Rie huisstijl design tokens (generieke productpagina's) ──────── */
+:root {
+  --wfp-main:  #2E6F8E;
+  --wfp-mid:   #4C93B3;
+  --wfp-light: #E7F3F7;
+  --wfp-dark:  #1D4A5F;
+}
+
+.trwfp-product-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 80vh; }
+
+/* Gallery – top en hoogte via --header-group-height zodat banner meegeteld wordt */
+.trwfp-gallery {
+  position: sticky;
+  top: var(--header-group-height, 64px);
+  height: calc(100vh - var(--header-group-height, 64px));
+  display: flex; flex-direction: column;
+  background: var(--page-bg);
+}
+.trwfp-gallery-main { flex: 1; overflow: hidden; position: relative; background: var(--page-bg); }
+.trwfp-gallery-main img { width: 100%; height: 100%; object-fit: contain; background: var(--page-bg); transition: transform .5s cubic-bezier(.25,.46,.45,.94); padding: 20px; }
+.trwfp-gallery-main:hover img { transform: scale(1.03); }
+.trwfp-gallery-thumbs { flex-shrink: 0; display: flex; gap: 10px; padding: 12px 16px 14px; background: var(--page-bg); border-top: 1px solid rgba(0,0,0,.06); }
+.trwfp-thumb { flex: 1; height: 72px; border-radius: 8px; cursor: pointer; background: var(--page-bg); overflow: hidden; box-shadow: 0 0 0 2px transparent; transition: box-shadow .2s; }
+.trwfp-thumb.active { box-shadow: 0 0 0 2px var(--wfp-main); }
+.trwfp-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 4px; background: var(--page-bg); display: block; }
+.trwfp-product-info { padding: 48px var(--page-margin) 64px; overflow-y: auto; display: flex; flex-direction: column; }
+.trwfp-tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.trwfp-tag { background: var(--cream-dark); color: var(--brown-dark); font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; padding: 5px 12px; border-radius: 50px; }
+.trwfp-tag.green { background: var(--wfp-light); color: var(--wfp-main); }
+.trwfp-product-info h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; line-height: 1.15; color: var(--brown-dark); margin-bottom: 10px; }
+.trwfp-tagline { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: var(--text-muted); margin-bottom: 24px; }
+.trwfp-rating-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+.trwfp-section-label { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+.trwfp-details-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 28px; }
+.trwfp-detail-card { background: var(--white); border-radius: 14px; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; gap: 5px; border: 1px solid var(--cream-dark); text-align: center; transition: transform .2s, box-shadow .2s; }
+.trwfp-detail-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+.trwfp-detail-icon { font-size: 1.3rem; flex-shrink: 0; }
+.trwfp-detail-value { font-size: .78rem; color: var(--brown-dark); font-weight: 500; line-height: 1.3; word-break: break-word; white-space: normal; overflow: visible; }
+.trwfp-detail-label { font-size: 9px; color: var(--text-muted); letter-spacing: .05em; text-transform: uppercase; }
+.trwfp-desc-block { background: var(--white); border-radius: 16px; padding: 20px 22px; margin-bottom: 28px; border-left: 3px solid var(--brown-light); }
+.trwfp-desc-block p { font-family: 'DM Sans', sans-serif; font-size: .95rem; line-height: 1.75; color: var(--text); overflow: visible; display: block; }
+.trwfp-purchase-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.trwfp-price { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--brown-dark); }
+.trwfp-price-sub { font-size: 12px; color: var(--text-muted); line-height: 1.4; margin-top: 2px; }
+.trwfp-qty-control { display: flex; align-items: center; border: 1px solid var(--cream-dark); border-radius: 50px; overflow: hidden; background: var(--white); }
+.trwfp-qty-btn { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 1.2rem; color: var(--brown-dark); display: flex; align-items: center; justify-content: center; transition: background .15s; }
+.trwfp-qty-btn:hover { background: var(--cream-dark); }
+.trwfp-qty-num { width: 32px; text-align: center; font-weight: 500; font-size: .95rem; color: var(--brown-dark); }
+.trwfp-btn-primary { background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 17px 32px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .15s; width: 100%; display: block; margin-bottom: 10px; }
+.trwfp-btn-primary:hover { background: var(--brown); transform: translateY(-1px); }
+.trwfp-btn-secondary { background: transparent; color: var(--brown-dark); border: 1.5px solid var(--brown-light); border-radius: 50px; padding: 15px 32px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; transition: background .2s; width: 100%; display: block; margin-bottom: 22px; }
+.trwfp-btn-secondary:hover { background: var(--cream-dark); }
+.trwfp-trust-strip { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 32px; }
+.trwfp-trust-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+.trwfp-accordion { border-top: 1px solid var(--cream-dark); }
+.trwfp-accordion-item { border-bottom: 1px solid var(--cream-dark); }
+.trwfp-accordion-trigger { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 16px 0; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; color: var(--brown-dark); text-align: left; }
+.trwfp-accordion-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.trwfp-accordion-body.open { max-height: 600px; }
+.trwfp-accordion-body p { padding: 0 0 16px; font-size: 13.5px; color: var(--text-muted); line-height: 1.7; }
+.trwfp-chevron { font-size: 12px; color: var(--brown-light); transition: transform .25s; display: inline-block; }
+.trwfp-accordion-trigger.open .trwfp-chevron { transform: rotate(180deg); }
+.trwfp-combine-section { background: var(--page-bg); padding: 56px var(--page-margin); border-top: 1px solid var(--cream-dark); }
+.trwfp-section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 28px; }
+.trwfp-section-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; color: var(--brown-dark); }
+.trwfp-see-all { font-size: 13px; color: var(--brown); text-decoration: none; border-bottom: 1px solid var(--brown-light); }
+.trwfp-thee-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.trwfp-thee-card { background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid var(--cream-dark); display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; }
+.trwfp-thee-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+.trwfp-thee-img { aspect-ratio: 1; overflow: hidden; background: var(--page-bg); }
+.trwfp-thee-img img { width: 100%; height: 100%; object-fit: contain; padding: 10px; transition: transform .4s; display: block; }
+.trwfp-thee-card:hover .trwfp-thee-img img { transform: scale(1.05); }
+.trwfp-thee-body { padding: 12px 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.trwfp-thee-type { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--wfp-main); }
+.trwfp-thee-name { font-family: 'DM Sans', sans-serif; font-size: .9rem; color: var(--brown-dark); line-height: 1.3; }
+.trwfp-thee-price { font-size: .85rem; color: var(--brown); font-weight: 500; margin-top: auto; padding-top: 8px; }
+@media (max-width: 900px) {
+  .trwfp-product-grid { grid-template-columns: 1fr; }
+  .trwfp-gallery { position: relative; height: auto; top: 0; }
+  .trwfp-gallery-main { height: 75vw; }
+  .trwfp-thee-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .trwfp-thee-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+}
+/* Variants */
+.trwfp-variants { margin-bottom: 22px; }
+.trwfp-variant-label { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+.trwfp-variant-label strong { color: var(--brown-dark); font-weight: 600; text-transform: none; letter-spacing: 0; font-size: 13px; }
+.trwfp-variant-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.trwfp-variant-pill { border: 1.5px solid var(--cream-dark); border-radius: 50px; padding: 8px 18px; min-height: 44px; display: inline-flex; align-items: center; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--brown-dark); background: var(--white); cursor: pointer; transition: border-color .2s, background .2s; white-space: nowrap; }
+.trwfp-variant-pill:hover { border-color: var(--wfp-mid); }
+.trwfp-variant-pill.active { border-color: var(--wfp-main); background: var(--wfp-main); color: var(--white); }
+.trwfp-variant-pill.unavailable { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+.trwfp-variant-swatch { width: 44px; height: 44px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: border-color .2s, transform .15s; outline: 2px solid transparent; outline-offset: 2px; position: relative; }
+.trwfp-variant-swatch:hover { transform: scale(1.08); }
+.trwfp-variant-swatch.active { outline-color: var(--brown-dark); }
+.trwfp-variant-swatch.unavailable { opacity: .35; cursor: not-allowed; }
+.trwfp-variant-swatch.unavailable::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: linear-gradient(135deg, transparent 45%, var(--text-muted) 45%, var(--text-muted) 55%, transparent 55%); }
+/* Sticky ATC mobiel */
+@media (max-width: 700px) {
+  .trwfp-sticky-atc { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; background: var(--white); border-top: 1px solid var(--cream-dark); padding: 12px 16px; gap: 10px; align-items: center; box-shadow: 0 -4px 20px rgba(0,0,0,.08); }
+  .trwfp-sticky-atc-price { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--brown-dark); white-space: nowrap; }
+  .trwfp-sticky-atc-btn { flex: 1; background: var(--brown-dark); color: var(--white); border: none; border-radius: 50px; padding: 14px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; }
+  .trwfp-product-info { padding-bottom: 80px; }
+}
+@media (min-width: 701px) { .trwfp-sticky-atc { display: none; } }
+</style>
+
+<div class="trwfp-wrap">
+  {%- assign cur = product -%}
+
+  <div class="trwfp-breadcrumb">
+    <a href="/">Home</a><span>›</span>
+    {%- for c in cur.collections limit:1 -%}<a href="{{ c.url }}">{{ c.title }}</a><span>›</span>{%- endfor -%}
+    {{ cur.title }}
+  </div>
+
+  <div class="trwfp-product-grid">
+    <div class="trwfp-gallery">
+      <div class="trwfp-gallery-main">
+        <img id="trwfp-main-img" src="{{ cur.featured_image | image_url: width: 900 }}" alt="{{ cur.featured_image.alt | escape }}" fetchpriority="high">
+      </div>
+      <div class="trwfp-gallery-thumbs">
+        {%- for img in cur.images limit: 4 -%}
+          <div class="trwfp-thumb {% if forloop.first %}active{% endif %}" onclick="trwfpSwitchImg(this,'{{ img | image_url: width: 900 }}')">
+            <img src="{{ img | image_url: width: 200 }}" alt="" loading="lazy">
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="trwfp-product-info">
+      <div class="trwfp-tag-row">
+        {%- if cur.type != blank -%}<span class="trwfp-tag">{{ cur.type }}</span>{%- endif -%}
+        {%- for tag in cur.tags limit: 3 -%}
+          {%- assign tl = tag | downcase -%}
+          {%- if tl contains 'duurzaam' or tl contains 'bio' or tl contains 'rvs' -%}
+            <span class="trwfp-tag green">{{ tag }}</span>
+          {%- else -%}
+            <span class="trwfp-tag">{{ tag }}</span>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <h1>{{ cur.title }}</h1>
+      <p class="trwfp-tagline">{{ section.settings.tagline | default: cur.type | append: ' waterfles van Tante Rie' }}</p>
+
+      <!-- Dynamische sterren via Judge.me -->
+      <div class="trwfp-rating-bar">
+        {%- render 'judgeme_widgets', widget_type: 'judgeme_product_stars', concierge_install: true, product: cur -%}
+        <span style="font-size:13px;color:var(--text-muted);"><a href="#trwfp-reviews" style="color:var(--brown);text-decoration:none;border-bottom:1px solid var(--brown-light);">Bekijk beoordelingen</a></span>
+      </div>
+
+      <div class="trwfp-divider"></div>
+
+      {%- if cur.variants.size > 1 -%}
+        <script type="application/json" id="trwfp-variant-data-{{ cur.id }}">
+          {
+            "variants": [
+              {%- for v in cur.variants -%}
+                {%- if v.featured_image -%}{%- assign v_img = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign v_img = '' -%}{%- endif -%}
+                {
+                  "id": {{ v.id }},
+                  "price": {{ v.price }},
+                  "available": {{ v.available }},
+                  "title": {{ v.title | json }},
+                  "options": {{ v.options | json }},
+                  "img": {{ v_img | json }}
+                }{%- unless forloop.last -%},{%- endunless -%}
+              {%- endfor -%}
+            ],
+            "fallbackImg": {{ cur.featured_image | image_url: width: 900 | json }},
+            "initialOptions": {{ cur.selected_or_first_available_variant.options | json }}
+          }
+        </script>
+        <div class="trwfp-variants" data-trwfp-variants data-product-id="{{ cur.id }}">
+          {%- for opt in cur.options_with_values -%}
+            {%- assign opt_idx = forloop.index0 -%}
+            {%- assign opt_name_lower = opt.name | downcase -%}
+            {%- assign opt_selected = cur.selected_or_first_available_variant.options[opt_idx] -%}
+            <div class="trwfp-variants-group" data-option-index="{{ opt_idx }}">
+              <p class="trwfp-variant-label">{{ opt.name }}: <strong data-trwfp-option-val="{{ opt_idx }}">{{ opt_selected }}</strong></p>
+              <div class="trwfp-variant-pills">
+                {%- for val in opt.values -%}
+                  {%- assign is_active = false -%}
+                  {%- if val == opt_selected -%}{%- assign is_active = true -%}{%- endif -%}
+                  {%- if opt_name_lower == 'kleur' or opt_name_lower == 'color' or opt_name_lower == 'colour' -%}
+                    <div class="trwfp-variant-swatch{% if is_active %} active{% endif %}"
+                         style="background:{{ val | downcase | replace: ' ', '' }};"
+                         data-trwfp-swatch
+                         data-option-index="{{ opt_idx }}"
+                         data-value="{{ val | escape }}"
+                         title="{{ val | escape }}"></div>
+                  {%- else -%}
+                    <button type="button"
+                            class="trwfp-variant-pill{% if is_active %} active{% endif %}"
+                            data-trwfp-pill
+                            data-option-index="{{ opt_idx }}"
+                            data-value="{{ val | escape }}">{{ val }}</button>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- assign v_materiaal   = cur.metafields.specificaties.materiaal.value | default: section.settings.materiaal -%}
+      {%- assign v_afmetingen  = cur.metafields.specificaties.afmeting.value | default: section.settings.afmetingen -%}
+      {%- assign v_duurzaamheid = cur.metafields.specificaties.duurzaamheid.value | default: section.settings.duurzaamheid -%}
+      {%- if v_materiaal != blank or v_afmetingen != blank or v_duurzaamheid != blank -%}
+      <p class="trwfp-section-label" style="margin-bottom:10px;">Productdetails</p>
+      <div class="trwfp-details-grid">
+        {%- if v_materiaal != blank -%}
+        <div class="trwfp-detail-card">
+          <span class="trwfp-detail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'rock' -%}</span>
+          <span class="trwfp-detail-value">{{ v_materiaal }}</span>
+          <span class="trwfp-detail-label">Materiaal</span>
+        </div>
+        {%- endif -%}
+        {%- if v_afmetingen != blank -%}
+        <div class="trwfp-detail-card">
+          <span class="trwfp-detail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'ruler' -%}</span>
+          <span class="trwfp-detail-value">{{ v_afmetingen }}</span>
+          <span class="trwfp-detail-label">Afmetingen</span>
+        </div>
+        {%- endif -%}
+        {%- if v_duurzaamheid != blank -%}
+        <div class="trwfp-detail-card">
+          <span class="trwfp-detail-icon" aria-hidden="true">{%- render 'tr-icon', name: 'recycle' -%}</span>
+          <span class="trwfp-detail-value">{{ v_duurzaamheid }}</span>
+          <span class="trwfp-detail-label">Duurzaamheid</span>
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+
+      <div class="trwfp-desc-block">
+        <p class="trwfp-section-label" style="margin-bottom:8px;">Over dit product</p>
+        {%- if section.settings.verhaal_tekst != blank -%}
+          <p>{{ section.settings.verhaal_tekst }}</p>
+        {%- else -%}
+          <p>{{ cur.description | strip_html }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="trwfp-purchase-row">
+        <div>
+          <div class="trwfp-price">{{ cur.price | money }}</div>
+          <div class="trwfp-price-sub">Belasting inbegrepen</div>
+        </div>
+        <div class="trwfp-qty-control">
+          <button class="trwfp-qty-btn" onclick="trwfpChangeQty(-1)">&#8722;</button>
+          <span class="trwfp-qty-num" id="trwfp-qty">1</span>
+          <button class="trwfp-qty-btn" onclick="trwfpChangeQty(1)">+</button>
+        </div>
+      </div>
+
+      <button type="button" class="trwfp-btn-primary" data-tr-atc data-qty-from="#trwfp-qty" data-success-text="✓ Toegevoegd" data-variant-id="{{ cur.selected_or_first_available_variant.id }}">Aan winkelwagen toevoegen</button>
+      <button class="trwfp-btn-secondary">♡ Op verlanglijst</button>
+
+      <div class="trwfp-trust-strip">
+        <span class="trwfp-trust-item">✓ Snel verzonden</span>
+        <span class="trwfp-trust-item">✓ Uit eigen winkel Borne</span>
+        <span class="trwfp-trust-item">✓ Veilig betalen</span>
+        <span class="trwfp-trust-item">✓ Klantvriendelijke retour</span>
+      </div>
+
+      <div class="trwfp-accordion" data-tr-accordion>
+        <div class="trwfp-accordion-item">
+          <button class="trwfp-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Gebruiksinstructie <span class="trwfp-chevron">▾</span></button>
+          <div class="trwfp-accordion-body" data-tr-accordion-body><p>{{ section.settings.gebruiksinstructie | default: cur.description | strip_html }}</p></div>
+        </div>
+        <div class="trwfp-accordion-item">
+          <button class="trwfp-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Reiniging &amp; onderhoud <span class="trwfp-chevron">▾</span></button>
+          <div class="trwfp-accordion-body" data-tr-accordion-body><p>{{ section.settings.reiniging | default: 'Raadpleeg de verpakking voor specifieke reinigingsinstructies.' }}</p></div>
+        </div>
+        <div class="trwfp-accordion-item">
+          <button class="trwfp-accordion-trigger" data-tr-accordion-trigger aria-expanded="false">Verzending &amp; retour <span class="trwfp-chevron">▾</span></button>
+          <div class="trwfp-accordion-body" data-tr-accordion-body><p>Bestellingen worden dezelfde werkdag verwerkt. Retourneren is mogelijk binnen 14 dagen, mits ongebruikt en in originele verpakking. Neem contact op via webshop@tanterie.nl.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="trwfp-combine-section">
+    <div class="trwfp-section-header">
+      <h2 class="trwfp-section-title">Combineer met jouw favoriete thee</h2>
+      <a href="/collections/thee" class="trwfp-see-all">Alle theesoorten</a>
+    </div>
+    <div class="trwfp-thee-grid">
+      {%- assign shown = 0 -%}
+      {%- for p in collections['thee'].products -%}
+        {%- if shown < 4 -%}{%- assign shown = shown | plus: 1 -%}
+          <a class="trwfp-thee-card" href="{{ p.url }}">
+            <div class="trwfp-thee-img"><img src="{{ p.featured_image | image_url: width: 400 }}" alt="{{ p.title | escape }}" loading="lazy"></div>
+            <div class="trwfp-thee-body">
+              <span class="trwfp-thee-type">{{ p.type }}</span>
+              <p class="trwfp-thee-name">{{ p.title }}</p>
+              <p class="trwfp-thee-price">{{ p.price | money }}</p>
+            </div>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+
+</div>
+
+<!-- ── JSON-LD BreadcrumbList + Product ──────────────────────────── -->
+{%- render 'tr-product-schema', product: cur, brand_name: 'Tante Rie' -%}
+
+<div class="trwfp-sticky-atc" id="trwfp-sticky-atc">
+  <div>
+    <div class="trwfp-sticky-atc-price" id="trwfp-sticky-price">{{ cur.price | money }}</div>
+  </div>
+  <button type="button" class="trwfp-sticky-atc-btn" data-tr-atc data-qty-from="#trwfp-qty" data-variant-id="{{ cur.selected_or_first_available_variant.id }}">In winkelwagen</button>
+</div>
+
+<script>
+function trwfpSwitchImg(el,src){document.getElementById('trwfp-main-img').src=src;document.querySelectorAll('.trwfp-thumb').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+function trwfpChangeQty(d){const e=document.getElementById('trwfp-qty');e.textContent=Math.max(1,parseInt(e.textContent)+d);}
+
+(function(){
+  const wrap = document.querySelector('[data-trwfp-variants]');
+  if(!wrap) return;
+
+  const productId = wrap.dataset.productId;
+  const dataEl = document.getElementById('trwfp-variant-data-' + productId);
+  if(!dataEl) return;
+
+  let parsed;
+  try { parsed = JSON.parse(dataEl.textContent); } catch(e) { return; }
+
+  const variants = parsed.variants || [];
+  const fallbackImg = parsed.fallbackImg || '';
+  if(!variants.length) return;
+
+  const currentOptions = parsed.initialOptions.slice();
+
+  function findVariant(opts) {
+    return variants.find(v => opts.every((o, i) => v.options[i] === o)) || null;
+  }
+
+  function updateUI(variant) {
+    if(!variant) return;
+    const priceEl = document.querySelector('.trwfp-price');
+    if(priceEl) priceEl.textContent = (variant.price / 100).toLocaleString('nl-NL', {style:'currency', currency:'EUR'});
+    document.querySelectorAll('[data-tr-atc][data-variant-id]').forEach(btn => {
+      btn.dataset.variantId = variant.id;
+      btn.disabled = !variant.available;
+      btn.textContent = variant.available ? (btn.classList.contains('trwfp-sticky-atc-btn') ? 'In winkelwagen' : 'Aan winkelwagen toevoegen') : 'Uitverkocht';
+    });
+    const stickyPrice = document.getElementById('trwfp-sticky-price');
+    if(stickyPrice) stickyPrice.textContent = (variant.price / 100).toLocaleString('nl-NL', {style:'currency', currency:'EUR'});
+    const imgSrc = (variant.img && variant.img.length > 10) ? variant.img : fallbackImg;
+    if(imgSrc) {
+      const mainImg = document.getElementById('trwfp-main-img');
+      if(mainImg) mainImg.src = imgSrc;
+      document.querySelectorAll('.trwfp-thumb').forEach(t => t.classList.remove('active'));
+    }
+  }
+
+  function selectOption(optionIndex, value) {
+    currentOptions[optionIndex] = value;
+    const labelEl = document.querySelector('[data-trwfp-option-val="'+optionIndex+'"]');
+    if(labelEl) labelEl.textContent = value;
+    wrap.querySelectorAll('[data-option-index="'+optionIndex+'"]').forEach(el => {
+      el.classList.toggle('active', el.dataset.value === value);
+    });
+    updateUI(findVariant(currentOptions));
+  }
+
+  wrap.addEventListener('click', e => {
+    const pill = e.target.closest('[data-trwfp-pill]');
+    if(pill) selectOption(parseInt(pill.dataset.optionIndex), pill.dataset.value);
+    const swatch = e.target.closest('[data-trwfp-swatch]');
+    if(swatch) selectOption(parseInt(swatch.dataset.optionIndex), swatch.dataset.value);
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "TR Waterfles Pagina",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Productdetails" },
+    { "type": "text", "id": "materiaal", "label": "Materiaal", "placeholder": "bijv. Tritan kunststof, RVS" },
+    { "type": "text", "id": "afmetingen", "label": "Afmetingen", "placeholder": "bijv. \u00d89cm, 15cm" },
+    { "type": "text", "id": "duurzaamheid", "label": "Duurzaamheid", "placeholder": "bijv. Herbruikbaar" },
+    { "type": "header", "content": "Teksten" },
+    { "type": "text", "id": "tagline", "label": "Tagline", "placeholder": "bijv. Houd je thee de hele dag warm of koud" },
+    { "type": "textarea", "id": "verhaal_tekst", "label": "Productomschrijving", "info": "Laat leeg om de Shopify-productbeschrijving te gebruiken" },
+    { "type": "textarea", "id": "gebruiksinstructie", "label": "Gebruiksinstructie", "placeholder": "Hoe gebruik je dit product?", "info": "Laat leeg om de productbeschrijving te gebruiken" },
+    { "type": "textarea", "id": "reiniging", "label": "Reiniging & onderhoud", "placeholder": "bijv. Vaatwasserbestendig" }
+  ]
+}
+{% endschema %}

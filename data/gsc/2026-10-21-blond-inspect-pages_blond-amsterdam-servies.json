@@ -1,0 +1,29 @@
+{
+  "url": "https://tanterie.nl/pages/blond-amsterdam-servies",
+  "property": "sc-domain:tanterie.nl",
+  "index_status": {
+    "verdict": "PASS",
+    "coverage_state": "Submitted and indexed",
+    "robots_txt_state": "ALLOWED",
+    "indexing_state": "INDEXING_ALLOWED",
+    "page_fetch_state": "SUCCESSFUL",
+    "last_crawl_time": "2026-10-21T13:40:54Z",
+    "crawled_as": "MOBILE",
+    "referring_urls": [
+      "https://tanterie.nl/sitemap_pages_1.xml?from=157979967752&to=168280850696"
+    ]
+  },
+  "crawl_info": null,
+  "canonical": {
+    "google_canonical": "https://tanterie.nl/pages/blond-amsterdam-servies",
+    "user_canonical": "https://tanterie.nl/pages/blond-amsterdam-servies",
+    "match": true
+  },
+  "mobile_usability": {
+    "verdict": "VERDICT_UNSPECIFIED",
+    "issues": []
+  },
+  "rich_results": null,
+  "verdict": "PASS",
+  "error": null
+}

@@ -1,0 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "trbz_collection": {
+      "type": "tr-collection-bunzlau",
+      "settings": {
+        "subtitle": "",
+        "brand_image": "shopify://shop_images/06_Tante-Rie_Bunzlau_ontbijt-uitgebreid_LQ_JochemBoxemPhotography-11995_2b8b959b-9fd4-4ff5-adaf-d1e9b1fbe070.jpg",
+        "brand_text": "",
+        "seo_text": ""
+      }
+    }
+  },
+  "order": [
+    "trbz_collection"
+  ]
+}

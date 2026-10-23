@@ -1,0 +1,19 @@
+# Systeem en tijdelijk
+.DS_Store
+__pycache__/
+*.pyc
+scripts/logs/
+
+# Gegenereerde cache van graphify
+graphify-out/cache/
+
+# Werkkopieën van thema's (opnieuw op te halen met shopify theme pull; gezipte versies staan in scripts/archief-themas/)
+scripts/theme-live-*/
+scripts/theme-ref-*/
+
+# Geheimen horen nooit in deze repository (ze staan in ~/.config/claude-seo/)
+*.pem
+*token*.json
+*oauth-client*.json
+service_account*.json
+.env

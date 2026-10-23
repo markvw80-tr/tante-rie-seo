@@ -1,0 +1,16 @@
+{
+  "gemaakt": "2026-10-23",
+  "doel": "Backup V66: SEO-description van 5 theecollecties en 5 Blond-producten vóór de wijziging (titles blijven ongewijzigd)",
+  "items": [
+    {"id": "gid://shopify/Collection/561696342280", "handle": "zwarte-thee", "description": null},
+    {"id": "gid://shopify/Collection/561696506120", "handle": "vruchtenthee", "description": null},
+    {"id": "gid://shopify/Collection/560110010632", "handle": "groene-thee", "description": "Meer dan 30 soorten losse groene thee: Japanse Sencha, Chinese Jasmijn, Marocco Mint en meer. Vers afgewogen in Borne, Twente. Binnen 1 tot 2 werkdagen in huis."},
+    {"id": "gid://shopify/Collection/561696440584", "handle": "rooibos", "description": "Cafeïnevrije rooibos uit Zuid-Afrika, in meer dan 20 blends. Pure naturel, fruitig of kruidig. Vers afgewogen in Borne, Twente. Binnen 1 tot 2 werkdagen in huis."},
+    {"id": "gid://shopify/Collection/560110076168", "handle": "kruidenthee", "description": "Cafeïnevrije kruidenthee: kamille, pepermunt, gember en zorgvuldig samengestelde blends. Vers afgewogen in Borne, Twente. Binnen 1 tot 2 werkdagen in huis."},
+    {"id": "gid://shopify/Product/12038837960968", "handle": "matcha-princess", "description": "Matcha Princess bij Tante Rie. Voor iedereen die matcha drinkt: deze Blond Amsterdam Matcha Princess Mazagran van 0,5 liter is een echte blik"},
+    {"id": "gid://shopify/Product/12039138771208", "handle": "eb-pink-mug-0-35l-hearts", "description": "Mug 0,35L Hearts bij Tante Rie. Deze 0,35L beker uit de Even Bijkletsen collectie is versierd met zachte roze hartjes en past perfect bij de B"},
+    {"id": "gid://shopify/Product/12039798751496", "handle": "dad-1", "description": "Dad bij Tante Rie. Koffie. Gereedschap. Bbq. En een beetje “dad power”. Deze cappuccinobeker van 0,5 liter uit de Blond"},
+    {"id": "gid://shopify/Product/12038840516872", "handle": "cup-of-sunshine", "description": "Begin je dag met een glimlach. Bekijk het bij Tante Rie."},
+    {"id": "gid://shopify/Product/12039138443528", "handle": "cozy-days-mug-0-35l-tea", "description": "Mug 0,35L Tea bij Tante Rie in Borne. Met zorg uitgekozen en verpakt. Bestel eenvoudig online en geniet thuis."}
+  ]
+}
