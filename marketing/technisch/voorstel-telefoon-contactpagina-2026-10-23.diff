@@ -1,0 +1,13 @@
+--- a/pages/contact (Page 157979967752, body)
++++ b/pages/contact (Page 157979967752, body)
+@@ -1,7 +1,9 @@
+ <p>Heb je een vraag over onze thee, servies of een bestelling? We helpen je graag. Bij Tante Rie houden we van persoonlijk contact. Of je nu advies zoekt over een theesmaak, een cadeautip wilt of benieuwd bent wanneer je bestelling wordt verzonden: je mag ons altijd een bericht sturen.</p>
+-<p>Je kunt ons bereiken via e-mail of even langskomen in <a href="https://www.tanterie.nl" title="winkel in Borne">onze winkel</a> in het hart van Borne.</p>
++<p>Je kunt ons bereiken via e-mail, telefonisch of door even langs te komen in <a href="https://www.tanterie.nl" title="winkel in Borne">onze winkel</a> in het hart van Borne.</p>
+ <h4>📍 Bezoekadres</h4>
+ <p><strong>Tante Rie</strong><br>Bakkerssteeg 6<br>7622 GX Borne<br>Nederland</p>
+ <h4>✉️ E-mail</h4>
+ <p>webshop@tanterie.nl</p>
++<h4>📞 Telefoon</h4>
++<p>Bel ons gerust op <a href="tel:+31638291189">06 38 29 11 89</a>, van dinsdag tot en met zaterdag tussen 10:00 en 17:00 uur.</p>
+ <h4>🕒 Openingstijden winkel</h4>

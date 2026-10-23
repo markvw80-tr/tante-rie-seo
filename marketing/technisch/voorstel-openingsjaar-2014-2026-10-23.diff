@@ -1,0 +1,39 @@
+--- a/templates/llms.txt.liquid
++++ b/templates/llms.txt.liquid
+@@ -9,5 +9,5 @@
+ # {{ agents.store_name }}: Specialist in Losse Thee
+ 
+-Tante Rie is een Nederlandse theespecialist met een fysieke winkel in Borne (Overijssel) en een webshop op {{ agents.store_url }}. Meer dan 130 soorten losse thee: groene thee, witte thee, zwarte thee, rooibos, kruidenthee en vruchtenthee. De winkel opende in 2024 in het centrum van Borne en is vernoemd naar Rie Badart, de moeder van de oprichtster. Eigenaar is Nikkie. Klantbeoordeling: 4,9/5 op basis van geverifieerde Judge.me-reviews.
++Tante Rie is een Nederlandse theespecialist met een fysieke winkel in Borne (Overijssel) en een webshop op {{ agents.store_url }}. Meer dan 130 soorten losse thee: groene thee, witte thee, zwarte thee, rooibos, kruidenthee en vruchtenthee. De winkel opende in 2014 in het centrum van Borne en is vernoemd naar Rie Badart, de moeder van de oprichtster. Eigenaar is Nikkie. Klantbeoordeling: 4,9/5 op basis van geverifieerde Judge.me-reviews.
+ 
+ ## Kernfeiten
+--- a/templates/index.json
++++ b/templates/index.json
+@@ -98,6 +98,6 @@
+         "featured_collection": "thee",
+         "about_image": "shopify://shop_images/26_Tante-Rie_Algemeen_thee_LQ_JochemBoxemPhotography-12303_1.png",
+-        "about_title": "Onze theewinkel in Borne, sinds 2012",
+-        "about_text_1": "Tante Rie opende in 2012 haar deuren in het centrum van Borne. De winkel draagt de naam van Rie Badart, de moeder van de oprichtster: een vrouw die altijd met een kopje thee klaarzat als je binnenkwam.",
++        "about_title": "Onze theewinkel in Borne, sinds 2014",
++        "about_text_1": "Tante Rie opende in 2014 haar deuren in het centrum van Borne. De winkel draagt de naam van Rie Badart, de moeder van de oprichtster: een vrouw die altijd met een kopje thee klaarzat als je binnenkwam.",
+         "about_text_2": "Eigenaar Nikkie selecteert elk product met de hand. Meer dan 130 soorten losse thee, van Japanse Sencha en Ceylon zwarte thee tot biologische kruidenthee en seizoensblends. Alles wordt per bestelling vers verpakt, niet maanden vooruit. Daarnaast vind je theepotten en servies van Bunzlau Castle, theeblikken, filters en samengestelde theecadeaus.",
+         "about_text_3": "In de winkel aan de Bakkerssteeg kun je thee ruiken, proeven en vragen stellen. Bestel je online, dan versturen we binnen 1 tot 2 werkdagen met PostNL of DHL naar heel Nederland. Borne ligt centraal in Twente, op vijf minuten rijden van Hengelo.",
+--- a/sections/tr-homepage-redesign.liquid
++++ b/sections/tr-homepage-redesign.liquid
+@@ -368,7 +368,7 @@
+           zonder opmaak werd uitgelezen ('geselecteerd,voor'). Nu één regel.
+         {%- endcomment -%}
+-        <h2 class="trh-about-title">{{ section.settings.about_title | default: 'Onze theewinkel in Borne, sinds 2024' }}</h2>
++        <h2 class="trh-about-title">{{ section.settings.about_title | default: 'Onze theewinkel in Borne, sinds 2014' }}</h2>
+         <div class="trh-divider"></div>
+-        <p class="trh-about-text">{{ section.settings.about_text_1 | default: 'Tante Rie opende in 2024 haar deuren in het centrum van Borne. De winkel draagt de naam van Rie Badart, de moeder van de oprichtster: een vrouw die altijd met een kopje thee klaarzat als je binnenkwam.' }}</p>
++        <p class="trh-about-text">{{ section.settings.about_text_1 | default: 'Tante Rie opende in 2014 haar deuren in het centrum van Borne. De winkel draagt de naam van Rie Badart, de moeder van de oprichtster: een vrouw die altijd met een kopje thee klaarzat als je binnenkwam.' }}</p>
+         <p class="trh-about-text">{{ section.settings.about_text_2 | default: 'Eigenaar Nikkie selecteert elk product met de hand. Meer dan 130 soorten losse thee, van Japanse Sencha en Ceylon zwarte thee tot biologische kruidenthee en seizoensblends. Alles wordt per bestelling vers verpakt, niet maanden vooruit. Daarnaast vind je theepotten en servies van Bunzlau Castle, theeblikken, filters en samengestelde theecadeaus.' }}</p>
+         <p class="trh-about-text">{{ section.settings.about_text_3 | default: 'In de winkel aan de Bakkerssteeg kun je thee ruiken, proeven en vragen stellen. Bestel je online, dan versturen we binnen 1 tot 2 werkdagen met PostNL of DHL naar heel Nederland. Borne ligt centraal in Twente, op vijf minuten rijden van Hengelo.' }}</p>
+@@ -452,5 +452,5 @@
+     { "type": "header", "content": "Over ons" },
+     { "type": "image_picker", "id": "about_image", "label": "Afbeelding" },
+-    { "type": "text", "id": "about_title", "label": "Titel", "default": "Onze theewinkel in Borne, sinds 2024" },
++    { "type": "text", "id": "about_title", "label": "Titel", "default": "Onze theewinkel in Borne, sinds 2014" },
+     { "type": "textarea", "id": "about_text_1", "label": "Eerste alinea" },
+     { "type": "textarea", "id": "about_text_2", "label": "Tweede alinea" },

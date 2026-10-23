@@ -1,0 +1,8 @@
+--- a/layout/theme.liquid
++++ b/layout/theme.liquid
+@@ -81,4 +81,5 @@
+       "telephone": "+31638291189",
+       "email": "webshop@tanterie.nl",
++      "foundingDate": "2014",
+       "priceRange": "€€",
+       "logo": {
