@@ -9,6 +9,7 @@ Gebruik:
     python3 scripts/merchant_schrijf.py retourbeleid [--uitvoeren]   # V69 stap 2
     python3 scripts/merchant_schrijf.py homepage [--uitvoeren]       # V69 stap 3
     python3 scripts/merchant_schrijf.py homepage-terug [--uitvoeren] # alleen als de claim mislukt
+    python3 scripts/merchant_schrijf.py tweede-account [--uitvoeren] # V70: feed uit, claim intrekken op 5819585029
 
 Token: ~/.config/claude-seo/merchant-token.json (OAuth, scope content).
 Regels voor gegevensbronnen (stap 5) kunnen niet via de API; die doet Mark in het scherm.
@@ -27,6 +28,7 @@ from google.oauth2.credentials import Credentials
 TOKEN = os.path.expanduser("~/.config/claude-seo/merchant-token.json")
 ROOT = "/Users/markvanwijk/Tante Rie SEO/"
 ACC = "accounts/5716348221"
+ACC2 = "accounts/5819585029"  # tweede account met automatische feed (V70)
 API = "https://merchantapi.googleapis.com/accounts/v1/"
 
 RETOUR_NIEUW = "https://tanterie.nl/pages/retourbeleid-tante-rie"
@@ -92,14 +94,34 @@ def homepage(s, uitvoeren, doel):
     print("geclaimd:", r.json())
 
 
+def tweede_account(s, uitvoeren):
+    """V70: automatische feed uit en websiteclaim intrekken op het tweede account."""
+    feed = check(s.get(API + ACC2 + "/autofeedSettings"), "feed lezen")
+    hp = check(s.get(API + ACC2 + "/homepage"), "homepage lezen")
+    print(f"{ACC2}: automatische feed aan={feed.get('enableProducts')}, "
+          f"website {hp.get('uri')} geclaimd={hp.get('claimed', False)}")
+    if not uitvoeren:
+        return
+    backup("tweede-account", {"autofeedSettings": feed, "homepage": hp})
+    if feed.get("enableProducts"):
+        uit = check(s.patch(API + ACC2 + "/autofeedSettings", params={"updateMask": "enableProducts"},
+                            json={"enableProducts": False}), "feed uitzetten")
+        print("automatische feed aan:", uit.get("enableProducts", False))
+    if hp.get("claimed"):
+        uit = check(s.post(API + ACC2 + "/homepage:unclaim", json={}), "claim intrekken")
+        print("claim ingetrokken:", uit)
+
+
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("actie", choices=["retourbeleid", "homepage", "homepage-terug"])
+    p.add_argument("actie", choices=["retourbeleid", "homepage", "homepage-terug", "tweede-account"])
     p.add_argument("--uitvoeren", action="store_true")
     a = p.parse_args()
     s = sessie()
     if a.actie == "retourbeleid":
         retourbeleid(s, a.uitvoeren)
+    elif a.actie == "tweede-account":
+        tweede_account(s, a.uitvoeren)
     else:
         homepage(s, a.uitvoeren, HOMEPAGE_NIEUW if a.actie == "homepage" else HOMEPAGE_OUD)
     if not a.uitvoeren:

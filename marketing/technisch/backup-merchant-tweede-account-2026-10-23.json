@@ -1,0 +1,16 @@
+{
+ "gemaakt": "2026-10-23",
+ "doel": "Backup V69 tweede-account vóór wijziging",
+ "inhoud": {
+  "autofeedSettings": {
+   "name": "accounts/5819585029/autofeedSettings",
+   "enableProducts": true,
+   "eligible": true
+  },
+  "homepage": {
+   "name": "accounts/5819585029/homepage",
+   "uri": "http://www.tanterie.nl/",
+   "claimed": true
+  }
+ }
+}

@@ -10,7 +10,7 @@ Backups van de huidige stand: marketing/onpage/backup-eenheidsprijs-test-2026-10
 Status:
 
 **A2. Website naar tanterie.nl.** Merchant Center > Instellingen > Bedrijfsgegevens > Website. Wijzig `https://webshop.tanterie.nl` in `https://tanterie.nl` en klik op Claimen (verificatie gaat via Search Console, waar tanterie.nl al geverifieerd is). Let op: tussen wijzigen en claimen zijn producten even niet goedgekeurd; doe het in één keer.
-Status: GEPROBEERD door het team, geweigerd. Google meldt dat een ander Merchant Center-account, 5819585029, een subdomein van tanterie.nl heeft geclaimd. Het team heeft de oude website direct teruggezet en opnieuw geclaimd, dus er is niets veranderd. Nodig: uitzoeken van wie account 5819585029 is (een oud account van Tante Rie, de vorige eigenaar of een bureau) en dat account de claim laten vrijgeven, of het account sluiten als het van jullie is. Daarna kan het team het opnieuw doen.
+Status: GEDAAN door het team (23-10), na V70: claim van tweede account 5819585029 ingetrokken, tanterie.nl geclaimd op 5716348221.
 
 **A3. Bedrijfsadres controleren (nieuw, geen actie zonder jou).** In Merchant Center staat als bedrijfsadres Bleekweg 34, 7512 BZ Enschede en als klantenservice webshop@tanterie.nl. Is dat bewust (administratief adres), of moet het Bakkerssteeg 6, Borne zijn? Zet je antwoord hier.
 Antwoord:

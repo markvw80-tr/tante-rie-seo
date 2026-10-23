@@ -3,6 +3,7 @@
  "doel": "Backup V69 homepage vóór wijziging",
  "inhoud": {
   "name": "accounts/5716348221/homepage",
-  "uri": "https://tanterie.nl"
+  "uri": "https://webshop.tanterie.nl",
+  "claimed": true
  }
 }
