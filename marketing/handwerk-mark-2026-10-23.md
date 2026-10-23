@@ -15,7 +15,7 @@ Status: GEDAAN door het team (23-10), na V70: claim van tweede account 581958502
 **A3. Bedrijfsadres controleren (nieuw, geen actie zonder jou).** In Merchant Center staat als bedrijfsadres Bleekweg 34, 7512 BZ Enschede en als klantenservice webshop@tanterie.nl. Is dat bewust (administratief adres), of moet het Bakkerssteeg 6, Borne zijn? Zet je antwoord hier.
 Antwoord:
 
-**A4. Alleen-afhalen producten uit Shopping en gratis webvermeldingen, lokale vermelding behouden.** Akkoord Mark 23-10. Het team zet in Shopify op alle 143 producten van het verzendprofiel "Breekbare producten" (Bunzlau-aardewerk, Blond Amsterdam, ook de Blond-producten die onder merk Tante Rie staan, en de Pineut-karaffen) het verborgen Google-label custom_label_0 = alleen-afhalen. Klanten zien dit niet. Daarna maak jij één regel in Merchant Center, omdat regels niet via de API kunnen:
+**A4. Alleen-afhalen producten uit Shopping en gratis webvermeldingen, lokale vermelding behouden.** Akkoord Mark 23-10. Het team heeft in Shopify op alle 143 producten van het verzendprofiel "Breekbare producten" (Bunzlau-aardewerk, Blond Amsterdam, ook de Blond-producten die onder merk Tante Rie staan, en de Pineut-karaffen) het verborgen Google-label custom_label_0 = alleen-afhalen gezet (GEDAAN 23-10, staat al in Merchant Center). Klanten zien dit niet. Daarna maak jij één regel in Merchant Center, omdat regels niet via de API kunnen:
 1. Merchant Center (account Tante Rie, 5716348221) > Producten en winkel > Gegevensbronnen.
 2. Open de bron "Shopify App API" met land Nederland > tabblad Kenmerkregels > Kenmerk toevoegen of bewerken > kies "Uitgesloten bestemming" (excluded destination).
 3. Kies "Voorwaarde toevoegen": Aangepast label 0 is gelijk aan alleen-afhalen.
