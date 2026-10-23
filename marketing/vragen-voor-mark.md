@@ -46,6 +46,34 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 ## 8. Nieuw na antwoorden 22 oktober
 
+## 9. Maandplan november (plan-2026-11.md, opzet)
+
+Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
+
+**V74 🟡 Verdeling maand 2.** Je schreef dat 70/30 een eerste stap was en dat het webshopdeel vanaf maand 2 groeit. Is 60 procent winkel en 40 procent webshop de juiste stap voor 21 november tot 21 december? Ja, of noem een andere verdeling. (plan-2026-11, Hoe de score werkt)
+**Antwoord:**
+
+**V75 🟡 Keyword Planner-export.** Wil je uiterlijk 28 november in Google Ads de Zoekwoordplanner draaien met de invoerlijst marketing/zoekwoorden/keyword-planner-invoer-2026-10-23.txt (staat nu op branch claude/keyword-planner-voorbereiding), locatie Nederland, taal Nederlands, en de export in data/keyword-planner/ zetten? Ja/nee (plan-2026-11, actie 9)
+**Antwoord:**
+
+**V76 ⚪ Basic access Google Ads API.** Het ontwikkelaarstoken heeft Explorer access en dat blokkeert de Keyword Planner. Wil je Basic access aanvragen, zodat het team volumes zelf kan ophalen? Ja/nee (plan-2026-11, actie 9)
+**Antwoord:**
+
+**V77 🟡 NAP-correcties.** Uit de brief van 21 oktober (paragraaf 4): (a) is 06 55504482 bij Visit Borne een oud nummer, en is 06 38 29 11 89 het enige juiste? (b) welke TikTok-link klopt, @tante.rie.borne of @tanterie? (c) welk e-mailadres is officieel, webshop@ of info@tanterie.nl? (d) mag het telefoonnummer op de contactpagina zelf? (e) pas jij Visit Borne, Cylex en De Borne Gids aan, of mag het team een correctieverzoek voorbereiden? (plan-2026-11, actie 3)
+**Antwoord:**
+
+**V78 🟡 Antwoorden op 33 reviews.** De concept-antwoorden in marketing/autoriteit/brief-2026-10-21.md, paragraaf 3.7, zijn nooit goedgekeurd. Mogen ze langs de Kwaliteitsredacteur en daarna door het team geplaatst worden? Ja/nee (plan-2026-11, actie 4)
+**Antwoord:**
+
+**V79 🟡 Decemberberichten in het Bedrijfsprofiel.** Akkoord met een bericht op dinsdag 24 november, 1, 8 en 15 december, over theecadeau en de theewand, Bunzlau op tijd afhalen voor de feestdagen, thee en servies die we wel opsturen (losse thee, Rice, melamine), en op 15 december de herhaling van het feestdagenbericht? De teksten gaan eerst langs de Kwaliteitsredacteur. Ja/nee (plan-2026-11, actie 4)
+**Antwoord:**
+
+**V80 🟡 Koopavonden en extra openingen in december (vervolg op V35).** Is de winkel in december op extra avonden of dagen open, bijvoorbeeld op zondag of maandag? Zo ja, welke data en tijden? Graag uiterlijk 10 november, zodat het feestdagenbericht van 17 november klopt. (plan-2026-11, actie 4)
+**Antwoord:**
+
+**V81 🔴 Metingen.** In de cloudsessies zijn er geen credentials voor Search Console, GA4, Merchant Center en het Bedrijfsprofiel. Kies A: je draait de metingen zelf lokaal volgens de tabel "Metingen die Mark lokaal moet draaien" in plan-2026-11, inclusief de export van het Indexeringsrapport Serverfout (5xx). Of B: je start voor de weekmonitors en het maandrapport een lokale sessie waarin de Analist de scripts draait. Zonder een van beide kan niemand de resultaten van oktober beoordelen. (plan-2026-11, actie 1 en 2)
+**Antwoord:**
+
 ---
 
 ## Beantwoord
