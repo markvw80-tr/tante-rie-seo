@@ -16,7 +16,7 @@
            {{ section.settings.subtitle }}
          {%- else -%}
 -          Handgeschilderd in Polen, te bestellen bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>
-+          Handgeschilderd in Polen, af te halen bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>. Het melamine versturen we wel.
++          Handgeschilderd aardewerk uit Polen, af te halen bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>. Het melamine kun je laten bezorgen.
          {%- endif -%}
        </p>
 +      {%- if _desc_first != blank -%}
@@ -30,7 +30,7 @@
          <span class="trbz-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'store' -%}</span>
          <div class="trbz-usp-text">
 -          <div class="trbz-usp-label">Alleen afhalen in Borne</div>
-+          <div class="trbz-usp-label">Aardewerk alleen afhalen in Borne</div>
++          <div class="trbz-usp-label">Afhalen in Borne</div>
            <div class="trbz-usp-sub">Bakkerssteeg 6, 7622 GX Borne</div>
          </div>
        </div>
@@ -40,37 +40,47 @@
          <div class="trbz-usp-text">
 -          <div class="trbz-usp-label">Hele collectie op bestelling</div>
 -          <div class="trbz-usp-sub">Niet op voorraad? Gewoon bestelbaar</div>
-+          <div class="trbz-usp-label">Melamine wordt verstuurd</div>
++          <div class="trbz-usp-label">Melamine laten bezorgen</div>
 +          <div class="trbz-usp-sub">Verstuurd binnen 1 tot 2 werkdagen</div>
          </div>
        </div>
      </div>
-@@ -437,8 +444,8 @@
+@@ -412,7 +419,7 @@
+                     In winkelwagen
+                   </button>
+                 {%- else -%}
+-                  <a href="{{ _card_variant_url }}" class="trbz-btn-order" aria-label="Bestel {{ product.title }}">Bestel nu</a>
++                  <a href="{{ _card_variant_url }}" class="trbz-btn-order" aria-label="Doe een bestelverzoek voor {{ product.title }}">Bestelverzoek</a>
+                 {%- endif -%}
+               </div>
+             </div>
+@@ -431,15 +438,15 @@
+     <div class="trbz-brand-inner">
+       <div>
+         <p class="trbz-brand-label">Over het merk</p>
+-        <h2 id="trbz-brand-heading">Bunzlau Castle: meer dan 200 jaar ambacht</h2>
++        <h2 id="trbz-brand-heading">Bunzlau Castle: aardewerk uit Bolesławiec</h2>
+         <div class="trbz-brand-text">
+           {%- if section.settings.brand_text != blank -%}
              {{ section.settings.brand_text }}
            {%- else -%}
-             <p>In het Poolse stadje Bolesławiec schilderen pottenbakkers al meer dan twee eeuwen aardewerk met de hand. Ze gebruiken traditionele stempels en sponsjes om de patronen aan te brengen. Geen twee stukken zijn precies gelijk. Het klassieke blauwe patroon, het pauwenoog, staat al generaties lang symbool voor het merk.</p>
+-            <p>In het Poolse stadje Bolesławiec schilderen pottenbakkers al meer dan twee eeuwen aardewerk met de hand. Ze gebruiken traditionele stempels en sponsjes om de patronen aan te brengen. Geen twee stukken zijn precies gelijk. Het klassieke blauwe patroon, het pauwenoog, staat al generaties lang symbool voor het merk.</p>
 -            <p>Bunzlau Castle aardewerk gaat in de vaatwasser, magnetron én oven. Het glazuur is loodvrij en bestand tegen dagelijks gebruik. Je koopt het niet voor één seizoen.</p>
 -            <p>Bij Tante Rie vind je theepotten, mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk er niet? De hele collectie is op bestelling beschikbaar. Je haalt het op zodra het er ligt.</p>
-+            <p>Bunzlau Castle aardewerk gaat in de vaatwasser en de magnetron en is bestand tegen dagelijks gebruik. Je koopt het niet voor één seizoen.</p>
-+            <p>Bij Tante Rie vind je mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk of decor er niet bij, neem dan contact met ons op, dan kijken we of we het voor je kunnen bestellen.</p>
-             <p>Borne ligt midden in Twente, op een halfuur van <strong>Enschede, Hengelo en Almelo</strong>. Loop binnen, kijk rond en neem het mee.</p>
+-            <p>Borne ligt midden in Twente, op een halfuur van <strong>Enschede, Hengelo en Almelo</strong>. Loop binnen, kijk rond en neem het mee.</p>
++            <p>Bunzlau Castle bestaat sinds 1984. Het aardewerk komt uit Bolesławiec, een plaats in Polen waar al sinds de 18e eeuw keramiek wordt gemaakt. De patronen worden met de hand aangebracht, met traditionele stempels en sponsjes, waardoor geen twee stukken precies gelijk zijn.</p>
++            <p>Het aardewerk van Bunzlau Castle mag in de vaatwasser en de magnetron, en het is stevig genoeg voor dagelijks gebruik. Je koopt het niet voor één seizoen.</p>
++            <p>Bij Tante Rie vind je mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk of decor er niet bij, neem dan contact met ons op. We kijken graag of we het voor je kunnen bestellen.</p>
++            <p>Borne ligt midden in Twente. Vanuit Enschede reis je ongeveer 25 minuten, vanuit Hengelo ongeveer 15 en vanuit Almelo ongeveer 20. Loop binnen, kijk rond en neem het mee.</p>
            {%- endif -%}
          </div>
-@@ -455,7 +462,7 @@
- 
-   <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
-   <section class="trbz-pickup" aria-labelledby="trbz-pickup-heading">
--    <h2 id="trbz-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Alleen afhalen in de winkel</h2>
-+    <h2 id="trbz-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Aardewerk afhalen in de winkel</h2>
-     {%- if section.settings.foto_winkel != blank -%}
-     <figure class="trbz-winkelfoto">
-       {{ section.settings.foto_winkel | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 360px, calc(100vw - 48px)', loading: 'lazy' }}
+       </div>
 @@ -504,7 +511,7 @@
            </div>
            <div class="trbz-pickup-contact-row">
              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
 -            <div style="font-size:12.5px;color:var(--text-muted)">Niet op voorraad? Heel de collectie is op bestelling beschikbaar.</div>
-+            <div style="font-size:12.5px;color:var(--text-muted)">Staat een stuk of decor er niet bij? Neem contact met ons op, dan kijken we of we het voor je kunnen bestellen.</div>
++            <div style="font-size:12.5px;color:var(--text-muted)">Zoek je een ander decor? Vraag ons gerust of we het voor je kunnen bestellen.</div>
            </div>
          </div>
          <div class="trbz-pickup-cta">

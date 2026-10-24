@@ -129,15 +129,13 @@ Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 
 ## 18. Akkoord Bunzlau-pakket (24 oktober)
 
-**V118 🔴 Akkoord Bunzlau-pakket.** Alles is beoordeeld door de Kwaliteitsredacteur (review/review-bunzlau-2026-10-30.md, met correcties): (a) nieuwe intro, alinea Pools aardewerk en FAQ op /collections/bunzlau (content/concept-bunzlau-2026-10-29.md); (b) title "Bunzlau Castle servies kopen in Borne | Tante Rie" en de meta uit de review; (c) link vanuit het Bunzlau-blog en op /pages/serviezen "altijd op voorraad" eruit plus een link naar Bunzlau (onpage/voorstel-bunzlau-title-links-2026-10-29.md); (d) themawijziging met de correcties T1 tot en met T5 uit paragraaf 7 van de review (technisch/voorstel-bunzlau-thema-2026-10-24.md). Akkoord op a tot en met d, en zo ja: T6 (merkblok zonder bron) meenemen of wachten op V114? Doorvoeren gaat via een themakopie met preview; body en thema gaan dezelfde dag live.
-**Antwoord:**
-
 ---
 
 ## Beantwoord
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V118 Akkoord Bunzlau-pakket (a tot en met d) | Akkoord; merkblok met de feiten uit V114 | doorvoeren via themakopie en preview, body en thema dezelfde dag live |
 | 24-10 | V113 Extra afhaalteksten Bunzlau | Nee | themavoorstel zonder balk- en kopaanvulling |
 | 24-10 | V114 Bronnen merkblok Bunzlau | Bunzlau Castle bestaat sinds 1984; in de plaats in Polen waar het gemaakt wordt, wordt al sinds de 18e eeuw keramiek gemaakt. Reistijd naar de winkel: ongeveer 25 minuten vanuit Enschede, 15 vanuit Hengelo en 20 vanuit Almelo. Pauwenoog niet bevestigd | themavoorstel merkblok (T6) |
 | 24-10 | V115 Afhaaltijd | Ja, binnen 2 uur klopt | geen wijziging |
