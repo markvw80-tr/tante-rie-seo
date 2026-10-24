@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93 en V94 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -77,6 +77,16 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 ## 13. Vroege start november (24 oktober)
 
 **V94 🔴 Akkoord vroege start.** Het novemberplan is bijgewerkt met de zoekvolumes (plan-2026-11.md, versie 2). Drie onderdelen wil ik al vanaf maandag 26 oktober laten oppakken, omdat de vraag in november al piekt: de Bunzlau-collectie (voorstel bij jou op 2 november, live uiterlijk 14 november), de bewaarblikken en één cadeaupagina (samen bij jou op 5 november, bewaarblikken live uiterlijk 13 november, cadeau uiterlijk 20 november). Elke tekst komt eerst als voor en na bij je langs. (a) Akkoord om de opdrachten uit plan-2026-11-vroege-start.md uit te zetten? (b) Akkoord dat de collectie Thee Cadeaus (/collections/cadeaus) de hoofdpagina wordt voor 'thee cadeau' en /pages/thee-cadeau ernaar verwijst? (c) Akkoord dat we de servies-hub /pages/serviezen niet herschrijven (alleen "altijd op voorraad" eruit en een link naar Bunzlau) en Rice en melamine naar januari schuiven? (plan-2026-11.md en plan-2026-11-vroege-start.md)
+**Antwoord:**
+
+## 14. Search Console-meldingen (24 oktober)
+
+Logboek: technisch/search-console-meldingen.md
+
+**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Zonder (c) blijft het spoor van 16 september onverklaard. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
+**Antwoord:**
+
+**V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
 **Antwoord:**
 
 ---
