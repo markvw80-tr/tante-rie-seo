@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Zoekvolumes uit Google Keyword Planner (Google Ads API, Basic access sinds 24-10-2026).
 
-Eenmalig (Mark): token en klant-ID verborgen invoeren, daarna inloggen in de browser:
-    python3 scripts/zoekvolumes.py token
+Eenmalig (Mark): klant-ID invullen en inloggen in de browser (ads-token.json):
+    python3 scripts/zoekvolumes.py account
     python3 scripts/zoekvolumes.py inloggen
 
 Daarna:
@@ -13,9 +13,8 @@ Daarna:
 Standaard Nederlands (taal 1010) en Nederland (locatie 2528). Ruwe uitvoer gaat naar
 data/keyword-planner/JJJJ-MM-DD-<onderwerp>.json.
 
-Config in ~/.config/claude-seo/google-api.json (vult Mark zelf in, nooit in de chat):
-    "ads_developer_token": "...", "ads_customer_id": "233-270-6927",
-    "ads_login_customer_id": "<alleen bij een managementaccount>"
+Config in ~/.config/claude-seo/google-api.json: "ads_customer_id" en alleen bij een
+managementaccount "ads_login_customer_id". Geen ontwikkelaarstoken nodig (afgeschaft per 9-9-2026).
 """
 import argparse
 import json
@@ -34,17 +33,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TAAL, LAND = "1010", "2528"
 
 
-def token():
-    """Vraagt token en klant-ID verborgen op en schrijft ze in google-api.json (niets in beeld of logs)."""
-    from getpass import getpass
+def account():
+    """Schrijft het klant-ID (en eventueel managementaccount-ID) in google-api.json."""
     pad = CFG + "google-api.json"
     cfg = json.load(open(pad))
-    t = getpass("Ontwikkelaarstoken (wordt niet getoond): ").strip()
     k = input("Klant-ID Google Ads (123-456-7890): ").strip()
     m = input("Managementaccount-ID (leeg laten als er geen is): ").strip()
-    if not t or not k:
-        sys.exit("Token en klant-ID zijn verplicht, niets opgeslagen")
-    cfg.update({"ads_developer_token": t, "ads_customer_id": k})
+    if not k:
+        sys.exit("Klant-ID is verplicht, niets opgeslagen")
+    cfg["ads_customer_id"] = k
     if m:
         cfg["ads_login_customer_id"] = m
     with open(pad, "w") as f:
@@ -67,12 +64,14 @@ def client():
     cfg = json.load(open(CFG + "google-api.json"))
     oauth = json.load(open(CLIENT))["installed"]
     tok = json.load(open(TOKEN))
-    ontbreekt = [k for k in ("ads_developer_token", "ads_customer_id") if not cfg.get(k)]
-    if ontbreekt:
-        sys.exit("Ontbreekt in google-api.json: " + ", ".join(ontbreekt))
-    d = {"developer_token": cfg["ads_developer_token"], "client_id": oauth["client_id"],
-         "client_secret": oauth["client_secret"], "refresh_token": tok["refresh_token"],
-         "use_proto_plus": True}
+    if not cfg.get("ads_customer_id"):
+        sys.exit("Ontbreekt in google-api.json: ads_customer_id (python3 scripts/zoekvolumes.py account)")
+    # Ontwikkelaarstokens zijn per 9-9-2026 afgeschaft: de toegang (Basic) hoort bij het Cloud-project
+    # van de OAuth-client. Een eventueel token in de config wordt nog meegestuurd maar is optioneel.
+    d = {"client_id": oauth["client_id"], "client_secret": oauth["client_secret"],
+         "refresh_token": tok["refresh_token"], "use_proto_plus": True}
+    if cfg.get("ads_developer_token"):
+        d["developer_token"] = cfg["ads_developer_token"]
     if cfg.get("ads_login_customer_id"):
         d["login_customer_id"] = cfg["ads_login_customer_id"].replace("-", "")
     return GoogleAdsClient.load_from_dict(d), cfg["ads_customer_id"].replace("-", "")
@@ -115,15 +114,15 @@ def ophalen(woorden, ideeen, limiet):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("actie", choices=["token", "inloggen", "volumes", "ideeen"])
+    p.add_argument("actie", choices=["account", "inloggen", "volumes", "ideeen"])
     p.add_argument("woorden", nargs="?", default="", help="komma-gescheiden")
     p.add_argument("--bestand", help="één zoekwoord per regel")
     p.add_argument("--limiet", type=int, default=50)
     p.add_argument("--onderwerp", default="zoekvolumes")
     p.add_argument("--json", action="store_true")
     a = p.parse_args()
-    if a.actie == "token":
-        return token()
+    if a.actie == "account":
+        return account()
     if a.actie == "inloggen":
         return inloggen()
     woorden = [w.strip() for w in a.woorden.split(",") if w.strip()]
