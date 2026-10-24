@@ -179,4 +179,108 @@ Geen gezondheidsclaims. Geen superlatieven of vergelijkingen met andere winkels.
 
 ## 6. Afronding voor de makers
 
-Content-redacteur verwerkt C2 tot en met C6 in het concept (of On-page neemt de tekst uit deze review over bij het doorvoeren). On-page neemt de definitieve title en meta over, verwerkt C9 en C10, past de V-nummers aan en loopt bij het doorvoeren voorwaarde 2 en 3 na. Het pakket kan daarmee op 2 november naar Mark, met de vermelding dat intro en FAQ wachten op V105. Ik hoef de gecorrigeerde versies niet opnieuw te zien, tenzij er inhoudelijk iets anders verandert dan hierboven staat; het themavoorstel voor V105 beoordeel ik wel apart.
+Content-redacteur verwerkt C2 tot en met C6 in het concept (of On-page neemt de tekst uit deze review over bij het doorvoeren). On-page neemt de definitieve title en meta over, verwerkt C9 en C10, past de V-nummers aan en loopt bij het doorvoeren voorwaarde 2 en 3 na. Het pakket kan daarmee op 2 november naar Mark, met de vermelding dat intro en FAQ wachten op V105. Ik hoef de gecorrigeerde versies niet opnieuw te zien, tenzij er inhoudelijk iets anders verandert dan hierboven staat; het themavoorstel voor V105 beoordeel ik wel apart (zie paragraaf 7).
+
+## 7. Themavoorstel V105 (Technisch SEO)
+
+Toegevoegd 24 oktober 2026. Beoordeeld: marketing/technisch/voorstel-bunzlau-thema-2026-10-24.md en marketing/technisch/voorstel-bunzlau-thema-2026-10-24.diff (sections/tr-collection-bunzlau.liquid). Open vragen die erbij horen: V113 tot en met V117.
+
+**Oordeel: goedgekeurd met correcties.** De techniek is goed. De eerste alinea wordt met een minimale ingreep in de hero getoond, de splitsing blijft gelijk zodat er geen dubbele tekst ontstaat, en het voorraadblok, "officieel reseller", "oven" en "loodvrij" verdwijnen. De volgorde van publiceren (eerst de body, direct daarna het thema) is juist. Vijf klantteksten in de diff moeten anders voordat Mark de voor-en-naversie krijgt (T1 tot en met T5). T6 raad ik sterk aan, maar die blokkeert de publicatie niet.
+
+### Controle: vervalt er iets met het SEO-blok (regels 521 tot 534)?
+
+Nee, niets wat nodig is. Per onderdeel:
+
+| Onderdeel dat vervalt | Gedekt door | Wat echt verdwijnt |
+|---|---|---|
+| H2 "Bunzlau Castle kopen in Twente": langskomen, online bestellen en ophalen, bestellen wat er niet staat, contact | Intro-alinea 2 en de FAQ "Waar kan ik Bunzlau Castle kopen?" (telefoon en e-mail). 'Twente' staat in de FAQ "Welke winkel in Nederland ..." | "Officieel reseller" en "levertijd hangt af van de collectiecyclus", allebei terecht weg (geen bron, geen termijn). De link naar /pages/contact; telefoon en e-mail in de FAQ zijn genoeg |
+| H3 decors "op voorraad" | Intro-alinea 2 (decor bestellen); de decornamen staan op de productkaarten en in het filter | De negentien decornamen in de lopende tekst. In data/gsc/2026-10-21-query-page-90d.json zit geen enkele zoekopdracht op een decornaam die op de collectie landt, dus het levert geen meetbaar verlies op |
+| H3 Gebruik en onderhoud | FAQ vaatwasser (vaatwasser, magnetron, metalen schuursponsje) | "Ovenbestendig tot 220°C" en "tientallen jaren", terecht weg (V98 bevestigt alleen vaatwasser en magnetron) |
+| H3 Theepotten | Pools-aardewerkalinea, met links naar /collections/thee en /collections/theefilters-en-maatschepjes | Theepottekst en de dode link naar /collections/losse-thee, terecht weg (V89) |
+| H3 Ophalen in Borne | Intro-alinea 2, het infoblok Openingstijden en het parkeren in de FAQ, nu met de juiste V15-formulering | "Heeft de voorkeur" (tegenstrijdig) en "Gratis parkeren in de buurt" (onvolledig), terecht weg |
+
+Voorwaarde: het blok mag alleen vervallen als de nieuwe body met intro-alinea 2, de Pools-alinea en de FAQ op dezelfde dag live gaat, zoals stap 5 van het voorstel beschrijft. Anders blijft er onder de producten te weinig tekst over.
+
+### Bevindingen
+
+| Punt | Plek (live regel) | Ernst | Correctie |
+|---|---|---|---|
+| "Melamine wordt verstuurd / Verstuurd binnen 1 tot 2 werkdagen" leest dubbel | Balk, 234 en 235 | Middel | T1 |
+| In de ondertitel hoort "Handgeschilderd" en "af te halen" grammaticaal bij de hele collectie, ook bij het melamine, en "wel" contrasteert met een "niet" dat er niet staat | Hero-ondertitel, 201 | Middel | T2 |
+| Kop "Aardewerk afhalen in de winkel" laat "alleen" vallen en leest als een opdracht | H2 infoblok, 458 | Laag | T3 |
+| De contactregel herhaalt letterlijk de nieuwe zin uit het merkblok en zegt hetzelfde als intro-alinea 2. Zo staat dezelfde boodschap drie keer op één pagina | Infoblok Contact, 507 | Laag | T4 |
+| In het merkblok staan twee keer "dan" in één zin, staat "en ... en" en ontbreekt een koppelteken ("Bunzlau Castle aardewerk") | Over het merk, 440 en 441 | Laag | T5 |
+| "Al meer dan twee eeuwen", "pauwenoog" en "op een halfuur van Enschede, Hengelo en Almelo" hebben geen bron (V114 open). Ze staan in hetzelfde blok dat nu toch wordt aangepast | Over het merk, 439 en 442 | Middel | T6 (aanbevolen) |
+| Witte introtekst op de herofoto: contrast niet getoetst | Hero, nieuwe CSS | Laag | In de preview (stap 3) toetsen op leesbaarheid, ook op 375 px |
+| "Aardewerk alleen afhalen in Borne" in de balk (V113) | Balk, 220 | Geen | Goedgekeurd en aanbevolen: zonder deze zin zegt de balk "alleen afhalen", terwijl ondertitel en intro zeggen dat het melamine wordt verstuurd |
+| Knoppen "In winkelwagen" laten staan (3d) | 411 | Geen | Akkoord, omdat de checkout bij aardewerk alleen ophalen aanbiedt. Wel de gemengde winkelwagen in de preview testen en vastleggen, zoals voorgesteld |
+
+V115 (afhaaltijd 2 uur), V116 (negatieve voorraad) en V117 ("Bestel nu" wordt "Bestelverzoek") vallen buiten deze diff en houden de publicatie niet tegen. V116 raakt wel de geloofwaardigheid van de badge "Op voorraad", dus graag snel oppakken.
+
+### Correcties (voor en na)
+
+**T1. Balk, derde item (regels 234 en 235).**
+
+Voor (voorstel):
+> Melamine wordt verstuurd / Verstuurd binnen 1 tot 2 werkdagen
+
+Na:
+> Melamine laten bezorgen / Verstuurd binnen 1 tot 2 werkdagen
+
+**T2. Hero-ondertitel (regel 201).**
+
+Voor (voorstel):
+> Handgeschilderd in Polen, af te halen bij Tante Rie in **Borne**. Het melamine versturen we wel.
+
+Na:
+> Handgeschilderd aardewerk uit Polen, af te halen bij Tante Rie in **Borne**. Het melamine kun je laten bezorgen.
+
+De opmaak van "Borne" (`<strong><em>`) blijft. De zin over het melamine volgt dezelfde formulering als correctie C2 in de intro.
+
+**T3. Kop infoblok (regel 458).** Alleen als Mark V113 goedkeurt; anders blijft "Alleen afhalen in de winkel" staan.
+
+Voor (voorstel):
+> Aardewerk afhalen in de winkel
+
+Na:
+> Het aardewerk haal je af in de winkel
+
+**T4. Infoblok Contact (regel 507).**
+
+Voor (voorstel):
+> Staat een stuk of decor er niet bij? Neem contact met ons op, dan kijken we of we het voor je kunnen bestellen.
+
+Na:
+> Zoek je een ander decor? Vraag ons gerust of we het voor je kunnen bestellen.
+
+**T5. Over het merk (regels 440 en 441).**
+
+Voor (voorstel):
+> Bunzlau Castle aardewerk gaat in de vaatwasser en de magnetron en is bestand tegen dagelijks gebruik. Je koopt het niet voor één seizoen.
+>
+> Bij Tante Rie vind je mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk of decor er niet bij, neem dan contact met ons op, dan kijken we of we het voor je kunnen bestellen.
+
+Na:
+> Het aardewerk van Bunzlau Castle mag in de vaatwasser en de magnetron, en het is stevig genoeg voor dagelijks gebruik. Je koopt het niet voor één seizoen.
+>
+> Bij Tante Rie vind je mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk of decor er niet bij, neem dan contact met ons op. We kijken graag of we het voor je kunnen bestellen.
+
+Technisch SEO controleert via Shopify of er decoratiestukken online staan. Zo niet, dan vervalt "en decoratiestukken".
+
+**T6. Over het merk (regels 439 en 442), aanbevolen.** Deze regels staan nu ook live. De regel dat een zin zonder bron wegblijft tot Mark antwoordt, geldt ook hier, en de diff raakt dit blok toch al. Geeft Mark bij V114 een bron, dan kan de oude tekst terug.
+
+Voor (live):
+> In het Poolse stadje Bolesławiec schilderen pottenbakkers al meer dan twee eeuwen aardewerk met de hand. Ze gebruiken traditionele stempels en sponsjes om de patronen aan te brengen. Geen twee stukken zijn precies gelijk. Het klassieke blauwe patroon, het pauwenoog, staat al generaties lang symbool voor het merk.
+>
+> Borne ligt midden in Twente, op een halfuur van **Enschede, Hengelo en Almelo**. Loop binnen, kijk rond en neem het mee.
+
+Na:
+> In het Poolse stadje Bolesławiec schilderen pottenbakkers het aardewerk met de hand. Ze gebruiken traditionele stempels en sponsjes om de patronen aan te brengen, waardoor geen twee stukken precies gelijk zijn.
+>
+> Borne ligt midden in Twente, tussen **Hengelo en Almelo**. Loop binnen, kijk rond en neem het mee.
+
+"Tussen Hengelo en Almelo" staat ook in de FAQ van het concept en is een geografisch feit. Kiest Mark ervoor om op V114 te wachten, dan blijven deze twee alinea's zoals ze nu zijn en gaat de rest van de diff gewoon door.
+
+### Aanvulling op de uitvoering
+
+Bij de controle na livegang (stap 6) zoekt Technisch SEO naast "officieel reseller", "220" en "losse-thee" ook naar "te bestellen bij", "Hele collectie op bestelling" en "Heel de collectie". Geen van die zinnen mag nog op de pagina staan. De klantteksten in de diff hoef ik niet opnieuw te zien als T1 tot en met T5 letterlijk zijn overgenomen. De voor-en-naversie die Mark krijgt, bevat deze gecorrigeerde teksten.
