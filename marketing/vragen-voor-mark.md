@@ -124,20 +124,8 @@ Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-
 
 Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 
-**V113 ⚪ Extra afhaalteksten Bunzlau.** Naast de nieuwe ondertitel stelt Technisch SEO "Aardewerk alleen afhalen in Borne" in de balk onder de hero en "Aardewerk afhalen in de winkel" als kop van het infoblok voor. Wel of niet? (voorstel-bunzlau-thema)
-**Antwoord:**
-
-**V114 🟡 Bronnen merkblok Bunzlau.** Is er een bron voor "meer dan 200 jaar ambacht", "meer dan twee eeuwen", "pauwenoog" en "op een halfuur van Enschede, Hengelo en Almelo"? Zo niet, dan gaan ze eruit of worden ze vervangen. (voorstel-bunzlau-thema)
-**Antwoord:**
-
-**V115 ⚪ Afhaaltijd.** In Shopify staat lokaal ophalen op "binnen 2 uur". Klopt dat voor aardewerk dat op voorraad ligt? (voorstel-bunzlau-thema)
-**Antwoord:**
-
 **V116 🟡 Negatieve voorraad Bunzlau.** Meerdere Bunzlau-producten hebben negatieve voorraad (bijvoorbeeld rijstkom 500 ml, -3), waardoor "Op voorraad" kan verschijnen bij iets dat niet in de winkel ligt. Eerst rechtzetten? Er staat al een ongepubliceerde themakopie "Bunzlau eigen voorraad 2026-10-23". (voorstel-bunzlau-thema)
-**Antwoord:**
-
-**V117 ⚪ Knop bij niet beschikbaar.** Moet "Bestel nu" bij niet-beschikbare Bunzlau-producten "Bestelverzoek" worden? (voorstel-bunzlau-thema)
-**Antwoord:**
+**Antwoord:** Wordt geteld; Mark heeft op 24-10 al voorraad opgeboekt. Daarna opnieuw controleren.
 
 ## 18. Akkoord Bunzlau-pakket (24 oktober)
 
@@ -150,6 +138,10 @@ Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V113 Extra afhaalteksten Bunzlau | Nee | themavoorstel zonder balk- en kopaanvulling |
+| 24-10 | V114 Bronnen merkblok Bunzlau | Bunzlau Castle bestaat sinds 1984; in de plaats in Polen waar het gemaakt wordt, wordt al sinds de 18e eeuw keramiek gemaakt. Reistijd naar de winkel: ongeveer 25 minuten vanuit Enschede, 15 vanuit Hengelo en 20 vanuit Almelo. Pauwenoog niet bevestigd | themavoorstel merkblok (T6) |
+| 24-10 | V115 Afhaaltijd | Ja, binnen 2 uur klopt | geen wijziging |
+| 24-10 | V117 Knop bij niet beschikbaar | Ja, "Bestelverzoek" in plaats van "Bestel nu" | themavoorstel Bunzlau |
 | 24-10 | V105 Themavoorstel Bunzlau-collectie | Ja | Technisch SEO maakt voorstel met voor en na (eerste alinea, ondertitel, vaste voorraadteksten) |
 | 24-10 | V107 Volgorde cadeaucollectie | Ja, handmatig met proefpakketten bovenaan; aanvullen met bijvoorbeeld de Joeff-artikelen, die ook cadeaus kunnen zijn. Mark selecteert later nog andere artikelen. Klanten kunnen altijd contact opnemen voor een cadeaupakket op maat | cadeauvoorstel stap 2 (On-page) en cadeautekst (Content-redacteur) |
 | 24-10 | V97 Bunzlau in de aanbieding | Twee keer per jaar een kortingsweekend met 20 procent korting op servies van Bunzlau, Blond en Rice; data niet genoemd | content/concept-bunzlau-2026-10-29.md (FAQ aanbieding) |
