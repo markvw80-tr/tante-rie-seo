@@ -70,9 +70,6 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **V89 🟡 hanger-teapot.** Dit Bunzlau-product (voorraad 2) staat niet in de webshop, maar nog wel op Google & YouTube. Ook in de webshop zetten (dan geldt V88 ook hiervoor), of van Google halen?
 **Antwoord:**
 
-**V90 🟡 Akkoord eigenaarsnaam op de site.** Voorstel: technisch/voorstel-eigenaar-2026-10-24.md. Op vier plekken komt "Nikkie de Koning" te staan: de privacypagina (nu staat daar mevr. A. Kamp als aanspreekpunt voor privacyverzoeken), llms.txt, de homepage en Over ons. Akkoord, en wil Nikkie haar volledige naam op de site?
-**Antwoord:**
-
 **V91 ⚪ Toegang Anke Kamp tot het Bedrijfsprofiel.** Anke Kamp staat nog als beheerder (MANAGER) in het Google Bedrijfsprofiel. Nu zij geen eigenaar meer is: toegang intrekken? Dat kan alleen de eigenaar (Nikkie) in het profiel, onder Mensen en toegang. (autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md)
 **Antwoord:**
 ---
@@ -81,6 +78,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V90 Eigenaarsnaam op de site | Privacypagina volledige naam, elders alleen de voornaam | changelog 24-10 (privacypagina, Over ons) |
 | 24-10 | V86 Eigenaar | Eigenaar is Nikkie de Koning, vorige eigenaar is Anke Kamp | voorstel technisch/voorstel-eigenaar-2026-10-24.md (V90), V91 |
 | 24-10 | V88 Zes nieuwe Bunzlau-producten alleen afhalen | Ja, met label en uitgesloten van Shopping | changelog 24-10; backup onpage/backup-v88-bunzlau-afhalen-2026-10-24.json |
 | 23-10 | V77d Telefoon op de contactpagina | Akkoord | voorstel met voor en na volgt |

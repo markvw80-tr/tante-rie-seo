@@ -1,6 +1,6 @@
 # Voorstel eigenaarsnaam op de site (V86)
 
-Datum: 24-10-2026. Rol: technisch SEO-specialist. Status: voorstel, niets live gewijzigd.
+Datum: 24-10-2026. Rol: technisch SEO-specialist. Status: uitgevoerd 24-10 volgens V90: privacypagina met volledige naam (mevr. Nikkie de Koning), Over ons met voornaam (Nikkie). Punt 2 en 3 (llms.txt, homepage) vervallen: daar staat al "Nikkie".
 
 Antwoord Mark (V86, 24-10): eigenaar is Nikkie de Koning, vorige eigenaar is Anke Kamp.
 
