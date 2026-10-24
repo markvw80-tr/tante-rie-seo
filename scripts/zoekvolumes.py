@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Zoekvolumes uit Google Keyword Planner (Google Ads API, Basic access sinds 24-10-2026).
 
-Eenmalig inloggen (Mark, in de browser; slaat ~/.config/claude-seo/ads-token.json op):
+Eenmalig (Mark): token en klant-ID verborgen invoeren, daarna inloggen in de browser:
+    python3 scripts/zoekvolumes.py token
     python3 scripts/zoekvolumes.py inloggen
 
 Daarna:
@@ -31,6 +32,25 @@ TOKEN = CFG + "ads-token.json"
 SCOPE = ["https://www.googleapis.com/auth/adwords"]
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TAAL, LAND = "1010", "2528"
+
+
+def token():
+    """Vraagt token en klant-ID verborgen op en schrijft ze in google-api.json (niets in beeld of logs)."""
+    from getpass import getpass
+    pad = CFG + "google-api.json"
+    cfg = json.load(open(pad))
+    t = getpass("Ontwikkelaarstoken (wordt niet getoond): ").strip()
+    k = input("Klant-ID Google Ads (123-456-7890): ").strip()
+    m = input("Managementaccount-ID (leeg laten als er geen is): ").strip()
+    if not t or not k:
+        sys.exit("Token en klant-ID zijn verplicht, niets opgeslagen")
+    cfg.update({"ads_developer_token": t, "ads_customer_id": k})
+    if m:
+        cfg["ads_login_customer_id"] = m
+    with open(pad, "w") as f:
+        json.dump(cfg, f, indent=2)
+    os.chmod(pad, 0o600)
+    print("opgeslagen in", pad)
 
 
 def inloggen():
@@ -95,13 +115,15 @@ def ophalen(woorden, ideeen, limiet):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("actie", choices=["inloggen", "volumes", "ideeen"])
+    p.add_argument("actie", choices=["token", "inloggen", "volumes", "ideeen"])
     p.add_argument("woorden", nargs="?", default="", help="komma-gescheiden")
     p.add_argument("--bestand", help="één zoekwoord per regel")
     p.add_argument("--limiet", type=int, default=50)
     p.add_argument("--onderwerp", default="zoekvolumes")
     p.add_argument("--json", action="store_true")
     a = p.parse_args()
+    if a.actie == "token":
+        return token()
     if a.actie == "inloggen":
         return inloggen()
     woorden = [w.strip() for w in a.woorden.split(",") if w.strip()]
