@@ -39,7 +39,7 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
 
 **V76 ⚪ Basic access Google Ads API.** Het ontwikkelaarstoken heeft Explorer access en dat blokkeert de Keyword Planner. Wil je Basic access aanvragen, zodat het team volumes zelf kan ophalen? Ja/nee (plan-2026-11, actie 9)
-**Antwoord:** Aangevraagd (23-10), nog niet toegewezen; Mark gaat er 24-10 mee verder.
+**Antwoord:** Aangevraagd (23-10). Afgewezen op 23-10 (mail Google Ads API, 21:53): Basic access vereist een geverifieerd OAuth-merkprofiel (brand verification) voor project 28634605562. Explorer access blijft. Volgende stap voor Mark: merkverificatie in Google Cloud (Google Auth Platform > Branding en Verification Center), daarna Basic access opnieuw aanvragen. Tot die tijd handmatige Keyword Planner-exports.
 
 **V80 🟡 Koopavonden en extra openingen in december (vervolg op V35).** Is de winkel in december op extra avonden of dagen open, bijvoorbeeld op zondag of maandag? Zo ja, welke data en tijden? Graag uiterlijk 10 november, zodat het feestdagenbericht van 17 november klopt. (plan-2026-11, actie 4)
 **Antwoord:**
