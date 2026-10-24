@@ -76,8 +76,58 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 13. Vroege start november (24 oktober)
 
-**V94 🔴 Akkoord vroege start.** Het novemberplan is bijgewerkt met de zoekvolumes (plan-2026-11.md, versie 2). Drie onderdelen wil ik al vanaf maandag 26 oktober laten oppakken, omdat de vraag in november al piekt: de Bunzlau-collectie (voorstel bij jou op 2 november, live uiterlijk 14 november), de bewaarblikken en één cadeaupagina (samen bij jou op 5 november, bewaarblikken live uiterlijk 13 november, cadeau uiterlijk 20 november). Elke tekst komt eerst als voor en na bij je langs. (a) Akkoord om de opdrachten uit plan-2026-11-vroege-start.md uit te zetten? (b) Akkoord dat de collectie Thee Cadeaus (/collections/cadeaus) de hoofdpagina wordt voor 'thee cadeau' en /pages/thee-cadeau ernaar verwijst? (c) Akkoord dat we de servies-hub /pages/serviezen niet herschrijven (alleen "altijd op voorraad" eruit en een link naar Bunzlau) en Rice en melamine naar januari schuiven? (plan-2026-11.md en plan-2026-11-vroege-start.md)
+## 15. Vroege start: bewaarblikken (24 oktober)
+
+Analyse: technisch/analyse-bewaarblik-producten-2026-10-30.md
+
+**V99 🟡 Zoekresultaat thee bewaarblik.** Kun je in een privévenster op 'thee bewaarblik' zoeken en kijken of Flowers theeblik en Arts & Craft blauw als gewoon blauw resultaat staan of in een productblok of Shopping-weergave? Een schermafdruk in assets/screenshots/ is genoeg. (analyse-bewaarblik-producten)
 **Antwoord:**
+
+**V100 🟡 Voorraad Flowers theeblik.** Flowers staat op -4 met doorverkopen aan, waardoor Google "op voorraad" meldt. Hoeveel liggen er echt, wordt het nabesteld, en moet doorverkopen voor dit product uit? Zonder nabestelling gaat "of Flowers" uit de bewaarbliktekst. (analyse-bewaarblik-producten)
+**Antwoord:**
+
+**V101 ⚪ "Uit eigen winkel Borne" op accessoires.** Deze tekst staat vast op alle accessoires, ook als ze niet op voorraad zijn in de winkel. Mag dat blijven, of alleen tonen bij voorraad (zoals bij de afspraak van 21-10)? (analyse-bewaarblik-producten)
+**Antwoord:**
+
+**V102 ⚪ Afmetingen en materiaal blikken.** Wat zijn de afmetingen en het materiaal van Flowers theeblik en de Arts & Craft-blikken (groen en blauw)? (analyse-bewaarblik-producten)
+**Antwoord:**
+
+## 16. Vroege start: Bunzlau en cadeau (24 oktober)
+
+Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-cadeau-2026-10-28.md, onpage/voorstel-bewaarblikken-intro-2026-11-03.md
+
+**V103 ⚪ Oude links in het Bunzlau-blog.** Vier links in het Bunzlau-blog wijzen nog naar webshop.tanterie.nl (die doorverwijzen). Mogen ze direct naar tanterie.nl? (voorstel-bunzlau-title-links)
+**Antwoord:**
+
+**V104 ⚪ Servies op maat.** Klopt "Bijzonder servies op maat bestellen? Dat kan ook!" op /pages/serviezen nog, en mag het uitroepteken eraf? (voorstel-bunzlau-title-links)
+**Antwoord:**
+
+**V106 🔴 Voorraad cadeauproducten (vóór 3 november).** Van de 21 online cadeauproducten staan er 10 op voorraad 0 of lager, onder meer Natural Flower Cards. Komt er een nieuwe levering, of moeten ze offline? Zonder antwoord noemt de cadeautekst geen koker of set bij naam. (controle-cadeau)
+**Antwoord:**
+
+**V108 ⚪ Theegeschenken online.** Wil je (een deel van) de 13 theegeschenken uit "Geven is leuker", die nu alleen op de kassa staan, online zetten als cadeauset? Ze hebben eerst een beschrijving en foto's nodig. De twee Luxe Thee Cadeausets zijn gearchiveerd. (controle-cadeau)
+**Antwoord:**
+
+**V109 ⚪ Kaartje bij bestelling.** Kan een klant nog een persoonlijk kaartje bij een online bestelling laten doen? Zo niet, dan gaat die zin uit het cadeauvoorstel. (controle-cadeau)
+**Antwoord:**
+
+**V110 ⚪ USP "Vers verpakt uit eigen winkel".** Mag deze standaardtekst op de collectiepagina's mee in het cadeauvoorstel? Hangt samen met V101. (controle-cadeau)
+**Antwoord:**
+
+**V111 ⚪ Kassablikken online.** Wil je de "Blikje ..."-series en het gouden blik van 50 gram, die nu alleen op de kassa staan, online zetten? (voorstel-bewaarblikken-intro)
+**Antwoord:**
+
+**V112 ⚪ Kortingsweekend online.** Geldt de korting van het kortingsweekend (V97) alleen in de winkel of ook in de webshop? Tot het antwoord er is, zegt de Bunzlau-FAQ daar niets over. (concept-bunzlau)
+**Antwoord:**
+
+## 17. Themavoorstel Bunzlau (24 oktober)
+
+Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
+
+**V116 🟡 Negatieve voorraad Bunzlau.** Meerdere Bunzlau-producten hebben negatieve voorraad (bijvoorbeeld rijstkom 500 ml, -3), waardoor "Op voorraad" kan verschijnen bij iets dat niet in de winkel ligt. Eerst rechtzetten? Er staat al een ongepubliceerde themakopie "Bunzlau eigen voorraad 2026-10-23". (voorstel-bunzlau-thema)
+**Antwoord:** Wordt geteld; Mark heeft op 24-10 al voorraad opgeboekt. Daarna opnieuw controleren.
+
+## 18. Akkoord Bunzlau-pakket (24 oktober)
 
 ## 14. Search Console-meldingen (24 oktober)
 
@@ -95,6 +145,16 @@ Logboek: technisch/search-console-meldingen.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V118 Akkoord Bunzlau-pakket (a tot en met d) | Akkoord; merkblok met de feiten uit V114 | doorvoeren via themakopie en preview, body en thema dezelfde dag live |
+| 24-10 | V113 Extra afhaalteksten Bunzlau | Nee | themavoorstel zonder balk- en kopaanvulling |
+| 24-10 | V114 Bronnen merkblok Bunzlau | Bunzlau Castle bestaat sinds 1984; in de plaats in Polen waar het gemaakt wordt, wordt al sinds de 18e eeuw keramiek gemaakt. Reistijd naar de winkel: ongeveer 25 minuten vanuit Enschede, 15 vanuit Hengelo en 20 vanuit Almelo. Pauwenoog niet bevestigd | themavoorstel merkblok (T6) |
+| 24-10 | V115 Afhaaltijd | Ja, binnen 2 uur klopt | geen wijziging |
+| 24-10 | V117 Knop bij niet beschikbaar | Ja, "Bestelverzoek" in plaats van "Bestel nu" | themavoorstel Bunzlau |
+| 24-10 | V105 Themavoorstel Bunzlau-collectie | Ja | Technisch SEO maakt voorstel met voor en na (eerste alinea, ondertitel, vaste voorraadteksten) |
+| 24-10 | V107 Volgorde cadeaucollectie | Ja, handmatig met proefpakketten bovenaan; aanvullen met bijvoorbeeld de Joeff-artikelen, die ook cadeaus kunnen zijn. Mark selecteert later nog andere artikelen. Klanten kunnen altijd contact opnemen voor een cadeaupakket op maat | cadeauvoorstel stap 2 (On-page) en cadeautekst (Content-redacteur) |
+| 24-10 | V97 Bunzlau in de aanbieding | Twee keer per jaar een kortingsweekend met 20 procent korting op servies van Bunzlau, Blond en Rice; data niet genoemd | content/concept-bunzlau-2026-10-29.md (FAQ aanbieding) |
+| 24-10 | V98 Bunzlau in vaatwasser en magnetron | Ja | concept Bunzlau (FAQ vaatwasser bevestigd); On-page controleert de tag vaatwasser op alle Bunzlau-producten |
+| 24-10 | V94 Akkoord vroege start (a, b, c) | Alle drie akkoord | plan-2026-11-vroege-start.md; opdrachten uitgezet 24-10 |
 | 24-10 | V92 Zoekvolumes ophalen met scripts/zoekvolumes.py | Gedraaid door Mark op 24-10 (stap 1 en 2; stap 3 per seed niet nodig). Data in data/keyword-planner/: invoerlijst (202 resultaten, 196 met volume), ideeen-seeds (200) en een test (2) | zoekwoorden/clusters-2026-10-24.md; zoekwoorden/volumes-clusters-2026-10-24.md; vervolg in V93 |
 | 24-10 | V76 Basic access Google Ads API | Merkverificatie gedaan, Basic access toegekend (24-10) | scripts/zoekvolumes.py; Mark zet token in config en logt eenmalig in |
 | 24-10 | V82 Voorstel cafeïne-collecties, inclusief de extra's T3, V2, M4, M5 en de zes alt-teksten | Akkoord | changelog 24-10 (vijf regels); review/review-cafeine-thee-collecties-2026-10-24.md |

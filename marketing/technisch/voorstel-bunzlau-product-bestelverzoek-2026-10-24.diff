@@ -1,0 +1,35 @@
+--- a/sections/tr-product-bunzlau.liquid
++++ b/sections/tr-product-bunzlau.liquid
+@@ -380,7 +380,7 @@
+         data-variant-id="{{ cur.selected_or_first_available_variant.id }}"
+         data-available="{{ _available }}"
+         {%- if _available %} data-tr-atc{% endif %}
+-        {%- unless _available %} aria-expanded="false" aria-controls="trbzp-order-form-wrap"{% endunless %}>{%- if _available -%}In winkelwagen{%- else -%}Bestellen{%- endif -%}</button>
++        {%- unless _available %} aria-expanded="false" aria-controls="trbzp-order-form-wrap"{% endunless %}>{%- if _available -%}In winkelwagen{%- else -%}Bestelverzoek{%- endif -%}</button>
+       <div class="trbzp-order-form-wrap" id="trbzp-order-form-wrap" aria-live="polite">
+         <div class="trbzp-order-form">
+           <h3>Stuur een bestelverzoek</h3>
+@@ -491,7 +491,7 @@
+   <!-- Sticky ATC (mobiel) -->
+   <div class="trbzp-sticky-atc">
+     <span class="trbzp-sticky-price" id="trbzp-sticky-price">{{ cur.selected_or_first_available_variant.price | money }}</span>
+-    <button type="button" class="trbzp-sticky-btn" id="trbzp-sticky-btn">{%- if _available -%}In winkelwagen{%- else -%}Bestellen{%- endif -%}</button>
++    <button type="button" class="trbzp-sticky-btn" id="trbzp-sticky-btn">{%- if _available -%}In winkelwagen{%- else -%}Bestelverzoek{%- endif -%}</button>
+   </div>
+ 
+   {%- render 'tr-product-schema', product: cur, brand_name: 'Bunzlau Castle' -%}
+@@ -535,12 +535,12 @@
+     if(atc){
+       atc.dataset.variantId=v.id;
+       atc.dataset.available=v.available?'true':'false';
+-      atc.textContent=v.available?'In winkelwagen':'Bestel nu';
++      atc.textContent=v.available?'In winkelwagen':'Bestelverzoek';
+       atc.classList.toggle('bz-order',!v.available);
+       if(v.available){atc.setAttribute('data-tr-atc','');atc.removeAttribute('aria-expanded');atc.removeAttribute('aria-controls');}
+       else{atc.removeAttribute('data-tr-atc');atc.setAttribute('aria-controls','trbzp-order-form-wrap');atc.setAttribute('aria-expanded',(ow&&ow.classList.contains('visible'))?'true':'false');}
+     }
+-    if(sbEl)sbEl.textContent=v.available?'In winkelwagen':'Bestel nu';
++    if(sbEl)sbEl.textContent=v.available?'In winkelwagen':'Bestelverzoek';
+     if(availIn&&availOrder){availIn.hidden=!v.available;availOrder.hidden=v.available;}
+     if(ow&&v.available){ow.classList.remove('visible');}
+     if(v.image&&mainImg){mainImg.src=v.image;mainImg.alt=v.alt||'';}

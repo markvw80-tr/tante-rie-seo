@@ -1,0 +1,70 @@
+# Fix gewicht (eenheid) en ontbrekende spatie, 24-10-2026. Basis: themakopie 204095619336 (Bunzlau collectie V118) voor de wijziging. Live thema 203153015048 niet aangeraakt.
+--- a/sections/tr-product-bunzlau.liquid
++++ b/sections/tr-product-bunzlau.liquid
+@@ -345,7 +345,7 @@
+       <!-- Varianten -->
+       {%- if cur.variants.size > 1 -%}
+         <script type="application/json" id="trbzp-variant-data">
+-        {"variants":[{%- for v in cur.variants -%}{%- if v.featured_image -%}{%- assign _vi = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign _vi = '' -%}{%- endif -%}{"id":{{ v.id }},"price":"{{ v.price | money }}","available":{{ v.available }},"options":{{ v.options | json }},"image":"{{ _vi }}","alt":"{{ v.featured_image.alt | default: v.title | escape }}","sku":{{ v.sku | json }},"ean":{{ v.barcode | json }},"decor":{{ v.title | replace: 'Default Title', '' | json }},"weight":{{ v.weight | times: 1000 | round }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}],"initialOptions":{{ cur.selected_or_first_available_variant.options | json }}}
++        {"variants":[{%- for v in cur.variants -%}{%- if v.featured_image -%}{%- assign _vi = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign _vi = '' -%}{%- endif -%}{"id":{{ v.id }},"price":"{{ v.price | money }}","available":{{ v.available }},"options":{{ v.options | json }},"image":"{{ _vi }}","alt":"{{ v.featured_image.alt | default: v.title | escape }}","sku":{{ v.sku | json }},"ean":{{ v.barcode | json }},"decor":{{ v.title | replace: 'Default Title', '' | json }},"weight":{{ v.weight | round }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}],"initialOptions":{{ cur.selected_or_first_available_variant.options | json }}}
+         </script>
+         <div class="trbzp-variants" data-trbzp-variants>
+           {%- for opt in cur.options_with_values -%}
+@@ -434,7 +434,7 @@
+               <tr><td>Artikelnummer</td><td id="trbzp-spec-sku">{{ cur.selected_or_first_available_variant.sku | default: '–' }}</td></tr>
+               <tr><td>EAN</td><td id="trbzp-spec-ean">{{ cur.selected_or_first_available_variant.barcode | default: '–' }}</td></tr>
+               <tr><td>Decor</td><td id="trbzp-spec-decor">{{ cur.selected_or_first_available_variant.title | replace: 'Default Title', '–' }}</td></tr>
+-              <tr><td>Gewicht</td><td id="trbzp-spec-weight">{%- assign _vw = cur.selected_or_first_available_variant.weight -%}{%- if _vw > 0 -%}{{ _vw | times: 1000 | round }} g{%- else -%}–{%- endif -%}</td></tr>
++              <tr><td>Gewicht</td><td id="trbzp-spec-weight">{%- assign _vw = cur.selected_or_first_available_variant.weight -%}{%- if _vw > 0 -%}{{ _vw | round }} g{%- else -%}–{%- endif -%}</td></tr>
+               <tr><td>Merk</td><td>Bunzlau Castle</td></tr>
+               <tr><td>Materiaal</td><td>Keramisch aardewerk (steengoed)</td></tr>
+               <tr><td>Gemaakt in</td><td>Polen</td></tr>
+--- a/sections/tr-product-bunzlau-melamine.liquid
++++ b/sections/tr-product-bunzlau-melamine.liquid
+@@ -350,7 +350,7 @@
+       <!-- Varianten -->
+       {%- if cur.variants.size > 1 -%}
+         <script type="application/json" id="trbzp-variant-data">
+-        {"variants":[{%- for v in cur.variants -%}{%- if v.featured_image -%}{%- assign _vi = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign _vi = '' -%}{%- endif -%}{"id":{{ v.id }},"price":"{{ v.price | money }}","available":{{ v.available }},"options":{{ v.options | json }},"image":"{{ _vi }}","alt":"{{ v.featured_image.alt | default: v.title | escape }}","sku":{{ v.sku | json }},"ean":{{ v.barcode | json }},"decor":{{ v.title | replace: 'Default Title', '' | json }},"weight":{{ v.weight | times: 1000 | round }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}],"initialOptions":{{ cur.selected_or_first_available_variant.options | json }}}
++        {"variants":[{%- for v in cur.variants -%}{%- if v.featured_image -%}{%- assign _vi = v.featured_image | image_url: width: 900 -%}{%- else -%}{%- assign _vi = '' -%}{%- endif -%}{"id":{{ v.id }},"price":"{{ v.price | money }}","available":{{ v.available }},"options":{{ v.options | json }},"image":"{{ _vi }}","alt":"{{ v.featured_image.alt | default: v.title | escape }}","sku":{{ v.sku | json }},"ean":{{ v.barcode | json }},"decor":{{ v.title | replace: 'Default Title', '' | json }},"weight":{{ v.weight | round }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}],"initialOptions":{{ cur.selected_or_first_available_variant.options | json }}}
+         </script>
+         <div class="trbzp-variants" data-trbzp-variants>
+           {%- for opt in cur.options_with_values -%}
+@@ -396,7 +396,7 @@
+       <div class="trbzp-accordion">
+         <div class="trbzp-accordion-item">
+           <button type="button" class="trbzp-accordion-trigger open" aria-expanded="true" data-trbzp-acc>Productomschrijving<span class="trbzp-chevron">▾</span></button>
+-          <div class="trbzp-accordion-body open"><div class="trbzp-accordion-body-inner" itemprop="description">{%- if cur.description != blank -%}{{ cur.description }}{%- else -%}<p>{%- if _is_melamine -%}Bunzlau Castle melamine{%- else -%}Bunzlau Castle{%- endif -%} bij Tante Rie in Borne.</p>{%- endif -%}</div></div>
++          <div class="trbzp-accordion-body open"><div class="trbzp-accordion-body-inner" itemprop="description">{%- if cur.description != blank -%}{{ cur.description }}{%- else -%}<p>{%- if _is_melamine -%}Bunzlau Castle melamine{%- else -%}Bunzlau Castle{%- endif %} bij Tante Rie in Borne.</p>{%- endif -%}</div></div>
+         </div>
+         <div class="trbzp-accordion-item">
+           <button type="button" class="trbzp-accordion-trigger" aria-expanded="false" data-trbzp-acc>Specificaties<span class="trbzp-chevron">▾</span></button>
+@@ -405,7 +405,7 @@
+               <tr><td>Artikelnummer</td><td id="trbzp-spec-sku">{{ cur.selected_or_first_available_variant.sku | default: '–' }}</td></tr>
+               <tr><td>EAN</td><td id="trbzp-spec-ean">{{ cur.selected_or_first_available_variant.barcode | default: '–' }}</td></tr>
+               <tr><td>Decor</td><td id="trbzp-spec-decor">{{ cur.selected_or_first_available_variant.title | replace: 'Default Title', '–' }}</td></tr>
+-              <tr><td>Gewicht</td><td id="trbzp-spec-weight">{%- assign _vw = cur.selected_or_first_available_variant.weight -%}{%- if _vw > 0 -%}{{ _vw | times: 1000 | round }} g{%- else -%}–{%- endif -%}</td></tr>
++              <tr><td>Gewicht</td><td id="trbzp-spec-weight">{%- assign _vw = cur.selected_or_first_available_variant.weight -%}{%- if _vw > 0 -%}{{ _vw | round }} g{%- else -%}–{%- endif -%}</td></tr>
+               <tr><td>Merk</td><td>Bunzlau Castle</td></tr>
+               {%- if _is_melamine -%}<tr><td>Materiaal</td><td>Melamine</td></tr>{%- endif -%}
+               {%- if cur.metafields.custom.inhoud_ml != blank -%}<tr><td>Inhoud</td><td>{{ cur.metafields.custom.inhoud_ml }} ml</td></tr>{%- endif -%}
+--- a/sections/tr-product-blond.liquid
++++ b/sections/tr-product-blond.liquid
+@@ -367,7 +367,7 @@
+                 "sku": {{ v.sku | json }},
+                 "ean": {{ v.barcode | json }},
+                 "title": {{ v.title | replace: 'Default Title', '' | json }},
+-                "weight": {{ v.weight | times: 1000 | round }}
++                "weight": {{ v.weight | round }}
+               }{% unless forloop.last %},{% endunless %}
+             {%- endfor -%}
+           ],
+@@ -575,7 +575,7 @@
+                 <tr><td>Variant</td><td id="trbap-spec-variant">{{ cur.selected_or_first_available_variant.title | replace: 'Default Title', '–' }}</td></tr>
+                 <tr><td>Gewicht</td><td id="trbap-spec-weight">
+                   {%- assign _vw = cur.selected_or_first_available_variant.weight -%}
+-                  {%- if _vw > 0 -%}{{ _vw | times: 1000 | round }} g{%- else -%}–{%- endif -%}
++                  {%- if _vw > 0 -%}{{ _vw | round }} g{%- else -%}–{%- endif -%}
+                 </td></tr>
+                 <tr><td>Merk</td><td>Blond Amsterdam</td></tr>
+                 <tr><td>Design</td><td>Dutch design</td></tr>
