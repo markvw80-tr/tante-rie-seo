@@ -49,9 +49,6 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 10. Voorstellen 23 oktober (V67, V13, V77)
 
-**V82 🟡 Akkoord voorstel cafeïne-collecties.** Voorstel: onpage/voorstel-cafeine-thee-collecties-2026-10-23.md. Zeven producten (ook Marocco Mint) uit de cafeïnevrije collecties, Twentse Land en Pu-erh erbij in zwarte thee, nieuwe levertijd in tekst en meta's, alt-tekst Sterrennacht, en correctie van Pu-erh (heeft nu de gegevens van Kruizemunt Nana Mint en staat op Decaf). Ja/nee, en de extra's T3, V2, M4, M5 en de zes andere alt-teksten wel of niet meenemen?
-**Antwoord:**
-
 **V83 🟡 Festival, Sinaasappel Chai en Inspiratie.** Rooibos of zwarte/groene thee? De gegevens spreken elkaar tegen; een blik op de verpakking is genoeg. (onpage/voorstel-cafeine-thee-collecties-2026-10-23.md)
 **Antwoord:**
 
@@ -78,6 +75,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V82 Voorstel cafeïne-collecties, inclusief de extra's T3, V2, M4, M5 en de zes alt-teksten | Akkoord | changelog 24-10 (vijf regels); review/review-cafeine-thee-collecties-2026-10-24.md |
 | 24-10 | V90 Eigenaarsnaam op de site | Privacypagina volledige naam, elders alleen de voornaam | changelog 24-10 (privacypagina, Over ons) |
 | 24-10 | V86 Eigenaar | Eigenaar is Nikkie de Koning, vorige eigenaar is Anke Kamp | voorstel technisch/voorstel-eigenaar-2026-10-24.md (V90), V91 |
 | 24-10 | V88 Zes nieuwe Bunzlau-producten alleen afhalen | Ja, met label en uitgesloten van Shopping | changelog 24-10; backup onpage/backup-v88-bunzlau-afhalen-2026-10-24.json |
