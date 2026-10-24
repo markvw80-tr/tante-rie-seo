@@ -1,0 +1,71 @@
+{
+ "gemaakt": "2026-10-24",
+ "doel": "Backup V88 vóór wijziging: zes Bunzlau-producten van Algemeen profiel naar Breekbare producten, label alleen-afhalen, uitsluiting Shopping",
+ "producten": [
+  {
+   "id": "gid://shopify/Product/12227624206600",
+   "handle": "mug-tulip-400-ml",
+   "custom_label_0_voor": null,
+   "verzendprofiel_voor": "gid://shopify/DeliveryProfile/135555744008 (Algemeen profiel)",
+   "varianten": [
+    "gid://shopify/ProductVariant/58642320687368",
+    "gid://shopify/ProductVariant/58642320785672",
+    "gid://shopify/ProductVariant/58642320818440",
+    "gid://shopify/ProductVariant/58642347000072",
+    "gid://shopify/ProductVariant/58642347032840",
+    "gid://shopify/ProductVariant/58642347065608",
+    "gid://shopify/ProductVariant/58823550140680",
+    "gid://shopify/ProductVariant/58823550173448",
+    "gid://shopify/ProductVariant/59210997235976",
+    "gid://shopify/ProductVariant/59210997268744",
+    "gid://shopify/ProductVariant/59210997301512"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624173832",
+   "handle": "mug-cappuccino-400-ml",
+   "custom_label_0_voor": null,
+   "verzendprofiel_voor": "gid://shopify/DeliveryProfile/135555744008 (Algemeen profiel)",
+   "varianten": [
+    "gid://shopify/ProductVariant/58642320654600"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624141064",
+   "handle": "sauce-bowl-50-ml",
+   "custom_label_0_voor": null,
+   "verzendprofiel_voor": "gid://shopify/DeliveryProfile/135555744008 (Algemeen profiel)",
+   "varianten": [
+    "gid://shopify/ProductVariant/58642320589064",
+    "gid://shopify/ProductVariant/58642320621832"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227623911688",
+   "handle": "bowl-square-70-ml",
+   "custom_label_0_voor": null,
+   "verzendprofiel_voor": "gid://shopify/DeliveryProfile/135555744008 (Algemeen profiel)",
+   "varianten": [
+    "gid://shopify/ProductVariant/58642320326920"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624108296",
+   "handle": "cake-dish-flat-o-15-5-cm",
+   "custom_label_0_voor": null,
+   "verzendprofiel_voor": "gid://shopify/DeliveryProfile/135555744008 (Algemeen profiel)",
+   "varianten": [
+    "gid://shopify/ProductVariant/58642320556296"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/12227624075528",
+   "handle": "hanger-cup-and-saucer",
+   "custom_label_0_voor": null,
+   "verzendprofiel_voor": "gid://shopify/DeliveryProfile/135555744008 (Algemeen profiel)",
+   "varianten": [
+    "gid://shopify/ProductVariant/58642320523528"
+   ]
+  }
+ ]
+}

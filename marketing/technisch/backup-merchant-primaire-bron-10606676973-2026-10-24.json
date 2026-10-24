@@ -1,0 +1,49 @@
+{
+ "gemaakt": "2026-10-24",
+ "doel": "Backup V69 primaire-bron-10606676973 vóór wijziging",
+ "inhoud": {
+  "name": "accounts/5716348221/dataSources/10606676973",
+  "dataSourceId": "10606676973",
+  "displayName": "Shopify App API",
+  "primaryProductDataSource": {
+   "feedLabel": "EUR_107259592968",
+   "contentLanguage": "nl",
+   "countries": [
+    "NL"
+   ],
+   "defaultRule": {
+    "takeFromDataSources": [
+     {
+      "self": true
+     },
+     {
+      "supplementalDataSourceName": "accounts/5716348221/dataSources/10786550727"
+     }
+    ]
+   },
+   "destinations": [
+    {
+     "destination": "LOCAL_INVENTORY_ADS",
+     "state": "DISABLED"
+    },
+    {
+     "destination": "FREE_LOCAL_LISTINGS",
+     "state": "DISABLED"
+    },
+    {
+     "destination": "DISPLAY_ADS",
+     "state": "ENABLED"
+    },
+    {
+     "destination": "FREE_LISTINGS",
+     "state": "ENABLED"
+    },
+    {
+     "destination": "SHOPPING_ADS",
+     "state": "ENABLED"
+    }
+   ]
+  },
+  "input": "API"
+ }
+}

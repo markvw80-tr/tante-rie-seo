@@ -70,9 +70,6 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 11. Na controle B1 (24 oktober)
 
-**V88 🟡 Nieuwe Bunzlau-producten verzendbaar of alleen afhalen?** Zes Bunzlau Castle-producten staan sinds kort in de webshop met voorraad: mug-tulip-400-ml, mug-cappuccino-400-ml, sauce-bowl-50-ml, bowl-square-70-ml, cake-dish-flat-o-15-5-cm en hanger-cup-and-saucer. Ze zitten in het verzendprofiel Algemeen, dus ze zijn nu bestelbaar met verzending, terwijl Bunzlau-aardewerk volgens V54 en A4 alleen af te halen is. Advies: naar het profiel Breekbare producten, het label alleen-afhalen erop en uitsluiten van Shopping en de gratis webvermeldingen; de lokale vermelding blijft. Ja/nee?
-**Antwoord:**
-
 **V89 🟡 hanger-teapot.** Dit Bunzlau-product (voorraad 2) staat niet in de webshop, maar nog wel op Google & YouTube. Ook in de webshop zetten (dan geldt V88 ook hiervoor), of van Google halen?
 **Antwoord:**
 ---
@@ -81,6 +78,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V88 Zes nieuwe Bunzlau-producten alleen afhalen | Ja, met label en uitgesloten van Shopping | changelog 24-10; backup onpage/backup-v88-bunzlau-afhalen-2026-10-24.json |
 | 23-10 | V77d Telefoon op de contactpagina | Akkoord | voorstel met voor en na volgt |
 | 23-10 | V74 Verdeling maand 2 | Ja, 60/40 winkel/webshop | plan-2026-11 |
 | 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11 | plan-2026-11, actie 9 |
