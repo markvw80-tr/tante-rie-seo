@@ -105,9 +105,9 @@
     "semantic_hash": "9380174516645aaa9cf77c3be35ae3c9"
   },
   "/Users/markvanwijk/Tante Rie SEO/CLAUDE.md": {
-    "mtime": 1792758956.2687266,
-    "ast_hash": "5e3c348363e54c90f10da3bf92dea45e",
-    "semantic_hash": "5e3c348363e54c90f10da3bf92dea45e"
+    "mtime": 1792828109.371502,
+    "ast_hash": "93448f4da71e69edc9bcaf010196eddc",
+    "semantic_hash": "93448f4da71e69edc9bcaf010196eddc"
   },
   "/Users/markvanwijk/Tante Rie SEO/README.md": {
     "mtime": 1792608305.371288,
@@ -115,9 +115,9 @@
     "semantic_hash": "e895aac1a61318fae0a8564ed505f21a"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/changelog.md": {
-    "mtime": 1792758080.152519,
-    "ast_hash": "7708951896d0b0eb57e2663c52dde687",
-    "semantic_hash": "7708951896d0b0eb57e2663c52dde687"
+    "mtime": 1792827946.917527,
+    "ast_hash": "31afbd3bfea2626700922122cea4af85",
+    "semantic_hash": "31afbd3bfea2626700922122cea4af85"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/zoekwoorden/clusters-2026-10-21.md": {
     "mtime": 1792608863.7838535,
@@ -135,9 +135,9 @@
     "semantic_hash": "e858f1f4aa527a5c37d94edd46beeb60"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/plan-2026-10.md": {
-    "mtime": 1792615838.6874628,
-    "ast_hash": "ce38a41421d0853fabdfda528e02122a",
-    "semantic_hash": "ce38a41421d0853fabdfda528e02122a"
+    "mtime": 1792827802.7222872,
+    "ast_hash": "40ff90529e4f67fe916e309005a3b17b",
+    "semantic_hash": "40ff90529e4f67fe916e309005a3b17b"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/audit-2026-10-21.md": {
     "mtime": 1792609251.698876,
@@ -190,9 +190,9 @@
     "semantic_hash": "d4f23a5aecbb219f750fc914d2140119"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/rapporten/onderzoek-zichtbaarheidsval-2026-09.md": {
-    "mtime": 1792616746.3847685,
-    "ast_hash": "e073289a0aa8323c7beeb39074e9a1ea",
-    "semantic_hash": "e073289a0aa8323c7beeb39074e9a1ea"
+    "mtime": 1792767647.7485926,
+    "ast_hash": "634f6ee3106a964a37402d0e5351fc00",
+    "semantic_hash": "634f6ee3106a964a37402d0e5351fc00"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/inspectie-blond-zakelijk-2026-10-21.md": {
     "mtime": 1792614178.2532363,
@@ -430,9 +430,9 @@
     "semantic_hash": "a099605f400f6880b8b2f79d0e37eb2d"
   },
   "/Users/markvanwijk/Tante Rie SEO/marketing/vragen-voor-mark.md": {
-    "mtime": 1792760263.1319785,
-    "ast_hash": "1170203b6c3c46bfa4e136abafda9548",
-    "semantic_hash": "1170203b6c3c46bfa4e136abafda9548"
+    "mtime": 1792827802.7247412,
+    "ast_hash": "57694e0c3595caf85077849a6fc9cb78",
+    "semantic_hash": "57694e0c3595caf85077849a6fc9cb78"
   },
   "/Users/markvanwijk/Tante Rie SEO/assets/afbeeldingen/winkel-2026-10/blond-amsterdam-wand.jpg": {
     "mtime": 1792734884.266247,
@@ -493,5 +493,120 @@
     "mtime": 1792735377.9844742,
     "ast_hash": "d21352dcb49ab871cb581fcab8a457ad",
     "semantic_hash": "d21352dcb49ab871cb581fcab8a457ad"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/.claude/settings.local.json": {
+    "mtime": 1792772639.0435054,
+    "ast_hash": "80ca21749010a589e26cac499be1c9f0",
+    "semantic_hash": "80ca21749010a589e26cac499be1c9f0"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/backup-gbp-beschrijving-2026-10-23.json": {
+    "mtime": 1792772811.3031194,
+    "ast_hash": "5351a4dd4456fb2edd5d2c4eb2434514",
+    "semantic_hash": "5351a4dd4456fb2edd5d2c4eb2434514"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/backup-gbp-categorieen-2026-10-23.json": {
+    "mtime": 1792772790.756136,
+    "ast_hash": "91af86a30496cbd00dcc5799e1395744",
+    "semantic_hash": "91af86a30496cbd00dcc5799e1395744"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-cafeine-thee-collecties-2026-10-23.json": {
+    "mtime": 1792827802.7209222,
+    "ast_hash": "087c140174ab2df23fa1d903c5cea1ab",
+    "semantic_hash": "087c140174ab2df23fa1d903c5cea1ab"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-eenheidsprijs-test-2026-10-23.json": {
+    "mtime": 1792767594.9812827,
+    "ast_hash": "b4ef5813c9b1e9d0f20146fbee9171af",
+    "semantic_hash": "b4ef5813c9b1e9d0f20146fbee9171af"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/backup-label-alleen-afhalen-2026-10-23.json": {
+    "mtime": 1792777453.4504,
+    "ast_hash": "0143537c2ebb4c9132ee48a0ecc50a1a",
+    "semantic_hash": "0143537c2ebb4c9132ee48a0ecc50a1a"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-kanalen-kassaproducten-2026-10-23.json": {
+    "mtime": 1792777175.4173472,
+    "ast_hash": "883795a440e221a314ee2c27bab27ce1",
+    "semantic_hash": "883795a440e221a314ee2c27bab27ce1"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-merchant-homepage-2026-10-23.json": {
+    "mtime": 1792776879.6070278,
+    "ast_hash": "4fbd18f070586173a5bddf0a9815be2e",
+    "semantic_hash": "4fbd18f070586173a5bddf0a9815be2e"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-merchant-primaire-bron-10606676973-2026-10-23.json": {
+    "mtime": 1792778178.895213,
+    "ast_hash": "1439361cfbfb8794072f9e01da1c34e1",
+    "semantic_hash": "1439361cfbfb8794072f9e01da1c34e1"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-merchant-primaire-bron-10706837209-2026-10-23.json": {
+    "mtime": 1792778178.8953948,
+    "ast_hash": "46b18e69e84fb7c1de4c2082d3a4127c",
+    "semantic_hash": "46b18e69e84fb7c1de4c2082d3a4127c"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-merchant-retourbeleid-2026-10-23.json": {
+    "mtime": 1792772682.3316658,
+    "ast_hash": "6acee605db65631d35bd5d0c534810be",
+    "semantic_hash": "6acee605db65631d35bd5d0c534810be"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/backup-merchant-tweede-account-2026-10-23.json": {
+    "mtime": 1792776873.0461547,
+    "ast_hash": "8de1eb1c65edd64faff0d091276bec55",
+    "semantic_hash": "8de1eb1c65edd64faff0d091276bec55"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/gbp_schrijf.py": {
+    "mtime": 1792772446.461328,
+    "ast_hash": "e9b381490682cf18ee450f968c139d47",
+    "semantic_hash": "e9b381490682cf18ee450f968c139d47"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/scripts/merchant_schrijf.py": {
+    "mtime": 1792778079.7580998,
+    "ast_hash": "4c84dffa9ff30d1f60366e87583013f5",
+    "semantic_hash": "4c84dffa9ff30d1f60366e87583013f5"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/autoriteit/correctieverzoeken-nap-2026-10-23.md": {
+    "mtime": 1792827802.7207024,
+    "ast_hash": "aaa65443c555c056ce7503eb67219e31",
+    "semantic_hash": "aaa65443c555c056ce7503eb67219e31"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/handwerk-mark-2026-10-23.md": {
+    "mtime": 1792827946.8455188,
+    "ast_hash": "ef78515c88f3e2db3465d64946c38c67",
+    "semantic_hash": "ef78515c88f3e2db3465d64946c38c67"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/onpage/voorstel-cafeine-thee-collecties-2026-10-23.md": {
+    "mtime": 1792827802.721161,
+    "ast_hash": "0da069372b66e0709b957813b85ca2fe",
+    "semantic_hash": "0da069372b66e0709b957813b85ca2fe"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/plan-2026-11.md": {
+    "mtime": 1792827802.722565,
+    "ast_hash": "ae0757d30f7ee2e339354e516bb1a9cf",
+    "semantic_hash": "ae0757d30f7ee2e339354e516bb1a9cf"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/review/review-gbp-teksten-2026-10-23.md": {
+    "mtime": 1792767565.979036,
+    "ast_hash": "0da9b33963e2d17819a008b91b23fc16",
+    "semantic_hash": "0da9b33963e2d17819a008b91b23fc16"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/b1-kassaproducten-google-2026-10-23.txt": {
+    "mtime": 1792777196.16313,
+    "ast_hash": "7448a73fbc927d256ab868a78a0f126a",
+    "semantic_hash": "7448a73fbc927d256ab868a78a0f126a"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/merchant-twee-accounts-voorstel-2026-10-23.md": {
+    "mtime": 1792776730.7940073,
+    "ast_hash": "de4afe7be9b3acbf49662ddde6d5239d",
+    "semantic_hash": "de4afe7be9b3acbf49662ddde6d5239d"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-jaartal-en-telefoon-2026-10-23.md": {
+    "mtime": 1792827802.722845,
+    "ast_hash": "da0d922062549092e68c5de70a9fe16a",
+    "semantic_hash": "da0d922062549092e68c5de70a9fe16a"
+  },
+  "/Users/markvanwijk/Tante Rie SEO/marketing/zoekwoorden/keyword-planner-invoer-2026-10-23.txt": {
+    "mtime": 1792827802.7250555,
+    "ast_hash": "6315a5a88076310529890baefe2088fe",
+    "semantic_hash": "6315a5a88076310529890baefe2088fe"
   }
 }

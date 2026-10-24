@@ -6,6 +6,10 @@ Hoger scoren in Google en daarmee meer organische bezoekers naar tanterie.nl. Al
 
 Prioriteit (besluit Mark 21-10-2026): 70 procent van de inzet gaat naar meer bezoekers in de fysieke winkel in Borne, 30 procent naar groei van de webshop. Reden: de winkel levert ruim 99 procent van de omzet (nulmeting sept-okt 2026: 698 kassabestellingen tegenover 2 online bestellingen in vier weken). Lokale SEO (Google Bedrijfsprofiel, de theewinkelpagina, zoektermen rond Borne en Twente) gaat daarom voor, en product- en collectiepagina's dienen ook als etalage voor de winkel. Meet succes vooral met Search Console-klikken, acties in het Bedrijfsprofiel (route, bellen, website) en waar mogelijk kassaomzet, niet alleen met online omzet. Zakelijke verkoop (/pages/zakelijk) breidt Mark voorlopig niet uit via Tante Rie; daar wordt geen SEO-werk aan gedaan. Aanvulling Mark 23-10: de 70/30-verdeling is een eerste stap; het uiteindelijke doel is meer verkoop via de webshop, dus vanaf maand 2 groeit het webshopdeel.
 
+## Taal
+
+Communiceer met Mark altijd in het Nederlands (besluit Mark 24-10-2026), ook in tussenberichten, samenvattingen en vragen.
+
 ## Gedeelde spelregels
 
 Tante Rie is een thee- en lifestylewinkel in Borne (Twente) met een Shopify-webshop. De doelgroep is Nederlandstalig.
