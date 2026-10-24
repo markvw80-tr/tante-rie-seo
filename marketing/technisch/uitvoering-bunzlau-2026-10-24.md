@@ -15,7 +15,7 @@ Opgesteld door Technisch SEO op 24 oktober 2026. Status: themakopie gemaakt en g
 
 ## Wat er in de kopie is aangepast
 
-Er zijn twee bestanden gewijzigd en niets anders.
+Er zijn twee bestanden gewijzigd (de eerste ronde). Zie hieronder voor de drie extra bestanden van 24-10 (gewicht en spatie).
 
 | Bestand | Wijziging | Diff |
 |---|---|---|
@@ -35,6 +35,44 @@ Het collectiebestand in de kopie was 45.180 bytes met checksum 3f07cffe641114eda
 
 In beide bestanden is de Liquid gecontroleerd op duidelijke syntaxfouten: elk `if`, `unless`, `for`, `comment` en `schema` heeft zijn sluittag, en het aantal openende en sluitende `{%` en `{{` klopt (collectie 198/198 en 52/52). In het productbestand staat een `}}` meer dan `{{` (62 tegen 63); dat zit in de JavaScript en in het bestaande JSON-blok en was in het live bestand al zo. In het collectiebestand komt "Bestel nu" niet meer voor, in het productbestand komen "Bestel nu" en "Bestellen" niet meer voor. De Liquid is niet gerenderd door Shopify als aparte test; dat gebeurt in de preview.
 
+## Extra wijzigingen 24-10 (akkoord Mark): gewicht en ontbrekende spatie
+
+Mark gaf op 24-10 akkoord om twee themafouten in de kopie te herstellen, voor Bunzlau en Blond. Alleen de ongepubliceerde kopie 204095619336 is gewijzigd; het live thema 203153015048 is niet aangeraakt (nog MAIN). De volledige diff staat in marketing/technisch/fix-gewicht-spatie-2026-10-24.diff.
+
+### 1. Gewicht in de specificatietabel
+
+Oorzaak: `variant.weight` geeft in Liquid het gewicht in gram terug (Shopify-documentatie bij het filter weight_with_unit: gewicht 200 wordt 0,2 kg). De code vermenigvuldigde dat nog met 1000, alsof het kilogram was, waardoor 189 gram als 189000 g werd getoond. De fout zat op twee plekken per bestand: in de tabelcel die de server rendert, en in de JSON met varianten die de JavaScript gebruikt bij het wisselen van variant (de JavaScript zelf plakt alleen " g" achter dat getal). In de winkelgegevens staat de kom Melamine Kom Wild Flowers Ø 15 cm (SKU 3653) op 189 GRAMS en de winkel gebruikt grammen als eenheid.
+
+Nieuwe berekening: `{{ _vw | round }} g` in de tabel en `"weight":{{ v.weight | round }}` in de varianten-JSON. Het getal is dus het aantal gram uit Shopify, afgerond op een heel getal, met " g" erachter. Er is bewust niet gekozen voor het filter `weight_with_unit`: dat toont het gewicht in de eenheid uit de winkelinstellingen (nu gram, maar bij kilogram "0,189 kg"), kan niet in de JSON worden gebruikt en zou server en JavaScript een verschillende notatie geven. Met een expliciet getal in gram zijn beide gelijk en blijft de weergave stabiel als de instelling ooit wijzigt. De overige secties die het gewicht tonen (tr-product-redesign en tr-product-bakmix) gebruiken al `weight_with_unit` zonder vermenigvuldiging en zijn niet gewijzigd. tr-offer-policies rekent met gram (drempel 300) en klopt.
+
+| Bestand | Regel | Wijziging |
+|---|---|---|
+| sections/tr-product-bunzlau.liquid | 348 (varianten-JSON), 437 (tabel) | `times: 1000` verwijderd |
+| sections/tr-product-bunzlau-melamine.liquid | 353 (varianten-JSON), 408 (tabel) | `times: 1000` verwijderd |
+| sections/tr-product-blond.liquid | 370 (varianten-JSON), 578 (tabel) | `times: 1000` verwijderd |
+
+De JavaScript die bij het wisselen van variant het gewicht bijwerkt (trbzp-spec-weight in regel 548 van tr-product-bunzlau en 512 van tr-product-bunzlau-melamine, trbap-spec-weight in regel 766 van tr-product-blond) is ongewijzigd: die toont `v.weight + ' g'` en krijgt nu het juiste getal. In andere secties, snippets, blocks, templates en assets van de kopie komt de omrekening niet voor (alle 412 tekstbestanden doorzocht op `times: 1000` en op gewichtsverwijzingen).
+
+Opmerking over de gegevens: bij vrijwel alle Bunzlau-aardewerkproducten (template bunzlau) en bij alle 40 online gepubliceerde Blond-producten staat het gewicht in Shopify op 0. Daar toont de tabel (ook na de fix) een streepje. Alleen de melamine-producten hebben een gewicht (bijvoorbeeld 189 g voor de kom en 249 g voor het bord). Bij Theetip Bloem staat 0,1 gram; dat zou als "0 g" verschijnen. Dit is geen themafout maar ontbrekende productgegevens; er is niets in Shopify aangepast.
+
+### 2. Ontbrekende spatie voor "bij"
+
+Oorzaak: in de reservetekst voor producten zonder beschrijving eindigde de voorwaarde met `{%- endif -%}`. Het streepje rechts haalt de spatie weg die erna komt, zodat "melamine" en "bij" aan elkaar kwamen ("melaminebij"). Hersteld in sections/tr-product-bunzlau-melamine.liquid regel 399: `{%- endif -%} bij Tante Rie in Borne.` is nu `{%- endif %} bij Tante Rie in Borne.` (alleen links gestript, rechts blijft de spatie staan). De reservetekst voor producten zonder beschrijving komt alleen in dit bestand voor; de Blond-sectie heeft een andere reservetekst zonder deze constructie, en tr-product-bunzlau heeft een vaste tekst zonder voorwaarde.
+
+Gevonden maar niet gewijzigd (zelfde soort fout, ander effect): in de specificatietabel staat `</span> {%- if ... -%}Ja{%- else -%}...`. Het streepje links haalt de spatie tussen het vinkje en het woord weg, zodat er "✓Ja" en "✗Handwas aanbevolen" komt zonder tussenruimte. Het gaat om tr-product-bunzlau regel 444 tot en met 446 (vaatwasser, oven, magnetron) en tr-product-blond regel 591 (vaatwasser). Het vinkje is een opgemaakte ronde badge met eigen opvulling, dus het valt weinig op. Ook staat er in collectiesecties en de coldbrew-pagina (bijvoorbeeld tr-collection-kruidenthee regel 184, tr-collection-witte-thee regel 184, tr-page-cold-brew regel 144 tot en met 151) een icoon dat met `{%- render 'tr-icon' ... -%}` direct tegen de tekst erna aan staat. Dat zijn geen woorden die aan elkaar plakken. Wil Mark dat dit ook wordt rechtgezet, dan is dat een kleine vervolgwijziging (V-nummer toevoegen door de hoofdsessie).
+
+### Controle na het schrijven
+
+Elk bestand is uit de kopie teruggelezen en vergeleken met de bedoelde versie.
+
+| Bestand | Bytes voor | Bytes na | MD5 uit de kopie na schrijven | Gelijk aan bedoelde versie |
+|---|---|---|---|---|
+| sections/tr-product-bunzlau.liquid | 42.328 | 42.300 | 50827bc6a8de29649e4b04254f208511 | ja |
+| sections/tr-product-bunzlau-melamine.liquid | 37.155 | 37.126 | 106982503c08cfb82d02a87e89b56312 | ja |
+| sections/tr-product-blond.liquid | 50.230 | 50.202 | 38e414b5f02d3e0dccbb7bb2524c8d93 | ja |
+
+Het verschil in bytes is precies de verwijderde tekst ` times: 1000 |` (14 tekens per plek) en voor de melamine-sectie het ene streepje dat bij `endif` is weggehaald. Bij het eerste schrijven van de Blond-sectie weken negen decoratieve commentaarregels (lijnen van ─ tekens) af in lengte door een typefout van mij; dat is direct gezien aan de bytegrootte (50.721) en met een tweede schrijfactie hersteld. De uiteindelijke diff bevat alleen de bedoelde regels. De Liquid is niet door Shopify gerenderd (de preview-URL is vanuit deze omgeving niet bereikbaar); de weergave moet Mark in de preview bekijken.
+
 ## Preview-URL's
 
 | Wat | URL |
@@ -43,6 +81,10 @@ In beide bestanden is de Liquid gecontroleerd op duidelijke syntaxfouten: elk `i
 | Productpagina met niet-beschikbare variant (Boeren mok 240 ml, variant Blue Eyes is niet beschikbaar) | https://tanterie.nl/products/boeren-mok-240-ml?variant=57953071857928&preview_theme_id=204095619336 |
 | Productpagina met beschikbare variant, voor de winkelwagentest (zelfde product, variant Lace) | https://tanterie.nl/products/boeren-mok-240-ml?variant=57953071923464&preview_theme_id=204095619336 |
 | Melamine voor de gemengde winkelwagen | https://tanterie.nl/products/melamine-kom-wild-flowers-o-15-cm?preview_theme_id=204095619336 |
+| Gewicht en spatie: melaminekom, gewicht moet 189 g zijn (geen 189000 g); de beschrijving is leeg, dus onder Productomschrijving moet "Bunzlau Castle melamine bij Tante Rie in Borne." staan | https://tanterie.nl/products/melamine-kom-wild-flowers-o-15-cm?preview_theme_id=204095619336 |
+| Gewicht: melaminebord, 249 g | https://tanterie.nl/products/melamine-bord-wild-flowers-o-25-cm?preview_theme_id=204095619336 |
+| Bunzlau-aardewerk (Boeren mok): gewicht staat in Shopify op 0, dus de tabel toont een streepje; alleen controleren dat er geen "0 g" of ander gek getal staat | https://tanterie.nl/products/boeren-mok-240-ml?preview_theme_id=204095619336 |
+| Blond (Love Green Girl): gewicht staat in Shopify op 0, de tabel toont een streepje; geen enkel online Blond-product heeft een gewicht | https://tanterie.nl/products/love-green-girl?preview_theme_id=204095619336 |
 
 ## Wat Mark in de preview moet controleren
 
