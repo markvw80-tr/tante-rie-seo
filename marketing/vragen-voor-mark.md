@@ -67,6 +67,14 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e) Werkt tiktok.com/@tante.rie.borne en staat tanterie.nl in de bio?
 **Antwoord:**
 
+
+## 11. Na controle B1 (24 oktober)
+
+**V88 🟡 Nieuwe Bunzlau-producten verzendbaar of alleen afhalen?** Zes Bunzlau Castle-producten staan sinds kort in de webshop met voorraad: mug-tulip-400-ml, mug-cappuccino-400-ml, sauce-bowl-50-ml, bowl-square-70-ml, cake-dish-flat-o-15-5-cm en hanger-cup-and-saucer. Ze zitten in het verzendprofiel Algemeen, dus ze zijn nu bestelbaar met verzending, terwijl Bunzlau-aardewerk volgens V54 en A4 alleen af te halen is. Advies: naar het profiel Breekbare producten, het label alleen-afhalen erop en uitsluiten van Shopping en de gratis webvermeldingen; de lokale vermelding blijft. Ja/nee?
+**Antwoord:**
+
+**V89 🟡 hanger-teapot.** Dit Bunzlau-product (voorraad 2) staat niet in de webshop, maar nog wel op Google & YouTube. Ook in de webshop zetten (dan geldt V88 ook hiervoor), of van Google halen?
+**Antwoord:**
 ---
 
 ## Beantwoord
