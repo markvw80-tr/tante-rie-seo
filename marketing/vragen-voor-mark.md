@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 23 oktober 2026 (antwoorden Mark verwerkt). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 24 oktober 2026 (V92 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -66,6 +66,14 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 **V91 ⚪ Toegang Anke Kamp tot het Bedrijfsprofiel.** Anke Kamp staat nog als beheerder (MANAGER) in het Google Bedrijfsprofiel. Nu zij geen eigenaar meer is: toegang intrekken? Dat kan alleen de eigenaar (Nikkie) in het profiel, onder Mensen en toegang. (autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md)
 **Antwoord:**
+
+---
+
+## 12. Zoekvolumes (24 oktober)
+
+**V92 🟡 Zoekvolumes ophalen met scripts/zoekvolumes.py.** Draai je op je eigen computer de opdrachten uit marketing/zoekwoorden/opdracht-zoekvolumes-mark-2026-10-24.md (eenmalig installeren, `account` en `inloggen`; daarna `volumes` met de invoerlijst en `ideeen` met de seedlijst) en push je de json-bestanden in data/keyword-planner/ naar de branch claude/zoekwoord-volumes? En wanneer? Liefst eind oktober, uiterlijk 28 november (plan-2026-11, actie 9). Pas daarna kan het team de clusters herberekenen met echte volumes. (zoekwoorden/opdracht-zoekvolumes-mark-2026-10-24.md)
+**Antwoord:**
+
 ---
 
 ## Beantwoord
@@ -79,7 +87,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 | 24-10 | V88 Zes nieuwe Bunzlau-producten alleen afhalen | Ja, met label en uitgesloten van Shopping | changelog 24-10; backup onpage/backup-v88-bunzlau-afhalen-2026-10-24.json |
 | 23-10 | V77d Telefoon op de contactpagina | Akkoord | voorstel met voor en na volgt |
 | 23-10 | V74 Verdeling maand 2 | Ja, 60/40 winkel/webshop | plan-2026-11 |
-| 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11 | plan-2026-11, actie 9 |
+| 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11. Sinds 24-10 niet meer nodig: Basic access (V76) is toegekend en scripts/zoekvolumes.py haalt de volumes op; vervolg in V92 | plan-2026-11, actie 9; zoekwoorden/opdracht-zoekvolumes-mark-2026-10-24.md |
 | 23-10 | V77 NAP (a, b, c, e) | (a) door Mark doorgegeven aan Visit Borne; (b) @tante.rie.borne; (c) webshop@ voor de webshop, info@ ook officieel; (e) team bereidt correctieverzoeken voor | plan-2026-11, actie 3; (d) nog open |
 | 23-10 | V78 Antwoorden op 33 reviews | Later | uitgesteld, niet in november tenzij Mark terugkomt |
 | 23-10 | V79 Decemberberichten Bedrijfsprofiel | Akkoord | plan-2026-11, actie 4; teksten eerst langs Kwaliteitsredacteur |
