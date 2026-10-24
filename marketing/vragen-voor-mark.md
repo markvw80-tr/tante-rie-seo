@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93 en V94 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -72,6 +72,11 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 ## 12. Zoekvolumes (24 oktober)
 
 **V93 ⚪ Kleine vervolgronde Keyword Planner.** Kun je nog een keer `python3 scripts/zoekvolumes.py volumes --bestand marketing/zoekwoorden/keyword-planner-invoer-2026-10-24-vervolg.txt --onderwerp vervolg` draaien en de json naar de branch pushen? Het gaat om 32 zoekwoorden die in clusters-2026-10-24.md ontbreken of zonder maandcijfers zijn: lokale varianten als 'theewinkel in de buurt', cakemix en bakmix, melamine en theepot met maandcijfers, cadeaubox thee en 'tea'. Duurt ongeveer twee minuten (inloggen is al gedaan). Niet urgent: het team werkt door met het huidige rapport. (zoekwoorden/clusters-2026-10-24.md)
+**Antwoord:**
+
+## 13. Vroege start november (24 oktober)
+
+**V94 🔴 Akkoord vroege start.** Het novemberplan is bijgewerkt met de zoekvolumes (plan-2026-11.md, versie 2). Drie onderdelen wil ik al vanaf maandag 26 oktober laten oppakken, omdat de vraag in november al piekt: de Bunzlau-collectie (voorstel bij jou op 2 november, live uiterlijk 14 november), de bewaarblikken en één cadeaupagina (samen bij jou op 5 november, bewaarblikken live uiterlijk 13 november, cadeau uiterlijk 20 november). Elke tekst komt eerst als voor en na bij je langs. (a) Akkoord om de opdrachten uit plan-2026-11-vroege-start.md uit te zetten? (b) Akkoord dat de collectie Thee Cadeaus (/collections/cadeaus) de hoofdpagina wordt voor 'thee cadeau' en /pages/thee-cadeau ernaar verwijst? (c) Akkoord dat we de servies-hub /pages/serviezen niet herschrijven (alleen "altijd op voorraad" eruit en een link naar Bunzlau) en Rice en melamine naar januari schuiven? (plan-2026-11.md en plan-2026-11-vroege-start.md)
 **Antwoord:**
 
 ---
