@@ -1,0 +1,19 @@
+# Zoekwoorden die niet meetellen in de clustertotalen van scripts/volumes_in_clusters.py.
+# Formaat: een zoekwoord per regel, daarachter na een # de toelichting. Regels die met # beginnen zijn commentaar.
+# Uitgesloten zoekwoorden blijven in de tabel staan, gemarkeerd als "niet meegeteld". Hun volume komt wel
+# in de kolom "Incl. brede termen" (eenmaal geteld per identieke maandreeks), zodat het verschil zichtbaar blijft.
+# De uitsluiting geldt voor elk cluster waarin het zoekwoord staat. Bron: controle in clusters-2026-10-24.md.
+
+blond                # algemeen woord (onder meer haarkleur), niet te koppelen aan het servies; 5.400 per maand
+thee                 # kopterm met oktober-uitschieter 49.500 en winterpiek; apart als breed, niet nagejaagd
+servies              # brede kopterm waar grote webwinkels op ranken; zelfde reeks als serviezen
+serviezen            # zelfde maandreeks als servies (14.800), breed
+baking               # Engels woord, vertekend door augustus 2026 (18.100); hoort niet bij een collectie bakmixen
+bakwinkel            # winkelzoekers voor bakartikelen, geen aanbod bij bakmixen
+luminlique           # product staat alleen in de kassa (Shopify POS), niet online; 404 is correct
+theewinkel opende    # ander dorp (Groningen), lokale ruis
+relatiegeschenk thee # zakelijk, buiten scope (geen SEO-werk aan /pages/zakelijk)
+
+# Aanvullend, ook uit de controle in clusters-2026-10-24.md (niet in de oorspronkelijke opdracht):
+paardenstaart thee   # verkeerd ingedeeld (kruidenthee), hoort niet bij bakmixen
+natural flowers      # algemene term, niet te koppelen aan de collectie Natural Flower Cards
