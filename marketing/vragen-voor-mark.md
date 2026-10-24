@@ -83,13 +83,47 @@ Analyse: technisch/analyse-bewaarblik-producten-2026-10-30.md
 **V99 🟡 Zoekresultaat thee bewaarblik.** Kun je in een privévenster op 'thee bewaarblik' zoeken en kijken of Flowers theeblik en Arts & Craft blauw als gewoon blauw resultaat staan of in een productblok of Shopping-weergave? Een schermafdruk in assets/screenshots/ is genoeg. (analyse-bewaarblik-producten)
 **Antwoord:**
 
-**V100 🟡 Voorraad Flowers theeblik.** Flowers staat op -4 met doorverkopen aan, waardoor Google "op voorraad" meldt. Hoeveel liggen er echt, en moet doorverkopen voor dit product uit? (analyse-bewaarblik-producten)
+**V100 🟡 Voorraad Flowers theeblik.** Flowers staat op -4 met doorverkopen aan, waardoor Google "op voorraad" meldt. Hoeveel liggen er echt, wordt het nabesteld, en moet doorverkopen voor dit product uit? Zonder nabestelling gaat "of Flowers" uit de bewaarbliktekst. (analyse-bewaarblik-producten)
 **Antwoord:**
 
 **V101 ⚪ "Uit eigen winkel Borne" op accessoires.** Deze tekst staat vast op alle accessoires, ook als ze niet op voorraad zijn in de winkel. Mag dat blijven, of alleen tonen bij voorraad (zoals bij de afspraak van 21-10)? (analyse-bewaarblik-producten)
 **Antwoord:**
 
 **V102 ⚪ Afmetingen en materiaal blikken.** Wat zijn de afmetingen en het materiaal van Flowers theeblik en de Arts & Craft-blikken (groen en blauw)? (analyse-bewaarblik-producten)
+**Antwoord:**
+
+## 16. Vroege start: Bunzlau en cadeau (24 oktober)
+
+Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-cadeau-2026-10-28.md, onpage/voorstel-bewaarblikken-intro-2026-11-03.md
+
+**V103 ⚪ Oude links in het Bunzlau-blog.** Vier links in het Bunzlau-blog wijzen nog naar webshop.tanterie.nl (die doorverwijzen). Mogen ze direct naar tanterie.nl? (voorstel-bunzlau-title-links)
+**Antwoord:**
+
+**V104 ⚪ Servies op maat.** Klopt "Bijzonder servies op maat bestellen? Dat kan ook!" op /pages/serviezen nog, en mag het uitroepteken eraf? (voorstel-bunzlau-title-links)
+**Antwoord:**
+
+**V105 🟡 Themavoorstel Bunzlau-collectie.** Op /collections/bunzlau toont het thema de eerste alinea van de beschrijving niet, zegt de ondertitel "te bestellen" terwijl het aardewerk alleen af te halen is, en staan er vaste teksten met een decorlijst "op voorraad", "officieel reseller" en "ovenbestendig tot 220°C". Mag Technisch SEO een voorstel met voor en na maken om dit recht te zetten? Zonder dit kan de nieuwe intro niet live. (concept-bunzlau, voorstel-bunzlau-title-links)
+**Antwoord:**
+
+**V106 🔴 Voorraad cadeauproducten (vóór 3 november).** Van de 21 online cadeauproducten staan er 10 op voorraad 0 of lager, onder meer Natural Flower Cards. Komt er een nieuwe levering, of moeten ze offline? Zonder antwoord noemt de cadeautekst geen koker of set bij naam. (controle-cadeau)
+**Antwoord:**
+
+**V107 🟡 Volgorde cadeaucollectie.** Mag /collections/cadeaus op handmatige volgorde, met de proefpakketten en bestelbare kokers bovenaan? Nu staat die op Best verkocht. (controle-cadeau)
+**Antwoord:**
+
+**V108 ⚪ Theegeschenken online.** Wil je (een deel van) de 13 theegeschenken uit "Geven is leuker", die nu alleen op de kassa staan, online zetten als cadeauset? Ze hebben eerst een beschrijving en foto's nodig. De twee Luxe Thee Cadeausets zijn gearchiveerd. (controle-cadeau)
+**Antwoord:**
+
+**V109 ⚪ Kaartje bij bestelling.** Kan een klant nog een persoonlijk kaartje bij een online bestelling laten doen? Zo niet, dan gaat die zin uit het cadeauvoorstel. (controle-cadeau)
+**Antwoord:**
+
+**V110 ⚪ USP "Vers verpakt uit eigen winkel".** Mag deze standaardtekst op de collectiepagina's mee in het cadeauvoorstel? Hangt samen met V101. (controle-cadeau)
+**Antwoord:**
+
+**V111 ⚪ Kassablikken online.** Wil je de "Blikje ..."-series en het gouden blik van 50 gram, die nu alleen op de kassa staan, online zetten? (voorstel-bewaarblikken-intro)
+**Antwoord:**
+
+**V112 ⚪ Kortingsweekend online.** Geldt de korting van het kortingsweekend (V97) alleen in de winkel of ook in de webshop? Tot het antwoord er is, zegt de Bunzlau-FAQ daar niets over. (concept-bunzlau)
 **Antwoord:**
 
 ---
