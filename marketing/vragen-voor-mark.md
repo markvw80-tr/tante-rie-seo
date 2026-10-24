@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 23 oktober 2026 (antwoorden Mark verwerkt). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -66,12 +66,21 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 **V91 ⚪ Toegang Anke Kamp tot het Bedrijfsprofiel.** Anke Kamp staat nog als beheerder (MANAGER) in het Google Bedrijfsprofiel. Nu zij geen eigenaar meer is: toegang intrekken? Dat kan alleen de eigenaar (Nikkie) in het profiel, onder Mensen en toegang. (autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md)
 **Antwoord:**
+
+---
+
+## 12. Zoekvolumes (24 oktober)
+
+**V93 ⚪ Kleine vervolgronde Keyword Planner.** Kun je nog een keer `python3 scripts/zoekvolumes.py volumes --bestand marketing/zoekwoorden/keyword-planner-invoer-2026-10-24-vervolg.txt --onderwerp vervolg` draaien en de json naar de branch pushen? Het gaat om 32 zoekwoorden die in clusters-2026-10-24.md ontbreken of zonder maandcijfers zijn: lokale varianten als 'theewinkel in de buurt', cakemix en bakmix, melamine en theepot met maandcijfers, cadeaubox thee en 'tea'. Duurt ongeveer twee minuten (inloggen is al gedaan). Niet urgent: het team werkt door met het huidige rapport. (zoekwoorden/clusters-2026-10-24.md)
+**Antwoord:**
+
 ---
 
 ## Beantwoord
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V92 Zoekvolumes ophalen met scripts/zoekvolumes.py | Gedraaid door Mark op 24-10 (stap 1 en 2; stap 3 per seed niet nodig). Data in data/keyword-planner/: invoerlijst (202 resultaten, 196 met volume), ideeen-seeds (200) en een test (2) | zoekwoorden/clusters-2026-10-24.md; zoekwoorden/volumes-clusters-2026-10-24.md; vervolg in V93 |
 | 24-10 | V76 Basic access Google Ads API | Merkverificatie gedaan, Basic access toegekend (24-10) | scripts/zoekvolumes.py; Mark zet token in config en logt eenmalig in |
 | 24-10 | V82 Voorstel cafeïne-collecties, inclusief de extra's T3, V2, M4, M5 en de zes alt-teksten | Akkoord | changelog 24-10 (vijf regels); review/review-cafeine-thee-collecties-2026-10-24.md |
 | 24-10 | V90 Eigenaarsnaam op de site | Privacypagina volledige naam, elders alleen de voornaam | changelog 24-10 (privacypagina, Over ons) |
@@ -79,7 +88,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 | 24-10 | V88 Zes nieuwe Bunzlau-producten alleen afhalen | Ja, met label en uitgesloten van Shopping | changelog 24-10; backup onpage/backup-v88-bunzlau-afhalen-2026-10-24.json |
 | 23-10 | V77d Telefoon op de contactpagina | Akkoord | voorstel met voor en na volgt |
 | 23-10 | V74 Verdeling maand 2 | Ja, 60/40 winkel/webshop | plan-2026-11 |
-| 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11 | plan-2026-11, actie 9 |
+| 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11. Sinds 24-10 niet meer nodig: Basic access (V76) is toegekend en scripts/zoekvolumes.py haalt de volumes op; vervolg in V92 | plan-2026-11, actie 9; zoekwoorden/opdracht-zoekvolumes-mark-2026-10-24.md |
 | 23-10 | V77 NAP (a, b, c, e) | (a) door Mark doorgegeven aan Visit Borne; (b) @tante.rie.borne; (c) webshop@ voor de webshop, info@ ook officieel; (e) team bereidt correctieverzoeken voor | plan-2026-11, actie 3; (d) nog open |
 | 23-10 | V78 Antwoorden op 33 reviews | Later | uitgesteld, niet in november tenzij Mark terugkomt |
 | 23-10 | V79 Decemberberichten Bedrijfsprofiel | Akkoord | plan-2026-11, actie 4; teksten eerst langs Kwaliteitsredacteur |

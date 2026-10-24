@@ -1,0 +1,52 @@
+# Seeds voor scripts/zoekvolumes.py ideeen (24-10-2026), maximaal 20 zoekwoorden.
+# Aanvulling op keyword-planner-invoer-2026-10-23.txt; die lijst geeft volumes voor wat al in Search Console staat,
+# deze seeds zoeken wat daar nog niet in staat. Regels met # worden door het script overgeslagen.
+# Gebruik: python3 scripts/zoekvolumes.py ideeen --bestand marketing/zoekwoorden/keyword-planner-ideeen-seeds-2026-10-24.txt --limiet 200 --onderwerp ideeen-seeds
+#
+# December en cadeaus (plan-2026-11, decembercontent en cadeaupagina)
+# Breed zoekwoord voor het cadeau-cluster; 'thee cadeau' staat al in de invoerlijst, dit is de aaneengeschreven spelling.
+theecadeau
+# Kerstpakketten voor particulieren en bedrijven; laat zien of een kerstpakket-aanbod in december vraag heeft.
+kerstpakket thee
+# Zoekt naar de formulering van een cadeaukoper in plaats van een theedrinker.
+cadeau voor theeliefhebber
+# Seizoensvraag in november en december; per_maand uit de actie volumes toont de piek.
+adventskalender thee
+#
+# Lokaal (winkel in Borne, 70 procent van de inzet)
+# Landelijke en regionale vraag naar 'theewinkel'; de eigen pagina /pages/theewinkel-borne-twente moet hierop scoren.
+theewinkel twente
+# Zoekers die een cadeau in de buurt willen kopen, geen thee; kan de winkelpagina een tweede invalshoek geven.
+cadeauwinkel borne
+# Regionale variant van hetzelfde; bepaalt of cadeauwinkel een eigen term verdient naast theewinkel.
+cadeauwinkel twente
+#
+# Webshopgroei (maand 2 groeit het webshopdeel)
+# Hoofdterm met koopintentie voor /collections/thee; meet de echte vraag achter 'losse thee' (nu positie 36,8).
+losse thee kopen
+# Zoekintentie online bestellen; laat zien of mensen het webshopkanaal bij de zoekterm noemen.
+thee bestellen online
+# Zoekt naar webwinkels voor thee; toont welke bijtermen (webshop, online, bestellen) volume hebben.
+thee webshop
+#
+# Bunzlau (grootste kans in het clusterrapport, 4.030 vertoningen)
+# Hoofdterm met zijn varianten: kopen, aanbieding, winkel; voor de intro van /collections/bunzlau.
+bunzlau servies
+# Subcollectie-vraag: bepaalt of mokken een eigen collectie of alleen een kopje op de bestaande collectie verdient.
+bunzlau mokken
+# Idem voor borden; de clusterdata noemt borden op positie 27.
+bunzlau borden
+#
+# Servies en Rice
+# Brede servieszoekopdracht voor de servies-hub /pages/serviezen; toont welke soorten (ontbijt, dinerservies) volume hebben.
+servies kopen
+# Melamine is online te bestellen en wordt verstuurd; toont of de vraag naar melamine servies groot genoeg is voor de Rice-collectie.
+melamine servies
+# Rice-producten zoeken vaak op soort; 'rice melamine' dekt bekers, borden en schalen.
+rice melamine
+# Variant op 'rice by rice' die kopers gebruiken voor de servieslijn; naast 'rice dk' uit de invoerlijst.
+rice by rice servies
+# Cadeau-mokken met tekst staan als productnamen in de long tail; kijkt of cadeau mok als zoekterm bestaat.
+cadeau mok
+# Theepotten zoeken op soort en materiaal; sluit aan op Bunzlau-theepotten (bunzlau theepot staat op positie 4,5 op de homepage).
+theepot

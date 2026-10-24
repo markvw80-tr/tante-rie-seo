@@ -1,0 +1,81 @@
+{
+ "gemaakt": "2026-10-24",
+ "taal": "1010",
+ "locatie": "2528",
+ "actie": "volumes",
+ "resultaten": [
+  {
+   "zoekwoord": "losse thee",
+   "volume": 2900,
+   "concurrentie": "HIGH",
+   "per_maand": [
+    {
+     "jaar": 2025,
+     "maand": "OCTOBER",
+     "volume": 3600
+    },
+    {
+     "jaar": 2025,
+     "maand": "NOVEMBER",
+     "volume": 4400
+    },
+    {
+     "jaar": 2025,
+     "maand": "DECEMBER",
+     "volume": 3600
+    },
+    {
+     "jaar": 2026,
+     "maand": "JANUARY",
+     "volume": 4400
+    },
+    {
+     "jaar": 2026,
+     "maand": "FEBRUARY",
+     "volume": 2900
+    },
+    {
+     "jaar": 2026,
+     "maand": "MARCH",
+     "volume": 2900
+    },
+    {
+     "jaar": 2026,
+     "maand": "APRIL",
+     "volume": 2400
+    },
+    {
+     "jaar": 2026,
+     "maand": "MAY",
+     "volume": 2400
+    },
+    {
+     "jaar": 2026,
+     "maand": "JUNE",
+     "volume": 1600
+    },
+    {
+     "jaar": 2026,
+     "maand": "JULY",
+     "volume": 1300
+    },
+    {
+     "jaar": 2026,
+     "maand": "AUGUST",
+     "volume": 1900
+    },
+    {
+     "jaar": 2026,
+     "maand": "SEPTEMBER",
+     "volume": 2400
+    }
+   ]
+  },
+  {
+   "zoekwoord": "theewinkel borne",
+   "volume": 0,
+   "concurrentie": "UNSPECIFIED",
+   "per_maand": []
+  }
+ ]
+}
