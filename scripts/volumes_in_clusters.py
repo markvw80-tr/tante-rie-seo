@@ -13,6 +13,15 @@ aandeel zichtbaarheid (vertoningen per maand gedeeld door volume) en seizoenspat
 (piekmaanden uit per_maand). Niets wordt geschat: een zoekwoord zonder volume in de
 bestanden blijft leeg ("-") en telt niet mee in het clustertotaal.
 
+Twee correcties tegen te hoge totalen:
+  - Ontdubbelen: Keyword Planner geeft nauw verwante varianten dezelfde maandreeks. Binnen een
+    cluster telt een groep zoekwoorden met identieke per_maand en hetzelfde volume eenmaal mee;
+    de rest staat in de tabel als "samengevoegd met ...". Zonder maandcijfers (ideeen-data)
+    wordt niet ontdubbeld.
+  - Uitsluitingen: zoekwoorden in marketing/zoekwoorden/volume-uitsluitingen.txt (brede of niet
+    passende termen) staan in de tabel als "niet meegeteld" en tellen niet mee in het kerntotaal.
+    Het totaal inclusief die brede termen staat er apart naast (opties --uitsluitingen, --geen-uitsluitingen).
+
 Gebruik:
     python3 scripts/volumes_in_clusters.py                       # alle bestanden in data/keyword-planner/
     python3 scripts/volumes_in_clusters.py data/keyword-planner/2026-10-25-invoerlijst.json
@@ -33,6 +42,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KP = ROOT + "/data/keyword-planner/"
 CLUSTERS_MD = ROOT + "/marketing/zoekwoorden/clusters-2026-10-21.md"
+UITSLUITINGEN = ROOT + "/marketing/zoekwoorden/volume-uitsluitingen.txt"
 LOKAAL = "Lokaal: Borne, Twente en omgeving"
 LOKAAL_DOELPAGINA = "/pages/theewinkel-borne-twente"
 MAANDEN = {m: i + 1 for i, m in enumerate(
@@ -95,6 +105,59 @@ def lees_clusters(pad):
     return clusters
 
 
+def lees_uitsluitingen(pad):
+    """Zoekwoord (kleine letters) -> toelichting. Ontbrekend bestand geeft een lege dict."""
+    uit = {}
+    if not pad or not os.path.exists(pad):
+        return uit
+    for regel in open(pad, encoding="utf-8"):
+        woord, _, uitleg = regel.partition("#")
+        woord = woord.strip().lower()
+        if woord:
+            uit[woord] = uitleg.strip() or "uitgesloten"
+    return uit
+
+
+def analyseer(zoekwoorden, vol, uitgesloten):
+    """Per zoekwoord de status binnen een cluster.
+
+    Geeft (status, kern, breed). status: zoekwoord (kleine letters) -> dict met 'volume' (None zonder
+    volume), 'uitgesloten' (toelichting of None), 'samengevoegd' (naam van de vertegenwoordiger of None).
+    kern: zoekwoorden die meetellen (met volume, niet uitgesloten, niet samengevoegd).
+    breed: idem, maar uitgesloten termen tellen mee (nog steeds eenmaal per identieke reeks).
+    """
+    status = {}
+    groepen = collections.OrderedDict()
+    for z in zoekwoorden:
+        k = z["zoekwoord"].lower()
+        v = vol.get(k)
+        status[k] = {"volume": v["volume"] if v else None, "uitgesloten": uitgesloten.get(k), "samengevoegd": None}
+        if v and v["volume"] is not None and v["per_maand"]:
+            sleutel = (v["volume"], tuple(sorted(v["per_maand"].items())))
+            groepen.setdefault(sleutel, []).append(z)
+    vertegenwoordiger = {}
+    for leden in groepen.values():
+        if len(leden) < 2:
+            continue
+        # voorkeur: een zoekwoord dat meetelt, daarna het zoekwoord met de meeste vertoningen
+        rep = sorted(leden, key=lambda z: (bool(uitgesloten.get(z["zoekwoord"].lower())), -z["vert"]))[0]
+        for z in leden:
+            if z is not rep:
+                status[z["zoekwoord"].lower()]["samengevoegd"] = rep["zoekwoord"]
+                vertegenwoordiger[z["zoekwoord"].lower()] = rep["zoekwoord"].lower()
+    kern, breed = [], []
+    for z in zoekwoorden:
+        k = z["zoekwoord"].lower()
+        s = status[k]
+        if s["volume"] is None or s["samengevoegd"]:
+            continue
+        breed.append(z)
+        # een groep met een meetellend zoekwoord als vertegenwoordiger telt mee in de kern
+        if not s["uitgesloten"]:
+            kern.append(z)
+    return status, kern, breed
+
+
 def lees_volumes(paden):
     """Geeft (volumes, bronnen). volumes: zoekwoord (kleine letters) -> {volume, per_maand, concurrentie}."""
     bestanden = []
@@ -118,7 +181,7 @@ def lees_volumes(paden):
 
 
 def seizoen(zoekwoorden, vol):
-    """Som per kalendermaand over zoekwoorden met per_maand. Geeft (reeks, gemiddelde, pieken, n)."""
+    """Som per kalendermaand over de meetellende zoekwoorden met per_maand. Geeft (reeks, gemiddelde, pieken, n)."""
     som = collections.defaultdict(int)
     n = 0
     for z in zoekwoorden:
@@ -153,7 +216,7 @@ def seizoentekst(reeks, gem, pieken, n, totaal):
     return f"{deel}{t}; gemiddeld {nl(gem)} per maand, op basis van {n} van {totaal} zoekwoorden"
 
 
-def rapport(clusters, vol, bronnen, maanden):
+def rapport(clusters, vol, bronnen, maanden, uitgesloten):
     uit = []
     p = uit.append
     p("# Zoekvolumes per cluster\n")
@@ -168,51 +231,75 @@ def rapport(clusters, vol, bronnen, maanden):
       "op een goede positie wijst op weinig vertoningen ten opzichte van de vraag.")
     p("- De bijlage in het clusterrapport bevat alleen de top zoekwoorden per cluster, dus de som van de "
       "zoekwoorden is lager dan het clustertotaal in de tabel Clusters.")
-    p("- Keyword Planner voegt dicht bij elkaar liggende varianten samen (bijvoorbeeld ricedk en rice dk). "
-      "Dezelfde zoekers kunnen dan in meer dan een regel zitten, waardoor het clustertotaal te hoog kan uitvallen. "
-      "Het totaal is dus een bovengrens, geen exacte som.\n")
+    p("- Keyword Planner voegt dicht bij elkaar liggende varianten samen (bijvoorbeeld ricedk en rice dk) en geeft ze "
+      "dezelfde maandreeks. Binnen een cluster telt zo'n groep met identieke maandreeks eenmaal; de andere regels staan "
+      "in de tabel als \"samengevoegd met ...\". Zonder maandcijfers (ideeen-data) kan niet worden ontdubbeld.")
+    p("- Zoekwoorden uit volume-uitsluitingen.txt (breed of niet passend) staan in de tabel als \"niet meegeteld\" "
+      "en tellen niet mee in het kerntotaal. De kolom Incl. brede termen toont het totaal met die termen erbij, "
+      "dus het verschil is wat de brede termen toevoegen.")
+    p("- Ook het kerntotaal is een bovengrens: niet-identieke zoekwoorden kunnen overlappen "
+      "(bunzlau castle en bunzlau; rooibos en rooibos thee).\n")
+    if uitgesloten:
+        p("Uitgesloten zoekwoorden: " + "; ".join(f"{k} ({u})" for k, u in uitgesloten.items()) + ".\n")
 
     p("## Overzicht\n")
-    p("| Cluster | Doelpagina | Zoekwoorden met volume | Volume/maand (som) | Vert./maand (zoekwoorden met volume) | Aandeel zichtbaarheid | Vert. 90d (heel cluster) | Pos. cluster |")
-    p("|---|---|---:|---:|---:|---:|---:|---:|")
+    p("| Cluster | Doelpagina | Zoekwoorden met volume | Kernvolume/maand | Incl. brede termen | Vert./maand (kern) | Aandeel zichtbaarheid | Vert. 90d (heel cluster) | Pos. cluster |")
+    p("|---|---|---:|---:|---:|---:|---:|---:|---:|")
     details = []
     for naam, c in clusters.items():
-        met = [(z, vol.get(z["zoekwoord"].lower())) for z in c["zoekwoorden"]]
-        met = [(z, v) for z, v in met if v and v["volume"] is not None]
-        som = sum(v["volume"] for _, v in met)
-        vm = sum(z["vert"] for z, _ in met) / maanden
+        status, kern, breed = analyseer(c["zoekwoorden"], vol, uitgesloten)
+        met = [z for z in c["zoekwoorden"] if status[z["zoekwoord"].lower()]["volume"] is not None]
+        som = sum(status[z["zoekwoord"].lower()]["volume"] for z in kern)
+        som_breed = sum(status[z["zoekwoord"].lower()]["volume"] for z in breed)
+        vm = sum(z["vert"] for z in met if not status[z["zoekwoord"].lower()]["uitgesloten"]) / maanden
         aandeel = f"{nl(100 * vm / som)}%" if som else "-"
+        breed_tekst = nl(som_breed) if som_breed != som else "gelijk"
         p(f"| {naam} | {c['pagina']} | {len(met)} van {len(c['zoekwoorden'])} | {nl(som) if met else '-'} | "
-          f"{nl(vm) if met else '-'} | {aandeel} | {nl(c['vert'])} | {nl(c['pos'], 1) if c['pos'] else '-'} |")
-        details.append((naam, c, met, som, vm))
+          f"{breed_tekst if met else '-'} | {nl(vm) if met else '-'} | {aandeel} | {nl(c['vert'])} | {nl(c['pos'], 1) if c['pos'] else '-'} |")
+        details.append((naam, c, met, status, kern, breed, som, som_breed, vm))
 
     p("\n## Per cluster\n")
-    for naam, c, met, som, vm in details:
+    for naam, c, met, status, kern, breed, som, som_breed, vm in details:
         p(f"### {naam}\n")
         p(f"Doelpagina: {c['pagina']}. Cluster in Search Console: {nl(c['vert'])} vertoningen, "
           f"{nl(c['klikken'])} klikken in 90 dagen" + (f", gemiddelde positie {nl(c['pos'], 1)}" if c["pos"] else "") + ".\n")
-        p("| Zoekwoord | Volume/maand | Concurrentie | Vert. 90d | Vert./maand | Pos. | Klikken | Aandeel zichtbaarheid | Onbenut volume/maand |")
-        p("|---|---:|---|---:|---:|---:|---:|---:|---:|")
+        p("| Zoekwoord | Volume/maand | Concurrentie | Vert. 90d | Vert./maand | Pos. | Klikken | Aandeel zichtbaarheid | Onbenut volume/maand | Telt mee |")
+        p("|---|---:|---|---:|---:|---:|---:|---:|---:|---|")
         for z in sorted(c["zoekwoorden"], key=lambda z: -((vol.get(z["zoekwoord"].lower()) or {}).get("volume") or 0)):
             v = vol.get(z["zoekwoord"].lower())
             vm_z = z["vert"] / maanden
+            st = status[z["zoekwoord"].lower()]
+            if st["uitgesloten"]:
+                tel = f"niet meegeteld: {st['uitgesloten']}"
+            elif st["samengevoegd"]:
+                tel = f"samengevoegd met {st['samengevoegd']}"
+            elif v and v["volume"] is not None:
+                tel = "ja"
+            else:
+                tel = "-"
             if v and v["volume"] is not None:
                 aand = f"{nl(100 * vm_z / v['volume'])}%" if v["volume"] else "-"
                 onbenut = nl(max(0, v["volume"] - vm_z))
                 p(f"| {z['zoekwoord']} | {nl(v['volume'])} | {v['concurrentie'] or '-'} | {nl(z['vert'])} | {nl(vm_z, 1)} | "
-                  f"{nl(z['pos'], 1) if z['pos'] else '-'} | {nl(z['klikken'])} | {aand} | {onbenut} |")
+                  f"{nl(z['pos'], 1) if z['pos'] else '-'} | {nl(z['klikken'])} | {aand} | {onbenut} | {tel} |")
             else:
                 p(f"| {z['zoekwoord']} | - | - | {nl(z['vert'])} | {nl(vm_z, 1)} | "
-                  f"{nl(z['pos'], 1) if z['pos'] else '-'} | {nl(z['klikken'])} | - | - |")
+                  f"{nl(z['pos'], 1) if z['pos'] else '-'} | {nl(z['klikken'])} | - | - | {tel} |")
         p("")
         if met:
-            p(f"Totaal zoekvolume: {nl(som)} per maand over {len(met)} van {len(c['zoekwoorden'])} zoekwoorden "
-              f"(bovengrens, zie leeswijzer). Vertoningen van die zoekwoorden: {nl(vm, 1)} per maand, "
-              f"aandeel zichtbaarheid {nl(100 * vm / som) if som else '-'}%.\n")
+            n_samen = sum(1 for s in status.values() if s["samengevoegd"])
+            n_uit = sum(1 for s in status.values() if s["uitgesloten"] and s["volume"] is not None)
+            p(f"Kerntotaal zoekvolume: {nl(som)} per maand over {len(kern)} van {len(c['zoekwoorden'])} zoekwoorden "
+              f"(bovengrens, zie leeswijzer; {n_samen} samengevoegd, {n_uit} niet meegeteld). "
+              f"Vertoningen van de kernzoekwoorden: {nl(vm, 1)} per maand, "
+              f"aandeel zichtbaarheid {nl(100 * vm / som) if som else '-'}%.")
+            if som_breed != som:
+                p(f"Totaal inclusief brede termen: {nl(som_breed)} per maand, dus {nl(som_breed - som)} meer door de niet meegetelde termen.")
+            p("")
         else:
             p("Geen zoekwoord van dit cluster staat in de volumebestanden; het volume is onbekend.\n")
-        reeks, gem, pieken, n = seizoen(c["zoekwoorden"], vol)
-        p(f"Seizoen: {seizoentekst(reeks, gem, pieken, n, len(c['zoekwoorden']))}.\n")
+        reeks, gem, pieken, n = seizoen(kern, vol)
+        p(f"Seizoen (kernzoekwoorden): {seizoentekst(reeks, gem, pieken, n, len(kern))}.\n")
         if reeks:
             p("| Maand | " + " | ".join(maandnaam(k) for k, _ in reeks) + " |")
             p("|---|" + "---:|" * len(reeks))
@@ -239,6 +326,8 @@ def main():
     a = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     a.add_argument("bestanden", nargs="*", help="uitvoer van zoekvolumes.py (standaard alle json in data/keyword-planner/)")
     a.add_argument("--clusters", default=CLUSTERS_MD, help="clusterrapport in markdown")
+    a.add_argument("--uitsluitingen", default=UITSLUITINGEN, help="bestand met zoekwoorden die niet meetellen in de totalen")
+    a.add_argument("--geen-uitsluitingen", action="store_true", help="negeer het uitsluitingenbestand (alleen ontdubbelen)")
     a.add_argument("--uitvoer", help="schrijf naar dit bestand in plaats van stdout")
     a.add_argument("--maanden", type=float, default=3.0, help="aantal maanden in de Search Console-periode (standaard 3 voor 90 dagen)")
     a = a.parse_args()
@@ -249,7 +338,8 @@ def main():
     if not clusters:
         sys.exit("Geen clustertabellen gevonden in " + a.clusters)
     vol, bronnen = lees_volumes(paden)
-    tekst = rapport(clusters, vol, bronnen, a.maanden)
+    uitgesloten = {} if a.geen_uitsluitingen else lees_uitsluitingen(a.uitsluitingen)
+    tekst = rapport(clusters, vol, bronnen, a.maanden, uitgesloten)
     if a.uitvoer:
         with open(a.uitvoer, "w", encoding="utf-8") as f:
             f.write(tekst + "\n")
