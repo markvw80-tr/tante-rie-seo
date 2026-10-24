@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93 en V94 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -128,6 +128,16 @@ Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 **Antwoord:** Wordt geteld; Mark heeft op 24-10 al voorraad opgeboekt. Daarna opnieuw controleren.
 
 ## 18. Akkoord Bunzlau-pakket (24 oktober)
+
+## 14. Search Console-meldingen (24 oktober)
+
+Logboek: technisch/search-console-meldingen.md
+
+**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Zonder (c) blijft het spoor van 16 september onverklaard. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
+**Antwoord:**
+
+**V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
+**Antwoord:**
 
 ---
 
