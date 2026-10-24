@@ -120,6 +120,25 @@ Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-
 **V112 ⚪ Kortingsweekend online.** Geldt de korting van het kortingsweekend (V97) alleen in de winkel of ook in de webshop? Tot het antwoord er is, zegt de Bunzlau-FAQ daar niets over. (concept-bunzlau)
 **Antwoord:**
 
+## 17. Themavoorstel Bunzlau (24 oktober)
+
+Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
+
+**V113 ⚪ Extra afhaalteksten Bunzlau.** Naast de nieuwe ondertitel stelt Technisch SEO "Aardewerk alleen afhalen in Borne" in de balk onder de hero en "Aardewerk afhalen in de winkel" als kop van het infoblok voor. Wel of niet? (voorstel-bunzlau-thema)
+**Antwoord:**
+
+**V114 🟡 Bronnen merkblok Bunzlau.** Is er een bron voor "meer dan 200 jaar ambacht", "meer dan twee eeuwen", "pauwenoog" en "op een halfuur van Enschede, Hengelo en Almelo"? Zo niet, dan gaan ze eruit of worden ze vervangen. (voorstel-bunzlau-thema)
+**Antwoord:**
+
+**V115 ⚪ Afhaaltijd.** In Shopify staat lokaal ophalen op "binnen 2 uur". Klopt dat voor aardewerk dat op voorraad ligt? (voorstel-bunzlau-thema)
+**Antwoord:**
+
+**V116 🟡 Negatieve voorraad Bunzlau.** Meerdere Bunzlau-producten hebben negatieve voorraad (bijvoorbeeld rijstkom 500 ml, -3), waardoor "Op voorraad" kan verschijnen bij iets dat niet in de winkel ligt. Eerst rechtzetten? Er staat al een ongepubliceerde themakopie "Bunzlau eigen voorraad 2026-10-23". (voorstel-bunzlau-thema)
+**Antwoord:**
+
+**V117 ⚪ Knop bij niet beschikbaar.** Moet "Bestel nu" bij niet-beschikbare Bunzlau-producten "Bestelverzoek" worden? (voorstel-bunzlau-thema)
+**Antwoord:**
+
 ---
 
 ## Beantwoord

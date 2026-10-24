@@ -1,0 +1,97 @@
+--- a/sections/tr-collection-bunzlau.liquid
++++ b/sections/tr-collection-bunzlau.liquid
+@@ -27,6 +27,10 @@
+ .trbz-hero-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 50px; padding: 5px 14px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 18px; }
+ .trbz-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1.15; margin-bottom: 14px; }
+ .trbz-hero-sub { font-family: 'DM Sans', sans-serif; font-style: italic; font-size: 1rem; color: rgba(255,255,255,.75); margin-bottom: 28px; line-height: 1.6; max-width: 560px; }
++.trbz-hero-intro { font-size: .95rem; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 600px; margin-bottom: 28px; }
++.trbz-hero-intro p { margin: 0; }
++.trbz-hero-intro a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
++.trbz-hero-sub:has(+ .trbz-hero-intro) { margin-bottom: 16px; }
+ .trbz-hero-meta { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+ .trbz-hero-count { font-size: 13px; color: rgba(255,255,255,.65); }
+ .trbz-hero-loc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.1); border-radius: 50px; padding: 5px 14px; font-size: 12px; color: rgba(255,255,255,.8); }
+@@ -198,9 +202,12 @@
+         {%- if section.settings.subtitle != blank -%}
+           {{ section.settings.subtitle }}
+         {%- else -%}
+-          Handgeschilderd in Polen, te bestellen bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>
++          Handgeschilderd in Polen, af te halen bij Tante Rie in <strong><em style="color:#fff">Borne</em></strong>. Het melamine versturen we wel.
+         {%- endif -%}
+       </p>
++      {%- if _desc_first != blank -%}
++        <div class="trbz-hero-intro">{{ _desc_first }}</div>
++      {%- endif -%}
+       <div class="trbz-hero-meta">
+         <span class="trbz-hero-count">{{ collection.products_count }} producten</span>
+         <span class="trbz-hero-loc"><span aria-hidden="true">{%- render 'tr-icon', name: 'pin' -%}</span> Bakkerssteeg 6, Borne</span>
+@@ -217,7 +224,7 @@
+       <div class="trbz-usp-item">
+         <span class="trbz-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'store' -%}</span>
+         <div class="trbz-usp-text">
+-          <div class="trbz-usp-label">Alleen afhalen in Borne</div>
++          <div class="trbz-usp-label">Aardewerk alleen afhalen in Borne</div>
+           <div class="trbz-usp-sub">Bakkerssteeg 6, 7622 GX Borne</div>
+         </div>
+       </div>
+@@ -231,8 +238,8 @@
+       <div class="trbz-usp-item">
+         <span class="trbz-usp-icon" aria-hidden="true">{%- render 'tr-icon', name: 'package' -%}</span>
+         <div class="trbz-usp-text">
+-          <div class="trbz-usp-label">Hele collectie op bestelling</div>
+-          <div class="trbz-usp-sub">Niet op voorraad? Gewoon bestelbaar</div>
++          <div class="trbz-usp-label">Melamine wordt verstuurd</div>
++          <div class="trbz-usp-sub">Verstuurd binnen 1 tot 2 werkdagen</div>
+         </div>
+       </div>
+     </div>
+@@ -437,8 +444,8 @@
+             {{ section.settings.brand_text }}
+           {%- else -%}
+             <p>In het Poolse stadje Bolesławiec schilderen pottenbakkers al meer dan twee eeuwen aardewerk met de hand. Ze gebruiken traditionele stempels en sponsjes om de patronen aan te brengen. Geen twee stukken zijn precies gelijk. Het klassieke blauwe patroon, het pauwenoog, staat al generaties lang symbool voor het merk.</p>
+-            <p>Bunzlau Castle aardewerk gaat in de vaatwasser, magnetron én oven. Het glazuur is loodvrij en bestand tegen dagelijks gebruik. Je koopt het niet voor één seizoen.</p>
+-            <p>Bij Tante Rie vind je theepotten, mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk er niet? De hele collectie is op bestelling beschikbaar. Je haalt het op zodra het er ligt.</p>
++            <p>Bunzlau Castle aardewerk gaat in de vaatwasser en de magnetron en is bestand tegen dagelijks gebruik. Je koopt het niet voor één seizoen.</p>
++            <p>Bij Tante Rie vind je mokken, borden, schalen, kommen en decoratiestukken in meerdere decors. Staat een stuk of decor er niet bij, neem dan contact met ons op, dan kijken we of we het voor je kunnen bestellen.</p>
+             <p>Borne ligt midden in Twente, op een halfuur van <strong>Enschede, Hengelo en Almelo</strong>. Loop binnen, kijk rond en neem het mee.</p>
+           {%- endif -%}
+         </div>
+@@ -455,7 +462,7 @@
+ 
+   <!-- ── Ophaalinformatie ──────────────────────────────────────────────── -->
+   <section class="trbz-pickup" aria-labelledby="trbz-pickup-heading">
+-    <h2 id="trbz-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Alleen afhalen in de winkel</h2>
++    <h2 id="trbz-pickup-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--brown-dark);margin-bottom:28px;">Aardewerk afhalen in de winkel</h2>
+     {%- if section.settings.foto_winkel != blank -%}
+     <figure class="trbz-winkelfoto">
+       {{ section.settings.foto_winkel | image_url: width: 900 | image_tag: widths: '360, 480, 640, 800, 900', sizes: '(min-width: 750px) 360px, calc(100vw - 48px)', loading: 'lazy' }}
+@@ -504,7 +511,7 @@
+           </div>
+           <div class="trbz-pickup-contact-row">
+             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+-            <div style="font-size:12.5px;color:var(--text-muted)">Niet op voorraad? Heel de collectie is op bestelling beschikbaar.</div>
++            <div style="font-size:12.5px;color:var(--text-muted)">Staat een stuk of decor er niet bij? Neem contact met ons op, dan kijken we of we het voor je kunnen bestellen.</div>
+           </div>
+         </div>
+         <div class="trbz-pickup-cta">
+@@ -518,20 +525,6 @@
+   <div class="trbz-seo">
+     <div class="trbz-seo-inner" style="max-width:760px;margin:0 auto;">
+       {%- if _desc_rest != '' -%}{{ _desc_rest }}{%- elsif section.settings.seo_text != blank -%}{{ section.settings.seo_text }}{%- endif -%}
+-        <h2>Bunzlau Castle kopen in Twente</h2>
+-        <p>Tante Rie in Borne is officieel reseller van Bunzlau Castle. Je kunt langskomen om de stukken te zien, of online bestellen en ophalen. Stukken die er niet staan, bestellen we voor je. Levertijd hangt af van de collectiecyclus van Bunzlau Castle. Vraag ernaar via <a href="/pages/contact">het contactformulier</a> of bel ons.</p>
+-
+-        <h3>Welke decors zijn er op voorraad?</h3>
+-        <p>Bij Tante Rie hebben we momenteel stukken op voorraad in de decors <strong>Lace, Belle Fleur, Flower Fountain, Harmony, Spring Ballet, Flower Crown, Spring Hill, Felicity, Blue Valentine, Dragonfly, Daydream, Indigo, Winter Garden, Ocean Breeze, Romance, Granada, Blossom Breeze, Porto, Blue Garden</strong> en enkele andere. Niet elk decor is in elk product beschikbaar. Staat jouw favoriete decor er niet bij? De volledige Bunzlau Castle collectie is op bestelling verkrijgbaar.</p>
+-
+-        <h3>Gebruik en onderhoud</h3>
+-        <p>Bunzlau Castle aardewerk is vaatwasserbestendig, magnetronveilig en ovenbestendig tot 220°C. Gebruik geen metalen schuursponsjes op het glazuur. De stukken zijn zwaar en solide. Bij normaal gebruik gaan ze tientallen jaren mee.</p>
+-
+-        <h3>Theepotten van Bunzlau Castle</h3>
+-        <p>De theepotten van Bunzlau Castle zijn gemaakt voor dagelijks gebruik. Het dikke aardewerk houdt warmte goed vast. Bij Tante Rie combineren we ze graag met <a href="/collections/losse-thee">losse thee</a> en <a href="/collections/theefilters-en-maatschepjes">theefilters</a> voor een compleet theemoment.</p>
+-
+-        <h3>Ophalen in Borne</h3>
+-        <p>Bunzlau Castle is zwaar en breekbaar. Ophalen in de winkel heeft de voorkeur. Je vindt ons aan de Bakkerssteeg 6 in Borne, dinsdag tot en met zaterdag open van 10:00 tot 17:00. Gratis parkeren in de buurt van de winkel.</p>
+     </div>
+   </div>
+ 
