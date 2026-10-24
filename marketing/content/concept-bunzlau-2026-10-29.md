@@ -86,6 +86,9 @@ Wij kunnen alleen voor onze eigen winkel spreken. In Twente vind je Bunzlau Cast
 **Moet ik naar Polen om Bunzlau te kopen?**
 Nee. Het aardewerk wordt gemaakt en beschilderd in Bolesławiec in Polen, maar je kunt Bunzlau Castle ook in Nederland kopen. In onze winkel in Borne bekijk je het servies zonder de reis, en een decor dat er niet staat bestellen we voor je.
 
+**Is Bunzlau servies weleens in de aanbieding?**
+Twee keer per jaar houden we een kortingsweekend met 20 procent korting op het servies van Bunzlau Castle, Blond Amsterdam en Rice. Wil je weten wanneer het volgende kortingsweekend is, vraag het dan in de winkel of mail naar webshop@tanterie.nl.
+
 **Kan Bunzlau in de vaatwasser?**
 Ja, het aardewerk van Bunzlau Castle kan in de vaatwasser en in de magnetron. Gebruik geen metalen schuursponsje op het glazuur, dan blijft het decor mooi.
 
@@ -93,14 +96,14 @@ Ja, het aardewerk van Bunzlau Castle kan in de vaatwasser en in de magnetron. Ge
 
 | Onderdeel | Waarom |
 |---|---|
-| FAQ "Is Bunzlau in de aanbieding of sale?" (zoekvragen aanbieding, sale, outlet, goedkoopste; 'pools servies sale' 110 per maand) | Of Tante Rie Bunzlau ooit afprijst, tweede keus of een outlet heeft, staat nergens in de repository. Elk antwoord zou korting beloven of uitsluiten zonder bron. Vraag A hieronder; tot het antwoord er is blijft de vraag weg |
+| Data van de kortingsweekenden, tweede keus, outlet, "goedkoopste" | V97 noemt geen data en niets over tweede keus of outlet. De FAQ over aanbieding (toegevoegd op 24-10 na V97) noemt alleen de twee kortingsweekenden per jaar met 20 procent op Bunzlau, Blond en Rice, zonder datums en zonder korting buiten die weekenden te beloven. Of de korting alleen in de winkel of ook online geldt, staat er niet in, omdat V97 dat niet zegt |
 | Oven, 220°C, loodvrij, "tientallen jaren" | Staat in het thema, maar zonder bevestiging van Mark en met een concreet getal; niet nodig voor de zoekvraag vaatwasser |
 | "Officieel reseller", "meer dan 200 jaar", "meer dan 40 vormen", "pauwenoog" | Geen bron in de repository buiten de bestaande themateksten; niet nodig voor de zoekintentie |
 | Theepotten | Geen Bunzlau-theepot zichtbaar online (V89) |
 | Levertijd van een bestelling bij Bunzlau Castle | Onbekend ("hangt af van de collectiecyclus"); geen termijn beloven |
 | Koopavonden | V80 open |
 
-**Vaatwasser: markering voor de Kwaliteitsredacteur.** Het antwoord rust op de huidige collectietekst, die vaatwasser en magnetron twee keer noemt. Mark heeft het voor Bunzlau niet apart bevestigd (V7 en V36 gingen over Blond). Het productsjabloon toont "Handwas aanbevolen" als een product geen tag vaatwasser heeft, dus dezelfde tegenspraak als bij Blond kan hier ook spelen. Vraag B hieronder. Zegt Mark nee of blijft het onduidelijk, dan gaat het vaatwasserantwoord eruit.
+**Vaatwasser: bevestigd door Mark (V98, 24-10).** Bunzlau Castle-aardewerk mag in de vaatwasser en de magnetron. Aandachtspunt voor On-page: het productsjabloon toont "Handwas aanbevolen" als een product geen tag vaatwasser heeft, dus de tag op alle Bunzlau-aardewerkproducten moet worden gecontroleerd (zoals vastgelegd bij V98).
 
 **Feit uit algemene kennis.** "Bunzlau is de Duitse naam van Bolesławiec" komt niet uit de repository maar is een vaststaand historisch gegeven; dat het aardewerk uit Bolesławiec komt staat al op de live pagina. Ter beoordeling door de Kwaliteitsredacteur.
 
@@ -132,11 +135,16 @@ Geen productlinks: de Shopify-koppeling was niet beschikbaar om publicatie en vo
 | Merkfoto in "Over het merk" (ontbijtfoto, Jochem Boxem) | Bunzlau Castle aardewerk bij Tante Rie Borne Twente | Niet zelf bekeken (staat alleen in Shopify); On-page beschrijft wat er echt op staat, bijvoorbeeld "Ontbijttafel gedekt met Bunzlau Castle servies", alleen als dat klopt |
 | Eventueel extra: bunzlau-kast.jpg | Nog niet op deze pagina | Witte buffetkast met Bunzlau Castle mokken, borden en kopjes in de winkel van Tante Rie in Borne |
 
-## 8. Vragen voor Mark (door de hoofdsessie in vragen-voor-mark.md te zetten)
+## 8. Vragen voor Mark
 
-A. 🟡 **Bunzlau in de aanbieding.** Zoekers vragen naar Bunzlau aanbieding, sale, outlet en goedkoopste. Heeft Tante Rie weleens Bunzlau Castle in de aanbieding (bijvoorbeeld uitverkoop van oude decors of tweede keus), of nooit? Zonder antwoord blijft deze FAQ-vraag weg. (content/concept-bunzlau-2026-10-29.md)
+De twee vragen uit de eerste versie zijn op 24-10 beantwoord en verwerkt:
 
-B. 🟡 **Bunzlau in de vaatwasser.** Klopt het dat het aardewerk van Bunzlau Castle in de vaatwasser en in de magnetron mag, zoals nu op de collectiepagina staat? Zo ja, dan kan On-page nagaan of alle Bunzlau-producten de tag vaatwasser hebben, zodat de productpagina's niet "Handwas aanbevolen" zeggen. (zelfde bestand)
+| Vraag | Antwoord Mark | Verwerkt |
+|---|---|---|
+| V97 Bunzlau in de aanbieding | Twee keer per jaar een kortingsweekend met 20 procent korting op servies van Bunzlau, Blond en Rice; data niet genoemd | Nieuwe FAQ "Is Bunzlau servies weleens in de aanbieding?", zonder datums en zonder korting buiten de weekenden |
+| V98 Bunzlau in vaatwasser en magnetron | Ja | Markering bij het vaatwasserantwoord weggehaald; antwoordtekst ongewijzigd |
+
+Mogelijke vervolgvraag (⚪, alleen als de Kwaliteitsredacteur of On-page het nodig vindt): geldt de korting van het kortingsweekend alleen in de winkel of ook in de webshop? De FAQ zegt daar nu niets over.
 
 ## 9. Meting
 
