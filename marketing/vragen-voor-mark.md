@@ -76,12 +76,30 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 13. Vroege start november (24 oktober)
 
+## 15. Vroege start: bewaarblikken (24 oktober)
+
+Analyse: technisch/analyse-bewaarblik-producten-2026-10-30.md
+
+**V99 🟡 Zoekresultaat thee bewaarblik.** Kun je in een privévenster op 'thee bewaarblik' zoeken en kijken of Flowers theeblik en Arts & Craft blauw als gewoon blauw resultaat staan of in een productblok of Shopping-weergave? Een schermafdruk in assets/screenshots/ is genoeg. (analyse-bewaarblik-producten)
+**Antwoord:**
+
+**V100 🟡 Voorraad Flowers theeblik.** Flowers staat op -4 met doorverkopen aan, waardoor Google "op voorraad" meldt. Hoeveel liggen er echt, en moet doorverkopen voor dit product uit? (analyse-bewaarblik-producten)
+**Antwoord:**
+
+**V101 ⚪ "Uit eigen winkel Borne" op accessoires.** Deze tekst staat vast op alle accessoires, ook als ze niet op voorraad zijn in de winkel. Mag dat blijven, of alleen tonen bij voorraad (zoals bij de afspraak van 21-10)? (analyse-bewaarblik-producten)
+**Antwoord:**
+
+**V102 ⚪ Afmetingen en materiaal blikken.** Wat zijn de afmetingen en het materiaal van Flowers theeblik en de Arts & Craft-blikken (groen en blauw)? (analyse-bewaarblik-producten)
+**Antwoord:**
+
 ---
 
 ## Beantwoord
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V97 Bunzlau in de aanbieding | Twee keer per jaar een kortingsweekend met 20 procent korting op servies van Bunzlau, Blond en Rice; data niet genoemd | content/concept-bunzlau-2026-10-29.md (FAQ aanbieding) |
+| 24-10 | V98 Bunzlau in vaatwasser en magnetron | Ja | concept Bunzlau (FAQ vaatwasser bevestigd); On-page controleert de tag vaatwasser op alle Bunzlau-producten |
 | 24-10 | V94 Akkoord vroege start (a, b, c) | Alle drie akkoord | plan-2026-11-vroege-start.md; opdrachten uitgezet 24-10 |
 | 24-10 | V92 Zoekvolumes ophalen met scripts/zoekvolumes.py | Gedraaid door Mark op 24-10 (stap 1 en 2; stap 3 per seed niet nodig). Data in data/keyword-planner/: invoerlijst (202 resultaten, 196 met volume), ideeen-seeds (200) en een test (2) | zoekwoorden/clusters-2026-10-24.md; zoekwoorden/volumes-clusters-2026-10-24.md; vervolg in V93 |
 | 24-10 | V76 Basic access Google Ads API | Merkverificatie gedaan, Basic access toegekend (24-10) | scripts/zoekvolumes.py; Mark zet token in config en logt eenmalig in |
