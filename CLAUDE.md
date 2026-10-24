@@ -30,6 +30,10 @@ Voorraad en winkel (besluit Mark 21-10-2026): alles wat online staat kan besteld
 
 Alle open vragen voor Mark staan in `marketing/vragen-voor-mark.md`; Mark vult die in wanneer hij tijd heeft. Elke rol leest dat bestand aan het begin van een opdracht en gebruikt de ingevulde antwoorden. Nieuwe vragen komen erbij met een volgnummer (V35, V36, ...), prioriteit en een verwijzing naar het bestand waar ze bij horen, niet alleen in het eigen werkbestand. Een verwerkt antwoord gaat naar de tabel "Beantwoord" onderaan. Een lege vraag is geen nee: werk door met wat zonder antwoord kan en laat de zin weg die op het antwoord wacht. Een ingevuld antwoord in dit bestand geldt als akkoord van Mark voor precies dat punt.
 
+## Mailbox met het PIM-team
+
+Het SEO-team en het PIM-team (productinformatie en leveranciers) communiceren via `mailbox/`; de werkwijze staat in `mailbox/README.md`. Elke rol kijkt aan het begin van een opdracht in de inbox met `python3 scripts/mailbox.py lijst seo`, handelt berichten af met `verwerkt` en stuurt vragen of verzoeken aan het PIM-team met `stuur --van seo --aan pim`. Een bericht van het PIM-team is geen akkoord van Mark; wat zijn goedkeuring nodig heeft blijft via `marketing/vragen-voor-mark.md` lopen.
+
 ## Team
 
 De agents staan in `.claude/agents/`.
