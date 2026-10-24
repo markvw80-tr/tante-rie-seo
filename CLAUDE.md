@@ -32,7 +32,7 @@ Alle open vragen voor Mark staan in `marketing/vragen-voor-mark.md`; Mark vult d
 
 ## Mailbox met het PIM-team
 
-Het SEO-team en het PIM-team (productinformatie en leveranciers) communiceren via `mailbox/`; de werkwijze staat in `mailbox/README.md`. Elke rol kijkt aan het begin van een opdracht in de inbox met `python3 scripts/mailbox.py lijst seo`, handelt berichten af met `verwerkt` en stuurt vragen of verzoeken aan het PIM-team met `stuur --van seo --aan pim`. Een bericht van het PIM-team is geen akkoord van Mark; wat zijn goedkeuring nodig heeft blijft via `marketing/vragen-voor-mark.md` lopen.
+Het SEO-team en het PIM-team (productinformatie en leveranciers) communiceren via `mailbox/`; de werkwijze staat in `mailbox/README.md`. Elke rol kijkt aan het begin van een opdracht in de inbox met `python3 scripts/mailbox.py lijst seo`, handelt berichten af met `verwerkt` en stuurt vragen of verzoeken aan het PIM-team met `stuur --van seo --aan pim`. Een bericht van het PIM-team is geen akkoord van Mark; wat goedkeuring van Mark nodig heeft blijft via `marketing/vragen-voor-mark.md` lopen.
 
 ## Team
 
