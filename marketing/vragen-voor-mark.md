@@ -76,15 +76,13 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 13. Vroege start november (24 oktober)
 
-**V94 🔴 Akkoord vroege start.** Het novemberplan is bijgewerkt met de zoekvolumes (plan-2026-11.md, versie 2). Drie onderdelen wil ik al vanaf maandag 26 oktober laten oppakken, omdat de vraag in november al piekt: de Bunzlau-collectie (voorstel bij jou op 2 november, live uiterlijk 14 november), de bewaarblikken en één cadeaupagina (samen bij jou op 5 november, bewaarblikken live uiterlijk 13 november, cadeau uiterlijk 20 november). Elke tekst komt eerst als voor en na bij je langs. (a) Akkoord om de opdrachten uit plan-2026-11-vroege-start.md uit te zetten? (b) Akkoord dat de collectie Thee Cadeaus (/collections/cadeaus) de hoofdpagina wordt voor 'thee cadeau' en /pages/thee-cadeau ernaar verwijst? (c) Akkoord dat we de servies-hub /pages/serviezen niet herschrijven (alleen "altijd op voorraad" eruit en een link naar Bunzlau) en Rice en melamine naar januari schuiven? (plan-2026-11.md en plan-2026-11-vroege-start.md)
-**Antwoord:**
-
 ---
 
 ## Beantwoord
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V94 Akkoord vroege start (a, b, c) | Alle drie akkoord | plan-2026-11-vroege-start.md; opdrachten uitgezet 24-10 |
 | 24-10 | V92 Zoekvolumes ophalen met scripts/zoekvolumes.py | Gedraaid door Mark op 24-10 (stap 1 en 2; stap 3 per seed niet nodig). Data in data/keyword-planner/: invoerlijst (202 resultaten, 196 met volume), ideeen-seeds (200) en een test (2) | zoekwoorden/clusters-2026-10-24.md; zoekwoorden/volumes-clusters-2026-10-24.md; vervolg in V93 |
 | 24-10 | V76 Basic access Google Ads API | Merkverificatie gedaan, Basic access toegekend (24-10) | scripts/zoekvolumes.py; Mark zet token in config en logt eenmalig in |
 | 24-10 | V82 Voorstel cafeïne-collecties, inclusief de extra's T3, V2, M4, M5 en de zes alt-teksten | Akkoord | changelog 24-10 (vijf regels); review/review-cafeine-thee-collecties-2026-10-24.md |
