@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 24 oktober 2026 (V92 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -71,7 +71,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 12. Zoekvolumes (24 oktober)
 
-**V92 🟡 Zoekvolumes ophalen met scripts/zoekvolumes.py.** Draai je op je eigen computer de opdrachten uit marketing/zoekwoorden/opdracht-zoekvolumes-mark-2026-10-24.md (eenmalig installeren, `account` en `inloggen`; daarna `volumes` met de invoerlijst en `ideeen` met de seedlijst) en push je de json-bestanden in data/keyword-planner/ naar de branch claude/zoekwoord-volumes? En wanneer? Liefst eind oktober, uiterlijk 28 november (plan-2026-11, actie 9). Pas daarna kan het team de clusters herberekenen met echte volumes. (zoekwoorden/opdracht-zoekvolumes-mark-2026-10-24.md)
+**V93 ⚪ Kleine vervolgronde Keyword Planner.** Kun je nog een keer `python3 scripts/zoekvolumes.py volumes --bestand marketing/zoekwoorden/keyword-planner-invoer-2026-10-24-vervolg.txt --onderwerp vervolg` draaien en de json naar de branch pushen? Het gaat om 32 zoekwoorden die in clusters-2026-10-24.md ontbreken of zonder maandcijfers zijn: lokale varianten als 'theewinkel in de buurt', cakemix en bakmix, melamine en theepot met maandcijfers, cadeaubox thee en 'tea'. Duurt ongeveer twee minuten (inloggen is al gedaan). Niet urgent: het team werkt door met het huidige rapport. (zoekwoorden/clusters-2026-10-24.md)
 **Antwoord:**
 
 ---
@@ -80,6 +80,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V92 Zoekvolumes ophalen met scripts/zoekvolumes.py | Gedraaid door Mark op 24-10 (stap 1 en 2; stap 3 per seed niet nodig). Data in data/keyword-planner/: invoerlijst (202 resultaten, 196 met volume), ideeen-seeds (200) en een test (2) | zoekwoorden/clusters-2026-10-24.md; zoekwoorden/volumes-clusters-2026-10-24.md; vervolg in V93 |
 | 24-10 | V76 Basic access Google Ads API | Merkverificatie gedaan, Basic access toegekend (24-10) | scripts/zoekvolumes.py; Mark zet token in config en logt eenmalig in |
 | 24-10 | V82 Voorstel cafeïne-collecties, inclusief de extra's T3, V2, M4, M5 en de zes alt-teksten | Akkoord | changelog 24-10 (vijf regels); review/review-cafeine-thee-collecties-2026-10-24.md |
 | 24-10 | V90 Eigenaarsnaam op de site | Privacypagina volledige naam, elders alleen de voornaam | changelog 24-10 (privacypagina, Over ons) |

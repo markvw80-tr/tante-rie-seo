@@ -1,0 +1,42 @@
+# Vervolgronde voor scripts/zoekvolumes.py volumes (24-10-2026). Aanvulling op keyword-planner-invoer-2026-10-23.txt.
+# Doel: volumes (met maandcijfers) voor zoekwoorden die in clusters-2026-10-24.md als onbekend staan of nog niet zijn opgevraagd.
+# Gebruik: python3 scripts/zoekvolumes.py volumes --bestand marketing/zoekwoorden/keyword-planner-invoer-2026-10-24-vervolg.txt --onderwerp vervolg
+# Lokaal
+theewinkel in de buurt
+thee winkel in de buurt
+theewinkel borne
+theewinkel twente
+cadeauwinkel twente
+kookwinkel hengelo
+# Bakmixen en Bakzolder
+cakemix
+bakmix
+cakemix kopen
+bakzolder cakemix
+# Melamine en Rice (maandcijfers voor het seizoen)
+melamine servies
+melamine borden
+melamine bekers
+melamine bord
+rice melamine
+rice servies
+rice bekers sale
+# Theepotten
+theepot
+theepot keramiek
+theepotten
+theepot kopen
+# Cadeau en pakketten
+cadeaubox thee
+thee cadeaubox
+thee cadeau pakket
+thee set cadeau
+theecadeau
+cadeau voor theeliefhebber
+cadeau theeliefhebber
+# Besteltermen
+thee bestellen
+losse thee bestellen
+thee online bestellen
+# Engelstalig, om de afwijzing te onderbouwen
+tea
