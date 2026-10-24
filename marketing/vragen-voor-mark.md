@@ -4,19 +4,13 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 23 oktober 2026. Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 23 oktober 2026 (antwoorden Mark verwerkt). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
 ## 0. Spoed
 
-**V67 ⚪ Cafeïne in thee-collecties.** De collecties vruchtenthee, rooibos en kruidenthee noemen zichzelf "cafeïnevrij" (in de paginatekst en in de titel van vruchtenthee en kruidenthee), maar bevatten ook theesoorten met cafeïne: Boswandeling, Sterrennacht, Twentse Land, Gember Chai, Elfjesthee en Pu-erh. Mag het team voorstellen deze producten in de juiste collectie te zetten, de alt-tekst van Sterrennacht te verbeteren en de oude levertijd in de kruidenthee-tekst aan te passen? Ja/nee
-**Antwoord:**
-
 ## 1. Fouten die nu live staan
-
-**V2 🟡 Personalisatie, concepten en foto's.** Mogen de 4 conceptproducten (Fit Girl, EB Pink Mini Mug, Happy Mug Rollerskate, Blond Hug Mug Tea) meteen mee, en moeten voorbeeldfoto's met handgeschreven tekst uit de productgalerijen?
-**Antwoord:**
 
 ## 2. Afhaalregels Blond en Bunzlau
 
@@ -34,17 +28,44 @@ Voorstel: onpage/voorstel-servies-en-atelier-2026-10-22.md
 
 Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord betekenen dat die zin uit de tekst gaat.
 
-**V13 🟡 Openingsjaar en eigenaar.** Het Bedrijfsprofiel zegt 4 april 2014, de site en llms.txt zeggen 2024. Wat klopt (opening of overname)? Wil je de naam van de eigenaar op de pagina?
-**Antwoord:**
-
 ## 6. Maandplan oktober (plan-2026-10.md)
-
-**V28 🟡 Startsein homepagebesluit (beslissing 4).** Akkoord: twee weken geen vertoningen meer op http://www.tanterie.nl/ voor niet-merkzoekwoorden, en https://tanterie.nl/ binnen drie posities van de oude positie? Ja/nee
-**Antwoord:**
 
 ## 7. Kleinere punten
 
 ## 8. Nieuw na antwoorden 22 oktober
+
+## 9. Maandplan november (plan-2026-11.md, opzet)
+
+Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
+
+**V76 ⚪ Basic access Google Ads API.** Het ontwikkelaarstoken heeft Explorer access en dat blokkeert de Keyword Planner. Wil je Basic access aanvragen, zodat het team volumes zelf kan ophalen? Ja/nee (plan-2026-11, actie 9)
+**Antwoord:** Aangevraagd (23-10), nog niet toegewezen; Mark gaat er 24-10 mee verder.
+
+**V80 🟡 Koopavonden en extra openingen in december (vervolg op V35).** Is de winkel in december op extra avonden of dagen open, bijvoorbeeld op zondag of maandag? Zo ja, welke data en tijden? Graag uiterlijk 10 november, zodat het feestdagenbericht van 17 november klopt. (plan-2026-11, actie 4)
+**Antwoord:**
+
+**V81 🔴 Metingen.** In de cloudsessies zijn er geen credentials voor Search Console, GA4, Merchant Center en het Bedrijfsprofiel. Kies A: je draait de metingen zelf lokaal volgens de tabel "Metingen die Mark lokaal moet draaien" in plan-2026-11, inclusief de export van het Indexeringsrapport Serverfout (5xx). Of B: je start voor de weekmonitors en het maandrapport een lokale sessie waarin de Analist de scripts draait. Zonder een van beide kan niemand de resultaten van oktober beoordelen. (plan-2026-11, actie 1 en 2)
+**Antwoord:**
+
+## 10. Voorstellen 23 oktober (V67, V13, V77)
+
+**V82 🟡 Akkoord voorstel cafeïne-collecties.** Voorstel: onpage/voorstel-cafeine-thee-collecties-2026-10-23.md. Zeven producten (ook Marocco Mint) uit de cafeïnevrije collecties, Twentse Land en Pu-erh erbij in zwarte thee, nieuwe levertijd in tekst en meta's, alt-tekst Sterrennacht, en correctie van Pu-erh (heeft nu de gegevens van Kruizemunt Nana Mint en staat op Decaf). Ja/nee, en de extra's T3, V2, M4, M5 en de zes andere alt-teksten wel of niet meenemen?
+**Antwoord:**
+
+**V83 🟡 Festival, Sinaasappel Chai en Inspiratie.** Rooibos of zwarte/groene thee? De gegevens spreken elkaar tegen; een blik op de verpakking is genoeg. (onpage/voorstel-cafeine-thee-collecties-2026-10-23.md)
+**Antwoord:**
+
+**V84 ⚪ Lavendel en Pu-erh.** Wat is het product Lavendel (lege pagina met tekst en foto van Mama & Baby Thee)? Welk zetadvies geldt voor Pu-erh (95 graden 5 tot 7 minuten of 100 graden 3 tot 5 minuten), en is er een foto? (zelfde voorstel)
+**Antwoord:**
+
+**V85 🟡 Akkoord voorstel openingsjaar en telefoon.** Voorstel: technisch/voorstel-jaartal-en-telefoon-2026-10-23.md. (a) llms.txt 2024 wordt 2014, akkoord? (b) de homepage zegt 2012; ook 2014 maken? (c) foundingDate 2014 in de markup? (d) telefoonnummer en kop op de contactpagina, akkoord? (e) link "onze winkel" op de contactpagina naar de theewinkelpagina?
+**Antwoord:**
+
+**V86 🟡 Eigenaar.** llms.txt en homepage noemen "Eigenaar Nikkie", de privacypagina "mevr. A. Kamp, eigenaar" en Over ons een "nieuwe eigenaar". Wat moet waar staan? (technisch/voorstel-jaartal-en-telefoon-2026-10-23.md)
+**Antwoord:**
+
+**V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e) Werkt tiktok.com/@tante.rie.borne en staat tanterie.nl in de bio?
+**Antwoord:**
 
 ---
 
@@ -52,6 +73,16 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 23-10 | V77d Telefoon op de contactpagina | Akkoord | voorstel met voor en na volgt |
+| 23-10 | V74 Verdeling maand 2 | Ja, 60/40 winkel/webshop | plan-2026-11 |
+| 23-10 | V75 Keyword Planner-export | Ja, uiterlijk 28-11 | plan-2026-11, actie 9 |
+| 23-10 | V77 NAP (a, b, c, e) | (a) door Mark doorgegeven aan Visit Borne; (b) @tante.rie.borne; (c) webshop@ voor de webshop, info@ ook officieel; (e) team bereidt correctieverzoeken voor | plan-2026-11, actie 3; (d) nog open |
+| 23-10 | V78 Antwoorden op 33 reviews | Later | uitgesteld, niet in november tenzij Mark terugkomt |
+| 23-10 | V79 Decemberberichten Bedrijfsprofiel | Akkoord | plan-2026-11, actie 4; teksten eerst langs Kwaliteitsredacteur |
+| 23-10 | V28 Startsein homepagebesluit | Akkoord | plan-2026-10, actie 1 |
+| 23-10 | V13 Openingsjaar en eigenaar | 2014; eigenaar niet beantwoord, dus geen naam op de pagina | correctie 2024 naar 2014 op site en llms.txt volgt als voorstel |
+| 23-10 | V2 Personalisatie, concepten en foto's | Voorlopig niets mee doen | geen actie |
+| 23-10 | V67 Cafeïne in thee-collecties | Akkoord | voorstel met voor en na volgt (collecties, alt-tekst Sterrennacht, levertijd kruidenthee) |
 | 23-10 | V73 Woonadres Merchant Center | Aangepast door Mark naar Bakkerssteeg 6, Borne | changelog |
 | 23-10 | V63 Bunzlau textiel offline | Gedaan door Mark, pagina 404, POS blijft | changelog |
 | 23-10 | A4 Afhaalproducten uit Shopping | Akkoord: Bunzlau-aardewerk, Blond en Pineut-karaffen uit Shopping en gratis webvermeldingen, lokaal blijft | handwerk-mark A4, label custom_label_0 |
