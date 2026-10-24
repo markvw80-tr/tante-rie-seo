@@ -102,13 +102,7 @@ Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-
 **V104 ⚪ Servies op maat.** Klopt "Bijzonder servies op maat bestellen? Dat kan ook!" op /pages/serviezen nog, en mag het uitroepteken eraf? (voorstel-bunzlau-title-links)
 **Antwoord:**
 
-**V105 🟡 Themavoorstel Bunzlau-collectie.** Op /collections/bunzlau toont het thema de eerste alinea van de beschrijving niet, zegt de ondertitel "te bestellen" terwijl het aardewerk alleen af te halen is, en staan er vaste teksten met een decorlijst "op voorraad", "officieel reseller" en "ovenbestendig tot 220°C". Mag Technisch SEO een voorstel met voor en na maken om dit recht te zetten? Zonder dit kan de nieuwe intro niet live. (concept-bunzlau, voorstel-bunzlau-title-links)
-**Antwoord:**
-
 **V106 🔴 Voorraad cadeauproducten (vóór 3 november).** Van de 21 online cadeauproducten staan er 10 op voorraad 0 of lager, onder meer Natural Flower Cards. Komt er een nieuwe levering, of moeten ze offline? Zonder antwoord noemt de cadeautekst geen koker of set bij naam. (controle-cadeau)
-**Antwoord:**
-
-**V107 🟡 Volgorde cadeaucollectie.** Mag /collections/cadeaus op handmatige volgorde, met de proefpakketten en bestelbare kokers bovenaan? Nu staat die op Best verkocht. (controle-cadeau)
 **Antwoord:**
 
 **V108 ⚪ Theegeschenken online.** Wil je (een deel van) de 13 theegeschenken uit "Geven is leuker", die nu alleen op de kassa staan, online zetten als cadeauset? Ze hebben eerst een beschrijving en foto's nodig. De twee Luxe Thee Cadeausets zijn gearchiveerd. (controle-cadeau)
@@ -132,6 +126,8 @@ Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V105 Themavoorstel Bunzlau-collectie | Ja | Technisch SEO maakt voorstel met voor en na (eerste alinea, ondertitel, vaste voorraadteksten) |
+| 24-10 | V107 Volgorde cadeaucollectie | Ja, handmatig met proefpakketten bovenaan; aanvullen met bijvoorbeeld de Joeff-artikelen, die ook cadeaus kunnen zijn. Mark selecteert later nog andere artikelen. Klanten kunnen altijd contact opnemen voor een cadeaupakket op maat | cadeauvoorstel stap 2 (On-page) en cadeautekst (Content-redacteur) |
 | 24-10 | V97 Bunzlau in de aanbieding | Twee keer per jaar een kortingsweekend met 20 procent korting op servies van Bunzlau, Blond en Rice; data niet genoemd | content/concept-bunzlau-2026-10-29.md (FAQ aanbieding) |
 | 24-10 | V98 Bunzlau in vaatwasser en magnetron | Ja | concept Bunzlau (FAQ vaatwasser bevestigd); On-page controleert de tag vaatwasser op alle Bunzlau-producten |
 | 24-10 | V94 Akkoord vroege start (a, b, c) | Alle drie akkoord | plan-2026-11-vroege-start.md; opdrachten uitgezet 24-10 |
