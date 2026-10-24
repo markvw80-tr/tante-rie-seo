@@ -38,9 +38,6 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
 
-**V76 ⚪ Basic access Google Ads API.** Het ontwikkelaarstoken heeft Explorer access en dat blokkeert de Keyword Planner. Wil je Basic access aanvragen, zodat het team volumes zelf kan ophalen? Ja/nee (plan-2026-11, actie 9)
-**Antwoord:** Aangevraagd (23-10). Afgewezen op 23-10 (mail Google Ads API, 21:53): Basic access vereist een geverifieerd OAuth-merkprofiel (brand verification) voor project 28634605562. Explorer access blijft. Volgende stap voor Mark: merkverificatie in Google Cloud (Google Auth Platform > Branding en Verification Center), daarna Basic access opnieuw aanvragen. Tot die tijd handmatige Keyword Planner-exports.
-
 **V80 🟡 Koopavonden en extra openingen in december (vervolg op V35).** Is de winkel in december op extra avonden of dagen open, bijvoorbeeld op zondag of maandag? Zo ja, welke data en tijden? Graag uiterlijk 10 november, zodat het feestdagenbericht van 17 november klopt. (plan-2026-11, actie 4)
 **Antwoord:**
 
@@ -75,6 +72,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 24-10 | V76 Basic access Google Ads API | Merkverificatie gedaan, Basic access toegekend (24-10) | scripts/zoekvolumes.py; Mark zet token in config en logt eenmalig in |
 | 24-10 | V82 Voorstel cafeïne-collecties, inclusief de extra's T3, V2, M4, M5 en de zes alt-teksten | Akkoord | changelog 24-10 (vijf regels); review/review-cafeine-thee-collecties-2026-10-24.md |
 | 24-10 | V90 Eigenaarsnaam op de site | Privacypagina volledige naam, elders alleen de voornaam | changelog 24-10 (privacypagina, Over ons) |
 | 24-10 | V86 Eigenaar | Eigenaar is Nikkie de Koning, vorige eigenaar is Anke Kamp | voorstel technisch/voorstel-eigenaar-2026-10-24.md (V90), V91 |
