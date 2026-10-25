@@ -24,7 +24,7 @@ MINIMUM = 20
 VELDEN = ("product_id", "handle", "veld", "huidige_waarde", "gewenste_waarde",
           "reden", "prioriteit", "status")
 TOEGESTAAN = {
-    "veld": {"titel", "meta_description", "beschrijving", "alt_tekst", "tags"},
+    "veld": {"titel", "seo_titel", "meta_description", "beschrijving", "alt_tekst", "tags"},
     "prioriteit": {"hoog", "middel", "laag"},
     "status": {"nieuw"},
 }
@@ -58,7 +58,7 @@ def fouten_in(regels):
                 fouten.append(f"regel {i}: {veld} '{r[veld]}' niet toegestaan")
         if len(str(r.get("reden", "")).split()) > 10:
             fouten.append(f"regel {i}: reden langer dan tien woorden")
-        sleutel = (r.get("product_id"), r.get("veld"))
+        sleutel = (r.get("product_id"), r.get("veld"), r.get("huidige_waarde") if r.get("veld") == "alt_tekst" else None)
         if sleutel in gezien:
             fouten.append(f"regel {i}: dubbel voor {sleutel[0]} {sleutel[1]}")
         gezien.add(sleutel)
