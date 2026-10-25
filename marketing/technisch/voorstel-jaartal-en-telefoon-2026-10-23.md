@@ -1,5 +1,7 @@
 # Voorstel: openingsjaar 2014 (V13) en telefoon op de contactpagina (V77d)
 
+Akkoord Mark 25-10 (V85) op alle onderdelen a tot en met e. Volgens de werkafspraken van 25-10 voert SEO zelf niets door in Shopify; de uitvoering (thema, contactpagina, llms.txt) moet nog worden belegd.
+
 Datum: 23-10-2026. Rol: technisch SEO-specialist. Status: alleen lezen en voorstel. Niets live gewijzigd, geen themakopie gemaakt, niets gecommit. Mark gaf op 23-10 akkoord op het principe (V13: 2014, eigenaarsnaam niet beantwoord; V77d: akkoord). Dit document is het voor-en-na dat hij nog kan nalopen.
 
 ## Wat ik wel en niet kon lezen

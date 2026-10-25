@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 25 oktober 2026 (V81 en V122 beantwoord, V106 aangehouden; V80 en V95c beantwoord en verwerkt, V122 toegevoegd en datums bevestigd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 25 oktober 2026 (V83, V85 en V95a beantwoord; V81 en V122 beantwoord, V106 aangehouden; V80 en V95c beantwoord en verwerkt, V122 toegevoegd en datums bevestigd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -40,13 +40,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 
 ## 10. Voorstellen 23 oktober (V67, V13, V77)
 
-**V83 🟡 Festival, Sinaasappel Chai en Inspiratie.** Rooibos of zwarte/groene thee? De gegevens spreken elkaar tegen; een blik op de verpakking is genoeg. (onpage/voorstel-cafeine-thee-collecties-2026-10-23.md)
-**Antwoord:**
-
 **V84 ⚪ Lavendel en Pu-erh.** Wat is het product Lavendel (lege pagina met tekst en foto van Mama & Baby Thee)? Welk zetadvies geldt voor Pu-erh (95 graden 5 tot 7 minuten of 100 graden 3 tot 5 minuten), en is er een foto? (zelfde voorstel)
-**Antwoord:**
-
-**V85 🟡 Akkoord voorstel openingsjaar en telefoon.** Voorstel: technisch/voorstel-jaartal-en-telefoon-2026-10-23.md. (a) llms.txt 2024 wordt 2014, akkoord? (b) de homepage zegt 2012; ook 2014 maken? (c) foundingDate 2014 in de markup? (d) telefoonnummer en kop op de contactpagina, akkoord? (e) link "onze winkel" op de contactpagina naar de theewinkelpagina?
 **Antwoord:**
 
 **V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e) Werkt tiktok.com/@tante.rie.borne en staat tanterie.nl in de bio?
@@ -127,7 +121,7 @@ Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 
 Logboek: technisch/search-console-meldingen.md
 
-**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Onderdeel (c) is op 25-10 afgehandeld (zie Beantwoord); (a) en (b) staan nog open. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
+**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a, gedaan door Mark 25-10) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Onderdelen (a) en (c) zijn op 25-10 afgehandeld (zie Beantwoord); alleen (b) staat nog open. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
 **Antwoord:**
 
 **V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
@@ -146,6 +140,9 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 25-10 | V83 Festival, Sinaasappel Chai en Inspiratie | Alle drie rooibos. De SKU in Shopify is gelijk aan het artikelnummer van Geels | 12 regels voor PIM in marketing/pim-regels-concept.json (SEO-titel, meta, alt, tags, beschrijving Festival); metavelden cafeïnegehalte, smaakprofiel en trektijd via mailbox aan PIM |
+| 25-10 | V85 Openingsjaar en telefoon | Akkoord op alle onderdelen (a tot en met e) | technisch/voorstel-jaartal-en-telefoon-2026-10-23.md; uitvoering in thema en pagina's, niet door SEO (werkafspraken 25-10) |
+| 25-10 | V95a Oplossingen valideren | Gedaan door Mark | technisch/search-console-meldingen.md; validatie Reviewfragmenten, Productfragmenten en Verkopersvermeldingen loopt |
 | 25-10 | V122 Openingstijden extra openingen | Koopzondagen 29 november en 20 december 12.00 tot 17.00 uur; koopavond zaterdag 12 december (Magisch Borne) tot 21.00 uur, opening zoals gewoonlijk op zaterdag om 10.00 uur | plan-2026-11 actie 6: speciale openingstijden Bedrijfsprofiel en feestdagenbericht; theewinkelpagina |
 | 25-10 | V81 Metingen | Voorlopig wordt alleen lokaal gewerkt; advies team: B, metingen in een lokale sessie waarin de Analist de scripts draait | plan-2026-11 actie 1 en 2; weekmonitor en maandrapport alleen in lokale sessies |
 | 25-10 | V80 Koopavonden en extra openingen december | Koopzondag 29 november (eerst 30 genoemd, gecorrigeerd), koopavond zaterdag 12 december tijdens het evenement Magisch Borne, koopzondag 20 december | Tijden nog in V122; daarna speciale tijden in het Bedrijfsprofiel en feestdagenbericht (plan-2026-11 actie 6), theewinkelpagina |
