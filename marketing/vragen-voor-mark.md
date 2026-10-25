@@ -139,12 +139,21 @@ Logboek: technisch/search-console-meldingen.md
 **V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
 **Antwoord:**
 
+## 19. Productmarkup homepage en collecties (25 oktober)
+
+Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
+
+**V121 ⚪ Uitgelichte producten homepage.** Mag de lijst met uitgelichte producten in de gegevens voor Google later worden teruggebracht tot alleen link en positie? Geen haast. (voorstel-homepage-productmarkup)
+**Antwoord:**
+
 ---
 
 ## Beantwoord
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 25-10 | V119 Akkoord voorstel productmarkup (keuze a) | Akkoord, mag uitgevoerd worden | uitvoering via themakopie (technisch/voorstel-homepage-productmarkup-2026-10-25.md) |
+| 25-10 | V120 Joeff-producten zonder foto | Mark heeft op 25-10 drie Joeff-producten online gezet (Handdoekhaakje, Plateau, Spiegel), alle drie met foto. Grote ring en Kleine ring staan niet online en hebben geen foto | verzoek aan PIM-team via mailbox (25-10): pas publiceren met foto |
 | 24-10 | V118 Akkoord Bunzlau-pakket (a tot en met d) | Akkoord; merkblok met de feiten uit V114 | doorvoeren via themakopie en preview, body en thema dezelfde dag live |
 | 24-10 | V113 Extra afhaalteksten Bunzlau | Nee | themavoorstel zonder balk- en kopaanvulling |
 | 24-10 | V114 Bronnen merkblok Bunzlau | Bunzlau Castle bestaat sinds 1984; in de plaats in Polen waar het gemaakt wordt, wordt al sinds de 18e eeuw keramiek gemaakt. Reistijd naar de winkel: ongeveer 25 minuten vanuit Enschede, 15 vanuit Hengelo en 20 vanuit Almelo. Pauwenoog niet bevestigd | themavoorstel merkblok (T6) |

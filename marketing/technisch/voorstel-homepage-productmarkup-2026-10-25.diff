@@ -1,0 +1,511 @@
+--- a/sections/tr-collection-blond.liquid
++++ b/sections/tr-collection-blond.liquid
+@@ -337,7 +337,7 @@
+             {%- endfor -%}
+           {%- endif -%}
+ 
+-          <article class="trba-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trba-card" role="listitem">
+             <a href="{{ _card_variant_url }}" class="trba-card-img" aria-label="{{ product.title }}">
+               {%- if _card_img -%}
+                 <img
+@@ -345,8 +345,7 @@
+                   alt="{{ _card_img.alt | default: product.title | escape }} – Blond Amsterdam bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'flower', size: 48 -%}</div>
+               {%- endif -%}
+@@ -358,18 +357,16 @@
+             </a>
+             <div class="trba-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trba-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trba-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ _card_variant_url }}" style="text-decoration:none">
+-                <p class="trba-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trba-card-name">{{ product.title }}</p>
+               </a>
+               {%- if _kaart_tekst != blank -%}
+                 <p class="trba-card-desc">{{ _kaart_tekst }}</p>
+               {%- endif -%}
+               <div class="trba-card-footer">
+-                <span class="trba-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trba-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-bunzlau.liquid
++++ b/sections/tr-collection-bunzlau.liquid
+@@ -373,7 +373,7 @@
+             {%- endfor -%}
+           {%- endif -%}
+ 
+-          <article class="trbz-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trbz-card" role="listitem">
+             <a href="{{ _card_variant_url }}" class="trbz-card-img" aria-label="{{ product.title }}">
+               {%- if _card_img -%}
+                 <img
+@@ -383,8 +383,7 @@
+                   alt="{{ _card_img.alt | default: product.title | escape }} – Bunzlau Castle bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'jar', size: 48 -%}</div>
+               {%- endif -%}
+@@ -396,18 +395,16 @@
+             </a>
+             <div class="trbz-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trbz-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trbz-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ _card_variant_url }}" style="text-decoration:none">
+-                <p class="trbz-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trbz-card-name">{{ product.title }}</p>
+               </a>
+               {%- if _kaart_tekst != blank -%}
+                 <p class="trbz-card-desc">{{ _kaart_tekst }}</p>
+               {%- endif -%}
+               <div class="trbz-card-footer">
+-                <span class="trbz-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trbz-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-groene-thee.liquid
++++ b/sections/tr-collection-groene-thee.liquid
+@@ -288,7 +288,7 @@
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+ 
+-          <article class="trgt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trgt-card" role="listitem">
+             <a href="{{ product.url }}" class="trgt-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -296,8 +296,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – groene thee bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+               {%- endif -%}
+@@ -307,10 +306,10 @@
+             </a>
+             <div class="trgt-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trgt-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trgt-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trgt-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trgt-card-name">{{ product.title }}</p>
+               </a>
+               {%- if product.metafields.custom.smaakprofiel != blank -%}
+                 <p class="trgt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+@@ -337,9 +336,7 @@
+                 </div>
+               {%- endif -%}
+               <div class="trgt-card-footer">
+-                <span class="trgt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trgt-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-joeff.liquid
++++ b/sections/tr-collection-joeff.liquid
+@@ -318,7 +318,7 @@
+         {%- for product in collection.products -%}
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+-          <article class="trjf-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trjf-card" role="listitem">
+             <a href="{{ product.url }}" class="trjf-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -326,8 +326,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – Joeff Muuss bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'puzzle', size: 48 -%}</div>
+               {%- endif -%}
+@@ -339,18 +338,16 @@
+             </a>
+             <div class="trjf-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trjf-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trjf-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trjf-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trjf-card-name">{{ product.title }}</p>
+               </a>
+               {%- if _kaart_tekst != blank -%}
+                 <p class="trjf-card-desc">{{ _kaart_tekst }}</p>
+               {%- endif -%}
+               <div class="trjf-card-footer">
+-                <span class="trjf-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trjf-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-kruidenthee.liquid
++++ b/sections/tr-collection-kruidenthee.liquid
+@@ -288,7 +288,7 @@
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+ 
+-          <article class="trkt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trkt-card" role="listitem">
+             <a href="{{ product.url }}" class="trkt-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -296,8 +296,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – kruidenthee bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+               {%- endif -%}
+@@ -307,10 +306,10 @@
+             </a>
+             <div class="trkt-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trkt-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trkt-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trkt-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trkt-card-name">{{ product.title }}</p>
+               </a>
+               {%- if product.metafields.custom.smaakprofiel != blank -%}
+                 <p class="trkt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+@@ -337,9 +336,7 @@
+                 </div>
+               {%- endif -%}
+               <div class="trkt-card-footer">
+-                <span class="trkt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trkt-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-rice.liquid
++++ b/sections/tr-collection-rice.liquid
+@@ -315,13 +315,13 @@
+           {%- assign _sold_out = false -%}
+           {%- unless product.available -%}{%- assign _sold_out = true -%}{%- endunless -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+-          <article class="trrc-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trrc-card" role="listitem">
+             <a href="{{ product.url }}" class="trrc-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+                   src="{{ product.featured_image | image_url: width: 500 }}"
+                   alt="{{ product.featured_image.alt | default: product.title | escape }}"
+-                  loading="lazy" width="500" height="500" itemprop="image">
++                  loading="lazy" width="500" height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'palette', size: 48 -%}</div>
+               {%- endif -%}
+@@ -331,10 +331,10 @@
+             </a>
+             <div class="trrc-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trrc-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trrc-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trrc-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trrc-card-name">{{ product.title }}</p>
+               </a>
+               {%- if _kaart_tekst != blank -%}
+                 <p class="trrc-card-desc">{{ _kaart_tekst }}</p>
+@@ -342,9 +342,7 @@
+                 <p class="trrc-card-desc">{{ product.description | strip_html | truncate: 80 }}</p>
+               {%- endif -%}
+               <div class="trrc-card-footer">
+-                <span class="trrc-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trrc-card-price">
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+                     <span class="trrc-card-compare">{{ product.compare_at_price | money }}</span>
+--- a/sections/tr-collection-rooibos.liquid
++++ b/sections/tr-collection-rooibos.liquid
+@@ -288,7 +288,7 @@
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+ 
+-          <article class="trrt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trrt-card" role="listitem">
+             <a href="{{ product.url }}" class="trrt-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -296,8 +296,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – rooibos thee bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+               {%- endif -%}
+@@ -307,10 +306,10 @@
+             </a>
+             <div class="trrt-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trrt-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trrt-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trrt-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trrt-card-name">{{ product.title }}</p>
+               </a>
+               {%- if product.metafields.custom.smaakprofiel != blank -%}
+                 <p class="trrt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+@@ -337,9 +336,7 @@
+                 </div>
+               {%- endif -%}
+               <div class="trrt-card-footer">
+-                <span class="trrt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trrt-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-vruchten-thee.liquid
++++ b/sections/tr-collection-vruchten-thee.liquid
+@@ -288,7 +288,7 @@
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+ 
+-          <article class="trvt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trvt-card" role="listitem">
+             <a href="{{ product.url }}" class="trvt-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -296,8 +296,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – vruchtenthee bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+               {%- endif -%}
+@@ -307,10 +306,10 @@
+             </a>
+             <div class="trvt-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trvt-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trvt-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trvt-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trvt-card-name">{{ product.title }}</p>
+               </a>
+               {%- if product.metafields.custom.smaakprofiel != blank -%}
+                 <p class="trvt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+@@ -337,9 +336,7 @@
+                 </div>
+               {%- endif -%}
+               <div class="trvt-card-footer">
+-                <span class="trvt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trvt-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-witte-thee.liquid
++++ b/sections/tr-collection-witte-thee.liquid
+@@ -288,7 +288,7 @@
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+ 
+-          <article class="trwt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trwt-card" role="listitem">
+             <a href="{{ product.url }}" class="trwt-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -296,8 +296,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – witte thee bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+               {%- endif -%}
+@@ -307,10 +306,10 @@
+             </a>
+             <div class="trwt-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trwt-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trwt-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trwt-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trwt-card-name">{{ product.title }}</p>
+               </a>
+               {%- if product.metafields.custom.smaakprofiel != blank -%}
+                 <p class="trwt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+@@ -337,9 +336,7 @@
+                 </div>
+               {%- endif -%}
+               <div class="trwt-card-footer">
+-                <span class="trwt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trwt-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-collection-zwarte-thee.liquid
++++ b/sections/tr-collection-zwarte-thee.liquid
+@@ -288,7 +288,7 @@
+           {%- assign _available = product.available -%}
+           {%- assign _kaart_tekst = product.metafields.custom.samenvatting -%}
+ 
+-          <article class="trzt-card" role="listitem" itemscope itemtype="https://schema.org/Product">
++          <article class="trzt-card" role="listitem">
+             <a href="{{ product.url }}" class="trzt-card-img" aria-label="{{ product.title }}">
+               {%- if product.featured_image -%}
+                 <img
+@@ -296,8 +296,7 @@
+                   alt="{{ product.featured_image.alt | default: product.title | escape }} – zwarte thee bij Tante Rie Borne"
+                   loading="lazy"
+                   width="500"
+-                  height="500"
+-                  itemprop="image">
++                  height="500">
+               {%- else -%}
+                 <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.2" aria-hidden="true">{%- render 'tr-icon', name: 'tea-cup', size: 48 -%}</div>
+               {%- endif -%}
+@@ -307,10 +306,10 @@
+             </a>
+             <div class="trzt-card-body">
+               {%- if product.type != blank -%}
+-                <span class="trzt-card-type" itemprop="category">{{ product.type }}</span>
++                <span class="trzt-card-type">{{ product.type }}</span>
+               {%- endif -%}
+               <a href="{{ product.url }}" style="text-decoration:none">
+-                <p class="trzt-card-name" itemprop="name">{{ product.title }}</p>
++                <p class="trzt-card-name">{{ product.title }}</p>
+               </a>
+               {%- if product.metafields.custom.smaakprofiel != blank -%}
+                 <p class="trzt-card-flavors">{{ product.metafields.custom.smaakprofiel }}</p>
+@@ -337,9 +336,7 @@
+                 </div>
+               {%- endif -%}
+               <div class="trzt-card-footer">
+-                <span class="trzt-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+-                  <meta itemprop="priceCurrency" content="EUR">
+-                  <meta itemprop="price" content="{{ product.price | divided_by: 100.0 }}">
++                <span class="trzt-card-price">
+                   {%- if product.variants.size > 1 -%}<span style="font-size:.75rem;font-weight:400;color:var(--text-muted);display:block;letter-spacing:.02em">Prijs vanaf</span>{%- endif -%}
+                   {{ product.price | money }}
+                   {%- if product.compare_at_price > product.price -%}
+--- a/sections/tr-reviews.liquid
++++ b/sections/tr-reviews.liquid
+@@ -6,11 +6,12 @@
+   staat de reviewtekst in de HTML die crawlers zonder JavaScript ophalen
+   (Googlebot bij first pass, en GPTBot / PerplexityBot / ClaudeBot altijd).
+ 
+-  Schema: reviews worden als ItemList van Review met itemReviewed = Product
+-  uitgestuurd. Shopreviews (over Tante Rie zelf) worden bewust NIET in de
+-  JSON-LD opgenomen: reviews over je eigen bedrijf op je eigen site zijn
+-  "self-serving" en niet toegestaan volgens de richtlijnen van Google. Ze
+-  worden wel gewoon getoond.
++  Schema: deze sectie geeft bewust geen JSON-LD uit. Een Review met
++  itemReviewed = Product telt voor Google als een Product-item zonder offers,
++  review of aggregateRating (Productfragmenten, kritiek, sinds 2 september 2026).
++  De reviews staan in het Product-blok van elke productpagina (review[]).
++  Shopreviews (over Tante Rie zelf) zijn voor Google "self-serving" en
++  worden alleen getoond.
+ {%- endcomment -%}
+ 
+ {%- liquid
+@@ -181,49 +182,6 @@
+     <a class="trhrev-all" href="{{ section.settings.all_reviews_url }}">Lees alle {{ total }} beoordelingen</a>
+   {%- endif -%}
+ </section>
+-
+-{%- capture reviews_ld -%}
+-  {%- comment -%}
+-    seen telt exact dezelfde reviews als de zichtbare lus hierboven, zodat de
+-    JSON-LD nooit reviews bevat die niet op de pagina staan. n telt alleen wat
+-    daadwerkelijk in de lijst belandt (shopreviews vallen af).
+-  {%- endcomment -%}
+-  {%- assign seen = 0 -%}
+-  {%- assign n = 0 -%}
+-  {%- for r in source -%}
+-    {%- if seen >= max_items -%}{%- break -%}{%- endif -%}
+-    {%- assign body = r.body | strip -%}
+-    {%- if body.size < min_len or r.rating < min_rating -%}{%- continue -%}{%- endif -%}
+-    {%- assign seen = seen | plus: 1 -%}
+-    {%- if r.is_shop_review == true or r.product_in_store != true or r.product_url == blank -%}{%- continue -%}{%- endif -%}
+-    {%- if n > 0 -%},{%- endif -%}
+-    {%- assign n = n | plus: 1 -%}
+-    {
+-      "@type": "Review",
+-      "reviewBody": {{ body | json }},
+-      "datePublished": {{ r.created_at | date: "%Y-%m-%d" | json }},
+-      "author": { "@type": "Person", "name": {{ r.reviewer_name | json }} },
+-      "reviewRating": { "@type": "Rating", "ratingValue": "{{ r.rating }}", "bestRating": "5", "worstRating": "1" },
+-      "itemReviewed": {
+-        "@type": "Product",
+-        "name": {{ r.product_title | json }},
+-        "url": {{ shop.url | append: r.product_url | json }}
+-      }
+-    }
+-  {%- endfor -%}
+-{%- endcapture -%}
+-
+-{%- assign reviews_ld = reviews_ld | strip -%}
+-{%- if reviews_ld != blank -%}
+-<script type="application/ld+json">
+-{
+-  "@context": "https://schema.org",
+-  "@type": "ItemList",
+-  "name": "Klantbeoordelingen Tante Rie",
+-  "itemListElement": [{{ reviews_ld }}]
+-}
+-</script>
+-{%- endif -%}
+ {%- endif -%}
+ 
+ {% schema %}
