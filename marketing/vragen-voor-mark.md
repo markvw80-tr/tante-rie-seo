@@ -139,6 +139,19 @@ Logboek: technisch/search-console-meldingen.md
 **V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
 **Antwoord:**
 
+## 19. Productmarkup homepage en collecties (25 oktober)
+
+Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
+
+**V119 🔴 Akkoord voorstel productmarkup (keuze a).** Search Console meldt kritieke fouten: op de homepage Product-items zonder prijs of review (uit het reviewsblok: Boeren mok 240 ml, Geluksthee, Ovenschaal Vierkant 1550 ml, Theetip Rond) en op /collections/joeff producten zonder foto. Voorstel: de reviewgegevens voor Google uit het reviewsblok van de homepage halen (de reviews blijven zichtbaar) en de productgegevens per kaart uit de tien collectiesecties halen. Er verandert niets zichtbaars; de productpagina's houden hun volledige gegevens. Daarna opnieuw valideren in Search Console. Akkoord? (voorstel-homepage-productmarkup)
+**Antwoord:**
+
+**V120 🟡 Joeff: Grote ring, Handdoekhaakje, Kleine ring.** Deze drie zijn op 23-10 aangemaakt zonder foto en hebben rond 23-24 oktober waarschijnlijk even online gestaan; nu niet meer. Was dat bewust? Komen er foto's voordat ze online gaan? (voorstel-homepage-productmarkup)
+**Antwoord:**
+
+**V121 ⚪ Uitgelichte producten homepage.** Mag de lijst met uitgelichte producten in de gegevens voor Google later worden teruggebracht tot alleen link en positie? Geen haast. (voorstel-homepage-productmarkup)
+**Antwoord:**
+
 ---
 
 ## Beantwoord
