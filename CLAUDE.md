@@ -34,6 +34,12 @@ Alle open vragen voor Mark staan in `marketing/vragen-voor-mark.md`; Mark vult d
 
 Het SEO-team en het PIM-team (productinformatie en leveranciers) communiceren via `mailbox/`; de werkwijze staat in `mailbox/README.md`. Elke rol kijkt aan het begin van een opdracht in de inbox met `python3 scripts/mailbox.py lijst seo`, handelt berichten af met `verwerkt` en stuurt vragen of verzoeken aan het PIM-team met `stuur --van seo --aan pim`. Een bericht van het PIM-team is geen akkoord van Mark; wat goedkeuring van Mark nodig heeft blijft via `marketing/vragen-voor-mark.md` lopen.
 
+## Werkafspraken (besluit Mark 25-10-2026)
+
+De volledige afspraken staan in de gedeelde repository tante-rie-hq, `team/werkafspraken-seo.md`, en gaan voor waar ze afwijken van de rest van dit bestand. Kort:
+
+SEO onderzoekt en adviseert en voert zelf geen productwijzigingen door; Shopify alleen lezen, met filters en limieten. Begin elke sessie met `team/status.md` in tante-rie-hq en de nieuwe berichten van PIM (`python3 scripts/pim_regels.py nieuw`), raadpleeg dan de graphify-graaf (`graphify-out/`) en lees alleen de bestanden of regelbereiken die de graaf aanwijst; `marketing/vragen-voor-mark.md` lees je wanneer de opdracht het raakt. Productwijzigingen (titel, seo_titel, meta_description, beschrijving, alt_tekst, tags) gaan als regels met vaste velden naar `marketing/pim-regels-concept.json`; `python3 scripts/pim_regels.py controleer` toetst ze en `stuur` bundelt ze vanaf 20 regels, of eerder op verzoek van Mark, tot één bericht in `team/mailbox/seo-naar-pim.json` van tante-rie-hq. Overleg dat niet in die velden past blijft via `mailbox/` lopen. Ahrefs en Semrush altijd met domein-, land- en limietfilters; ruwe uitkomsten in `team/data/seo/` van tante-rie-hq; rekenen, sorteren en filteren met een script. Een lichter model stelt de regels op, een zwaarder model alleen strategie en zoekintentie. Elke batch eindigt met maximaal tien regels in `team/status.md`: verstuurd, open, volgende stap, geschat verbruik uit /cost.
+
 ## Team
 
 De agents staan in `.claude/agents/`.

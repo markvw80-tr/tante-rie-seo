@@ -61,6 +61,8 @@ Beoordeel op woensdag 4 november marketing/onpage/voorstel-bewaarblikken-intro-2
 
 ## Onderdeel 3. Thee cadeau
 
+Status 25-10: aangehouden. V106 (voorraad cadeauproducten) komt later; Mark richt eerst het PIM-team in voor artikelverrijking.
+
 **Doel.** Eén hoofdpagina voor 'thee cadeau' (1.000 per maand, dezelfde zoekers als 'thee als cadeau' en 'theecadeau'), 'luxe thee cadeau set' (210), 'thee geschenkset' (140) en 'geschenk thee' (90). Keuze: /collections/cadeaus (32 producten), omdat de zoekopdrachten transactioneel zijn, /pages/thee-cadeau nu maar 5 procent van de clustervertoningen krijgt en het profielbericht van 10 november al naar de collectie linkt. /pages/thee-cadeau blijft bestaan en verwijst naar de collectie. Nulwaarden cluster 90 dagen: 532 vertoningen, 2 klikken, positie 40,9; 28 dagen 446 vertoningen, 0 klikken, positie 44,7.
 
 **Succescriterium.** Zes weken na publicatie krijgt de hoofdpagina vertoningen voor 'thee cadeau' op een positie beter dan 30, en het cluster heeft in december minstens 3 klikken per 28 dagen.
