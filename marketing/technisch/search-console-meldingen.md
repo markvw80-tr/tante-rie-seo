@@ -40,6 +40,8 @@ Property tanterie.nl. 1 probleem, kritiek. Oorzaak volgens de audit van 21-10: P
 
 Zie het logboek: drie mails, alle drie over het dubbele Judge.me-blok. Opgelost op 23-10 (changelog 23-10: Judge.me "Add JSON-LD snippets" uitgezet door Mark, en productschema met review[] uit het themablok, 48 producten in profiel Pakket). Rest: in Search Console valideren (V95), zodat het rapport sluit. Dit staat laag in volgorde omdat de oorzaak is weggenomen.
 
+Update 25-10: Mark heeft in het rapport Reviewfragmenten op "Oplossing valideren" geklikt. Voorbeelden in Search Console: drie keer https://tanterie.nl/products/geluksthee (het enige product met een Judge.me-review, 1 review). Uitkomst van de validatie volgt per mail; dan hier bijwerken. Productfragmenten en Verkopersvermeldingen: validatie en voorbeelden nog niet doorgegeven (V95).
+
 ## Logboek
 
 Nieuwste bovenaan. Alle tanterie.nl-mails gaan over de property die de mail noemt als "tanterie.nl" (waarschijnlijk sc-domain:tanterie.nl; de mail zegt het niet).
