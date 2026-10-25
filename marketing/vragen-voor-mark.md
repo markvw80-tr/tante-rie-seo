@@ -143,12 +143,6 @@ Logboek: technisch/search-console-meldingen.md
 
 Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
-**V119 🔴 Akkoord voorstel productmarkup (keuze a).** Search Console meldt kritieke fouten: op de homepage Product-items zonder prijs of review (uit het reviewsblok: Boeren mok 240 ml, Geluksthee, Ovenschaal Vierkant 1550 ml, Theetip Rond) en op /collections/joeff producten zonder foto. Voorstel: de reviewgegevens voor Google uit het reviewsblok van de homepage halen (de reviews blijven zichtbaar) en de productgegevens per kaart uit de tien collectiesecties halen. Er verandert niets zichtbaars; de productpagina's houden hun volledige gegevens. Daarna opnieuw valideren in Search Console. Akkoord? (voorstel-homepage-productmarkup)
-**Antwoord:**
-
-**V120 🟡 Joeff: Grote ring, Handdoekhaakje, Kleine ring.** Deze drie zijn op 23-10 aangemaakt zonder foto en hebben rond 23-24 oktober waarschijnlijk even online gestaan; nu niet meer. Was dat bewust? Komen er foto's voordat ze online gaan? (voorstel-homepage-productmarkup)
-**Antwoord:**
-
 **V121 ⚪ Uitgelichte producten homepage.** Mag de lijst met uitgelichte producten in de gegevens voor Google later worden teruggebracht tot alleen link en positie? Geen haast. (voorstel-homepage-productmarkup)
 **Antwoord:**
 
@@ -158,6 +152,8 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 25-10 | V119 Akkoord voorstel productmarkup (keuze a) | Akkoord, mag uitgevoerd worden | uitvoering via themakopie (technisch/voorstel-homepage-productmarkup-2026-10-25.md) |
+| 25-10 | V120 Joeff-producten zonder foto | Mark heeft op 25-10 drie Joeff-producten online gezet (Handdoekhaakje, Plateau, Spiegel), alle drie met foto. Grote ring en Kleine ring staan niet online en hebben geen foto | verzoek aan PIM-team via mailbox (25-10): pas publiceren met foto |
 | 24-10 | V118 Akkoord Bunzlau-pakket (a tot en met d) | Akkoord; merkblok met de feiten uit V114 | doorvoeren via themakopie en preview, body en thema dezelfde dag live |
 | 24-10 | V113 Extra afhaalteksten Bunzlau | Nee | themavoorstel zonder balk- en kopaanvulling |
 | 24-10 | V114 Bronnen merkblok Bunzlau | Bunzlau Castle bestaat sinds 1984; in de plaats in Polen waar het gemaakt wordt, wordt al sinds de 18e eeuw keramiek gemaakt. Reistijd naar de winkel: ongeveer 25 minuten vanuit Enschede, 15 vanuit Hengelo en 20 vanuit Almelo. Pauwenoog niet bevestigd | themavoorstel merkblok (T6) |
