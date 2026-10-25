@@ -141,7 +141,7 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
 | 25-10 | V83 Festival, Sinaasappel Chai en Inspiratie | Alle drie rooibos. De SKU in Shopify is gelijk aan het artikelnummer van Geels | 12 regels voor PIM in marketing/pim-regels-concept.json (SEO-titel, meta, alt, tags, beschrijving Festival); metavelden cafeïnegehalte, smaakprofiel en trektijd via mailbox aan PIM |
-| 25-10 | V85 Openingsjaar en telefoon | Akkoord op alle onderdelen (a tot en met e) | technisch/voorstel-jaartal-en-telefoon-2026-10-23.md; uitvoering in thema en pagina's, niet door SEO (werkafspraken 25-10) |
+| 25-10 | V85 Openingsjaar en telefoon | Akkoord op alle onderdelen (a tot en met e) | technisch/voorstel-jaartal-en-telefoon-2026-10-23.md; uitvoering door PIM (besluit Mark 25-10), opdracht via mailbox |
 | 25-10 | V95a Oplossingen valideren | Gedaan door Mark | technisch/search-console-meldingen.md; validatie Reviewfragmenten, Productfragmenten en Verkopersvermeldingen loopt |
 | 25-10 | V122 Openingstijden extra openingen | Koopzondagen 29 november en 20 december 12.00 tot 17.00 uur; koopavond zaterdag 12 december (Magisch Borne) tot 21.00 uur, opening zoals gewoonlijk op zaterdag om 10.00 uur | plan-2026-11 actie 6: speciale openingstijden Bedrijfsprofiel en feestdagenbericht; theewinkelpagina |
 | 25-10 | V81 Metingen | Voorlopig wordt alleen lokaal gewerkt; advies team: B, metingen in een lokale sessie waarin de Analist de scripts draait | plan-2026-11 actie 1 en 2; weekmonitor en maandrapport alleen in lokale sessies |
