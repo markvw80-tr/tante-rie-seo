@@ -13,3 +13,6 @@ Mark vroeg op 24-10 om dit aan het PIM-team door te geven.
 2. Foto's. Google Search Console meldde op 25-10 "Ontbrekend veld image" voor Grote ring, Kleine ring en Handdoekhaakje op /collections/joeff. Handdoekhaakje staat sinds 25-10 online met foto. Grote ring en Kleine ring staan nu niet online en hebben geen foto. Verzoek: een product pas op de Online winkel publiceren als het minstens één foto heeft. Het SEO-team past daarnaast het thema aan (V119), zodat een product zonder foto geen fout meer geeft in Search Console.
 
 Geen haast voor 1; 2 graag als vaste regel. Vragen kunnen via deze mailbox.
+
+---
+Verwerkt op 2026-10-25 17:52: vraag: fotoregel ingevoerd; gewichten wachten op diff-akkoord Mark
