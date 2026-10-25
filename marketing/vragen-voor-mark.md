@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 25 oktober 2026 (V80 en V95c beantwoord en verwerkt, V122 toegevoegd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 25 oktober 2026 (V80 en V95c beantwoord en verwerkt, V122 toegevoegd en datums bevestigd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -38,7 +38,7 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
 
-**V122 🟡 Koopavond en koopzondagen: datums en tijden (vervolg op V80).** Je antwoord op V80 is verwerkt (zie Beantwoord). Twee datums vallen anders dan de naam doet verwachten: 30 november 2026 is een maandag (de zondag is 29 november) en 12 december 2026 is een zaterdag (de vrijdag is 11 december). (a) Is de koopzondag 29 november of echt maandag 30 november? (b) Is de koopavond op zaterdag 12 december of op vrijdag 11 december? (c) Wat zijn de openingstijden op elk van de drie dagen? Graag uiterlijk 10 november, zodat de speciale openingstijden in het Bedrijfsprofiel en het feestdagenbericht van 17 november kloppen. (plan-2026-11, actie 6)
+**V122 🟡 Openingstijden koopzondagen en koopavond (vervolg op V80).** De datums staan vast: koopzondag 29 november, koopavond zaterdag 12 december (Magisch Borne) en koopzondag 20 december. Wat zijn de openingstijden op elk van de drie dagen? Graag uiterlijk 10 november, zodat de speciale openingstijden in het Bedrijfsprofiel en het feestdagenbericht van 17 november kloppen. (plan-2026-11, actie 6)
 **Antwoord:**
 
 **V81 🔴 Metingen.** In de cloudsessies zijn er geen credentials voor Search Console, GA4, Merchant Center en het Bedrijfsprofiel. Kies A: je draait de metingen zelf lokaal volgens de tabel "Metingen die Mark lokaal moet draaien" in plan-2026-11, inclusief de export van het Indexeringsrapport Serverfout (5xx). Of B: je start voor de weekmonitors en het maandrapport een lokale sessie waarin de Analist de scripts draait. Zonder een van beide kan niemand de resultaten van oktober beoordelen. (plan-2026-11, actie 1 en 2)
@@ -152,7 +152,7 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
-| 25-10 | V80 Koopavonden en extra openingen december | 12 december koopavond, 20 december koopzondag, 30 november koopzondag | Datums en tijden nog bevestigen in V122 (30-11 is een maandag, 12-12 een zaterdag); daarna speciale tijden in het Bedrijfsprofiel en feestdagenbericht (plan-2026-11 actie 6), theewinkelpagina |
+| 25-10 | V80 Koopavonden en extra openingen december | Koopzondag 29 november (eerst 30 genoemd, gecorrigeerd), koopavond zaterdag 12 december tijdens het evenement Magisch Borne, koopzondag 20 december | Tijden nog in V122; daarna speciale tijden in het Bedrijfsprofiel en feestdagenbericht (plan-2026-11 actie 6), theewinkelpagina |
 | 25-10 | V95c Serverfout (5xx) in het Indexeringsrapport | Bekeken door Mark: het gaat om een kassa-artikel (POS) dat niet op de webshop hoort | technisch/search-console-meldingen.md melding 1 gesloten, aanvulling 25-10 in rapporten/onderzoek-zichtbaarheidsval-2026-09.md, plan-2026-11 actie 3 afgerond; geen actie in Shopify |
 | 25-10 | V119 Akkoord voorstel productmarkup (keuze a) | Akkoord, mag uitgevoerd worden | uitvoering via themakopie (technisch/voorstel-homepage-productmarkup-2026-10-25.md) |
 | 25-10 | V120 Joeff-producten zonder foto | Mark heeft op 25-10 drie Joeff-producten online gezet (Handdoekhaakje, Plateau, Spiegel), alle drie met foto. Grote ring en Kleine ring staan niet online en hebben geen foto | verzoek aan PIM-team via mailbox (25-10): pas publiceren met foto |
