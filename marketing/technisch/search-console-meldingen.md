@@ -42,6 +42,8 @@ Zie het logboek: drie mails, alle drie over het dubbele Judge.me-blok. Opgelost 
 
 Update 25-10: Mark heeft in het rapport Reviewfragmenten op "Oplossing valideren" geklikt. Voorbeelden in Search Console: drie keer https://tanterie.nl/products/geluksthee (het enige product met een Judge.me-review, 1 review). Uitkomst van de validatie volgt per mail; dan hier bijwerken. Productfragmenten en Verkopersvermeldingen: validatie en voorbeelden nog niet doorgegeven (V95).
 
+Update 25-10, 14:45: na publicatie van thema 204118262024 heeft Mark de validatie gestart bij Productfragmenten (4 items op https://tanterie.nl/ in behandeling: Boeren mok 240 ml, Geluksthee, Ovenschaal Vierkant 1550 ml, Theetip Rond) en bij Verkopersvermeldingen (3 items op https://tanterie.nl/collections/joeff in behandeling: Grote ring, Handdoekhaakje, Kleine ring). Uitkomst volgt per mail.
+
 ## Logboek
 
 Nieuwste bovenaan. Alle tanterie.nl-mails gaan over de property die de mail noemt als "tanterie.nl" (waarschijnlijk sc-domain:tanterie.nl; de mail zegt het niet).
