@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 25 oktober 2026 (V80 en V95c beantwoord en verwerkt, V122 toegevoegd en datums bevestigd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 25 oktober 2026 (V81 en V122 beantwoord, V106 aangehouden; V80 en V95c beantwoord en verwerkt, V122 toegevoegd en datums bevestigd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -37,12 +37,6 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 ## 9. Maandplan november (plan-2026-11.md, opzet)
 
 Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
-
-**V122 🟡 Openingstijden koopzondagen en koopavond (vervolg op V80).** De datums staan vast: koopzondag 29 november, koopavond zaterdag 12 december (Magisch Borne) en koopzondag 20 december. Wat zijn de openingstijden op elk van de drie dagen? Graag uiterlijk 10 november, zodat de speciale openingstijden in het Bedrijfsprofiel en het feestdagenbericht van 17 november kloppen. (plan-2026-11, actie 6)
-**Antwoord:**
-
-**V81 🔴 Metingen.** In de cloudsessies zijn er geen credentials voor Search Console, GA4, Merchant Center en het Bedrijfsprofiel. Kies A: je draait de metingen zelf lokaal volgens de tabel "Metingen die Mark lokaal moet draaien" in plan-2026-11, inclusief de export van het Indexeringsrapport Serverfout (5xx). Of B: je start voor de weekmonitors en het maandrapport een lokale sessie waarin de Analist de scripts draait. Zonder een van beide kan niemand de resultaten van oktober beoordelen. (plan-2026-11, actie 1 en 2)
-**Antwoord:**
 
 ## 10. Voorstellen 23 oktober (V67, V13, V77)
 
@@ -102,7 +96,7 @@ Voorstellen: onpage/voorstel-bunzlau-title-links-2026-10-29.md, onpage/controle-
 **V104 ⚪ Servies op maat.** Klopt "Bijzonder servies op maat bestellen? Dat kan ook!" op /pages/serviezen nog, en mag het uitroepteken eraf? (voorstel-bunzlau-title-links)
 **Antwoord:**
 
-**V106 🔴 Voorraad cadeauproducten (vóór 3 november).** Van de 21 online cadeauproducten staan er 10 op voorraad 0 of lager, onder meer Natural Flower Cards. Komt er een nieuwe levering, of moeten ze offline? Zonder antwoord noemt de cadeautekst geen koker of set bij naam. (controle-cadeau)
+**V106 🟡 Voorraad cadeauproducten (aangehouden).** Mark 25-10: komt hierop terug; eerst wordt het PIM-team ingericht voor artikelverrijking. Tot dan staat onderdeel 3 (thee cadeau) van de vroege start stil. Van de 21 online cadeauproducten staan er 10 op voorraad 0 of lager, onder meer Natural Flower Cards. Komt er een nieuwe levering, of moeten ze offline? Zonder antwoord noemt de cadeautekst geen koker of set bij naam. (controle-cadeau)
 **Antwoord:**
 
 **V108 ⚪ Theegeschenken online.** Wil je (een deel van) de 13 theegeschenken uit "Geven is leuker", die nu alleen op de kassa staan, online zetten als cadeauset? Ze hebben eerst een beschrijving en foto's nodig. De twee Luxe Thee Cadeausets zijn gearchiveerd. (controle-cadeau)
@@ -152,6 +146,8 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 25-10 | V122 Openingstijden extra openingen | Koopzondagen 29 november en 20 december 12.00 tot 17.00 uur; koopavond zaterdag 12 december (Magisch Borne) tot 21.00 uur, opening zoals gewoonlijk op zaterdag om 10.00 uur | plan-2026-11 actie 6: speciale openingstijden Bedrijfsprofiel en feestdagenbericht; theewinkelpagina |
+| 25-10 | V81 Metingen | Voorlopig wordt alleen lokaal gewerkt; advies team: B, metingen in een lokale sessie waarin de Analist de scripts draait | plan-2026-11 actie 1 en 2; weekmonitor en maandrapport alleen in lokale sessies |
 | 25-10 | V80 Koopavonden en extra openingen december | Koopzondag 29 november (eerst 30 genoemd, gecorrigeerd), koopavond zaterdag 12 december tijdens het evenement Magisch Borne, koopzondag 20 december | Tijden nog in V122; daarna speciale tijden in het Bedrijfsprofiel en feestdagenbericht (plan-2026-11 actie 6), theewinkelpagina |
 | 25-10 | V95c Serverfout (5xx) in het Indexeringsrapport | Bekeken door Mark: het gaat om een kassa-artikel (POS) dat niet op de webshop hoort | technisch/search-console-meldingen.md melding 1 gesloten, aanvulling 25-10 in rapporten/onderzoek-zichtbaarheidsval-2026-09.md, plan-2026-11 actie 3 afgerond; geen actie in Shopify |
 | 25-10 | V119 Akkoord voorstel productmarkup (keuze a) | Akkoord, mag uitgevoerd worden | uitvoering via themakopie (technisch/voorstel-homepage-productmarkup-2026-10-25.md) |
