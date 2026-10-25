@@ -17,3 +17,6 @@ Zetadvies trektijd (zetadvies.trektijd): Festival staat op 3–5 min, de andere 
 Opvallend: de ingrediëntenlijsten van Festival en Inspiratie zijn bijna gelijk (rooibos, mango, kardemom, goudsbloem, rozenblaadjes, alleen het aroma verschilt). Graag bij Geels nagaan of dat klopt.
 
 Wijzigingen aan bestaande producten gaan volgens jullie werkwijze eerst als diff naar Mark.
+
+---
+Verwerkt op 2026-10-25 19:25: vraag: diff bij Mark; Geels bevestigt rooibos bij 6405, 5506
