@@ -4,7 +4,7 @@ Eén lijst met alles waar het team een antwoord van Mark nodig heeft. Vul in wan
 
 Het team leest dit bestand aan het begin van elke opdracht, verwerkt nieuwe antwoorden en verplaatst afgehandelde vragen naar "Beantwoord" onderaan.
 
-Bijgewerkt: 24 oktober 2026 (V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
+Bijgewerkt: 25 oktober 2026 (V80 en V95c beantwoord en verwerkt, V122 toegevoegd en datums bevestigd; eerder: V92 beantwoord en verwerkt, V93, V94, V95 en V96 toegevoegd, V75 en V76 afgehandeld). Prioriteit: 🔴 houdt werk tegen dat nu klaarligt, 🟡 nodig voor de volgende stap, ⚪ kan wachten.
 
 ---
 
@@ -38,7 +38,7 @@ Concept: content/concept-theewinkel-borne-2026-10-22.md. Vragen zonder antwoord 
 
 Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; deze vragen helpen het nu al scherp te krijgen. Plan-2026-10.md is bijgewerkt naar versie 3 met de status per actie.
 
-**V80 🟡 Koopavonden en extra openingen in december (vervolg op V35).** Is de winkel in december op extra avonden of dagen open, bijvoorbeeld op zondag of maandag? Zo ja, welke data en tijden? Graag uiterlijk 10 november, zodat het feestdagenbericht van 17 november klopt. (plan-2026-11, actie 4)
+**V122 🟡 Openingstijden koopzondagen en koopavond (vervolg op V80).** De datums staan vast: koopzondag 29 november, koopavond zaterdag 12 december (Magisch Borne) en koopzondag 20 december. Wat zijn de openingstijden op elk van de drie dagen? Graag uiterlijk 10 november, zodat de speciale openingstijden in het Bedrijfsprofiel en het feestdagenbericht van 17 november kloppen. (plan-2026-11, actie 6)
 **Antwoord:**
 
 **V81 🔴 Metingen.** In de cloudsessies zijn er geen credentials voor Search Console, GA4, Merchant Center en het Bedrijfsprofiel. Kies A: je draait de metingen zelf lokaal volgens de tabel "Metingen die Mark lokaal moet draaien" in plan-2026-11, inclusief de export van het Indexeringsrapport Serverfout (5xx). Of B: je start voor de weekmonitors en het maandrapport een lokale sessie waarin de Analist de scripts draait. Zonder een van beide kan niemand de resultaten van oktober beoordelen. (plan-2026-11, actie 1 en 2)
@@ -133,7 +133,7 @@ Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 
 Logboek: technisch/search-console-meldingen.md
 
-**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Zonder (c) blijft het spoor van 16 september onverklaard. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
+**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Onderdeel (c) is op 25-10 afgehandeld (zie Beantwoord); (a) en (b) staan nog open. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
 **Antwoord:**
 
 **V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
@@ -152,6 +152,8 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 25-10 | V80 Koopavonden en extra openingen december | Koopzondag 29 november (eerst 30 genoemd, gecorrigeerd), koopavond zaterdag 12 december tijdens het evenement Magisch Borne, koopzondag 20 december | Tijden nog in V122; daarna speciale tijden in het Bedrijfsprofiel en feestdagenbericht (plan-2026-11 actie 6), theewinkelpagina |
+| 25-10 | V95c Serverfout (5xx) in het Indexeringsrapport | Bekeken door Mark: het gaat om een kassa-artikel (POS) dat niet op de webshop hoort | technisch/search-console-meldingen.md melding 1 gesloten, aanvulling 25-10 in rapporten/onderzoek-zichtbaarheidsval-2026-09.md, plan-2026-11 actie 3 afgerond; geen actie in Shopify |
 | 25-10 | V119 Akkoord voorstel productmarkup (keuze a) | Akkoord, mag uitgevoerd worden | uitvoering via themakopie (technisch/voorstel-homepage-productmarkup-2026-10-25.md) |
 | 25-10 | V120 Joeff-producten zonder foto | Mark heeft op 25-10 drie Joeff-producten online gezet (Handdoekhaakje, Plateau, Spiegel), alle drie met foto. Grote ring en Kleine ring staan niet online en hebben geen foto | verzoek aan PIM-team via mailbox (25-10): pas publiceren met foto |
 | 24-10 | V118 Akkoord Bunzlau-pakket (a tot en met d) | Akkoord; merkblok met de feiten uit V114 | doorvoeren via themakopie en preview, body en thema dezelfde dag live |
