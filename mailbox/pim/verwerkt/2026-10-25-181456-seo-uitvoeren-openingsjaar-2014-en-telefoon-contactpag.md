@@ -15,3 +15,6 @@ Mark heeft op 25-10 akkoord gegeven op alle onderdelen van het voorstel marketin
 (e) link "onze winkel" op de contactpagina naar /pages/theewinkel-borne-twente.
 
 Thema-wijzigingen via een themakopie, niet rechtstreeks in het live thema; Mark publiceert. Graag na uitvoering de changelog (marketing/changelog.md in tante-rie-seo) of een bericht terug met datum en wat er live staat, dan controleert SEO de pagina's en de markup.
+
+---
+Verwerkt op 2026-10-25 19:25: vraag: thema op kopie 204139036936; contactpagina wacht op Mark
