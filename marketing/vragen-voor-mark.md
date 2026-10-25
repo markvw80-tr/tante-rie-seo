@@ -43,7 +43,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **V84 ⚪ Lavendel en Pu-erh.** Wat is het product Lavendel (lege pagina met tekst en foto van Mama & Baby Thee)? Welk zetadvies geldt voor Pu-erh (95 graden 5 tot 7 minuten of 100 graden 3 tot 5 minuten), en is er een foto? (zelfde voorstel)
 **Antwoord:**
 
-**V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e) Werkt tiktok.com/@tante.rie.borne en staat tanterie.nl in de bio?
+**V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e, beantwoord 25-10: het juiste account is tiktok.com/@tante.rie.borne)
 **Antwoord:**
 
 
@@ -140,6 +140,7 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 25-10 | V87e TikTok-account | Het juiste account is tiktok.com/@tante.rie.borne, niet @tanterie | Opdracht aan PIM: sameAs in layout/theme.liquid en tiktok_url in sections/footer-group.json via themakopie; NAP-inventaris autoriteit/brief-2026-10-21.md |
 | 25-10 | V83 Festival, Sinaasappel Chai en Inspiratie | Alle drie rooibos. De SKU in Shopify is gelijk aan het artikelnummer van Geels | 12 regels voor PIM in marketing/pim-regels-concept.json (SEO-titel, meta, alt, tags, beschrijving Festival); metavelden cafeïnegehalte, smaakprofiel en trektijd via mailbox aan PIM |
 | 25-10 | V85 Openingsjaar en telefoon | Akkoord op alle onderdelen (a tot en met e) | technisch/voorstel-jaartal-en-telefoon-2026-10-23.md; uitvoering door PIM (besluit Mark 25-10), opdracht via mailbox |
 | 25-10 | V95a Oplossingen valideren | Gedaan door Mark | technisch/search-console-meldingen.md; validatie Reviewfragmenten, Productfragmenten en Verkopersvermeldingen loopt |
