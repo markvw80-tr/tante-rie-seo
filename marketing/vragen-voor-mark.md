@@ -121,9 +121,6 @@ Voorstel: technisch/voorstel-bunzlau-thema-2026-10-24.md
 
 Logboek: technisch/search-console-meldingen.md
 
-**V95 🟡 Search Console: oplossingen valideren en lijsten exporteren.** In Search Console staan meldingen die het team niet kan zien, omdat de e-mails geen URL's noemen. Kun je (a, gedaan door Mark 25-10) bij de rapporten Reviewfragmenten, Productfragmenten en Verkopersvermeldingen op "Oplossing valideren" klikken (de oorzaken zijn op 21 en 23 oktober weggenomen), (b) bij Verkopersvermeldingen de voorbeeld-URL's van het probleem "Ontbrekend veld image" van 24 oktober in een export of screenshot in data/gsc/ zetten, en (c) het Indexeringsrapport "Serverfout (5xx)" exporteren (zie V81, plan-2026-11 actie 2)? Onderdelen (a) en (c) zijn op 25-10 afgehandeld (zie Beantwoord); alleen (b) staat nog open. (technisch/search-console-meldingen.md, open meldingen 1 tot 5)
-**Antwoord:**
-
 **V96 ⚪ Meldingen van dutchteamaestro.com.** Er komen ook Search Console-mails binnen over dutchteamaestro.com (6 september: alternatieve pagina met correcte canonieke tag; 7 oktober: geblokkeerd vanwege ander 4xx-probleem; plus maandoverzichten). Volgens V71 doet het team niets met die tweede webshop. Mag de Technisch SEO-specialist die mails voortaan alleen in het logboek vastleggen zonder actie (voorstel), of moeten ze helemaal buiten het logboek blijven? (technisch/search-console-meldingen.md)
 **Antwoord:**
 
@@ -140,6 +137,7 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 26-10 | V95b Voorbeeld-URL's Ontbrekend veld image | Vervallen: Google bevestigde op 26-10 dat Verkopersvermeldingen, Productfragmenten en Reviewfragmenten zijn opgelost (3 pagina's bij image) | technisch/search-console-meldingen.md |
 | 25-10 | V87e TikTok-account | Het juiste account is tiktok.com/@tante.rie.borne, niet @tanterie | Opdracht aan PIM: sameAs in layout/theme.liquid en tiktok_url in sections/footer-group.json via themakopie; NAP-inventaris autoriteit/brief-2026-10-21.md |
 | 25-10 | V83 Festival, Sinaasappel Chai en Inspiratie | Alle drie rooibos. De SKU in Shopify is gelijk aan het artikelnummer van Geels | 12 regels voor PIM in marketing/pim-regels-concept.json (SEO-titel, meta, alt, tags, beschrijving Festival); metavelden cafeïnegehalte, smaakprofiel en trektijd via mailbox aan PIM |
 | 25-10 | V85 Openingsjaar en telefoon | Akkoord op alle onderdelen (a tot en met e) | technisch/voorstel-jaartal-en-telefoon-2026-10-23.md; uitvoering door PIM (besluit Mark 25-10), opdracht via mailbox |
