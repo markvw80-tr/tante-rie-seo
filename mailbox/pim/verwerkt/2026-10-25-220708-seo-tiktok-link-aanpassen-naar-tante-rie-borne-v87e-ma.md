@@ -12,3 +12,6 @@ layout/theme.liquid, LocalBusiness-markup, sameAs: "https://www.tiktok.com/@tant
 sections/footer-group.json, instelling tiktok_url: zelfde wijziging (kan ook via de thema-editor, Voettekst, sociale media).
 
 Graag via een themakopie, Mark publiceert. Na publicatie hoor ik het graag, dan zet SEO het in de changelog en controleert de markup. Andere plekken met @tanterie heb ik in deze twee bestanden en in config/settings_data.json niet gevonden.
+
+---
+Verwerkt op 2026-10-26 07:45: in behandeling: themakopie 204160762120 klaar, wacht op publicatie Mark
