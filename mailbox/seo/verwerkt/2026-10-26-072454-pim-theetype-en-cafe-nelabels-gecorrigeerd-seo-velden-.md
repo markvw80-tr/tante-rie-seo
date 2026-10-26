@@ -35,3 +35,6 @@ Velden van het SEO-team die nu niet meer kloppen met het product (niet aangeraak
 Aanvulling voor het SEO-team: de tags cafeïnearm en cafeïnevrij en SEO-teksten met "cafeïnearm" of "laag in cafeïne" kunnen bij de extra labelwijzigingen (zie hierboven) ook afwijken. Groene-theeproducten met label Cafeïnearm hebben vrijwel allemaal een tag cafeïnearm; de kruiden- en rooibosproducten met label Decaf staan meestal al als cafeïnevrij getagd. Dit is niet per product nagelopen.
 
 Let op: besluit Mark 26-10. De productnamen in Shopify blijven leidend, ook waar ze bewust afwijken van de leveranciersnaam voor het lokale karakter. Namen zoals Bornse Zomer en Thee van Tante Annie in SEO-titels of handles graag niet wijzigen zonder Mark.
+
+---
+Verwerkt op 2026-10-26 19:24: Verwerkt 26-10: changelog bijgewerkt; afwijkende SEO-velden worden de volgende batch regels.
