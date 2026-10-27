@@ -4,7 +4,7 @@
 
 Hoger scoren in Google en daarmee meer organische bezoekers naar tanterie.nl. Alle rollen werken naar dat doel toe en volgen de spelregels hieronder.
 
-Prioriteit (besluit Mark 21-10-2026): 70 procent van de inzet gaat naar meer bezoekers in de fysieke winkel in Borne, 30 procent naar groei van de webshop. Reden: de winkel levert ruim 99 procent van de omzet (nulmeting sept-okt 2026: 698 kassabestellingen tegenover 2 online bestellingen in vier weken). Lokale SEO (Google Bedrijfsprofiel, de theewinkelpagina, zoektermen rond Borne en Twente) gaat daarom voor, en product- en collectiepagina's dienen ook als etalage voor de winkel. Meet succes vooral met Search Console-klikken, acties in het Bedrijfsprofiel (route, bellen, website) en waar mogelijk kassaomzet, niet alleen met online omzet. Zakelijke verkoop (/pages/zakelijk) breidt Mark voorlopig niet uit via Tante Rie; daar wordt geen SEO-werk aan gedaan. Aanvulling Mark 23-10: de 70/30-verdeling is een eerste stap; het uiteindelijke doel is meer verkoop via de webshop, dus vanaf maand 2 groeit het webshopdeel.
+Prioriteit (Mark, 21 en 23-10-2026): eerst 70 procent winkel in Borne (lokale SEO: Bedrijfsprofiel, theewinkelpagina, Borne en Twente; product- en collectiepagina's als etalage) en 30 procent webshop; vanaf maand 2 groeit het webshopdeel, want het einddoel is meer webshopverkoop. Succes meten met Search Console-klikken, acties in het Bedrijfsprofiel en waar mogelijk kassaomzet. Geen SEO-werk aan /pages/zakelijk.
 
 ## Taal
 
@@ -28,7 +28,7 @@ Voorraad en winkel (besluit Mark 21-10-2026): alles wat online staat kan besteld
 
 ## Vragen aan Mark
 
-Alle open vragen voor Mark staan in `marketing/vragen-voor-mark.md`; Mark vult die in wanneer hij tijd heeft. Elke rol leest dat bestand aan het begin van een opdracht en gebruikt de ingevulde antwoorden. Nieuwe vragen komen erbij met een volgnummer (V35, V36, ...), prioriteit en een verwijzing naar het bestand waar ze bij horen, niet alleen in het eigen werkbestand. Een verwerkt antwoord gaat naar de tabel "Beantwoord" onderaan. Een lege vraag is geen nee: werk door met wat zonder antwoord kan en laat de zin weg die op het antwoord wacht. Een ingevuld antwoord in dit bestand geldt als akkoord van Mark voor precies dat punt.
+Alle open vragen voor Mark staan in `marketing/vragen-voor-mark.md`; Mark vult die in wanneer hij tijd heeft. Elke rol leest dat bestand aan het begin van een opdracht en gebruikt de ingevulde antwoorden. Nieuwe vragen komen erbij met een volgnummer (V35, V36, ...), prioriteit en een verwijzing naar het bestand waar ze bij horen, niet alleen in het eigen werkbestand. Een verwerkt antwoord gaat naar de tabel in `marketing/vragen-beantwoord.md` (nieuwste bovenaan). Een lege vraag is geen nee: werk door met wat zonder antwoord kan en laat de zin weg die op het antwoord wacht. Een ingevuld antwoord in dit bestand geldt als akkoord van Mark voor precies dat punt.
 
 ## Mailbox met het PIM-team
 
@@ -55,27 +55,24 @@ De agents staan in `.claude/agents/`.
 | Analist en rapporteur | `analist` | `marketing/rapporten/` | Werkt het, en wat leren we? | marketing:performance-report |
 | Merk- en kwaliteitsredacteur | `kwaliteitsredacteur` | `marketing/review/` | Klopt het met de stijl en de regels? | marketing:brand-review |
 
-Tweede keus: brand-voice:enforce-voice bij alle schrijvende rollen, data:create-viz en data:build-dashboard bij de Analist, anthropic-skills:deep-research bij de zoekwoordonderzoeker.
-
 ## Werkvolgorde
 
-Maand 1: Technisch SEO-specialist doet een volledige audit en de Zoekwoordonderzoeker een eerste kansenanalyse op basis van Search Console (parallel). De SEO Lead maakt daaruit een prioriteitenlijst van maximaal tien acties. Maand 1 en 2: Contentstrateeg en Conversietekstschrijver pakken de grootste kansen op, namelijk collecties en topproducten die al op positie 5 tot 20 staan. Vanaf maand 2 draait de Autoriteit- en lokale SEO-specialist mee. De Analist rapporteert elke maand, de Kwaliteitsredacteur keurt alles goed vóór publicatie. Begin met pagina's die al vertoningen hebben maar weinig klikken.
+De SEO Lead bepaalt per maand de volgorde in `marketing/plan-JJJJ-MM.md`; dat plan gaat voor. Vaste regels: de Kwaliteitsredacteur keurt elke klanttekst vóór publicatie, de Analist rapporteert maandelijks, en pagina's met vertoningen maar weinig klikken gaan voor.
 
 ## Databronnen
 
-Search Console (property `sc-domain:tanterie.nl`) en PageSpeed/CrUX gaan via de scripts in `~/.claude/skills/seo/scripts/`, met credentials uit `~/.config/claude-seo/`. Voorbeelden:
+Search Console, PageSpeed, CrUX en GA4 via `~/.claude/skills/seo/scripts/`, Merchant Center via de Merchant API, zoekvolumes via `python3 scripts/zoekvolumes.py`, Shopify via de Shopify-koppeling. Ahrefs en Semrush alleen gefilterd of als handmatige export. Ruwe exports in `data/<bron>/JJJJ-MM-DD-<onderwerp>.json`. Commando's, property-ID's en accounts: `docs/databronnen.md` (alleen lezen als je data ophaalt).
 
-```bash
-cd ~/.claude/skills/seo/scripts && export PYTHONWARNINGS=ignore
-python3 gsc_query.py --days 90 --dimensions query,page --limit 1000 --json   # zoekopdrachten en pagina's
-python3 gsc_query.py sitemaps --json                                          # sitemapstatus
-python3 gsc_inspect.py https://tanterie.nl/<pad> --json                 # indexatiestatus van één URL
-python3 pagespeed_check.py https://tanterie.nl/ --json                  # Lighthouse + CrUX
-```
+## Zuinig werken (besluit Mark 27-10-2026)
 
-GA4: property `properties/521523059` (Tante Rie), toegang via hetzelfde service-account; `python3 ga4_report.py --property properties/521523059 --json` in dezelfde scriptmap. Merchant Center: account 5716348221; lezen via de Merchant API (https://merchantapi.googleapis.com/products/v1/accounts/5716348221/products) met het service-account; project is op 23-10 als ontwikkelaar aangemeld. Chrome UX Report API is ingeschakeld op de bestaande API-sleutel. Google Ads API (Keyword Planner, voor zoekvolumes): Basic access sinds 24-10 (na merkverificatie van het OAuth-project). Zoekvolumes via `python3 scripts/zoekvolumes.py volumes|ideeen ...` (Nederlands, Nederland); ruwe uitvoer in `data/keyword-planner/`. Geen ontwikkelaarstoken nodig (afgeschaft per 9-9-2026, toegang hoort bij Cloud-project tante-rie); het script leest het klant-ID uit `~/.config/claude-seo/google-api.json` en de inlog uit `ads-token.json`, die Mark eenmalig aanmaakt. De invoerlijst staat in `marketing/zoekwoorden/keyword-planner-invoer-2026-10-23.txt`.
+Tokens zijn schaars; elke rol werkt zo:
 
-Sla ruwe exports op in `data/gsc/` als `JJJJ-MM-DD-<onderwerp>.json`. Shopify gaat via de Shopify-koppeling. Ahrefs (plan te laag) en Semrush (geen API-units) werken niet via de API; gebruik alleen handmatige exports in `data/ahrefs/` en `data/semrush/` als die er zijn.
+1. Eerst de graaf: `graphify query "<vraag>" --budget 1500` of het deel van `graphify-out/GRAPH_REPORT.md` dat je nodig hebt. Open daarna alleen de bestanden of regelbereiken die de graaf aanwijst (Read met offset/limit, of grep op een V-nummer of handle), nooit hele mappen.
+2. Grote gedeelde bestanden nooit volledig lezen. `marketing/changelog.md`: alleen de bovenste 30 regels (nieuwste staan bovenaan) of grep op URL of datum. `marketing/vragen-voor-mark.md`: alleen open vragen; afgehandelde staan in `marketing/vragen-beantwoord.md` en lees je alleen bij een concrete V-vraag.
+3. Shopify, Search Console en andere API's: altijd met filters, `first`/limiet en alleen de velden die je nodig hebt. Rekenen, sorteren en filteren doe je met een script, niet door ruwe data in het gesprek te laden.
+4. Subagents alleen als het werk echt parallel of zwaar is; geef ze een korte, complete opdracht met bestandsnamen. Een licht model (Sonnet) voor uitvoering en teksten, een zwaar model (Opus) alleen voor strategie en zoekintentie.
+5. Antwoorden en rapporten kort: wat gedaan, wat open, volgende stap. Geen samenvattingen van wat al in een bestand staat; verwijs naar het bestand.
+6. `graphify-out/` bijwerken met `/graphify --update` na een flinke batch documenten, zodat de graaf actueel blijft.
 
 ## Overige mappen
 
