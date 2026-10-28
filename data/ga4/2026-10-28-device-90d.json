@@ -1,0 +1,32 @@
+{
+  "property": "properties/521523059",
+  "report": "device_breakdown",
+  "devices": [
+    {
+      "category": "mobile",
+      "sessions": 688,
+      "users": 525,
+      "bounce_rate": 28.3,
+      "engagement_rate": 71.7
+    },
+    {
+      "category": "desktop",
+      "sessions": 233,
+      "users": 171,
+      "bounce_rate": 26.2,
+      "engagement_rate": 73.8
+    },
+    {
+      "category": "tablet",
+      "sessions": 23,
+      "users": 19,
+      "bounce_rate": 13.0,
+      "engagement_rate": 87.0
+    }
+  ],
+  "error": null,
+  "date_range": {
+    "start": "2026-07-30",
+    "end": "2026-10-27"
+  }
+}
