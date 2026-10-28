@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mailbox tussen het SEO-team en het PIM-team (Tante Rie).
+"""Mailbox tussen het SEO-, PIM- en Design-team (Tante Rie).
 
 Berichten zijn Markdown-bestanden in mailbox/<team>/inbox/. Na verwerking gaan
 ze naar mailbox/<team>/verwerkt/. Git is het transport: het script werkt in een
@@ -7,7 +7,7 @@ aparte werkkopie van origin/main (.git/mailbox-main), zodat de branch waarop je
 werkt niet verandert, en zet verzonden of verwerkte berichten direct op main.
 
 Gebruik:
-  python3 scripts/mailbox.py lijst seo                 # ongelezen berichten voor het SEO-team
+  python3 scripts/mailbox.py lijst seo                 # ongelezen berichten voor het SEO-team (ook pim, design)
   python3 scripts/mailbox.py lees <bestand>            # één bericht tonen
   python3 scripts/mailbox.py stuur --van seo --aan pim --onderwerp "..." --tekst "..."
         [--antwoord-op <bestand>] [--prioriteit hoog|normaal|laag]
@@ -22,7 +22,7 @@ import subprocess
 import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEAMS = ("seo", "pim")
+TEAMS = ("seo", "pim", "design")
 BRANCH = "main"
 ROOT = REPO  # wordt de werkkopie van main zodra git gebruikt wordt
 MAILBOX = os.path.join(ROOT, "mailbox")
@@ -151,7 +151,7 @@ def cmd_verwerkt(a):
 
 
 def main():
-    p = argparse.ArgumentParser(description="Mailbox tussen SEO- en PIM-team")
+    p = argparse.ArgumentParser(description="Mailbox tussen SEO-, PIM- en Design-team")
     p.add_argument("--geen-git", action="store_true", help="geen pull, commit of push")
     sub = p.add_subparsers(dest="cmd", required=True)
 
