@@ -1,0 +1,124 @@
+{
+ "datum": "2026-10-26",
+ "venster": [
+  "2026-10-18",
+  "2026-10-24"
+ ],
+ "aandeel": {
+  "impressions": 578,
+  "impressions_totaal": 961,
+  "aandeel_impressions": 60.1,
+  "clicks": 25,
+  "clicks_totaal": 53,
+  "aandeel_clicks": 47.2
+ },
+ "weken_op_rij": 0,
+ "rond": false,
+ "varianten": {
+  "http://www.tanterie.nl": {
+   "clicks": 28,
+   "impressions": 383,
+   "position": 3.6
+  },
+  "https://tanterie.nl": {
+   "clicks": 25,
+   "impressions": 578,
+   "position": 22.9
+  }
+ },
+ "track": {
+  "bunzlau servies": {
+   "https://tanterie.nl/": {
+    "clicks": 1,
+    "impressions": 3,
+    "position": 2.7
+   },
+   "http://www.tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 5,
+    "position": 2.6
+   },
+   "https://tanterie.nl/collections/bunzlau": {
+    "clicks": 0,
+    "impressions": 13,
+    "position": 30.5
+   }
+  },
+  "theewinkel": {
+   "https://tanterie.nl/": {
+    "clicks": 1,
+    "impressions": 44,
+    "position": 9.9
+   }
+  },
+  "thee uit twente": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 5,
+    "position": 1.0
+   },
+   "https://tanterie.nl/collections/kruidenthee": {
+    "clicks": 0,
+    "impressions": 5,
+    "position": 60.6
+   },
+   "https://tanterie.nl/pages/theewinkel-borne-twente": {
+    "clicks": 0,
+    "impressions": 5,
+    "position": 38.4
+   }
+  },
+  "tea": {
+   "http://www.tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 32,
+    "position": 2.9
+   },
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 56,
+    "position": 2.7
+   }
+  }
+ },
+ "aandeel_nietmerk": {
+  "impressions": 282,
+  "impressions_totaal": 486,
+  "aandeel_impressions": 58.0,
+  "clicks": 1,
+  "clicks_totaal": 4,
+  "aandeel_clicks": 25.0
+ },
+ "weken_op_rij_nietmerk": 0,
+ "rond_nietmerk": false,
+ "rond_bevestigd": false,
+ "gbp": {
+  "venster": [
+   "2026-10-15",
+   "2026-10-21"
+  ],
+  "vorig_venster": [
+   "2026-10-08",
+   "2026-10-14"
+  ],
+  "laatste_dag_met_data": "2026-10-23",
+  "nu": {
+   "BUSINESS_DIRECTION_REQUESTS": 19,
+   "WEBSITE_CLICKS": 34,
+   "CALL_CLICKS": 5,
+   "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 59,
+   "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 18,
+   "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 39,
+   "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 7
+  },
+  "vorig": {
+   "BUSINESS_DIRECTION_REQUESTS": 31,
+   "WEBSITE_CLICKS": 22,
+   "CALL_CLICKS": 1,
+   "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 30,
+   "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 8,
+   "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 35,
+   "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 3
+  }
+ }
+}
