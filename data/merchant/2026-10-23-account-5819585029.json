@@ -1,0 +1,440 @@
+{
+ "account": {
+  "status": 200,
+  "body": {
+   "name": "accounts/5819585029",
+   "accountId": "5819585029",
+   "accountName": "Tante Rie",
+   "adultContent": false,
+   "timeZone": {
+    "id": "Europe/Amsterdam"
+   },
+   "languageCode": "nl-NL",
+   "homePageUri": "http://www.tanterie.nl/"
+  }
+ },
+ "homepage": {
+  "status": 200,
+  "body": {
+   "name": "accounts/5819585029/homepage",
+   "uri": "http://www.tanterie.nl/",
+   "claimed": true
+  }
+ },
+ "businessInfo": {
+  "status": 200,
+  "body": {
+   "name": "accounts/5819585029/businessInfo",
+   "address": {
+    "regionCode": "NL",
+    "postalCode": "7622 GX",
+    "administrativeArea": "Overijssel",
+    "locality": "Borne",
+    "addressLines": [
+     "Bakkerssteeg 6\n"
+    ]
+   },
+   "phoneVerificationState": "PHONE_VERIFICATION_STATE_UNVERIFIED",
+   "customerService": {
+    "uri": "",
+    "email": ""
+   }
+  }
+ },
+ "users": {
+  "status": 200,
+  "body": {
+   "users": [
+    {
+     "name": "accounts/5819585029/users/nikkiedekoning@hotmail.com",
+     "state": "VERIFIED",
+     "accessRights": [
+      "ADMIN",
+      "STANDARD",
+      "PERFORMANCE_REPORTING"
+     ]
+    },
+    {
+     "name": "accounts/5819585029/users/markvw80@gmail.com",
+     "state": "VERIFIED",
+     "accessRights": [
+      "ADMIN",
+      "STANDARD",
+      "PERFORMANCE_REPORTING"
+     ]
+    }
+   ]
+  }
+ },
+ "programs": {
+  "status": 200,
+  "body": {
+   "programs": [
+    {
+     "name": "accounts/5819585029/programs/checkout",
+     "documentationUri": "https://support.google.com/merchants/answer/13945960",
+     "state": "ELIGIBLE"
+    },
+    {
+     "name": "accounts/5819585029/programs/free-listings",
+     "documentationUri": "https://support.google.com/merchants/topic/15190028",
+     "state": "ENABLED",
+     "activeRegionCodes": [
+      "AE",
+      "AO",
+      "AR",
+      "AT",
+      "AU",
+      "BD",
+      "BE",
+      "BG",
+      "BH",
+      "BR",
+      "BY",
+      "CA",
+      "CH",
+      "CI",
+      "CL",
+      "CM",
+      "CO",
+      "CR",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "DO",
+      "DZ",
+      "EC",
+      "EE",
+      "EG",
+      "ES",
+      "ET",
+      "FI",
+      "FR",
+      "GB",
+      "GE",
+      "GH",
+      "GR",
+      "GT",
+      "HK",
+      "HR",
+      "HU",
+      "ID",
+      "IE",
+      "IL",
+      "IN",
+      "IT",
+      "JO",
+      "JP",
+      "KE",
+      "KH",
+      "KW",
+      "KZ",
+      "LB",
+      "LI",
+      "LK",
+      "LT",
+      "LU",
+      "LV",
+      "MA",
+      "MG",
+      "MM",
+      "MT",
+      "MU",
+      "MX",
+      "MY",
+      "MZ",
+      "NG",
+      "NI",
+      "NL",
+      "NO",
+      "NP",
+      "NZ",
+      "OM",
+      "PA",
+      "PE",
+      "PH",
+      "PK",
+      "PL",
+      "PR",
+      "PT",
+      "PY",
+      "RO",
+      "RU",
+      "SA",
+      "SE",
+      "SG",
+      "SK",
+      "SN",
+      "SV",
+      "TH",
+      "TN",
+      "TR",
+      "TW",
+      "TZ",
+      "UA",
+      "UG",
+      "US",
+      "UY",
+      "UZ",
+      "VE",
+      "VN",
+      "ZA",
+      "ZM",
+      "ZW"
+     ],
+     "unmetRequirements": [
+      {
+       "title": "HAS_KOREAN_BUSINESS_REGISTRATION_NUMBER",
+       "documentationUri": "https://support.google.com/merchants/answer/12565963",
+       "affectedRegionCodes": [
+        "KR"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "accounts/5819585029/programs/loyalty",
+     "documentationUri": "https://support.google.com/merchants/answer/12827255",
+     "state": "ELIGIBLE"
+    },
+    {
+     "name": "accounts/5819585029/programs/product-ratings",
+     "documentationUri": "https://support.google.com/merchants/answer/14620705",
+     "state": "NOT_ELIGIBLE"
+    },
+    {
+     "name": "accounts/5819585029/programs/shopping-ads",
+     "documentationUri": "https://support.google.com/merchants/topic/15191542",
+     "state": "ELIGIBLE"
+    },
+    {
+     "name": "accounts/5819585029/programs/youtube-shopping-checkout",
+     "documentationUri": "https://support.google.com/merchants/answer/12375531&sjid=11701534299598610617-AP",
+     "state": "NOT_ELIGIBLE",
+     "unmetRequirements": [
+      {
+       "title": "HAS_KOREAN_BUSINESS_REGISTRATION_NUMBER",
+       "documentationUri": "https://support.google.com/merchants/answer/12565963",
+       "affectedRegionCodes": [
+        "KR"
+       ]
+      },
+      {
+       "title": "HAS_SUPPORT_CONTACT",
+       "documentationUri": "https://support.google.com/merchants/answer/12375531&sjid=11701534299598610617-AP",
+       "affectedRegionCodes": [
+        "KR",
+        "US"
+       ]
+      },
+      {
+       "title": "SUPPORTED_3P_LINKING",
+       "documentationUri": "https://support.google.com/merchants/answer/12375531&sjid=11701534299598610617-AP",
+       "affectedRegionCodes": [
+        "KR",
+        "US"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "issues": {
+  "status": 200,
+  "body": {}
+ },
+ "returns": {
+  "status": 200,
+  "body": {
+   "onlineReturnPolicies": [
+    {
+     "name": "accounts/5819585029/onlineReturnPolicies/9127175577",
+     "returnPolicyId": "9127175577",
+     "countries": [
+      "NL"
+     ],
+     "policy": {
+      "type": "LIFETIME_RETURNS"
+     },
+     "returnMethods": [
+      "IN_STORE"
+     ],
+     "itemConditions": [
+      "NEW"
+     ],
+     "returnShippingFee": {
+      "type": "FIXED",
+      "fixedFee": {
+       "amountMicros": "0",
+       "currencyCode": "EUR"
+      }
+     },
+     "returnPolicyUri": "https://tanterie.nl/pages/retourbeleid-tante-rie",
+     "processRefundDays": 5,
+     "acceptExchange": true
+    }
+   ]
+  }
+ },
+ "shipping": {
+  "status": 200,
+  "body": {
+   "name": "accounts/5819585029/shippingSettings",
+   "services": [
+    {
+     "serviceName": "",
+     "active": true,
+     "deliveryCountries": [
+      "NL"
+     ],
+     "currencyCode": "EUR",
+     "deliveryTime": {
+      "minTransitDays": 0,
+      "maxTransitDays": 1,
+      "cutoffTime": {
+       "hour": 15,
+       "minute": 0,
+       "timeZone": "Europe/Berlin"
+      },
+      "minHandlingDays": 0,
+      "maxHandlingDays": 1,
+      "handlingBusinessDayConfig": {
+       "businessDays": [
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY"
+       ]
+      },
+      "transitBusinessDayConfig": {
+       "businessDays": [
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY"
+       ]
+      }
+     },
+     "rateGroups": [
+      {
+       "mainTable": {
+        "rowHeaders": {
+         "weights": [
+          {
+           "amountMicros": "2000000",
+           "unit": "KILOGRAM"
+          },
+          {
+           "amountMicros": "-1",
+           "unit": "KILOGRAM"
+          }
+         ]
+        },
+        "rows": [
+         {
+          "cells": [
+           {
+            "flatRate": {
+             "amountMicros": "4500000",
+             "currencyCode": "EUR"
+            }
+           }
+          ]
+         },
+         {
+          "cells": [
+           {
+            "flatRate": {
+             "amountMicros": "7950000",
+             "currencyCode": "EUR"
+            }
+           }
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "shipmentType": "DELIVERY"
+    }
+   ],
+   "etag": "OAJCcQgBEAEaaxIEIgJOTBoDRVVSIi8KEggAEAEqDAgBCAIIAwgECAUIBhoQCAAQARoKCAIIAwgECAUIBiIHCA8QABilAiorCAEaJxoTCAMQAhiAiXoY////////////ASIHCAIQoNSSAiIHCAIQsJ3lA1gB"
+  }
+ },
+ "dataSources": {
+  "status": 200,
+  "body": {
+   "dataSources": [
+    {
+     "name": "accounts/5819585029/dataSources/10681946071",
+     "dataSourceId": "10681946071",
+     "displayName": "tanterie.nl",
+     "primaryProductDataSource": {
+      "defaultRule": {
+       "takeFromDataSources": [
+        {
+         "self": true
+        }
+       ]
+      },
+      "destinations": [
+       {
+        "destination": "FREE_LISTINGS",
+        "state": "ENABLED"
+       }
+      ]
+     },
+     "input": "AUTOFEED"
+    }
+   ]
+  }
+ },
+ "gbp": {
+  "status": 200,
+  "body": {
+   "gbpAccounts": [
+    {
+     "name": "accounts/5819585029/gbpAccounts/101666303135035326611",
+     "gbpAccountId": "101666303135035326611",
+     "type": "USER",
+     "gbpAccountName": "markvw80@gmail.com",
+     "listingCount": "2"
+    }
+   ]
+  }
+ },
+ "omni": {
+  "status": 404,
+  "body": {
+   "error": {
+    "code": 404,
+    "message": "The resource with name `accounts/5819585029` was not found.",
+    "status": "NOT_FOUND",
+    "details": [
+     {
+      "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+      "reason": "notFound",
+      "domain": "merchantapi.googleapis.com",
+      "metadata": {
+       "RESOURCE_NAME": "accounts/5819585029",
+       "REASON": "ITEM_NOT_FOUND"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "autofeed": {
+  "status": 200,
+  "body": {
+   "name": "accounts/5819585029/autofeedSettings",
+   "enableProducts": true,
+   "eligible": true
+  }
+ }
+}
