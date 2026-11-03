@@ -1,0 +1,73 @@
+{
+ "datum": "2026-11-02",
+ "venster": [
+  "2026-10-25",
+  "2026-10-31"
+ ],
+ "aandeel": {
+  "impressions": 400,
+  "impressions_totaal": 400,
+  "aandeel_impressions": 100.0,
+  "clicks": 25,
+  "clicks_totaal": 25,
+  "aandeel_clicks": 100.0
+ },
+ "weken_op_rij": 1,
+ "rond": false,
+ "varianten": {
+  "https://tanterie.nl": {
+   "clicks": 25,
+   "impressions": 400,
+   "position": 9.0
+  }
+ },
+ "track": {
+  "bunzlau servies": {
+   "https://tanterie.nl/": {
+    "clicks": 1,
+    "impressions": 12,
+    "position": 1.8
+   },
+   "https://tanterie.nl/collections/bunzlau": {
+    "clicks": 0,
+    "impressions": 12,
+    "position": 14.6
+   }
+  },
+  "theewinkel": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 46,
+    "position": 8.9
+   }
+  },
+  "thee uit twente": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 5,
+    "position": 1.0
+   }
+  },
+  "tea": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 84,
+    "position": 2.7
+   }
+  }
+ },
+ "aandeel_nietmerk": {
+  "impressions": 139,
+  "impressions_totaal": 139,
+  "aandeel_impressions": 100.0,
+  "clicks": 2,
+  "clicks_totaal": 2,
+  "aandeel_clicks": 100.0
+ },
+ "weken_op_rij_nietmerk": 1,
+ "rond_nietmerk": false,
+ "rond_bevestigd": false,
+ "gbp": {
+  "fout": "RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})"
+ }
+}

@@ -1,0 +1,5454 @@
+{
+ "property": "sc-domain:tanterie.nl",
+ "rows": [
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 14,
+   "impressions": 40,
+   "ctr": 35.0,
+   "position": 2.7,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 9,
+   "impressions": 44,
+   "ctr": 20.45,
+   "position": 1.6,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 9,
+   "impressions": 22,
+   "ctr": 40.91,
+   "position": 2.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 4,
+   "impressions": 22,
+   "ctr": 18.18,
+   "position": 1.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "bunzlau castle",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 1,
+   "impressions": 75,
+   "ctr": 1.33,
+   "position": 10.1,
+   "query": "bunzlau castle",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle oude collectie",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 19,
+   "query": "bunzlau castle oude collectie",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 1,
+   "impressions": 12,
+   "ctr": 8.33,
+   "position": 1.8,
+   "query": "bunzlau servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "cup of sunshine",
+    "https://tanterie.nl/products/cup-of-sunshine"
+   ],
+   "clicks": 1,
+   "impressions": 2,
+   "ctr": 50.0,
+   "position": 6,
+   "query": "cup of sunshine",
+   "page": "https://tanterie.nl/products/cup-of-sunshine"
+  },
+  {
+   "keys": [
+    "joeff muuss",
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 1,
+   "impressions": 11,
+   "ctr": 9.09,
+   "position": 8.9,
+   "query": "joeff muuss",
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "kookwinkel borne",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 1,
+   "impressions": 5,
+   "ctr": 20.0,
+   "position": 1.6,
+   "query": "kookwinkel borne",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "losse thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 1,
+   "impressions": 9,
+   "ctr": 11.11,
+   "position": 2.8,
+   "query": "losse thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "losse thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 1,
+   "impressions": 5,
+   "ctr": 20.0,
+   "position": 1.8,
+   "query": "losse thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "muuss",
+    "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+   ],
+   "clicks": 1,
+   "impressions": 27,
+   "ctr": 3.7,
+   "position": 7.7,
+   "query": "muuss",
+   "page": "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+  },
+  {
+   "keys": [
+    "muuss verkooppunten",
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 1,
+   "impressions": 6,
+   "ctr": 16.67,
+   "position": 5.2,
+   "query": "muuss verkooppunten",
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "set espresso cups",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 1,
+   "query": "set espresso cups",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/pages/cadeaus-en-lekkers"
+   ],
+   "clicks": 1,
+   "impressions": 41,
+   "ctr": 2.44,
+   "position": 1.8,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/pages/cadeaus-en-lekkers"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/pages/serviezen"
+   ],
+   "clicks": 1,
+   "impressions": 42,
+   "ctr": 2.38,
+   "position": 1.9,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/pages/serviezen"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/pages/serviezen"
+   ],
+   "clicks": 1,
+   "impressions": 22,
+   "ctr": 4.55,
+   "position": 1.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/pages/serviezen"
+  },
+  {
+   "keys": [
+    "winkels borne",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 23,
+   "query": "winkels borne",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "aardbeienthee",
+    "https://tanterie.nl/products/aardbeien"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 50,
+   "query": "aardbeienthee",
+   "page": "https://tanterie.nl/products/aardbeien"
+  },
+  {
+   "keys": [
+    "aardewerk",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 2.7,
+   "query": "aardewerk",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "aarmunt thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "aarmunt thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "afscheidscadeau thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "afscheidscadeau thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "ah thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "ah thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "avondthee",
+    "https://tanterie.nl/pages/kruidenthee-avondritueel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 77,
+   "query": "avondthee",
+   "page": "https://tanterie.nl/pages/kruidenthee-avondritueel"
+  },
+  {
+   "keys": [
+    "baking",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 4.9,
+   "query": "baking",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bakwinkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "bakwinkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bakzolder",
+    "https://tanterie.nl/collections/bakmixen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "bakzolder",
+   "page": "https://tanterie.nl/collections/bakmixen"
+  },
+  {
+   "keys": [
+    "bedrijven borne",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 69,
+   "query": "bedrijven borne",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "beker kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "beker kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "beker melamine",
+    "https://tanterie.nl/products/melamine-beker-1"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 26,
+   "query": "beker melamine",
+   "page": "https://tanterie.nl/products/melamine-beker-1"
+  },
+  {
+   "keys": [
+    "bergamot thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4.5,
+   "query": "bergamot thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "beste tante",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 20,
+   "query": "beste tante",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "beste thee",
+    "https://tanterie.nl/collections/rooibos"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "beste thee",
+   "page": "https://tanterie.nl/collections/rooibos"
+  },
+  {
+   "keys": [
+    "beste van borne",
+    "https://tanterie.nl/products/beste-van-borne"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "beste van borne",
+   "page": "https://tanterie.nl/products/beste-van-borne"
+  },
+  {
+   "keys": [
+    "bewaarblik rechthoekig",
+    "https://tanterie.nl/products/bewaarblik-rechthoekig-flowerbed-19x15-cm"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 3.6,
+   "query": "bewaarblik rechthoekig",
+   "page": "https://tanterie.nl/products/bewaarblik-rechthoekig-flowerbed-19x15-cm"
+  },
+  {
+   "keys": [
+    "bewaarblik thee",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 27,
+   "query": "bewaarblik thee",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "biologische thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 50,
+   "query": "biologische thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "black tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 1.2,
+   "query": "black tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bloemen theepot",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "bloemen theepot",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "blond",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 9.7,
+   "query": "blond",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "blond amsterdam 50 jaar vrouw",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "blond amsterdam 50 jaar vrouw",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "blond amsterdam juf",
+    "https://tanterie.nl/products/mazagran-liefste-juf"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 13,
+   "query": "blond amsterdam juf",
+   "page": "https://tanterie.nl/products/mazagran-liefste-juf"
+  },
+  {
+   "keys": [
+    "blond amsterdam man",
+    "https://tanterie.nl/products/the-man"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "query": "blond amsterdam man",
+   "page": "https://tanterie.nl/products/the-man"
+  },
+  {
+   "keys": [
+    "blond amsterdam mok zorg",
+    "https://tanterie.nl/products/hart-voor-de-zorg"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "query": "blond amsterdam mok zorg",
+   "page": "https://tanterie.nl/products/hart-voor-de-zorg"
+  },
+  {
+   "keys": [
+    "blond amsterdam paarden mok",
+    "https://tanterie.nl/products/dier-mug-horse-lover"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11.5,
+   "query": "blond amsterdam paarden mok",
+   "page": "https://tanterie.nl/products/dier-mug-horse-lover"
+  },
+  {
+   "keys": [
+    "blond amsterdam stijl",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "blond amsterdam stijl",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "blond amsterdam tompouce",
+    "https://tanterie.nl/products/ed-bord-18-cm-tompouce"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 9.6,
+   "query": "blond amsterdam tompouce",
+   "page": "https://tanterie.nl/products/ed-bord-18-cm-tompouce"
+  },
+  {
+   "keys": [
+    "blond amsterdam tompouce mok",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "blond amsterdam tompouce mok",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "blond amsterdam zorg mok",
+    "https://tanterie.nl/products/hart-voor-de-zorg"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "blond amsterdam zorg mok",
+   "page": "https://tanterie.nl/products/hart-voor-de-zorg"
+  },
+  {
+   "keys": [
+    "blond mug",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "blond mug",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "blond theepot",
+    "https://tanterie.nl/products/teapot-1-5l-blah"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 46,
+   "query": "blond theepot",
+   "page": "https://tanterie.nl/products/teapot-1-5l-blah"
+  },
+  {
+   "keys": [
+    "blonde amsterdam mug",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10,
+   "query": "blonde amsterdam mug",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "boekenwinkel borne",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6.3,
+   "query": "boekenwinkel borne",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "borden",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 3,
+   "query": "borden",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "borne winkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 7.3,
+   "query": "borne winkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "borne winkels",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 61,
+   "query": "borne winkels",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bradley thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 41,
+   "query": "bradley thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "brandnetelthee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 2,
+   "query": "brandnetelthee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "brunzlau",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 35,
+   "query": "brunzlau",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunslow",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "bunslow",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 4,
+   "query": "bunzlau",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bunzlau",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 18.2,
+   "query": "bunzlau",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau aanbieding",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 21.7,
+   "query": "bunzlau aanbieding",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau aardewerk",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 13,
+   "query": "bunzlau aardewerk",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau bord",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 19.5,
+   "query": "bunzlau bord",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau borden",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 20,
+   "query": "bunzlau borden",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castel",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "bunzlau castel",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle aanbieding",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 49.8,
+   "query": "bunzlau castle aanbieding",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle aanbiedingen",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 29.1,
+   "query": "bunzlau castle aanbiedingen",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle baarn",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 37,
+   "query": "bunzlau castle baarn",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle bord",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 15,
+   "query": "bunzlau castle bord",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle borden",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 14,
+   "ctr": 0,
+   "position": 28,
+   "query": "bunzlau castle borden",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle kommen",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 47.5,
+   "query": "bunzlau castle kommen",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle kop en schotel",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 32,
+   "query": "bunzlau castle kop en schotel",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle mokken",
+    "https://tanterie.nl/products/tulp-mok-500-ml-3"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 69.6,
+   "query": "bunzlau castle mokken",
+   "page": "https://tanterie.nl/products/tulp-mok-500-ml-3"
+  },
+  {
+   "keys": [
+    "bunzlau castle petit four",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 34,
+   "query": "bunzlau castle petit four",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle polen",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "bunzlau castle polen",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle schalen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 27,
+   "query": "bunzlau castle schalen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bunzlau castle servies",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 22.7,
+   "query": "bunzlau castle servies",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle suiker en melk",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 60.4,
+   "query": "bunzlau castle suiker en melk",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle theepot",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 61,
+   "query": "bunzlau castle theepot",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle theepot",
+    "https://tanterie.nl/products/theepot-2000-ml"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 63.4,
+   "query": "bunzlau castle theepot",
+   "page": "https://tanterie.nl/products/theepot-2000-ml"
+  },
+  {
+   "keys": [
+    "bunzlau castle theepot",
+    "https://tanterie.nl/products/theetip-theepot"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 86.7,
+   "query": "bunzlau castle theepot",
+   "page": "https://tanterie.nl/products/theetip-theepot"
+  },
+  {
+   "keys": [
+    "bunzlau castle tweedehands",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 5.4,
+   "query": "bunzlau castle tweedehands",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau castle webshop",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12.5,
+   "query": "bunzlau castle webshop",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau kannen",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 18.3,
+   "query": "bunzlau kannen",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau kop en schotel",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 54.5,
+   "query": "bunzlau kop en schotel",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau mok",
+    "https://tanterie.nl/products/tulp-mok-500-ml-3"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 17.5,
+   "query": "bunzlau mok",
+   "page": "https://tanterie.nl/products/tulp-mok-500-ml-3"
+  },
+  {
+   "keys": [
+    "bunzlau pannenlap",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 27,
+   "query": "bunzlau pannenlap",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau servies",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 14.6,
+   "query": "bunzlau servies",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau servies kopen",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "bunzlau servies kopen",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau servies kopen in polen",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 10.7,
+   "query": "bunzlau servies kopen in polen",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau servies sale",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 22,
+   "query": "bunzlau servies sale",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau soepkom",
+    "https://tanterie.nl/products/soepkom-360-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "query": "bunzlau soepkom",
+   "page": "https://tanterie.nl/products/soepkom-360-ml"
+  },
+  {
+   "keys": [
+    "bunzlau steengoed",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 7.4,
+   "query": "bunzlau steengoed",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 1,
+   "query": "bunzlau thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bunzlau thee",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 17,
+   "query": "bunzlau thee",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau theepot",
+    "https://tanterie.nl/products/theepot-2000-ml"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 79,
+   "query": "bunzlau theepot",
+   "page": "https://tanterie.nl/products/theepot-2000-ml"
+  },
+  {
+   "keys": [
+    "bunzlau theepot",
+    "https://tanterie.nl/products/theetip-theepot"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 69.7,
+   "query": "bunzlau theepot",
+   "page": "https://tanterie.nl/products/theetip-theepot"
+  },
+  {
+   "keys": [
+    "bunzlau verkooppunten",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 21,
+   "query": "bunzlau verkooppunten",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau webshop",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 18.3,
+   "query": "bunzlau webshop",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlau winkels nederland",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "bunzlau winkels nederland",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "bunzlau winkels nederland",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 10.7,
+   "query": "bunzlau winkels nederland",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlaucastle",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 17,
+   "query": "bunzlaucastle",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "bunzlauer servies",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 7.7,
+   "query": "bunzlauer servies",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "byrice",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "byrice",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "cadeau",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5,
+   "query": "cadeau",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "cadeau kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 1,
+   "query": "cadeau kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "cadeautjes",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "cadeautjes",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "cafeine vrije thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 46,
+   "query": "cafeine vrije thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "caffeine vrije thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 29,
+   "query": "caffeine vrije thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "camille tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "camille tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "cappuccino cups",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "cappuccino cups",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chai",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "query": "chai",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chai latte",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 13,
+   "ctr": 0,
+   "position": 5.2,
+   "query": "chai latte",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chai latte thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "chai latte thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chai poeder kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "chai poeder kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chinese tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "chinese tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chocolade cups",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "chocolade cups",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "chocolade thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 37,
+   "query": "chocolade thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "citroenmelisse thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5.5,
+   "query": "citroenmelisse thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "citroenverbena thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "citroenverbena thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "coffee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "coffee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "coffee cups",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "coffee cups",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "coffee tumbler",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "coffee tumbler",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "cold brew thee kopen",
+    "https://tanterie.nl/collections/ijsthee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 23,
+   "query": "cold brew thee kopen",
+   "page": "https://tanterie.nl/collections/ijsthee"
+  },
+  {
+   "keys": [
+    "cold brew thee kopen",
+    "https://tanterie.nl/pages/cold-brew-thee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 46,
+   "query": "cold brew thee kopen",
+   "page": "https://tanterie.nl/pages/cold-brew-thee"
+  },
+  {
+   "keys": [
+    "dat laatste",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "dat laatste",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "de bakzolder cakemix",
+    "https://tanterie.nl/collections/bakmixen"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10,
+   "query": "de bakzolder cakemix",
+   "page": "https://tanterie.nl/collections/bakmixen"
+  },
+  {
+   "keys": [
+    "de goedkoopste",
+    "https://tanterie.nl/collections/zwarte-thee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "de goedkoopste",
+   "page": "https://tanterie.nl/collections/zwarte-thee"
+  },
+  {
+   "keys": [
+    "de tuinen earl grey thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 51,
+   "query": "de tuinen earl grey thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "deze heb ik nodig",
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "deze heb ik nodig",
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "dinerborden 25 cm",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "dinerborden 25 cm",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "dirty blond amsterdam",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "dirty blond amsterdam",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "earl grey tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "earl grey tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "eerlijke thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 39,
+   "query": "eerlijke thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "flowercards",
+    "https://tanterie.nl/collections/nfc-natural-flower-cards"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "flowercards",
+   "page": "https://tanterie.nl/collections/nfc-natural-flower-cards"
+  },
+  {
+   "keys": [
+    "framboos blad thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 43,
+   "query": "framboos blad thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "geitenijs kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "geitenijs kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "gember kurkuma kardemom thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "gember kurkuma kardemom thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "gember thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 52,
+   "query": "gember thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "gezonde thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "gezonde thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "gift set",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "gift set",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "glutenvrije seizoensthee",
+    "https://tanterie.nl/collections/thee"
+   ],
+   "clicks": 0,
+   "impressions": 16,
+   "ctr": 0,
+   "position": 42.6,
+   "query": "glutenvrije seizoensthee",
+   "page": "https://tanterie.nl/collections/thee"
+  },
+  {
+   "keys": [
+    "groene thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 40,
+   "query": "groene thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "groene thee citroen",
+    "https://tanterie.nl/products/groene-citroen"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 37,
+   "query": "groene thee citroen",
+   "page": "https://tanterie.nl/products/groene-citroen"
+  },
+  {
+   "keys": [
+    "groene thee vanille",
+    "https://tanterie.nl/products/groene-vanille"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 22,
+   "query": "groene thee vanille",
+   "page": "https://tanterie.nl/products/groene-vanille"
+  },
+  {
+   "keys": [
+    "handybrew ijsthee",
+    "https://tanterie.nl/collections/ijsthee"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 46.3,
+   "query": "handybrew ijsthee",
+   "page": "https://tanterie.nl/collections/ijsthee"
+  },
+  {
+   "keys": [
+    "heermoes thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "heermoes thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "hibiscus gedroogd kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "hibiscus gedroogd kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "high tea theepot",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "high tea theepot",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "horse mug",
+    "https://tanterie.nl/products/dier-mug-horse-lover"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "horse mug",
+   "page": "https://tanterie.nl/products/dier-mug-horse-lover"
+  },
+  {
+   "keys": [
+    "hot chocolate",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "hot chocolate",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "huishoudelijke artikelen winkel in de buurt",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 1.5,
+   "query": "huishoudelijke artikelen winkel in de buurt",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "huishoudzaak",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "huishoudzaak",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "ja graag",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "ja graag",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "jacob hooy cafe\u00efnevrije thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 38,
+   "query": "jacob hooy cafe\u00efnevrije thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "jacob hooy groene thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 55,
+   "query": "jacob hooy groene thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "je wordt tante",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 24,
+   "query": "je wordt tante",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "joeff",
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 7.7,
+   "query": "joeff",
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "joeff muuss",
+    "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 13.7,
+   "query": "joeff muuss",
+   "page": "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+  },
+  {
+   "keys": [
+    "keramiek servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 3,
+   "query": "keramiek servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "koffie bekers",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "koffie bekers",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "koffie en thee winkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 31.4,
+   "query": "koffie en thee winkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "koffie en theekopjes",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 3.3,
+   "query": "koffie en theekopjes",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "koffie servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "koffie servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "koffieservies set",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9,
+   "query": "koffieservies set",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "koffiezetapparaat",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 3,
+   "query": "koffiezetapparaat",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "koffiezetapparaat pads",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "koffiezetapparaat pads",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "kookwinkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "kookwinkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "kookwinkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 3.5,
+   "query": "kookwinkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "kookwinkel almelo",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 2.1,
+   "query": "kookwinkel almelo",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "kookwinkel borne",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "kookwinkel borne",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "kookwinkel borne",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 6.8,
+   "query": "kookwinkel borne",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "kookwinkel hengelo",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 43,
+   "query": "kookwinkel hengelo",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "kookwinkel twente",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2.5,
+   "query": "kookwinkel twente",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "kookwinkel twente",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "kookwinkel twente",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "koude thee",
+    "https://tanterie.nl/pages/cold-brew-thee"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 12.7,
+   "query": "koude thee",
+   "page": "https://tanterie.nl/pages/cold-brew-thee"
+  },
+  {
+   "keys": [
+    "kruidenthee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5,
+   "query": "kruidenthee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "kruidenwinkel borne",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12.5,
+   "query": "kruidenwinkel borne",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "kruidenwinkel borne",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 7.6,
+   "query": "kruidenwinkel borne",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "lap sang su shong tea",
+    "https://tanterie.nl/products/china-lapsang-souchon"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "query": "lap sang su shong tea",
+   "page": "https://tanterie.nl/products/china-lapsang-souchon"
+  },
+  {
+   "keys": [
+    "lapsang souchong jumbo",
+    "https://tanterie.nl/products/china-lapsang-souchon"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 14,
+   "query": "lapsang souchong jumbo",
+   "page": "https://tanterie.nl/products/china-lapsang-souchon"
+  },
+  {
+   "keys": [
+    "lavendel thee waar te koop",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "lavendel thee waar te koop",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "lblond",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "lblond",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "leuke thee accessoires",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 32.7,
+   "query": "leuke thee accessoires",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "losse groene thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "losse groene thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "losse kamille thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "losse kamille thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "losse rooibos thee",
+    "https://tanterie.nl/collections/rooibos"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 57,
+   "query": "losse rooibos thee",
+   "page": "https://tanterie.nl/collections/rooibos"
+  },
+  {
+   "keys": [
+    "losse thee accessoires",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 27.1,
+   "query": "losse thee accessoires",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "losse thee bewaarblik",
+    "https://tanterie.nl/products/arts-craft-thee-bewaarblik-100-gram-1"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "losse thee bewaarblik",
+   "page": "https://tanterie.nl/products/arts-craft-thee-bewaarblik-100-gram-1"
+  },
+  {
+   "keys": [
+    "losse thee blikjes",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 27,
+   "query": "losse thee blikjes",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "losse thee groothandel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "losse thee groothandel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "losse thee houder",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 46.5,
+   "query": "losse thee houder",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "losse thee kopen",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "losse thee kopen",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "losse thee kopen",
+    "https://tanterie.nl/pages/over-ons"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "losse thee kopen",
+   "page": "https://tanterie.nl/pages/over-ons"
+  },
+  {
+   "keys": [
+    "losse thee kopen",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "losse thee kopen",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "losse thee proefpakket",
+    "https://tanterie.nl/collections/proefpakketten"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 25.5,
+   "query": "losse thee proefpakket",
+   "page": "https://tanterie.nl/collections/proefpakketten"
+  },
+  {
+   "keys": [
+    "losse thee set",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "losse thee set",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "losse zwarte thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 43,
+   "query": "losse zwarte thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "losse zwarte thee",
+    "https://tanterie.nl/collections/zwarte-thee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48,
+   "query": "losse zwarte thee",
+   "page": "https://tanterie.nl/collections/zwarte-thee"
+  },
+  {
+   "keys": [
+    "lychee thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "query": "lychee thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "maatlepel thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "maatlepel thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "maatschepje 3 gram",
+    "https://tanterie.nl/products/maatschepje"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 7,
+   "query": "maatschepje 3 gram",
+   "page": "https://tanterie.nl/products/maatschepje"
+  },
+  {
+   "keys": [
+    "matcha thee kopen",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 30,
+   "query": "matcha thee kopen",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "melamine beker",
+    "https://tanterie.nl/products/rice-k"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 74.2,
+   "query": "melamine beker",
+   "page": "https://tanterie.nl/products/rice-k"
+  },
+  {
+   "keys": [
+    "melamine beker",
+    "https://tanterie.nl/products/rice-s"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 88.2,
+   "query": "melamine beker",
+   "page": "https://tanterie.nl/products/rice-s"
+  },
+  {
+   "keys": [
+    "meloen thee",
+    "https://tanterie.nl/products/groene-meloen"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 31.6,
+   "query": "meloen thee",
+   "page": "https://tanterie.nl/products/groene-meloen"
+  },
+  {
+   "keys": [
+    "metaalunie rie",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48,
+   "query": "metaalunie rie",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "mijn tante",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "mijn tante",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "milky oolong thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "milky oolong thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "mokken",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "mokken",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "muuss",
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 0,
+   "impressions": 36,
+   "ctr": 0,
+   "position": 7.7,
+   "query": "muuss",
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "muuss joeff",
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 8.6,
+   "query": "muuss joeff",
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "muuss joeff",
+    "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 7,
+   "query": "muuss joeff",
+   "page": "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+  },
+  {
+   "keys": [
+    "muuss tegeltje",
+    "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 8.7,
+   "query": "muuss tegeltje",
+   "page": "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+  },
+  {
+   "keys": [
+    "muuss tegeltje",
+    "https://tanterie.nl/products/tegeltje-kunsthouderschakel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 3.3,
+   "query": "muuss tegeltje",
+   "page": "https://tanterie.nl/products/tegeltje-kunsthouderschakel"
+  },
+  {
+   "keys": [
+    "natural cards",
+    "https://tanterie.nl/collections/nfc-natural-flower-cards"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "query": "natural cards",
+   "page": "https://tanterie.nl/collections/nfc-natural-flower-cards"
+  },
+  {
+   "keys": [
+    "natural flower cards",
+    "https://tanterie.nl/collections/nfc-natural-flower-cards"
+   ],
+   "clicks": 0,
+   "impressions": 19,
+   "ctr": 0,
+   "position": 6.6,
+   "query": "natural flower cards",
+   "page": "https://tanterie.nl/collections/nfc-natural-flower-cards"
+  },
+  {
+   "keys": [
+    "naturalflowercards",
+    "https://tanterie.nl/collections/nfc-natural-flower-cards"
+   ],
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 7.5,
+   "query": "naturalflowercards",
+   "page": "https://tanterie.nl/collections/nfc-natural-flower-cards"
+  },
+  {
+   "keys": [
+    "notendroom thee waar te koop",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "notendroom thee waar te koop",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "online thee winkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 13,
+   "query": "online thee winkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "ook te koop in nederland",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 24,
+   "query": "ook te koop in nederland",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "organic green tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "organic green tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "organic spearmint tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4.5,
+   "query": "organic spearmint tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "pannen kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "pannen kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "pepermunt thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "pepermunt thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "pools aardewerk",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 28.2,
+   "query": "pools aardewerk",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "pools aardewerk bunzlau",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 21,
+   "query": "pools aardewerk bunzlau",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "pools aardewerk mokken",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 28.4,
+   "query": "pools aardewerk mokken",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "pools aardewerk servies",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 20,
+   "query": "pools aardewerk servies",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "pools aardewerk servies",
+    "https://tanterie.nl/collections/servies"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 41.7,
+   "query": "pools aardewerk servies",
+   "page": "https://tanterie.nl/collections/servies"
+  },
+  {
+   "keys": [
+    "pools aardewerk theepot",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 27.6,
+   "query": "pools aardewerk theepot",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "pools aardewerk theepot",
+    "https://tanterie.nl/products/theetip-theepot"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 31.8,
+   "query": "pools aardewerk theepot",
+   "page": "https://tanterie.nl/products/theetip-theepot"
+  },
+  {
+   "keys": [
+    "pools servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "pools servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "pools servies",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 20.2,
+   "query": "pools servies",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "pools servies",
+    "https://tanterie.nl/collections/servies"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 42.4,
+   "query": "pools servies",
+   "page": "https://tanterie.nl/collections/servies"
+  },
+  {
+   "keys": [
+    "pools servies sale",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "pools servies sale",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "porselein mok",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 5.7,
+   "query": "porselein mok",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "porselein servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4,
+   "query": "porselein servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "potten en pannen kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "potten en pannen kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "prijs",
+    "https://tanterie.nl/products/boeren-mok-370-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "prijs",
+   "page": "https://tanterie.nl/products/boeren-mok-370-ml"
+  },
+  {
+   "keys": [
+    "proefpakket thee",
+    "https://tanterie.nl/collections/proefpakketten"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 40.6,
+   "query": "proefpakket thee",
+   "page": "https://tanterie.nl/collections/proefpakketten"
+  },
+  {
+   "keys": [
+    "pumpkin spice thee",
+    "https://tanterie.nl/products/pumpkin-pie-spice"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 19,
+   "query": "pumpkin spice thee",
+   "page": "https://tanterie.nl/products/pumpkin-pie-spice"
+  },
+  {
+   "keys": [
+    "quilt",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "quilt",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "quilt winkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "quilt winkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "restaurant tante koosje",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 15.5,
+   "query": "restaurant tante koosje",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "retro wijnglazen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "retro wijnglazen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rice beker f",
+    "https://tanterie.nl/products/rice-f"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 11,
+   "query": "rice beker f",
+   "page": "https://tanterie.nl/products/rice-f"
+  },
+  {
+   "keys": [
+    "rice beker l",
+    "https://tanterie.nl/products/rice-l"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 7,
+   "query": "rice beker l",
+   "page": "https://tanterie.nl/products/rice-l"
+  },
+  {
+   "keys": [
+    "rice beker letter l",
+    "https://tanterie.nl/products/rice-l"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 10.5,
+   "query": "rice beker letter l",
+   "page": "https://tanterie.nl/products/rice-l"
+  },
+  {
+   "keys": [
+    "rice beker letter s",
+    "https://tanterie.nl/products/rice-s"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "query": "rice beker letter s",
+   "page": "https://tanterie.nl/products/rice-s"
+  },
+  {
+   "keys": [
+    "rice beker m",
+    "https://tanterie.nl/products/rice-m"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "rice beker m",
+   "page": "https://tanterie.nl/products/rice-m"
+  },
+  {
+   "keys": [
+    "rice beker n",
+    "https://tanterie.nl/products/rice-n"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "rice beker n",
+   "page": "https://tanterie.nl/products/rice-n"
+  },
+  {
+   "keys": [
+    "rice beker s",
+    "https://tanterie.nl/products/rice-s"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 8,
+   "query": "rice beker s",
+   "page": "https://tanterie.nl/products/rice-s"
+  },
+  {
+   "keys": [
+    "rice beker set",
+    "https://tanterie.nl/products/rice-m"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 50,
+   "query": "rice beker set",
+   "page": "https://tanterie.nl/products/rice-m"
+  },
+  {
+   "keys": [
+    "rice bekers",
+    "https://tanterie.nl/products/rice-s"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 32.3,
+   "query": "rice bekers",
+   "page": "https://tanterie.nl/products/rice-s"
+  },
+  {
+   "keys": [
+    "rice bekers",
+    "https://tanterie.nl/products/rice-t"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 97,
+   "query": "rice bekers",
+   "page": "https://tanterie.nl/products/rice-t"
+  },
+  {
+   "keys": [
+    "rice bekers verkooppunten",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "rice bekers verkooppunten",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rice by rice",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 21.7,
+   "query": "rice by rice",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice denmark",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 20.2,
+   "query": "rice denmark",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice dk",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 31.4,
+   "query": "rice dk",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice j",
+    "https://tanterie.nl/products/rice-j"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "rice j",
+   "page": "https://tanterie.nl/products/rice-j"
+  },
+  {
+   "keys": [
+    "rice l",
+    "https://tanterie.nl/products/rice-l"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 3.5,
+   "query": "rice l",
+   "page": "https://tanterie.nl/products/rice-l"
+  },
+  {
+   "keys": [
+    "rice melamine",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 25.7,
+   "query": "rice melamine",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice melamine beker",
+    "https://tanterie.nl/products/rice-c"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 17,
+   "query": "rice melamine beker",
+   "page": "https://tanterie.nl/products/rice-c"
+  },
+  {
+   "keys": [
+    "rice melamine beker",
+    "https://tanterie.nl/products/rice-d"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 42,
+   "query": "rice melamine beker",
+   "page": "https://tanterie.nl/products/rice-d"
+  },
+  {
+   "keys": [
+    "rice melamine beker",
+    "https://tanterie.nl/products/rice-p"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 20,
+   "query": "rice melamine beker",
+   "page": "https://tanterie.nl/products/rice-p"
+  },
+  {
+   "keys": [
+    "rice melamine beker",
+    "https://tanterie.nl/products/rice-r"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 47,
+   "query": "rice melamine beker",
+   "page": "https://tanterie.nl/products/rice-r"
+  },
+  {
+   "keys": [
+    "rice melamine beker",
+    "https://tanterie.nl/products/rice-t"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "rice melamine beker",
+   "page": "https://tanterie.nl/products/rice-t"
+  },
+  {
+   "keys": [
+    "rice melamine beker",
+    "https://tanterie.nl/products/rice-x"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 71,
+   "query": "rice melamine beker",
+   "page": "https://tanterie.nl/products/rice-x"
+  },
+  {
+   "keys": [
+    "rice melamine bekers",
+    "https://tanterie.nl/products/rice-s"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 28,
+   "query": "rice melamine bekers",
+   "page": "https://tanterie.nl/products/rice-s"
+  },
+  {
+   "keys": [
+    "rice melanine",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 17.5,
+   "query": "rice melanine",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice porselein",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "rice porselein",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice r",
+    "https://tanterie.nl/products/rice-r"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "rice r",
+   "page": "https://tanterie.nl/products/rice-r"
+  },
+  {
+   "keys": [
+    "rice servies",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 25,
+   "query": "rice servies",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rice tassen",
+    "https://tanterie.nl/products/melamine-cup-with-flower-press-print?variant=58596692164872&country=BE&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "rice tassen",
+   "page": "https://tanterie.nl/products/melamine-cup-with-flower-press-print?variant=58596692164872&country=BE&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "rice v",
+    "https://tanterie.nl/products/rice-v"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "rice v",
+   "page": "https://tanterie.nl/products/rice-v"
+  },
+  {
+   "keys": [
+    "rice w",
+    "https://tanterie.nl/products/rice-w"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "query": "rice w",
+   "page": "https://tanterie.nl/products/rice-w"
+  },
+  {
+   "keys": [
+    "rice webshop",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 22.4,
+   "query": "rice webshop",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "ricebyrice",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 15,
+   "ctr": 0,
+   "position": 6.5,
+   "query": "ricebyrice",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "ricedk",
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 8.8,
+   "query": "ricedk",
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "rie",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 3.9,
+   "query": "rie",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rie klein bedrijf",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2.5,
+   "query": "rie klein bedrijf",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rie opstellen",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 76,
+   "query": "rie opstellen",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "rie zorg",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 37,
+   "query": "rie zorg",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "rode wijnglazen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2.5,
+   "query": "rode wijnglazen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "ronnefeldt thee kopen in nederland",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "ronnefeldt thee kopen in nederland",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rooibos spicy chai",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "rooibos spicy chai",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rozemarijn thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "rozemarijn thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "rozenbottel thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 4,
+   "query": "rozenbottel thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "sangria kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "sangria kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 3.3,
+   "query": "servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "servies bunzlau castle",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 16,
+   "query": "servies bunzlau castle",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "servies kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 1,
+   "query": "servies kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "servies porselein",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "servies porselein",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "servies set goedkoop",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "servies set goedkoop",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "servies winkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "servies winkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "serviesgoed",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "serviesgoed",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "serviesgoed",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "serviesgoed",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "serviesset",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "serviesset",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "serviesset kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "serviesset kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "serviezen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 2.3,
+   "query": "serviezen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "sint is jarig thee",
+    "https://tanterie.nl/pages/thee-cadeau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 17,
+   "query": "sint is jarig thee",
+   "page": "https://tanterie.nl/pages/thee-cadeau"
+  },
+  {
+   "keys": [
+    "spearmint tea ah",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "spearmint tea ah",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "spearmint thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "spearmint thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "speculaasmix",
+    "https://tanterie.nl/products/bakzolder-speculaasmix-850-gram"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 19,
+   "query": "speculaasmix",
+   "page": "https://tanterie.nl/products/bakzolder-speculaasmix-850-gram"
+  },
+  {
+   "keys": [
+    "sterren munt",
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "query": "sterren munt",
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "sterrenmunt",
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "sterrenmunt",
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "sterrenmunt thee",
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "sterrenmunt thee",
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "sterrenmunt thee gezond",
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 59.8,
+   "query": "sterrenmunt thee gezond",
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "suikervrije kruidenthee",
+    "https://tanterie.nl/collections/kruidenthee"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 32.6,
+   "query": "suikervrije kruidenthee",
+   "page": "https://tanterie.nl/collections/kruidenthee"
+  },
+  {
+   "keys": [
+    "suikervrije thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 41,
+   "query": "suikervrije thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "surprise thee",
+    "https://tanterie.nl/collections/cadeaus"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "surprise thee",
+   "page": "https://tanterie.nl/collections/cadeaus"
+  },
+  {
+   "keys": [
+    "tante",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6,
+   "query": "tante",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tante",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tante collie",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 47,
+   "query": "tante collie",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/collections/all"
+   ],
+   "clicks": 0,
+   "impressions": 34,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/collections/all"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/collections/cadeaus"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/collections/cadeaus"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/collections/servies"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/collections/servies"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/collections/thee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/collections/thee"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/pages/contact"
+   ],
+   "clicks": 0,
+   "impressions": 27,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/pages/contact"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/pages/over-ons"
+   ],
+   "clicks": 0,
+   "impressions": 41,
+   "ctr": 0,
+   "position": 2.0,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/pages/over-ons"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/pages/thee-en-koffie"
+   ],
+   "clicks": 0,
+   "impressions": 41,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/pages/thee-en-koffie"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/products/de-vrouw-van-earl-grey"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/products/de-vrouw-van-earl-grey"
+  },
+  {
+   "keys": [
+    "tante rie",
+    "https://tanterie.nl/products/kitchen-queen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante rie",
+   "page": "https://tanterie.nl/products/kitchen-queen"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/pages/cadeaus-en-lekkers"
+   ],
+   "clicks": 0,
+   "impressions": 22,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/pages/cadeaus-en-lekkers"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/pages/contact"
+   ],
+   "clicks": 0,
+   "impressions": 17,
+   "ctr": 0,
+   "position": 2,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/pages/contact"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/pages/over-ons"
+   ],
+   "clicks": 0,
+   "impressions": 22,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/pages/over-ons"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/pages/thee-en-koffie"
+   ],
+   "clicks": 0,
+   "impressions": 22,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/pages/thee-en-koffie"
+  },
+  {
+   "keys": [
+    "tante rie borne",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 22,
+   "ctr": 0,
+   "position": 1.8,
+   "query": "tante rie borne",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "tante riet",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "tante riet",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tante thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "query": "tante thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tante theelepel",
+    "https://tanterie.nl/products/theelepel-lang-goud-of-zilver"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "query": "tante theelepel",
+   "page": "https://tanterie.nl/products/theelepel-lang-goud-of-zilver"
+  },
+  {
+   "keys": [
+    "tantemelanie",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "tantemelanie",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tantes servies",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "tantes servies",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tantes servies",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "tantes servies",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "tantes servies",
+    "https://tanterie.nl/pages/serviezen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "tantes servies",
+   "page": "https://tanterie.nl/pages/serviezen"
+  },
+  {
+   "keys": [
+    "tantie",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "tantie",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 84,
+   "ctr": 0,
+   "position": 2.7,
+   "query": "tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tea flowers",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "tea flowers",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tea mugs",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "tea mugs",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tea set",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "tea set",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "teegesch\u00e4fte in der n\u00e4he",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "teegesch\u00e4fte in der n\u00e4he",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "telvrije winkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 15,
+   "query": "telvrije winkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thai tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "thai tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 3,
+   "query": "thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee accessoires",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 50,
+   "ctr": 0,
+   "position": 26.8,
+   "query": "thee accessoires",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "thee accessoires kopen",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 30.2,
+   "query": "thee accessoires kopen",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "thee assortiment",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee assortiment",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee bekers",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee bekers",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee benodigdheden",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "thee benodigdheden",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee bestellen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "query": "thee bestellen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee bewaarblik",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 17.2,
+   "query": "thee bewaarblik",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "thee bewaarblik",
+    "https://tanterie.nl/products/arts-craft-thee-bewaarblik-100-gram-1"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "query": "thee bewaarblik",
+   "page": "https://tanterie.nl/products/arts-craft-thee-bewaarblik-100-gram-1"
+  },
+  {
+   "keys": [
+    "thee bewaarblikjes",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 39.5,
+   "query": "thee bewaarblikjes",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "thee blik",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 17.6,
+   "query": "thee blik",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "thee blikjes",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 16,
+   "ctr": 0,
+   "position": 27.4,
+   "query": "thee blikjes",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "thee blikken",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 24,
+   "query": "thee blikken",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "thee cadeau",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 36,
+   "query": "thee cadeau",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee cadeau",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "thee cadeau",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee cadeau set",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "thee cadeau set",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee cadeau verjaardag",
+    "https://tanterie.nl/pages/thee-cadeau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "thee cadeau verjaardag",
+   "page": "https://tanterie.nl/pages/thee-cadeau"
+  },
+  {
+   "keys": [
+    "thee cups",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee cups",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee ei kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee ei kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee enschede",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "thee enschede",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee in blik",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 27.5,
+   "query": "thee in blik",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "thee koker",
+    "https://tanterie.nl/products/tijd-voor-thee-koker-liefs"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "thee koker",
+   "page": "https://tanterie.nl/products/tijd-voor-thee-koker-liefs"
+  },
+  {
+   "keys": [
+    "thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2.5,
+   "query": "thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee koud water",
+    "https://tanterie.nl/pages/cold-brew-thee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 18,
+   "query": "thee koud water",
+   "page": "https://tanterie.nl/pages/cold-brew-thee"
+  },
+  {
+   "keys": [
+    "thee kruiden",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "thee kruiden",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee leverancier",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48,
+   "query": "thee leverancier",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee maatschepje",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 31,
+   "query": "thee maatschepje",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "thee maatschepje",
+    "https://tanterie.nl/collections/theefilters-en-maatschepjes"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48,
+   "query": "thee maatschepje",
+   "page": "https://tanterie.nl/collections/theefilters-en-maatschepjes"
+  },
+  {
+   "keys": [
+    "thee pot",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4,
+   "query": "thee pot",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee proefpakket",
+    "https://tanterie.nl/collections/proefpakketten"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 37.8,
+   "query": "thee proefpakket",
+   "page": "https://tanterie.nl/collections/proefpakketten"
+  },
+  {
+   "keys": [
+    "thee proeverij pakket",
+    "https://tanterie.nl/collections/proefpakketten"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 33,
+   "query": "thee proeverij pakket",
+   "page": "https://tanterie.nl/collections/proefpakketten"
+  },
+  {
+   "keys": [
+    "thee rooibos",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee rooibos",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee servies",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee servies",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee set",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee set",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee smaken set",
+    "https://tanterie.nl/collections/proefpakketten"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 68,
+   "query": "thee smaken set",
+   "page": "https://tanterie.nl/collections/proefpakketten"
+  },
+  {
+   "keys": [
+    "thee speciaalzaak",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12,
+   "query": "thee speciaalzaak",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee uit twente",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee uit twente",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee voor koud water",
+    "https://tanterie.nl/pages/cold-brew-thee"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 21.8,
+   "query": "thee voor koud water",
+   "page": "https://tanterie.nl/pages/cold-brew-thee"
+  },
+  {
+   "keys": [
+    "thee webshop",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 21.5,
+   "query": "thee webshop",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee winkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 9.7,
+   "query": "thee winkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee winkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee winkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thee winkel",
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 1,
+   "query": "thee winkel",
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "thee winkel breda",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 13,
+   "query": "thee winkel breda",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee winkel den bosch",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "thee winkel den bosch",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee winkel gemert",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "query": "thee winkel gemert",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee winkel in de buurt",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "query": "thee winkel in de buurt",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thee zakjes",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 1.5,
+   "query": "thee zakjes",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theeblikjes voor losse thee",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 21.2,
+   "query": "theeblikjes voor losse thee",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "theeblikjes voor losse thee",
+    "https://tanterie.nl/products/flowers-theeblik"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "theeblikjes voor losse thee",
+   "page": "https://tanterie.nl/products/flowers-theeblik"
+  },
+  {
+   "keys": [
+    "theeblikken voor losse thee",
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 22,
+   "query": "theeblikken voor losse thee",
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "theemix",
+    "https://tanterie.nl/collections/maak-je-eigen-theemix"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 7.3,
+   "query": "theemix",
+   "page": "https://tanterie.nl/collections/maak-je-eigen-theemix"
+  },
+  {
+   "keys": [
+    "theemix",
+    "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-calm-down"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "theemix",
+   "page": "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-calm-down"
+  },
+  {
+   "keys": [
+    "theepakket kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 7.7,
+   "query": "theepakket kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepot",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 24,
+   "ctr": 0,
+   "position": 3.7,
+   "query": "theepot",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepot bloemen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "theepot bloemen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepot kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 1.6,
+   "query": "theepot kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepot met filter",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "theepot met filter",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepotten",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 5.2,
+   "query": "theepotten",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepotten keramiek",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "theepotten keramiek",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theepotten kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "query": "theepotten kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theeschatjes kopen",
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "query": "theeschatjes kopen",
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "theeschep",
+    "https://tanterie.nl/products/houten-theeschep"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "theeschep",
+   "page": "https://tanterie.nl/products/houten-theeschep"
+  },
+  {
+   "keys": [
+    "theeschepje losse thee",
+    "https://tanterie.nl/products/houten-theeschep"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 19,
+   "query": "theeschepje losse thee",
+   "page": "https://tanterie.nl/products/houten-theeschep"
+  },
+  {
+   "keys": [
+    "theewinkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 43,
+   "ctr": 0,
+   "position": 9.5,
+   "query": "theewinkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "theewinkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 1,
+   "query": "theewinkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theewinkel amstelveen",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10.5,
+   "query": "theewinkel amstelveen",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "theewinkel in de buurt",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "query": "theewinkel in de buurt",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "theewinkel opende",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 6.9,
+   "query": "theewinkel opende",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "theey waar te koop",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 2,
+   "query": "theey waar te koop",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "theezeef",
+    "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "theezeef",
+   "page": "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+  },
+  {
+   "keys": [
+    "theezeef met deksel",
+    "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "query": "theezeef met deksel",
+   "page": "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+  },
+  {
+   "keys": [
+    "theezeef voor losse thee",
+    "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "theezeef voor losse thee",
+   "page": "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+  },
+  {
+   "keys": [
+    "theezeefje rvs",
+    "https://tanterie.nl/products/theezeefje-rvs-met-uitlekschaaltje"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 4,
+   "query": "theezeefje rvs",
+   "page": "https://tanterie.nl/products/theezeefje-rvs-met-uitlekschaaltje"
+  },
+  {
+   "keys": [
+    "theinevrije thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 30,
+   "query": "theinevrije thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "thermosfles",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 14,
+   "query": "thermosfles",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thermosfles kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thermosfles kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "thermoskan kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "thermoskan kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "tumbler mok",
+    "https://tanterie.nl/products/mok-tumbler-350-ml"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12.5,
+   "query": "tumbler mok",
+   "page": "https://tanterie.nl/products/mok-tumbler-350-ml"
+  },
+  {
+   "keys": [
+    "tweedehands servies winkel",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "tweedehands servies winkel",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "tweedehands servies winkel",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "tweedehands servies winkel",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "vadeau",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "vadeau",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "vegan herfstthee",
+    "https://tanterie.nl/blogs/nieuws/herfstthee-welke-thee-past-bij-de-herfst"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 36.3,
+   "query": "vegan herfstthee",
+   "page": "https://tanterie.nl/blogs/nieuws/herfstthee-welke-thee-past-bij-de-herfst"
+  },
+  {
+   "keys": [
+    "verse kamille kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "query": "verse kamille kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "verse thee",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 51,
+   "query": "verse thee",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "verse thee",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "query": "verse thee",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "verse thee kopen",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "verse thee kopen",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "verse thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 1.6,
+   "query": "verse thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "vrouwenmantel thee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "vrouwenmantel thee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "vruchen thee",
+    "https://tanterie.nl/collections/vruchtenthee"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 46.5,
+   "query": "vruchen thee",
+   "page": "https://tanterie.nl/collections/vruchtenthee"
+  },
+  {
+   "keys": [
+    "vruchtenthee",
+    "https://tanterie.nl/collections/vruchtenthee"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 29.7,
+   "query": "vruchtenthee",
+   "page": "https://tanterie.nl/collections/vruchtenthee"
+  },
+  {
+   "keys": [
+    "vruchtenthee kopen",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 1.5,
+   "query": "vruchtenthee kopen",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "waar kan ik mokken en borden kopen in de buurt van de kalverstraat?",
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "query": "waar kan ik mokken en borden kopen in de buurt van de kalverstraat?",
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "waar nog op voorraad",
+    "https://tanterie.nl/products/kitchen-queen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 13,
+   "query": "waar nog op voorraad",
+   "page": "https://tanterie.nl/products/kitchen-queen"
+  },
+  {
+   "keys": [
+    "wanddecoratie",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 6,
+   "query": "wanddecoratie",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "wanneer was het vorig jaar",
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "wanneer was het vorig jaar",
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "wat is sterrenmunt thee",
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "query": "wat is sterrenmunt thee",
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "wat zit er in sterrenmunt thee",
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "query": "wat zit er in sterrenmunt thee",
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "water scoop",
+    "https://tanterie.nl/products/water-scoop-400-ml"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 12.9,
+   "query": "water scoop",
+   "page": "https://tanterie.nl/products/water-scoop-400-ml"
+  },
+  {
+   "keys": [
+    "watertwist",
+    "https://tanterie.nl/products/pineut-watertwist-carafe-strawberry-hibiscus-kopie"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 7.5,
+   "query": "watertwist",
+   "page": "https://tanterie.nl/products/pineut-watertwist-carafe-strawberry-hibiscus-kopie"
+  },
+  {
+   "keys": [
+    "where to buy tetley tea bags",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "query": "where to buy tetley tea bags",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "white tea",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "query": "white tea",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "winkel borne",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 10.6,
+   "query": "winkel borne",
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "winkels borne",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48,
+   "query": "winkels borne",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "winkels in borne",
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 45,
+   "query": "winkels in borne",
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "witte thee kopen",
+    "https://tanterie.nl/"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 28,
+   "query": "witte thee kopen",
+   "page": "https://tanterie.nl/"
+  }
+ ],
+ "totals": {
+  "clicks": 51,
+  "impressions": 1997,
+  "ctr": 2.55,
+  "position": 0
+ },
+ "quick_wins": [],
+ "row_count": 453,
+ "error": null,
+ "date_range": {
+  "start": "2026-10-25",
+  "end": "2026-10-31"
+ }
+}

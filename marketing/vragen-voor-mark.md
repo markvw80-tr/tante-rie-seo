@@ -131,6 +131,13 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 **V121 ⚪ Uitgelichte producten homepage.** Mag de lijst met uitgelichte producten in de gegevens voor Google later worden teruggebracht tot alleen link en positie? Geen haast. (voorstel-homepage-productmarkup)
 **Antwoord:**
 
+## 20. Kleurcollecties thee en tags (31 oktober)
+
+Bron: Shopify, alleen gelezen op 31-10; de tagwijzigingen komen uit batch seo-2026-10-26-2 (PIM, uitgevoerd 28-10).
+
+**V123 ⚪ Sweet Love en Harverwarmer in een extra kleurcollectie?** De collecties groene-thee (42 producten), witte-thee (8) en vruchtenthee (9) hebben geen regels en zijn handmatig samengesteld, dus de tagwijzigingen van 28-10 hebben het lidmaatschap niet verschoven. Sweet Love heeft de tag witte-thee maar zit niet in de collectie witte-thee. Harverwarmer heeft de tag vruchtenthee maar zit niet in de collectie vruchtenthee. Wil je dat PIM deze twee producten aan die collecties toevoegt, of is de huidige indeling bewust? De overige kleurcollecties (zwarte-thee, rooibos, kruidenthee) zijn nog niet nagelopen. (PIM voert een eventuele wijziging door; SEO wijzigt niets in Shopify)
+**Antwoord:**
+
 ---
 
 Afgehandelde vragen staan in `marketing/vragen-beantwoord.md`.
