@@ -50,7 +50,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 ## 11. Na controle B1 (24 oktober)
 
 **V89 🟡 hanger-teapot.** Dit Bunzlau-product (voorraad 2) staat niet in de webshop, maar nog wel op Google & YouTube. Ook in de webshop zetten (dan geldt V88 ook hiervoor), of van Google halen?
-**Antwoord:** Mark 03-11: Als het Bunzlau is en qua data helemaal verrijkt, dan mag het gewoon op de webshop. Zo niet, dan uit Google en YouTube. Controle SEO 03-11 (Shopify, alleen gelezen): Bunzlau Castle, maar niet verrijkt (geen beschrijving, geen SEO-titel of meta, prijs 0,00, gewicht 0, geen tags, 2 foto's). Uitkomst: uit Google en YouTube; uitvoering door PIM.
+**Antwoord:** Mark 03-11: Als het Bunzlau is en qua data helemaal verrijkt, dan mag het gewoon op de webshop. Zo niet, dan uit Google en YouTube. Controle SEO 03-11 (Shopify, alleen gelezen): Bunzlau Castle, maar niet verrijkt (geen beschrijving, geen SEO-titel of meta, prijs 0,00, gewicht 0, geen tags, 2 foto's). Uitkomst: uit Google en YouTube; uitvoering door PIM. Stand 07-11: prijs is gezet op 27,95 (Shopify gelezen); beide producten staan nog op Point of Sale, Shop, Google en YouTube en Online winkel. Verrijking (beschrijving, SEO, gewicht, tags) volgt via PIM uit het Clip-portaal.
 
 **V91 ⚪ Toegang Anke Kamp tot het Bedrijfsprofiel.** Anke Kamp staat nog als beheerder (MANAGER) in het Google Bedrijfsprofiel. Nu zij geen eigenaar meer is: toegang intrekken? Dat kan alleen de eigenaar (Nikkie) in het profiel, onder Mensen en toegang. (autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md)
 **Antwoord:**
