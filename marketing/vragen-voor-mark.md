@@ -44,13 +44,13 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **Antwoord:**
 
 **V87 🟡 Correctieverzoeken NAP.** Verzoeken: autoriteit/correctieverzoeken-nap-2026-10-23.md. (a) Was 06 55504482 ooit een nummer van de winkel of van jou? (b) Met welke naam en functie onderteken je, en ken je Corine Hofstra van Visit Borne? (c) Cylex claimen met een account op webshop@tanterie.nl? (d) Klopt KvK 59732660? (e, beantwoord 25-10: het juiste account is tiktok.com/@tante.rie.borne)
-**Antwoord:**
+**Antwoord:** Aangehouden (Mark 03-11): Nikkie (eigenaar) is hier zelf mee bezig geweest; Mark komt erop terug. Geen akkoord op (a) tot en met (d), niets versturen of claimen tot hij terugkomt.
 
 
 ## 11. Na controle B1 (24 oktober)
 
 **V89 🟡 hanger-teapot.** Dit Bunzlau-product (voorraad 2) staat niet in de webshop, maar nog wel op Google & YouTube. Ook in de webshop zetten (dan geldt V88 ook hiervoor), of van Google halen?
-**Antwoord:**
+**Antwoord:** Mark 03-11: Als het Bunzlau is en qua data helemaal verrijkt, dan mag het gewoon op de webshop. Zo niet, dan uit Google en YouTube. Controle SEO 03-11 (Shopify, alleen gelezen): Bunzlau Castle, maar niet verrijkt (geen beschrijving, geen SEO-titel of meta, prijs 0,00, gewicht 0, geen tags, 2 foto's). Uitkomst: uit Google en YouTube; uitvoering door PIM.
 
 **V91 ⚪ Toegang Anke Kamp tot het Bedrijfsprofiel.** Anke Kamp staat nog als beheerder (MANAGER) in het Google Bedrijfsprofiel. Nu zij geen eigenaar meer is: toegang intrekken? Dat kan alleen de eigenaar (Nikkie) in het profiel, onder Mensen en toegang. (autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md)
 **Antwoord:**
@@ -67,9 +67,6 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 ## 15. Vroege start: bewaarblikken (24 oktober)
 
 Analyse: technisch/analyse-bewaarblik-producten-2026-10-30.md
-
-**V99 🟡 Zoekresultaat thee bewaarblik.** Kun je in een privévenster op 'thee bewaarblik' zoeken en kijken of Flowers theeblik en Arts & Craft blauw als gewoon blauw resultaat staan of in een productblok of Shopping-weergave? Een schermafdruk in assets/screenshots/ is genoeg. (analyse-bewaarblik-producten)
-**Antwoord:**
 
 **V100 🟡 Voorraad Flowers theeblik.** Flowers staat op -4 met doorverkopen aan, waardoor Google "op voorraad" meldt. Hoeveel liggen er echt, wordt het nabesteld, en moet doorverkopen voor dit product uit? Zonder nabestelling gaat "of Flowers" uit de bewaarbliktekst. (analyse-bewaarblik-producten)
 **Antwoord:**
