@@ -46,7 +46,19 @@ Positie is het gemiddelde gewogen op vertoningen, per URL zonder parameters.
 
 ## Google Bedrijfsprofiel
 
-GBP-cijfers niet opgehaald; de GSC-monitor is wel gedraaid. Melding: RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+Opgehaald op 9 november na het vernieuwen van het OAuth-token (eerst `invalid_grant`). Locatie Tante Rie (locations/6267696427702073490), 1 tot en met 7 november, ruwe data in data/gbp/2026-11-01_2026-11-07-gbp-*.json. De nulmeting (22 september tot en met 19 oktober, 28 dagen) is hier door vier gedeeld voor een weekvergelijking.
+
+| Meting | Deze week | Nulmeting per week |
+|---|---:|---:|
+| Routeverzoeken | 33 | 20 |
+| Websiteklikken | 32 | 34 |
+| Bellen | 13 | 1 |
+| Zoeken mobiel (vertoningen) | 35 | 55 |
+| Maps mobiel (vertoningen) | 36 | 44 |
+| Zoeken desktop (vertoningen) | 5 | niet vastgelegd |
+| Maps desktop (vertoningen) | 6 | niet vastgelegd |
+
+Het zijn kleine aantallen en één week tegenover een gemiddelde over vier weken. De cijfers zeggen niet waardoor een verschil komt.
 
 ## Methode
 
