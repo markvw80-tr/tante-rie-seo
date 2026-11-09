@@ -1,0 +1,67 @@
+{
+ "datum": "2026-11-09",
+ "venster": [
+  "2026-11-01",
+  "2026-11-07"
+ ],
+ "aandeel": {
+  "impressions": 411,
+  "impressions_totaal": 411,
+  "aandeel_impressions": 100.0,
+  "clicks": 27,
+  "clicks_totaal": 27,
+  "aandeel_clicks": 100.0
+ },
+ "weken_op_rij": 2,
+ "rond": true,
+ "varianten": {
+  "https://tanterie.nl": {
+   "clicks": 27,
+   "impressions": 411,
+   "position": 9.2
+  }
+ },
+ "track": {
+  "bunzlau servies": {
+   "https://tanterie.nl/": {
+    "clicks": 3,
+    "impressions": 29,
+    "position": 1.0
+   },
+   "https://tanterie.nl/collections/bunzlau": {
+    "clicks": 0,
+    "impressions": 29,
+    "position": 12.4
+   }
+  },
+  "theewinkel": {
+   "https://tanterie.nl/": {
+    "clicks": 1,
+    "impressions": 71,
+    "position": 9.1
+   }
+  },
+  "thee uit twente": {},
+  "tea": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 5,
+    "position": 2.0
+   }
+  }
+ },
+ "aandeel_nietmerk": {
+  "impressions": 151,
+  "impressions_totaal": 151,
+  "aandeel_impressions": 100.0,
+  "clicks": 1,
+  "clicks_totaal": 1,
+  "aandeel_clicks": 100.0
+ },
+ "weken_op_rij_nietmerk": 2,
+ "rond_nietmerk": true,
+ "rond_bevestigd": true,
+ "gbp": {
+  "fout": "RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+ }
+}

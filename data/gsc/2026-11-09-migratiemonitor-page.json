@@ -1,0 +1,2978 @@
+{
+ "property": "sc-domain:tanterie.nl",
+ "rows": [
+  {
+   "keys": [
+    "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+   ],
+   "clicks": 48,
+   "impressions": 695,
+   "ctr": 6.91,
+   "position": 3.2,
+   "page": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bedrijfsprofiel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/"
+   ],
+   "clicks": 27,
+   "impressions": 411,
+   "ctr": 6.57,
+   "position": 9.2,
+   "page": "https://tanterie.nl/"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/bunzlau"
+   ],
+   "clicks": 5,
+   "impressions": 546,
+   "ctr": 0.92,
+   "position": 13.6,
+   "page": "https://tanterie.nl/collections/bunzlau"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/serviezen"
+   ],
+   "clicks": 3,
+   "impressions": 116,
+   "ctr": 2.59,
+   "position": 2.6,
+   "page": "https://tanterie.nl/pages/serviezen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/blond"
+   ],
+   "clicks": 2,
+   "impressions": 269,
+   "ctr": 0.74,
+   "position": 6.8,
+   "page": "https://tanterie.nl/collections/blond"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/rice"
+   ],
+   "clicks": 2,
+   "impressions": 111,
+   "ctr": 1.8,
+   "position": 16.9,
+   "page": "https://tanterie.nl/collections/rice"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/thee-bewaarblikken"
+   ],
+   "clicks": 2,
+   "impressions": 85,
+   "ctr": 2.35,
+   "position": 18.7,
+   "page": "https://tanterie.nl/collections/thee-bewaarblikken"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/cadeaus-en-lekkers"
+   ],
+   "clicks": 2,
+   "impressions": 89,
+   "ctr": 2.25,
+   "position": 2.4,
+   "page": "https://tanterie.nl/pages/cadeaus-en-lekkers"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/arts-craft-thee-bewaarblik-100-gram-1"
+   ],
+   "clicks": 2,
+   "impressions": 17,
+   "ctr": 11.76,
+   "position": 3.5,
+   "page": "https://tanterie.nl/products/arts-craft-thee-bewaarblik-100-gram-1"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/herfstthee-welke-thee-past-bij-de-herfst"
+   ],
+   "clicks": 1,
+   "impressions": 24,
+   "ctr": 4.17,
+   "position": 5.5,
+   "page": "https://tanterie.nl/blogs/nieuws/herfstthee-welke-thee-past-bij-de-herfst"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/joeff"
+   ],
+   "clicks": 1,
+   "impressions": 154,
+   "ctr": 0.65,
+   "position": 7.3,
+   "page": "https://tanterie.nl/collections/joeff"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/kruidenthee"
+   ],
+   "clicks": 1,
+   "impressions": 2,
+   "ctr": 50.0,
+   "position": 8.5,
+   "page": "https://tanterie.nl/collections/kruidenthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/nfc-natural-flower-cards"
+   ],
+   "clicks": 1,
+   "impressions": 36,
+   "ctr": 2.78,
+   "position": 6.7,
+   "page": "https://tanterie.nl/collections/nfc-natural-flower-cards"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/rooibos"
+   ],
+   "clicks": 1,
+   "impressions": 6,
+   "ctr": 16.67,
+   "position": 8.7,
+   "page": "https://tanterie.nl/collections/rooibos"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/theefilters-en-maatschepjes"
+   ],
+   "clicks": 1,
+   "impressions": 8,
+   "ctr": 12.5,
+   "position": 15.1,
+   "page": "https://tanterie.nl/collections/theefilters-en-maatschepjes"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/thee-cadeau"
+   ],
+   "clicks": 1,
+   "impressions": 18,
+   "ctr": 5.56,
+   "position": 19.7,
+   "page": "https://tanterie.nl/pages/thee-cadeau"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/thee-en-koffie"
+   ],
+   "clicks": 1,
+   "impressions": 100,
+   "ctr": 1.0,
+   "position": 2.6,
+   "page": "https://tanterie.nl/pages/thee-en-koffie"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/1001-nacht"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 1,
+   "page": "https://tanterie.nl/products/1001-nacht"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/blikje-herfst"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 8,
+   "page": "https://tanterie.nl/products/blikje-herfst"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/boeren-mok-500-ml"
+   ],
+   "clicks": 1,
+   "impressions": 4,
+   "ctr": 25.0,
+   "position": 13.5,
+   "page": "https://tanterie.nl/products/boeren-mok-500-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ed-bord-18-cm-tompouce"
+   ],
+   "clicks": 1,
+   "impressions": 79,
+   "ctr": 1.27,
+   "position": 7.4,
+   "page": "https://tanterie.nl/products/ed-bord-18-cm-tompouce"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/hart-voor-de-zorg"
+   ],
+   "clicks": 1,
+   "impressions": 55,
+   "ctr": 1.82,
+   "position": 7.3,
+   "page": "https://tanterie.nl/products/hart-voor-de-zorg"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/indian-summer"
+   ],
+   "clicks": 1,
+   "impressions": 6,
+   "ctr": 16.67,
+   "position": 4,
+   "page": "https://tanterie.nl/products/indian-summer"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kom-150-ml"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 32,
+   "page": "https://tanterie.nl/products/kom-150-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-e"
+   ],
+   "clicks": 1,
+   "impressions": 8,
+   "ctr": 12.5,
+   "position": 6.1,
+   "page": "https://tanterie.nl/products/rice-e"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-q"
+   ],
+   "clicks": 1,
+   "impressions": 15,
+   "ctr": 6.67,
+   "position": 4.1,
+   "page": "https://tanterie.nl/products/rice-q"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/sterke-vrouw"
+   ],
+   "clicks": 1,
+   "impressions": 1,
+   "ctr": 100,
+   "position": 3,
+   "page": "https://tanterie.nl/products/sterke-vrouw"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theeblik-100-gram-sara-miller-chelsea-roze"
+   ],
+   "clicks": 1,
+   "impressions": 4,
+   "ctr": 25.0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/theeblik-100-gram-sara-miller-chelsea-roze"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theelepel"
+   ],
+   "clicks": 1,
+   "impressions": 4,
+   "ctr": 25.0,
+   "position": 7.2,
+   "page": "https://tanterie.nl/products/theelepel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/witte-wijnglas-summer-breeze-350-ml"
+   ],
+   "clicks": 1,
+   "impressions": 5,
+   "ctr": 20.0,
+   "position": 9.2,
+   "page": "https://tanterie.nl/products/witte-wijnglas-summer-breeze-350-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 11.3,
+   "page": "https://tanterie.nl/blogs/nieuws"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/5-accessoires-die-elke-theeliefhebber-in-huis-moet-hebben"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/blogs/nieuws/5-accessoires-die-elke-theeliefhebber-in-huis-moet-hebben"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/blogreeks-een-reis-door-de-verschillende-theeregios"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6.7,
+   "page": "https://tanterie.nl/blogs/nieuws/blogreeks-een-reis-door-de-verschillende-theeregios"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/een-kijkje-bij-bunzlau-nieuwe-seizoensfavorieten-en-een-leuk-nieuwtje"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/blogs/nieuws/een-kijkje-bij-bunzlau-nieuwe-seizoensfavorieten-en-een-leuk-nieuwtje"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/een-reis-door-theeregios-china-witte-thee"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 23,
+   "page": "https://tanterie.nl/blogs/nieuws/een-reis-door-theeregios-china-witte-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/een-reis-door-theeregios-japan-groene-thee"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 9.3,
+   "page": "https://tanterie.nl/blogs/nieuws/een-reis-door-theeregios-japan-groene-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/even-voorstellen"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 4.4,
+   "page": "https://tanterie.nl/blogs/nieuws/even-voorstellen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/sri-lanka-zwarte-thee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/blogs/nieuws/sri-lanka-zwarte-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/blogs/nieuws/tijd-voor-ijsthee"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 8.2,
+   "page": "https://tanterie.nl/blogs/nieuws/tijd-voor-ijsthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/all"
+   ],
+   "clicks": 0,
+   "impressions": 56,
+   "ctr": 0,
+   "position": 2.6,
+   "page": "https://tanterie.nl/collections/all"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/bakmixen"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 7.8,
+   "page": "https://tanterie.nl/collections/bakmixen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/cadeaus"
+   ],
+   "clicks": 0,
+   "impressions": 15,
+   "ctr": 0,
+   "position": 8.6,
+   "page": "https://tanterie.nl/collections/cadeaus"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/groene-thee"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5.5,
+   "page": "https://tanterie.nl/collections/groene-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/ijsthee"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 15.6,
+   "page": "https://tanterie.nl/collections/ijsthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/maak-je-eigen-theemix"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 6.8,
+   "page": "https://tanterie.nl/collections/maak-je-eigen-theemix"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/proefpakketten"
+   ],
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 13.2,
+   "page": "https://tanterie.nl/collections/proefpakketten"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/servies"
+   ],
+   "clicks": 0,
+   "impressions": 21,
+   "ctr": 0,
+   "position": 28.0,
+   "page": "https://tanterie.nl/collections/servies"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/thee"
+   ],
+   "clicks": 0,
+   "impressions": 19,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/collections/thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/thee-accessoires"
+   ],
+   "clicks": 0,
+   "impressions": 52,
+   "ctr": 0,
+   "position": 27.7,
+   "page": "https://tanterie.nl/collections/thee-accessoires"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/vruchtenthee"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/collections/vruchtenthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/waterflessen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/collections/waterflessen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/witte-thee"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 17,
+   "page": "https://tanterie.nl/collections/witte-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/collections/zwarte-thee"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 8.2,
+   "page": "https://tanterie.nl/collections/zwarte-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/algemene-voorwaarden"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/pages/algemene-voorwaarden"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/blond-amsterdam-servies"
+   ],
+   "clicks": 0,
+   "impressions": 17,
+   "ctr": 0,
+   "position": 4.7,
+   "page": "https://tanterie.nl/pages/blond-amsterdam-servies"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/cold-brew-thee"
+   ],
+   "clicks": 0,
+   "impressions": 29,
+   "ctr": 0,
+   "position": 8.6,
+   "page": "https://tanterie.nl/pages/cold-brew-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/contact"
+   ],
+   "clicks": 0,
+   "impressions": 48,
+   "ctr": 0,
+   "position": 2.5,
+   "page": "https://tanterie.nl/pages/contact"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/marketing"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/pages/marketing"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+   ],
+   "clicks": 0,
+   "impressions": 46,
+   "ctr": 0,
+   "position": 7.4,
+   "page": "https://tanterie.nl/pages/muuss-van-joeff-de-wand-die-met-je-meebeweegt"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/over-ons"
+   ],
+   "clicks": 0,
+   "impressions": 102,
+   "ctr": 0,
+   "position": 2.5,
+   "page": "https://tanterie.nl/pages/over-ons"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/privacy-policy"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5.5,
+   "page": "https://tanterie.nl/pages/privacy-policy"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/retourbeleid-tante-rie"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/pages/retourbeleid-tante-rie"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/theebereiding-faq"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 4.3,
+   "page": "https://tanterie.nl/pages/theebereiding-faq"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/theewinkel-borne-twente"
+   ],
+   "clicks": 0,
+   "impressions": 119,
+   "ctr": 0,
+   "position": 4.6,
+   "page": "https://tanterie.nl/pages/theewinkel-borne-twente"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/veelgestelde-vragen"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/pages/veelgestelde-vragen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/pages/verzendbeleid"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 9.3,
+   "page": "https://tanterie.nl/pages/verzendbeleid"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/50-jaar"
+   ],
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 7.6,
+   "page": "https://tanterie.nl/products/50-jaar"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/alfabet-mok"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/alfabet-mok"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/appeltaart"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 14,
+   "page": "https://tanterie.nl/products/appeltaart"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/assam"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/assam"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/autoparfum-superbedankt"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 10.2,
+   "page": "https://tanterie.nl/products/autoparfum-superbedankt"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/bakzolder-speculaasmix-850-gram"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/bakzolder-speculaasmix-850-gram"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/basishouder"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/basishouder"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/best-friend"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 10.7,
+   "page": "https://tanterie.nl/products/best-friend"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/beste-van-borne"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/beste-van-borne"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/bewaarblik-rechthoekig-flowerbed-19x15-cm"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 2.8,
+   "page": "https://tanterie.nl/products/bewaarblik-rechthoekig-flowerbed-19x15-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/bloedsinaasappel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/bloedsinaasappel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/boeren-mok-240-ml"
+   ],
+   "clicks": 0,
+   "impressions": 24,
+   "ctr": 0,
+   "position": 26.5,
+   "page": "https://tanterie.nl/products/boeren-mok-240-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/boeren-mok-240-ml?variant=57953071956232&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/boeren-mok-240-ml?variant=57953071956232&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/boeren-mok-370-ml"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/boeren-mok-370-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/booster"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/booster"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/bornse-boris"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/bornse-boris"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/bornse-zomer"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/bornse-zomer"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/brandnetel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/brandnetel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/cactus-vijg"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 11.8,
+   "page": "https://tanterie.nl/products/cactus-vijg"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/cafe-noir-cakemix-500-gram"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/cafe-noir-cakemix-500-gram"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/carrot-cakemix-500-gram"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/carrot-cakemix-500-gram"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/china-jasmijn"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/china-jasmijn"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/china-lapsang-souchon"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 18.7,
+   "page": "https://tanterie.nl/products/china-lapsang-souchon"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/chinese-lotus"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6.3,
+   "page": "https://tanterie.nl/products/chinese-lotus"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/citrus-betovering"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/citrus-betovering"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/coldbrew-theefles-kaki"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/coldbrew-theefles-kaki"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/congratulations-party"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/congratulations-party"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/congratulations-party?variant=58059841372424&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/congratulations-party?variant=58059841372424&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/cozy-days-light-house-stepped-gable-cozy"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 10.4,
+   "page": "https://tanterie.nl/products/cozy-days-light-house-stepped-gable-cozy"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/cozy-days-mug-0-35l-tea"
+   ],
+   "clicks": 0,
+   "impressions": 30,
+   "ctr": 0,
+   "position": 6.2,
+   "page": "https://tanterie.nl/products/cozy-days-mug-0-35l-tea"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/creme-brulee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/creme-brulee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/cup-of-sunshine"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/cup-of-sunshine"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/dadel-gember"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/dadel-gember"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/de-vrouw-van-earl-grey"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/de-vrouw-van-earl-grey"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/diep-bord-o-23-5-cm"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/diep-bord-o-23-5-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/dier-mug-cat-lover"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/dier-mug-cat-lover"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/dier-mug-horse-lover"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 9.7,
+   "page": "https://tanterie.nl/products/dier-mug-horse-lover"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/eb-cappuccino-mug-0-5l-tea"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/eb-cappuccino-mug-0-5l-tea"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/eb-thermo-bottle-0-5l-hearts"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/eb-thermo-bottle-0-5l-hearts"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ed-plate-18-cm-croissant"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8.5,
+   "page": "https://tanterie.nl/products/ed-plate-18-cm-croissant"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/elfjesthee"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/elfjesthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/engelse-melange"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/engelse-melange"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/fashion-girl"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 6.2,
+   "page": "https://tanterie.nl/products/fashion-girl"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/flowers-theeblik"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/flowers-theeblik"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/forever-young"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4.5,
+   "page": "https://tanterie.nl/products/forever-young"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/fruitycakemix-500-gram"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/fruitycakemix-500-gram"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/game-on"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/game-on"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/gebaksbord-o-16-cm-1"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/gebaksbord-o-16-cm-1"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/geluksthee"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/geluksthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/gember-chai"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 7.3,
+   "page": "https://tanterie.nl/products/gember-chai"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/gemberwortel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/gemberwortel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/geurstokje-gefeliciteerd"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/geurstokje-gefeliciteerd"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/gewelfde-kom-220-ml-1"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/gewelfde-kom-220-ml-1"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/gewelfde-kom-220-ml-1?_pos=1&_sid=e0eabb34e&_ss=r"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/gewelfde-kom-220-ml-1?_pos=1&_sid=e0eabb34e&_ss=r"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/gluhwein-kruiden-kerstmarkt"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/gluhwein-kruiden-kerstmarkt"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/groene-chai"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 5.3,
+   "page": "https://tanterie.nl/products/groene-chai"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/groene-meloen"
+   ],
+   "clicks": 0,
+   "impressions": 14,
+   "ctr": 0,
+   "position": 29.6,
+   "page": "https://tanterie.nl/products/groene-meloen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/groom"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 9.3,
+   "page": "https://tanterie.nl/products/groom"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/harverwarmer"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/harverwarmer"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/heanig-an"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/heanig-an"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/herfstkruiden"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12.5,
+   "page": "https://tanterie.nl/products/herfstkruiden"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/houten-honinglepel"
+   ],
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 48.8,
+   "page": "https://tanterie.nl/products/houten-honinglepel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/houten-theeschep"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8.5,
+   "page": "https://tanterie.nl/products/houten-theeschep"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/i-do"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 6.6,
+   "page": "https://tanterie.nl/products/i-do"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/italiaanse-earl-grey"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5.5,
+   "page": "https://tanterie.nl/products/italiaanse-earl-grey"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/joeff-hartje"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/joeff-hartje"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/joeff-kaarthouder"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/joeff-kaarthouder"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/joeff-kunstbloem-vaasje"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 5.2,
+   "page": "https://tanterie.nl/products/joeff-kunstbloem-vaasje"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/joeff-teckel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/joeff-teckel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kerst-thee"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11.5,
+   "page": "https://tanterie.nl/products/kerst-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kerstthee-red-nose-rudolph-gluhwein"
+   ],
+   "clicks": 0,
+   "impressions": 13,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/kerstthee-red-nose-rudolph-gluhwein"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/keukenpot-bloempot-o-14-cm"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8.5,
+   "page": "https://tanterie.nl/products/keukenpot-bloempot-o-14-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kir-royal"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/kir-royal"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kitchen-queen"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 14,
+   "page": "https://tanterie.nl/products/kitchen-queen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kokos-truffel"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/kokos-truffel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kom-250-ml?variant=57953340457224"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/kom-250-ml?variant=57953340457224"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kom-800-ml"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4.5,
+   "page": "https://tanterie.nl/products/kom-800-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kom-premium-350-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/kom-premium-350-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kom-premium-820-ml"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 1.3,
+   "page": "https://tanterie.nl/products/kom-premium-820-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kruiden-chai"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/kruiden-chai"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/kurkuma-chai"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/kurkuma-chai"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ledkaars-schakel"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 7.7,
+   "page": "https://tanterie.nl/products/ledkaars-schakel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/lichthuisje-met-trapgevel-sint-pietenhuis"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/lichthuisje-met-trapgevel-sint-pietenhuis"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/love-to-travel"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 7.6,
+   "page": "https://tanterie.nl/products/love-to-travel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-celebrate"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8.5,
+   "page": "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-celebrate"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-holland-heritage"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 9.7,
+   "page": "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-holland-heritage"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-holland-heritage?variant=58202217611528&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/maak-je-eigen-theemix-theepakket-holland-heritage?variant=58202217611528&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/maatschepje"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 7.1,
+   "page": "https://tanterie.nl/products/maatschepje"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mama"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/mama"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mams-thee"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/mams-thee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/marocco-mint"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/marocco-mint"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/marsala-chai"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 5.3,
+   "page": "https://tanterie.nl/products/marsala-chai"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mazagran-a-hug-in-a-mug"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 11.4,
+   "page": "https://tanterie.nl/products/mazagran-a-hug-in-a-mug"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mazagran-cheers-to-18-years"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 14.5,
+   "page": "https://tanterie.nl/products/mazagran-cheers-to-18-years"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mazagran-graduated-0-5l"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/mazagran-graduated-0-5l"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mazagran-liefste-juf"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 8.3,
+   "page": "https://tanterie.nl/products/mazagran-liefste-juf"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mazagran-sister"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 9.8,
+   "page": "https://tanterie.nl/products/mazagran-sister"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/meester"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 8.5,
+   "page": "https://tanterie.nl/products/meester"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-beker-1"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 27,
+   "page": "https://tanterie.nl/products/melamine-beker-1"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-bord-fleur-fountain-o-25-cm"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 38,
+   "page": "https://tanterie.nl/products/melamine-bord-fleur-fountain-o-25-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-bord-fleur-fountain-o-25-cm?variant=58005564457224&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/melamine-bord-fleur-fountain-o-25-cm?variant=58005564457224&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-bord-wild-flowers-o-25-cm"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 5.8,
+   "page": "https://tanterie.nl/products/melamine-bord-wild-flowers-o-25-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-bord-wild-flowers-o-25-cm?variant=58005559542024&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/melamine-bord-wild-flowers-o-25-cm?variant=58005559542024&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-bowl-with-organic-stripes-print-1"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/melamine-bowl-with-organic-stripes-print-1"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-cup-with-blue-ocean-print"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/melamine-cup-with-blue-ocean-print"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-cup-with-diamond-christmas-tree-print"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/melamine-cup-with-diamond-christmas-tree-print"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-cup-with-flower-press-print"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 14,
+   "page": "https://tanterie.nl/products/melamine-cup-with-flower-press-print"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-cup-with-unicorn-love-print"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/melamine-cup-with-unicorn-love-print"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melamine-kom-wild-flowers-o-15-cm?variant=58005620228360&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/melamine-kom-wild-flowers-o-15-cm?variant=58005620228360&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/melk-mok-230-ml"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/melk-mok-230-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/middelgrote-melamine-beker-zuurstokken"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 40.5,
+   "page": "https://tanterie.nl/products/middelgrote-melamine-beker-zuurstokken"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/middelgrote-melamine-kom-zuurstokken"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/middelgrote-melamine-kom-zuurstokken"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/miss-brains"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/miss-brains"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/miss-creativity"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/miss-creativity"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mok-met-oor-340-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/mok-met-oor-340-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mok-tumbler-100-ml"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 5.5,
+   "page": "https://tanterie.nl/products/mok-tumbler-100-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mok-tumbler-220-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 83,
+   "page": "https://tanterie.nl/products/mok-tumbler-220-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mok-tumbler-240-ml-1?variant=57953500332296"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/mok-tumbler-240-ml-1?variant=57953500332296"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mok-tumbler-350-ml"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 9.1,
+   "page": "https://tanterie.nl/products/mok-tumbler-350-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/mooie-dag"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/mooie-dag"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/nu-niet-storen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/nu-niet-storen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ontbijtbord-o-20-cm?variant=57951789908232"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/ontbijtbord-o-20-cm?variant=57951789908232"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/opa"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 14.7,
+   "page": "https://tanterie.nl/products/opa"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/opkikkertje"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 6.4,
+   "page": "https://tanterie.nl/products/opkikkertje"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/oud-borne"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/oud-borne"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ovaal-bord-27cm-sint-iconen"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/ovaal-bord-27cm-sint-iconen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ovale-schaal"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 20.7,
+   "page": "https://tanterie.nl/products/ovale-schaal"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ovenschaal-met-handvaten-1200-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/ovenschaal-met-handvaten-1200-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ovenschaal-rechthoekig-2850-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/ovenschaal-rechthoekig-2850-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/ovenschaal-vierkant-1550-ml"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 10.3,
+   "page": "https://tanterie.nl/products/ovenschaal-vierkant-1550-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/papa"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/papa"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/pastabord-o-25-cm"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/pastabord-o-25-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/petit-four-o-12-3-cm"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/petit-four-o-12-3-cm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/pineut-cake-pouchbag-lemon-poppy-cake"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/pineut-cake-pouchbag-lemon-poppy-cake"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/pineut-cake-pouchbag-lemon-poppy-cake-kopie"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/pineut-cake-pouchbag-lemon-poppy-cake-kopie"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/powervrouw"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/powervrouw"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/pumpkin-pie-spice"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 17.1,
+   "page": "https://tanterie.nl/products/pumpkin-pie-spice"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rechthoekig-melamine-bord-zuurstokken"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 38.5,
+   "page": "https://tanterie.nl/products/rechthoekig-melamine-bord-zuurstokken"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-a"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 11.2,
+   "page": "https://tanterie.nl/products/rice-a"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-b"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 24.6,
+   "page": "https://tanterie.nl/products/rice-b"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-c"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 11.3,
+   "page": "https://tanterie.nl/products/rice-c"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-d"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 8.3,
+   "page": "https://tanterie.nl/products/rice-d"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-f"
+   ],
+   "clicks": 0,
+   "impressions": 14,
+   "ctr": 0,
+   "position": 29.4,
+   "page": "https://tanterie.nl/products/rice-f"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-h"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/rice-h"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-i"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 11.3,
+   "page": "https://tanterie.nl/products/rice-i"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-j"
+   ],
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 9.4,
+   "page": "https://tanterie.nl/products/rice-j"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-k"
+   ],
+   "clicks": 0,
+   "impressions": 16,
+   "ctr": 0,
+   "position": 38.3,
+   "page": "https://tanterie.nl/products/rice-k"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-l"
+   ],
+   "clicks": 0,
+   "impressions": 23,
+   "ctr": 0,
+   "position": 6.6,
+   "page": "https://tanterie.nl/products/rice-l"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-m"
+   ],
+   "clicks": 0,
+   "impressions": 38,
+   "ctr": 0,
+   "position": 11.1,
+   "page": "https://tanterie.nl/products/rice-m"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-n"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 18.3,
+   "page": "https://tanterie.nl/products/rice-n"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-o"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 32,
+   "page": "https://tanterie.nl/products/rice-o"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-p"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/rice-p"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-r"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 6.3,
+   "page": "https://tanterie.nl/products/rice-r"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-r?variant=57845068103944&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/rice-r?variant=57845068103944&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-s"
+   ],
+   "clicks": 0,
+   "impressions": 42,
+   "ctr": 0,
+   "position": 16.6,
+   "page": "https://tanterie.nl/products/rice-s"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-t"
+   ],
+   "clicks": 0,
+   "impressions": 23,
+   "ctr": 0,
+   "position": 13.9,
+   "page": "https://tanterie.nl/products/rice-t"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-v"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/rice-v"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-y"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 41,
+   "page": "https://tanterie.nl/products/rice-y"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rice-z"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/rice-z"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rode-wijnglas-bubble-460-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/rode-wijnglas-bubble-460-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rooibos-amaretto"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12,
+   "page": "https://tanterie.nl/products/rooibos-amaretto"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rooibos-lemon-cheesecake"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 25,
+   "page": "https://tanterie.nl/products/rooibos-lemon-cheesecake"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rooibos-met-pit"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 5.8,
+   "page": "https://tanterie.nl/products/rooibos-met-pit"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rooibos-naturel-bio"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/rooibos-naturel-bio"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rooibos-voor-de-open-haard"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/rooibos-voor-de-open-haard"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rust"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 14.5,
+   "page": "https://tanterie.nl/products/rust"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+   ],
+   "clicks": 0,
+   "impressions": 13,
+   "ctr": 0,
+   "position": 9.1,
+   "page": "https://tanterie.nl/products/rvs-theezeef-met-deksel-inklapbaar"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/schotel-rechthoek-1"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/schotel-rechthoek-1"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/servetten-garden-delight"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 7.3,
+   "page": "https://tanterie.nl/products/servetten-garden-delight"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/sinaasappel-chai"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 3,
+   "page": "https://tanterie.nl/products/sinaasappel-chai"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/sleutelhanger-rond"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/sleutelhanger-rond"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/soepkom-360-ml"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 13,
+   "page": "https://tanterie.nl/products/soepkom-360-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/soepkom-440-ml"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 8.8,
+   "page": "https://tanterie.nl/products/soepkom-440-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/sterrenmunt"
+   ],
+   "clicks": 0,
+   "impressions": 51,
+   "ctr": 0,
+   "position": 12.2,
+   "page": "https://tanterie.nl/products/sterrenmunt"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/stoere-mannenthee"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 5.8,
+   "page": "https://tanterie.nl/products/stoere-mannenthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/sweet-roses"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 11.8,
+   "page": "https://tanterie.nl/products/sweet-roses"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tante-rie-cadeaubon"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11,
+   "page": "https://tanterie.nl/products/tante-rie-cadeaubon"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/teeli-flip-s-theefilter"
+   ],
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 8.1,
+   "page": "https://tanterie.nl/products/teeli-flip-s-theefilter"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/teeli-flip-xs-theefilter"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 5.7,
+   "page": "https://tanterie.nl/products/teeli-flip-xs-theefilter"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tegeltje-kunsthouderschakel"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 4.3,
+   "page": "https://tanterie.nl/products/tegeltje-kunsthouderschakel"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/thank-you"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 5.9,
+   "page": "https://tanterie.nl/products/thank-you"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/the-man"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/the-man"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/thee-ei-bij"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/thee-ei-bij"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/thee-en-een-mooi-gesprek-hey-theetje-doen"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/thee-en-een-mooi-gesprek-hey-theetje-doen"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/thee-en-een-mooi-gesprek-hoera"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/thee-en-een-mooi-gesprek-hoera"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/thee-en-een-mooi-gesprek-liefs"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/thee-en-een-mooi-gesprek-liefs"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/thee-en-een-mooi-gesprek-warme-groet"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/thee-en-een-mooi-gesprek-warme-groet"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theeblik-100-gram-emma-bridgewater-poppies"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/theeblik-100-gram-emma-bridgewater-poppies"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theeblik-100-gram-sanderson-chinoiserie-hall"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10.5,
+   "page": "https://tanterie.nl/products/theeblik-100-gram-sanderson-chinoiserie-hall"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theeblik-100-gram-sanderson-foraging"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 19,
+   "page": "https://tanterie.nl/products/theeblik-100-gram-sanderson-foraging"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theeblik-100-gram-sara-miller-filigree"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6.7,
+   "page": "https://tanterie.nl/products/theeblik-100-gram-sara-miller-filigree"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theeblik-100-gram-sara-miller-green-birds"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/theeblik-100-gram-sara-miller-green-birds"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theelepel-bolvorm"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/theelepel-bolvorm"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theelepel-lang-goud-of-zilver"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 20.2,
+   "page": "https://tanterie.nl/products/theelepel-lang-goud-of-zilver"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theemuts-streep"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/theemuts-streep"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theepot-2000-ml"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 82.3,
+   "page": "https://tanterie.nl/products/theepot-2000-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theetip-bloem"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9.5,
+   "page": "https://tanterie.nl/products/theetip-bloem"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theetip-rond"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/theetip-rond"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theetip-ster"
+   ],
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 3.6,
+   "page": "https://tanterie.nl/products/theetip-ster"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theetip-theepot"
+   ],
+   "clicks": 0,
+   "impressions": 14,
+   "ctr": 0,
+   "position": 48.1,
+   "page": "https://tanterie.nl/products/theetip-theepot"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theezeef-met-uitlekschaaltje-rvs"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/theezeef-met-uitlekschaaltje-rvs"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/theezeefje-rvs-met-uitlekschaaltje"
+   ],
+   "clicks": 0,
+   "impressions": 8,
+   "ctr": 0,
+   "position": 11.6,
+   "page": "https://tanterie.nl/products/theezeefje-rvs-met-uitlekschaaltje"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tijd-voor-thee-koker-dankjewelthee"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 8.3,
+   "page": "https://tanterie.nl/products/tijd-voor-thee-koker-dankjewelthee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tijd-voor-thee-koker-gefelicithee"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/tijd-voor-thee-koker-gefelicithee"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tijd-voor-thee-koker-liefs"
+   ],
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 7.8,
+   "page": "https://tanterie.nl/products/tijd-voor-thee-koker-liefs"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tijd-voor-thee-lieve-zus"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/tijd-voor-thee-lieve-zus"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tropisch-goud"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 4.8,
+   "page": "https://tanterie.nl/products/tropisch-goud"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tulp-mok-200-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/tulp-mok-200-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tulp-mok-200-ml?variant=57952863912200&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/tulp-mok-200-ml?variant=57952863912200&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tulp-mok-200-ml?variant=58642444517640&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 2,
+   "page": "https://tanterie.nl/products/tulp-mok-200-ml?variant=58642444517640&country=NL&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tulp-mok-330-ml"
+   ],
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 7.7,
+   "page": "https://tanterie.nl/products/tulp-mok-330-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tulp-mok-500-ml-3"
+   ],
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 26.9,
+   "page": "https://tanterie.nl/products/tulp-mok-500-ml-3"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/tulp-mok-500-ml-3?variant=57955665051912"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12,
+   "page": "https://tanterie.nl/products/tulp-mok-500-ml-3?variant=57955665051912"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/twentse-land"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/twentse-land"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/vaas-2100-ml"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/vaas-2100-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/vaas-4400-ml"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/vaas-4400-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/vanille"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 7.5,
+   "page": "https://tanterie.nl/products/vanille"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/voorraadpot-vierkant-16x20cm-sint-momenten"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 4,
+   "page": "https://tanterie.nl/products/voorraadpot-vierkant-16x20cm-sint-momenten"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/warme-deken"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/warme-deken"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/water-scoop-400-ml"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 9.7,
+   "page": "https://tanterie.nl/products/water-scoop-400-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/waterfles-bosvogels-roze"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6.3,
+   "page": "https://tanterie.nl/products/waterfles-bosvogels-roze"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/waterfles-de-blauwe-fiets"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 10,
+   "page": "https://tanterie.nl/products/waterfles-de-blauwe-fiets"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/waterfles-delfts-blauw"
+   ],
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 6.7,
+   "page": "https://tanterie.nl/products/waterfles-delfts-blauw"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/waterglas-bubble-300-ml"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 5,
+   "page": "https://tanterie.nl/products/waterglas-bubble-300-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/waterglas-summer-breeze-300-ml"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 22,
+   "page": "https://tanterie.nl/products/waterglas-summer-breeze-300-ml"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/wilde-kers"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1,
+   "page": "https://tanterie.nl/products/wilde-kers"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/wit-thee-bewaarblik-100-gram"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6,
+   "page": "https://tanterie.nl/products/wit-thee-bewaarblik-100-gram"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/zilver-thee-bewaarblik-100-gram"
+   ],
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7,
+   "page": "https://tanterie.nl/products/zilver-thee-bewaarblik-100-gram"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/zilver-thee-bewaarblik-100-gram-kopie"
+   ],
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9,
+   "page": "https://tanterie.nl/products/zilver-thee-bewaarblik-100-gram-kopie"
+  },
+  {
+   "keys": [
+    "https://tanterie.nl/products/zwart-thee-bewaarblik-100-gram"
+   ],
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 8,
+   "page": "https://tanterie.nl/products/zwart-thee-bewaarblik-100-gram"
+  }
+ ],
+ "totals": {
+  "clicks": 114,
+  "impressions": 4413,
+  "ctr": 2.58,
+  "position": 0
+ },
+ "quick_wins": [],
+ "row_count": 296,
+ "error": null,
+ "date_range": {
+  "start": "2026-11-01",
+  "end": "2026-11-07"
+ }
+}
