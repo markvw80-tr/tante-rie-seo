@@ -8,6 +8,7 @@ Bron: marketing/plan-2026-11.md (sectie "Metingen die Mark lokaal moet draaien" 
 |---|---|---|
 | Maandag 9 nov (gedaan, rapport migratiemonitor-2026-11-09.md), daarna 16, 23 en 30 nov en 7 dec | Migratiemonitor en profielcijfers (wekelijks, elke maandag) | `python3 gsc_query.py --days 7 --dimensions query,page --limit 1000 --json` en `scripts/gbp_prestaties.py` |
 | 11 nov | Eerste meting effect designrondes (beter 25 nov) | GSC en GA4 per apparaat |
+| 11 nov (gedaan) | Merchant-check eenheidsprijs kamille en gemberwortel: nog leeg, zie V127; herhalen zodra Mark de regel heeft gemaakt | Merchant API, alleen lezen |
 | Uiterlijk 13 nov | Bewaarblikken live, direct nulwaarden per pagina | `python3 gsc_query.py --days 28 --dimensions query,page --limit 1000 --json` |
 | Uiterlijk 14 nov | Bunzlau live, nulwaarden op de livedag | idem |
 
