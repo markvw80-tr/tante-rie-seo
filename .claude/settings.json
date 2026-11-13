@@ -1,5 +1,29 @@
 {
   "enabledPlugins": {
     "claude-mem@thedotmack": false
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__.*|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/blokkeer_shopify_schrijven.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/tekstlint.py\""
+          }
+        ]
+      }
+    ]
   }
 }
