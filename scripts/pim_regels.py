@@ -9,9 +9,11 @@ Gebruik:
   python3 scripts/pim_regels.py controleer              # velden en aantallen van het concept
   python3 scripts/pim_regels.py stuur [--op-verzoek-mark] [--hq PAD]
   python3 scripts/pim_regels.py nieuw [--hq PAD]        # berichten van PIM met status nieuw
+  python3 scripts/pim_regels.py akkoord                 # kwaliteitsredacteur: legt akkoord op het huidige concept vast
 """
 import argparse
 import datetime
+import hashlib
 import json
 import os
 import sys
@@ -63,6 +65,26 @@ def fouten_in(regels):
             fouten.append(f"regel {i}: dubbel voor {sleutel[0]} {sleutel[1]}")
         gezien.add(sleutel)
     return fouten
+
+
+AKKOORD = os.path.join(REPO, "marketing", "review", "pim-regels-akkoord.json")
+
+
+def hash_concept():
+    regels = laad(CONCEPT, [])
+    return hashlib.sha256(json.dumps(regels, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def akkoord(_args):
+    regels = laad(CONCEPT, [])
+    fouten = fouten_in(regels)
+    if fouten or not regels:
+        print("\n".join(fouten) or "Geen regels in het concept.")
+        return 1
+    schrijf(AKKOORD, {"datum": datetime.date.today().isoformat(), "aantal_regels": len(regels),
+                      "hash": hash_concept(), "door": "kwaliteitsredacteur"})
+    print(f"Akkoord vastgelegd voor {len(regels)} regels. Elke wijziging van het concept maakt het ongeldig.")
+    return 0
 
 
 def controleer(_args):
@@ -122,13 +144,14 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="opdracht", required=True)
     sub.add_parser("controleer")
+    sub.add_parser("akkoord")
     s = sub.add_parser("stuur")
     s.add_argument("--op-verzoek-mark", action="store_true")
     s.add_argument("--hq", default=HQ)
     n = sub.add_parser("nieuw")
     n.add_argument("--hq", default=HQ)
     args = p.parse_args()
-    return {"controleer": controleer, "stuur": stuur, "nieuw": nieuw}[args.opdracht](args)
+    return {"controleer": controleer, "akkoord": akkoord, "stuur": stuur, "nieuw": nieuw}[args.opdracht](args)
 
 
 if __name__ == "__main__":
