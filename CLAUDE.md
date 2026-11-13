@@ -1,5 +1,7 @@
 # Tante Rie: SEO-marketingteam
 
+Gedeelde doelen en prioriteit voor alle teams: `~/tante-rie-hq/team/doelen.md`. De directie-agent in tante-rie-hq bewaakt die en signaleert achterstand tussen de teams.
+
 ## Doel
 
 Hoger scoren in Google en daarmee meer organische bezoekers naar tanterie.nl. Alle rollen werken naar dat doel toe en volgen de spelregels hieronder.
