@@ -16,11 +16,11 @@ BLOKKEN = int(sys.argv[1]) if len(sys.argv) > 1 else 3
 
 pull = subprocess.run(["git", "-C", str(HQ), "pull", "-q", "--ff-only"],
                       capture_output=True, text=True, timeout=30)
-print("hq pull:", "ok" if pull.returncode == 0 else pull.stderr.strip()[:200])
+print("hq pull:", "ok" if pull.returncode == 0 else pull.stderr.strip()[:200], flush=True)
 
-print("\nBerichten van PIM:")
+print("\nBerichten van PIM:", flush=True)
 subprocess.run(["python3", str(HIER / "pim_regels.py"), "nieuw"])
-print("\nMailbox seo:")
+print("\nMailbox seo:", flush=True)
 subprocess.run(["python3", str(HIER / "mailbox.py"), "lijst", "seo"])
 
 blokken, huidig = [], None
@@ -30,6 +30,6 @@ for regel in (HQ / "team/status.md").read_text().splitlines():
         blokken.append(huidig)
     elif huidig is not None:
         huidig.append(regel)
-print(f"\nStatus, nieuwste {BLOKKEN} van {len(blokken)} blokken:")
+print(f"\nStatus, nieuwste {BLOKKEN} van {len(blokken)} blokken:", flush=True)
 for blok in blokken[:BLOKKEN]:
     print("\n".join(r for r in blok if r.strip()))
