@@ -32,6 +32,15 @@
             "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/tekstlint.py\""
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/changelogherinnering.py\""
+          }
+        ]
       }
     ],
     "SessionStart": [
