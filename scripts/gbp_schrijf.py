@@ -8,6 +8,8 @@ droogtest. Met --uitvoeren komt eerst een backup in marketing/autoriteit/.
 Gebruik:
     python3 scripts/gbp_schrijf.py categorieen [--uitvoeren]
     python3 scripts/gbp_schrijf.py beschrijving [--uitvoeren]
+    python3 scripts/gbp_schrijf.py attributen [--uitvoeren]       # V131 b, c, d (15-11-2026)
+    python3 scripts/gbp_schrijf.py speciaaltijden [--uitvoeren]   # V130 (15-11-2026): koopzondagen en koopavond
     python3 scripts/gbp_schrijf.py bericht 1 [--uitvoeren]   # 1 t/m 4, niet vóór de geplande datum
 
 Token: ~/.config/claude-seo/gbp-token.json (OAuth, scope business.manage).
@@ -45,21 +47,9 @@ BESCHRIJVING = (
 
 UTM = "?utm_source=gbp&utm_medium=organic&utm_campaign="
 BERICHTEN = {
+    # Nieuw schema V131 a (Mark, 15-11-2026); review marketing/review/review-gbp-berichten-2026-11-15.md
     1: {
-        "datum": date(2026, 10, 27),
-        "foto": "theewand-losse-thee.jpg",
-        "url": "https://tanterie.nl/pages/theewinkel-borne-twente" + UTM + "bericht-theewand",
-        "tekst": (
-            "Aan de theewand in onze winkel in Borne staan ruim 130 soorten losse thee. Je kunt de thee ruiken "
-            "en eventueel proeven voordat je een keuze maakt. Dat helpt vooral bij thee die je nog niet kent, "
-            "want de geur vertelt vaak al veel over wat je in je kopje krijgt. Weet je niet waar je moet "
-            "beginnen, vertel dan wat je normaal drinkt en wat je minder lekker vindt, dan zoeken we samen een "
-            "thee die bij je past. Je vindt ons aan de Bakkerssteeg 6 in Borne, van dinsdag tot en met zaterdag "
-            "van 10.00 tot 17.00 uur. Parkeren kan in de buurt met een parkeerschijf of in de gratis parkeergarage."
-        ),
-    },
-    2: {
-        "datum": date(2026, 11, 3),
+        "datum": date(2026, 11, 17),
         "foto": "bunzlau-wand.jpg",
         "url": "https://tanterie.nl/collections/bunzlau" + UTM + "bericht-bunzlau",
         "tekst": (
@@ -71,27 +61,40 @@ BERICHTEN = {
             "dinsdag tot en met zaterdag van 10.00 tot 17.00 uur aan de Bakkerssteeg 6."
         ),
     },
-    3: {
-        "datum": date(2026, 11, 10),
-        "foto": "blond-amsterdam-wand.jpg",
-        "url": "https://tanterie.nl/pages/blond-amsterdam-servies" + UTM + "bericht-blond-amsterdam",
+    2: {
+        "datum": date(2026, 11, 24),
+        "foto": "theewand-losse-thee.jpg",
+        "url": "https://tanterie.nl/pages/theewinkel-borne-twente" + UTM + "bericht-theewand",
         "tekst": (
-            "Blond Amsterdam maakt mokken en bekers met kleurrijke illustraties, en in onze winkel in Borne zie "
-            "je ze zoals ze echt zijn. Een praktische vraag bij dit servies is of het in de vaatwasser kan. Dat "
-            "kan: de mokken, bekers en borden mogen erin, het liefst op een mild programma zodat de print lang "
-            "mooi blijft. Blond Amsterdam versturen we niet. Je bestelt online en haalt het af in de winkel, of "
-            "je neemt mee wat er op voorraad is. Meer over het servies lees je op onze pagina over Blond Amsterdam."
+            "Aan de theewand in onze winkel in Borne staan ruim 130 soorten losse thee. Je kunt de thee ruiken "
+            "en eventueel proeven voordat je een keuze maakt. Dat helpt vooral bij thee die je nog niet kent, "
+            "want de geur vertelt vaak al veel over wat je in je kopje krijgt. Weet je niet waar je moet "
+            "beginnen, vertel dan wat je normaal drinkt en wat je minder lekker vindt, dan zoeken we samen een "
+            "thee die bij je past. Je vindt ons aan de Bakkerssteeg 6 in Borne, van dinsdag tot en met zaterdag "
+            "van 10.00 tot 17.00 uur. Op zondag 29 november zijn we open van 12.00 tot 17.00 uur. Parkeren kan "
+            "op parkeerplaats De Koem met een parkeerschijf."
         ),
     },
-    4: {
-        "datum": date(2026, 11, 17),
+    3: {
+        "datum": date(2026, 12, 1),
         "foto": "cadeautafel-winkel.jpg",
         "url": "https://tanterie.nl/pages/theewinkel-borne-twente" + UTM + "bericht-feestdagen",
         "tekst": (
-            "Tijdens de feestdagen is Tante Rie gesloten op Eerste en Tweede Kerstdag, 25 en 26 december, en op "
+            "Tijdens de feestdagen is Tante Rie gesloten op eerste en tweede kerstdag, 25 en 26 december, en op "
             "Nieuwjaarsdag, 1 januari. De gewone openingstijden zijn dinsdag tot en met zaterdag van 10.00 tot "
             "17.00 uur. Zoek je een cadeau voor iemand die van thee houdt, kom dan langs in de winkel aan de "
             "Bakkerssteeg 6 in Borne, dan denken we graag met je mee."
+        ),
+    },
+    4: {
+        "datum": date(2026, 12, 8),
+        "foto": "cadeautafel-winkel.jpg",
+        "url": "https://tanterie.nl/pages/theewinkel-borne-twente" + UTM + "bericht-koopavond",
+        "tekst": (
+            "In december zijn we op twee dagen langer of extra open. Op zaterdag 12 december is de winkel open "
+            "van 10.00 tot 21.00 uur. Op zondag 20 december zijn we open van 12.00 tot 17.00 uur. Kom je langs "
+            "voor een cadeau, vertel dan voor wie het is, dan zoeken we samen iets dat past. Je vindt ons aan de "
+            "Bakkerssteeg 6 in Borne. Parkeren kan op parkeerplaats De Koem met een parkeerschijf."
         ),
     },
 }
@@ -145,6 +148,58 @@ def beschrijving(s, uitvoeren):
         print("resultaat:", lees(s, "profile")["profile"]["description"] == BESCHRIJVING)
 
 
+# V130 (Mark, 15-11-2026): tijden uit V122. (datum, open, dicht)
+SPECIAAL = [((2026, 11, 29), 12, 17), ((2026, 12, 12), 10, 21), ((2026, 12, 20), 12, 17)]
+
+
+def speciaaltijden(s, uitvoeren):
+    nu = lees(s, "specialHours").get("specialHours", {})
+    periodes = nu.get("specialHourPeriods", [])
+    bestaand = {(p["startDate"]["year"], p["startDate"]["month"], p["startDate"]["day"]) for p in periodes}
+    nieuw = []
+    for (j, m, d), van, tot in SPECIAAL:
+        if (j, m, d) in bestaand:
+            continue
+        dag = {"year": j, "month": m, "day": d}
+        nieuw.append({"startDate": dag, "openTime": {"hours": van}, "endDate": dag, "closeTime": {"hours": tot}})
+    print(f"nu {len(periodes)} periodes, toe te voegen {len(nieuw)}:", nieuw)
+    if uitvoeren and nieuw:
+        backup("speciaaltijden", nu)
+        body = {"specialHours": {"specialHourPeriods": periodes + nieuw}}
+        check(s.patch(INFO + LOC, params={"updateMask": "specialHours"}, json=body), "wijzigen")
+        terug = lees(s, "specialHours")["specialHours"]["specialHourPeriods"]
+        print("teruggelezen:", len(terug), "periodes")
+        for p in terug:
+            if p["startDate"]["year"] == 2026 and p["startDate"]["month"] >= 11 or p["startDate"]["year"] == 2027:
+                print(p["startDate"], p.get("openTime"), p.get("closeTime"), p.get("closed"))
+
+
+# V131 (Mark, 15-11-2026): b creditcard ja, c Online bestellen-knop ja, d parkeerplaats De Koem met parkeerschijf
+ATTRIBUTEN = [
+    {"name": "attributes/pay_credit_card", "values": [True]},
+    {"name": "attributes/has_parking_lot_free", "values": [True]},
+    {"name": "attributes/has_parking_garage_free", "values": [True]},  # Mark 15-11: gratis parkeergarage in de buurt
+    {"name": "attributes/url_shop_online",
+     "uriValues": [{"uri": "https://tanterie.nl/?utm_source=gbp&utm_medium=organic&utm_campaign=bestellen"}]},
+]
+
+
+def attributen(s, uitvoeren):
+    nu = check(s.get(INFO + LOC + "/attributes"), "lezen")
+    print("nu:", [(a["name"], a.get("values") or a.get("uriValues")) for a in nu.get("attributes", [])
+                  if a["name"] in {x["name"] for x in ATTRIBUTEN}])
+    print("nieuw:", ATTRIBUTEN)
+    if uitvoeren:
+        backup("attributen", nu)
+        masker = ",".join(x["name"] for x in ATTRIBUTEN)
+        check(s.patch(INFO + LOC + "/attributes", params={"attributeMask": masker},
+                      json={"name": LOC + "/attributes", "attributes": ATTRIBUTEN}), "wijzigen")
+        terug = check(s.get(INFO + LOC + "/attributes"), "teruglezen")
+        for a in terug.get("attributes", []):
+            if a["name"] in {x["name"] for x in ATTRIBUTEN}:
+                print("teruggelezen:", a["name"], a.get("values") or a.get("uriValues"))
+
+
 def bericht(s, nr, uitvoeren):
     b = BERICHTEN[nr]
     print(f"bericht {nr} (gepland {b['datum']}), foto {b['foto']}, knop {b['url']}\n{b['tekst']}")
@@ -164,7 +219,7 @@ def bericht(s, nr, uitvoeren):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("actie", choices=["categorieen", "beschrijving", "bericht"])
+    p.add_argument("actie", choices=["categorieen", "beschrijving", "speciaaltijden", "attributen", "bericht"])
     p.add_argument("nr", nargs="?", type=int, choices=sorted(BERICHTEN))
     p.add_argument("--uitvoeren", action="store_true")
     a = p.parse_args()
@@ -173,6 +228,10 @@ def main():
         categorieen(s, a.uitvoeren)
     elif a.actie == "beschrijving":
         beschrijving(s, a.uitvoeren)
+    elif a.actie == "attributen":
+        attributen(s, a.uitvoeren)
+    elif a.actie == "speciaaltijden":
+        speciaaltijden(s, a.uitvoeren)
     else:
         if not a.nr:
             sys.exit("Geef het berichtnummer (1 t/m 4).")
