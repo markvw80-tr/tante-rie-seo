@@ -53,6 +53,7 @@ Opzet: plan-2026-11.md. Het plan gaat rond 18 november ter goedkeuring naar je; 
 **Antwoord:** Mark 03-11: Als het Bunzlau is en qua data helemaal verrijkt, dan mag het gewoon op de webshop. Zo niet, dan uit Google en YouTube. Controle SEO 03-11 (Shopify, alleen gelezen): Bunzlau Castle, maar niet verrijkt (geen beschrijving, geen SEO-titel of meta, prijs 0,00, gewicht 0, geen tags, 2 foto's). Uitkomst: uit Google en YouTube; uitvoering door PIM. Stand 07-11: prijs is gezet op 27,95 (Shopify gelezen); beide producten staan nog op Point of Sale, Shop, Google en YouTube en Online winkel. Verrijking (beschrijving, SEO, gewicht, tags) volgt via PIM uit het Clip-portaal.
 
 **V91 ⚪ Toegang Anke Kamp tot het Bedrijfsprofiel.** Anke Kamp staat nog als beheerder (MANAGER) in het Google Bedrijfsprofiel. Nu zij geen eigenaar meer is: toegang intrekken? Dat kan alleen de eigenaar (Nikkie) in het profiel, onder Mensen en toegang. (autoriteit/voorstel-bedrijfsprofiel-2026-10-23.md)
+**Antwoord:** Afgehandeld op 16-11: Nikkie heeft de toegang van Anke ingetrokken, via de API gecontroleerd.
 **Antwoord:**
 
 ---
@@ -133,6 +134,47 @@ Voorstel: technisch/voorstel-homepage-productmarkup-2026-10-25.md
 Bron: Shopify, alleen gelezen op 31-10; de tagwijzigingen komen uit batch seo-2026-10-26-2 (PIM, uitgevoerd 28-10).
 
 **V123 ⚪ Sweet Love en Harverwarmer in een extra kleurcollectie?** De collecties groene-thee (42 producten), witte-thee (8) en vruchtenthee (9) hebben geen regels en zijn handmatig samengesteld, dus de tagwijzigingen van 28-10 hebben het lidmaatschap niet verschoven. Sweet Love heeft de tag witte-thee maar zit niet in de collectie witte-thee. Harverwarmer heeft de tag vruchtenthee maar zit niet in de collectie vruchtenthee. Wil je dat PIM deze twee producten aan die collecties toevoegt, of is de huidige indeling bewust? De overige kleurcollecties (zwarte-thee, rooibos, kruidenthee) zijn nog niet nagelopen. (PIM voert een eventuele wijziging door; SEO wijzigt niets in Shopify)
+**Antwoord:**
+
+## 21. Merchant Center eenheidsprijs (11 november)
+
+Bron: Merchant API, alleen gelezen op 11-11 (kamille en gemberwortel).
+
+**V127 🟡 Regel in Merchant Center voor eenheidsprijs (unit pricing measure)?** Shopify heeft de eenheidsprijs bij kamille en gemberwortel ingevuld, maar Merchant Center toont het attribuut leeg met de melding "Missing unit pricing measure" (geen impact; producten zijn goedgekeurd op alle NL-bestemmingen). Gemberwortel is op 9-11 ververst en mist het nog, dus vertraging lijkt niet de oorzaak; waarschijnlijk geeft de Shopify-feed het veld niet door (aanname, niet bevestigd). Kun jij in Merchant Center (Producten, Gegevensbronnen, regels voor de feed) een regel maken die de eenheidsprijs uit Shopify koppelt? Tot die tijd rollen we de eenheidsprijs niet uit naar de overige losse thee. (SEO wijzigt niets in Merchant Center of Shopify)
+**Antwoord:**
+
+## 22. Alt-teksten shopafbeeldingen (15 november)
+
+Audit: marketing/onpage/audit-alt-teksten-2026-11-15.md (Shopify alleen gelezen, 447 online producten).
+
+**V128 🟡 Alt-teksten aanvullen via PIM?** 25 producten hebben een lege alt (10 Blond, 10 Joeff, 2 Pineut, honinglepel, cadeaubon, Mug Tulip), 12 Clip-producten alleen een SKU-code en 2 een onjuiste alt (lavendel, pepermunt). Akkoord dat SEO de regels voor de 15 niet-Blond producten opstelt (na toets aan de foto en de kwaliteitsredacteur) en naar PIM stuurt, en dat Blond en Clip meelopen in de lopende PIM-batches? (SEO wijzigt niets in Shopify)
+**Antwoord:**
+
+**V129 🟡 Kamille en gemberwortel van Google en YouTube halen?** Merchant API, alleen gelezen op 15-11: beide producten staan op Google & YouTube, zijn goedgekeurd en op voorraad in NL en BE op alle bestemmingen (Shopping, Display, gratis vermeldingen, Video, Demand Gen) en in de lokale feed. De regel van 3-11 (alleen volledig verrijkt, anders uit Google) ging over Bunzlau. Wil je ze er toch af hebben, of mogen ze blijven staan omdat ze gewone online producten zijn? Afhalen kan alleen jij of PIM in Shopify (kanaal Google & YouTube uit); SEO wijzigt niets.
+**Antwoord:** Laten staan (15-11).
+
+## 23. Bedrijfsprofiel opschoning (15 november)
+
+Voorstel: autoriteit/voorstel-bedrijfsprofiel-opschoning-2026-11-15.md
+
+**V130 🔴 Speciale tijden in het Bedrijfsprofiel zetten?** Koopzondag 29-11 en 20-12 open 12:00 tot 17:00, koopavond 12-12 open 10:00 tot 21:00 (jouw tijden uit V122). Nu staan ze er niet in, dus Google toont voor die dagen de gewone tijden of gesloten. Mag SEO ze doorvoeren (met backup en teruglezen)? De eerste is al op 29-11.
+**Antwoord:** Ja (15-11). Doorgevoerd en teruggelezen.
+
+**V131 🟡 Berichtenschema en attributen.** (a) Akkoord op het nieuwe berichtenschema 17-11, 24-11, 1-12 en 8-12 (concepten via de kwaliteitsredacteur; V79 was akkoord voor het oude schema). (b) Accepteer je creditcards aan de kassa? (c) Online bestellen-knop in het profiel naar de webshop, ja of nee? (d) Waar parkeren klanten bij de Bakkerssteeg?
+**Antwoord:** a ja, b ja, c ja, d parkeerplaats De Koem met parkeerschijf (15-11).
+
+---
+
+## 12. Dutch Tea Maestro naar Shopify (9 november)
+Plan: `~/.claude/plans/er-zijn-2-webshops-bright-squirrel.md`. Advies: tweede Shopify-store (Basic, ca. 40 euro per maand extra) voor eigen merk, domein en SEO, zonder risico voor Tante Rie.
+
+**V124 🟡 Tweede store voor DTM akkoord?** Alternatief is één store met beperkte merkscheiding (Basic kan geen eigen storefront per markt). Aanvullend: blijft dutchteamaestro.com het hoofddomein, en moet /pages/zakelijk op Tante Rie naar DTM verwijzen?
+**Antwoord:**
+
+**V125 🟡 B2B-model DTM: hybride of puur B2B?** Hybride is particulier (eigen mix, geschenken) plus bedrijfsaccounts, staffelprijs en netto-termijn. Input: Ankorstore-omzet en aantal zakelijke klanten, kun je die cijfers geven?
+**Antwoord:**
+
+**V126 ⚪ Planning en bouw.** Streefdatum go-live (advies januari of februari 2027, niet in Q4), budget voor thema en apps, en NAS-pad van het beeldmateriaal zodra het er staat.
 **Antwoord:**
 
 ---

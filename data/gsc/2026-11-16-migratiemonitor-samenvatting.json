@@ -1,0 +1,98 @@
+{
+ "datum": "2026-11-16",
+ "venster": [
+  "2026-11-07",
+  "2026-11-13"
+ ],
+ "aandeel": {
+  "impressions": 479,
+  "impressions_totaal": 480,
+  "aandeel_impressions": 99.8,
+  "clicks": 29,
+  "clicks_totaal": 29,
+  "aandeel_clicks": 100.0
+ },
+ "weken_op_rij": 3,
+ "rond": true,
+ "varianten": {
+  "https://www.tanterie.nl": {
+   "clicks": 0,
+   "impressions": 1,
+   "position": 36.0
+  },
+  "https://tanterie.nl": {
+   "clicks": 29,
+   "impressions": 479,
+   "position": 8.8
+  }
+ },
+ "track": {
+  "bunzlau servies": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 15,
+    "position": 1.0
+   },
+   "https://tanterie.nl/collections/bunzlau": {
+    "clicks": 0,
+    "impressions": 26,
+    "position": 13.7
+   }
+  },
+  "theewinkel": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 79,
+    "position": 8.6
+   }
+  },
+  "thee uit twente": {},
+  "tea": {
+   "https://tanterie.nl/": {
+    "clicks": 0,
+    "impressions": 12,
+    "position": 2.4
+   }
+  }
+ },
+ "aandeel_nietmerk": {
+  "impressions": 146,
+  "impressions_totaal": 146,
+  "aandeel_impressions": 100.0,
+  "clicks": 1,
+  "clicks_totaal": 1,
+  "aandeel_clicks": 100.0
+ },
+ "weken_op_rij_nietmerk": 3,
+ "rond_nietmerk": true,
+ "rond_bevestigd": true,
+ "gbp": {
+  "venster": [
+   "2026-11-05",
+   "2026-11-11"
+  ],
+  "vorig_venster": [
+   "2026-10-29",
+   "2026-11-04"
+  ],
+  "laatste_dag_met_data": "2026-11-13",
+  "nu": {
+   "BUSINESS_DIRECTION_REQUESTS": 18,
+   "WEBSITE_CLICKS": 43,
+   "CALL_CLICKS": 11,
+   "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 54,
+   "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 4,
+   "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 42,
+   "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 8
+  },
+  "vorig": {
+   "BUSINESS_DIRECTION_REQUESTS": 33,
+   "WEBSITE_CLICKS": 43,
+   "CALL_CLICKS": 3,
+   "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 46,
+   "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 6,
+   "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 48,
+   "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 8
+  }
+ }
+}

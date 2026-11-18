@@ -4,6 +4,7 @@ Verplaatst uit vragen-voor-mark.md (27-10-2026). Nieuwste bovenaan; een ingevuld
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 09-11 | V71 Dutch Tea Maestro (herzien) | Mark wil DTM (WooCommerce, dutchteamaestro.com, 179 producten) naar Shopify migreren. Zelfde onderneming als Tante Rie. B2B-model nog niet bepaald (werkhypothese hybride). Beeldmateriaal staat op andere laptop en komt op de NAS. Vervangt 'nu niets mee doen' van 23-10 | Plan `~/.claude/plans/er-zijn-2-webshops-bright-squirrel.md`; open punten V124 tot V126 |
 | 03-11 | V99 Zoekresultaat thee bewaarblik | Gecontroleerd door Claude in de ingebouwde browser (google.nl, ingelogd, geen privévenster, alleen pagina 1, geen schermafdruk opgeslagen). Arts & Craft blauw staat in het Afbeeldingen-blok (link met srsltid, dus Merchant-feed), niet als gewoon blauw resultaat. Flowers theeblik niet gezien op pagina 1. Gesponsorde Producten-carrousel bevat geen Tante Rie. Mark akkoord 03-11 om dit als antwoord vast te leggen | technisch/analyse-bewaarblik-producten-2026-10-30.md (hypothese productblok/afbeeldingen bevestigd voor A&C; geen titel- of metawijziging op basis hiervan) |
 | 26-10 | V95b Voorbeeld-URL's Ontbrekend veld image | Vervallen: Google bevestigde op 26-10 dat Verkopersvermeldingen, Productfragmenten en Reviewfragmenten zijn opgelost (3 pagina's bij image) | technisch/search-console-meldingen.md |
 | 25-10 | V87e TikTok-account | Het juiste account is tiktok.com/@tante.rie.borne, niet @tanterie | Opdracht aan PIM: sameAs in layout/theme.liquid en tiktok_url in sections/footer-group.json via themakopie; NAP-inventaris autoriteit/brief-2026-10-21.md |
@@ -132,3 +133,8 @@ Verplaatst uit vragen-voor-mark.md (27-10-2026). Nieuwste bovenaan; een ingevuld
 | 23-10 | V64 Levertijd | (a) verstuurd binnen 1 tot 2 werkdagen (23-10). "Bezorgd in  | verstuurd binnen 1-2 werkdagen |
 | 23-10 | V30 Chrome UX Report API | Ingeschakeld door Mark | Sleutel nog geblokkeerd voor CrUX, maar niet nodig: Google heeft voor tanterie.nl te weinig Chrome-bezoekers voor veldgegevens. PageSpeed (labmeting) werkt: mobiel 64, desktop 98 |
 | 23-10 | V68 Merchant Center analyse | Ja | technisch/merchant-center-analyse-2026-10-23.md, zie V69 |
+| 15-11 | V130 🔴 Speciale tijden in het Bedrijfsprofiel | Ja, voer maar door (15-11) | doorgevoerd en teruggelezen, zie changelog |
+| 15-11 | V131 🟡 Berichtenschema en attributen | a ja (schema 17-11, 24-11, 1-12, 8-12), b creditcard ja, c Online bestellen-knop ja, d parkeerplaats De Koem met parkeerschijf | b, c, d doorgevoerd (changelog); a: concepten beoordeeld, plaatsing per datum |
+| 15-11 | V128 🟡 Alt-teksten via PIM | Akkoord | 15 regels in pim-regels-concept.json, review loopt |
+| 15-11 | V129 🟡 Kamille en gemberwortel | Laten staan | geen actie |
+| 16-11 | V91 ⚪ Toegang Anke Kamp | Nikkie heeft de toegang ingetrokken (16-11) | gecontroleerd via API: alleen Nikkie en Mark staan nog in de lijst |

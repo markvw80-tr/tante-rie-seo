@@ -1,0 +1,88 @@
+{
+ "property": "sc-domain:tanterie.nl",
+ "rows": [
+  {
+   "keys": [
+    "2026-11-07"
+   ],
+   "clicks": 11,
+   "impressions": 550,
+   "ctr": 2.0,
+   "position": 9.7,
+   "date": "2026-11-07"
+  },
+  {
+   "keys": [
+    "2026-11-08"
+   ],
+   "clicks": 20,
+   "impressions": 556,
+   "ctr": 3.6,
+   "position": 9.2,
+   "date": "2026-11-08"
+  },
+  {
+   "keys": [
+    "2026-11-09"
+   ],
+   "clicks": 16,
+   "impressions": 518,
+   "ctr": 3.09,
+   "position": 9.5,
+   "date": "2026-11-09"
+  },
+  {
+   "keys": [
+    "2026-11-10"
+   ],
+   "clicks": 19,
+   "impressions": 526,
+   "ctr": 3.61,
+   "position": 8.7,
+   "date": "2026-11-10"
+  },
+  {
+   "keys": [
+    "2026-11-11"
+   ],
+   "clicks": 23,
+   "impressions": 581,
+   "ctr": 3.96,
+   "position": 9.3,
+   "date": "2026-11-11"
+  },
+  {
+   "keys": [
+    "2026-11-12"
+   ],
+   "clicks": 13,
+   "impressions": 582,
+   "ctr": 2.23,
+   "position": 9.4,
+   "date": "2026-11-12"
+  },
+  {
+   "keys": [
+    "2026-11-13"
+   ],
+   "clicks": 15,
+   "impressions": 650,
+   "ctr": 2.31,
+   "position": 9.1,
+   "date": "2026-11-13"
+  }
+ ],
+ "totals": {
+  "clicks": 117,
+  "impressions": 3963,
+  "ctr": 2.95,
+  "position": 0
+ },
+ "quick_wins": [],
+ "row_count": 7,
+ "error": null,
+ "date_range": {
+  "start": "2026-11-07",
+  "end": "2026-11-13"
+ }
+}

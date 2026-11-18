@@ -1,0 +1,209 @@
+{
+ "gemaakt": "2026-11-15",
+ "taal": "1010",
+ "locatie": "2528",
+ "actie": "volumes",
+ "resultaten": [
+  {
+   "zoekwoord": "losse thee",
+   "volume": 2900,
+   "concurrentie": "HIGH",
+   "per_maand": [
+    {
+     "jaar": 2025,
+     "maand": "NOVEMBER",
+     "volume": 4400
+    },
+    {
+     "jaar": 2025,
+     "maand": "DECEMBER",
+     "volume": 3600
+    },
+    {
+     "jaar": 2026,
+     "maand": "JANUARY",
+     "volume": 4400
+    },
+    {
+     "jaar": 2026,
+     "maand": "FEBRUARY",
+     "volume": 2900
+    },
+    {
+     "jaar": 2026,
+     "maand": "MARCH",
+     "volume": 2900
+    },
+    {
+     "jaar": 2026,
+     "maand": "APRIL",
+     "volume": 2400
+    },
+    {
+     "jaar": 2026,
+     "maand": "MAY",
+     "volume": 2400
+    },
+    {
+     "jaar": 2026,
+     "maand": "JUNE",
+     "volume": 1600
+    },
+    {
+     "jaar": 2026,
+     "maand": "JULY",
+     "volume": 1300
+    },
+    {
+     "jaar": 2026,
+     "maand": "AUGUST",
+     "volume": 1900
+    },
+    {
+     "jaar": 2026,
+     "maand": "SEPTEMBER",
+     "volume": 2400
+    },
+    {
+     "jaar": 2026,
+     "maand": "OCTOBER",
+     "volume": 2900
+    }
+   ]
+  },
+  {
+   "zoekwoord": "thee cadeau",
+   "volume": 1000,
+   "concurrentie": "HIGH",
+   "per_maand": [
+    {
+     "jaar": 2025,
+     "maand": "NOVEMBER",
+     "volume": 2400
+    },
+    {
+     "jaar": 2025,
+     "maand": "DECEMBER",
+     "volume": 2900
+    },
+    {
+     "jaar": 2026,
+     "maand": "JANUARY",
+     "volume": 1000
+    },
+    {
+     "jaar": 2026,
+     "maand": "FEBRUARY",
+     "volume": 1000
+    },
+    {
+     "jaar": 2026,
+     "maand": "MARCH",
+     "volume": 1000
+    },
+    {
+     "jaar": 2026,
+     "maand": "APRIL",
+     "volume": 720
+    },
+    {
+     "jaar": 2026,
+     "maand": "MAY",
+     "volume": 880
+    },
+    {
+     "jaar": 2026,
+     "maand": "JUNE",
+     "volume": 720
+    },
+    {
+     "jaar": 2026,
+     "maand": "JULY",
+     "volume": 590
+    },
+    {
+     "jaar": 2026,
+     "maand": "AUGUST",
+     "volume": 590
+    },
+    {
+     "jaar": 2026,
+     "maand": "SEPTEMBER",
+     "volume": 880
+    },
+    {
+     "jaar": 2026,
+     "maand": "OCTOBER",
+     "volume": 1000
+    }
+   ]
+  },
+  {
+   "zoekwoord": "bunzlau castle",
+   "volume": 5400,
+   "concurrentie": "HIGH",
+   "per_maand": [
+    {
+     "jaar": 2025,
+     "maand": "NOVEMBER",
+     "volume": 8100
+    },
+    {
+     "jaar": 2025,
+     "maand": "DECEMBER",
+     "volume": 9900
+    },
+    {
+     "jaar": 2026,
+     "maand": "JANUARY",
+     "volume": 6600
+    },
+    {
+     "jaar": 2026,
+     "maand": "FEBRUARY",
+     "volume": 4400
+    },
+    {
+     "jaar": 2026,
+     "maand": "MARCH",
+     "volume": 5400
+    },
+    {
+     "jaar": 2026,
+     "maand": "APRIL",
+     "volume": 5400
+    },
+    {
+     "jaar": 2026,
+     "maand": "MAY",
+     "volume": 5400
+    },
+    {
+     "jaar": 2026,
+     "maand": "JUNE",
+     "volume": 4400
+    },
+    {
+     "jaar": 2026,
+     "maand": "JULY",
+     "volume": 4400
+    },
+    {
+     "jaar": 2026,
+     "maand": "AUGUST",
+     "volume": 5400
+    },
+    {
+     "jaar": 2026,
+     "maand": "SEPTEMBER",
+     "volume": 5400
+    },
+    {
+     "jaar": 2026,
+     "maand": "OCTOBER",
+     "volume": 5400
+    }
+   ]
+  }
+ ]
+}

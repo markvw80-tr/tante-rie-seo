@@ -1,0 +1,161 @@
+{
+ "gemaakt": "2026-11-15",
+ "doel": "Backup V65 speciaaltijden vóór wijziging",
+ "inhoud": {
+  "specialHourPeriods": [
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 5
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 5
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 6
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 6
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 19
+    },
+    "openTime": {
+     "hours": 12
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 19
+    },
+    "closeTime": {
+     "hours": 17
+    }
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 27
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 4,
+     "day": 27
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 5
+    },
+    "openTime": {
+     "hours": 10
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 5
+    },
+    "closeTime": {
+     "hours": 17
+    }
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 14
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 14
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 24
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 24
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 25
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 5,
+     "day": 25
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 12,
+     "day": 25
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 12,
+     "day": 25
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2026,
+     "month": 12,
+     "day": 26
+    },
+    "endDate": {
+     "year": 2026,
+     "month": 12,
+     "day": 26
+    },
+    "closed": true
+   },
+   {
+    "startDate": {
+     "year": 2027,
+     "month": 1,
+     "day": 1
+    },
+    "endDate": {
+     "year": 2027,
+     "month": 1,
+     "day": 1
+    },
+    "closed": true
+   }
+  ]
+ }
+}
