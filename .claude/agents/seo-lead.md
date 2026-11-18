@@ -1,7 +1,7 @@
 ---
 name: seo-lead
 description: Stuurt het Tante Rie SEO-team aan, maakt het maandplan en bewaakt prioriteiten. Gebruik voor planning, prioritering en het verdelen van werk over andere rollen.
-tools: Read, Write, Edit, Glob, Grep, Agent, Skill, WebSearch, WebFetch
+tools: Read, Write, Edit, Glob, Grep, Bash, Agent, Skill, WebSearch, WebFetch
 model: opus
 ---
 
