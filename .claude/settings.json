@@ -9,11 +9,11 @@
       "Bash(python3 scripts/mailbox.py lees*)",
       "Bash(python3 scripts/mailbox.py verwerkt*)",
       "Bash(python3 scripts/mailbox.py stuur*)",
+      "Bash(python3 scripts/mailbox.py status*)",
       "Bash(python3 scripts/pim_regels.py nieuw*)",
       "Bash(python3 scripts/pim_regels.py controleer*)",
       "Bash(python3 scripts/pim_regels.py stuur*)",
       "Bash(graphify query*)",
-      "Edit(~/tante-rie-hq/team/status.md)",
       "Bash(git status*)",
       "Bash(git log*)",
       "Bash(git diff*)"
