@@ -1,6 +1,6 @@
 # Voorstel homepage-links en afbeeldingen, 21 oktober 2026
 
-Status: voorbereid en getest in het preview-thema "SEO-fixes-hoog preview 2026-10-21" (203908153608, ongepubliceerd). Live is niets gepusht. Het werk staat in twee commits in `/Users/markvanwijk/Tante Rie SEO/scripts/theme-live-2026-10-21/`, bovenop afb8147. De volledige diff staat in `marketing/technisch/voorstel-homepage-links-webp-2026-10-21.diff`.
+Status: voorbereid en getest in het preview-thema "SEO-fixes-hoog preview 2026-10-21" (203908153608, ongepubliceerd). Live is niets gepusht. Het werk staat in twee commits in `/Users/markvanwijk/tante-rie/tante-rie-seo/scripts/theme-live-2026-10-21/`, bovenop afb8147. De volledige diff staat in `marketing/technisch/voorstel-homepage-links-webp-2026-10-21.diff`.
 
 ## A. Oude schema-thema's verwijderd
 
@@ -81,7 +81,7 @@ Commits: b91fb65 (linkblok) en a903791 (sizes), los van elkaar terug te draaien.
 Eerst opnieuw controleren dat live nog gelijk is aan de basis (optioneel), daarna alleen dit ene bestand naar live:
 
 ```
-cd "/Users/markvanwijk/Tante Rie SEO/scripts/theme-live-2026-10-21"
+cd "/Users/markvanwijk/tante-rie/tante-rie-seo/scripts/theme-live-2026-10-21"
 shopify theme push --theme 203153015048 --store 0qkm31-r6.myshopify.com --only sections/tr-homepage-redesign.liquid --allow-live
 ```
 

@@ -167,4 +167,4 @@ N3. Pu-erh thee: welk zetadvies geldt, 95 °C en 5 tot 7 minuten (metavelden) of
 
 N4. Zwarte-thee en groene-thee: mag de levertijd in de description in dezelfde batch worden bijgewerkt (M4 en M5)? Prioriteit laag.
 
-N5. De paginatitel van kruidenthee en vruchtenthee zit in het thema (Shopify geeft een lege SEO-title). Kan iemand met toegang tot ~/TanteRie-Theme-Editor de huidige titel bevestigen? Prioriteit laag, alleen nodig als de titel zonder "Cafeïnevrij" moet.
+N5. De paginatitel van kruidenthee en vruchtenthee zit in het thema (Shopify geeft een lege SEO-title). Kan iemand met toegang tot ~/tante-rie/tante-rie-theme de huidige titel bevestigen? Prioriteit laag, alleen nodig als de titel zonder "Cafeïnevrij" moet.

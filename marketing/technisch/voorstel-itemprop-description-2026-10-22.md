@@ -22,7 +22,7 @@ Het blok zit in de wrapper `<div class="trjf-wrap" itemscope itemtype="https://s
 
 Live thema: #203153015048 "Agent-ready koppen 2026-10-09". Alleen-lezen gepulld naar de tijdelijke map `/private/tmp/claude-502/-Users-markvanwijk-Tante-Rie-SEO/1c751388-c258-4414-9897-6c2624328a37/scratchpad/livepull` (`shopify theme pull --only ... --nodelete`, geen push).
 
-- `sections/tr-collection-joeff.liquid`: lokaal in `~/TanteRie-Theme-Editor` is byte-voor-byte gelijk aan live en gelijk aan `scripts/theme-live-2026-10-21`. Het voorstel is dus op de juiste versie gebaseerd. Let op: het bestand staat in die repo als untracked (nog niet gecommit), dus git blame helpt niet. Maak het voorstel als wijziging in een themakopie en commit het daar.
+- `sections/tr-collection-joeff.liquid`: lokaal in `~/tante-rie/tante-rie-theme` is byte-voor-byte gelijk aan live en gelijk aan `scripts/theme-live-2026-10-21`. Het voorstel is dus op de juiste versie gebaseerd. Let op: het bestand staat in die repo als untracked (nog niet gecommit), dus git blame helpt niet. Maak het voorstel als wijziging in een themakopie en commit het daar.
 - `sections/tr-collection-bunzlau.liquid`: wijkt lokaal af van live (live heeft srcset/sizes op productkaarten, lokaal niet). De itemprop-regel is wel gelijk.
 - `sections/tr-collection-redesign.liquid` en enkele `templates/collection.*.json` verschillen ook, maar de live templates beginnen met het Shopify-autogenerate-commentaar. Dat is ruis, geen inhoudelijk verschil voor dit onderwerp.
 - `layout/theme.liquid` is gelijk.
@@ -74,7 +74,7 @@ Na (uitkomst voor Joeff vandaag):
 
 en in JSON-LD `"description"` van `""` naar dezelfde zin.
 
-Het volledige diff staat in `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-itemprop-description-2026-10-22.diff`:
+Het volledige diff staat in `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/voorstel-itemprop-description-2026-10-22.diff`:
 
 ```diff
 --- a/sections/tr-collection-joeff.liquid
@@ -99,7 +99,7 @@ Voor de overige 8 collectiesecties raad ik hetzelfde patroon aan, in een tweede 
 
 Uitvoering (nog niet gedaan, wacht op akkoord):
 
-1. `shopify theme duplicate` van live #203153015048, wijziging in de kopie of in een aparte branch in `~/TanteRie-Theme-Editor`.
+1. `shopify theme duplicate` van live #203153015048, wijziging in de kopie of in een aparte branch in `~/tante-rie/tante-rie-theme`.
 2. Diff laten zien, akkoord van Mark afwachten.
 3. Controle na wijziging: curl op de previewcollectie (meta-description, itemprop en JSON-LD), Rich Results Test op `/collections/joeff`, daarna publicatie en een nieuwe crawl.
 4. Pas daarna een regel in `marketing/changelog.md`.
@@ -117,7 +117,7 @@ Er is niets live gezet. Het live thema #203153015048 is niet aangeraakt (live HT
 Correctie op rubriek 3: het gaat om 10 secties, niet 9 (van de 11 collectiesecties heeft alleen `tr-collection-redesign` geen itemprop-description). Alle 10 zijn aangepast.
 
 - Themakopie: "itemprop-description 2026-10-22", theme-id 203977687304, ongepubliceerd. Gemaakt met `shopify theme duplicate` van #203153015048, alleen de 10 collectiesecties gepusht met `--only` en `--nodelete`.
-- Diff (10 bestanden, 20 hunks): `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/itemprop-description-2026-10-22.diff`
+- Diff (10 bestanden, 20 hunks): `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/itemprop-description-2026-10-22.diff`
 - Gebruikte logica: `_seo_desc` = `page_description`, anders `collection.description`, ontdaan van HTML en van HTML-entiteiten. De meta krijgt `| escape`, de JSON-LD `| json`. Zijn beide leeg, dan vervalt de meta-regel. De eerste versie gaf dubbele escaping (`&amp;amp;` bij Rice, Bunzlau, Blond) en afkapping op 200 tekens; beide zijn gecorrigeerd en opnieuw gepusht en gecontroleerd.
 - Preview: `https://tanterie.nl/collections/<handle>?preview_theme_id=203977687304` (cookie nodig, dus in de browser openen of met curl en cookie-jar).
 

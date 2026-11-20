@@ -36,7 +36,7 @@ SCOPE = ["https://www.googleapis.com/auth/business.manage"]
 CONF = os.path.expanduser("~/.config/claude-seo/")
 CLIENT = CONF + "gbp-oauth-client.json"
 TOKEN = CONF + "gbp-token.json"
-ROOT = "/Users/markvanwijk/Tante Rie SEO/"
+ROOT = "/Users/markvanwijk/tante-rie/tante-rie-seo/"
 OUT = ROOT + "data/gbp/"
 
 METRICS = [

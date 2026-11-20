@@ -30,7 +30,7 @@ Bij nieuwe reviews komen er vanzelf producten bij. Het probleem groeit dus mee m
 - In de templates is dat een appblok: `shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-...` (onder meer in templates/product.json, product.thee.json, product.rice.json, product.accessoires.json, product.waterfles.json, product.bakmix.json). Het script wordt dus door de app zelf gerenderd binnen dat blok. Er staat geen JSON-LD-code van Judge.me in een snippet van het thema.
 - Verder staat de app-embed `judgeme_core` aan in config/settings_data.json. Die laadt de scripts en de instellingen (`window.jdgmSettings`).
 - De snippets `judgeme_widgets.liquid` en `judge-me-review-widget.liquid` bevatten alleen lege mount-divs, geen schema.
-- Het themablok komt uit `snippets/tr-product-schema.liquid` (live versie, dus mét `tr-offer-policies`; let op: de lokale map ~/TanteRie-Theme-Editor loopt achter op live, werk daarom vanaf het live thema).
+- Het themablok komt uit `snippets/tr-product-schema.liquid` (live versie, dus mét `tr-offer-policies`; let op: de lokale map ~/tante-rie/tante-rie-theme loopt achter op live, werk daarom vanaf het live thema).
 
 Gevolg: het appblok verwijderen uit het thema zou ook de zichtbare reviews en sterren op de pagina laten verdwijnen. Dat is dus niet de route.
 
@@ -76,7 +76,7 @@ Twee Product-blokken: thema (offers, shippingDetails, brand, sku, aggregateRatin
 
 Een Product-blok: thema met offers, shippingDetails, brand, sku, aggregateRating en nu ook `review[]` met dezelfde 5 reviews uit `judgeme.review_widget_data`. Judge.me-blok weg door de JSON-LD-instelling uit te zetten.
 
-### Stap A: themawerk (diff in `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-judgeme-schema-2026-10-23.diff`)
+### Stap A: themawerk (diff in `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/voorstel-judgeme-schema-2026-10-23.diff`)
 
 Wijziging in `snippets/tr-product-schema.liquid` (live versie van thema #203153015048): een variabele `jm_reviews` uit `product.metafields.judgeme.review_widget_data.value.reviews` en, binnen de bestaande aggregateRating-voorwaarde, een `review`-array (max 10, velden reviewRating, author, name indien een titel bestaat, reviewBody, datePublished). Geen wijzigingen aan offers.
 
@@ -106,6 +106,6 @@ Volgorde is belangrijk. Zet Judge.me pas uit nadat het thema met `review[]` live
 ## Bronnen en bestanden
 
 - Ruwe pagina's en analyse: /private/tmp/claude-502/scratch/pages/ en /private/tmp/claude-502/scratch/rows.json
-- Diff: /Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-judgeme-schema-2026-10-23.diff
+- Diff: /Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/voorstel-judgeme-schema-2026-10-23.diff
 - Judge.me-helpartikel: https://judge.me/help/en/articles/8409296-displaying-product-ratings-in-google-search-results
 - changelog.md en vragen-voor-mark.md zijn niet aangeraakt.

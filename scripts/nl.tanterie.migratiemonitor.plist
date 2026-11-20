@@ -4,10 +4,10 @@
 <dict>
   <key>Label</key><string>nl.tanterie.migratiemonitor</string>
   <key>ProgramArguments</key>
-  <array><string>/Users/markvanwijk/Tante Rie SEO/scripts/run-migratiemonitor.sh</string></array>
+  <array><string>/Users/markvanwijk/tante-rie/tante-rie-seo/scripts/run-migratiemonitor.sh</string></array>
   <key>StartCalendarInterval</key>
   <dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>
-  <key>StandardOutPath</key><string>/Users/markvanwijk/Tante Rie SEO/scripts/logs/launchd.out</string>
-  <key>StandardErrorPath</key><string>/Users/markvanwijk/Tante Rie SEO/scripts/logs/launchd.err</string>
+  <key>StandardOutPath</key><string>/Users/markvanwijk/tante-rie/tante-rie-seo/scripts/logs/launchd.out</string>
+  <key>StandardErrorPath</key><string>/Users/markvanwijk/tante-rie/tante-rie-seo/scripts/logs/launchd.err</string>
 </dict>
 </plist>

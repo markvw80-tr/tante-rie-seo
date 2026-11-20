@@ -11,7 +11,7 @@ import collections
 
 from zoekwoord_score import score, pos_factor, ctr_factor
 
-BASE = "/Users/markvanwijk/Tante Rie SEO/data/gsc/"
+BASE = "/Users/markvanwijk/tante-rie/tante-rie-seo/data/gsc/"
 D = "2026-10-21"
 
 

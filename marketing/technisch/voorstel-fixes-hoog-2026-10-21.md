@@ -3,7 +3,7 @@
 Status: alleen voorbereid. Er is niets gepubliceerd, geduplicatet of gewijzigd in Shopify, het thema of de store-data, en er is niets in changelog.md geschreven. De themawijzigingen staan in een lokale git-kopie van het live thema.
 
 Bronnen en locaties:
-- Live thema "Agent-ready koppen 2026-10-09" (#203153015048), alleen gelezen met `shopify theme pull`, in `/Users/markvanwijk/Tante Rie SEO/scripts/theme-live-2026-10-21/` (baseline-commit "live baseline 2026-10-21", daarna vier commits: Hoog 1 + Middel 3, Hoog 3, verzendtarief per gewichtsklasse, levertijd).
+- Live thema "Agent-ready koppen 2026-10-09" (#203153015048), alleen gelezen met `shopify theme pull`, in `/Users/markvanwijk/tante-rie/tante-rie-seo/scripts/theme-live-2026-10-21/` (baseline-commit "live baseline 2026-10-21", daarna vier commits: Hoog 1 + Middel 3, Hoog 3, verzendtarief per gewichtsklasse, levertijd).
 - Referentiethema's, alleen gelezen: `scripts/theme-ref-199507345672/` (SEO-fase4-schema-fixes preview 2026-07-26) en `scripts/theme-ref-202361864456/` (SEO-audit-fixes 2026-09-25).
 - Volledige diff: `marketing/technisch/voorstel-fixes-hoog-2026-10-21.diff` (8 bestanden, 4 commits; zie `git diff 13aa7df..HEAD`).
 - Hoog 2 (404's) is afgehandeld op basis van Marks besluit, zie onderaan.
@@ -14,7 +14,7 @@ Bronnen en locaties:
 2. Hoog 3 (mobiele snelheid): het live thema heeft al veel van wat de audit voorstelde (srcset op de hoofdafbeelding, fetchpriority, preconnect, display=swap, niet-blokkerende lettertypen, defer en lage prioriteit op scripts). Ik heb daarom alleen kleine markupwijzigingen gedaan voor afbeeldingsmaten (srcset en sizes op productkaarten en de hoofdafbeelding). De grote winst zit in render-blocking CSS en apps en is een voorstel, geen wijziging.
 3. Hoog 2 (404's): besluit van Mark, geen redirect, de 404 blijft staan. Luminlique-producten staan alleen in de POS voor de kassa in de winkel.
 
-Afwijkingen tussen de audit (gebaseerd op ~/TanteRie-Theme-Editor) en het live thema:
+Afwijkingen tussen de audit (gebaseerd op ~/tante-rie/tante-rie-theme) en het live thema:
 - `schema-structured-data.liquid:11-13`: klopt, zelfde regelnummers.
 - `product-cro.liquid`: het live Product-blok staat op regel 519 (audit: 522) en heeft helemaal geen `@id` (de audit noemde een relatieve `@id`). Er is ook geen enkel actief product dat dit template nodig heeft aangetoond: beste-van-borne gebruikt template `thee`, niet `cro`. Het live Product op beste-van-borne is dus het gewone blok uit `schema-structured-data`, zonder verzend- en retourgegevens.
 - Homepage-ItemList: de live versie (`tr-homepage-redesign.liquid:299-340`) geeft alle 4 Product-items al een `offers`. De fout "8 Product-items zonder offers" komt uit een oudere crawl en is waarschijnlijk al weg. Controleer dat in de Rich Results Test.
@@ -46,7 +46,7 @@ Afwijkingen tussen de audit (gebaseerd op ~/TanteRie-Theme-Editor) en het live t
 
 Thema "SEO-fixes-hoog preview 2026-10-21", id 203908153608, aangemaakt met `shopify theme duplicate` van het live thema 203153015048. Voor het pushen is een nieuwe pull van live vergeleken met de baseline (13aa7df): geen enkel bestand was gewijzigd. Er zijn met `--only` alleen de 8 gewijzigde bestanden naar het preview-thema gepusht. Niets naar het live thema, geen publicatie.
 
-Preview-URL: https://tanterie.nl/?preview_theme_id=203908153608 (of https://0qkm31-r6.myshopify.com?preview_theme_id=203908153608). Op 21 oktober 2026 per pagina opgehaald met curl (cookie bewaard, pauzes van 5 seconden, geen 429) en de HTML nagelopen op Liquid-fouten en de JSON-LD geparsed. De opgehaalde HTML staat in `/Users/markvanwijk/Tante Rie SEO/data/preview-2026-10-21/`.
+Preview-URL: https://tanterie.nl/?preview_theme_id=203908153608 (of https://0qkm31-r6.myshopify.com?preview_theme_id=203908153608). Op 21 oktober 2026 per pagina opgehaald met curl (cookie bewaard, pauzes van 5 seconden, geen 429) en de HTML nagelopen op Liquid-fouten en de JSON-LD geparsed. De opgehaalde HTML staat in `/Users/markvanwijk/tante-rie/tante-rie-seo/data/preview-2026-10-21/`.
 
 | Pagina | Product | Breadcrumb | JSON geldig | Liquid-fouten | Offer: verzending | Levertijd (verwerking, bezorging) | Retour |
 |---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@ Publiceren gebeurt pas na dit testrapport en een laatste go van Mark. Het previe
 
 ## Producten zonder gewicht
 
-Export: `/Users/markvanwijk/Tante Rie SEO/data/2026-10-21-producten-zonder-gewicht.csv` (alleen lezen via GraphQL en de publieke storefront-gegevens). Kolommen: titel, handle, product type, vendor, variant, sku, status, gepubliceerd online (ja/nee), en een extra kolom POS-only (ja/nee). Online gepubliceerde producten staan bovenaan, daarna de POS-only producten.
+Export: `/Users/markvanwijk/tante-rie/tante-rie-seo/data/2026-10-21-producten-zonder-gewicht.csv` (alleen lezen via GraphQL en de publieke storefront-gegevens). Kolommen: titel, handle, product type, vendor, variant, sku, status, gepubliceerd online (ja/nee), en een extra kolom POS-only (ja/nee). Online gepubliceerde producten staan bovenaan, daarna de POS-only producten.
 
 Inhoud: 2.739 regels. Dat zijn 2.448 variantregels voor 240 online producten en 291 regels voor 290 POS-only producten (actief, niet gepubliceerd in de online winkel). Voor een deel van de POS-only Bunzlau- en Rice-producten met veel varianten (bijvoorbeeld Tulp mok 200 ml met 59 varianten) staat een regel per product met het aantal varianten in de kolom variant, niet een regel per variant. Concept- (294) en gearchiveerde producten (5) zijn niet opgenomen, omdat ze nergens verkocht worden; zeg het als je ze ook wilt. Producten met een gewicht boven 0 zijn niet opgenomen (bijvoorbeeld de ricebowls met 100 gram).
 

@@ -133,7 +133,7 @@ Tekst van het verzoek (contactformulier of na het claimen):
 
 Juiste profiel: https://www.tiktok.com/@tante.rie.borne (besluit Mark, V77b). Ik kon het profiel zelf niet openen of via zoeken bevestigen; Mark ziet in de app of de link werkt.
 
-Wat vastgesteld is (brief 21-10, paragraaf 4): de LocalBusiness-markup op tanterie.nl noemt in sameAs een TikTok-link met @tanterie. De thema-code staat niet in deze omgeving (`~/TanteRie-Theme-Editor` ontbreekt) en tanterie.nl was niet bereikbaar, dus de exacte plek is niet vast te stellen. Waarschijnlijk zijn dit de plekken, te controleren door Technisch SEO of in het thema:
+Wat vastgesteld is (brief 21-10, paragraaf 4): de LocalBusiness-markup op tanterie.nl noemt in sameAs een TikTok-link met @tanterie. De thema-code staat niet in deze omgeving (`~/tante-rie/tante-rie-theme` ontbreekt) en tanterie.nl was niet bereikbaar, dus de exacte plek is niet vast te stellen. Waarschijnlijk zijn dit de plekken, te controleren door Technisch SEO of in het thema:
 
 | Plek | Wat | Wie |
 |---|---|---|

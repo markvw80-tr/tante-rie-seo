@@ -14,7 +14,7 @@ import sys
 import collections
 from urllib.parse import urlparse
 
-BASE = "/Users/markvanwijk/Tante Rie SEO/data/gsc/"
+BASE = "/Users/markvanwijk/tante-rie/tante-rie-seo/data/gsc/"
 DATUM = "2026-10-21"
 
 # ---------------------------------------------------------------- merk

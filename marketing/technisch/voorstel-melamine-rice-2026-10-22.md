@@ -46,7 +46,7 @@ Tijdelijke weergave met `?view=bunzlau-melamine`, zonder de productdata te wijzi
 Let op: de balk bovenaan de melamine-pagina blijft de normale ("Snelle verzending: 1-2 werkdagen!" en "Verzendkosten vanaf €4,50"), omdat die alleen op template blond en bunzlau wordt vervangen. Dat is gewenst.
 
 ### Diff
-Volledige diff (3 bestanden): `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/melamine-sjabloon-2026-10-22.diff`. Het verschil tussen de nieuwe sectie en `tr-product-bunzlau` staat in `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/melamine-sjabloon-verschil-met-bunzlau-2026-10-22.diff` en hieronder.
+Volledige diff (3 bestanden): `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/melamine-sjabloon-2026-10-22.diff`. Het verschil tussen de nieuwe sectie en `tr-product-bunzlau` staat in `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/melamine-sjabloon-verschil-met-bunzlau-2026-10-22.diff` en hieronder.
 
 Template (nieuw):
 ```json

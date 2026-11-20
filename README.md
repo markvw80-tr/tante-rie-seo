@@ -21,4 +21,4 @@ SEO-marketingteam voor tanterie.nl (Shopify). Spelregels, rollen en werkvolgorde
 | `notities/` | Losse notities, besluiten, ideeën |
 | `scripts/mailbox.py` | Doorverwijzing naar de mailbox in tante-rie-hq (`team/mailbox/`) |
 
-Theme-code staat in `~/TanteRie-Theme-Editor`, niet hier.
+Theme-code staat in `~/tante-rie/tante-rie-theme`, niet hier.

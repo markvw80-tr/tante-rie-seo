@@ -9,7 +9,7 @@ Doel: de volumes in data/keyword-planner/ krijgen, zodat de zoekwoordonderzoeker
 Ga naar de map van de repository en haal deze branch op:
 
 ```bash
-cd "/Users/markvanwijk/Tante Rie SEO"
+cd "/Users/markvanwijk/tante-rie/tante-rie-seo"
 git fetch origin && git checkout claude/zoekwoord-volumes && git pull
 pip3 install --upgrade google-ads google-auth-oauthlib
 ```

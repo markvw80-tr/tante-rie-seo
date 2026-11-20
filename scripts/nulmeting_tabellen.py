@@ -15,7 +15,7 @@ import gsc_hulp as g
 import zoekwoord_clusters as zc
 
 P = "2026-10-21-nulmeting-"
-MD = "/Users/markvanwijk/Tante Rie SEO/marketing/zoekwoorden/clusters-2026-10-21.md"
+MD = "/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/zoekwoorden/clusters-2026-10-21.md"
 
 
 def rows(per, naam):

@@ -26,7 +26,7 @@ from google.auth.transport.requests import AuthorizedSession, Request
 from google.oauth2.credentials import Credentials
 
 TOKEN = os.path.expanduser("~/.config/claude-seo/gbp-token.json")
-ROOT = "/Users/markvanwijk/Tante Rie SEO/"
+ROOT = "/Users/markvanwijk/tante-rie/tante-rie-seo/"
 LOC = "locations/6267696427702073490"
 ACCOUNT = "accounts/101666303135035326611"
 INFO = "https://mybusinessbusinessinformation.googleapis.com/v1/"

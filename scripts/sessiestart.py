@@ -10,7 +10,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-HQ = Path.home() / "tante-rie-hq"
+HQ = Path.home() / "tante-rie" / "tante-rie-hq"
 HIER = Path(__file__).resolve().parent
 BLOKKEN = int(sys.argv[1]) if len(sys.argv) > 1 else 3
 

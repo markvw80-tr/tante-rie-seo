@@ -1,6 +1,6 @@
 # Voorstel /collections/servies en atelier-zinnen op Blond-producten (22 oktober 2026)
 
-Opgesteld door On-page op 22 oktober 2026. Status: voorstel, wacht op de Kwaliteitsredacteur en Mark. Er is niets gewijzigd in Shopify, het thema of de live pagina's, en er is niets in changelog.md gezet. Shopify is alleen gelezen; het thema is alleen gelezen in ~/TanteRie-Theme-Editor.
+Opgesteld door On-page op 22 oktober 2026. Status: voorstel, wacht op de Kwaliteitsredacteur en Mark. Er is niets gewijzigd in Shopify, het thema of de live pagina's, en er is niets in changelog.md gezet. Shopify is alleen gelezen; het thema is alleen gelezen in ~/tante-rie/tante-rie-theme.
 
 Cijfers: Search Console, property sc-domain:tanterie.nl, 22 september tot en met 19 oktober 2026 (28 dagen), uit data/gsc/2026-10-21-nulmeting-huidig-page.json en 2026-10-21-nulmeting-huidig-querypage.json. URL-inspectie van /collections/servies via gsc_inspect (22 oktober 2026).
 

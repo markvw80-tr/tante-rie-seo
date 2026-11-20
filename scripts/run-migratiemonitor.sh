@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Wekelijkse migratiemonitor Tante Rie (launchd: nl.tanterie.migratiemonitor)
 export PYTHONWARNINGS=ignore
-PROJECT="/Users/markvanwijk/Tante Rie SEO"
+PROJECT="/Users/markvanwijk/tante-rie/tante-rie-seo"
 LOG="$PROJECT/scripts/logs/migratiemonitor.log"
 mkdir -p "$PROJECT/scripts/logs"
 cd "$PROJECT" || exit 1

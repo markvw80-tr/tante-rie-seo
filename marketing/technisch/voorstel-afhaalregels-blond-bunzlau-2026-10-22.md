@@ -50,7 +50,7 @@ Teksten zonder uitroeptekens en zonder em-dashes. Definitieve formulering: On-pa
 
 ## 5. Diff
 
-Pad t.o.v. het live thema. Ook als losse file: `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/voorstel-afhaalregels-blond-bunzlau-2026-10-22.diff`. Niet uitgevoerd.
+Pad t.o.v. het live thema. Ook als losse file: `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/voorstel-afhaalregels-blond-bunzlau-2026-10-22.diff`. Niet uitgevoerd.
 
 ```diff
 diff -u a/blocks/_announcement.liquid b/blocks/_announcement.liquid
@@ -155,7 +155,7 @@ Er is niets naar het live thema gepusht (#203153015048 onveranderd).
 
 ### Diff (4 hunks, 3 bestanden)
 
-Ook als losse file: `/Users/markvanwijk/Tante Rie SEO/marketing/technisch/afhaalregels-2026-10-22.diff`.
+Ook als losse file: `/Users/markvanwijk/tante-rie/tante-rie-seo/marketing/technisch/afhaalregels-2026-10-22.diff`.
 
 ```diff
 diff -u a/blocks/_announcement.liquid b/blocks/_announcement.liquid

@@ -27,7 +27,7 @@ from google.auth.transport.requests import AuthorizedSession, Request
 from google.oauth2.credentials import Credentials
 
 TOKEN = os.path.expanduser("~/.config/claude-seo/merchant-token.json")
-ROOT = "/Users/markvanwijk/Tante Rie SEO/"
+ROOT = "/Users/markvanwijk/tante-rie/tante-rie-seo/"
 ACC = "accounts/5716348221"
 ACC2 = "accounts/5819585029"  # tweede account met automatische feed (V70)
 API = "https://merchantapi.googleapis.com/accounts/v1/"

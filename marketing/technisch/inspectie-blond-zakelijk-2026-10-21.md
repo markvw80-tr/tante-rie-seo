@@ -44,7 +44,7 @@ Verschuiving of kannibalisatie: van de 362 vertoningen voor de val stonden er 29
 
 ### 4. Changelog en themageschiedenis
 
-In changelog.md staat voor 24 september niets over Blond of de pagina; de vermelding over Blond (21-10) valt na de val. Shopify toont als laatste wijziging van de pagina 17-08-2026, dus de inhoud is niet aangepast. Wel zijn op 25-09-2026 09:14 meerdere andere pagina's bijgewerkt (Contact, Privacy, Over ons, Veelgestelde vragen, Cold Brew, Theewinkel en andere), de Blond-pagina niet, en die bulkwijziging ligt een dag na de val. Thema's rond de datum: "Fix-bunzlau-voorraad-per-variant 2026-09-11" en "SEO-audit-fixes 2026-09-25", beide niet gepubliceerd (preview). De git-geschiedenis in ~/TanteRie-Theme-Editor loopt maar tot 27 mei 2026 en bevat dus niets voor deze periode. Er is geen aanwijsbare eigen wijziging op 23 of 24 september.
+In changelog.md staat voor 24 september niets over Blond of de pagina; de vermelding over Blond (21-10) valt na de val. Shopify toont als laatste wijziging van de pagina 17-08-2026, dus de inhoud is niet aangepast. Wel zijn op 25-09-2026 09:14 meerdere andere pagina's bijgewerkt (Contact, Privacy, Over ons, Veelgestelde vragen, Cold Brew, Theewinkel en andere), de Blond-pagina niet, en die bulkwijziging ligt een dag na de val. Thema's rond de datum: "Fix-bunzlau-voorraad-per-variant 2026-09-11" en "SEO-audit-fixes 2026-09-25", beide niet gepubliceerd (preview). De git-geschiedenis in ~/tante-rie/tante-rie-theme loopt maar tot 27 mei 2026 en bevat dus niets voor deze periode. Er is geen aanwijsbare eigen wijziging op 23 of 24 september.
 
 ### 5. Conclusie, zekerheid en oplossing
 
@@ -93,4 +93,4 @@ Wat Mark nog moet doen: niets verplicht. Controleer eventueel:
 
 ## Ruwe data
 
-Bestanden in /Users/markvanwijk/Tante Rie SEO/data/gsc/: 2026-10-21-blond-inspect-*.json (vijf URL-inspecties), 2026-10-21-blond-date-page.json, 2026-10-21-blond-date-query-page.json en 2026-10-21-blond-site-date-page-alles.json (alle pagina's per dag, 1 augustus t/m 21 oktober).
+Bestanden in /Users/markvanwijk/tante-rie/tante-rie-seo/data/gsc/: 2026-10-21-blond-inspect-*.json (vijf URL-inspecties), 2026-10-21-blond-date-page.json, 2026-10-21-blond-date-query-page.json en 2026-10-21-blond-site-date-page-alles.json (alle pagina's per dag, 1 augustus t/m 21 oktober).

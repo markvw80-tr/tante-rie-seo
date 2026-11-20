@@ -3,5 +3,5 @@
 import os
 import sys
 
-HQ = os.path.join(os.path.expanduser("~"), "tante-rie-hq", "scripts", "mailbox.py")
+HQ = os.path.join(os.path.expanduser("~"), "tante-rie", "tante-rie-hq", "scripts", "mailbox.py")
 os.execv(sys.executable, [sys.executable, HQ, *sys.argv[1:]])

@@ -10,7 +10,7 @@ import sys
 from urllib.parse import urlparse
 
 GSC_DIR = os.path.expanduser("~/.claude/skills/seo/scripts")
-DATA = "/Users/markvanwijk/Tante Rie SEO/data/gsc/"
+DATA = "/Users/markvanwijk/tante-rie/tante-rie-seo/data/gsc/"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 

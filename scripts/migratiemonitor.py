@@ -6,7 +6,7 @@ al op https://tanterie.nl/, over de laatste 7 volledige dagen, en volgt de posit
 'bunzlau servies', 'theewinkel', 'thee uit twente' en 'tea' per URL.
 
 Gebruik (elke maandag):
-    cd "/Users/markvanwijk/Tante Rie SEO/scripts"
+    cd "/Users/markvanwijk/tante-rie/tante-rie-seo/scripts"
     python3 migratiemonitor.py                    # datum = vandaag
     python3 migratiemonitor.py --datum 2026-10-27 # expliciete datum
 
@@ -44,7 +44,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gsc_hulp as g
 import zoekwoord_clusters as zc
 
-ROOT = "/Users/markvanwijk/Tante Rie SEO/"
+ROOT = "/Users/markvanwijk/tante-rie/tante-rie-seo/"
 RAPPORT_DIR = ROOT + "marketing/rapporten/"
 DREMPEL = 90.0
 NULPUNT_DATUM = date(2026, 10, 21)

@@ -29,6 +29,6 @@ voorstel-winkelfotos-2026-10-23.diff (thema) en voorstel-winkelfotos-2026-10-23-
 - Niet gedaan: Rich Results Test (geen API) en een nieuwe crawl; doen na livegang.
 
 ## Aandachtspunten
-- De lokale kopie ~/TanteRie-Theme-Editor wijkt af van live (o.a. tr-page-lokaal.liquid). Ik heb vanaf live gewerkt, niet vanuit die map.
+- De lokale kopie ~/tante-rie/tante-rie-theme wijkt af van live (o.a. tr-page-lokaal.liquid). Ik heb vanaf live gewerkt, niet vanuit die map.
 - Afbeeldingen zijn staand (3:4) en daarom begrensd op 420 px (pagina) en 360 px (collecties).
 - Bij livegang: theme 203996496136 publiceren via Mark of de editor; daarna de Blond-body zetten en changelog bijwerken.

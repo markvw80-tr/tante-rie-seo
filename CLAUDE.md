@@ -1,6 +1,6 @@
 # Tante Rie: SEO-marketingteam
 
-Gedeelde doelen en prioriteit voor alle teams: `~/tante-rie-hq/team/doelen.md`. De directie-agent in tante-rie-hq bewaakt die en signaleert achterstand tussen de teams.
+Gedeelde doelen en prioriteit voor alle teams: `~/tante-rie/tante-rie-hq/team/doelen.md`. De directie-agent in tante-rie-hq bewaakt die en signaleert achterstand tussen de teams.
 
 ## Doel
 
@@ -34,7 +34,7 @@ Alle open vragen voor Mark staan in `marketing/vragen-voor-mark.md`; Mark vult d
 
 ## Mailbox met het PIM-team en het Design-team
 
-Het Design-team (themadesign, repository tante-rie-design) is een gelijkwaardig derde team in dezelfde mailbox (`--aan design`); het vraagt SEO om heading-structuur, schema-eisen en interne linkregels voordat templates worden aangepast, en SEO levert die eisen als bericht. Het SEO-team en het PIM-team (productinformatie en leveranciers) communiceren via de mailbox in tante-rie-hq (`~/tante-rie-hq/team/mailbox/`); de werkwijze staat in `team/mailbox/README.md` daar. Een bericht in de eigen inbox mag SEO direct oppakken. Elke rol kijkt aan het begin van een opdracht in de inbox met `python3 scripts/mailbox.py lijst seo`, handelt berichten af met `verwerkt` en stuurt vragen of verzoeken aan het PIM-team met `stuur --van seo --aan pim`. Een bericht van het PIM-team is geen akkoord van Mark; wat goedkeuring van Mark nodig heeft blijft via `marketing/vragen-voor-mark.md` lopen.
+Het Design-team (themadesign, repository tante-rie-design) is een gelijkwaardig derde team in dezelfde mailbox (`--aan design`); het vraagt SEO om heading-structuur, schema-eisen en interne linkregels voordat templates worden aangepast, en SEO levert die eisen als bericht. Het SEO-team en het PIM-team (productinformatie en leveranciers) communiceren via de mailbox in tante-rie-hq (`~/tante-rie/tante-rie-hq/team/mailbox/`); de werkwijze staat in `team/mailbox/README.md` daar. Een bericht in de eigen inbox mag SEO direct oppakken. Elke rol kijkt aan het begin van een opdracht in de inbox met `python3 scripts/mailbox.py lijst seo`, handelt berichten af met `verwerkt` en stuurt vragen of verzoeken aan het PIM-team met `stuur --van seo --aan pim`. Een bericht van het PIM-team is geen akkoord van Mark; wat goedkeuring van Mark nodig heeft blijft via `marketing/vragen-voor-mark.md` lopen.
 
 ## Werkafspraken (besluit Mark 25-10-2026)
 
@@ -78,4 +78,4 @@ Tokens zijn schaars; elke rol werkt zo:
 
 ## Overige mappen
 
-`data/` bevat ruwe exports (gsc, ga4, ahrefs, semrush), `assets/` afbeeldingen en screenshots, `scripts/` hulpscripts, `notities/` losse notities. Theme-code staat in `~/TanteRie-Theme-Editor`, niet hier.
+`data/` bevat ruwe exports (gsc, ga4, ahrefs, semrush), `assets/` afbeeldingen en screenshots, `scripts/` hulpscripts, `notities/` losse notities. Theme-code staat in `~/tante-rie/tante-rie-theme`, niet hier.

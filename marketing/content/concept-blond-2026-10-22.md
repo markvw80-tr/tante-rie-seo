@@ -256,7 +256,7 @@ Voorbeeld voor de export (de Analist of Technisch SEO draait hem):
 
 ```bash
 cd ~/.claude/skills/seo/scripts && export PYTHONWARNINGS=ignore
-python3 gsc_query.py --days 28 --dimensions date,query,page --limit 1000 --json > "/Users/markvanwijk/Tante Rie SEO/data/gsc/2026-11-21-blond-date-query-page.json"
+python3 gsc_query.py --days 28 --dimensions date,query,page --limit 1000 --json > "/Users/markvanwijk/tante-rie/tante-rie-seo/data/gsc/2026-11-21-blond-date-query-page.json"
 python3 gsc_inspect.py https://tanterie.nl/pages/blond-amsterdam-servies --json
 ```
 
