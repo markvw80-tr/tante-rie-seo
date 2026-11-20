@@ -12,6 +12,9 @@ Bijgewerkt: 25 oktober 2026 (V83, V85 en V95a beantwoord; V81 en V122 beantwoord
 
 ## 1. Fouten die nu live staan
 
+**V133 ⚪ Handle Passionfruit Martini Cake.** Het product met handle `pineut-cake-pouchbag-lemon-poppy-cake-kopie` is geen dubbel product maar de Passionfruit Martini Cake, gekopieerd van Lemon Poppy zonder dat de handle is aangepast. De URL heeft geen klikken (GSC: 12 vertoningen in 90 dagen tot 21-10, 5 vertoningen in het rapport van 18-11) en geen bekende redirect. Voorstel: handle wijzigen naar `pineut-cake-pouchbag-passionfruit-martini-cake` met de Shopify-optie "URL-omleiding maken" aangevinkt, zodat de oude URL met een 301 doorverwijst. Het product niet verwijderen. Akkoord? (mailbox PIM 20-11, marketing/technisch/audit-2026-10-21.md)
+**Antwoord:**
+
 ## 2. Afhaalregels Blond en Bunzlau
 
 Voorstel: technisch/voorstel-afhaalregels-blond-bunzlau-2026-10-22.md
@@ -144,6 +147,11 @@ Bron: Merchant API, alleen gelezen op 11-11 (kamille en gemberwortel).
 
 Update 18-11 (SEO, alleen gelezen, besluit 275faf1f38): de eenheidsprijs komt nergens door. In Merchant Center heeft geen enkel product (0 van 7854 regels) een eenheidsprijs; 575 regels hebben de melding "Missing unit pricing measure". De webshop zelf geeft hem ook niet door: op tanterie.nl/products/kamille, gemberwortel, opkikkertje, slaap-lekker, citrus-gember en gember-chai is het veld unit_price leeg en staat er geen prijs per 100 gram op de pagina. Een feedregel in Merchant Center lost dit dus niet op. Waarschijnlijk staat de eenheidsprijs in Shopify niet in het vaste veld "Eenheidsprijs" van de variant (Totale hoeveelheid en Basiseenheid, bij Prijzen), maar ergens anders, of is hij niet opgeslagen. Ik heb PIM gevraagd dat veld bij kamille na te kijken. Vraag aan jou: waar zie jij de eenheidsprijs in Shopify staan, in het vak Prijzen van de variant of in een eigen veld (metaveld)? Ruwe data: data/merchant/2026-11-18-eenheidsprijs.json.
 **Antwoord:** Akkoord 19-11 (besluit b6e3527b22): Mark maakt zelf de regel in Merchant Center (zijn login). Stappen: Merchant Center, Producten, Gegevensbronnen, de Shopify-bron (Google & YouTube), tabblad Kenmerkregels, kenmerk "Eenheidsprijsmaat" (unit pricing measure) toevoegen. Omdat de Shopify-bron het veld niet meelevert, kan de regel alleen een vaste waarde per product zetten: voorwaarde ID of titel bevat "kamille" dan 40 g, voorwaarde "gemberwortel" dan 100 g, en bij "Basismaat eenheidsprijs" (unit pricing base measure) 100 g. Laat SEO weten wanneer de regel staat; SEO leest daarna via de Merchant API terug of het veld gevuld is en de melding weg is (alleen lezen).
+
+Antwoord SEO op je vraag van 20-11 (besluit 3405bfb958, "is de eenheidsprijs nodig voor Merchant Center?"): nee. Voor Google is de eenheidsprijs een optioneel kenmerk; de melding "Missing unit pricing measure" is een tip zonder gevolgen, alle losse thee is goedgekeurd en actief. Dat je in Shopify alleen de prijs ziet klopt: het veld Eenheidsprijs is bij vrijwel alle varianten leeg, alleen kamille en gemberwortel zijn als proef gevuld. Advies: de feedregel hoeft niet, je kunt die stap overslaan. Wel een aandachtspunt: voor waren die per gewicht worden verkocht, zoals losse thee in zakjes van 50 of 100 gram, vraagt de Nederlandse prijsaanduidingsregel in principe om een prijs per kilo of per 100 gram bij de klant, dus op de productpagina. Dat is een winkelkwestie, geen Merchant Center-kwestie; zie V134.
+
+**V134 ⚪ Eenheidsprijs op de productpagina van losse thee?** Keuze: (A) laten zoals het is, geen eenheidsprijs, V127 vervalt; of (B) PIM vult het veld Eenheidsprijs bij alle varianten losse thee en Design toont die op de productpagina (verzoek ligt al bij Design). Bij B komt de eenheidsprijs ook vanzelf in de webshop-markup; Merchant Center pakt hem dan mogelijk later op en anders volgt pas dan een feedregel. Advies SEO: B, met lage prioriteit. (mailbox Mark 20-11)
+**Antwoord:**
 
 ## 22. Alt-teksten shopafbeeldingen (15 november)
 
