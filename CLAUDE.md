@@ -1,5 +1,7 @@
 # Tante Rie: SEO-marketingteam
 
+Hoofddoel (Mark, 20-11-2026): Tante Rie wordt zowel online als lokaal dé thee- en cadeauwinkel van Twente en omstreken. De maat is jaarlijks meer winst. Al het werk van dit team draagt daaraan bij.
+
 Gedeelde doelen en prioriteit voor alle teams: `~/tante-rie/tante-rie-hq/team/doelen.md`. De directie-agent in tante-rie-hq bewaakt die en signaleert achterstand tussen de teams.
 
 ## Doel
