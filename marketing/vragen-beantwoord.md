@@ -4,6 +4,7 @@ Verplaatst uit vragen-voor-mark.md (27-10-2026). Nieuwste bovenaan; een ingevuld
 
 | Datum | Vraag | Antwoord | Verwerkt in |
 |---|---|---|---|
+| 20-11 | V134 Eenheidsprijs losse thee op productpagina | B (mailbox Mark 2026-11-20-230504): eenheidsprijs per 100 g op de productpagina; V127-feedregel blijft overbodig | Schema-eisen Offer naar Design gestuurd; SEO leest na livegang Merchant Center terug |
 | 19-11 | V132 15 alt-regels eerder naar PIM | Akkoord (besluit 33d6c535ab): eerder sturen dan 20 regels mag | Bericht seo-2026-11-19-1 in tante-rie-hq team/mailbox/seo-naar-pim.json; PIM voert uit na diff en akkoord Mark |
 | 19-11 | V127 Feedregel eenheidsprijs Merchant Center | Akkoord (besluit b6e3527b22): Mark maakt de regel zelf, met zijn login | Stappen bij V127 in vragen-voor-mark.md; SEO leest daarna terug via Merchant API |
 | 09-11 | V71 Dutch Tea Maestro (herzien) | Mark wil DTM (WooCommerce, dutchteamaestro.com, 179 producten) naar Shopify migreren. Zelfde onderneming als Tante Rie. B2B-model nog niet bepaald (werkhypothese hybride). Beeldmateriaal staat op andere laptop en komt op de NAS. Vervangt 'nu niets mee doen' van 23-10 | Plan `~/.claude/plans/er-zijn-2-webshops-bright-squirrel.md`; open punten V124 tot V126 |
