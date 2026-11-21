@@ -18,3 +18,4 @@ scripts/theme-ref-*/
 service_account*.json
 .env
 .claude/settings.local.json
+data/kengetallen.json

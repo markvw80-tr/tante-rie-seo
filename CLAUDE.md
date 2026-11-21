@@ -48,16 +48,18 @@ SEO onderzoekt en adviseert en voert zelf geen productwijzigingen door; Shopify 
 
 De agents staan in `.claude/agents/`.
 
-| Rol | Agent | Map | Kernvraag | Skill |
+| Rol | Agent | Map | Kernvraag | Skills (vooraf geladen, staan in .claude/skills) |
 |---|---|---|---|---|
-| SEO Lead | `seo-lead` | `marketing/` (plan-JJJJ-MM.md) | Wat doen we deze maand, in welke volgorde? | marketing:campaign-plan |
-| Technisch SEO-specialist | `technisch-seo` | `marketing/technisch/` | Kan Google de shop goed crawlen en begrijpen? | marketing:seo-audit |
-| Zoekwoord- en zoekintentie-onderzoeker | `zoekwoord-onderzoeker` | `marketing/zoekwoorden/` | Waar zoeken klanten naar en waar liggen kansen? | data:analyze |
-| Contentstrateeg en redacteur | `content-redacteur` | `marketing/content/` | Welke content wint posities? | marketing:draft-content |
-| On-page en conversietekstschrijver | `onpage-copy` | `marketing/onpage/` | Zijn product- en collectiepagina's aantrekkelijk en klikbaar? | design:ux-copy |
-| Autoriteit- en lokale SEO-specialist | `autoriteit-lokaal` | `marketing/autoriteit/` | Hoe worden we groter en betrouwbaarder in Google? | marketing:competitive-brief |
-| Analist en rapporteur | `analist` | `marketing/rapporten/` | Werkt het, en wat leren we? | marketing:performance-report |
-| Merk- en kwaliteitsredacteur | `kwaliteitsredacteur` | `marketing/review/` | Klopt het met de stijl en de regels? | marketing:brand-review |
+| SEO Lead | `seo-lead` | `marketing/` (plan-JJJJ-MM.md) | Wat doen we deze maand, in welke volgorde? | seo-plan, campaign-plan |
+| Technisch SEO-specialist | `technisch-seo` | `marketing/technisch/` | Kan Google de shop goed crawlen en begrijpen? | seo-technical, seo-google |
+| Zoekwoord- en zoekintentie-onderzoeker | `zoekwoord-onderzoeker` | `marketing/zoekwoorden/` | Waar zoeken klanten naar en waar liggen kansen? | seo-google, seo-plan |
+| Contentstrateeg en redacteur | `content-redacteur` | `marketing/content/` | Welke content wint posities? | seo-content, stop-slop |
+| On-page en conversietekstschrijver | `onpage-copy` | `marketing/onpage/` | Zijn product- en collectiepagina's aantrekkelijk en klikbaar? | seo-page, copywriting, stop-slop |
+| Autoriteit- en lokale SEO-specialist | `autoriteit-lokaal` | `marketing/autoriteit/` | Hoe worden we groter en betrouwbaarder in Google? | seo-local, seo-backlinks |
+| Analist en rapporteur | `analist` | `marketing/rapporten/` | Werkt het, en wat leren we? | performance-report, seo-google |
+| Merk- en kwaliteitsredacteur | `kwaliteitsredacteur` | `marketing/review/` | Klopt het met de stijl en de regels? | brand-review, stop-slop |
+
+Taakverdeling collectiepagina's (21-11-2026): `content-redacteur` schrijft de introtekst van een collectie (de lopende tekst op de pagina, meestal 80 woorden of meer) en gidsen en blogs; `onpage-copy` schrijft titels, H1, metatitel, metabeschrijving, alt-teksten en producttitels en -beschrijvingen. Raakt een opdracht beide, dan doet `content-redacteur` de introtekst en `onpage-copy` de rest.
 
 ## Werkvolgorde
 
